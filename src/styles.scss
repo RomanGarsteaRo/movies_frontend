@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.button-box{
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	grid-column-gap: 24px;
+	user-select: none;
+
+	.button-icon-size{
+		padding: 0 24px;
+		border-radius: 2px;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: 300;
+
+		border: 1px solid #c2c6de;
+		color: #646773;
+
+		&:hover {
+			border: 1px solid #7d7f8f;
+			color: #1f2023;
+		}
+
+		&:active{
+			border: 1px solid #b9bbd3;
+			color: #a0a6b6;
+		}
+
+		&.selected{
+			border: 1px solid #e50562;
+			color: #e50562;
+		}
+	}
+}
+
+sup{
+	font-size: 10px;
+	color: gray;
+	font-weight: 400;
+}
+
+//SCROLLBAR
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+}
+::-webkit-scrollbar-thumb {
+	background: #cacbce;
+	border: 0 none white;
+	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #5F637CFF;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #5F637CFF;
+}
+::-webkit-scrollbar-track {
+	border: 0 solid white;
+	border-radius: 2px;
+	background: rgba(235, 235, 237, 0.3);
+}
+::-webkit-scrollbar-track:hover {
+	background: #d7d8e5;
+}
+::-webkit-scrollbar-track:active {
+	background: #d7d8e5;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+

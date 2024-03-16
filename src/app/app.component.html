@@ -1,0 +1,95 @@
+
+
+
+<div class="container">
+
+	<div class="stat">
+
+		<!--Total-->
+		<div *ngIf="list?.length">
+			<div>Total: {{list.length}}</div>
+			<div>................................</div>
+		</div>
+
+
+		<!--Duplicate-->
+		<div *ngIf="duplicate">
+			<div>Duplicate: {{duplicate.length}}</div>
+			<div *ngFor="let dup of duplicate">{{dup}}</div>
+			<div>................................</div>
+		</div>
+
+
+		<!--Rus name-->
+		<div *ngIf="rusName">
+			<div>Russian name: {{rusName.length}}</div>
+			<!--<div *ngFor="let rus of rusName">{{rus}}</div>-->
+			<div>................................</div>
+		</div>
+
+
+		<!--3D-->
+		<div *ngIf="movies3d">
+			<div>3D: {{movies3d.length}}</div>
+			<div>................................</div>
+		</div>
+
+		<!--Average size-->
+		<div *ngIf="averageSize">
+			<div>Size av.: {{averageSize}}</div>
+			<div>................................</div>
+		</div>
+
+
+
+	</div>
+
+	<div class="tab">
+
+		<ng-container *ngFor="let item of list; let i = index">
+			<div>{{i+1}}. {{item.id}}</div>
+			<div>{{convertBytes(+item.size)}}</div>
+		</ng-container>
+
+	</div>
+
+
+</div>
+
+
+
+<router-outlet />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
