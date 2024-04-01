@@ -6,49 +6,70 @@
 	<div class="stat">
 
 		<!--Total-->
-		<div *ngIf="list?.length">
-			<div>Total: {{list.length}}</div>
-			<div>................................</div>
+		<div class="total group">
+				<span class="value">{{numberOfFiles}}</span>
+				<span class="label">files</span>
+				<span class="value">{{listOfMovies.length}}</span>
+				<span class="label">movies</span>
 		</div>
 
-
-		<!--Duplicate-->
-		<div *ngIf="duplicate">
-			<div>Duplicate: {{duplicate.length}}</div>
-			<div *ngFor="let dup of duplicate">{{dup}}</div>
-			<div>................................</div>
+		<!--Year-->
+		<div class="year">
+			<div>{{averageYear | number: '0.0-0' | noComma}}</div>
 		</div>
 
-
-		<!--Rus name-->
-		<div *ngIf="rusName">
-			<div>Russian name: {{rusName.length}}</div>
-			<!--<div *ngFor="let rus of rusName">{{rus}}</div>-->
-			<div>................................</div>
-		</div>
-
-
-		<!--3D-->
-		<div *ngIf="movies3d">
-			<div>3D: {{movies3d.length}}</div>
-			<div>................................</div>
-		</div>
-
-		<!--Average size-->
+		<!--Size-->
 		<div *ngIf="averageSize">
-			<div>Size av.: {{averageSize}}</div>
-			<div>................................</div>
+			<ui-file-size [size]="averageSize"></ui-file-size>
 		</div>
 
+		<!--Title-->
+		<div class="title group">
+			<span class="value">{{enName.length}}</span>
+			<span class="label">en</span>
+			<span class="value">{{rusName.length}}</span>
+			<span class="label">ru</span>
+		</div>
+
+
+
+
+
+		<!--OMDB JSON-->
+<!--		<div class="omdb" *ngIf="omdb">-->
+<!--			<div>Omdb</div>-->
+<!--			<div>{{omdb.length}} &lt;!&ndash;total json items&ndash;&gt;</div>-->
+<!--			<div>{{omdb.length - numberOfOmdbItemsInData}}&lt;!&ndash;not show&ndash;&gt;</div>-->
+<!--		</div>-->
+
+		<!--Plex JSON-->
+<!--		<div class="plex" *ngIf="plex">-->
+<!--			<div>Plex</div>-->
+<!--			<div>{{plex.length}} &lt;!&ndash;total json items&ndash;&gt;</div>-->
+<!--			<div>{{plex.length - numberOfItemsPlex}}&lt;!&ndash;not show&ndash;&gt;</div>-->
+<!--		</div>-->
 
 
 	</div>
 
+
 	<div class="tab">
 
-		<ng-container *ngFor="let item of list; let i = index">
-			<div>{{i+1}}. {{item.id}}</div>
-			<div>{{convertBytes(+item.size)}}</div>
+		<ng-container *ngFor="let group of listOfMovies; let i = index">
+			<div class="row" *ngFor="let item of group.assets; let j = index">
+				<div class="number">{{j === 0 ? i + 1 + '.' : ''}}</div>
+				<div class="year">{{j === 0 ? item.year : ''}}</div>
+				<ui-file-size [size]="item.size"></ui-file-size>
+				<div>{{item.title}}</div>
+<!--				<div class="tags">-->
+<!--					<span *ngFor="let tag of item.tags">{{tag}}</span>-->
+<!--				</div>-->
+
+
+
+				<!--			<div class="json_omdb" [ngClass]="{'no_json': item.omdb === 'N/A'}">{{item.omdb === 'N/A' ? 'N/A' : '+'}}</div>-->
+				<!--			<div class="json_plex" [ngClass]="{'no_json': item.plex === 'N/A'}">{{item.plex === 'N/A' ? 'N/A' : '+'}}</div>-->
+			</div>
 		</ng-container>
 
 	</div>

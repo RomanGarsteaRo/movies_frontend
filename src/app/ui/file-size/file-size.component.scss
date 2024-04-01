@@ -1,0 +1,14 @@
+:host{
+	display: grid;
+	grid-template-columns: 48px max-content;
+	justify-items: end;
+	align-items: end;
+	column-gap: 4px;
+	color: #484848;
+
+	.size{}
+	.unit{
+		color: #343434;
+		font-size: 12px;
+	}
+}
