@@ -38,8 +38,8 @@ interface IMovie {
 	year: number | string,
 
 	assets: INasExtended[],
-	omdb?: IOmdb | string,
-	plex?: IPlex | string,
+	omdb: IOmdb | null,
+	plex: IPlex | null,
 }
 
 export interface IFileSize {
@@ -77,9 +77,8 @@ export class AppComponent implements AfterViewInit {
 	public movies3d!: number;
 	public averageSize!: IFileSize;
 	public averageYear!: number;
-	public numberOfItemsOmdb!: number;
-	public numberOfItemsPlex!: number;
-	public numberOfItemsNasUnique!: number;
+	public numberOfItemsPlexInData!: number;
+	public numberOfItemsOmdbInData!: number;
 	public plex: IPlex[] = [...json_plex];
 	public omdb: IOmdb[] = [...json_omdb];
 
@@ -113,11 +112,9 @@ export class AppComponent implements AfterViewInit {
 	}
 
 	private init(arr: any[]):void {
-		arr = arr.sort((a: INasExtended,b: INasExtended) => a.id.localeCompare(b.id));
-		console.log(arr[20]);
 		arr = this.transformMovieData(arr);
 		arr = this.sortData(arr);
-		arr = arr.slice();
+		this.addPlexJsonInData(arr);
 		this.listOfMovies = arr;
 		this.numberOfFiles = this.getNumberOfFiles(arr);
 		this.rusName = this.getRusName(arr);
@@ -125,11 +122,68 @@ export class AppComponent implements AfterViewInit {
 		this.averageYear = this.getAverageYear(arr);
 		this.averageSize = this.getAverageSize(arr);
 		this.movies3d = this.getMovies3d(arr);
-		// this.numberOfItemsPlex = this.getNumberOfPlexItemsInData(arr);
+		this.numberOfItemsPlexInData = this.getNumberOfPlexItemsInData(arr);
 		// this.numberOfItemsOmdb = this.getNumberOfOmdbItemsInData(arr);
 		// this.duplicate = this.getDuplicate(arr);
-		console.log(arr[20]);
+		// console.log(arr[20]);
 	}
+
+	private transformMovieData(arr: INas[]): IMovie[] {
+
+		let result: IMovie[] = [];
+
+		// 1. Transform data: INas[] to INasExtended[]
+		let NasExtended: INasExtended[] = arr.map((movie: INas) => {
+			const match = movie.id.match(/^(.+?)\s\((\d{4})\)/);
+			const title= match?.[1] || '';
+			const year: number | string = parseInt(match?.[2] || '', 10) || 'N/A';
+			const format= movie.id.match(/(?:\.([^.]+))?$/)?.[1] || '';
+			const tags: string[] = this.getTagsFromTitle(movie.id);
+
+			return {
+				id: movie.id,
+				path: movie.path,
+				size: this.convertBytesToIFileSize(+movie.size),
+				title: title,
+				year,
+				format,
+				tags
+			};
+		});
+
+		// 2. Get List of Title (no duplicate)
+		let titlesUnique: Set<string> = this.getNasTitleUnique(NasExtended);
+
+		// 3. Transform data: INasExtended[] to IMovie[]
+		titlesUnique.forEach(titleUnique => {
+			let title: string = '';
+			let year: number | string = 'N/A';
+			let assets: INasExtended[] = [];
+
+			NasExtended.forEach(item => {
+				if(titleUnique === item.title + item.year) {
+					title = item.title;
+					year = item.year;
+					assets.push(item);
+				}
+			})
+
+			result.push({
+				title,
+				year,
+				assets,
+				plex: null,
+				omdb: null,
+			})
+		});
+
+		return result;
+	}
+
+
+
+
+
 
 	private processMovieList(arr: INasExtended[]): Observable<INasExtended[]> {
 		return from(arr).pipe(
@@ -209,58 +263,6 @@ export class AppComponent implements AfterViewInit {
 		return this.convertBytesToIFileSize(size/ this.listOfMovies.length);
 	}
 
-	private transformMovieData(arr: INas[]): IMovie[] {
-
-		let result: IMovie[] = [];
-
-		// 1. Transform data: INas[] to INasExtended[]
-		let NasExtended: INasExtended[] = arr.map((movie: INas) => {
-			const match = movie.id.match(/^(.+?)\s\((\d{4})\)/);
-			const title= match?.[1] || '';
-			const year: number | string = parseInt(match?.[2] || '', 10) || 'N/A';
-			const format= movie.id.match(/(?:\.([^.]+))?$/)?.[1] || '';
-			const tags: string[] = this.getTagsFromTitle(movie.id);
-			// const omdb: IOmdb | string = this.getOmdbItem(title, year);
-			// const plex: IPlex | string = this.getPlexItem(title, year);
-
-			return {
-				id: movie.id,
-				path: movie.path,
-				size: this.convertBytesToIFileSize(+movie.size),
-				title: title,
-				year,
-				format,
-				tags
-			};
-		});
-
-		// 2. Get List of Title (no duplicate)
-		let titlesUnique: Set<string> = this.getNasTitleUnique(NasExtended);
-
-		// 3. Transform data:
-		titlesUnique.forEach(titleUnique => {
-			let title: string = '';
-			let year: number | string = 'N/A';
-			let assets: INasExtended[] = [];
-
-			NasExtended.forEach(item => {
-				if(titleUnique === item.title + item.year) {
-					title = item.title;
-					year = item.year;
-					assets.push(item);
-				}
-			})
-
-			result.push({
-				title,
-				year,
-				assets
-			})
-		});
-
-		return result;
-	}
-
 	private getEnName(arr: IMovie[]): IMovie[] {
 		const russianTitleRegex: RegExp = /[а-яА-ЯЁё]/;
 		return arr.filter(movie => !russianTitleRegex.test(movie.title));
@@ -270,15 +272,6 @@ export class AppComponent implements AfterViewInit {
 		let size: number = 0;
 		arr.forEach(item => size += +item.year);
 		return size / this.listOfMovies.length;
-	}
-
-	private getOmdbItem(title: string, year: number | string): IOmdb | string {
-		return json_omdb.find(item=> this.excludeIllegalCharInFileName(item.Title).includes(title) && item.Year === year) || 'N/A';
-	}
-
-	private getPlexItem(titleNAS: string, yearNAS: number | string): IPlex | string  {
-		// console.log(this.plex.filter(item => item.title.includes("Asterix")).map(item => ({title: item.title, year: item.year})))
-		return json_plex.find(item=> this.thereAreSimilaritiesInTitle(item, titleNAS) && this.thereAreSimilaritiesInYears(item.year, yearNAS)) || 'N/A';
 	}
 
 	private excludeIllegalCharInFileName(fileName: string | undefined): string {
@@ -295,39 +288,7 @@ export class AppComponent implements AfterViewInit {
 	// 	return arr.reduce((accumulator, currentValue) => currentValue.omdb !== 'N/A' ? accumulator : ++accumulator, 0);
 	// }
 
-	// private getNumberOfPlexItemsInData(arr: INasExtended[]): number {
-	// 	return arr.reduce((accumulator, currentValue) => currentValue.plex !== 'N/A' ? ++accumulator : accumulator, 0);
-	// }
 
-	private thereAreSimilaritiesInTitle(plex: IPlex, titleNAS: string): boolean{
-		// Plex wrong data
-		if(titleNAS === 'Daddy‘s Home 2') {titleNAS = 'Daddy‘s Home'}
-		if(titleNAS === 'Gone in Sixty Seconds') {titleNAS = 'Gone in 60 Seconds'}
-		if(titleNAS === 'Jodaeiye Nader Az Simin') {titleNAS = 'A Separation'}
-		if(titleNAS === 'Naked Gun 33 13 The Final Insult') {titleNAS = 'Naked Gun 33 1 3 The Final Insult'}
-		if(titleNAS === 'Scary Movie 5') {titleNAS = 'Scary Movie V'}
-		if(titleNAS === 'Seven') {titleNAS = 'Se7en'}
-		if(titleNAS === 'The Legend of the Drunken Master') {titleNAS = 'The Legend of Drunken Master'}
-		if(titleNAS === 'WALL-E') {titleNAS = 'WALL·E'}
-		if(titleNAS === 'Xin Shao Lin Si') {titleNAS = 'Shaolin'}
-		if(titleNAS === 'Crimson Rivers 2 Angels of the Apocalypse') {titleNAS = 'Crimson Rivers II Angels of the Apocalypse'}
-
-
-		// compare with "title" property
-		if( this.excludeIllegalCharInFileName(plex.title?.toLowerCase()).includes(titleNAS.toLowerCase()) ) {return true}
-		// compare with "originalTitle" property
-		if (this.excludeIllegalCharInFileName(plex?.originalTitle?.toLowerCase())?.includes(titleNAS.toLowerCase())) {return true}
-
-		return false;
-	}
-
-	private thereAreSimilaritiesInYears(plexYear: number | undefined, nasYear: number | string): boolean{
-		if(plexYear && nasYear !== 'N/A' && typeof nasYear === "number") {
-			return plexYear === nasYear ||  plexYear === nasYear -1 || plexYear === nasYear +1;
-		} else {
-			return false;
-		}
-	}
 
 	private getNasTitleUnique(arr: INasExtended[]): Set<string> {
 		let unique: Set<string> = new Set<string>();
@@ -355,13 +316,88 @@ export class AppComponent implements AfterViewInit {
 		},0)
 	}
 
+
+
+	/* Sort **********************************************************************************/
+
+
 	private sortData(arr: IMovie[]): IMovie[] {
 		arr = arr.sort((a: IMovie,b: IMovie) => a.title.localeCompare(b.title));
 		arr.forEach((movie: IMovie) => movie.assets.sort((a: INasExtended,b: INasExtended)=> {
 			return a.tags.length - b.tags.length;
 		}))
-
 		return arr;
+	}
+
+	// TODO sortByTitle, sortByYear, sortBySize
+
+
+
+	/* Plex *********************************************************************************/
+
+	private addPlexJsonInData(arr: IMovie[]): void {
+		let plexNotFounded: IPlex[] = [...this.plex];
+		arr.forEach(movieItem=> {
+			// console.log(this.plex.filter(item => item.title.includes("Asterix")).map(item => ({title: item.title, year: item.year})))
+			let foundedPlexItem: IPlex | undefined = plexNotFounded.find(plexItem=> this.thereAreSimilarities(plexItem, movieItem));
+
+			if (foundedPlexItem) {
+				// Exclude founded item to plex arr
+				plexNotFounded = plexNotFounded.filter(item => item !== foundedPlexItem);
+				// Add founded plex item to data
+				movieItem.plex = foundedPlexItem;
+			}
+		})
+
+		console.log(plexNotFounded.map(item=> ({title: item.title, year: item.year})));
+		console.log(plexNotFounded);
+	}
+
+	private getNumberOfPlexItemsInData(arr: IMovie[]): number {
+		return arr.reduce((acc:number, cur:IMovie) => cur.plex !== null ? ++acc : acc, 0);
+	}
+
+	private thereAreSimilaritiesInTitle(plex: IPlex, movie: IMovie): boolean{
+
+		let nasTitle = movie.title.trim();
+		let plexTitle: string = this.excludeIllegalCharInFileName(plex.title).trim();
+		let plexOriginalTitle: string = this.excludeIllegalCharInFileName(plex?.originalTitle).trim();
+
+		// Plex wrong data
+		if(nasTitle === 'Jodaeiye Nader Az Simin') {nasTitle = 'A Separation'}
+		if(nasTitle === 'Naked Gun 33 13 The Final Insult') {nasTitle = 'Naked Gun 33 1 3 The Final Insult'}
+		if(nasTitle === 'Xin Shao Lin Si') {nasTitle = 'Shaolin'}
+		if(nasTitle === 'Daddy‘s Home 2') {nasTitle = 'Daddy‘s Home'}
+		if(nasTitle === 'Crimson Rivers 2 Angels of the Apocalypse') {nasTitle = 'Crimson Rivers II Angels of the Apocalypse'}
+		if(nasTitle === 'The Legend of the Drunken Master') {nasTitle = 'The Legend of Drunken Master'}
+
+		// compare with "title" property
+		if( nasTitle.toLowerCase() === plexTitle.toLowerCase()) {return true;}
+		// compare with "originalTitle" property
+		if( nasTitle.toLowerCase() === plexOriginalTitle.toLowerCase()) {return true;}
+
+		return false;
+	}
+
+	private thereAreSimilaritiesInYears(plex: IPlex, movie: IMovie): boolean{
+		let plexYear = plex.year;
+		let nasYear = movie.year;
+		if(plexYear && nasYear !== 'N/A' && typeof nasYear === "number") {
+			return plexYear === nasYear ||  plexYear === nasYear -1 || plexYear === nasYear +1;
+		} else {
+			return false;
+		}
+	}
+
+	private thereAreSimilarities(plex: IPlex, movie: IMovie):boolean{
+		if (movie.title === 'Brigada Diverse intra in actiune' && plex.title === 'Brigade Miscellaneous Steps In') return true;
+		if (movie.title === 'Men in Black 3' && plex.title === 'Men in Black³') return true;
+		if (movie.title === 'X2 X-Men United' && plex.title === 'X2') return true;
+
+
+		let titleSimilarities = this.thereAreSimilaritiesInTitle(plex, movie);
+		let yearSimilarities = this.thereAreSimilaritiesInYears(plex, movie);
+		return titleSimilarities && yearSimilarities;
 	}
 }
 

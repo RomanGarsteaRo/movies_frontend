@@ -28,7 +28,7 @@ export interface IPlex {
 	"hasPremiumExtras"?: string,
 	"hasPremiumPrimaryExtra"?: string,
 	"ratingImage"?: string,
-	"Media": IMedia[],
+	"Media"?: IMedia[],
 	"Genre"?: { "tag": string }[],
 	"Director"?: { "tag": string }[],
 	"Writer"?: { "tag": string }[],
@@ -78,6 +78,17850 @@ export interface IPart {
 
 export const json_plex: IPlex[] = [
 	{
+		"ratingKey": "7659",
+		"key": "/library/metadata/7659",
+		"guid": "plex://movie/5d77682e2ec6b5001f6bb048",
+		"studio": "Lionsgate",
+		"type": "movie",
+		"title": "3:10 to Yuma",
+		"contentRating": "R",
+		"summary": "In Arizona in the late 1800s, infamous outlaw Ben Wade and his vicious gang of thieves and murderers have plagued the Southern Railroad. When Wade is captured, Civil War veteran Dan Evans, struggling to survive on his drought-plagued ranch, volunteers to deliver him alive to the \"3:10 to Yuma\", a train that will take the killer to trial.",
+		"rating": 8.9,
+		"audienceRating": 8.6,
+		"viewOffset": 2494922,
+		"skipCount": 1,
+		"lastViewedAt": 1687654010,
+		"year": 2007,
+		"tagline": "Time waits for one man.",
+		"thumb": "/library/metadata/7659/thumb/1712000149",
+		"art": "/library/metadata/7659/art/1712000149",
+		"duration": 7350560,
+		"originallyAvailableAt": "2007-09-06",
+		"addedAt": 1681122011,
+		"updatedAt": 1712000149,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16705,
+				"duration": 7350560,
+				"bitrate": 26503,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "truehd",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 16770,
+						"key": "/library/parts/16770/1681121293/file.m2ts",
+						"duration": 7350560,
+						"file": "/volume1/Movies/3 10 to Yuma (2007).m2ts",
+						"size": 26279725056,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Western"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "James Mangold"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Elmore Leonard"
+			},
+			{
+				"tag": "Michael Brandt"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Russell Crowe"
+			},
+			{
+				"tag": "Christian Bale"
+			},
+			{
+				"tag": "Peter Fonda"
+			}
+		]
+	},
+	{
+		"ratingKey": "9080",
+		"key": "/library/metadata/9080",
+		"guid": "plex://movie/5d776b8e96b655001fe14e31",
+		"studio": "Bad Robot",
+		"type": "movie",
+		"title": "10 Cloverfield Lane",
+		"contentRating": "PG-13",
+		"summary": "A young woman is held in an underground bunker by a man who insists that a hostile event has left the surface of the Earth uninhabitable.",
+		"rating": 9,
+		"audienceRating": 7.9,
+		"year": 2016,
+		"tagline": "Monsters come in many forms.",
+		"thumb": "/library/metadata/9080/thumb/1710700567",
+		"art": "/library/metadata/9080/art/1710700567",
+		"duration": 6214833,
+		"originallyAvailableAt": "2016-03-10",
+		"addedAt": 1703602655,
+		"updatedAt": 1710700567,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20165,
+				"duration": 6214833,
+				"bitrate": 9410,
+				"width": 1280,
+				"height": 534,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 20972,
+						"key": "/library/parts/20972/1701388731/file.mkv",
+						"duration": 6214833,
+						"file": "/volume3/MoviesB/Movis/10 Cloverfield Lane (2016).mkv",
+						"size": 7312082515,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Dan Trachtenberg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Damien Chazelle"
+			},
+			{
+				"tag": "Josh Campbell"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "John Goodman"
+			},
+			{
+				"tag": "Mary Elizabeth Winstead"
+			},
+			{
+				"tag": "John Gallagher Jr."
+			}
+		]
+	},
+	{
+		"ratingKey": "5633",
+		"key": "/library/metadata/5633",
+		"guid": "plex://movie/5d77682a103a2d001f565035",
+		"studio": "Touchstone Pictures",
+		"type": "movie",
+		"title": "The 13th Warrior",
+		"titleSort": "13th Warrior",
+		"contentRating": "R",
+		"summary": "A man, having fallen in love with the wrong woman, is sent by the sultan himself on a diplomatic mission to a distant land as an ambassador. Stopping at a Viking village port to restock on supplies, he finds himself unwittingly embroiled in a quest to banish a mysterious threat in a distant Viking land.",
+		"rating": 3.3,
+		"audienceRating": 6.6,
+		"viewCount": 1,
+		"lastViewedAt": 1708124523,
+		"year": 1999,
+		"tagline": "Prey for the living.",
+		"thumb": "/library/metadata/5633/thumb/1711898762",
+		"art": "/library/metadata/5633/art/1711898762",
+		"duration": 6166176,
+		"originallyAvailableAt": "1999-08-13",
+		"addedAt": 1679614293,
+		"updatedAt": 1711898762,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12023,
+				"duration": 6166176,
+				"bitrate": 22002,
+				"width": 1920,
+				"height": 816,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12079,
+						"key": "/library/parts/12079/1679532901/file.mkv",
+						"duration": 6166176,
+						"file": "/volume1/Movies/The 13th Warrior (1999).mkv",
+						"size": 16958318787,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "John McTiernan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "William Wisher"
+			},
+			{
+				"tag": "Michael Crichton"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Antonio Banderas"
+			},
+			{
+				"tag": "Diane Venora"
+			},
+			{
+				"tag": "Dennis Storhøi"
+			}
+		]
+	},
+	{
+		"ratingKey": "6757",
+		"key": "/library/metadata/6757",
+		"guid": "plex://movie/5d7768303c3c2a001fbcd0d8",
+		"studio": "Fox 2000 Pictures",
+		"type": "movie",
+		"title": "27 Dresses",
+		"contentRating": "PG-13",
+		"summary": "After serving as a bridesmaid 27 times, a young woman wrestles with the idea of standing by her sister's side as her sibling marries the man she's secretly in love with.",
+		"rating": 4,
+		"audienceRating": 5.7,
+		"viewOffset": 80113,
+		"lastViewedAt": 1704252699,
+		"year": 2008,
+		"tagline": "She's about to find the perfect fit.",
+		"thumb": "/library/metadata/6757/thumb/1711898762",
+		"art": "/library/metadata/6757/art/1711898762",
+		"duration": 6648736,
+		"originallyAvailableAt": "2008-01-10",
+		"addedAt": 1680346460,
+		"updatedAt": 1711898762,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 14671,
+				"duration": 6648736,
+				"bitrate": 42185,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "hra",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14731,
+						"key": "/library/parts/14731/1680148301/file.m2ts",
+						"duration": 6648736,
+						"file": "/volume1/Movies/27 Dresses (2008).m2ts",
+						"size": 35059949568,
+						"audioProfile": "hra",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Anne Fletcher"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Aline Brosh McKenna"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Katherine Heigl"
+			},
+			{
+				"tag": "James Marsden"
+			},
+			{
+				"tag": "Malin Åkerman"
+			}
+		]
+	},
+	{
+		"ratingKey": "9508",
+		"key": "/library/metadata/9508",
+		"guid": "plex://movie/5d7768348718ba001e31427f",
+		"studio": "Dream Entertainment",
+		"type": "movie",
+		"title": "100 Girls",
+		"contentRating": "R",
+		"summary": "Matt spends the night with a girl in an elevator during power outage in a girls' college dorm. He never sees her. Waking up in the morning, panties are all that's left of her. How does he find her in a building with 100 girls?",
+		"rating": 6,
+		"audienceRating": 5,
+		"skipCount": 1,
+		"year": 2000,
+		"tagline": "He met the girl of his dreams. If only he can meet her again.",
+		"thumb": "/library/metadata/9508/thumb/1711898762",
+		"duration": 5675002,
+		"originallyAvailableAt": "2000-09-01",
+		"addedAt": 1332518489,
+		"updatedAt": 1711898762,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21276,
+				"duration": 5675002,
+				"bitrate": 2198,
+				"width": 720,
+				"height": 384,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg4",
+				"videoResolution": "sd",
+				"container": "avi",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced simple",
+				"Part": [
+					{
+						"id": 21377,
+						"key": "/library/parts/21377/1332518489/file.avi",
+						"duration": 5675002,
+						"file": "/volume1/Movies/100 Girls (2000).avi",
+						"size": 1565681664,
+						"container": "avi",
+						"videoProfile": "advanced simple"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Michael Davis"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Michael Davis"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jonathan Tucker"
+			},
+			{
+				"tag": "Emmanuelle Chriqui"
+			},
+			{
+				"tag": "James DeBello"
+			}
+		]
+	},
+	{
+		"ratingKey": "9518",
+		"key": "/library/metadata/9518",
+		"guid": "plex://movie/5d9f34ffb0262f001f6e9703",
+		"studio": "Great Oaks Entertainment",
+		"type": "movie",
+		"title": "101 Dalmatians",
+		"contentRating": "G",
+		"summary": "An evil high-fashion designer plots to steal dalmatian puppies in order to make an extravagant fur coat but creates an extravagant mess instead.",
+		"rating": 3.9,
+		"audienceRating": 4,
+		"viewCount": 1,
+		"lastViewedAt": 1678639116,
+		"year": 1996,
+		"tagline": "So many dogs. So little time.",
+		"thumb": "/library/metadata/9518/thumb/1711898762",
+		"duration": 6174464,
+		"originallyAvailableAt": "1996-11-27",
+		"addedAt": 1678568205,
+		"updatedAt": 1711898762,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21304,
+				"duration": 6174464,
+				"bitrate": 5819,
+				"width": 1280,
+				"height": 542,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main",
+				"Part": [
+					{
+						"id": 21405,
+						"key": "/library/parts/21405/1678563196/file.mkv",
+						"duration": 6174464,
+						"file": "/volume1/Movies/101 Dalmatians (1996).mkv",
+						"size": 4493503629,
+						"container": "mkv",
+						"videoProfile": "main"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Family"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Stephen Herek"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "John Hughes"
+			},
+			{
+				"tag": "Dodie Smith"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Glenn Close"
+			},
+			{
+				"tag": "Jeff Daniels"
+			},
+			{
+				"tag": "Joely Richardson"
+			}
+		]
+	},
+	{
+		"ratingKey": "10371",
+		"key": "/library/metadata/10371",
+		"guid": "plex://movie/5d7768296f4521001ea99959",
+		"studio": "Virtual Studios",
+		"type": "movie",
+		"title": "300",
+		"contentRating": "R",
+		"summary": "Based on Frank Miller's graphic novel, \"300\" is very loosely based the 480 B.C. Battle of Thermopylae, where the King of Sparta led his army against the advancing Persians; the battle is said to have inspired all of Greece to band together against the Persians, and helped usher in the world's first democracy.",
+		"rating": 6.1,
+		"audienceRating": 8.9,
+		"year": 2007,
+		"tagline": "Prepare for glory!",
+		"thumb": "/library/metadata/10371/thumb/1712000150",
+		"duration": 6998783,
+		"originallyAvailableAt": "2007-03-07",
+		"addedAt": 1679614281,
+		"updatedAt": 1712000150,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23173,
+				"duration": 6998783,
+				"bitrate": 25841,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 23288,
+						"key": "/library/parts/23288/1679538767/file.m2ts",
+						"duration": 6998783,
+						"file": "/volume1/Movies/300 (2007).m2ts",
+						"size": 22607075328,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Zack Snyder"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Frank Miller"
+			},
+			{
+				"tag": "Zack Snyder"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Bulgaria"
+			},
+			{
+				"tag": "Canada"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Gerard Butler"
+			},
+			{
+				"tag": "Lena Headey"
+			},
+			{
+				"tag": "Dominic West"
+			}
+		]
+	},
+	{
+		"ratingKey": "5571",
+		"key": "/library/metadata/5571",
+		"guid": "plex://movie/5d776892fb0d55001f514289",
+		"studio": "Legendary Pictures",
+		"type": "movie",
+		"title": "300: Rise of an Empire",
+		"contentRating": "R",
+		"summary": "Greek general Themistocles attempts to unite all of Greece by leading the charge that will change the course of the war. Themistocles faces the massive invading Persian forces led by mortal-turned-god, Xerxes and Artemesia, the vengeful commander of the Persian navy.",
+		"rating": 4.5,
+		"audienceRating": 5.1,
+		"viewOffset": 71680,
+		"lastViewedAt": 1696633937,
+		"year": 2014,
+		"tagline": "Seize your glory!",
+		"thumb": "/library/metadata/5571/thumb/1712000150",
+		"art": "/library/metadata/5571/art/1712000150",
+		"duration": 6156768,
+		"originallyAvailableAt": "2014-03-05",
+		"addedAt": 1679614281,
+		"updatedAt": 1712000150,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 11907,
+				"duration": 6156768,
+				"bitrate": 12753,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11963,
+						"key": "/library/parts/11963/1679547514/file.mkv",
+						"duration": 6156768,
+						"file": "/volume1/Movies/300 Rise of an Empire (2014) 3D.mkv",
+						"size": 9814925472,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 11908,
+				"duration": 6156768,
+				"bitrate": 39413,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11964,
+						"key": "/library/parts/11964/1679566154/file.mkv",
+						"duration": 6156768,
+						"file": "/volume1/Movies/300 Rise of an Empire (2014).mkv",
+						"size": 30332334760,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Noam Murro"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Frank Miller"
+			},
+			{
+				"tag": "Zack Snyder"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sullivan Stapleton"
+			},
+			{
+				"tag": "Eva Green"
+			},
+			{
+				"tag": "Lena Headey"
+			}
+		]
+	},
+	{
+		"ratingKey": "2",
+		"key": "/library/metadata/2",
+		"guid": "plex://movie/5d77705edd931c001e38bde2",
+		"studio": "DreamWorks Pictures",
+		"type": "movie",
+		"title": "1917",
+		"contentRating": "R",
+		"summary": "April 6th, 1917. As an infantry battalion assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.",
+		"rating": 8.9,
+		"audienceRating": 8.8,
+		"viewOffset": 3211000,
+		"lastViewedAt": 1677370104,
+		"year": 2020,
+		"tagline": "Time is the enemy",
+		"thumb": "/library/metadata/2/thumb/1711898763",
+		"art": "/library/metadata/2/art/1711898763",
+		"duration": 7138156,
+		"originallyAvailableAt": "2020-01-02",
+		"addedAt": 1617342026,
+		"updatedAt": 1711898763,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 2,
+				"duration": 7138156,
+				"bitrate": 19345,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 2,
+						"key": "/library/parts/2/1617342026/file.mkv",
+						"duration": 7138156,
+						"file": "/volume1/Movies/1917 (2019).mkv",
+						"size": 17260903092,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "War"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Sam Mendes"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Sam Mendes"
+			},
+			{
+				"tag": "Krysty Wilson-Cairns"
+			}
+		],
+		"Country": [
+			{
+				"tag": "India"
+			},
+			{
+				"tag": "Spain"
+			}
+		],
+		"Role": [
+			{
+				"tag": "George MacKay"
+			},
+			{
+				"tag": "Dean-Charles Chapman"
+			},
+			{
+				"tag": "Mark Strong"
+			}
+		]
+	},
+	{
+		"ratingKey": "6258",
+		"key": "/library/metadata/6258",
+		"guid": "plex://movie/5d77683bf59e580021899679",
+		"studio": "Columbia Pictures",
+		"type": "movie",
+		"title": "2012",
+		"contentRating": "PG-13",
+		"summary": "A frustrated writer struggles to keep his family alive when a series of global catastrophes threatens to annihilate mankind.",
+		"rating": 3.9,
+		"audienceRating": 4.7,
+		"viewCount": 2,
+		"lastViewedAt": 1705894837,
+		"year": 2009,
+		"tagline": "We Were Warned.",
+		"thumb": "/library/metadata/6258/thumb/1712000151",
+		"art": "/library/metadata/6258/art/1712000151",
+		"duration": 9471488,
+		"originallyAvailableAt": "2009-11-11",
+		"addedAt": 1680033834,
+		"updatedAt": 1712000151,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13526,
+				"duration": 9471488,
+				"bitrate": 26959,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13586,
+						"key": "/library/parts/13586/1680011064/file.mkv",
+						"duration": 9471488,
+						"file": "/volume1/Movies/2012 (2009).mkv",
+						"size": 31918102346,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Roland Emmerich"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Harald Kloser"
+			},
+			{
+				"tag": "Roland Emmerich"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "John Cusack"
+			},
+			{
+				"tag": "Amanda Peet"
+			},
+			{
+				"tag": "Chiwetel Ejiofor"
+			}
+		]
+	},
+	{
+		"ratingKey": "9622",
+		"key": "/library/metadata/9622",
+		"guid": "plex://movie/5d77682c8718ba001e31296e",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "The Abyss",
+		"titleSort": "Abyss",
+		"contentRating": "PG-13",
+		"summary": "Formerly married petroleum engineers who still have some issues to work out. They are drafted to assist a gung-ho Navy SEAL with a top-secret recovery operation: a nuclear sub has been ambushed and sunk, under mysterious circumstances, in some of the deepest waters on Earth.",
+		"rating": 8.9,
+		"audienceRating": 8.3,
+		"viewCount": 1,
+		"lastViewedAt": 1704844097,
+		"year": 1989,
+		"tagline": "When you get there, you will understand.",
+		"thumb": "/library/metadata/9622/thumb/1711898763",
+		"duration": 8416074,
+		"originallyAvailableAt": "1989-08-09",
+		"addedAt": 1586923499,
+		"updatedAt": 1711898763,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21538,
+				"duration": 8416074,
+				"bitrate": 30630,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "mpeg2video",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "NTSC",
+				"audioProfile": "dts",
+				"videoProfile": "main",
+				"Part": [
+					{
+						"id": 21639,
+						"key": "/library/parts/21639/1586923499/file.mkv",
+						"duration": 8416074,
+						"file": "/volume1/Movies/The Abyss (1989).mkv",
+						"size": 18499750793,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "main"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "James Cameron"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "James Cameron"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ed Harris"
+			},
+			{
+				"tag": "Mary Elizabeth Mastrantonio"
+			},
+			{
+				"tag": "Michael Biehn"
+			}
+		]
+	},
+	{
+		"ratingKey": "10004",
+		"key": "/library/metadata/10004",
+		"guid": "plex://movie/5d776b417a53e9001e71f6d1",
+		"studio": "Zero Gravity Management",
+		"type": "movie",
+		"title": "The Accountant",
+		"titleSort": "Accountant",
+		"contentRating": "R",
+		"summary": "As a math savant uncooks the books for a new client, the Treasury Department closes in on his activities, and the body count starts to rise.",
+		"rating": 5.3,
+		"audienceRating": 7.6,
+		"viewOffset": 5639030,
+		"lastViewedAt": 1696295179,
+		"year": 2016,
+		"tagline": "Calculate your choices.",
+		"thumb": "/library/metadata/10004/thumb/1711898642",
+		"duration": 7674292,
+		"originallyAvailableAt": "2016-10-13",
+		"addedAt": 1677432444,
+		"updatedAt": 1711898642,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 22412,
+				"duration": 7674292,
+				"bitrate": 8418,
+				"width": 1280,
+				"height": 536,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22521,
+						"key": "/library/parts/22521/1483322171/file.mkv",
+						"duration": 7674292,
+						"file": "/volume1/Movies/The Accountant (2016).mkv",
+						"size": 8074955619,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Gavin O'Connor"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Bill Dubuque"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ben Affleck"
+			},
+			{
+				"tag": "Anna Kendrick"
+			},
+			{
+				"tag": "J.K. Simmons"
+			}
+		]
+	},
+	{
+		"ratingKey": "8703",
+		"key": "/library/metadata/8703",
+		"guid": "plex://movie/5d7768b2decfcd001f2f0909",
+		"studio": "Bavaria Film",
+		"type": "movie",
+		"title": "Ace of Aces",
+		"originalTitle": "L'As des as",
+		"summary": "In 1936, a French boxer on his way to the Berlin Olympic Games befriends a local Jewish boy and decides to save him from the Nazis.",
+		"audienceRating": 8,
+		"year": 1982,
+		"thumb": "/library/metadata/8703/thumb/1711898764",
+		"art": "/library/metadata/8703/art/1711898764",
+		"duration": 6233056,
+		"originallyAvailableAt": "1982-10-27",
+		"addedAt": 1694816483,
+		"updatedAt": 1711898764,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"Media": [
+			{
+				"id": 19190,
+				"duration": 6233056,
+				"bitrate": 20530,
+				"width": 1792,
+				"height": 1080,
+				"aspectRatio": 1.66,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19265,
+						"key": "/library/parts/19265/1694369799/file.mkv",
+						"duration": 6233056,
+						"file": "/volume3/MoviesB/Movis/L'as des as (1982).mkv",
+						"size": 15998353862,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Gérard Oury"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Danièle Thompson"
+			},
+			{
+				"tag": "Gérard Oury"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "Germany"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jean-Paul Belmondo"
+			},
+			{
+				"tag": "Marie-France Pisier"
+			},
+			{
+				"tag": "Rachid Ferrache"
+			}
+		]
+	},
+	{
+		"ratingKey": "5295",
+		"key": "/library/metadata/5295",
+		"guid": "plex://movie/5d776840eb5d26001f1e3615",
+		"studio": "Paramount",
+		"type": "movie",
+		"title": "The Adventures of Tintin",
+		"titleSort": "Adventures of Tintin",
+		"contentRating": "PG",
+		"summary": "Intrepid reporter Tintin and Captain Haddock set off on a treasure hunt for a sunken ship commanded by Haddock's ancestor.",
+		"rating": 7.5,
+		"audienceRating": 7.4,
+		"viewOffset": 823630,
+		"lastViewedAt": 1705102978,
+		"year": 2011,
+		"tagline": "This year, discover how far adventure will take you.",
+		"thumb": "/library/metadata/5295/thumb/1712000151",
+		"art": "/library/metadata/5295/art/1712000151",
+		"duration": 6411808,
+		"originallyAvailableAt": "2011-10-26",
+		"addedAt": 1679138991,
+		"updatedAt": 1712000151,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 11279,
+				"duration": 6411808,
+				"bitrate": 28851,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11335,
+						"key": "/library/parts/11335/1679090445/file.mkv",
+						"duration": 6411808,
+						"file": "/volume1/Movies/The Adventures of Tintin (2011).mkv",
+						"size": 23123544580,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Steven Spielberg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Edgar Wright"
+			},
+			{
+				"tag": "Hergé"
+			}
+		],
+		"Country": [
+			{
+				"tag": "New Zealand"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jamie Bell"
+			},
+			{
+				"tag": "Andy Serkis"
+			},
+			{
+				"tag": "Daniel Craig"
+			}
+		]
+	},
+	{
+		"ratingKey": "6758",
+		"key": "/library/metadata/6758",
+		"guid": "plex://movie/5d7768352e80df001ebde5e3",
+		"studio": "New Line Cinema",
+		"type": "movie",
+		"title": "After the Sunset",
+		"contentRating": "PG-13",
+		"summary": "The story of what happens after a master thief achieves his last big score, when the F.B.I. Agent who promised he'd capture him, is about to do just that.",
+		"rating": 1.8,
+		"audienceRating": 5.2,
+		"skipCount": 2,
+		"year": 2004,
+		"tagline": "Who will walk away?",
+		"thumb": "/library/metadata/6758/thumb/1712000152",
+		"art": "/library/metadata/6758/art/1712000152",
+		"duration": 5839840,
+		"originallyAvailableAt": "2004-11-10",
+		"addedAt": 1680346461,
+		"updatedAt": 1712000152,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 14672,
+				"duration": 5839840,
+				"bitrate": 15360,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14732,
+						"key": "/library/parts/14732/1680248030/file.mkv",
+						"duration": 5839840,
+						"file": "/volume1/Movies/After the Sunset (2004).mkv",
+						"size": 11212462667,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Brett Ratner"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Craig Rosenberg"
+			},
+			{
+				"tag": "Paul Zbyszewski"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Pierce Brosnan"
+			},
+			{
+				"tag": "Salma Hayek Pinault"
+			},
+			{
+				"tag": "Woody Harrelson"
+			}
+		]
+	},
+	{
+		"ratingKey": "8367",
+		"key": "/library/metadata/8367",
+		"guid": "plex://movie/61bd9c1da3db0a63cb37f924",
+		"studio": "Amazon Studios",
+		"type": "movie",
+		"title": "Air",
+		"contentRating": "R",
+		"summary": "Discover the game-changing partnership between a then undiscovered Michael Jordan and Nike's fledgling basketball division which revolutionized the world of sports and culture with the Air Jordan brand.",
+		"audienceRating": 7.4,
+		"viewCount": 1,
+		"lastViewedAt": 1684712620,
+		"year": 2023,
+		"tagline": "Some icons are meant to fly.",
+		"thumb": "/library/metadata/8367/thumb/1712000152",
+		"art": "/library/metadata/8367/art/1712000152",
+		"duration": 6850176,
+		"originallyAvailableAt": "2023-04-05",
+		"addedAt": 1684707229,
+		"updatedAt": 1712000152,
+		"audienceRatingImage": "imdb://image.rating",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"Media": [
+			{
+				"id": 18176,
+				"duration": 6850176,
+				"bitrate": 9295,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18305,
+						"key": "/library/parts/18305/1684704077/file.mkv",
+						"duration": 6850176,
+						"file": "/volume3/MoviesB/Movis/Air (2023).mkv",
+						"size": 7962528454,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Sport"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ben Affleck"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Alex Convery"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Matt Damon"
+			},
+			{
+				"tag": "Ben Affleck"
+			},
+			{
+				"tag": "Jason Bateman"
+			}
+		]
+	},
+	{
+		"ratingKey": "5840",
+		"key": "/library/metadata/5840",
+		"guid": "plex://movie/5d776c7ffb0d55001f5892da",
+		"studio": "Walt Disney Pictures",
+		"type": "movie",
+		"title": "Aladdin",
+		"contentRating": "PG",
+		"summary": "Kind-hearted street urchin Aladdin vies for the love of beautiful Princess Jasmine of Agrabah. When he finds a magic lamp, he uses the genie's magic power to make himself a prince in order to marry her. He's also on a mission to stop the powerful Jafar, who plots to steal the magic lamp that could make his deepest wishes come true.",
+		"rating": 5.7,
+		"audienceRating": 9.4,
+		"year": 2019,
+		"tagline": "Choose Wisely.",
+		"thumb": "/library/metadata/5840/thumb/1711898765",
+		"art": "/library/metadata/5840/art/1711898765",
+		"duration": 7678944,
+		"originallyAvailableAt": "2019-05-22",
+		"addedAt": 1679751616,
+		"updatedAt": 1711898765,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12491,
+				"duration": 7678944,
+				"bitrate": 33845,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12548,
+						"key": "/library/parts/12548/1679704907/file.m2ts",
+						"duration": 7678944,
+						"file": "/volume1/Movies/Aladdin (2019).m2ts",
+						"size": 32486731776,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Romance"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Guy Ritchie"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Guy Ritchie"
+			},
+			{
+				"tag": "John August"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Will Smith"
+			},
+			{
+				"tag": "Mena Massoud"
+			},
+			{
+				"tag": "Naomi Scott"
+			}
+		]
+	},
+	{
+		"ratingKey": "7711",
+		"key": "/library/metadata/7711",
+		"guid": "plex://movie/5d7768254de0ee001fcc83a5",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Alien",
+		"contentRating": "R",
+		"summary": "During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.",
+		"rating": 9.3,
+		"audienceRating": 9.4,
+		"viewOffset": 4474200,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1707772090,
+		"year": 1979,
+		"tagline": "In space, no one can hear you scream.",
+		"thumb": "/library/metadata/7711/thumb/1711898765",
+		"art": "/library/metadata/7711/art/1711898765",
+		"duration": 6950048,
+		"originallyAvailableAt": "1979-05-28",
+		"addedAt": 1681122030,
+		"updatedAt": 1711898765,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16810,
+				"duration": 6950048,
+				"bitrate": 43171,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16924,
+						"key": "/library/parts/16924/1681153635/file.mkv",
+						"duration": 6950048,
+						"file": "/volume1/Movies/Alien (1979).mkv",
+						"size": 37504888810,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ridley Scott"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Dan O'Bannon"
+			},
+			{
+				"tag": "Ronald Shusett"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sigourney Weaver"
+			},
+			{
+				"tag": "Tom Skerritt"
+			},
+			{
+				"tag": "Ian Holm"
+			}
+		]
+	},
+	{
+		"ratingKey": "7610",
+		"key": "/library/metadata/7610",
+		"guid": "plex://movie/5d77683161141d001fb14b9e",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Alien Resurrection",
+		"contentRating": "R",
+		"summary": "The saga continues 200 years after Ripley sacrificed herself for the sake of humanity. Her erstwhile employers long gone, this time it is the military that resurrects the one-woman killing machine through genetic cloning to extract the alien from within her, but during the process her DNA is fused with the queen and then the aliens escape. Now Ripley must decide where her allegiance lies.",
+		"rating": 5.4,
+		"audienceRating": 3.9,
+		"viewOffset": 4300777,
+		"lastViewedAt": 1708817746,
+		"year": 1997,
+		"tagline": "It's already too late.",
+		"thumb": "/library/metadata/7610/thumb/1711898765",
+		"art": "/library/metadata/7610/art/1711898765",
+		"duration": 6968766,
+		"originallyAvailableAt": "1997-11-12",
+		"addedAt": 1465411352,
+		"updatedAt": 1711898765,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16566,
+				"duration": 6968766,
+				"bitrate": 50513,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16631,
+						"key": "/library/parts/16631/1681149818/file.mkv",
+						"duration": 6968766,
+						"file": "/volume1/Movies/Alien Resurrection (1997).mkv",
+						"size": 44012442121,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jean-Pierre Jeunet"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Dan O'Bannon"
+			},
+			{
+				"tag": "Ronald Shusett"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "France"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sigourney Weaver"
+			},
+			{
+				"tag": "Winona Ryder"
+			},
+			{
+				"tag": "Dominique Pinon"
+			}
+		]
+	},
+	{
+		"ratingKey": "7720",
+		"key": "/library/metadata/7720",
+		"guid": "plex://movie/5d776826880197001ec905d1",
+		"studio": "Revolution Sun Studios",
+		"type": "movie",
+		"title": "Alien vs. Predator",
+		"originalTitle": "AVP: Alien vs. Predator",
+		"contentRating": "PG-13",
+		"summary": "During an archaeological expedition on Bouvetøya Island in Antarctica, a team of archaeologists and other scientists find themselves caught up in a battle between the two legends. Soon, the team realize that only one species can win.",
+		"rating": 2.2,
+		"audienceRating": 3.9,
+		"viewOffset": 548212,
+		"lastViewedAt": 1681759821,
+		"year": 2004,
+		"tagline": "Whoever wins...we lose.",
+		"thumb": "/library/metadata/7720/thumb/1712000153",
+		"art": "/library/metadata/7720/art/1712000153",
+		"duration": 6520694,
+		"originallyAvailableAt": "2004-08-12",
+		"addedAt": 1681122032,
+		"updatedAt": 1712000153,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16826,
+				"duration": 6520694,
+				"bitrate": 21046,
+				"width": 1920,
+				"height": 818,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16926,
+						"key": "/library/parts/16926/1681152825/file.mkv",
+						"duration": 6520694,
+						"file": "/volume1/Movies/Alien vs. Predator (2004).mkv",
+						"size": 17154049130,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Paul W. S. Anderson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Paul W. S. Anderson"
+			},
+			{
+				"tag": "Jim Thomas"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Czech Republic"
+			},
+			{
+				"tag": "Germany"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sanaa Lathan"
+			},
+			{
+				"tag": "Raoul Bova"
+			},
+			{
+				"tag": "Lance Henriksen"
+			}
+		]
+	},
+	{
+		"ratingKey": "10378",
+		"key": "/library/metadata/10378",
+		"guid": "plex://movie/5d77683161141d001fb14ba5",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Alien³",
+		"contentRating": "R",
+		"summary": "Ellen Ripley (Sigourney Weaver) is the only survivor when she crash lands on Fiorina 161, a bleak wasteland inhabited by former inmates of the planet's maximum security prison. Once again, Ripley must face skepticism and the alien as it hunts down the prisoners and guards. Without weapons or modern technology of any kind, Ripley leads the men into battle against the terrifying creature.",
+		"rating": 4.8,
+		"audienceRating": 4.7,
+		"viewOffset": 6674315,
+		"lastViewedAt": 1707778790,
+		"year": 1992,
+		"tagline": "3 times the suspense. 3 times the danger. 3 times the terror.",
+		"thumb": "/library/metadata/10378/thumb/1712000154",
+		"duration": 8692704,
+		"originallyAvailableAt": "1992-05-22",
+		"addedAt": 1681122031,
+		"updatedAt": 1712000154,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23187,
+				"duration": 8692704,
+				"bitrate": 40266,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23305,
+						"key": "/library/parts/23305/1681149906/file.mkv",
+						"duration": 8692704,
+						"file": "/volume1/Movies/Alien³ (1992).mkv",
+						"size": 43766451063,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David Fincher"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Larry Ferguson"
+			},
+			{
+				"tag": "David Giler"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sigourney Weaver"
+			},
+			{
+				"tag": "Charles S. Dutton"
+			},
+			{
+				"tag": "Charles Dance"
+			}
+		]
+	},
+	{
+		"ratingKey": "7714",
+		"key": "/library/metadata/7714",
+		"guid": "plex://movie/5d776827961905001eb91337",
+		"studio": "SLM Production Group",
+		"type": "movie",
+		"title": "Aliens",
+		"contentRating": "R",
+		"summary": "Ripley, the sole survivor of the Nostromo's deadly encounter with the monstrous Alien, returns to Earth after drifting through space in hypersleep for 57 years. Although her story is initially met with skepticism, she agrees to accompany a team of Colonial Marines back to LV-426.",
+		"rating": 9.8,
+		"audienceRating": 9.4,
+		"viewOffset": 6051642,
+		"lastViewedAt": 1682804947,
+		"year": 1986,
+		"tagline": "This time it's war.",
+		"thumb": "/library/metadata/7714/thumb/1712000155",
+		"art": "/library/metadata/7714/art/1712000155",
+		"duration": 9266966,
+		"originallyAvailableAt": "1986-07-18",
+		"addedAt": 1681122032,
+		"updatedAt": 1712000155,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16860,
+				"duration": 9266966,
+				"bitrate": 48723,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16927,
+						"key": "/library/parts/16927/1681157026/file.mkv",
+						"duration": 9266966,
+						"file": "/volume1/Movies/Aliens (1986).mkv",
+						"size": 56439256065,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "James Cameron"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David Giler"
+			},
+			{
+				"tag": "Walter Hill"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sigourney Weaver"
+			},
+			{
+				"tag": "Michael Biehn"
+			},
+			{
+				"tag": "Lance Henriksen"
+			}
+		]
+	},
+	{
+		"ratingKey": "7721",
+		"key": "/library/metadata/7721",
+		"guid": "plex://movie/5d77682685719b001f3a0a6a",
+		"studio": "Dune Entertainment",
+		"type": "movie",
+		"title": "Aliens vs. Predator: Requiem",
+		"originalTitle": "AVPR: Aliens vs Predator - Requiem",
+		"contentRating": "R",
+		"summary": "Warring Alien and Predator races descend on a rural Colorado town, where unsuspecting residents must band together for any chance of survival.",
+		"rating": 1.2,
+		"audienceRating": 3,
+		"viewOffset": 524190,
+		"viewCount": 1,
+		"lastViewedAt": 1681773414,
+		"year": 2007,
+		"tagline": "On Earth everyone can hear you scream.",
+		"thumb": "/library/metadata/7721/thumb/1712000155",
+		"art": "/library/metadata/7721/art/1712000155",
+		"duration": 6067904,
+		"originallyAvailableAt": "2007-12-25",
+		"addedAt": 1681122033,
+		"updatedAt": 1712000155,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16861,
+				"duration": 6067904,
+				"bitrate": 18025,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22125,
+						"key": "/library/parts/22125/1681154486/file.mkv",
+						"duration": 6067904,
+						"file": "/volume1/Movies/Aliens vs. Predator Requiem (2007).mkv",
+						"size": 13674859352,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Fantasy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Colin Strause"
+			},
+			{
+				"tag": "Greg Strause"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jim Thomas"
+			},
+			{
+				"tag": "John Thomas"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Steven Pasquale"
+			},
+			{
+				"tag": "Reiko Aylesworth"
+			},
+			{
+				"tag": "John Ortiz"
+			}
+		]
+	},
+	{
+		"ratingKey": "6076",
+		"key": "/library/metadata/6076",
+		"guid": "plex://movie/5d776c459ab5440021514cad",
+		"studio": "Troublemaker Studios",
+		"type": "movie",
+		"title": "Alita: Battle Angel",
+		"contentRating": "PG-13",
+		"summary": "When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.",
+		"rating": 6.2,
+		"audienceRating": 9.1,
+		"year": 2019,
+		"tagline": "An angel falls. A warrior rises.",
+		"thumb": "/library/metadata/6076/thumb/1712000156",
+		"art": "/library/metadata/6076/art/1712000156",
+		"duration": 7317280,
+		"originallyAvailableAt": "2019-02-05",
+		"addedAt": 1679783092,
+		"updatedAt": 1712000156,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 13062,
+				"duration": 7317280,
+				"bitrate": 14731,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13129,
+						"key": "/library/parts/13129/1679786638/file.mkv",
+						"duration": 7317280,
+						"file": "/volume1/Movies/Alita Battle Angel (2019) 3D.mkv",
+						"size": 13473526369,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 13313,
+				"duration": 6951392,
+				"bitrate": 34262,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13372,
+						"key": "/library/parts/13372/1679829206/file.m2ts",
+						"duration": 6951392,
+						"file": "/volume1/Movies/Alita Battle Angel (2019).m2ts",
+						"size": 29770733568,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Robert Rodriguez"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "James Cameron"
+			},
+			{
+				"tag": "Laeta Kalogridis"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Rosa Salazar"
+			},
+			{
+				"tag": "Christoph Waltz"
+			},
+			{
+				"tag": "Jennifer Connelly"
+			}
+		]
+	},
+	{
+		"ratingKey": "9519",
+		"key": "/library/metadata/9519",
+		"guid": "plex://movie/5d776a58fb0d55001f5431ff",
+		"studio": "Vinyl Films",
+		"type": "movie",
+		"title": "Aloha",
+		"contentRating": "PG-13",
+		"summary": "A celebrated military contractor returns to the site of his greatest career triumphs and reconnects with a long-ago love while unexpectedly falling for the hard-charging Air Force watchdog assigned to him.",
+		"rating": 2,
+		"audienceRating": 2.9,
+		"viewCount": 1,
+		"lastViewedAt": 1698601256,
+		"year": 2015,
+		"tagline": "Sometimes you have to say goodbye before you can say hello.",
+		"thumb": "/library/metadata/9519/thumb/1711898768",
+		"duration": 6278304,
+		"originallyAvailableAt": "2015-05-28",
+		"addedAt": 1678568205,
+		"updatedAt": 1711898768,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21305,
+				"duration": 6278304,
+				"bitrate": 28214,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21406,
+						"key": "/library/parts/21406/1675866764/file.m2ts",
+						"duration": 6278304,
+						"file": "/volume1/Movies/Aloha (2015).m2ts",
+						"size": 23492198400,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Cameron Crowe"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Cameron Crowe"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Bradley Cooper"
+			},
+			{
+				"tag": "Emma Stone"
+			},
+			{
+				"tag": "Rachel McAdams"
+			}
+		]
+	},
+	{
+		"ratingKey": "7461",
+		"key": "/library/metadata/7461",
+		"guid": "plex://movie/5d77682454f42c001f8c24cb",
+		"studio": "France 3 Cinéma",
+		"type": "movie",
+		"title": "Amélie",
+		"titleSort": "Amelie",
+		"originalTitle": "Le Fabuleux Destin d'Amélie Poulain",
+		"contentRating": "R",
+		"summary": "At a tiny Parisian café, the adorable yet painfully shy Amélie accidentally discovers a gift for helping others. Soon Amelie is spending her days as a matchmaker, guardian angel, and all-around do-gooder. But when she bumps into a handsome stranger, will she find the courage to become the star of her very own love story?",
+		"rating": 9,
+		"audienceRating": 9.5,
+		"year": 2001,
+		"tagline": "She’ll change your life.",
+		"thumb": "/library/metadata/7461/thumb/1711898769",
+		"art": "/library/metadata/7461/art/1711898769",
+		"duration": 7322240,
+		"originallyAvailableAt": "2001-04-25",
+		"addedAt": 1680883936,
+		"updatedAt": 1711898769,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16255,
+				"duration": 7322240,
+				"bitrate": 8486,
+				"width": 1280,
+				"height": 544,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mp4",
+				"videoFrameRate": "24p",
+				"optimizedForStreaming": 1,
+				"has64bitOffsets": true,
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16319,
+						"key": "/library/parts/16319/1680847161/file.m4v",
+						"duration": 7322240,
+						"file": "/volume1/Movies/Le Fabuleux destin d'Amélie Poulain (2001).m4v",
+						"size": 7778579428,
+						"container": "mp4",
+						"has64bitOffsets": true,
+						"hasChapterVideoStream": true,
+						"hasThumbnail": "1",
+						"optimizedForStreaming": true,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jean-Pierre Jeunet"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jean-Pierre Jeunet"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "Germany"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Audrey Tautou"
+			},
+			{
+				"tag": "Mathieu Kassovitz"
+			},
+			{
+				"tag": "Rufus"
+			}
+		]
+	},
+	{
+		"ratingKey": "6936",
+		"key": "/library/metadata/6936",
+		"guid": "plex://movie/5d77682461141d001fb13340",
+		"studio": "DreamWorks Pictures",
+		"type": "movie",
+		"title": "American Beauty",
+		"contentRating": "R",
+		"summary": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
+		"rating": 8.7,
+		"audienceRating": 9.3,
+		"year": 1999,
+		"tagline": "Look closer.",
+		"thumb": "/library/metadata/6936/thumb/1711898768",
+		"art": "/library/metadata/6936/art/1711898768",
+		"duration": 7299968,
+		"originallyAvailableAt": "1999-10-01",
+		"addedAt": 1680449328,
+		"updatedAt": 1711898768,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15056,
+				"duration": 7299968,
+				"bitrate": 36919,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 15120,
+						"key": "/library/parts/15120/1680448194/file.mkv",
+						"duration": 7299968,
+						"file": "/volume1/Movies/American Beauty (1999).mkv",
+						"size": 33688106503,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Sam Mendes"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Alan Ball"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kevin Spacey"
+			},
+			{
+				"tag": "Annette Bening"
+			},
+			{
+				"tag": "Thora Birch"
+			}
+		]
+	},
+	{
+		"ratingKey": "9369",
+		"key": "/library/metadata/9369",
+		"guid": "plex://movie/636ff7029cfc5f11985d7e6c",
+		"studio": "MRC",
+		"type": "movie",
+		"title": "American Fiction",
+		"contentRating": "R",
+		"summary": "A novelist who's fed up with the establishment profiting from Black entertainment uses a pen name to write a book that propels him into the heart of the hypocrisy and madness he claims to disdain.",
+		"rating": 9.3,
+		"audienceRating": 9.6,
+		"year": 2023,
+		"thumb": "/library/metadata/9369/thumb/1712000158",
+		"art": "/library/metadata/9369/art/1712000158",
+		"duration": 7019470,
+		"originallyAvailableAt": "2023-12-15",
+		"addedAt": 1710700292,
+		"updatedAt": 1712000158,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20916,
+				"duration": 7019470,
+				"bitrate": 8168,
+				"width": 1920,
+				"height": 816,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 20994,
+						"key": "/library/parts/20994/1708127974/file.mkv",
+						"duration": 7019470,
+						"file": "/volume3/MoviesB/Movis/American Fiction (2023).mkv",
+						"size": 7168975985,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Cord Jefferson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Cord Jefferson"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jeffrey Wright"
+			},
+			{
+				"tag": "John Ortiz"
+			},
+			{
+				"tag": "Erika Alexander"
+			}
+		]
+	},
+	{
+		"ratingKey": "6937",
+		"key": "/library/metadata/6937",
+		"guid": "plex://movie/5d7768242ec6b5001f6ba12d",
+		"studio": "New Line Cinema",
+		"type": "movie",
+		"title": "American History X",
+		"contentRating": "R",
+		"summary": "Living a life marked by violence, neo-Nazi Derek finally goes to prison after killing two black youths. Upon his release, Derek vows to change; he hopes to prevent his brother, Danny, who idolizes Derek, from following in his footsteps.",
+		"rating": 8.4,
+		"audienceRating": 9.6,
+		"year": 1998,
+		"tagline": "Some Legacies Must End.",
+		"thumb": "/library/metadata/6937/thumb/1710700574",
+		"art": "/library/metadata/6937/art/1710700574",
+		"duration": 7133408,
+		"originallyAvailableAt": "1998-07-01",
+		"addedAt": 1680449328,
+		"updatedAt": 1710700574,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15057,
+				"duration": 7133408,
+				"bitrate": 30104,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 15121,
+						"key": "/library/parts/15121/1680401104/file.mkv",
+						"duration": 7133408,
+						"file": "/volume1/Movies/American History X (1998).mkv",
+						"size": 26843229796,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Tony Kaye"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David McKenna"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Edward Norton"
+			},
+			{
+				"tag": "Edward Furlong"
+			},
+			{
+				"tag": "Beverly D'Angelo"
+			}
+		]
+	},
+	{
+		"ratingKey": "8465",
+		"key": "/library/metadata/8465",
+		"guid": "plex://movie/5d776ab8fb0d55001f54ef45",
+		"studio": "Merced Media Partners",
+		"type": "movie",
+		"title": "American Ultra",
+		"contentRating": "R",
+		"summary": "Mike is an unmotivated stoner whose small-town life with his live-in girlfriend, Phoebe, is suddenly turned upside down.  Unbeknownst to him, Mike is actually a highly trained, lethal sleeper agent. In the blink of an eye, as his secret past comes back to haunt him, Mike is thrust into the middle of a deadly government operation and is forced to summon his inner action-hero in order to survive.",
+		"rating": 4.4,
+		"audienceRating": 4.5,
+		"year": 2015,
+		"tagline": "Everyone's getting smoked.",
+		"thumb": "/library/metadata/8465/thumb/1711898769",
+		"art": "/library/metadata/8465/art/1711898769",
+		"duration": 5741919,
+		"originallyAvailableAt": "2015-08-19",
+		"addedAt": 1688512791,
+		"updatedAt": 1711898769,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 18567,
+				"duration": 5741919,
+				"bitrate": 19649,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18641,
+						"key": "/library/parts/18641/1688252773/file.mkv",
+						"duration": 5741919,
+						"file": "/volume3/MoviesB/Movis/American Ultra (2015).mkv",
+						"size": 14106291723,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Nima Nourizadeh"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Max Landis"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Switzerland"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jesse Eisenberg"
+			},
+			{
+				"tag": "Kristen Stewart"
+			},
+			{
+				"tag": "Topher Grace"
+			}
+		]
+	},
+	{
+		"ratingKey": "7477",
+		"key": "/library/metadata/7477",
+		"guid": "plex://movie/5f408f6602101b004004429f",
+		"studio": "DreamCrew",
+		"type": "movie",
+		"title": "Amsterdam",
+		"contentRating": "R",
+		"summary": "\"Amsterdam,\" the latest film from acclaimed writer/director David O. Russell, is a fascinating and richly intricate tale that brilliantly weaves historical fact with fiction for a timely, cinematic experience. 20th Century Studios' and New Regency's original crime epic is about three close friends who find themselves at the center of one of the most shocking secret plots in American history.",
+		"rating": 3.2,
+		"audienceRating": 6.2,
+		"year": 2022,
+		"tagline": "Let the love, murder and conspiracy begin.",
+		"thumb": "/library/metadata/7477/thumb/1711898769",
+		"art": "/library/metadata/7477/art/1711898769",
+		"duration": 8055296,
+		"originallyAvailableAt": "2022-10-05",
+		"addedAt": 1680956617,
+		"updatedAt": 1711898769,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16293,
+				"duration": 8055296,
+				"bitrate": 36913,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16357,
+						"key": "/library/parts/16357/1680968044/file.mkv",
+						"duration": 8055296,
+						"file": "/volume1/Movies/Amsterdam (2022).mkv",
+						"size": 37174232704,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David O. Russell"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David O. Russell"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Christian Bale"
+			},
+			{
+				"tag": "Margot Robbie"
+			},
+			{
+				"tag": "John David Washington"
+			}
+		]
+	},
+	{
+		"ratingKey": "5573",
+		"key": "/library/metadata/5573",
+		"guid": "plex://movie/5d77683a880197001ec946c0",
+		"studio": "Columbia Pictures",
+		"type": "movie",
+		"title": "Angels & Demons",
+		"contentRating": "PG-13",
+		"summary": "Harvard symbologist Robert Langdon is recruited by the Vatican to investigate the apparent return of the Illuminati - a secret, underground organization - after four cardinals are kidnapped on the night of the papal conclave.",
+		"rating": 3.7,
+		"audienceRating": 5.7,
+		"year": 2009,
+		"tagline": "The holiest event of our time. Perfect for their return.",
+		"thumb": "/library/metadata/5573/thumb/1712000159",
+		"art": "/library/metadata/5573/art/1712000159",
+		"duration": 8775819,
+		"originallyAvailableAt": "2009-05-13",
+		"addedAt": 1679614282,
+		"updatedAt": 1712000159,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 11909,
+				"duration": 8775819,
+				"bitrate": 27319,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11965,
+						"key": "/library/parts/11965/1679528145/file.mkv",
+						"duration": 8775819,
+						"file": "/volume1/Movies/Angels & Demons (2009).mkv",
+						"size": 29968199629,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Mystery"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ron Howard"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David Koepp"
+			},
+			{
+				"tag": "Akiva Goldsman"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Italy"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tom Hanks"
+			},
+			{
+				"tag": "Ewan McGregor"
+			},
+			{
+				"tag": "Ayelet Zurer"
+			}
+		]
+	},
+	{
+		"ratingKey": "6467",
+		"key": "/library/metadata/6467",
+		"guid": "plex://movie/5d9f34f8d5fd3f001ee14935",
+		"studio": "Columbia Pictures",
+		"type": "movie",
+		"title": "Anger Management",
+		"contentRating": "PG-13",
+		"summary": "After a small misunderstanding aboard an airplane escalates out of control, timid businessman Dave Buznik is ordered by the court to undergo anger management therapy at the hands of specialist Dr. Buddy Rydell. But when Buddy steps up his aggressive treatment by moving in, Dave goes from mild to wild as the unorthodox treatment wreaks havoc with his life.",
+		"rating": 4.2,
+		"audienceRating": 5.9,
+		"viewCount": 1,
+		"lastViewedAt": 1681340565,
+		"year": 2003,
+		"tagline": "Feel the love.",
+		"thumb": "/library/metadata/6467/thumb/1711898770",
+		"art": "/library/metadata/6467/art/1711898770",
+		"duration": 6358368,
+		"originallyAvailableAt": "2003-04-11",
+		"addedAt": 1680131676,
+		"updatedAt": 1711898770,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13953,
+				"duration": 6358368,
+				"bitrate": 33218,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14013,
+						"key": "/library/parts/14013/1680134394/file.mkv",
+						"duration": 6358368,
+						"file": "/volume1/Movies/Anger Management (2003).mkv",
+						"size": 26401489764,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peter Segal"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David Dorfman"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Adam Sandler"
+			},
+			{
+				"tag": "Jack Nicholson"
+			},
+			{
+				"tag": "Marisa Tomei"
+			}
+		]
+	},
+	{
+		"ratingKey": "10281",
+		"key": "/library/metadata/10281",
+		"guid": "plex://movie/5d77690f7a53e9001e6e05a8",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Ant-Man",
+		"contentRating": "PG-13",
+		"summary": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.",
+		"rating": 8.3,
+		"audienceRating": 8.5,
+		"year": 2015,
+		"tagline": "Heroes don't get any bigger.",
+		"thumb": "/library/metadata/10281/thumb/1710700574",
+		"duration": 7026656,
+		"originallyAvailableAt": "2015-07-14",
+		"addedAt": 1568505122,
+		"updatedAt": 1710700574,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23005,
+				"duration": 7026656,
+				"bitrate": 19577,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23117,
+						"key": "/library/parts/23117/1568505122/file.mkv",
+						"duration": 7026656,
+						"file": "/volume1/Movies/Ant-Man (2015) 3D.mkv",
+						"size": 17194752095,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peyton Reed"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Paul Rudd"
+			},
+			{
+				"tag": "Stan Lee"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Paul Rudd"
+			},
+			{
+				"tag": "Michael Douglas"
+			},
+			{
+				"tag": "Evangeline Lilly"
+			}
+		]
+	},
+	{
+		"ratingKey": "10282",
+		"key": "/library/metadata/10282",
+		"guid": "plex://movie/5d776be596b655001fe1f7fa",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Ant-Man and the Wasp",
+		"contentRating": "PG-13",
+		"summary": "As Scott Lang balances being both a superhero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.",
+		"rating": 8.7,
+		"audienceRating": 7.9,
+		"year": 2018,
+		"tagline": "Real heroes. Not actual size.",
+		"thumb": "/library/metadata/10282/thumb/1711898728",
+		"duration": 7086560,
+		"originallyAvailableAt": "2018-07-04",
+		"addedAt": 1568507801,
+		"updatedAt": 1711898728,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23006,
+				"duration": 7086560,
+				"bitrate": 10470,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23118,
+						"key": "/library/parts/23118/1568507801/file.mkv",
+						"duration": 7086560,
+						"file": "/volume1/Movies/Ant-Man and the Wasp (2018) 3D.mkv",
+						"size": 9277274902,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peyton Reed"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Paul Rudd"
+			},
+			{
+				"tag": "Stan Lee"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Paul Rudd"
+			},
+			{
+				"tag": "Evangeline Lilly"
+			},
+			{
+				"tag": "Michael Peña"
+			}
+		]
+	},
+	{
+		"ratingKey": "8368",
+		"key": "/library/metadata/8368",
+		"guid": "plex://movie/5e161a83bea6ac004126e148",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Ant-Man and the Wasp: Quantumania",
+		"contentRating": "PG-13",
+		"summary": "Scott Lang and Hope Van Dyne are dragged into the Quantum Realm, along with Hope's parents and Scott's daughter Cassie. Together they must find a way to escape, but what secrets is Hope's mother hiding? And who is the mysterious Kang?",
+		"rating": 4.6,
+		"audienceRating": 8.2,
+		"year": 2023,
+		"tagline": "Witness the beginning of a new dynasty.",
+		"thumb": "/library/metadata/8368/thumb/1711898771",
+		"art": "/library/metadata/8368/art/1711898771",
+		"duration": 7473152,
+		"originallyAvailableAt": "2023-02-15",
+		"addedAt": 1684707229,
+		"updatedAt": 1711898771,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 18177,
+				"duration": 7473152,
+				"bitrate": 17643,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 8,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18306,
+						"key": "/library/parts/18306/1684706698/file.mkv",
+						"duration": 7473152,
+						"file": "/volume3/MoviesB/Movis/Ant-Man and the Wasp Quantumania (2023).mkv",
+						"size": 16485456930,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peyton Reed"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jeff Loveness"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Paul Rudd"
+			},
+			{
+				"tag": "Evangeline Lilly"
+			},
+			{
+				"tag": "Jonathan Majors"
+			}
+		]
+	},
+	{
+		"ratingKey": "9520",
+		"key": "/library/metadata/9520",
+		"guid": "plex://movie/5d77682961141d001fb139f4",
+		"studio": "Icon Entertainment International",
+		"type": "movie",
+		"title": "Apocalypto",
+		"contentRating": "R",
+		"summary": "In the Maya civilization, a peaceful tribe is brutally attacked by warriors seeking slaves and human beings for sacrifice for their gods. Jaguar Paw hides his pregnant wife and his son in a deep hole nearby their tribe and is captured while fighting with his people. An eclipse spares his life from the sacrifice and later he has to fight to survive and save his beloved family.",
+		"rating": 6.5,
+		"audienceRating": 7.9,
+		"year": 2006,
+		"tagline": "No one can outrun their destiny.",
+		"thumb": "/library/metadata/9520/thumb/1711898771",
+		"duration": 8301364,
+		"originallyAvailableAt": "2006-12-08",
+		"addedAt": 1449699778,
+		"updatedAt": 1711898771,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21306,
+				"duration": 8301364,
+				"bitrate": 13375,
+				"width": 1280,
+				"height": 692,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21407,
+						"key": "/library/parts/21407/1449699778/file.mkv",
+						"duration": 8301364,
+						"file": "/volume1/Movies/Apocalypto (2006).mkv",
+						"size": 13883371235,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mel Gibson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mel Gibson"
+			},
+			{
+				"tag": "Farhad Safinia"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Rudy Youngblood"
+			},
+			{
+				"tag": "Raoul Max Trujillo"
+			},
+			{
+				"tag": "Gerardo Taracena"
+			}
+		]
+	},
+	{
+		"ratingKey": "6259",
+		"key": "/library/metadata/6259",
+		"guid": "plex://movie/5d776d14fb0d55001f596c45",
+		"studio": "Touchstone Pictures",
+		"type": "movie",
+		"title": "Armageddon",
+		"contentRating": "PG-13",
+		"summary": "When an asteroid threatens to collide with Earth, NASA honcho Dan Truman determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper, who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. who Harry thinks isn't good enough for his daughter, until the mission proves otherwise.",
+		"rating": 4.3,
+		"audienceRating": 7.3,
+		"viewCount": 1,
+		"lastViewedAt": 1696287421,
+		"year": 1998,
+		"tagline": "For love. For honor. For mankind.",
+		"thumb": "/library/metadata/6259/thumb/1710700575",
+		"art": "/library/metadata/6259/art/1710700575",
+		"duration": 9050219,
+		"originallyAvailableAt": "1998-07-01",
+		"addedAt": 1680033835,
+		"updatedAt": 1710700575,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13527,
+				"duration": 9050219,
+				"bitrate": 41109,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13587,
+						"key": "/library/parts/13587/1679968499/file.m2ts",
+						"duration": 9050219,
+						"file": "/volume1/Movies/Armageddon (1998).m2ts",
+						"size": 46506000384,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Michael Bay"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Robert Roy Pool"
+			},
+			{
+				"tag": "Jonathan Hensleigh"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Bruce Willis"
+			},
+			{
+				"tag": "Billy Bob Thornton"
+			},
+			{
+				"tag": "Ben Affleck"
+			}
+		]
+	},
+	{
+		"ratingKey": "7944",
+		"key": "/library/metadata/7944",
+		"guid": "plex://movie/5d776834961905001eb93aa4",
+		"studio": "Studio Babelsberg",
+		"type": "movie",
+		"title": "Around the World in 80 Days",
+		"contentRating": "PG",
+		"summary": "Based on one of Jules Verne's classic stories, an English inventor, with assistance from his Chinese valet and a French artist, does his best to win a wager by travelling the world in exactly eighty days. While on the journey, they gain new knowledge in multiple different areas.",
+		"rating": 3.2,
+		"audienceRating": 3.4,
+		"viewOffset": 71402,
+		"skipCount": 1,
+		"lastViewedAt": 1693951273,
+		"year": 2004,
+		"tagline": "Let your imagination soar.",
+		"thumb": "/library/metadata/7944/thumb/1712000161",
+		"art": "/library/metadata/7944/art/1712000161",
+		"duration": 7206880,
+		"originallyAvailableAt": "2004-06-16",
+		"addedAt": 1682980664,
+		"updatedAt": 1712000161,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 17347,
+				"duration": 7206880,
+				"bitrate": 35612,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17415,
+						"key": "/library/parts/17415/1681580290/file.m2ts",
+						"duration": 7206880,
+						"file": "/volume1/Movies/Around the World in 80 Days (2004).m2ts",
+						"size": 34397165568,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Frank Coraci"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jules Verne"
+			},
+			{
+				"tag": "David N. Titcher"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Germany"
+			},
+			{
+				"tag": "Ireland"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jackie Chan"
+			},
+			{
+				"tag": "Steve Coogan"
+			},
+			{
+				"tag": "Cécile de France"
+			}
+		]
+	},
+	{
+		"ratingKey": "9820",
+		"key": "/library/metadata/9820",
+		"guid": "plex://movie/5d776d3096b655001fe4204c",
+		"studio": "CTB Film Company",
+		"type": "movie",
+		"title": "Arrhythmia",
+		"originalTitle": "Аритмия",
+		"summary": "A paramedic devoted to his patients struggles to make time for his wife who begins to believe his patients are more important to him than she is.",
+		"rating": 10,
+		"audienceRating": 8.8,
+		"viewCount": 1,
+		"lastViewedAt": 1678750956,
+		"year": 2017,
+		"thumb": "/library/metadata/9820/thumb/1711898586",
+		"duration": 6952384,
+		"originallyAvailableAt": "2017-10-12",
+		"addedAt": 1512784653,
+		"updatedAt": 1711898586,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22028,
+				"duration": 6952384,
+				"bitrate": 5536,
+				"width": 1920,
+				"height": 1038,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22135,
+						"key": "/library/parts/22135/1512784653/file.mkv",
+						"duration": 6952384,
+						"file": "/volume1/Movies/Аритмия (2017).mkv",
+						"size": 4810725456,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Boris Khlebnikov"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Boris Khlebnikov"
+			},
+			{
+				"tag": "Natalya Meshchaninova"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Finland"
+			},
+			{
+				"tag": "Germany"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Aleksandr Yatsenko"
+			},
+			{
+				"tag": "Irina Gorbacheva"
+			},
+			{
+				"tag": "Nikolay Shrayber"
+			}
+		]
+	},
+	{
+		"ratingKey": "10325",
+		"key": "/library/metadata/10325",
+		"guid": "plex://movie/5d776b83fb0d55001f56a04b",
+		"studio": "FilmNation Entertainment",
+		"type": "movie",
+		"title": "Arrival",
+		"contentRating": "PG-13",
+		"summary": "Linguistics professor Louise Banks leads an elite team of investigators when gigantic spaceships touchdown in 12 locations around the world. As nations teeter on the verge of global war, Banks and her crew must race against time to find a way to communicate with the extraterrestrial visitors. Hoping to unravel the mystery, she takes a chance that could threaten her life and quite possibly all of mankind.",
+		"rating": 9.4,
+		"audienceRating": 8.2,
+		"year": 2016,
+		"tagline": "Why are they here?",
+		"thumb": "/library/metadata/10325/thumb/1712000162",
+		"duration": 6983712,
+		"originallyAvailableAt": "2016-11-10",
+		"addedAt": 1486256831,
+		"updatedAt": 1712000162,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23083,
+				"duration": 6983712,
+				"bitrate": 12773,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23196,
+						"key": "/library/parts/23196/1486256831/file.mkv",
+						"duration": 6983712,
+						"file": "/volume1/Movies/Arrival (2016).mkv",
+						"size": 11153067251,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Denis Villeneuve"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Eric Heisserer"
+			},
+			{
+				"tag": "Ted Chiang"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Amy Adams"
+			},
+			{
+				"tag": "Jeremy Renner"
+			},
+			{
+				"tag": "Forest Whitaker"
+			}
+		]
+	},
+	{
+		"ratingKey": "5220",
+		"key": "/library/metadata/5220",
+		"guid": "plex://movie/5d77688d7e5fa10020bf1bdc",
+		"studio": "Columbia Pictures",
+		"type": "movie",
+		"title": "Arthur Christmas",
+		"contentRating": "PG",
+		"summary": "Each Christmas, Santa and his vast army of highly trained elves produce gifts and distribute them around the world in one night. However, when one of 600 million children to receive a gift from Santa on Christmas Eve is missed, it is deemed ‘acceptable’ to all but one—Arthur. Arthur Claus is Santa’s misfit son who executes an unauthorised rookie mission to get the last present half way around the globe before dawn on Christmas morning.",
+		"rating": 9.2,
+		"audienceRating": 7.7,
+		"year": 2011,
+		"tagline": "Ever wonder how 2 Billion presents get delivered all in 1 night?",
+		"thumb": "/library/metadata/5220/thumb/1711898772",
+		"art": "/library/metadata/5220/art/1711898772",
+		"duration": 5852864,
+		"originallyAvailableAt": "2011-11-11",
+		"addedAt": 1679138981,
+		"updatedAt": 1711898772,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 11106,
+				"duration": 5852864,
+				"bitrate": 11308,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11162,
+						"key": "/library/parts/11162/1679073554/file.mkv",
+						"duration": 5852864,
+						"file": "/volume1/Movies/Arthur Christmas (2011) 3D.mkv",
+						"size": 8273337663,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 11107,
+				"duration": 5852864,
+				"bitrate": 28287,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11163,
+						"key": "/library/parts/11163/1679102195/file.mkv",
+						"duration": 5852864,
+						"file": "/volume1/Movies/Arthur Christmas (2011).mkv",
+						"size": 20695331472,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Family"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Sarah Smith"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Peter Baynham"
+			},
+			{
+				"tag": "Sarah Smith"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "James McAvoy"
+			},
+			{
+				"tag": "Hugh Laurie"
+			},
+			{
+				"tag": "Bill Nighy"
+			}
+		]
+	},
+	{
+		"ratingKey": "7788",
+		"key": "/library/metadata/7788",
+		"guid": "plex://movie/5d77682c8a7581001f12c6b4",
+		"studio": "TriStar Pictures",
+		"type": "movie",
+		"title": "As Good as It Gets",
+		"contentRating": "PG-13",
+		"summary": "New York City. Melvin Udall, a cranky, bigoted, obsessive-compulsive writer, finds his life turned upside down when neighboring gay artist Simon is hospitalized and his dog is entrusted to Melvin. In addition, Carol, the only waitress who will tolerate him, must leave work to care for her sick son, making it impossible for Melvin to eat breakfast.",
+		"rating": 8.6,
+		"audienceRating": 8.6,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1684101461,
+		"year": 1997,
+		"tagline": "A comedy from the heart that goes for the throat. Brace yourself for Melvin.",
+		"thumb": "/library/metadata/7788/thumb/1711898772",
+		"art": "/library/metadata/7788/art/1711898772",
+		"duration": 8320372,
+		"originallyAvailableAt": "1997-12-23",
+		"addedAt": 1681513236,
+		"updatedAt": 1711898772,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16999,
+				"duration": 8320372,
+				"bitrate": 41548,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23197,
+						"key": "/library/parts/23197/1681357178/file.mkv",
+						"duration": 8320372,
+						"file": "/volume1/Movies/As Good as It Gets (1997).mkv",
+						"size": 43221396651,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "James L. Brooks"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "James L. Brooks"
+			},
+			{
+				"tag": "Mark Andrus"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jack Nicholson"
+			},
+			{
+				"tag": "Helen Hunt"
+			},
+			{
+				"tag": "Greg Kinnear"
+			}
+		]
+	},
+	{
+		"ratingKey": "9522",
+		"key": "/library/metadata/9522",
+		"guid": "plex://movie/5d77682b85719b001f3a1b6d",
+		"studio": "Canal+",
+		"type": "movie",
+		"title": "Asterix & Obelix: Mission Cleopatra",
+		"originalTitle": "Astérix & Obélix Mission Cléopâtre",
+		"contentRating": "PG",
+		"summary": "Asterix and Obelix go to Egypt to help architect Edifis who is building a palace for Cleopatra.",
+		"rating": 8.6,
+		"audienceRating": 7.9,
+		"year": 2002,
+		"tagline": "The funniest film in ancient history!",
+		"thumb": "/library/metadata/9522/thumb/1711898773",
+		"duration": 6481344,
+		"originallyAvailableAt": "2002-01-30",
+		"addedAt": 1680346487,
+		"updatedAt": 1711898773,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21308,
+				"duration": 6481344,
+				"bitrate": 22526,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21409,
+						"key": "/library/parts/21409/1680142721/file.m2ts",
+						"duration": 6481344,
+						"file": "/volume1/Movies/Astérix & Obélix Mission Cléopâtre (2002).m2ts",
+						"size": 19310014464,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Family"
+			},
+			{
+				"tag": "Fantasy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Alain Chabat"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Alain Chabat"
+			},
+			{
+				"tag": "René Goscinny"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "Germany"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Monica Bellucci"
+			},
+			{
+				"tag": "Christian Clavier"
+			},
+			{
+				"tag": "Gérard Depardieu"
+			}
+		]
+	},
+	{
+		"ratingKey": "10328",
+		"key": "/library/metadata/10328",
+		"guid": "plex://movie/5d776828961905001eb915fd",
+		"studio": "Eric's Boy",
+		"type": "movie",
+		"title": "Austin Powers in Goldmember",
+		"contentRating": "PG-13",
+		"summary": "The world's most shagadelic spy continues his fight against Dr. Evil. This time, the diabolical doctor and his clone, Mini-Me, team up with a new foe—'70s kingpin Goldmember. While pursuing the team of villains to stop them from world domination, Austin gets help from his dad and an old girlfriend.",
+		"rating": 5.3,
+		"audienceRating": 4.4,
+		"viewOffset": 1463247,
+		"lastViewedAt": 1706226839,
+		"year": 2002,
+		"tagline": "The grooviest movie of the summer has a secret, baby!",
+		"thumb": "/library/metadata/10328/thumb/1712000162",
+		"duration": 5672146,
+		"originallyAvailableAt": "2002-07-26",
+		"addedAt": 1589891213,
+		"updatedAt": 1712000162,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23086,
+				"duration": 5672146,
+				"bitrate": 7068,
+				"width": 1280,
+				"height": 544,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23200,
+						"key": "/library/parts/23200/1589891213/file.mkv",
+						"duration": 5672146,
+						"file": "/volume1/Movies/Austin Powers in Goldmember (2002).mkv",
+						"size": 5013795668,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jay Roach"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mike Myers"
+			},
+			{
+				"tag": "Michael McCullers"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mike Myers"
+			},
+			{
+				"tag": "Beyoncé"
+			},
+			{
+				"tag": "Seth Green"
+			}
+		]
+	},
+	{
+		"ratingKey": "10326",
+		"key": "/library/metadata/10326",
+		"guid": "plex://movie/5d7768282ec6b5001f6ba4dc",
+		"studio": "New Line Cinema",
+		"type": "movie",
+		"title": "Austin Powers: International Man of Mystery",
+		"contentRating": "PG-13",
+		"summary": "As a swinging fashion photographer by day and a groovy British superagent by night, Austin Powers is the '60s' most shagadelic spy. But can he stop megalomaniac Dr. Evil after the bald villain freezes himself and unthaws in the '90s? With the help of sexy sidekick Vanessa Kensington, he just might.",
+		"rating": 7.3,
+		"audienceRating": 7.7,
+		"year": 1997,
+		"tagline": "Debonair. Defiant. Defrosted.",
+		"thumb": "/library/metadata/10326/thumb/1711898749",
+		"duration": 5375424,
+		"originallyAvailableAt": "1997-05-02",
+		"addedAt": 1589888026,
+		"updatedAt": 1711898749,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23084,
+				"duration": 5375424,
+				"bitrate": 7502,
+				"width": 1280,
+				"height": 544,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23198,
+						"key": "/library/parts/23198/1589888026/file.mkv",
+						"duration": 5375424,
+						"file": "/volume1/Movies/Austin Powers International Man of Mystery (1997).mkv",
+						"size": 5042873031,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jay Roach"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mike Myers"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Germany"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mike Myers"
+			},
+			{
+				"tag": "Elizabeth Hurley"
+			},
+			{
+				"tag": "Michael York"
+			}
+		]
+	},
+	{
+		"ratingKey": "10327",
+		"key": "/library/metadata/10327",
+		"guid": "plex://movie/5d7768273c3c2a001fbcb51e",
+		"studio": "New Line Cinema",
+		"type": "movie",
+		"title": "Austin Powers: The Spy Who Shagged Me",
+		"contentRating": "PG-13",
+		"summary": "When diabolical genius Dr. Evil travels back in time to steal superspy Austin Powers's ‘mojo,’ Austin must return to the swingin' '60s himself - with the help of American agent, Felicity Shagwell - to stop the dastardly plan. Once there, Austin faces off against Dr. Evil's army of minions to try to save the world in his own unbelievably groovy way.",
+		"rating": 5.3,
+		"audienceRating": 7.1,
+		"year": 1999,
+		"tagline": "First he fought for the Crown. Now he's fighting for the Family Jewels.",
+		"thumb": "/library/metadata/10327/thumb/1712000163",
+		"duration": 5702752,
+		"originallyAvailableAt": "1999-06-11",
+		"addedAt": 1589889810,
+		"updatedAt": 1712000163,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23085,
+				"duration": 5702752,
+				"bitrate": 9784,
+				"width": 1280,
+				"height": 544,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23199,
+						"key": "/library/parts/23199/1589889810/file.mkv",
+						"duration": 5702752,
+						"file": "/volume1/Movies/Austin Powers The Spy Who Shagged Me (1999).mkv",
+						"size": 6977027429,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jay Roach"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mike Myers"
+			},
+			{
+				"tag": "Michael McCullers"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mike Myers"
+			},
+			{
+				"tag": "Heather Graham"
+			},
+			{
+				"tag": "Michael York"
+			}
+		]
+	},
+	{
+		"ratingKey": "7081",
+		"key": "/library/metadata/7081",
+		"guid": "plex://movie/5d7768ba96b655001fdc0408",
+		"studio": "20th Century Studios",
+		"type": "movie",
+		"title": "Avatar: The Way of Water",
+		"contentRating": "PG-13",
+		"summary": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
+		"rating": 7.6,
+		"audienceRating": 9.2,
+		"viewOffset": 1276000,
+		"lastViewedAt": 1681600162,
+		"year": 2022,
+		"tagline": "Return to Pandora.",
+		"thumb": "/library/metadata/7081/thumb/1711898773",
+		"art": "/library/metadata/7081/art/1711898773",
+		"duration": 11558112,
+		"originallyAvailableAt": "2022-12-14",
+		"addedAt": 1680485153,
+		"updatedAt": 1711898773,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15350,
+				"duration": 11558112,
+				"bitrate": 10897,
+				"width": 1920,
+				"height": 1036,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23201,
+						"key": "/library/parts/23201/1680480830/file.mkv",
+						"duration": 11558112,
+						"file": "/volume1/Movies/Avatar The Way of Water (2022).mkv",
+						"size": 15747184301,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "James Cameron"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Josh Friedman"
+			},
+			{
+				"tag": "James Cameron"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sam Worthington"
+			},
+			{
+				"tag": "Zoe Saldaña"
+			},
+			{
+				"tag": "Sigourney Weaver"
+			}
+		]
+	},
+	{
+		"ratingKey": "725",
+		"key": "/library/metadata/725",
+		"guid": "plex://movie/5d77684d61141d001fb181b9",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "The Avengers",
+		"titleSort": "Avengers",
+		"contentRating": "PG-13",
+		"summary": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+		"rating": 9.1,
+		"audienceRating": 9.1,
+		"year": 2012,
+		"tagline": "Some assembly required.",
+		"thumb": "/library/metadata/725/thumb/1712000163",
+		"art": "/library/metadata/725/art/1712000163",
+		"duration": 8574934,
+		"originallyAvailableAt": "2012-04-25",
+		"addedAt": 1482669779,
+		"updatedAt": 1712000163,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22387,
+				"duration": 8574934,
+				"bitrate": 20162,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22495,
+						"key": "/library/parts/22495/1482669779/file.mkv",
+						"duration": 8574934,
+						"file": "/volume1/Movies/The Avengers (2012) 3D.mkv",
+						"size": 21611452734,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 22388,
+				"duration": 8574912,
+				"bitrate": 7592,
+				"width": 1280,
+				"height": 720,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22496,
+						"key": "/library/parts/22496/1345666816/file.mkv",
+						"duration": 8574912,
+						"file": "/volume1/Movies/The Avengers (2012).mkv",
+						"size": 8137498638,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joss Whedon"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Stan Lee"
+			},
+			{
+				"tag": "Joss Whedon"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Robert Downey Jr."
+			},
+			{
+				"tag": "Chris Evans"
+			},
+			{
+				"tag": "Mark Ruffalo"
+			}
+		]
+	},
+	{
+		"ratingKey": "10329",
+		"key": "/library/metadata/10329",
+		"guid": "plex://movie/5d77690623d5a3001f4f4ab6",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Avengers: Age of Ultron",
+		"contentRating": "PG-13",
+		"summary": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+		"rating": 7.6,
+		"audienceRating": 8.2,
+		"year": 2015,
+		"tagline": "A new age has come.",
+		"thumb": "/library/metadata/10329/thumb/1711898752",
+		"duration": 8500181,
+		"originallyAvailableAt": "2015-04-22",
+		"addedAt": 1482696806,
+		"updatedAt": 1711898752,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23087,
+				"duration": 8500181,
+				"bitrate": 17211,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23202,
+						"key": "/library/parts/23202/1482696806/file.mkv",
+						"duration": 8500181,
+						"file": "/volume1/Movies/Avengers Age of Ultron (2015) 3D.mkv",
+						"size": 18292201416,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joss Whedon"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Joss Whedon"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Robert Downey Jr."
+			},
+			{
+				"tag": "Chris Hemsworth"
+			},
+			{
+				"tag": "Mark Ruffalo"
+			}
+		]
+	},
+	{
+		"ratingKey": "9294",
+		"key": "/library/metadata/9294",
+		"guid": "plex://movie/5d776d1951dd69001fe3fe86",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Babe",
+		"contentRating": "G",
+		"summary": "Gentle farmer Arthur Hoggett wins a piglet Babe at a county fair. Narrowly escaping his fate as Christmas dinner, Babe bonds with motherly border collie Fly and discovers that he too can herd sheep. But will the other animals accept him?",
+		"rating": 9.7,
+		"audienceRating": 6.7,
+		"viewOffset": 4038842,
+		"lastViewedAt": 1704602166,
+		"year": 1995,
+		"tagline": "A little pig goes a long way.",
+		"thumb": "/library/metadata/9294/thumb/1712000163",
+		"art": "/library/metadata/9294/art/1712000163",
+		"duration": 5515744,
+		"originallyAvailableAt": "1995-08-04",
+		"addedAt": 1704597974,
+		"updatedAt": 1712000163,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20702,
+				"duration": 5515744,
+				"bitrate": 34588,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 20778,
+						"key": "/library/parts/20778/1704160421/file.mkv",
+						"duration": 5515744,
+						"file": "/volume3/MoviesB/Movis/Babe (1995).mkv",
+						"size": 23851071989,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Family"
+			},
+			{
+				"tag": "Fantasy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Chris Noonan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "George Miller"
+			},
+			{
+				"tag": "Dick King-Smith"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Australia"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Christine Cavanaugh"
+			},
+			{
+				"tag": "Miriam Margolyes"
+			},
+			{
+				"tag": "Danny Mann"
+			}
+		]
+	},
+	{
+		"ratingKey": "2837",
+		"key": "/library/metadata/2837",
+		"guid": "plex://movie/5d9f34fd9dd5f4001e8430d1",
+		"studio": "United Artists",
+		"type": "movie",
+		"title": "Baby Boom",
+		"contentRating": "PG",
+		"summary": "The life of super-yuppie J.C. is thrown into turmoil when she inherits a baby from a distant relative.",
+		"rating": 6.7,
+		"audienceRating": 6.2,
+		"year": 1987,
+		"tagline": "JC Wiatt, corporate powerhouse, just received an inheritance. And it sucks.",
+		"thumb": "/library/metadata/2837/thumb/1712000163",
+		"art": "/library/metadata/2837/art/1712000163",
+		"duration": 6618111,
+		"originallyAvailableAt": "1987-10-30",
+		"addedAt": 1677432288,
+		"updatedAt": 1712000163,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21309,
+				"duration": 6618111,
+				"bitrate": 14280,
+				"width": 1280,
+				"height": 694,
+				"aspectRatio": 1.85,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21410,
+						"key": "/library/parts/21410/1678056994/file.mkv",
+						"duration": 6618111,
+						"file": "/volume1/Movies/Baby Boom (1987).mkv",
+						"size": 11815257299,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Charles Shyer"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Nancy Meyers"
+			},
+			{
+				"tag": "Charles Shyer"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Diane Keaton"
+			},
+			{
+				"tag": "Sam Shepard"
+			},
+			{
+				"tag": "Harold Ramis"
+			}
+		]
+	},
+	{
+		"ratingKey": "8219",
+		"key": "/library/metadata/8219",
+		"guid": "plex://movie/5d7768244de0ee001fcc7fed",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Back to the Future",
+		"contentRating": "PG",
+		"summary": "Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean \"time machine\" invented by a slightly mad scientist. During his often hysterical, always amazing trip back in time, Marty must make certain his teenage parents-to-be meet and fall in love - so he can get back to the future.",
+		"rating": 9.3,
+		"audienceRating": 9.4,
+		"year": 1985,
+		"tagline": "He was never in time for his classes. He wasn't in time for his dinner. Then one day...he wasn't in his time at all.",
+		"thumb": "/library/metadata/8219/thumb/1711898776",
+		"art": "/library/metadata/8219/art/1711898776",
+		"duration": 6961067,
+		"originallyAvailableAt": "1985-07-03",
+		"addedAt": 1684062355,
+		"updatedAt": 1711898776,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 18162,
+				"duration": 6961067,
+				"bitrate": 24643,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mp4",
+				"videoFrameRate": "24p",
+				"optimizedForStreaming": 1,
+				"has64bitOffsets": true,
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18231,
+						"key": "/library/parts/18231/1684627060/file.m4v",
+						"duration": 6961067,
+						"file": "/volume3/MoviesB/Movis/Back to the Future (1985).m4v",
+						"size": 21490705746,
+						"container": "mp4",
+						"has64bitOffsets": true,
+						"hasChapterVideoStream": true,
+						"hasThumbnail": "1",
+						"optimizedForStreaming": true,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Robert Zemeckis"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Robert Zemeckis"
+			},
+			{
+				"tag": "Bob Gale"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Michael J. Fox"
+			},
+			{
+				"tag": "Christopher Lloyd"
+			},
+			{
+				"tag": "Crispin Glover"
+			}
+		]
+	},
+	{
+		"ratingKey": "8241",
+		"key": "/library/metadata/8241",
+		"guid": "plex://movie/5d776d1023d5a3001f52001d",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Back to the Future Part II",
+		"contentRating": "PG",
+		"summary": "Marty McFly has only just gotten back from the past, when he is once again picked up by Dr. Emmett Brown and sent through time to the future. Marty's job in the future is to pose as his own son to prevent him from being thrown in prison. Unfortunately, things get worse when the future changes the present.",
+		"rating": 6.2,
+		"audienceRating": 8.5,
+		"year": 1989,
+		"tagline": "Getting back was only the beginning.",
+		"thumb": "/library/metadata/8241/thumb/1711898776",
+		"art": "/library/metadata/8241/art/1711898776",
+		"duration": 6479402,
+		"originallyAvailableAt": "1989-11-22",
+		"addedAt": 1684062356,
+		"updatedAt": 1711898776,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 18163,
+				"duration": 6479402,
+				"bitrate": 22344,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mp4",
+				"videoFrameRate": "24p",
+				"optimizedForStreaming": 1,
+				"has64bitOffsets": true,
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18232,
+						"key": "/library/parts/18232/1684627099/file.m4v",
+						"duration": 6479402,
+						"file": "/volume3/MoviesB/Movis/Back to the Future Part II (1989).m4v",
+						"size": 18145498852,
+						"container": "mp4",
+						"has64bitOffsets": true,
+						"hasChapterVideoStream": true,
+						"hasThumbnail": "1",
+						"optimizedForStreaming": true,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Robert Zemeckis"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Robert Zemeckis"
+			},
+			{
+				"tag": "Bob Gale"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Michael J. Fox"
+			},
+			{
+				"tag": "Christopher Lloyd"
+			},
+			{
+				"tag": "Lea Thompson"
+			}
+		]
+	},
+	{
+		"ratingKey": "8360",
+		"key": "/library/metadata/8360",
+		"guid": "plex://movie/5d776d10fb0d55001f596237",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Back to the Future Part III",
+		"contentRating": "PG",
+		"summary": "Stranded in 1955, Marty McFly learns about the death of Doc Brown in 1885 and must travel back in time to save him. With no fuel readily available for the DeLorean, the two must figure how to escape the Old West before Emmett is murdered.",
+		"rating": 8,
+		"audienceRating": 7.8,
+		"year": 1990,
+		"tagline": "They've saved the best trip for last... But this time they may have gone too far.",
+		"thumb": "/library/metadata/8360/thumb/1712000165",
+		"art": "/library/metadata/8360/art/1712000165",
+		"duration": 7097727,
+		"originallyAvailableAt": "1990-05-25",
+		"addedAt": 1684707222,
+		"updatedAt": 1712000165,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 18164,
+				"duration": 7097727,
+				"bitrate": 18151,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mp4",
+				"videoFrameRate": "24p",
+				"optimizedForStreaming": 1,
+				"has64bitOffsets": true,
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18233,
+						"key": "/library/parts/18233/1684627099/file.m4v",
+						"duration": 7097727,
+						"file": "/volume3/MoviesB/Movis/Back to the Future Part III (1990).m4v",
+						"size": 16147151874,
+						"container": "mp4",
+						"has64bitOffsets": true,
+						"hasChapterVideoStream": true,
+						"hasThumbnail": "1",
+						"optimizedForStreaming": true,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Robert Zemeckis"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Robert Zemeckis"
+			},
+			{
+				"tag": "Bob Gale"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Michael J. Fox"
+			},
+			{
+				"tag": "Christopher Lloyd"
+			},
+			{
+				"tag": "Mary Steenburgen"
+			}
+		]
+	},
+	{
+		"ratingKey": "5942",
+		"key": "/library/metadata/5942",
+		"guid": "plex://movie/5d776834a091de001f2e7cfa",
+		"studio": "Dimension Films",
+		"type": "movie",
+		"title": "Bad Santa",
+		"contentRating": "R",
+		"summary": "A miserable conman and his partner pose as Santa and his Little Helper to rob department stores on Christmas Eve. But they run into problems when the conman befriends a troubled kid.",
+		"rating": 7.8,
+		"audienceRating": 7.5,
+		"year": 2003,
+		"tagline": "He doesn't care if you're naughty or nice.",
+		"thumb": "/library/metadata/5942/thumb/1710700580",
+		"art": "/library/metadata/5942/art/1710700580",
+		"duration": 5956470,
+		"originallyAvailableAt": "2003-11-26",
+		"addedAt": 1679783026,
+		"updatedAt": 1710700580,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 12744,
+				"duration": 5956470,
+				"bitrate": 31451,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 12801,
+						"key": "/library/parts/12801/1679793642/file.mkv",
+						"duration": 5956470,
+						"file": "/volume1/Movies/Bad Santa (2003).mkv",
+						"size": 23416858992,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Terry Zwigoff"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Glenn Ficarra"
+			},
+			{
+				"tag": "John Requa"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Billy Bob Thornton"
+			},
+			{
+				"tag": "Tony Cox"
+			},
+			{
+				"tag": "Brett Kelly"
+			}
+		]
+	},
+	{
+		"ratingKey": "5943",
+		"key": "/library/metadata/5943",
+		"guid": "plex://movie/5d77689151dd69001fe0e1a2",
+		"studio": "Columbia Pictures",
+		"type": "movie",
+		"title": "Bad Teacher",
+		"contentRating": "R",
+		"summary": "A lazy, incompetent middle school teacher who hates her job, her students, and her co-workers is forced to return to teaching to make enough money for breast implants after her wealthy fiancé dumps her.",
+		"rating": 4.5,
+		"audienceRating": 3.6,
+		"year": 2011,
+		"tagline": "She doesn't give an F.",
+		"thumb": "/library/metadata/5943/thumb/1711898776",
+		"art": "/library/metadata/5943/art/1711898776",
+		"duration": 5857899,
+		"originallyAvailableAt": "2011-06-17",
+		"addedAt": 1679783026,
+		"updatedAt": 1711898776,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12745,
+				"duration": 5857899,
+				"bitrate": 37935,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12802,
+						"key": "/library/parts/12802/1679786976/file.mkv",
+						"duration": 5857899,
+						"file": "/volume1/Movies/Bad Teacher (2011).mkv",
+						"size": 27777591172,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jake Kasdan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Gene Stupnitsky"
+			},
+			{
+				"tag": "Lee Eisenberg"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Cameron Diaz"
+			},
+			{
+				"tag": "Jason Segel"
+			},
+			{
+				"tag": "Justin Timberlake"
+			}
+		]
+	},
+	{
+		"ratingKey": "5511",
+		"key": "/library/metadata/5511",
+		"guid": "plex://movie/5d776a3dfb0d55001f53f19e",
+		"studio": "Darko Entertainment",
+		"type": "movie",
+		"title": "Bad Words",
+		"contentRating": "R",
+		"summary": "An adult, who has been a school dropout, finds a loophole in the regulations and participates in the largest spelling bee in the USA, The Golden Quill. His aim is to take revenge for something done to him in the past.",
+		"rating": 6.6,
+		"audienceRating": 6.1,
+		"year": 2013,
+		"tagline": "The end justifies the mean.",
+		"thumb": "/library/metadata/5511/thumb/1711898777",
+		"art": "/library/metadata/5511/art/1711898777",
+		"duration": 5342707,
+		"originallyAvailableAt": "2013-11-01",
+		"addedAt": 1679521407,
+		"updatedAt": 1711898777,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 11768,
+				"duration": 5342707,
+				"bitrate": 8174,
+				"width": 1280,
+				"height": 534,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11824,
+						"key": "/library/parts/11824/1679441609/file.mkv",
+						"duration": 5342707,
+						"file": "/volume1/Movies/Bad Words (2013).mkv",
+						"size": 5458818739,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jason Bateman"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Andrew Dodge"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jason Bateman"
+			},
+			{
+				"tag": "Kathryn Hahn"
+			},
+			{
+				"tag": "Rohan Chand"
+			}
+		]
+	},
+	{
+		"ratingKey": "9624",
+		"key": "/library/metadata/9624",
+		"guid": "plex://movie/5d77706c96b655001fe95cd9",
+		"studio": "Mike Zoss Productions",
+		"type": "movie",
+		"title": "The Ballad of Buster Scruggs",
+		"titleSort": "Ballad of Buster Scruggs",
+		"contentRating": "R",
+		"summary": "Vignettes weaving together the stories of six individuals in the old West at the end of the Civil War. Following the tales of a sharp-shooting songster, a wannabe bank robber, two weary traveling performers, a lone gold prospector, a woman traveling the West to an uncertain future, and a motley crew of strangers undertaking a carriage ride.",
+		"rating": 8.9,
+		"audienceRating": 7.8,
+		"skipCount": 1,
+		"year": 2018,
+		"tagline": "Stories live forever. People don't.",
+		"thumb": "/library/metadata/9624/thumb/1712000166",
+		"duration": 7998752,
+		"originallyAvailableAt": "2018-11-09",
+		"addedAt": 1677432269,
+		"updatedAt": 1712000166,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21540,
+				"duration": 7998752,
+				"bitrate": 6414,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main",
+				"Part": [
+					{
+						"id": 21641,
+						"key": "/library/parts/21641/1563920065/file.mkv",
+						"duration": 7998752,
+						"file": "/volume1/Movies/The Ballad of Buster Scruggs (2018).mkv",
+						"size": 6419588716,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "main"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Western"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joel Coen"
+			},
+			{
+				"tag": "Ethan Coen"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Joel Coen"
+			},
+			{
+				"tag": "Ethan Coen"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tim Blake Nelson"
+			},
+			{
+				"tag": "Willie Watson"
+			},
+			{
+				"tag": "Clancy Brown"
+			}
+		]
+	},
+	{
+		"ratingKey": "6428",
+		"key": "/library/metadata/6428",
+		"guid": "plex://movie/5d9f34f8b0262f001f6e9085",
+		"studio": "Rogue Pictures",
+		"type": "movie",
+		"title": "Balls of Fury",
+		"contentRating": "PG-13",
+		"summary": "Down-and-out former professional ping-pong phenom, Randy Daytona, is sucked into a maelstrom when FBI Agent Ernie Rodriguez recruits him for a secret mission. Randy is determined to bounce back and win, and to smoke out his father's killer -- arch-fiend Feng.",
+		"rating": 2.1,
+		"audienceRating": 3.3,
+		"viewCount": 1,
+		"lastViewedAt": 1705981563,
+		"year": 2007,
+		"tagline": "A huge comedy with tiny balls.",
+		"thumb": "/library/metadata/6428/thumb/1712000167",
+		"art": "/library/metadata/6428/art/1712000167",
+		"duration": 5426304,
+		"originallyAvailableAt": "2007-08-29",
+		"addedAt": 1680111709,
+		"updatedAt": 1712000167,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13861,
+				"duration": 5426304,
+				"bitrate": 20955,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 13921,
+						"key": "/library/parts/13921/1680413654/file.mkv",
+						"duration": 5426304,
+						"file": "/volume1/Movies/Balls of Fury (2007).mkv",
+						"size": 14213421648,
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Robert Ben Garant"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Thomas Lennon"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Dan Fogler"
+			},
+			{
+				"tag": "Christopher Walken"
+			},
+			{
+				"tag": "George Lopez"
+			}
+		]
+	},
+	{
+		"ratingKey": "9625",
+		"key": "/library/metadata/9625",
+		"guid": "plex://movie/5e4d255892dd13003df160ca",
+		"studio": "Searchlight Pictures",
+		"type": "movie",
+		"title": "The Banshees of Inisherin",
+		"titleSort": "Banshees of Inisherin",
+		"contentRating": "R",
+		"summary": "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both of them.",
+		"rating": 9.6,
+		"audienceRating": 7.5,
+		"year": 2022,
+		"tagline": "Everything was fine yesterday.",
+		"thumb": "/library/metadata/9625/thumb/1712000166",
+		"duration": 6835038,
+		"originallyAvailableAt": "2022-10-20",
+		"addedAt": 1677975679,
+		"updatedAt": 1712000166,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21541,
+				"duration": 6835038,
+				"bitrate": 20296,
+				"width": 1920,
+				"height": 802,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21642,
+						"key": "/library/parts/21642/1677896244/file.mkv",
+						"duration": 6835038,
+						"file": "/volume1/Movies/The Banshees of Inisherin (2022).mkv",
+						"size": 17344301283,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Martin McDonagh"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Martin McDonagh"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Colin Farrell"
+			},
+			{
+				"tag": "Brendan Gleeson"
+			},
+			{
+				"tag": "Kerry Condon"
+			}
+		]
+	},
+	{
+		"ratingKey": "8826",
+		"key": "/library/metadata/8826",
+		"guid": "plex://movie/5d776bb6ad5437001f7a7b68",
+		"studio": "LuckyChap Entertainment",
+		"type": "movie",
+		"title": "Barbie",
+		"contentRating": "PG-13",
+		"summary": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+		"rating": 8.8,
+		"audienceRating": 8.3,
+		"year": 2023,
+		"tagline": "She's everything. He's just Ken.",
+		"thumb": "/library/metadata/8826/thumb/1712000168",
+		"art": "/library/metadata/8826/art/1712000168",
+		"duration": 6842144,
+		"originallyAvailableAt": "2023-07-19",
+		"addedAt": 1699010870,
+		"updatedAt": 1712000168,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 19568,
+				"duration": 6842144,
+				"bitrate": 16630,
+				"width": 1920,
+				"height": 960,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19643,
+						"key": "/library/parts/19643/1695518760/file.mkv",
+						"duration": 6842144,
+						"file": "/volume3/MoviesB/Movis/Barbie (2023).mkv",
+						"size": 14225900883,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Fantasy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Greta Gerwig"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Noah Baumbach"
+			},
+			{
+				"tag": "Greta Gerwig"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Margot Robbie"
+			},
+			{
+				"tag": "Ryan Gosling"
+			},
+			{
+				"tag": "America Ferrera"
+			}
+		]
+	},
+	{
+		"ratingKey": "9524",
+		"key": "/library/metadata/9524",
+		"guid": "plex://movie/5d776836e6d55c002040d570",
+		"studio": "Intermedia",
+		"type": "movie",
+		"title": "Basic",
+		"contentRating": "R",
+		"summary": "A D.E.A. Agent investigates the disappearance of a legendary Army Ranger Drill Sergeant and several of his cadets during a training exercise gone severely awry.",
+		"rating": 2.1,
+		"audienceRating": 6.2,
+		"year": 2003,
+		"tagline": "Deception is their most dangerous weapon.",
+		"thumb": "/library/metadata/9524/thumb/1711898778",
+		"duration": 5892704,
+		"originallyAvailableAt": "2003-03-28",
+		"addedAt": 1677432269,
+		"updatedAt": 1711898778,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21310,
+				"duration": 5892704,
+				"bitrate": 6352,
+				"width": 1280,
+				"height": 532,
+				"aspectRatio": 2.35,
+				"audioChannels": 7,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "es",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21411,
+						"key": "/library/parts/21411/1454819043/file.mkv",
+						"duration": 5892704,
+						"file": "/volume1/Movies/Basic (2003).mkv",
+						"size": 4680830277,
+						"audioProfile": "es",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "John McTiernan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "James Vanderbilt"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Germany"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "John Travolta"
+			},
+			{
+				"tag": "Connie Nielsen"
+			},
+			{
+				"tag": "Samuel L. Jackson"
+			}
+		]
+	},
+	{
+		"ratingKey": "9815",
+		"key": "/library/metadata/9815",
+		"guid": "plex://movie/5d77687f61141d001fb1c083",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Battleship",
+		"contentRating": "PG-13",
+		"summary": "An international fleet of naval warships encounters an alien armada while on a Naval war games exercise and faces the biggest threat mankind has ever faced. An intense battle is fought on sea, land and air. If they lose, the world could face a major extinction event and an alien invasion. Will humans win this alien war, what are the aliens doing here, and what do they want?",
+		"rating": 3.4,
+		"audienceRating": 5.4,
+		"viewCount": 1,
+		"lastViewedAt": 1680356007,
+		"year": 2012,
+		"tagline": "The battle for Earth begins at sea.",
+		"thumb": "/library/metadata/9815/thumb/1711898581",
+		"duration": 7874945,
+		"originallyAvailableAt": "2012-04-11",
+		"addedAt": 1465519214,
+		"updatedAt": 1711898581,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 22022,
+				"duration": 7874945,
+				"bitrate": 29264,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22129,
+						"key": "/library/parts/22129/1465519214/file.mkv",
+						"duration": 7874945,
+						"file": "/volume1/Movies/Battleship (2012).mkv",
+						"size": 28806365531,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peter Berg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Erich Hoeber"
+			},
+			{
+				"tag": "Jon Hoeber"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Hong Kong"
+			},
+			{
+				"tag": "Japan"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Taylor Kitsch"
+			},
+			{
+				"tag": "Tadanobu Asano"
+			},
+			{
+				"tag": "Rihanna"
+			}
+		]
+	},
+	{
+		"ratingKey": "8654",
+		"key": "/library/metadata/8654",
+		"guid": "plex://movie/61e52547facc2cece8a1c348",
+		"studio": "Imagine Entertainment",
+		"type": "movie",
+		"title": "The Beanie Bubble",
+		"titleSort": "Beanie Bubble",
+		"contentRating": "R",
+		"summary": "Ty was a frustrated toy salesman until his collaboration with three women turned his stuffed animals into a defining '90s trend. This behind-the-scenes look at history's biggest toy craze is a wild story about what—and who—is valued in this world.",
+		"audienceRating": 6.3,
+		"viewOffset": 2575000,
+		"lastViewedAt": 1693783759,
+		"year": 2023,
+		"tagline": "The crazy behind the craze.",
+		"thumb": "/library/metadata/8654/thumb/1710700582",
+		"art": "/library/metadata/8654/art/1710700582",
+		"duration": 6610496,
+		"originallyAvailableAt": "2023-07-28",
+		"addedAt": 1691529162,
+		"updatedAt": 1710700582,
+		"audienceRatingImage": "imdb://image.rating",
+		"hasPremiumPrimaryExtra": "1",
+		"Media": [
+			{
+				"id": 19076,
+				"duration": 6610496,
+				"bitrate": 11467,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19151,
+						"key": "/library/parts/19151/1691189034/file.mkv",
+						"duration": 6610496,
+						"file": "/volume3/MoviesB/Movis/The Beanie Bubble (2023).mkv",
+						"size": 9477581371,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Kristin Gore"
+			},
+			{
+				"tag": "Damian Kulash"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Kristin Gore"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Zach Galifianakis"
+			},
+			{
+				"tag": "Elizabeth Banks"
+			},
+			{
+				"tag": "Sarah Snook"
+			}
+		]
+	},
+	{
+		"ratingKey": "5222",
+		"key": "/library/metadata/5222",
+		"guid": "plex://movie/5d776b6cfb0d55001f5678b1",
+		"studio": "Walt Disney Pictures",
+		"type": "movie",
+		"title": "Beauty and the Beast",
+		"contentRating": "PG",
+		"summary": "Disney's animated classic takes on a new form, with a widened mythology and an all-star cast. A young Prince, imprisoned in the form of a Beast (Dan Stevens), can be freed only by true love. What may be his only opportunity arrives when he meets Belle (Emma Watson), the only human girl to ever visit the castle since it was enchanted.",
+		"rating": 7.1,
+		"audienceRating": 8,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1678400558,
+		"year": 2017,
+		"tagline": "Be our guest.",
+		"thumb": "/library/metadata/5222/thumb/1711898779",
+		"art": "/library/metadata/5222/art/1711898779",
+		"duration": 7756896,
+		"originallyAvailableAt": "2017-03-16",
+		"addedAt": 1679138984,
+		"updatedAt": 1711898779,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 11108,
+				"duration": 7756896,
+				"bitrate": 10564,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11164,
+						"key": "/library/parts/11164/1679012129/file.mkv",
+						"duration": 7756896,
+						"file": "/volume1/Movies/Beauty and the Beast (2017) 3D.mkv",
+						"size": 10243358969,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 11138,
+				"duration": 7756896,
+				"bitrate": 37694,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11194,
+						"key": "/library/parts/11194/1679017531/file.m2ts",
+						"duration": 7756896,
+						"file": "/volume1/Movies/Beauty and the Beast (2017).m2ts",
+						"size": 36548935680,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Musical"
+			},
+			{
+				"tag": "Family"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Bill Condon"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Stephen Chbosky"
+			},
+			{
+				"tag": "Linda Woolverton"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Emma Watson"
+			},
+			{
+				"tag": "Dan Stevens"
+			},
+			{
+				"tag": "Luke Evans"
+			}
+		]
+	},
+	{
+		"ratingKey": "9816",
+		"key": "/library/metadata/9816",
+		"guid": "plex://movie/5d776c447a53e9001e73ebc7",
+		"studio": "Radar Pictures",
+		"type": "movie",
+		"title": "Beirut",
+		"contentRating": "R",
+		"summary": "In 1980s Beirut, Mason Skiles is a former U.S. diplomat who is called back into service to save a colleague from the group that is possibly responsible for his own family's death. Meanwhile, a CIA field agent who is working under cover at the American embassy is tasked with keeping Mason alive and ensuring that the mission is a success.",
+		"rating": 8.2,
+		"audienceRating": 5.7,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1700524567,
+		"year": 2018,
+		"tagline": "Beirut, 1982: The Paris of the Middle East Was Burning",
+		"thumb": "/library/metadata/9816/thumb/1711898582",
+		"duration": 6585249,
+		"originallyAvailableAt": "2018-04-11",
+		"addedAt": 1589904756,
+		"updatedAt": 1711898582,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22023,
+				"duration": 6585249,
+				"bitrate": 38919,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22130,
+						"key": "/library/parts/22130/1589904756/file.mkv",
+						"duration": 6585249,
+						"file": "/volume1/Movies/Beirut (2018).mkv",
+						"size": 32036591528,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Brad Anderson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Tony Gilroy"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jon Hamm"
+			},
+			{
+				"tag": "Rosamund Pike"
+			},
+			{
+				"tag": "Shea Whigham"
+			}
+		]
+	},
+	{
+		"ratingKey": "4843",
+		"key": "/library/metadata/4843",
+		"guid": "plex://movie/5d776c04ad5437001f7b0f4c",
+		"studio": "Bazelevs Production",
+		"type": "movie",
+		"title": "The Best Day Ever",
+		"titleSort": "Best Day Ever",
+		"originalTitle": "Самый лучший день",
+		"summary": "The provincial traffic police captain Petya Vasyutin is going to marry his beloved girl Olya, but succumbs to the brilliance of the metropolitan pop star Alina Shyopot. Catching him drunk at the wheel, she decides to seduce Petya in order to avoid punishment. Having lost his bride, Vasyutin is trying to correct his mistakes and return his beloved.",
+		"audienceRating": 4.5,
+		"viewOffset": 3351166,
+		"viewCount": 3,
+		"lastViewedAt": 1707857868,
+		"year": 2015,
+		"thumb": "/library/metadata/4843/thumb/1711898779",
+		"art": "/library/metadata/4843/art/1711898779",
+		"duration": 6424667,
+		"originallyAvailableAt": "2015-12-24",
+		"addedAt": 1678568212,
+		"updatedAt": 1711898779,
+		"audienceRatingImage": "imdb://image.rating",
+		"Media": [
+			{
+				"id": 10171,
+				"duration": 6424667,
+				"bitrate": 25692,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 10222,
+						"key": "/library/parts/10222/1673816665/file.m2ts",
+						"duration": 6424667,
+						"file": "/volume1/Movies/Самый лучший день (2015).m2ts",
+						"size": 20632940544,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Zhora Kryzhovnikov"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Zhora Kryzhovnikov"
+			},
+			{
+				"tag": "Alexey Kazakov"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Russian Federation"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Dmitriy Nagiev"
+			},
+			{
+				"tag": "Yuliya Aleksandrova"
+			},
+			{
+				"tag": "Inna Churikova"
+			}
+		]
+	},
+	{
+		"ratingKey": "9623",
+		"key": "/library/metadata/9623",
+		"guid": "plex://movie/5d776ad1ad5437001f789a4e",
+		"studio": "Walt Disney Pictures",
+		"type": "movie",
+		"title": "The BFG",
+		"titleSort": "BFG",
+		"contentRating": "PG",
+		"summary": "An orphan little girl befriends a benevolent giant who takes her to Giant Country, where they attempt to stop the man-eating giants that are invading the human world.",
+		"rating": 7.4,
+		"audienceRating": 5.7,
+		"year": 2016,
+		"tagline": "The world is more giant than you can imagine.",
+		"thumb": "/library/metadata/9623/thumb/1711898779",
+		"duration": 7029146,
+		"originallyAvailableAt": "2016-06-30",
+		"addedAt": 1487205694,
+		"updatedAt": 1711898779,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21539,
+				"duration": 7029146,
+				"bitrate": 10275,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21640,
+						"key": "/library/parts/21640/1487205694/file.mkv",
+						"duration": 7029146,
+						"file": "/volume1/Movies/The BFG (2016) 3D.mkv",
+						"size": 9029908063,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Family"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Steven Spielberg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Roald Dahl"
+			},
+			{
+				"tag": "Melissa Mathison"
+			}
+		],
+		"Country": [
+			{
+				"tag": "India"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mark Rylance"
+			},
+			{
+				"tag": "Ruby Barnhill"
+			},
+			{
+				"tag": "Rebecca Hall"
+			}
+		]
+	},
+	{
+		"ratingKey": "6702",
+		"key": "/library/metadata/6702",
+		"guid": "plex://movie/5d9f34f86fc551001ef7f8d7",
+		"studio": "TriStar Pictures",
+		"type": "movie",
+		"title": "The Big Hit",
+		"titleSort": "Big Hit",
+		"contentRating": "R",
+		"summary": "To payoff his second girlfriend's debt, hitman Melvin Smiley undertakes a kidnapping job with his usual associates. In a world of prospective Jewish in-laws and late movie fees, the hitman falls in love with the victim and must settle the score with those out to double-cross him.",
+		"rating": 4.1,
+		"audienceRating": 5.7,
+		"year": 1998,
+		"tagline": "Nothing's more dangerous than some nice guys... with a little time to kill.",
+		"thumb": "/library/metadata/6702/thumb/1711898779",
+		"art": "/library/metadata/6702/art/1711898779",
+		"duration": 5483520,
+		"originallyAvailableAt": "1998-04-24",
+		"addedAt": 1680205914,
+		"updatedAt": 1711898779,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 14538,
+				"duration": 5483520,
+				"bitrate": 23441,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg2video",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main",
+				"Part": [
+					{
+						"id": 14598,
+						"key": "/library/parts/14598/1680228151/file.mkv",
+						"duration": 5483520,
+						"file": "/volume1/Movies/The Big Hit (1998).mkv",
+						"size": 16067438616,
+						"container": "mkv",
+						"videoProfile": "main"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Kirk Wong Chi-Keung"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Ben Ramsey"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "Canada"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mark Wahlberg"
+			},
+			{
+				"tag": "Lou Diamond Phillips"
+			},
+			{
+				"tag": "Christina Applegate"
+			}
+		]
+	},
+	{
+		"ratingKey": "5169",
+		"key": "/library/metadata/5169",
+		"guid": "plex://movie/5d776b679ab544002150af34",
+		"studio": "Paramount",
+		"type": "movie",
+		"title": "The Big Short",
+		"titleSort": "Big Short",
+		"contentRating": "R",
+		"summary": "In 2006-2007 a group of investors bet against the United States mortgage market. In their research, they discover how flawed and corrupt the market is.",
+		"rating": 8.9,
+		"audienceRating": 8.8,
+		"viewCount": 1,
+		"lastViewedAt": 1686451677,
+		"year": 2015,
+		"tagline": "This is a true story.",
+		"thumb": "/library/metadata/5169/thumb/1711898779",
+		"art": "/library/metadata/5169/art/1711898779",
+		"duration": 7835084,
+		"originallyAvailableAt": "2015-12-23",
+		"addedAt": 1679010391,
+		"updatedAt": 1711898779,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 10957,
+				"duration": 7835084,
+				"bitrate": 33989,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11013,
+						"key": "/library/parts/11013/1678970247/file.mkv",
+						"duration": 7835084,
+						"file": "/volume1/Movies/The Big Short (2015).mkv",
+						"size": 33288333901,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Adam McKay"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Adam McKay"
+			},
+			{
+				"tag": "Michael Lewis"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Steve Carell"
+			},
+			{
+				"tag": "Christian Bale"
+			},
+			{
+				"tag": "John Magaro"
+			}
+		]
+	},
+	{
+		"ratingKey": "6759",
+		"key": "/library/metadata/6759",
+		"guid": "plex://movie/5d77682b8718ba001e3126e0",
+		"studio": "Touchstone Pictures",
+		"type": "movie",
+		"title": "Big Trouble",
+		"contentRating": "PG-13",
+		"summary": "The story of how a mysterious suitcase brings together, and changes, the lives of a divorced dad, an unhappy housewife, two hitmen, a pair of street thugs, two love struck teens, two FBI men and a psychedelic toad. Based on Pulitzer Prize-winning humorist Dave Barry's best-selling first novel, \"Big Trouble.\"",
+		"rating": 4.8,
+		"audienceRating": 5.4,
+		"year": 2002,
+		"tagline": "They have forty-five minutes to save the world. They need forty-six.",
+		"thumb": "/library/metadata/6759/thumb/1711898779",
+		"art": "/library/metadata/6759/art/1711898779",
+		"duration": 5106560,
+		"originallyAvailableAt": "2002-04-05",
+		"addedAt": 1680346462,
+		"updatedAt": 1711898779,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 14673,
+				"duration": 5106560,
+				"bitrate": 41107,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14733,
+						"key": "/library/parts/14733/1680160187/file.m2ts",
+						"duration": 5106560,
+						"file": "/volume1/Movies/Big Trouble (2002).m2ts",
+						"size": 26239586304,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Barry Sonnenfeld"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Robert Ramsey"
+			},
+			{
+				"tag": "Matthew Stone"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tim Allen"
+			},
+			{
+				"tag": "Rene Russo"
+			},
+			{
+				"tag": "Omar Epps"
+			}
+		]
+	},
+	{
+		"ratingKey": "10379",
+		"key": "/library/metadata/10379",
+		"guid": "plex://movie/5d7768313c3c2a001fbcd1f0",
+		"studio": "TAFT Entertainment Pictures",
+		"type": "movie",
+		"title": "Big Trouble in Little China",
+		"contentRating": "PG-13",
+		"summary": "A rough-and-tumble trucker and his side kick face off with an ancient sorcerer in a supernatural battle beneath Chinatown.",
+		"rating": 7.4,
+		"audienceRating": 8.2,
+		"year": 1986,
+		"tagline": "Jack Burton's in for some serious trouble and you're in for some serious fun.",
+		"thumb": "/library/metadata/10379/thumb/1712000138",
+		"art": "/library/metadata/10379/art/1712000138",
+		"duration": 5988000,
+		"originallyAvailableAt": "1986-07-02",
+		"addedAt": 1712000137,
+		"updatedAt": 1712000138,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23188,
+				"duration": 5988000,
+				"bitrate": 36696,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23317,
+						"key": "/library/parts/23317/1710128265/file.m2ts",
+						"duration": 5988000,
+						"file": "/volume3/MoviesB/Movis/Big Trouble in Little China (1986).m2ts",
+						"size": 27467286528,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "John Carpenter"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "W.D. Richter"
+			},
+			{
+				"tag": "David Z. Weinstein"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kurt Russell"
+			},
+			{
+				"tag": "Kim Cattrall"
+			},
+			{
+				"tag": "Dennis Dun"
+			}
+		]
+	},
+	{
+		"ratingKey": "7478",
+		"key": "/library/metadata/7478",
+		"guid": "plex://movie/5d77682a6f4521001ea99b0a",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Bird on a Wire",
+		"contentRating": "PG-13",
+		"summary": "Rick has been given a new identity by the FBI for helping convict a drug dealing FBI agent. Fifteen years later his former fiance recognises him. Rick's FBI 'minder' has been replaced by a corrupt agent who helps the drug dealing FBI agent and his accomplice locate him. There are many subsequent chase scenes as Rick and girlfriend revisit his former haunts.",
+		"rating": 2.5,
+		"audienceRating": 4.1,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1693008514,
+		"year": 1990,
+		"tagline": "He’s every woman’s dream and one woman’s nightmare.",
+		"thumb": "/library/metadata/7478/thumb/1711898780",
+		"art": "/library/metadata/7478/art/1711898780",
+		"duration": 6634656,
+		"originallyAvailableAt": "1990-05-18",
+		"addedAt": 1680956619,
+		"updatedAt": 1711898780,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16294,
+				"duration": 6634656,
+				"bitrate": 31419,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16358,
+						"key": "/library/parts/16358/1680904444/file.m2ts",
+						"duration": 6634656,
+						"file": "/volume1/Movies/Bird on a Wire (1990).m2ts",
+						"size": 28140693504,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "John Badham"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David Seltzer"
+			},
+			{
+				"tag": "Louis Venosta"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mel Gibson"
+			},
+			{
+				"tag": "Goldie Hawn"
+			},
+			{
+				"tag": "David Carradine"
+			}
+		]
+	},
+	{
+		"ratingKey": "6938",
+		"key": "/library/metadata/6938",
+		"guid": "plex://movie/5d776a1bfb0d55001f53aa67",
+		"studio": "TSG Entertainment",
+		"type": "movie",
+		"title": "Birdman or (The Unexpected Virtue of Ignorance)",
+		"contentRating": "R",
+		"summary": "A fading actor best known for his portrayal of a popular superhero attempts to mount a comeback by appearing in a Broadway play. As opening night approaches, his attempts to become more altruistic, rebuild his career, and reconnect with friends and family prove more difficult than expected.",
+		"rating": 9.1,
+		"audienceRating": 7.8,
+		"year": 2014,
+		"tagline": "How did we end up here?",
+		"thumb": "/library/metadata/6938/thumb/1712000170",
+		"art": "/library/metadata/6938/art/1712000170",
+		"duration": 7157227,
+		"originallyAvailableAt": "2014-11-13",
+		"addedAt": 1680449330,
+		"updatedAt": 1712000170,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15058,
+				"duration": 7157227,
+				"bitrate": 47603,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 15122,
+						"key": "/library/parts/15122/1680459649/file.mkv",
+						"duration": 7157227,
+						"file": "/volume1/Movies/Birdman (2014).mkv",
+						"size": 42588225124,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Alejandro González Iñárritu"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Alejandro González Iñárritu"
+			},
+			{
+				"tag": "Armando Bo"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Michael Keaton"
+			},
+			{
+				"tag": "Emma Stone"
+			},
+			{
+				"tag": "Zach Galifianakis"
+			}
+		]
+	},
+	{
+		"ratingKey": "6939",
+		"key": "/library/metadata/6939",
+		"guid": "plex://movie/5d9f357e6fc551001ef81df3",
+		"studio": "Menage Atroz",
+		"type": "movie",
+		"title": "Biutiful",
+		"contentRating": "R",
+		"summary": "Uxbal, single father of two children, finds his life in chaos as he is forced to deal with his life in order to escape the heat of crime in underground Barcelona, to break with the love for the divorced, manic depressive, abusive mother of his children and to regain spiritual insight in his life as he is diagnosed with terminal cancer.",
+		"rating": 6.6,
+		"audienceRating": 7.5,
+		"viewOffset": 6982989,
+		"lastViewedAt": 1696207527,
+		"year": 2010,
+		"tagline": "You don't choose your family. We all belong to somebody, but to belong to Uxbal and Marambra, is both a blessing and a curse.",
+		"thumb": "/library/metadata/6939/thumb/1712000170",
+		"art": "/library/metadata/6939/art/1712000170",
+		"duration": 8882923,
+		"originallyAvailableAt": "2010-10-20",
+		"addedAt": 1680449330,
+		"updatedAt": 1712000170,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15059,
+				"duration": 8882923,
+				"bitrate": 31419,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 15123,
+						"key": "/library/parts/15123/1680572154/file.mkv",
+						"duration": 8882923,
+						"file": "/volume1/Movies/Biutiful (2010).mkv",
+						"size": 34886761302,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Alejandro González Iñárritu"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Alejandro González Iñárritu"
+			},
+			{
+				"tag": "Armando Bo"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Mexico"
+			},
+			{
+				"tag": "Spain"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Javier Bardem"
+			},
+			{
+				"tag": "Maricel Álvarez"
+			},
+			{
+				"tag": "Hanaa Bouchaib"
+			}
+		]
+	},
+	{
+		"ratingKey": "10117",
+		"key": "/library/metadata/10117",
+		"guid": "plex://movie/5d776b05fb0d55001f559234",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Black Panther",
+		"contentRating": "PG-13",
+		"summary": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+		"rating": 9.6,
+		"audienceRating": 7.9,
+		"year": 2018,
+		"tagline": "Long live the king.",
+		"thumb": "/library/metadata/10117/thumb/1711898668",
+		"duration": 8073189,
+		"originallyAvailableAt": "2018-02-13",
+		"addedAt": 1677447016,
+		"updatedAt": 1711898668,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22688,
+				"duration": 8073189,
+				"bitrate": 10472,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22797,
+						"key": "/library/parts/22797/1676675293/file.mkv",
+						"duration": 8073189,
+						"file": "/volume1/Movies/Black Panther (2018) 3D.mkv",
+						"size": 10569949163,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ryan Coogler"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Ryan Coogler"
+			},
+			{
+				"tag": "Joe Robert Cole"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Chadwick Boseman"
+			},
+			{
+				"tag": "Michael B. Jordan"
+			},
+			{
+				"tag": "Lupita Nyong'o"
+			}
+		]
+	},
+	{
+		"ratingKey": "9814",
+		"key": "/library/metadata/9814",
+		"guid": "plex://movie/5d77702e6afb3d0020613fd1",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Black Panther: Wakanda Forever",
+		"contentRating": "PG-13",
+		"summary": "Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect the kingdom of Wakanda from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for their nation.",
+		"rating": 8.3,
+		"audienceRating": 9.4,
+		"viewCount": 1,
+		"lastViewedAt": 1679086297,
+		"year": 2022,
+		"tagline": "Forever.",
+		"thumb": "/library/metadata/9814/thumb/1712000170",
+		"duration": 9679040,
+		"originallyAvailableAt": "2022-11-09",
+		"addedAt": 1677447016,
+		"updatedAt": 1712000170,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22021,
+				"duration": 9679040,
+				"bitrate": 18383,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 8,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22127,
+						"key": "/library/parts/22127/1676852411/file.mkv",
+						"duration": 9679040,
+						"file": "/volume1/Movies/Black Panther Wakanda Forever (2022).mkv",
+						"size": 22241463997,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ryan Coogler"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Stan Lee"
+			},
+			{
+				"tag": "Jack Kirby"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Letitia Wright"
+			},
+			{
+				"tag": "Tenoch Huerta Mejía"
+			},
+			{
+				"tag": "Lupita Nyong'o"
+			}
+		]
+	},
+	{
+		"ratingKey": "6943",
+		"key": "/library/metadata/6943",
+		"guid": "plex://movie/5d77687d33f255001e857fdb",
+		"studio": "Fox Searchlight Pictures",
+		"type": "movie",
+		"title": "Black Swan",
+		"contentRating": "R",
+		"summary": "Nina is a talented but unstable ballerina on the verge of stardom. Pushed to the breaking point by her artistic director and a seductive rival, Nina's grip on reality slips, plunging her into a waking nightmare.",
+		"rating": 8.5,
+		"audienceRating": 8.4,
+		"year": 2010,
+		"tagline": "Perfection is not just about control. It's also about letting go.",
+		"thumb": "/library/metadata/6943/thumb/1711898780",
+		"art": "/library/metadata/6943/art/1711898780",
+		"duration": 6487529,
+		"originallyAvailableAt": "2010-12-17",
+		"addedAt": 1680449332,
+		"updatedAt": 1711898780,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15064,
+				"duration": 6487529,
+				"bitrate": 34284,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22128,
+						"key": "/library/parts/22128/1680449093/file.mkv",
+						"duration": 6487529,
+						"file": "/volume1/Movies/Black Swan (2010).mkv",
+						"size": 27806832068,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Darren Aronofsky"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mark Heyman"
+			},
+			{
+				"tag": "Andres Heinz"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Natalie Portman"
+			},
+			{
+				"tag": "Mila Kunis"
+			},
+			{
+				"tag": "Vincent Cassel"
+			}
+		]
+	},
+	{
+		"ratingKey": "8466",
+		"key": "/library/metadata/8466",
+		"guid": "plex://movie/5d776d9847dd6e001f6f4847",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Black Widow",
+		"contentRating": "PG-13",
+		"summary": "In Marvel Studios' action-packed spy thriller \"Black Widow,\" Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+		"rating": 7.9,
+		"audienceRating": 9.1,
+		"year": 2021,
+		"tagline": "Her world. Her secrets. Her legacy.",
+		"thumb": "/library/metadata/8466/thumb/1711898781",
+		"art": "/library/metadata/8466/art/1711898781",
+		"duration": 8026848,
+		"originallyAvailableAt": "2021-07-07",
+		"addedAt": 1688512792,
+		"updatedAt": 1711898781,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 18568,
+				"duration": 8026848,
+				"bitrate": 37311,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 18642,
+						"key": "/library/parts/18642/1688324182/file.mkv",
+						"duration": 8026848,
+						"file": "/volume3/MoviesB/Movis/Black Widow (2021).mkv",
+						"size": 37442415995,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Cate Shortland"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jac Schaeffer"
+			},
+			{
+				"tag": "Eric Pearson"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Scarlett Johansson"
+			},
+			{
+				"tag": "Florence Pugh"
+			},
+			{
+				"tag": "Rachel Weisz"
+			}
+		]
+	},
+	{
+		"ratingKey": "8606",
+		"key": "/library/metadata/8606",
+		"guid": "plex://movie/6309f715039fb88ac14e0a1a",
+		"studio": "Zapruder Films",
+		"type": "movie",
+		"title": "BlackBerry",
+		"contentRating": "R",
+		"summary": "A company that toppled global giants before succumbing to the ruthlessly competitive forces of Silicon Valley. This is not a conventional tale of modern business failure by fraud and greed. The rise and fall of BlackBerry reveals the dangerous speed at which innovators race along the information superhighway.",
+		"rating": 9.8,
+		"audienceRating": 9.3,
+		"viewCount": 1,
+		"lastViewedAt": 1689206840,
+		"year": 2023,
+		"tagline": "Work hard. Fail hard.",
+		"thumb": "/library/metadata/8606/thumb/1712000171",
+		"art": "/library/metadata/8606/art/1712000171",
+		"duration": 7173440,
+		"originallyAvailableAt": "2023-05-11",
+		"addedAt": 1689205210,
+		"updatedAt": 1712000171,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 18962,
+				"duration": 7173440,
+				"bitrate": 7080,
+				"width": 1920,
+				"height": 960,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19036,
+						"key": "/library/parts/19036/1688927134/file.mkv",
+						"duration": 7173440,
+						"file": "/volume3/MoviesB/Movis/BlackBerry (2023).mkv",
+						"size": 6351218932,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Biography"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Matt Johnson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Matt Johnson"
+			},
+			{
+				"tag": "Matthew Miller"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "Finland"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jay Baruchel"
+			},
+			{
+				"tag": "Glenn Howerton"
+			},
+			{
+				"tag": "Matt Johnson"
+			}
+		]
+	},
+	{
+		"ratingKey": "8754",
+		"key": "/library/metadata/8754",
+		"guid": "plex://movie/5f409a04fea1a1003faff2cb",
+		"studio": "MRC",
+		"type": "movie",
+		"title": "The Blackening",
+		"titleSort": "Blackening",
+		"contentRating": "R",
+		"summary": "Seven black friends go away for the weekend, only to find themselves trapped in a cabin with a killer who has a vendetta. They must pit their street smarts and knowledge of horror movies against the murderer to stay alive.",
+		"rating": 8.7,
+		"audienceRating": 8.5,
+		"year": 2023,
+		"tagline": "We can't all die first.",
+		"thumb": "/library/metadata/8754/thumb/1712000171",
+		"art": "/library/metadata/8754/art/1712000171",
+		"duration": 5817856,
+		"originallyAvailableAt": "2023-06-16",
+		"addedAt": 1694816492,
+		"updatedAt": 1712000171,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 19295,
+				"duration": 5817856,
+				"bitrate": 40086,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "truehd",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19370,
+						"key": "/library/parts/19370/1692558458/file.mkv",
+						"duration": 5817856,
+						"file": "/volume3/MoviesB/Movis/The Blackening (2022).mkv",
+						"size": 29203732941,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Tim Story"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Tracy Oliver"
+			},
+			{
+				"tag": "Dewayne Perkins"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Grace Byers"
+			},
+			{
+				"tag": "Jermaine Fowler"
+			},
+			{
+				"tag": "Melvin Gregg"
+			}
+		]
+	},
+	{
+		"ratingKey": "9813",
+		"key": "/library/metadata/9813",
+		"guid": "plex://movie/5d776d85fb0d55001f5a2858",
+		"studio": "Focus Features",
+		"type": "movie",
+		"title": "BlacKkKlansman",
+		"contentRating": "R",
+		"summary": "Ron Stallworth, an African American police officer from Colorado Springs, Colorado, successfully infiltrates the local Ku Klux Klan branch aided by a Jewish surrogate who eventually becomes its leader. Based on actual events.",
+		"rating": 9.6,
+		"audienceRating": 8.3,
+		"viewCount": 2,
+		"lastViewedAt": 1707275351,
+		"year": 2018,
+		"tagline": "Infiltrate hate.",
+		"thumb": "/library/metadata/9813/thumb/1711898579",
+		"duration": 8089088,
+		"originallyAvailableAt": "2018-08-09",
+		"addedAt": 1544492585,
+		"updatedAt": 1711898579,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22020,
+				"duration": 8089088,
+				"bitrate": 10441,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22126,
+						"key": "/library/parts/22126/1544492585/file.mkv",
+						"duration": 8089088,
+						"file": "/volume1/Movies/BlacKkKlansman (2018).mkv",
+						"size": 10557546485,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Crime"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Spike Lee"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Spike Lee"
+			},
+			{
+				"tag": "Kevin Willmott"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "John David Washington"
+			},
+			{
+				"tag": "Adam Driver"
+			},
+			{
+				"tag": "Topher Grace"
+			}
+		]
+	},
+	{
+		"ratingKey": "9526",
+		"key": "/library/metadata/9526",
+		"guid": "plex://movie/5d77686954c0f0001f30806a",
+		"studio": "New Line Cinema",
+		"type": "movie",
+		"title": "Blade",
+		"contentRating": "R",
+		"summary": "In a world where vampires walk the earth, Blade has a goal. His goal is to rid the world of all vampire evil. When Blade witnesses a vampire bite Dr. Karen Jenson, he fights away the beast and takes Jenson back to his hideout. Here, alongside Abraham Whistler, Blade attempts to help heal Jenson. The vampire Quinn who was attacked by Blade, reports back to his master Deacon Frost, who is planning a huge surprise for the human population.",
+		"rating": 5.9,
+		"audienceRating": 7.8,
+		"viewCount": 1,
+		"lastViewedAt": 1678560429,
+		"year": 1998,
+		"tagline": "Against an army of Immortals, one warrior must draw first blood.",
+		"thumb": "/library/metadata/9526/thumb/1712000171",
+		"duration": 7215136,
+		"originallyAvailableAt": "1998-08-21",
+		"addedAt": 1469853131,
+		"updatedAt": 1712000171,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21313,
+				"duration": 7215136,
+				"bitrate": 16865,
+				"width": 1920,
+				"height": 812,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21414,
+						"key": "/library/parts/21414/1469853131/file.mkv",
+						"duration": 7215136,
+						"file": "/volume1/Movies/Blade (1998).mkv",
+						"size": 15216928542,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Stephen Norrington"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David S. Goyer"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Wesley Snipes"
+			},
+			{
+				"tag": "Stephen Dorff"
+			},
+			{
+				"tag": "Kris Kristofferson"
+			}
+		]
+	},
+	{
+		"ratingKey": "5945",
+		"key": "/library/metadata/5945",
+		"guid": "plex://movie/5d776b95594b2b001e6de3f3",
+		"studio": "Alcon Entertainment",
+		"type": "movie",
+		"title": "Blade Runner 2049",
+		"contentRating": "R",
+		"summary": "Thirty years after the events of Blade Runner (1982), a new Blade Runner, L.A.P.D. Officer \"K\" (Ryan Gosling), unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former L.A.P.D. Blade Runner, who has been missing for thirty years.",
+		"rating": 8.8,
+		"audienceRating": 8.8,
+		"year": 2017,
+		"tagline": "The key to the future is finally unearthed.",
+		"thumb": "/library/metadata/5945/thumb/1711898783",
+		"art": "/library/metadata/5945/art/1711898783",
+		"duration": 9827851,
+		"originallyAvailableAt": "2017-10-04",
+		"addedAt": 1679783029,
+		"updatedAt": 1711898783,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 12749,
+				"duration": 9827851,
+				"bitrate": 28658,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12806,
+						"key": "/library/parts/12806/1679796478/file.mkv",
+						"duration": 9827851,
+						"file": "/volume1/Movies/Blade Runner 2049 (2017).mkv",
+						"size": 35206263065,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 13279,
+				"duration": 9807840,
+				"bitrate": 9475,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13338,
+						"key": "/library/parts/13338/1679788274/file.mkv",
+						"duration": 9807840,
+						"file": "/volume1/Movies/Blade Runner 2049 (2017) 3D.mkv",
+						"size": 11616732634,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Denis Villeneuve"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Philip K. Dick"
+			},
+			{
+				"tag": "Hampton Fancher"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ryan Gosling"
+			},
+			{
+				"tag": "Harrison Ford"
+			},
+			{
+				"tag": "Sylvia Hoeks"
+			}
+		]
+	},
+	{
+		"ratingKey": "9793",
+		"key": "/library/metadata/9793",
+		"guid": "local://9793",
+		"type": "movie",
+		"title": "Blade Runner Black Out 2022",
+		"summary": "",
+		"viewOffset": 427042,
+		"lastViewedAt": 1707591673,
+		"year": 2022,
+		"thumb": "/library/metadata/9793/thumb/1711898568",
+		"art": "/library/metadata/9793/art/1711898568",
+		"duration": 945504,
+		"addedAt": 1684184144,
+		"updatedAt": 1711898568,
+		"Media": [
+			{
+				"id": 21978,
+				"duration": 945504,
+				"bitrate": 10687,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "hevc",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main 10",
+				"Part": [
+					{
+						"id": 22079,
+						"key": "/library/parts/22079/1684103735/file.mkv",
+						"duration": 945504,
+						"file": "/volume3/MoviesB/Movis/Blade Runner Black Out 2022 (2022).mkv",
+						"size": 1263091920,
+						"container": "mkv",
+						"videoProfile": "main 10"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Short"
+			},
+			{
+				"tag": "Music"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jordany Puello"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "SuavaMan"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "SuavaMan"
+			}
+		]
+	},
+	{
+		"ratingKey": "3201",
+		"key": "/library/metadata/3201",
+		"guid": "plex://movie/5d776a6bad5437001f77d7fb",
+		"studio": "GulfStream Pictures",
+		"type": "movie",
+		"title": "Blended",
+		"contentRating": "PG-13",
+		"summary": "After a blind date gone horribly wrong, Jim and Lauren agree they never, ever want to see each other again. Well, that's all about to change when the two find themselves and their respective families (including children) all stuck together in one suite at an African Safari vacation spot.",
+		"rating": 1.5,
+		"audienceRating": 6.4,
+		"viewCount": 2,
+		"skipCount": 2,
+		"lastViewedAt": 1696110787,
+		"year": 2014,
+		"tagline": "Single Dad, No Clue. Single Mom, Flying Solo.",
+		"thumb": "/library/metadata/3201/thumb/1711898782",
+		"art": "/library/metadata/3201/art/1711898782",
+		"duration": 7033792,
+		"originallyAvailableAt": "2014-05-22",
+		"addedAt": 1677432450,
+		"updatedAt": 1711898782,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12492,
+				"duration": 7033792,
+				"bitrate": 36119,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12549,
+						"key": "/library/parts/12549/1678116586/file.m2ts",
+						"duration": 7033792,
+						"file": "/volume1/Movies/Blended (2014).m2ts",
+						"size": 31756541952,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Frank Coraci"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Ivan Menchell"
+			},
+			{
+				"tag": "Clare Sera"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Adam Sandler"
+			},
+			{
+				"tag": "Drew Barrymore"
+			},
+			{
+				"tag": "Kevin Nealon"
+			}
+		]
+	},
+	{
+		"ratingKey": "10368",
+		"key": "/library/metadata/10368",
+		"guid": "plex://movie/5d7768285af944001f1f708f",
+		"studio": "Permut Presentations",
+		"type": "movie",
+		"title": "Blind Date",
+		"contentRating": "PG-13",
+		"summary": "When bachelor Walter Davis is set up with his sister-in-law's pretty cousin, Nadia Gates, a seemingly average blind date turns into a chaotic night on the town. Walter's brother, Ted, tells him not to let Nadia drink alcohol, but he dismisses the warning and her behaviour gets increasingly wild. Walter and Nadia's numerous incidents are made even worse as her former lover David relentlessly follows them around town.",
+		"rating": 2.4,
+		"audienceRating": 4.2,
+		"viewCount": 1,
+		"lastViewedAt": 1705450787,
+		"year": 1987,
+		"tagline": "A date with her is every man's dream come true. And with dreams like her - who needs nightmares?",
+		"thumb": "/library/metadata/10368/thumb/1711898756",
+		"duration": 5713737,
+		"originallyAvailableAt": "1987-03-27",
+		"addedAt": 1677432445,
+		"updatedAt": 1711898756,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23170,
+				"duration": 5713737,
+				"bitrate": 13789,
+				"width": 1280,
+				"height": 536,
+				"aspectRatio": 2.35,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23285,
+						"key": "/library/parts/23285/1449641385/file.mkv",
+						"duration": 5713737,
+						"file": "/volume1/Movies/Blind Date (1987).mkv",
+						"size": 9852998416,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Blake Edwards"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Dale Launer"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kim Basinger"
+			},
+			{
+				"tag": "Bruce Willis"
+			},
+			{
+				"tag": "John Larroquette"
+			}
+		]
+	},
+	{
+		"ratingKey": "10369",
+		"key": "/library/metadata/10369",
+		"guid": "plex://movie/5d776d98f617c9002018a386",
+		"studio": "Summit Entertainment",
+		"type": "movie",
+		"title": "Blindspotting",
+		"contentRating": "R",
+		"summary": "Collin must make it through his final three days of probation for a chance at a new beginning. He and his troublemaking childhood best friend, Miles, work as movers, and when Collin witnesses a police shooting, the two men’s friendship is tested as they grapple with identity and their changed realities in the rapidly-gentrifying neighborhood they grew up in.",
+		"rating": 9.4,
+		"audienceRating": 8.7,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1700703695,
+		"year": 2018,
+		"tagline": "Change the way you see.",
+		"thumb": "/library/metadata/10369/thumb/1712000172",
+		"duration": 5725761,
+		"originallyAvailableAt": "2018-07-26",
+		"addedAt": 1678717664,
+		"updatedAt": 1712000172,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23171,
+				"duration": 5725761,
+				"bitrate": 40878,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "truehd",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23286,
+						"key": "/library/parts/23286/1678592781/file.mkv",
+						"duration": 5725761,
+						"file": "/volume1/Movies/Blindspotting (2018).mkv",
+						"size": 29308216465,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Carlos López Estrada"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Daveed Diggs"
+			},
+			{
+				"tag": "Rafael Casal"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Daveed Diggs"
+			},
+			{
+				"tag": "Rafael Casal"
+			},
+			{
+				"tag": "Janina Gavankar"
+			}
+		]
+	},
+	{
+		"ratingKey": "8827",
+		"key": "/library/metadata/8827",
+		"guid": "plex://movie/5d7770a5fb0d55001f5f59bb",
+		"studio": "Warner Bros. Pictures",
+		"type": "movie",
+		"title": "Blue Beetle",
+		"contentRating": "PG-13",
+		"summary": "An alien scarab chooses Jaime Reyes to be its symbiotic host, bestowing the recent college graduate with a suit of armor that's capable of extraordinary powers, forever changing his destiny as he becomes the superhero known as Blue Beetle.",
+		"rating": 7.8,
+		"audienceRating": 9.1,
+		"year": 2023,
+		"tagline": "Jaime Reyes is a superhero whether he likes it or not.",
+		"thumb": "/library/metadata/8827/thumb/1711898783",
+		"art": "/library/metadata/8827/art/1711898783",
+		"duration": 7689264,
+		"originallyAvailableAt": "2023-08-16",
+		"addedAt": 1699010870,
+		"updatedAt": 1711898783,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 19569,
+				"duration": 7689264,
+				"bitrate": 8042,
+				"width": 1920,
+				"height": 802,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19644,
+						"key": "/library/parts/19644/1695515889/file.mkv",
+						"duration": 7689264,
+						"file": "/volume3/MoviesB/Movis/Blue Beetle (2023).mkv",
+						"size": 7731867733,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ángel Manuel Soto"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Gareth Dunnet-Alcocer"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Xolo Mariduena"
+			},
+			{
+				"tag": "Bruna Marquezine"
+			},
+			{
+				"tag": "Susan Sarandon"
+			}
+		]
+	},
+	{
+		"ratingKey": "8445",
+		"key": "/library/metadata/8445",
+		"guid": "plex://movie/5d7768387e9a3c0020c6d5e7",
+		"studio": "Scott Free Productions",
+		"type": "movie",
+		"title": "Body of Lies",
+		"contentRating": "R",
+		"summary": "A CIA agent on the ground in Jordan hunts down a powerful terrorist leader while being caught between the unclear intentions of his American supervisors and Jordan Intelligence.",
+		"rating": 5.5,
+		"audienceRating": 6.2,
+		"viewOffset": 6352201,
+		"lastViewedAt": 1689123822,
+		"year": 2008,
+		"tagline": "Trust no one. Deceive everyone.",
+		"thumb": "/library/metadata/8445/thumb/1711898783",
+		"art": "/library/metadata/8445/art/1711898783",
+		"duration": 7699274,
+		"originallyAvailableAt": "2008-10-09",
+		"addedAt": 1687727405,
+		"updatedAt": 1711898783,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 18533,
+				"duration": 7699274,
+				"bitrate": 35507,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 18606,
+						"key": "/library/parts/18606/1687660668/file.m2ts",
+						"duration": 7699274,
+						"file": "/volume3/MoviesB/Movis/Body of Lies (2008).m2ts",
+						"size": 36725483520,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ridley Scott"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "William Monahan"
+			},
+			{
+				"tag": "David Ignatius"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Leonardo DiCaprio"
+			},
+			{
+				"tag": "Russell Crowe"
+			},
+			{
+				"tag": "Mark Strong"
+			}
+		]
+	},
+	{
+		"ratingKey": "6257",
+		"key": "/library/metadata/6257",
+		"guid": "plex://movie/5d7768452ec6b5001f6beaa6",
+		"studio": "Alcon Entertainment",
+		"type": "movie",
+		"title": "The Book of Eli",
+		"titleSort": "Book of Eli",
+		"contentRating": "R",
+		"summary": "A drifter fights his way across a ravaged, post-apocalyptic America while protecting a sacred book that holds the secrets to humanity's salvation.",
+		"rating": 4.7,
+		"audienceRating": 6.4,
+		"viewOffset": 869994,
+		"skipCount": 2,
+		"lastViewedAt": 1700347902,
+		"year": 2010,
+		"tagline": "Some will kill to have it. He will kill to protect it.",
+		"thumb": "/library/metadata/6257/thumb/1711898783",
+		"art": "/library/metadata/6257/art/1711898783",
+		"duration": 7062112,
+		"originallyAvailableAt": "2010-01-14",
+		"addedAt": 1680033832,
+		"updatedAt": 1711898783,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13525,
+				"duration": 7062112,
+				"bitrate": 38653,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14984,
+						"key": "/library/parts/14984/1680040465/file.mkv",
+						"duration": 7062112,
+						"file": "/volume1/Movies/The Book of Eli (2010).mkv",
+						"size": 34121876908,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Albert Hughes"
+			},
+			{
+				"tag": "Allen Hughes"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Gary Whitta"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Denzel Washington"
+			},
+			{
+				"tag": "Gary Oldman"
+			},
+			{
+				"tag": "Mila Kunis"
+			}
+		]
+	},
+	{
+		"ratingKey": "7985",
+		"key": "/library/metadata/7985",
+		"guid": "plex://movie/5d776826961905001eb90fd1",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Borat",
+		"originalTitle": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+		"contentRating": "R",
+		"summary": "Kazakh TV talking head Borat is dispatched to the United States to report on the greatest country in the world. With a documentary crew in tow, Borat becomes more interested in locating and marrying Pamela Anderson.",
+		"rating": 9.1,
+		"audienceRating": 7.9,
+		"viewOffset": 434000,
+		"lastViewedAt": 1684886596,
+		"year": 2006,
+		"tagline": "Come to Kazakhstan, it's nice!",
+		"thumb": "/library/metadata/7985/thumb/1712000173",
+		"art": "/library/metadata/7985/art/1712000173",
+		"duration": 5028096,
+		"originallyAvailableAt": "2006-11-01",
+		"addedAt": 1684062335,
+		"updatedAt": 1712000173,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 17441,
+				"duration": 5028096,
+				"bitrate": 24364,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17510,
+						"key": "/library/parts/17510/1684021627/file.m2ts",
+						"duration": 5028096,
+						"file": "/volume3/MoviesB/Movis/Borat (2006).m2ts",
+						"size": 16221210624,
+						"audioProfile": "dts",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Larry Charles"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Sacha Baron Cohen"
+			},
+			{
+				"tag": "Anthony Hines"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sacha Baron Cohen"
+			},
+			{
+				"tag": "Ken Davitian"
+			},
+			{
+				"tag": "Luenell"
+			}
+		]
+	},
+	{
+		"ratingKey": "7986",
+		"key": "/library/metadata/7986",
+		"guid": "plex://movie/5f590e23449ca9003fd2a392",
+		"studio": "Four by Two",
+		"type": "movie",
+		"title": "Borat Subsequent Moviefilm",
+		"originalTitle": "Borat Subsequent Moviefilm: Delivery of Prodigious Bribe to American Regime for Make Benefit Once Glorious Nation of Kazakhstan",
+		"contentRating": "R",
+		"summary": "14 years after making a film about his journey across the USA, Borat risks life and limb when he returns to the United States with his young daughter, and reveals more about the culture, the COVID-19 pandemic, and the political elections.",
+		"rating": 8.5,
+		"audienceRating": 6.2,
+		"year": 2020,
+		"tagline": "Delivery of prodigious bribe to American regime for make benefit once glorious nation of Kazakhstan.",
+		"thumb": "/library/metadata/7986/thumb/1711898784",
+		"art": "/library/metadata/7986/art/1711898784",
+		"duration": 5764704,
+		"originallyAvailableAt": "2020-10-23",
+		"addedAt": 1684062336,
+		"updatedAt": 1711898784,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 17442,
+				"duration": 5764704,
+				"bitrate": 16446,
+				"width": 3840,
+				"height": 2160,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "hevc",
+				"videoResolution": "4k",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main 10",
+				"Part": [
+					{
+						"id": 17511,
+						"key": "/library/parts/17511/1684016884/file.mkv",
+						"duration": 5764704,
+						"file": "/volume3/MoviesB/Movis/Borat Subsequent Moviefilm (2020).mkv",
+						"size": 11853799002,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "main 10"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jason Woliner"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Sacha Baron Cohen"
+			},
+			{
+				"tag": "Anthony Hines"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sacha Baron Cohen"
+			},
+			{
+				"tag": "Maria Bakalova"
+			},
+			{
+				"tag": "Tom Hanks"
+			}
+		]
+	},
+	{
+		"ratingKey": "9794",
+		"key": "/library/metadata/9794",
+		"guid": "plex://movie/5d776833999c64001ec2ec8a",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Bordello of Blood",
+		"contentRating": "R",
+		"summary": "The old bag of bones 'Cryptkeeper' returns for his second full length feature flick about a funeral home that's a front for a whorehouse run by vampires.",
+		"rating": 1.4,
+		"audienceRating": 3.1,
+		"year": 1996,
+		"tagline": "Evil bites!",
+		"thumb": "/library/metadata/9794/thumb/1711898570",
+		"duration": 5190048,
+		"originallyAvailableAt": "1996-08-16",
+		"addedAt": 1710700310,
+		"updatedAt": 1711898570,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21979,
+				"duration": 5190048,
+				"bitrate": 45887,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22080,
+						"key": "/library/parts/22080/1703360095/file.m2ts",
+						"duration": 5190048,
+						"file": "/volume3/MoviesB/Movis/Bordello of Blood (1996).m2ts",
+						"size": 29769639936,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Gilbert Adler"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Robert Zemeckis"
+			},
+			{
+				"tag": "Bob Gale"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Dennis Miller"
+			},
+			{
+				"tag": "Erika Eleniak"
+			},
+			{
+				"tag": "Angie Everhart"
+			}
+		]
+	},
+	{
+		"ratingKey": "6870",
+		"key": "/library/metadata/6870",
+		"guid": "plex://movie/5d7768881999bc0020dc8370",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "The Bourne Legacy",
+		"titleSort": "Bourne Legacy",
+		"contentRating": "PG-13",
+		"summary": "An expansion of the universe from Robert Ludlum's novels, centered on a new hero whose stakes have been triggered by the events of the previous three films.",
+		"rating": 5.6,
+		"audienceRating": 5.8,
+		"viewCount": 4,
+		"lastViewedAt": 1707086909,
+		"year": 2012,
+		"tagline": "There Was Never Just One",
+		"thumb": "/library/metadata/6870/thumb/1712000174",
+		"art": "/library/metadata/6870/art/1712000174",
+		"duration": 8102304,
+		"originallyAvailableAt": "2012-08-08",
+		"addedAt": 1680346475,
+		"updatedAt": 1712000174,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 14921,
+				"duration": 8102304,
+				"bitrate": 40077,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14985,
+						"key": "/library/parts/14985/1680522370/file.mkv",
+						"duration": 8102304,
+						"file": "/volume1/Movies/The Bourne Legacy (2012).mkv",
+						"size": 40589226184,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Tony Gilroy"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Tony Gilroy"
+			},
+			{
+				"tag": "Robert Ludlum"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jeremy Renner"
+			},
+			{
+				"tag": "Rachel Weisz"
+			},
+			{
+				"tag": "Edward Norton"
+			}
+		]
+	},
+	{
+		"ratingKey": "8143",
+		"key": "/library/metadata/8143",
+		"guid": "plex://movie/5d7769e923d5a3001f4fe200",
+		"studio": "Laika",
+		"type": "movie",
+		"title": "The Boxtrolls",
+		"titleSort": "Boxtrolls",
+		"contentRating": "PG",
+		"summary": "A young orphaned boy raised by underground cave-dwelling trash collectors tries to save his friends from an evil exterminator.",
+		"rating": 7.8,
+		"audienceRating": 6.3,
+		"year": 2014,
+		"tagline": "When troubles strikes friends stack together",
+		"thumb": "/library/metadata/8143/thumb/1711898784",
+		"art": "/library/metadata/8143/art/1711898784",
+		"duration": 5769763,
+		"originallyAvailableAt": "2014-09-10",
+		"addedAt": 1684062348,
+		"updatedAt": 1711898784,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 17712,
+				"duration": 5769763,
+				"bitrate": 22141,
+				"width": 1920,
+				"height": 2160,
+				"aspectRatio": 1.33,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "2.7k",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17781,
+						"key": "/library/parts/17781/1683355628/file.mkv",
+						"duration": 5769763,
+						"file": "/volume3/MoviesB/Movis/The Boxtrolls (2014) 3D.mkv",
+						"size": 15970808401,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 17714,
+				"duration": 5769760,
+				"bitrate": 7382,
+				"width": 1280,
+				"height": 720,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17783,
+						"key": "/library/parts/17783/1683332338/file.mkv",
+						"duration": 5769760,
+						"file": "/volume3/MoviesB/Movis/The Boxtrolls (2014).mkv",
+						"size": 5325879176,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Animation"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Anthony Stacchi"
+			},
+			{
+				"tag": "Graham Annable"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Anthony Stacchi"
+			},
+			{
+				"tag": "Irena Brignull"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ben Kingsley"
+			},
+			{
+				"tag": "Isaac Hempstead-Wright"
+			},
+			{
+				"tag": "Elle Fanning"
+			}
+		]
+	},
+	{
+		"ratingKey": "7042",
+		"key": "/library/metadata/7042",
+		"guid": "plex://movie/5d77683b54f42c001f8c5791",
+		"studio": "BBC Film",
+		"type": "movie",
+		"title": "The Boy in the Striped Pajamas",
+		"titleSort": "Boy in the Striped Pajamas",
+		"contentRating": "PG-13",
+		"summary": "Through the innocent eyes of Bruno, the eight-year-old son of the commandant at a German concentration camp, a forbidden friendship with a Jewish boy on the other side of the camp fence has startling and unexpected consequences.",
+		"rating": 6.5,
+		"audienceRating": 8.5,
+		"year": 2008,
+		"tagline": "Lines may divide us, but hope will unite us.",
+		"thumb": "/library/metadata/7042/thumb/1711898784",
+		"art": "/library/metadata/7042/art/1711898784",
+		"duration": 5669088,
+		"originallyAvailableAt": "2008-09-12",
+		"addedAt": 1680449350,
+		"updatedAt": 1711898784,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15286,
+				"duration": 5669088,
+				"bitrate": 24451,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22519,
+						"key": "/library/parts/22519/1680447966/file.mkv",
+						"duration": 5669088,
+						"file": "/volume1/Movies/The Boy in the Striped Pajamas (2008).mkv",
+						"size": 17280874015,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "War"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mark Herman"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mark Herman"
+			},
+			{
+				"tag": "John Boyne"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Asa Butterfield"
+			},
+			{
+				"tag": "Jack Scanlon"
+			},
+			{
+				"tag": "Vera Farmiga"
+			}
+		]
+	},
+	{
+		"ratingKey": "7479",
+		"key": "/library/metadata/7479",
+		"guid": "plex://movie/5d7768d97a53e9001e6da6a6",
+		"studio": "Detour Filmproduction",
+		"type": "movie",
+		"title": "Boyhood",
+		"contentRating": "R",
+		"summary": "The film tells a story of a divorced couple trying to raise their young son. The story follows the boy for twelve years, from first grade at age 6 through 12th grade at age 17-18, and examines his relationship with his parents as he grows.",
+		"rating": 9.7,
+		"audienceRating": 8,
+		"viewOffset": 709647,
+		"lastViewedAt": 1681082729,
+		"year": 2014,
+		"tagline": "12 years in the making.",
+		"thumb": "/library/metadata/7479/thumb/1711898784",
+		"art": "/library/metadata/7479/art/1711898784",
+		"duration": 9927967,
+		"originallyAvailableAt": "2014-06-05",
+		"addedAt": 1680956619,
+		"updatedAt": 1711898784,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16295,
+				"duration": 9927967,
+				"bitrate": 38096,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16359,
+						"key": "/library/parts/16359/1681168086/file.mkv",
+						"duration": 9927967,
+						"file": "/volume1/Movies/Boyhood (2014).mkv",
+						"size": 47283495562,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Richard Linklater"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Richard Linklater"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ellar Coltrane"
+			},
+			{
+				"tag": "Patricia Arquette"
+			},
+			{
+				"tag": "Ethan Hawke"
+			}
+		]
+	},
+	{
+		"ratingKey": "7480",
+		"key": "/library/metadata/7480",
+		"guid": "plex://movie/5d776824eb5d26001f1dd005",
+		"studio": "Icon Entertainment International",
+		"type": "movie",
+		"title": "Braveheart",
+		"contentRating": "R",
+		"summary": "Enraged at the slaughter of Murron, his new bride and childhood love, Scottish warrior William Wallace slays a platoon of the local English lord's soldiers. This leads the village to revolt and, eventually, the entire country to rise up against English rule.",
+		"rating": 7.6,
+		"audienceRating": 8.5,
+		"year": 1995,
+		"tagline": "Every man dies, not every man truly lives.",
+		"thumb": "/library/metadata/7480/thumb/1712000174",
+		"art": "/library/metadata/7480/art/1712000174",
+		"duration": 10677845,
+		"originallyAvailableAt": "1995-05-24",
+		"addedAt": 1680956620,
+		"updatedAt": 1712000174,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16296,
+				"duration": 10677845,
+				"bitrate": 31965,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16360,
+						"key": "/library/parts/16360/1680927176/file.m2ts",
+						"duration": 10677845,
+						"file": "/volume1/Movies/Braveheart (1995).m2ts",
+						"size": 46363680768,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mel Gibson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Randall Wallace"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mel Gibson"
+			},
+			{
+				"tag": "Catherine McCormack"
+			},
+			{
+				"tag": "Sophie Marceau"
+			}
+		]
+	},
+	{
+		"ratingKey": "9296",
+		"key": "/library/metadata/9296",
+		"guid": "plex://movie/6042035f1b8c44002dc4b2c9",
+		"studio": "Loose Cannon Pictures",
+		"type": "movie",
+		"title": "Breakwater",
+		"contentRating": "R",
+		"summary": "A young ex-con risks his newfound freedom to track down the estranged daughter of a fellow inmate, and unknowingly brings a devil from her past straight to her doorstep.",
+		"rating": 3.3,
+		"audienceRating": 5,
+		"year": 2023,
+		"tagline": "The deepest secrets are the last to rise.",
+		"thumb": "/library/metadata/9296/thumb/1711898785",
+		"art": "/library/metadata/9296/art/1711898785",
+		"duration": 5830944,
+		"originallyAvailableAt": "2023-12-22",
+		"addedAt": 1704597975,
+		"updatedAt": 1711898785,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 20704,
+				"duration": 5830944,
+				"bitrate": 3002,
+				"width": 1024,
+				"height": 426,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "576",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21029,
+						"key": "/library/parts/21029/1703802394/file.mkv",
+						"duration": 5830944,
+						"file": "/volume3/MoviesB/Movis/Breakwater (2023).mkv",
+						"size": 2189927909,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "James Rowe"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "James Rowe"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Dermot Mulroney"
+			},
+			{
+				"tag": "Darren Mann"
+			},
+			{
+				"tag": "Alyssa Goss"
+			}
+		]
+	},
+	{
+		"ratingKey": "10370",
+		"key": "/library/metadata/10370",
+		"guid": "plex://movie/5d776b2cad5437001f796262",
+		"studio": "TSG Entertainment",
+		"type": "movie",
+		"title": "Bridge of Spies",
+		"contentRating": "PG-13",
+		"summary": "During the Cold War, an American lawyer is recruited to defend an arrested Soviet spy in court, and then help the CIA facilitate an exchange of the spy for the Soviet captured American U2 spy plane pilot, Francis Gary Powers.",
+		"rating": 9.1,
+		"audienceRating": 8.7,
+		"viewOffset": 2583916,
+		"lastViewedAt": 1679879106,
+		"year": 2015,
+		"tagline": "In the shadow of war, one man showed the world what we stood for.",
+		"thumb": "/library/metadata/10370/thumb/1711898757",
+		"duration": 8479679,
+		"originallyAvailableAt": "2015-10-14",
+		"addedAt": 1589865629,
+		"updatedAt": 1711898757,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23172,
+				"duration": 8479679,
+				"bitrate": 17779,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23287,
+						"key": "/library/parts/23287/1589865629/file.mkv",
+						"duration": 8479679,
+						"file": "/volume1/Movies/Bridge of Spies (2015).mkv",
+						"size": 18848190789,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Steven Spielberg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Joel Coen"
+			},
+			{
+				"tag": "Ethan Coen"
+			}
+		],
+		"Country": [
+			{
+				"tag": "India"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tom Hanks"
+			},
+			{
+				"tag": "Mark Rylance"
+			},
+			{
+				"tag": "Amy Ryan"
+			}
+		]
+	},
+	{
+		"ratingKey": "9295",
+		"key": "/library/metadata/9295",
+		"guid": "plex://movie/5d7769c451dd69001fe1b5ed",
+		"studio": "Studioul Cinematografic Bucuresti",
+		"type": "movie",
+		"title": "Brigade Miscellaneous Steps In",
+		"originalTitle": "Brigada Diverse intră în acțiune",
+		"summary": "Follows the Communist Romanian Militia 'miscellaneous brigade' and the 'diverse' crimes that it solves.",
+		"audienceRating": 8.6,
+		"year": 1974,
+		"thumb": "/library/metadata/9295/thumb/1712000174",
+		"art": "/library/metadata/9295/art/1712000174",
+		"duration": 6015680,
+		"originallyAvailableAt": "1974-05-10",
+		"addedAt": 1704597975,
+		"updatedAt": 1712000174,
+		"audienceRatingImage": "imdb://image.rating",
+		"Media": [
+			{
+				"id": 20703,
+				"duration": 6015680,
+				"bitrate": 12348,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "PAL",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 20779,
+						"key": "/library/parts/20779/1705267541/file.mkv",
+						"duration": 6015680,
+						"file": "/volume3/MoviesB/Movis/Brigada Diverse intra in actiune (1970).mkv",
+						"size": 9287118178,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mircea Drăgan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Nicolae Țic"
+			},
+			{
+				"tag": "Mircea Drăgan"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Romania"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Toma Caragiu"
+			},
+			{
+				"tag": "Sebastian Papaiani"
+			},
+			{
+				"tag": "Puiu Călinescu"
+			}
+		]
+	},
+	{
+		"ratingKey": "6170",
+		"key": "/library/metadata/6170",
+		"guid": "plex://movie/5d77705fad5437001f820468",
+		"studio": "Troll Court Entertainment",
+		"type": "movie",
+		"title": "Brightburn",
+		"contentRating": "R",
+		"summary": "What if a child from another world crash-landed on Earth, but instead of becoming a hero to mankind, he proved to be something far more sinister?",
+		"rating": 5.7,
+		"audienceRating": 6.7,
+		"viewOffset": 1823060,
+		"skipCount": 1,
+		"lastViewedAt": 1690075045,
+		"year": 2019,
+		"tagline": "Evil has found its superhero",
+		"thumb": "/library/metadata/6170/thumb/1711898785",
+		"art": "/library/metadata/6170/art/1711898785",
+		"duration": 5430464,
+		"originallyAvailableAt": "2019-05-09",
+		"addedAt": 1679863620,
+		"updatedAt": 1711898785,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13314,
+				"duration": 5430464,
+				"bitrate": 39552,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13373,
+						"key": "/library/parts/13373/1679850384/file.m2ts",
+						"duration": 5430464,
+						"file": "/volume1/Movies/Brightburn (2019).m2ts",
+						"size": 26847909888,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David Yarovesky"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Brian Gunn"
+			},
+			{
+				"tag": "Mark Gunn"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jackson A. Dunn"
+			},
+			{
+				"tag": "Elizabeth Banks"
+			},
+			{
+				"tag": "David Denman"
+			}
+		]
+	},
+	{
+		"ratingKey": "9527",
+		"key": "/library/metadata/9527",
+		"guid": "plex://movie/5d776902fb0d55001f51f807",
+		"studio": "1984 Private Defense Contractors",
+		"type": "movie",
+		"title": "Broken City",
+		"contentRating": "R",
+		"summary": "In a broken city rife with injustice, ex-cop Billy Taggart seeks redemption and revenge after being double-crossed and then framed by its most powerful figure, the mayor. Billy's relentless pursuit of justice, matched only by his streetwise toughness, makes him an unstoppable force - and the mayor's worst nightmare.",
+		"rating": 2.7,
+		"audienceRating": 4,
+		"viewOffset": 4444015,
+		"lastViewedAt": 1679015763,
+		"year": 2013,
+		"tagline": "Proof Can Be a Powerful Weapon.",
+		"thumb": "/library/metadata/9527/thumb/1710700327",
+		"duration": 6521536,
+		"originallyAvailableAt": "2013-01-18",
+		"addedAt": 1679004055,
+		"updatedAt": 1710700327,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21314,
+				"duration": 6521536,
+				"bitrate": 42450,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21415,
+						"key": "/library/parts/21415/1678916045/file.mkv",
+						"duration": 6521536,
+						"file": "/volume1/Movies/Broken City (2013).mkv",
+						"size": 34611684476,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Allen Hughes"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Brian Tucker"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mark Wahlberg"
+			},
+			{
+				"tag": "Russell Crowe"
+			},
+			{
+				"tag": "Catherine Zeta-Jones"
+			}
+		]
+	},
+	{
+		"ratingKey": "6969",
+		"key": "/library/metadata/6969",
+		"guid": "plex://movie/5d776830999c64001ec2e4a1",
+		"studio": "Davis Films",
+		"type": "movie",
+		"title": "Brotherhood of the Wolf",
+		"originalTitle": "Le Pacte des loups",
+		"contentRating": "R",
+		"summary": "In 18th-century France, the Chevalier de Fronsac and his Native American friend Mani are sent to the Gevaudan province at the king's behest to investigate the killings of hundreds by a mysterious beast.",
+		"rating": 7.3,
+		"audienceRating": 7.8,
+		"viewOffset": 3726099,
+		"lastViewedAt": 1693012346,
+		"year": 2001,
+		"tagline": "The year is 1766... The hunt for a killer has begun.",
+		"thumb": "/library/metadata/6969/thumb/1710700593",
+		"art": "/library/metadata/6969/art/1710700593",
+		"duration": 9019970,
+		"originallyAvailableAt": "2001-01-31",
+		"addedAt": 1680449335,
+		"updatedAt": 1710700593,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15139,
+				"duration": 9019970,
+				"bitrate": 22143,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 15203,
+						"key": "/library/parts/15203/1680456924/file.mkv",
+						"duration": 9019970,
+						"file": "/volume1/Movies/Brotherhood of the Wolf (2001).mkv",
+						"size": 24965810116,
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			},
+			{
+				"id": 19940,
+				"duration": 8364042,
+				"bitrate": 35770,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 20015,
+						"key": "/library/parts/20015/1696890559/file.m2ts",
+						"duration": 8364042,
+						"file": "/volume3/MoviesB/Movis/Brotherhood of the Wolf (2001).m2ts",
+						"size": 39924652032,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Christophe Gans"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Christophe Gans"
+			},
+			{
+				"tag": "Stéphane Cabel"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Samuel Le Bihan"
+			},
+			{
+				"tag": "Vincent Cassel"
+			},
+			{
+				"tag": "Émilie Dequenne"
+			}
+		]
+	},
+	{
+		"ratingKey": "6040",
+		"key": "/library/metadata/6040",
+		"guid": "plex://movie/5d77682ef59e580021897cfe",
+		"studio": "Summit Entertainment",
+		"type": "movie",
+		"title": "The Brothers Grimm",
+		"titleSort": "Brothers Grimm",
+		"contentRating": "PG-13",
+		"summary": "Folklore collectors and con artists, Jake and Will Grimm, travel from village to village pretending to protect townsfolk from enchanted creatures and performing exorcisms. However, they are put to the test when they encounter a real magical curse in a haunted forest with real magical beings, requiring genuine courage.",
+		"rating": 3.8,
+		"audienceRating": 3.9,
+		"userRating": 10,
+		"lastRatedAt": 1681513349,
+		"year": 2005,
+		"tagline": "Eliminating Evil Since 1812.",
+		"thumb": "/library/metadata/6040/thumb/1710062056",
+		"art": "/library/metadata/6040/art/1710062056",
+		"duration": 7119459,
+		"originallyAvailableAt": "2005-08-26",
+		"addedAt": 1679783040,
+		"updatedAt": 1710062056,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12976,
+				"duration": 7119459,
+				"bitrate": 60558,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13033,
+						"key": "/library/parts/13033/1679948468/file.mkv",
+						"duration": 7119459,
+						"file": "/volume1/Movies/The Brothers Grimm (2005).mkv",
+						"size": 53892690333,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Terry Gilliam"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Terry Gilliam"
+			},
+			{
+				"tag": "Ehren Kruger"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Czech Republic"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Matt Damon"
+			},
+			{
+				"tag": "Heath Ledger"
+			},
+			{
+				"tag": "Lena Headey"
+			}
+		]
+	},
+	{
+		"ratingKey": "9528",
+		"key": "/library/metadata/9528",
+		"guid": "plex://movie/5ef5ee195d76fa003a8c6342",
+		"studio": "87North Productions",
+		"type": "movie",
+		"title": "Bullet Train",
+		"contentRating": "R",
+		"summary": "Unlucky assassin Ladybug (Brad Pitt) is determined to do his job peacefully after one too many gigs has gone off the rails. Fate has other plans, however: Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe--all with connected, yet conflicting, objectives--on the world's fastest train. The end of the line is just the beginning in this non-stop thrill-ride through modern-day Japan.",
+		"rating": 5.4,
+		"audienceRating": 7.6,
+		"viewOffset": 259229,
+		"lastViewedAt": 1677951137,
+		"year": 2022,
+		"tagline": "The end of the line is just the beginning.",
+		"thumb": "/library/metadata/9528/thumb/1711898786",
+		"duration": 7591808,
+		"originallyAvailableAt": "2022-08-03",
+		"addedAt": 1677447015,
+		"updatedAt": 1711898786,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 21315,
+				"duration": 7591808,
+				"bitrate": 33946,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21416,
+						"key": "/library/parts/21416/1675908231/file.m2ts",
+						"duration": 7591808,
+						"file": "/volume1/Movies/Bullet Train (2022).m2ts",
+						"size": 34582536192,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David Leitch"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Kotaro Isaka"
+			},
+			{
+				"tag": "Zak Olkewicz"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Brad Pitt"
+			},
+			{
+				"tag": "Joey King"
+			},
+			{
+				"tag": "Aaron Taylor-Johnson"
+			}
+		]
+	},
+	{
+		"ratingKey": "8893",
+		"key": "/library/metadata/8893",
+		"guid": "plex://movie/5fad5dc41a63c6002ded3715",
+		"studio": "Double Nickel Entertainment",
+		"type": "movie",
+		"title": "The Burial",
+		"titleSort": "Burial",
+		"contentRating": "R",
+		"summary": "Inspired by true events, when a handshake deal goes sour, funeral home owner Jeremiah O'Keefe (Academy Award® winner Tommy Lee Jones) enlists charismatic, smooth-talking attorney Willie E. Gary (Academy Award® winner Jamie Foxx) to save his family business. Tempers flare and laughter ensues as the unlikely pair bond while exposing corporate corruption and racial injustice in this inspirational, triumphant story.",
+		"rating": 9.2,
+		"audienceRating": 8.2,
+		"year": 2023,
+		"tagline": "Never settle.",
+		"thumb": "/library/metadata/8893/thumb/1711898787",
+		"art": "/library/metadata/8893/art/1711898787",
+		"duration": 7633504,
+		"originallyAvailableAt": "2023-09-13",
+		"addedAt": 1699010877,
+		"updatedAt": 1711898787,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 19747,
+				"duration": 7633504,
+				"bitrate": 10225,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19822,
+						"key": "/library/parts/19822/1697587359/file.mkv",
+						"duration": 7633504,
+						"file": "/volume3/MoviesB/Movis/The Burial (2023).mkv",
+						"size": 9759554624,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Margaret Betts"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Doug Wright"
+			},
+			{
+				"tag": "Margaret Betts"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tommy Lee Jones"
+			},
+			{
+				"tag": "Jamie Foxx"
+			},
+			{
+				"tag": "Jurnee Smollett"
+			}
+		]
+	},
+	{
+		"ratingKey": "9382",
+		"key": "/library/metadata/9382",
+		"guid": "plex://movie/60d5962c5bab4c002cff56dd",
+		"studio": "SF Studios",
+		"type": "movie",
+		"title": "Burn All My Letters",
+		"originalTitle": "Bränn alla mina brev",
+		"summary": "After an argument with his wife, author Alex Schulman realizes he must deal with his anger. It is an anger that has been passed down through the generations, and all the family's conflicts and vendettas seem to start with one and the same person, grandfather Sven Stolpe. In \"Burn all my letters\" we follow Karin and Sven Stolpe, and the short affair Karin had with Olof Lagercrantz in the early 1930s, which created ripples over the decades.",
+		"audienceRating": 6.2,
+		"year": 2022,
+		"thumb": "/library/metadata/9382/thumb/1711898787",
+		"art": "/library/metadata/9382/art/1711898787",
+		"duration": 7174916,
+		"originallyAvailableAt": "2022-09-23",
+		"addedAt": 1710700294,
+		"updatedAt": 1711898787,
+		"audienceRatingImage": "imdb://image.rating",
+		"chapterSource": "media",
+		"Media": [
+			{
+				"id": 20951,
+				"duration": 7174916,
+				"bitrate": 25630,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21030,
+						"key": "/library/parts/21030/1710081542/file.mkv",
+						"duration": 7174916,
+						"file": "/volume3/MoviesB/Movis/Burn All My Letters (2023).mkv",
+						"size": 22954027562,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Björn Runge"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Alex Schulman"
+			},
+			{
+				"tag": "Veronica Zacco"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Sweden"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Asta Kamma August"
+			},
+			{
+				"tag": "Bill Skarsgård"
+			},
+			{
+				"tag": "Gustav Lindh"
+			}
+		]
+	},
+	{
+		"ratingKey": "7352",
+		"key": "/library/metadata/7352",
+		"guid": "plex://movie/5d77684a85719b001f3a77d2",
+		"studio": "Lionsgate",
+		"type": "movie",
+		"title": "The Cabin in the Woods",
+		"titleSort": "Cabin in the Woods",
+		"contentRating": "R",
+		"summary": "Five college friends head out to a remote cabin for a getaway, but things don't go as planned when they start getting killed. They soon discover that there is more to the cabin than it seems.",
+		"rating": 9.2,
+		"audienceRating": 7.4,
+		"year": 2012,
+		"tagline": "You think you know the story.",
+		"thumb": "/library/metadata/7352/thumb/1711898787",
+		"art": "/library/metadata/7352/art/1711898787",
+		"duration": 5705599,
+		"originallyAvailableAt": "2012-04-12",
+		"addedAt": 1680700864,
+		"updatedAt": 1711898787,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16014,
+				"duration": 5705599,
+				"bitrate": 69162,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16078,
+						"key": "/library/parts/16078/1680642333/file.mkv",
+						"duration": 5705599,
+						"file": "/volume1/Movies/The Cabin in the Woods (2011).mkv",
+						"size": 49340431729,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Drew Goddard"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Joss Whedon"
+			},
+			{
+				"tag": "Drew Goddard"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kristen Connolly"
+			},
+			{
+				"tag": "Fran Kranz"
+			},
+			{
+				"tag": "Chris Hemsworth"
+			}
+		]
+	},
+	{
+		"ratingKey": "8894",
+		"key": "/library/metadata/8894",
+		"guid": "plex://movie/639a1d0fbc2aa252e88871ed",
+		"studio": "Loveless",
+		"type": "movie",
+		"title": "The Caine Mutiny Court-Martial",
+		"titleSort": "Caine Mutiny Court-Martial",
+		"contentRating": "PG-13",
+		"summary": "Follows a naval officer who stands trial for mutiny after taking command from a ship captain he felt was acting in an unstable way, putting both the ship and its crew in danger.",
+		"rating": 9.4,
+		"audienceRating": 7.6,
+		"year": 2023,
+		"tagline": "Honor and the truth are about to be judged.",
+		"thumb": "/library/metadata/8894/thumb/1712000176",
+		"art": "/library/metadata/8894/art/1712000176",
+		"duration": 6521664,
+		"originallyAvailableAt": "2023-10-06",
+		"addedAt": 1699010877,
+		"updatedAt": 1712000176,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 19748,
+				"duration": 6521664,
+				"bitrate": 9338,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19823,
+						"key": "/library/parts/19823/1697586411/file.mkv",
+						"duration": 6521664,
+						"file": "/volume3/MoviesB/Movis/The Caine Mutiny Court-Martial (2023).mkv",
+						"size": 7614066228,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "War"
+			}
+		],
+		"Director": [
+			{
+				"tag": "William Friedkin"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "William Friedkin"
+			},
+			{
+				"tag": "Herman Wouk"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kiefer Sutherland"
+			},
+			{
+				"tag": "Jason Clarke"
+			},
+			{
+				"tag": "Jake Lacy"
+			}
+		]
+	},
+	{
+		"ratingKey": "7438",
+		"key": "/library/metadata/7438",
+		"guid": "plex://movie/5d7770407a53e9001e79e5b9",
+		"studio": "Boo Pictures",
+		"type": "movie",
+		"title": "Capernaum",
+		"originalTitle": "کفرناحوم",
+		"contentRating": "R",
+		"summary": "Zain, a 12-year-old boy scrambling to survive on the streets of Beirut, sues his parents for having brought him into such an unjust world, where being a refugee with no documents means that your rights can easily be denied.",
+		"rating": 9,
+		"audienceRating": 9.3,
+		"year": 2018,
+		"tagline": "It takes courage to hope.",
+		"thumb": "/library/metadata/7438/thumb/1712000176",
+		"art": "/library/metadata/7438/art/1712000176",
+		"duration": 7588960,
+		"originallyAvailableAt": "2018-09-20",
+		"addedAt": 1680883932,
+		"updatedAt": 1712000176,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16192,
+				"duration": 7588960,
+				"bitrate": 35777,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16256,
+						"key": "/library/parts/16256/1680873929/file.mkv",
+						"duration": 7588960,
+						"file": "/volume1/Movies/Capernaum (2018).mkv",
+						"size": 33942493755,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Nadine Labaki"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Nadine Labaki"
+			},
+			{
+				"tag": "Jihad Hojeily"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Cyprus"
+			},
+			{
+				"tag": "France"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Zain Al Rafeea"
+			},
+			{
+				"tag": "Yordanos Shifera"
+			},
+			{
+				"tag": "Boluwatife Treasure Bankole"
+			}
+		]
+	},
+	{
+		"ratingKey": "10330",
+		"key": "/library/metadata/10330",
+		"guid": "plex://movie/5d776adcfb0d55001f553b34",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Captain America: Civil War",
+		"contentRating": "PG-13",
+		"summary": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+		"rating": 9.1,
+		"audienceRating": 8.9,
+		"year": 2016,
+		"tagline": "United we stand. Divided we fall.",
+		"thumb": "/library/metadata/10330/thumb/1710700595",
+		"duration": 8861088,
+		"originallyAvailableAt": "2016-04-27",
+		"addedAt": 1482700042,
+		"updatedAt": 1710700595,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23088,
+				"duration": 8861088,
+				"bitrate": 10219,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23203,
+						"key": "/library/parts/23203/1482700042/file.mkv",
+						"duration": 8861088,
+						"file": "/volume1/Movies/Captain America Civil War (2016) 3D.mkv",
+						"size": 11319400147,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Anthony Russo"
+			},
+			{
+				"tag": "Joe Russo"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Christopher Markus"
+			},
+			{
+				"tag": "Stephen McFeely"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Chris Evans"
+			},
+			{
+				"tag": "Robert Downey Jr."
+			},
+			{
+				"tag": "Scarlett Johansson"
+			}
+		]
+	},
+	{
+		"ratingKey": "935",
+		"key": "/library/metadata/935",
+		"guid": "plex://movie/5d77682a103a2d001f564ffb",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Captain America: The First Avenger",
+		"contentRating": "PG-13",
+		"summary": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\". But being Captain America comes at a price as he attempts to take down a warmonger and a terrorist organization.",
+		"rating": 8,
+		"audienceRating": 7.5,
+		"year": 2011,
+		"tagline": "When patriots become heroes",
+		"thumb": "/library/metadata/935/thumb/1711898753",
+		"art": "/library/metadata/935/art/1711898753",
+		"duration": 7451616,
+		"originallyAvailableAt": "2011-07-22",
+		"addedAt": 1571097450,
+		"updatedAt": 1711898753,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23089,
+				"duration": 7451616,
+				"bitrate": 20215,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23204,
+						"key": "/library/parts/23204/1571097450/file.mkv",
+						"duration": 7451616,
+						"file": "/volume1/Movies/Captain America The First Avenger (2011) 3D.mkv",
+						"size": 18831617414,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 23090,
+				"duration": 7451616,
+				"bitrate": 8239,
+				"width": 1280,
+				"height": 544,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23205,
+						"key": "/library/parts/23205/1489362110/file.mkv",
+						"duration": 7451616,
+						"file": "/volume1/Movies/Captain America The First Avenger (2011).mkv",
+						"size": 7677619676,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joe Johnston"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Christopher Markus"
+			},
+			{
+				"tag": "Stephen McFeely"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Chris Evans"
+			},
+			{
+				"tag": "Tommy Lee Jones"
+			},
+			{
+				"tag": "Hugo Weaving"
+			}
+		]
+	},
+	{
+		"ratingKey": "10366",
+		"key": "/library/metadata/10366",
+		"guid": "plex://movie/5d77690896b655001fdc8aca",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Captain America: The Winter Soldier",
+		"contentRating": "PG-13",
+		"summary": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
+		"rating": 9,
+		"audienceRating": 9.2,
+		"year": 2014,
+		"tagline": "In heroes we trust.",
+		"thumb": "/library/metadata/10366/thumb/1712000177",
+		"duration": 8154229,
+		"originallyAvailableAt": "2014-03-26",
+		"addedAt": 1482672427,
+		"updatedAt": 1712000177,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23168,
+				"duration": 8154229,
+				"bitrate": 9403,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23283,
+						"key": "/library/parts/23283/1482672427/file.mkv",
+						"duration": 8154229,
+						"file": "/volume1/Movies/Captain America The Winter Soldier (2014) 3D.mkv",
+						"size": 9587113068,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Anthony Russo"
+			},
+			{
+				"tag": "Joe Russo"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Christopher Markus"
+			},
+			{
+				"tag": "Stephen McFeely"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Chris Evans"
+			},
+			{
+				"tag": "Scarlett Johansson"
+			},
+			{
+				"tag": "Sebastian Stan"
+			}
+		]
+	},
+	{
+		"ratingKey": "10367",
+		"key": "/library/metadata/10367",
+		"guid": "plex://movie/5d9f3c7c9dd5f4001e84c1a7",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Captain Marvel",
+		"contentRating": "PG-13",
+		"summary": "After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls, Danvers begins to discover there's more to her past. With help from S.H.I.E.L.D. agent Nick Fury, they set out to unravel the truth.",
+		"rating": 7.9,
+		"audienceRating": 4.5,
+		"year": 2019,
+		"tagline": "Higher. Further. Faster.",
+		"thumb": "/library/metadata/10367/thumb/1712000177",
+		"duration": 7422331,
+		"originallyAvailableAt": "2019-03-06",
+		"addedAt": 1568507888,
+		"updatedAt": 1712000177,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23169,
+				"duration": 7422331,
+				"bitrate": 10920,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23284,
+						"key": "/library/parts/23284/1568507888/file.mkv",
+						"duration": 7422331,
+						"file": "/volume1/Movies/Captain Marvel (2019) 3D.mkv",
+						"size": 10133903295,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ryan Fleck"
+			},
+			{
+				"tag": "Anna Boden"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jack Kirby"
+			},
+			{
+				"tag": "Joe Simon"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Brie Larson"
+			},
+			{
+				"tag": "Samuel L. Jackson"
+			},
+			{
+				"tag": "Ben Mendelsohn"
+			}
+		]
+	},
+	{
+		"ratingKey": "8266",
+		"key": "/library/metadata/8266",
+		"guid": "plex://movie/5eb8f22581daba0040d46c7e",
+		"studio": "Goldenart Production",
+		"type": "movie",
+		"title": "Caravaggio's Shadow",
+		"originalTitle": "L'ombra di Caravaggio",
+		"summary": "The Catholic Church secretly investigates Caravaggio as the Pope weighs whether to grant him clemency for killing a rival.",
+		"audienceRating": 6.6,
+		"year": 2022,
+		"thumb": "/library/metadata/8266/thumb/1711898788",
+		"art": "/library/metadata/8266/art/1711898788",
+		"duration": 7100128,
+		"originallyAvailableAt": "2022-11-03",
+		"addedAt": 1684062360,
+		"updatedAt": 1711898788,
+		"audienceRatingImage": "imdb://image.rating",
+		"chapterSource": "media",
+		"Media": [
+			{
+				"id": 17976,
+				"duration": 7100128,
+				"bitrate": 36017,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21031,
+						"key": "/library/parts/21031/1682809198/file.mkv",
+						"duration": 7100128,
+						"file": "/volume3/MoviesB/Movis/Caravaggio's Shadow (2022).mkv",
+						"size": 31953592280,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Biography"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Michele Placido"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Michele Placido"
+			},
+			{
+				"tag": "Sandro Petraglia"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "Italy"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Riccardo Scamarcio"
+			},
+			{
+				"tag": "Louis Garrel"
+			},
+			{
+				"tag": "Isabelle Huppert"
+			}
+		]
+	},
+	{
+		"ratingKey": "3429",
+		"key": "/library/metadata/3429",
+		"guid": "plex://movie/5d9f356e6fc551001ef8193b",
+		"studio": "CTB Film Company",
+		"type": "movie",
+		"title": "Cargo 200",
+		"originalTitle": "Груз 200",
+		"summary": "The Soviet Union in 1984, the decline of the Soviet Era. The daughter of the Secretary of the Regional Committee of the Communist Party in a small town disappears one night after leaving a dance club. There are no witnesses, no suspects. The same night a brutal murder occurs in a house in the outskirts of town. The murderer is the owner of the house. Police captain Zhurov has to investigate both cases . . .",
+		"rating": 8.1,
+		"audienceRating": 8,
+		"year": 2007,
+		"tagline": "Odinnadtsatyy film Alekseya Balabanova (Eleventh film by Aleksey Balabanov)",
+		"thumb": "/library/metadata/3429/thumb/1711898788",
+		"art": "/library/metadata/3429/art/1711898788",
+		"duration": 5359712,
+		"originallyAvailableAt": "2007-06-14",
+		"addedAt": 1512964210,
+		"updatedAt": 1711898788,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 7276,
+				"duration": 5359712,
+				"bitrate": 4623,
+				"width": 1152,
+				"height": 648,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "576",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 7280,
+						"key": "/library/parts/7280/1512964210/file.mkv",
+						"duration": 5359712,
+						"file": "/volume1/Movies/Груз 200 (2007).mkv",
+						"size": 3097070755,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Aleksey Balabanov"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Aleksey Balabanov"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Russian Federation"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Agniya Kuznetsova"
+			},
+			{
+				"tag": "Aleksey Poluyan"
+			},
+			{
+				"tag": "Leonid Gromov"
+			}
+		]
+	},
+	{
+		"ratingKey": "7337",
+		"key": "/library/metadata/7337",
+		"guid": "plex://movie/5d7768686f4521001eaa5cac",
+		"studio": "Metro-Goldwyn-Mayer",
+		"type": "movie",
+		"title": "Casino Royale",
+		"contentRating": "PG-13",
+		"summary": "After earning 00 status and a licence to kill, secret agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, Montenegro.",
+		"rating": 9.4,
+		"audienceRating": 9,
+		"viewOffset": 1971692,
+		"viewCount": 1,
+		"lastViewedAt": 1681083576,
+		"year": 2006,
+		"tagline": "Everyone has a past. Every legend has a beginning.",
+		"thumb": "/library/metadata/7337/thumb/1712000178",
+		"art": "/library/metadata/7337/art/1712000178",
+		"duration": 8673130,
+		"originallyAvailableAt": "2006-11-14",
+		"addedAt": 1680700862,
+		"updatedAt": 1712000178,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15997,
+				"duration": 8673130,
+				"bitrate": 49017,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16061,
+						"key": "/library/parts/16061/1680625511/file.m2ts",
+						"duration": 8673130,
+						"file": "/volume1/Movies/Casino Royale (2006).m2ts",
+						"size": 57041147904,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Martin Campbell"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Paul Haggis"
+			},
+			{
+				"tag": "Ian Fleming"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Daniel Craig"
+			},
+			{
+				"tag": "Eva Green"
+			},
+			{
+				"tag": "Mads Mikkelsen"
+			}
+		]
+	},
+	{
+		"ratingKey": "8607",
+		"key": "/library/metadata/8607",
+		"guid": "plex://movie/613c7a7192d089d57482fc09",
+		"studio": "Gold Circle Films",
+		"type": "movie",
+		"title": "Champions",
+		"contentRating": "PG-13",
+		"summary": "A former minor-league basketball coach is ordered by the court to manage a team of players with intellectual disabilities. He soon realizes that despite his doubts, together, this team can go further than they ever imagined.",
+		"rating": 5.9,
+		"audienceRating": 9.5,
+		"viewOffset": 1690207,
+		"lastViewedAt": 1689208837,
+		"year": 2023,
+		"tagline": "Every dream team starts somewhere.",
+		"thumb": "/library/metadata/8607/thumb/1711898788",
+		"art": "/library/metadata/8607/art/1711898788",
+		"duration": 7424128,
+		"originallyAvailableAt": "2023-03-09",
+		"addedAt": 1689205211,
+		"updatedAt": 1711898788,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 18963,
+				"duration": 7424128,
+				"bitrate": 39365,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19037,
+						"key": "/library/parts/19037/1688941036/file.mkv",
+						"duration": 7424128,
+						"file": "/volume3/MoviesB/Movis/Champions (2023).mkv",
+						"size": 36484332672,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Bobby Farrelly"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Javier Fesser"
+			},
+			{
+				"tag": "David Marqués"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Woody Harrelson"
+			},
+			{
+				"tag": "Kaitlin Olson"
+			},
+			{
+				"tag": "Cheech Marin"
+			}
+		]
+	},
+	{
+		"ratingKey": "6080",
+		"key": "/library/metadata/6080",
+		"guid": "plex://movie/5d7768243c3c2a001fbca85a",
+		"studio": "Warner Bros. Pictures",
+		"type": "movie",
+		"title": "Charlie and the Chocolate Factory",
+		"contentRating": "PG",
+		"summary": "When Willy Wonka decides to let five children into his chocolate factory, he decides to release five golden tickets in five separate chocolate bars, causing complete mayhem. The tickets start to be found, with the fifth going to a very special boy, called Charlie Bucket. With his Grandpa, Charlie joins the rest of the children to experience the most amazing factory ever. But not everything goes to plan within the factory.",
+		"rating": 8.3,
+		"audienceRating": 5.1,
+		"viewOffset": 2057000,
+		"lastViewedAt": 1679786966,
+		"year": 2005,
+		"tagline": "Prepare for a taste of adventure.",
+		"thumb": "/library/metadata/6080/thumb/1712000179",
+		"art": "/library/metadata/6080/art/1712000179",
+		"duration": 6925952,
+		"originallyAvailableAt": "2005-07-13",
+		"addedAt": 1679138988,
+		"updatedAt": 1712000179,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 13070,
+				"duration": 6925952,
+				"bitrate": 18678,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 13128,
+						"key": "/library/parts/13128/1679054180/file.mkv",
+						"duration": 6925952,
+						"file": "/volume1/Movies/Charlie and the Chocolate Factory (2005).mkv",
+						"size": 16170712931,
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Tim Burton"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Roald Dahl"
+			},
+			{
+				"tag": "John August"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Johnny Depp"
+			},
+			{
+				"tag": "Freddie Highmore"
+			},
+			{
+				"tag": "David Kelly"
+			}
+		]
+	},
+	{
+		"ratingKey": "5238",
+		"key": "/library/metadata/5238",
+		"guid": "plex://movie/5d9f34f668e4c8001fb5db5e",
+		"studio": "Metro-Goldwyn-Mayer",
+		"type": "movie",
+		"title": "Charlie Bartlett",
+		"contentRating": "R",
+		"summary": "Awkward teenager Charlie Bartlett has trouble fitting in at a new high school. Charlie needs some friends fast, and decides that the best way to find them is to appoint himself the resident psychiatrist. He becomes one of the most popular guys in school by doling out advice and, occasionally, medication, to the student body.",
+		"rating": 5.8,
+		"audienceRating": 7.1,
+		"year": 2008,
+		"tagline": "Popularity is a state of mind.",
+		"thumb": "/library/metadata/5238/thumb/1710700598",
+		"art": "/library/metadata/5238/art/1710700598",
+		"duration": 5813472,
+		"originallyAvailableAt": "2008-02-22",
+		"addedAt": 1679138987,
+		"updatedAt": 1710700598,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 11139,
+				"duration": 5813472,
+				"bitrate": 10201,
+				"width": 1280,
+				"height": 692,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11195,
+						"key": "/library/parts/11195/1679107759/file.mkv",
+						"duration": 5813472,
+						"file": "/volume1/Movies/Charlie Bartlett (2007).mkv",
+						"size": 7412780219,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jon Poll"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Gustin Nash"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Anton Yelchin"
+			},
+			{
+				"tag": "Robert Downey Jr."
+			},
+			{
+				"tag": "Hope Davis"
+			}
+		]
+	},
+	{
+		"ratingKey": "5353",
+		"key": "/library/metadata/5353",
+		"guid": "plex://movie/5d776a4323d5a3001f50254e",
+		"studio": "Altus Media",
+		"type": "movie",
+		"title": "Chef",
+		"contentRating": "R",
+		"summary": "When Chef Carl Casper suddenly quits his job at a prominent Los Angeles restaurant after refusing to compromise his creative integrity for its controlling owner, he is left to figure out what's next. Finding himself in Miami, he teams up with his ex-wife, his friend and his son to launch a food truck. Taking to the road, Chef Carl goes back to his roots to reignite his passion for the kitchen -- and zest for life and love.",
+		"rating": 8.7,
+		"audienceRating": 8.5,
+		"viewOffset": 5259115,
+		"skipCount": 1,
+		"lastViewedAt": 1679277907,
+		"year": 2014,
+		"tagline": "Starting from scratch never tasted so good.",
+		"thumb": "/library/metadata/5353/thumb/1711898789",
+		"art": "/library/metadata/5353/art/1711898789",
+		"duration": 6905920,
+		"originallyAvailableAt": "2014-05-08",
+		"addedAt": 1679235522,
+		"updatedAt": 1711898789,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 11430,
+				"duration": 6905920,
+				"bitrate": 38859,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11486,
+						"key": "/library/parts/11486/1679147531/file.m2ts",
+						"duration": 6905920,
+						"file": "/volume1/Movies/Chef (2014).m2ts",
+						"size": 33544366080,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jon Favreau"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jon Favreau"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jon Favreau"
+			},
+			{
+				"tag": "John Leguizamo"
+			},
+			{
+				"tag": "Bobby Cannavale"
+			}
+		]
+	},
+	{
+		"ratingKey": "5432",
+		"key": "/library/metadata/5432",
+		"guid": "plex://movie/5d77683b61141d001fb16515",
+		"studio": "Fox Searchlight Pictures",
+		"type": "movie",
+		"title": "Choke",
+		"contentRating": "R",
+		"summary": "Sex addict and colonial theme park worker, Victor Mancini, has devised a complicated scam to pay for his mom's hospital bills while she suffers from an Alzheimer's disease that hides the truth about his childhood. He pretends to choke on food in a restaurant and the person who \"saves\" him will feel responsible for Victor for the rest of their lives.",
+		"rating": 5.6,
+		"audienceRating": 5.2,
+		"viewOffset": 4437184,
+		"viewCount": 2,
+		"lastViewedAt": 1708639141,
+		"year": 2008,
+		"tagline": "From the author of Fight Club",
+		"thumb": "/library/metadata/5432/thumb/1711898790",
+		"art": "/library/metadata/5432/art/1711898790",
+		"duration": 5506543,
+		"originallyAvailableAt": "2008-10-30",
+		"addedAt": 1679355140,
+		"updatedAt": 1711898790,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 11603,
+				"duration": 5506543,
+				"bitrate": 12844,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11659,
+						"key": "/library/parts/11659/1679314844/file.mkv",
+						"duration": 5506543,
+						"file": "/volume1/Movies/Choke (2008).mkv",
+						"size": 8840974300,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Clark Gregg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Chuck Palahniuk"
+			},
+			{
+				"tag": "Clark Gregg"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sam Rockwell"
+			},
+			{
+				"tag": "Anjelica Huston"
+			},
+			{
+				"tag": "Kelly Macdonald"
+			}
+		]
+	},
+	{
+		"ratingKey": "9165",
+		"key": "/library/metadata/9165",
+		"guid": "plex://movie/5d77682f8718ba001e31357e",
+		"studio": "Hughes Entertainment",
+		"type": "movie",
+		"title": "Christmas Vacation",
+		"originalTitle": "National Lampoon's Christmas Vacation",
+		"contentRating": "PG-13",
+		"summary": "It's Christmas time and the Griswolds are preparing for a family seasonal celebration, but things never run smoothly for Clark, his wife Ellen and their two kids. Clark's continual bad luck is worsened by his obnoxious family guests, but he manages to keep going knowing that his Christmas bonus is due soon.",
+		"rating": 7,
+		"audienceRating": 8.6,
+		"year": 1989,
+		"tagline": "Yule crack up!",
+		"thumb": "/library/metadata/9165/thumb/1712000179",
+		"art": "/library/metadata/9165/art/1712000179",
+		"duration": 5832640,
+		"originallyAvailableAt": "1989-11-30",
+		"addedAt": 1703602664,
+		"updatedAt": 1712000179,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20363,
+				"duration": 5832640,
+				"bitrate": 7017,
+				"width": 1280,
+				"height": 724,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21140,
+						"key": "/library/parts/21140/1703358142/file.mkv",
+						"duration": 5832640,
+						"file": "/volume3/MoviesB/Movis/National Lampoon's Christmas Vacation (1989).mkv",
+						"size": 5117738571,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jeremiah S. Chechik"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "John Hughes"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Chevy Chase"
+			},
+			{
+				"tag": "Beverly D'Angelo"
+			},
+			{
+				"tag": "Juliette Lewis"
+			}
+		]
+	},
+	{
+		"ratingKey": "5103",
+		"key": "/library/metadata/5103",
+		"guid": "plex://movie/5d77683aeb5d26001f1e1dc1",
+		"studio": "Revolution Studios",
+		"type": "movie",
+		"title": "Christmas with the Kranks",
+		"contentRating": "PG",
+		"summary": "With their daughter, Blair, away in Peru, Luther and Nora Krank decide to skip Christmas all together until she decides to come home, causing an uproar when they have to celebrate it at the last minute.",
+		"rating": 0.5,
+		"audienceRating": 3.9,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1704044965,
+		"year": 2004,
+		"tagline": "Their Christmas will turn the town upside down!",
+		"thumb": "/library/metadata/5103/thumb/1711898790",
+		"art": "/library/metadata/5103/art/1711898790",
+		"duration": 5932288,
+		"originallyAvailableAt": "2004-11-24",
+		"addedAt": 1679004053,
+		"updatedAt": 1711898790,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 10794,
+				"duration": 5932288,
+				"bitrate": 15575,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 10850,
+						"key": "/library/parts/10850/1678925341/file.mkv",
+						"duration": 5932288,
+						"file": "/volume1/Movies/Christmas with the Kranks (2004).mkv",
+						"size": 11549771633,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Family"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joe Roth"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Chris Columbus"
+			},
+			{
+				"tag": "John Grisham"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tim Allen"
+			},
+			{
+				"tag": "Jamie Lee Curtis"
+			},
+			{
+				"tag": "Dan Aykroyd"
+			}
+		]
+	},
+	{
+		"ratingKey": "6982",
+		"key": "/library/metadata/6982",
+		"guid": "plex://movie/5d7768298a7581001f12c0d6",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Cinderella Man",
+		"contentRating": "PG-13",
+		"summary": "The true story of James J. Braddock, a supposedly washed-up boxer, who returned to the spotlight to win the heavyweight championship of the world.",
+		"rating": 8,
+		"audienceRating": 9.1,
+		"year": 2005,
+		"tagline": "One man's extraordinary fight to save the family he loved.",
+		"thumb": "/library/metadata/6982/thumb/1711898790",
+		"art": "/library/metadata/6982/art/1711898790",
+		"duration": 8662368,
+		"originallyAvailableAt": "2005-06-02",
+		"addedAt": 1680449336,
+		"updatedAt": 1711898790,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15166,
+				"duration": 8662368,
+				"bitrate": 34975,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 15230,
+						"key": "/library/parts/15230/1680390297/file.m2ts",
+						"duration": 8662368,
+						"file": "/volume1/Movies/Cinderella Man (2005).m2ts",
+						"size": 37870645248,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Biography"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ron Howard"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Akiva Goldsman"
+			},
+			{
+				"tag": "Cliff Hollingsworth"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Russell Crowe"
+			},
+			{
+				"tag": "Renée Zellweger"
+			},
+			{
+				"tag": "Paul Giamatti"
+			}
+		]
+	},
+	{
+		"ratingKey": "3182",
+		"key": "/library/metadata/3182",
+		"guid": "plex://movie/5d7768337228e5001f1de39b",
+		"studio": "TriStar Pictures",
+		"type": "movie",
+		"title": "Cliffhanger",
+		"contentRating": "R",
+		"summary": "Whilst crossing a ledge, 4000 feet above the earth, Gabe's friend's equipment fails to work and she slips out of his hand, falling to the ground. Almost a year later, Gabe is asked to go back to the same mountain range and rescue a group of 'stranded' people. The only catch is that these so called 'stranded' people are in fact looking for three boxes filled with $100,000,000 and they need a mountain ranger to lead them to them!!",
+		"rating": 6.8,
+		"audienceRating": 5.2,
+		"viewCount": 2,
+		"skipCount": 1,
+		"lastViewedAt": 1699316988,
+		"year": 1992,
+		"tagline": "The height of adventure.",
+		"thumb": "/library/metadata/3182/thumb/1711898790",
+		"art": "/library/metadata/3182/art/1711898790",
+		"duration": 6762794,
+		"originallyAvailableAt": "1992-11-30",
+		"addedAt": 1677432445,
+		"updatedAt": 1711898790,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16548,
+				"duration": 6762794,
+				"bitrate": 57822,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16613,
+						"key": "/library/parts/16613/1681103287/file.mkv",
+						"duration": 6762794,
+						"file": "/volume1/Movies/Cliffhanger (1993).mkv",
+						"size": 48893150474,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Renny Harlin"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Michael France"
+			},
+			{
+				"tag": "Sylvester Stallone"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "Italy"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sylvester Stallone"
+			},
+			{
+				"tag": "John Lithgow"
+			},
+			{
+				"tag": "Michael Rooker"
+			}
+		]
+	},
+	{
+		"ratingKey": "8811",
+		"key": "/library/metadata/8811",
+		"guid": "plex://movie/5ed3f1ab0dfb380041ad62c7",
+		"studio": "Point Grey Pictures",
+		"type": "movie",
+		"title": "Cobweb",
+		"contentRating": "R",
+		"summary": "An eight-year-old boy tries to investigate the mysterious knocking sounds that are coming from inside the walls of his house, unveiling a dark secret that his sinister parents have kept hidden from him.",
+		"rating": 5.9,
+		"audienceRating": 7.1,
+		"viewCount": 1,
+		"lastViewedAt": 1694999748,
+		"year": 2023,
+		"tagline": "Sooner or later, family secrets creep out.",
+		"thumb": "/library/metadata/8811/thumb/1711898791",
+		"art": "/library/metadata/8811/art/1711898791",
+		"duration": 5285321,
+		"originallyAvailableAt": "2023-07-20",
+		"addedAt": 1694998526,
+		"updatedAt": 1711898791,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 19529,
+				"duration": 5285321,
+				"bitrate": 38562,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19604,
+						"key": "/library/parts/19604/1694911920/file.mkv",
+						"duration": 5285321,
+						"file": "/volume3/MoviesB/Movis/Cobweb (2023).mkv",
+						"size": 25479890920,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Samuel Bodin"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Chris Thomas Devlin"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Lizzy Caplan"
+			},
+			{
+				"tag": "Antony Starr"
+			},
+			{
+				"tag": "Cleopatra Coleman"
+			}
+		]
+	},
+	{
+		"ratingKey": "10320",
+		"key": "/library/metadata/10320",
+		"guid": "plex://movie/5d776f48fb0d55001f5db8c4",
+		"studio": "Colony Pictures",
+		"type": "movie",
+		"title": "Code 8",
+		"contentRating": "Not Rated",
+		"summary": "In a world where people with \"special\" abilities are living in poverty, Conner Reed (Robbie Amell) is a powerful young man who is struggling to pay for his ailing mother's medical treatment. To earn money, he joins a lucrative criminal world led by Garrett (Stephen Amell), who works for a drug lord (Greg Bryk).",
+		"rating": 8.1,
+		"audienceRating": 6.2,
+		"viewCount": 1,
+		"lastViewedAt": 1709257243,
+		"year": 2019,
+		"tagline": "Fear is the most dangerous power",
+		"thumb": "/library/metadata/10320/thumb/1711898743",
+		"duration": 5904768,
+		"originallyAvailableAt": "2019-12-04",
+		"addedAt": 1678568209,
+		"updatedAt": 1711898743,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23078,
+				"duration": 5904768,
+				"bitrate": 30924,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23191,
+						"key": "/library/parts/23191/1678539521/file.mkv",
+						"duration": 5904768,
+						"file": "/volume1/Movies/Code 8 (2019).mkv",
+						"size": 22828059491,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jeff Chan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jeff Chan"
+			},
+			{
+				"tag": "Chris Paré"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Robbie Amell"
+			},
+			{
+				"tag": "Stephen Amell"
+			},
+			{
+				"tag": "Kari Matchett"
+			}
+		]
+	},
+	{
+		"ratingKey": "10321",
+		"key": "/library/metadata/10321",
+		"guid": "plex://movie/5d77682b8718ba001e312775",
+		"studio": "Miramax",
+		"type": "movie",
+		"title": "Cold Mountain",
+		"contentRating": "R",
+		"summary": "This Civil War saga addresses romance, friendship, and the ravages of war - both in the field and on the home front. Captures the horrors of war for both those fighting it, and for those left behind. This is a tale of hope, longing, redemption, second chances, and faith.",
+		"rating": 7,
+		"audienceRating": 7.7,
+		"year": 2003,
+		"tagline": "Find the strength. Find the courage. No matter what it takes... find the way home.",
+		"thumb": "/library/metadata/10321/thumb/1711898744",
+		"duration": 9265929,
+		"originallyAvailableAt": "2003-12-25",
+		"addedAt": 1482709306,
+		"updatedAt": 1711898744,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23079,
+				"duration": 9265929,
+				"bitrate": 28327,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23192,
+						"key": "/library/parts/23192/1679661265/file.mkv",
+						"duration": 9265929,
+						"file": "/volume1/Movies/Cold Mountain (2003).mkv",
+						"size": 32814674962,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Anthony Minghella"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Anthony Minghella"
+			},
+			{
+				"tag": "Charles Frazier"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jude Law"
+			},
+			{
+				"tag": "Nicole Kidman"
+			},
+			{
+				"tag": "Renée Zellweger"
+			}
+		]
+	},
+	{
+		"ratingKey": "9990",
+		"key": "/library/metadata/9990",
+		"guid": "plex://movie/5d7769f996b655001fddf9f4",
+		"studio": "RLJ Entertainment",
+		"type": "movie",
+		"title": "The Colony",
+		"titleSort": "Colony",
+		"contentRating": "Not Rated",
+		"summary": "Groups of people - colonies - are forced underground due to another ice age. Colony 7 goes to check on Colony 5, which they lost contact with. When they get there they find that the colony has fallen and there is a whole new enemy that they have to face on their way back.",
+		"rating": 2.1,
+		"audienceRating": 2.3,
+		"viewOffset": 709000,
+		"lastViewedAt": 1691623823,
+		"year": 2013,
+		"tagline": "One day, it started to snow .. and it never stopped",
+		"thumb": "/library/metadata/9990/thumb/1712000180",
+		"duration": 5666166,
+		"originallyAvailableAt": "2013-06-13",
+		"addedAt": 1393211715,
+		"updatedAt": 1712000180,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 22384,
+				"duration": 5666166,
+				"bitrate": 2072,
+				"width": 720,
+				"height": 304,
+				"aspectRatio": 2.35,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg4",
+				"videoResolution": "sd",
+				"container": "avi",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced simple",
+				"Part": [
+					{
+						"id": 22492,
+						"key": "/library/parts/22492/1393211715/file.avi",
+						"duration": 5666166,
+						"file": "/volume1/Movies/The Colony (2013).avi",
+						"size": 1467762688,
+						"container": "avi",
+						"videoProfile": "advanced simple"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Science Fiction"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jeff Renfroe"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jeff Renfroe"
+			},
+			{
+				"tag": "Patrick Tarr"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kevin Zegers"
+			},
+			{
+				"tag": "Laurence Fishburne"
+			},
+			{
+				"tag": "Bill Paxton"
+			}
+		]
+	},
+	{
+		"ratingKey": "7947",
+		"key": "/library/metadata/7947",
+		"guid": "plex://movie/5d7768365af944001f1fa174",
+		"studio": "SLM Production Group",
+		"type": "movie",
+		"title": "Commando",
+		"contentRating": "R",
+		"summary": "A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.",
+		"rating": 6.7,
+		"audienceRating": 6.8,
+		"viewCount": 1,
+		"lastViewedAt": 1699142689,
+		"year": 1985,
+		"tagline": "Somewhere, somehow, someone's going to pay.",
+		"thumb": "/library/metadata/7947/thumb/1711898792",
+		"art": "/library/metadata/7947/art/1711898792",
+		"duration": 5510016,
+		"originallyAvailableAt": "1985-10-04",
+		"addedAt": 1682980665,
+		"updatedAt": 1711898792,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 17351,
+				"duration": 5510016,
+				"bitrate": 39637,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17419,
+						"key": "/library/parts/17419/1681601268/file.mkv",
+						"duration": 5510016,
+						"file": "/volume1/Movies/Commando (1985).mkv",
+						"size": 27310097452,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mark L. Lester"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Steven E. de Souza"
+			},
+			{
+				"tag": "Jeph Loeb"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Arnold Schwarzenegger"
+			},
+			{
+				"tag": "Rae Dawn Chong"
+			},
+			{
+				"tag": "Dan Hedaya"
+			}
+		]
+	},
+	{
+		"ratingKey": "10322",
+		"key": "/library/metadata/10322",
+		"guid": "plex://movie/5d77683585719b001f3a3987",
+		"studio": "Paramount",
+		"type": "movie",
+		"title": "Congo",
+		"contentRating": "PG-13",
+		"summary": "Eight people embark on an expedition into the Congo, a mysterious expanse of unexplored Africa where human greed and the laws of nature have gone berserk. When the thrill-seekers -- some with ulterior motives -- stumble across a race of killer apes.",
+		"rating": 2,
+		"audienceRating": 2.9,
+		"viewOffset": 2883006,
+		"lastViewedAt": 1679791365,
+		"year": 1995,
+		"tagline": "Where you are the endangered species.",
+		"thumb": "/library/metadata/10322/thumb/1711898745",
+		"duration": 6226020,
+		"originallyAvailableAt": "1995-06-09",
+		"addedAt": 1677432343,
+		"updatedAt": 1711898745,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23080,
+				"duration": 6226020,
+				"bitrate": 3994,
+				"width": 720,
+				"height": 400,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg4",
+				"videoResolution": "sd",
+				"container": "avi",
+				"videoFrameRate": "PAL",
+				"videoProfile": "advanced simple",
+				"Part": [
+					{
+						"id": 23193,
+						"key": "/library/parts/23193/1482370406/file.avi",
+						"duration": 6226020,
+						"file": "/volume1/Movies/Congo (1995).avi",
+						"size": 3129864192,
+						"container": "avi",
+						"videoProfile": "advanced simple"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Frank Marshall"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Michael Crichton"
+			},
+			{
+				"tag": "John Patrick Shanley"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Laura Linney"
+			},
+			{
+				"tag": "Dylan Walsh"
+			},
+			{
+				"tag": "Ernie Hudson"
+			}
+		]
+	},
+	{
+		"ratingKey": "10323",
+		"key": "/library/metadata/10323",
+		"guid": "plex://movie/5d7768328718ba001e313d86",
+		"studio": "Silver Pictures",
+		"type": "movie",
+		"title": "Conspiracy Theory",
+		"contentRating": "R",
+		"summary": "Jerry Fletcher is a man in love with a woman he observes from afar. She works for the government. Fletcher is an outspoken critic of that government. He has conspiracy theories for everything, from aliens to political assassinations. But soon, one of his theories finds itself to be accurate. But which one? Some dangerous people want him dead, and the only person he trusts is the woman he loves, but does not know.",
+		"rating": 5.7,
+		"audienceRating": 6.4,
+		"year": 1997,
+		"tagline": "What if your most paranoid nightmares had just come true?",
+		"thumb": "/library/metadata/10323/thumb/1711898746",
+		"duration": 8120064,
+		"originallyAvailableAt": "1997-08-07",
+		"addedAt": 1677432455,
+		"updatedAt": 1711898746,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23081,
+				"duration": 8120064,
+				"bitrate": 20732,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23194,
+						"key": "/library/parts/23194/1449723837/file.mkv",
+						"duration": 8120064,
+						"file": "/volume1/Movies/Conspiracy Theory (1997).mkv",
+						"size": 21048542343,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Richard Donner"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Brian Helgeland"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mel Gibson"
+			},
+			{
+				"tag": "Julia Roberts"
+			},
+			{
+				"tag": "Patrick Stewart"
+			}
+		]
+	},
+	{
+		"ratingKey": "5512",
+		"key": "/library/metadata/5512",
+		"guid": "plex://movie/5d77682754f42c001f8c2910",
+		"studio": "Village Roadshow Pictures",
+		"type": "movie",
+		"title": "Constantine",
+		"contentRating": "R",
+		"summary": "John Constantine has literally been to Hell and back. When he teams up with a policewoman to solve the mysterious suicide of her twin sister, their investigation takes them through the world of demons and angels that exists beneath the landscape of contemporary Los Angeles.",
+		"rating": 4.6,
+		"audienceRating": 7.2,
+		"year": 2005,
+		"tagline": "Hell wants him. Heaven won't take him. Earth needs him.",
+		"thumb": "/library/metadata/5512/thumb/1711898792",
+		"art": "/library/metadata/5512/art/1711898792",
+		"duration": 7247328,
+		"originallyAvailableAt": "2005-02-08",
+		"addedAt": 1679521408,
+		"updatedAt": 1711898792,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 11769,
+				"duration": 7247328,
+				"bitrate": 29440,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 11825,
+						"key": "/library/parts/11825/1679452634/file.m2ts",
+						"duration": 7247328,
+						"file": "/volume1/Movies/Constantine (2005).m2ts",
+						"size": 26670483456,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Fantasy"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Francis Lawrence"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jamie Delano"
+			},
+			{
+				"tag": "Garth Ennis"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Germany"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Keanu Reeves"
+			},
+			{
+				"tag": "Rachel Weisz"
+			},
+			{
+				"tag": "Shia LaBeouf"
+			}
+		]
+	},
+	{
+		"ratingKey": "8684",
+		"key": "/library/metadata/8684",
+		"guid": "plex://movie/5d776d1923d5a3001f52079e",
+		"studio": "South Side Amusement Company",
+		"type": "movie",
+		"title": "Contact",
+		"contentRating": "PG",
+		"summary": "A radio astronomer receives the first extraterrestrial radio signal ever picked up on Earth. As the world powers scramble to decipher the message and decide upon a course of action, she must make some difficult decisions between her beliefs, the truth, and reality.",
+		"rating": 6.8,
+		"audienceRating": 7.8,
+		"year": 1997,
+		"tagline": "Take a journey to the heart of the universe.",
+		"thumb": "/library/metadata/8684/thumb/1711898792",
+		"art": "/library/metadata/8684/art/1711898792",
+		"duration": 8980895,
+		"originallyAvailableAt": "1997-07-11",
+		"addedAt": 1694816480,
+		"updatedAt": 1711898792,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 19144,
+				"duration": 8980895,
+				"bitrate": 25754,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 19219,
+						"key": "/library/parts/19219/1691933122/file.m2ts",
+						"duration": 8980895,
+						"file": "/volume3/MoviesB/Movis/Contact (1997).m2ts",
+						"size": 31168690176,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Robert Zemeckis"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "James V. Hart"
+			},
+			{
+				"tag": "Michael Goldenberg"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jodie Foster"
+			},
+			{
+				"tag": "Matthew McConaughey"
+			},
+			{
+				"tag": "James Woods"
+			}
+		]
+	},
+	{
+		"ratingKey": "9083",
+		"key": "/library/metadata/9083",
+		"guid": "plex://movie/5d776870374a5b001fec5850",
+		"studio": "Participant",
+		"type": "movie",
+		"title": "Contagion",
+		"contentRating": "PG-13",
+		"summary": "As an epidemic of a lethal airborne virus - that kills within days - rapidly grows, the worldwide medical community races to find a cure and control the panic that spreads faster than the virus itself.",
+		"rating": 8.5,
+		"audienceRating": 6.3,
+		"lastViewedAt": 1703603069,
+		"year": 2011,
+		"tagline": "Nothing spreads like fear.",
+		"thumb": "/library/metadata/9083/thumb/1712000181",
+		"art": "/library/metadata/9083/art/1712000181",
+		"duration": 6386080,
+		"originallyAvailableAt": "2011-09-08",
+		"addedAt": 1703602656,
+		"updatedAt": 1712000181,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20168,
+				"duration": 6386080,
+				"bitrate": 21181,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21032,
+						"key": "/library/parts/21032/1703557864/file.mkv",
+						"duration": 6386080,
+						"file": "/volume3/MoviesB/Movis/Contagion (2011).mkv",
+						"size": 16911172989,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Steven Soderbergh"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Scott Z. Burns"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "United Arab Emirates"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Marion Cotillard"
+			},
+			{
+				"tag": "Matt Damon"
+			},
+			{
+				"tag": "Laurence Fishburne"
+			}
+		]
+	},
+	{
+		"ratingKey": "6290",
+		"key": "/library/metadata/6290",
+		"guid": "plex://movie/5d7768334de0ee001fccaf29",
+		"studio": "Paramount",
+		"type": "movie",
+		"title": "The Core",
+		"titleSort": "Core",
+		"contentRating": "PG-13",
+		"summary": "The Earth's core has stopped spinning. Disasters are happening around the globe, including; animals acting in bizarre ways, monstrous thunderstorms. Dr. Josh Keyes and his crew of 5 go down to the centre to set off a nuclear device, hoping to make the core start spinning again, or humanity will cease.",
+		"rating": 3.9,
+		"audienceRating": 3.4,
+		"viewOffset": 5246000,
+		"viewCount": 1,
+		"lastViewedAt": 1691628722,
+		"year": 2003,
+		"tagline": "The only way out is in.",
+		"thumb": "/library/metadata/6290/thumb/1712000182",
+		"art": "/library/metadata/6290/art/1712000182",
+		"duration": 8099040,
+		"originallyAvailableAt": "2003-03-28",
+		"addedAt": 1680033847,
+		"updatedAt": 1712000182,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13593,
+				"duration": 8099040,
+				"bitrate": 35508,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13653,
+						"key": "/library/parts/13653/1680019461/file.mkv",
+						"duration": 8099040,
+						"file": "/volume1/Movies/The Core (2003).mkv",
+						"size": 35947562117,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jon Amiel"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Cooper Layne"
+			},
+			{
+				"tag": "John Rogers"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			},
+			{
+				"tag": "Canada"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Aaron Eckhart"
+			},
+			{
+				"tag": "Hilary Swank"
+			},
+			{
+				"tag": "Delroy Lindo"
+			}
+		]
+	},
+	{
+		"ratingKey": "6984",
+		"key": "/library/metadata/6984",
+		"guid": "plex://movie/5d77690a594b2b001e69b749",
+		"studio": "BBC Film",
+		"type": "movie",
+		"title": "Coriolanus",
+		"contentRating": "R",
+		"summary": "The citizens of Rome are hungry. Coriolanus, the hero of Rome, a great soldier and a man of inflexible self-belief despises the people. His extreme views ignite a mass riot. Rome is bloody. Manipulated and out-maneuvered by politicians and even his own mother Volumnia, Coriolanus is banished from Rome. He offers his life or his services to his sworn enemy Tullus Aufidius.",
+		"rating": 9.2,
+		"audienceRating": 5.8,
+		"year": 2012,
+		"tagline": "Nature teaches beasts to know their friends.",
+		"thumb": "/library/metadata/6984/thumb/1711898793",
+		"art": "/library/metadata/6984/art/1711898793",
+		"duration": 7399434,
+		"originallyAvailableAt": "2012-01-18",
+		"addedAt": 1680449337,
+		"updatedAt": 1711898793,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15168,
+				"duration": 7399434,
+				"bitrate": 22949,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 15232,
+						"key": "/library/parts/15232/1680418916/file.mkv",
+						"duration": 7399434,
+						"file": "/volume1/Movies/Coriolanus (2011).mkv",
+						"size": 21226008051,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ralph Fiennes"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "John Logan"
+			},
+			{
+				"tag": "William Shakespeare"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Italy"
+			},
+			{
+				"tag": "Montenegro"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ralph Fiennes"
+			},
+			{
+				"tag": "Gerard Butler"
+			},
+			{
+				"tag": "Lubna Azabal"
+			}
+		]
+	},
+	{
+		"ratingKey": "5564",
+		"key": "/library/metadata/5564",
+		"guid": "plex://movie/5d7768a4ebdf2200209c4aab",
+		"studio": "Mosfilm",
+		"type": "movie",
+		"title": "Cossacks of the Kuban",
+		"originalTitle": "Кубанские казаки",
+		"summary": "In the steppes of the Kuban love is born on two collective farms while wheat is (enthusiastically) gathered. Galina, the energetic chairwoman of one of the two kolkhozes, vies with her male counterpart for the best harvest. At the same time Gordey, her rival, a former soldier, is (and has been for ages) in love with her. On her part, Dasha a collective farm worker, has heartbeat for a young technician of the competing kolkhoz...",
+		"audienceRating": 6.4,
+		"viewOffset": 2840486,
+		"lastViewedAt": 1679526811,
+		"year": 1950,
+		"thumb": "/library/metadata/5564/thumb/1712000182",
+		"art": "/library/metadata/5564/art/1712000182",
+		"duration": 6534195,
+		"originallyAvailableAt": "1950-02-26",
+		"addedAt": 1679521416,
+		"updatedAt": 1712000182,
+		"audienceRatingImage": "imdb://image.rating",
+		"Media": [
+			{
+				"id": 11880,
+				"duration": 6534195,
+				"bitrate": 23214,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "pcm_bluray",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11936,
+						"key": "/library/parts/11936/1679400740/file.m2ts",
+						"duration": 6534195,
+						"file": "/volume1/Movies/Кубанские казаки (1949).m2ts",
+						"size": 18960316416,
+						"container": "mpegts",
+						"packetLength": 192,
+						"timeStamp": true,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Musical"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ivan Pyryev"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Nikolay Pogodin"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Russian Federation"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Marina Ladynina"
+			},
+			{
+				"tag": "Ekaterina Savinova"
+			},
+			{
+				"tag": "Sergei Lukyanov"
+			}
+		]
+	},
+	{
+		"ratingKey": "9383",
+		"key": "/library/metadata/9383",
+		"guid": "plex://movie/610bbe58c51572002daf6a3b",
+		"studio": "Gravier Productions",
+		"type": "movie",
+		"title": "Coup de Chance",
+		"originalTitle": "Coup de chance",
+		"contentRating": "PG-13",
+		"summary": "Fanny and Jean have everything of the ideal couple: fulfilled in their professional life, they live in a magnificent apartment in the beautiful districts of Paris and seem to be in love as on the first day. But when Fanny crosses, by chance, Alain, a former high school friend, she is immediately capsized. They see each other again very quickly and get closer and closer.",
+		"rating": 8.5,
+		"year": 2023,
+		"thumb": "/library/metadata/9383/thumb/1712000182",
+		"art": "/library/metadata/9383/art/1712000182",
+		"duration": 5575296,
+		"originallyAvailableAt": "2023-09-27",
+		"addedAt": 1710700296,
+		"updatedAt": 1712000182,
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20952,
+				"duration": 5575296,
+				"bitrate": 10731,
+				"width": 3840,
+				"height": 1920,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "hevc",
+				"videoResolution": "4k",
+				"container": "mkv",
+				"videoFrameRate": "PAL",
+				"videoProfile": "main",
+				"Part": [
+					{
+						"id": 21033,
+						"key": "/library/parts/21033/1706313324/file.mkv",
+						"duration": 5575296,
+						"file": "/volume3/MoviesB/Movis/Coup de chance (2023).mkv",
+						"size": 7480157332,
+						"container": "mkv",
+						"videoProfile": "main"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Woody Allen"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Woody Allen"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Lou de Laâge"
+			},
+			{
+				"tag": "Valérie Lemercier"
+			},
+			{
+				"tag": "Melvil Poupaud"
+			}
+		]
+	},
+	{
+		"ratingKey": "10324",
+		"key": "/library/metadata/10324",
+		"guid": "plex://movie/5d77688ad11dd30020227698",
+		"studio": "DreamWorks Pictures",
+		"type": "movie",
+		"title": "Cowboys & Aliens",
+		"contentRating": "PG-13",
+		"summary": "A stranger stumbles into the desert town of Absolution with no memory of his past and a futuristic shackle around his wrist. With the help of mysterious beauty Ella and the iron-fisted Colonel Dolarhyde, he finds himself leading an unlikely posse of cowboys, outlaws, and Apache warriors against a common enemy from beyond this world in an epic showdown for survival.",
+		"rating": 4.4,
+		"audienceRating": 4.3,
+		"viewOffset": 3844239,
+		"lastViewedAt": 1697938542,
+		"year": 2011,
+		"tagline": "First Contact. Last Stand.",
+		"thumb": "/library/metadata/10324/thumb/1711898747",
+		"duration": 8113472,
+		"originallyAvailableAt": "2011-07-29",
+		"addedAt": 1482716550,
+		"updatedAt": 1711898747,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23082,
+				"duration": 8113472,
+				"bitrate": 17882,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23195,
+						"key": "/library/parts/23195/1482716550/file.mkv",
+						"duration": 8113472,
+						"file": "/volume1/Movies/Cowboys & Aliens (2011).mkv",
+						"size": 18140470276,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jon Favreau"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Steve Oedekerk"
+			},
+			{
+				"tag": "Alex Kurtzman"
+			}
+		],
+		"Country": [
+			{
+				"tag": "India"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Daniel Craig"
+			},
+			{
+				"tag": "Harrison Ford"
+			},
+			{
+				"tag": "Olivia Wilde"
+			}
+		]
+	},
+	{
+		"ratingKey": "7987",
+		"key": "/library/metadata/7987",
+		"guid": "plex://movie/5d776d21ad5437001f7cde4d",
+		"studio": "Color Force",
+		"type": "movie",
+		"title": "Crazy Rich Asians",
+		"contentRating": "PG-13",
+		"summary": "Rachel Chu, an American-born Chinese NYU professor, travels with her boyfriend, Nick to his hometown in Singapore for his best friend's wedding. Before long, his secret is out: Nick's family is wealthy, and he's considered the most eligible bachelor in Asia. Every single woman is incredibly jealous of Rachel and wants to bring her down.",
+		"rating": 9.1,
+		"audienceRating": 7.6,
+		"year": 2018,
+		"tagline": "The only thing crazier than love is family.",
+		"thumb": "/library/metadata/7987/thumb/1711898793",
+		"art": "/library/metadata/7987/art/1711898793",
+		"duration": 7239232,
+		"originallyAvailableAt": "2018-08-15",
+		"addedAt": 1684062336,
+		"updatedAt": 1711898793,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 17443,
+				"duration": 7239232,
+				"bitrate": 36474,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17512,
+						"key": "/library/parts/17512/1683353771/file.mkv",
+						"duration": 7239232,
+						"file": "/volume3/MoviesB/Movis/Crazy Rich Asians (2018).mkv",
+						"size": 32968024710,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jon M. Chu"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Pete Chiarelli"
+			},
+			{
+				"tag": "Adele Lim"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Constance Wu"
+			},
+			{
+				"tag": "Henry Golding"
+			},
+			{
+				"tag": "Michelle Yeoh"
+			}
+		]
+	},
+	{
+		"ratingKey": "5951",
+		"key": "/library/metadata/5951",
+		"guid": "plex://movie/5d77688bdecfcd001f2ec182",
+		"studio": "Warner Bros. Pictures",
+		"type": "movie",
+		"title": "Crazy, Stupid, Love.",
+		"contentRating": "PG-13",
+		"summary": "A middle-aged husband's life changes dramatically when his wife asks him for a divorce. He seeks to rediscover his manhood with the help of a newfound friend, Jacob, learning to pick up girls at bars.",
+		"rating": 7.9,
+		"audienceRating": 7.8,
+		"viewOffset": 3701267,
+		"lastViewedAt": 1696202804,
+		"year": 2011,
+		"tagline": "This is crazy. This is stupid. This is love.",
+		"thumb": "/library/metadata/5951/thumb/1711898793",
+		"art": "/library/metadata/5951/art/1711898793",
+		"duration": 7087104,
+		"originallyAvailableAt": "2011-07-28",
+		"addedAt": 1679783030,
+		"updatedAt": 1711898793,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 12761,
+				"duration": 7087104,
+				"bitrate": 18651,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12818,
+						"key": "/library/parts/12818/1679783291/file.mkv",
+						"duration": 7087104,
+						"file": "/volume1/Movies/Crazy, Stupid, Love (2011).mkv",
+						"size": 16522815716,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Glenn Ficarra"
+			},
+			{
+				"tag": "John Requa"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Dan Fogelman"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Steve Carell"
+			},
+			{
+				"tag": "Ryan Gosling"
+			},
+			{
+				"tag": "Julianne Moore"
+			}
+		]
+	},
+	{
+		"ratingKey": "8642",
+		"key": "/library/metadata/8642",
+		"guid": "plex://movie/5d9f356968e4c8001fb5f849",
+		"studio": "BBC Film",
+		"type": "movie",
+		"title": "Creation",
+		"contentRating": "PG-13",
+		"summary": "What happens when a world-renowned scientist, crushed by the loss of his eldest daughter, formulates a theory in conflict with religious dogma? This is the story of Charles Darwin and his master-work \"The Origin of Species\". It tells of a global revolution played out within the confines of a small English village; a passionate marriage torn apart by the most dangerous idea in history; and a theory saved from extinction by the logic of a child.",
+		"rating": 4.7,
+		"audienceRating": 4.9,
+		"year": 2009,
+		"tagline": "Faith evolves.",
+		"thumb": "/library/metadata/8642/thumb/1710700603",
+		"art": "/library/metadata/8642/art/1710700603",
+		"duration": 6511936,
+		"originallyAvailableAt": "2009-09-25",
+		"addedAt": 1691529158,
+		"updatedAt": 1710700603,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 19051,
+				"duration": 6511936,
+				"bitrate": 21033,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 19125,
+						"key": "/library/parts/19125/1691447389/file.mkv",
+						"duration": 6511936,
+						"file": "/volume3/MoviesB/Movis/Creation (2009).mkv",
+						"size": 17124448079,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Jon Amiel"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jon Amiel"
+			},
+			{
+				"tag": "John Collee"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Paul Bettany"
+			},
+			{
+				"tag": "Jennifer Connelly"
+			},
+			{
+				"tag": "Martha West"
+			}
+		]
+	},
+	{
+		"ratingKey": "9216",
+		"key": "/library/metadata/9216",
+		"guid": "plex://movie/5e40c3e46d9025003f6cd4ed",
+		"studio": "New Regency Pictures",
+		"type": "movie",
+		"title": "The Creator",
+		"titleSort": "Creator",
+		"contentRating": "PG-13",
+		"summary": "Amid a future war between the human race and the forces of artificial intelligence, Joshua, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war-and mankind itself.",
+		"rating": 6.7,
+		"audienceRating": 7.6,
+		"year": 2023,
+		"tagline": "This is a fight for our very existence.",
+		"thumb": "/library/metadata/9216/thumb/1712000183",
+		"art": "/library/metadata/9216/art/1712000183",
+		"duration": 8155264,
+		"originallyAvailableAt": "2023-09-27",
+		"addedAt": 1703602668,
+		"updatedAt": 1712000183,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20501,
+				"duration": 8155264,
+				"bitrate": 37798,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21252,
+						"key": "/library/parts/21252/1702687426/file.mkv",
+						"duration": 8155264,
+						"file": "/volume3/MoviesB/Movis/The Creator (2023).mkv",
+						"size": 38548403216,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Romance"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Gareth Edwards"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Chris Weitz"
+			},
+			{
+				"tag": "Gareth Edwards"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "John David Washington"
+			},
+			{
+				"tag": "Madeleine Yuna Voyles"
+			},
+			{
+				"tag": "Gemma Chan"
+			}
+		]
+	},
+	{
+		"ratingKey": "9810",
+		"key": "/library/metadata/9810",
+		"guid": "plex://movie/5d7768a0ebdf2200209c4172",
+		"studio": "Gaumont",
+		"type": "movie",
+		"title": "The Crimson Rivers",
+		"titleSort": "Crimson Rivers",
+		"originalTitle": "Les Rivières pourpres",
+		"contentRating": "R",
+		"summary": "Two French policemen, one investigating a grisly murder at a remote mountain college, the other working on the desecration of a young girl's grave by skinheads, are brought together by the clues from their respective cases. Soon after they start working together, more murders are committed, and the pair begin to discover just what dark secrets are behind the killings.",
+		"rating": 6.8,
+		"audienceRating": 7,
+		"year": 2000,
+		"tagline": "Evil rises to new heights.",
+		"thumb": "/library/metadata/9810/thumb/1712000183",
+		"duration": 6371872,
+		"originallyAvailableAt": "2000-09-27",
+		"addedAt": 1699471554,
+		"updatedAt": 1712000183,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22017,
+				"duration": 6371872,
+				"bitrate": 37817,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 7,
+				"audioCodec": "dca",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "hra",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 22121,
+						"key": "/library/parts/22121/1694366035/file.m2ts",
+						"duration": 6371872,
+						"file": "/volume3/MoviesB/Movis/The Crimson Rivers (2000).m2ts",
+						"size": 30120357888,
+						"audioProfile": "hra",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Crime"
+			},
+			{
+				"tag": "Mystery"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mathieu Kassovitz"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jean-Christophe Grangé"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jean Reno"
+			},
+			{
+				"tag": "Vincent Cassel"
+			},
+			{
+				"tag": "Nadia Farès"
+			}
+		]
+	},
+	{
+		"ratingKey": "9795",
+		"key": "/library/metadata/9795",
+		"guid": "plex://movie/5d7768a033f255001e85b38c",
+		"studio": "Studio Légende",
+		"type": "movie",
+		"title": "Crimson Rivers II: Angels of the Apocalypse",
+		"originalTitle": "Les Rivières pourpres 2 : Les Anges de l'apocalypse",
+		"contentRating": "R",
+		"summary": "Chief Niemans is investigating a series of ritual murders: The victims are crucified. He teams up with young officer Reda, who gets embroiled after a man dressed as a monk tries to kill a confused guy Reda picked up on the street. Together with a specialist on christian mythology they uncover a mysterious group called \"Angels of the Apokalypse\".",
+		"audienceRating": 5.9,
+		"viewCount": 1,
+		"lastViewedAt": 1697913164,
+		"year": 2004,
+		"tagline": "An unholy crime... An unstoppable killer... Caught in a deadly tide.",
+		"thumb": "/library/metadata/9795/thumb/1711898571",
+		"duration": 5953035,
+		"originallyAvailableAt": "2004-02-18",
+		"addedAt": 1694816484,
+		"updatedAt": 1711898571,
+		"audienceRatingImage": "imdb://image.rating",
+		"hasPremiumPrimaryExtra": "1",
+		"Media": [
+			{
+				"id": 21980,
+				"duration": 5953035,
+				"bitrate": 12192,
+				"width": 1920,
+				"height": 812,
+				"aspectRatio": 2.35,
+				"audioChannels": 7,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "es",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22081,
+						"key": "/library/parts/22081/1694375489/file.mkv",
+						"duration": 5953035,
+						"file": "/volume3/MoviesB/Movis/Crimson Rivers 2 Angels of the Apocalypse (2004).mkv",
+						"size": 9072307178,
+						"audioProfile": "es",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Olivier Dahan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Luc Besson"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jean Reno"
+			},
+			{
+				"tag": "Benoît Magimel"
+			},
+			{
+				"tag": "Camille Natta"
+			}
+		]
+	},
+	{
+		"ratingKey": "9991",
+		"key": "/library/metadata/9991",
+		"guid": "plex://movie/5d776d4847dd6e001f6f1e5e",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "The Croods: A New Age",
+		"titleSort": "Croods: A New Age",
+		"contentRating": "PG",
+		"summary": "The prehistoric family the Croods are challenged by a rival family the Bettermans, who claim to be better and more evolved.",
+		"rating": 7.7,
+		"audienceRating": 9.4,
+		"year": 2020,
+		"tagline": "The future ain't what it used to be.",
+		"thumb": "/library/metadata/9991/thumb/1711898637",
+		"duration": 5714560,
+		"originallyAvailableAt": "2020-11-25",
+		"addedAt": 1677975684,
+		"updatedAt": 1711898637,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22385,
+				"duration": 5714560,
+				"bitrate": 35533,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "truehd",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22493,
+						"key": "/library/parts/22493/1617203728/file.mkv",
+						"duration": 5714560,
+						"file": "/volume1/Movies/The Croods A New Age (2020).mkv",
+						"size": 25381586306,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Animation"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joel Crawford"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "John Cleese"
+			},
+			{
+				"tag": "Chris Sanders"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Nicolas Cage"
+			},
+			{
+				"tag": "Emma Stone"
+			},
+			{
+				"tag": "Ryan Reynolds"
+			}
+		]
+	},
+	{
+		"ratingKey": "9626",
+		"key": "/library/metadata/9626",
+		"guid": "plex://movie/5d776c79594b2b001e6f4975",
+		"studio": "Bazelevs Production",
+		"type": "movie",
+		"title": "The Current War",
+		"titleSort": "Current War",
+		"contentRating": "PG-13",
+		"summary": "The dramatic story of the cutthroat race between electricity titans Thomas A. Edison and George Westinghouse to determine whose electrical system would power the modern world.",
+		"rating": 6.1,
+		"audienceRating": 7.9,
+		"year": 2018,
+		"tagline": "Power changes everything",
+		"thumb": "/library/metadata/9626/thumb/1712000184",
+		"duration": 6137856,
+		"originallyAvailableAt": "2018-02-01",
+		"addedAt": 1585932706,
+		"updatedAt": 1712000184,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21542,
+				"duration": 6137856,
+				"bitrate": 37587,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21643,
+						"key": "/library/parts/21643/1585932706/file.mkv",
+						"duration": 6137856,
+						"file": "/volume1/Movies/The Current War (2017).mkv",
+						"size": 28841492134,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Alfonso Gomez-Rejon"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Michael Mitnick"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Russian Federation"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Benedict Cumberbatch"
+			},
+			{
+				"tag": "Michael Shannon"
+			},
+			{
+				"tag": "Nicholas Hoult"
+			}
+		]
+	},
+	{
+		"ratingKey": "10296",
+		"key": "/library/metadata/10296",
+		"guid": "plex://movie/5d77682985719b001f3a14bc",
+		"studio": "Carolco Pictures",
+		"type": "movie",
+		"title": "Cutthroat Island",
+		"contentRating": "PG-13",
+		"summary": "Morgan Adams and her slave, William Shaw, are on a quest to recover the three portions of a treasure map. Unfortunately, the final portion is held by her murderous uncle, Dawg. Her crew is skeptical of her leadership abilities, so she must complete her quest before they mutiny against her. This is made yet more difficult by the efforts of the British crown to end her piratical raids.",
+		"rating": 4,
+		"audienceRating": 4,
+		"viewCount": 2,
+		"lastViewedAt": 1708824993,
+		"year": 1995,
+		"tagline": "Be bold. Be brave. Be prepared.",
+		"thumb": "/library/metadata/10296/thumb/1711898738",
+		"duration": 7491584,
+		"originallyAvailableAt": "1995-12-22",
+		"addedAt": 1677432435,
+		"updatedAt": 1711898738,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23020,
+				"duration": 7491584,
+				"bitrate": 3336,
+				"width": 1040,
+				"height": 440,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "aac",
+				"videoCodec": "h264",
+				"videoResolution": "576",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "lc",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23132,
+						"key": "/library/parts/23132/1495841876/file.mkv",
+						"duration": 7491584,
+						"file": "/volume1/Movies/Cutthroat Island (1995).mkv",
+						"size": 3128843106,
+						"audioProfile": "lc",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Renny Harlin"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Bruce A. Evans"
+			},
+			{
+				"tag": "Raynold Gideon"
+			}
+		],
+		"Country": [
+			{
+				"tag": "France"
+			},
+			{
+				"tag": "Germany"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Geena Davis"
+			},
+			{
+				"tag": "Matthew Modine"
+			},
+			{
+				"tag": "Frank Langella"
+			}
+		]
+	},
+	{
+		"ratingKey": "5649",
+		"key": "/library/metadata/5649",
+		"guid": "plex://movie/5d7768273c3c2a001fbcb129",
+		"studio": "Imagine Entertainment",
+		"type": "movie",
+		"title": "The Da Vinci Code",
+		"titleSort": "Da Vinci Code",
+		"contentRating": "PG-13",
+		"summary": "A murder inside the Louvre, and clues in Da Vinci paintings, lead to the discovery of a religious mystery protected by a secret society for two thousand years, which could shake the foundations of Christianity.",
+		"rating": 2.5,
+		"audienceRating": 5.7,
+		"viewOffset": 1937826,
+		"lastViewedAt": 1693142431,
+		"year": 2006,
+		"tagline": "Seek the truth.",
+		"thumb": "/library/metadata/5649/thumb/1711898795",
+		"art": "/library/metadata/5649/art/1711898795",
+		"duration": 10477472,
+		"originallyAvailableAt": "2006-05-17",
+		"addedAt": 1679614294,
+		"updatedAt": 1711898795,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12052,
+				"duration": 10477472,
+				"bitrate": 13100,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12108,
+						"key": "/library/parts/12108/1679472674/file.mkv",
+						"duration": 10477472,
+						"file": "/volume1/Movies/The Da Vinci Code (2006).mkv",
+						"size": 17156623163,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Mystery"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ron Howard"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Akiva Goldsman"
+			},
+			{
+				"tag": "Dan Brown"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Tom Hanks"
+			},
+			{
+				"tag": "Audrey Tautou"
+			},
+			{
+				"tag": "Ian McKellen"
+			}
+		]
+	},
+	{
+		"ratingKey": "7439",
+		"key": "/library/metadata/7439",
+		"guid": "plex://movie/5d776ae7fb0d55001f554fb1",
+		"studio": "Paramount",
+		"type": "movie",
+		"title": "Daddy's Home",
+		"contentRating": "PG-13",
+		"summary": "Stepfather Brad Whitaker is hoping for his stepchildren to love him and treat him like a dad. All is going well until the biological father, Dusty Mayron, shows up, then everything takes a toll. His stepchildren start putting him second and their father first, and now Dusty will have to learn that being a good dad is about pains and struggles. Brad will also experience once again what it's like to be a stepdad.",
+		"rating": 3,
+		"audienceRating": 4.9,
+		"viewOffset": 431482,
+		"skipCount": 2,
+		"lastViewedAt": 1682723663,
+		"year": 2015,
+		"tagline": "Choose your Daddy",
+		"thumb": "/library/metadata/7439/thumb/1711898795",
+		"art": "/library/metadata/7439/art/1711898795",
+		"duration": 5761964,
+		"originallyAvailableAt": "2015-12-25",
+		"addedAt": 1680883934,
+		"updatedAt": 1711898795,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16193,
+				"duration": 5761964,
+				"bitrate": 70461,
+				"width": 3840,
+				"height": 2160,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "hevc",
+				"videoResolution": "4k",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "main 10",
+				"Part": [
+					{
+						"id": 16257,
+						"key": "/library/parts/16257/1680891476/file.mkv",
+						"duration": 5761964,
+						"file": "/volume1/Movies/Daddy's Home (2015).mkv",
+						"size": 50752492046,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "main 10"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Family"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Sean Anders"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Adam McKay"
+			},
+			{
+				"tag": "Chris Henchy"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Will Ferrell"
+			},
+			{
+				"tag": "Mark Wahlberg"
+			},
+			{
+				"tag": "Linda Cardellini"
+			}
+		]
+	},
+	{
+		"ratingKey": "7628",
+		"key": "/library/metadata/7628",
+		"guid": "plex://movie/5d776c7c7a53e9001e7441a3",
+		"studio": "Red Granite Pictures",
+		"type": "movie",
+		"title": "Daddy‘s Home",
+		"contentRating": "PG-13",
+		"summary": "Having finally gotten used to each other's existence, Brad and Dusty must now deal with their intrusive fathers during the holidays.",
+		"rating": 2.1,
+		"audienceRating": 5.1,
+		"userRating": 2,
+		"lastRatedAt": 1681075301,
+		"year": 2017,
+		"tagline": "More Daddies. More Problems.",
+		"thumb": "/library/metadata/7628/thumb/1711898796",
+		"art": "/library/metadata/7628/art/1711898796",
+		"duration": 5981952,
+		"originallyAvailableAt": "2017-11-08",
+		"addedAt": 1680956622,
+		"updatedAt": 1711898796,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 16614,
+				"duration": 5981952,
+				"bitrate": 38460,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "truehd",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16679,
+						"key": "/library/parts/16679/1680943670/file.m2ts",
+						"duration": 5981952,
+						"file": "/volume1/Movies/Daddy‘s Home 2 (2017).m2ts",
+						"size": 31272732672,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Sean Anders"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Sean Anders"
+			},
+			{
+				"tag": "John Morris"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Will Ferrell"
+			},
+			{
+				"tag": "Mark Wahlberg"
+			},
+			{
+				"tag": "Mel Gibson"
+			}
+		]
+	},
+	{
+		"ratingKey": "10297",
+		"key": "/library/metadata/10297",
+		"guid": "plex://movie/5d77682e8718ba001e31340e",
+		"studio": "Intermedia",
+		"type": "movie",
+		"title": "Dark Blue",
+		"contentRating": "R",
+		"summary": "A robbery homicide investigation triggers a series of events that will cause a corrupt LAPD officer to question his tactics.",
+		"rating": 5.9,
+		"audienceRating": 5.2,
+		"year": 2003,
+		"tagline": "Sworn to protect. Sworn to serve. Sworn to secrecy.",
+		"thumb": "/library/metadata/10297/thumb/1711898739",
+		"duration": 7079072,
+		"originallyAvailableAt": "2003-01-10",
+		"addedAt": 1677432441,
+		"updatedAt": 1711898739,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23021,
+				"duration": 7079072,
+				"bitrate": 2630,
+				"width": 720,
+				"height": 304,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg4",
+				"videoResolution": "sd",
+				"container": "avi",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced simple",
+				"Part": [
+					{
+						"id": 23133,
+						"key": "/library/parts/23133/1460838194/file.avi",
+						"duration": 7079072,
+						"file": "/volume1/Movies/Dark Blue (2002).avi",
+						"size": 2342995968,
+						"container": "avi",
+						"videoProfile": "advanced simple"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Crime"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Ron Shelton"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David Ayer"
+			},
+			{
+				"tag": "James Ellroy"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Germany"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kurt Russell"
+			},
+			{
+				"tag": "Scott Speedman"
+			},
+			{
+				"tag": "Michael Michele"
+			}
+		]
+	},
+	{
+		"ratingKey": "10380",
+		"key": "/library/metadata/10380",
+		"guid": "plex://movie/5e5d3afc01f65d003eca60d8",
+		"studio": "Matt Tolmach Productions",
+		"type": "movie",
+		"title": "Dark Harvest",
+		"contentRating": "R",
+		"summary": "In a small Midwestern town, a deadly annual ritual unfolds when the mythical nightmare, Sawtooth Jack, rises from the cornfields and challenges the town’s teenage boys in a bloody battle of survival.",
+		"rating": 6.7,
+		"audienceRating": 4.7,
+		"year": 2023,
+		"tagline": "Evil stalks.",
+		"thumb": "/library/metadata/10380/thumb/1712000138",
+		"art": "/library/metadata/10380/art/1712000138",
+		"duration": 5743285,
+		"originallyAvailableAt": "2023-10-12",
+		"addedAt": 1712000137,
+		"updatedAt": 1712000138,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23189,
+				"duration": 5743285,
+				"bitrate": 2185,
+				"width": 720,
+				"height": 304,
+				"aspectRatio": 2.35,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg4",
+				"videoResolution": "sd",
+				"container": "avi",
+				"videoFrameRate": "24p",
+				"videoProfile": "advanced simple",
+				"Part": [
+					{
+						"id": 23318,
+						"key": "/library/parts/23318/1710711700/file.avi",
+						"duration": 5743285,
+						"file": "/volume3/MoviesB/Movis/Dark Harvest (2023).avi",
+						"size": 1568909312,
+						"container": "avi",
+						"videoProfile": "advanced simple"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Fantasy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David Slade"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Norman Partridge"
+			},
+			{
+				"tag": "Michael Gilio"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Casey Likes"
+			},
+			{
+				"tag": "Emyri Crutchfield"
+			},
+			{
+				"tag": "Jeremy Davies"
+			}
+		]
+	},
+	{
+		"ratingKey": "9992",
+		"key": "/library/metadata/9992",
+		"guid": "plex://movie/5d7768883ab0e7001f503bc0",
+		"studio": "Syncopy",
+		"type": "movie",
+		"title": "The Dark Knight Rises",
+		"titleSort": "Dark Knight Rises",
+		"contentRating": "PG-13",
+		"summary": "Eight years after the Joker's reign of chaos, Batman is coerced out of exile with the assistance of the mysterious Selina Kyle in order to defend Gotham City from the vicious guerrilla terrorist Bane.",
+		"rating": 8.7,
+		"audienceRating": 9,
+		"year": 2012,
+		"tagline": "A fire will rise.",
+		"thumb": "/library/metadata/9992/thumb/1712000185",
+		"duration": 9873888,
+		"originallyAvailableAt": "2012-07-19",
+		"addedAt": 1482663063,
+		"updatedAt": 1712000185,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 22386,
+				"duration": 9873888,
+				"bitrate": 20480,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 22494,
+						"key": "/library/parts/22494/1482663063/file.mkv",
+						"duration": 9873888,
+						"file": "/volume1/Movies/The Dark Knight Rises (2012).mkv",
+						"size": 25277735216,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Christopher Nolan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Christopher Nolan"
+			},
+			{
+				"tag": "Jonathan Nolan"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Christian Bale"
+			},
+			{
+				"tag": "Michael Caine"
+			},
+			{
+				"tag": "Gary Oldman"
+			}
+		]
+	},
+	{
+		"ratingKey": "10298",
+		"key": "/library/metadata/10298",
+		"guid": "plex://movie/5d776b6923d5a3001f5102fa",
+		"studio": "Genre Films",
+		"type": "movie",
+		"title": "Dark Phoenix",
+		"contentRating": "PG-13",
+		"summary": "Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix, causing the X-Men to decide if her life is worth more than all of humanity.",
+		"rating": 2.2,
+		"audienceRating": 6.4,
+		"year": 2019,
+		"tagline": "A Phoenix will rise. The X-Men will fall.",
+		"thumb": "/library/metadata/10298/thumb/1711898740",
+		"duration": 6836416,
+		"originallyAvailableAt": "2019-06-05",
+		"addedAt": 1585253990,
+		"updatedAt": 1711898740,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23022,
+				"duration": 6836416,
+				"bitrate": 16506,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23134,
+						"key": "/library/parts/23134/1585253990/file.mkv",
+						"duration": 6836416,
+						"file": "/volume1/Movies/Dark Phoenix (2019).mkv",
+						"size": 14109057817,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Simon Kinberg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Simon Kinberg"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sophie Turner"
+			},
+			{
+				"tag": "James McAvoy"
+			},
+			{
+				"tag": "Nicholas Hoult"
+			}
+		]
+	},
+	{
+		"ratingKey": "6683",
+		"key": "/library/metadata/6683",
+		"guid": "plex://movie/5d77708c90a8de0020329203",
+		"studio": "Participant",
+		"type": "movie",
+		"title": "Dark Waters",
+		"contentRating": "PG-13",
+		"summary": "A tenacious attorney uncovers a dark secret that connects a growing number of unexplained deaths to one of the world's largest corporations. In the process, he risks everything — his future, his family, and his own life — to expose the truth.",
+		"rating": 8.9,
+		"audienceRating": 9.5,
+		"year": 2019,
+		"tagline": "The truth has a man on the inside.",
+		"thumb": "/library/metadata/6683/thumb/1711898797",
+		"art": "/library/metadata/6683/art/1711898797",
+		"duration": 7623124,
+		"originallyAvailableAt": "2019-11-27",
+		"addedAt": 1680205910,
+		"updatedAt": 1711898797,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 14499,
+				"duration": 7623124,
+				"bitrate": 42390,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23135,
+						"key": "/library/parts/23135/1680339758/file.mkv",
+						"duration": 7623124,
+						"file": "/volume1/Movies/Dark Waters (2019).mkv",
+						"size": 40399162426,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Biography"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Todd Haynes"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Matthew Michael Carnahan"
+			},
+			{
+				"tag": "Mario Correa"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mark Ruffalo"
+			},
+			{
+				"tag": "Anne Hathaway"
+			},
+			{
+				"tag": "Tim Robbins"
+			}
+		]
+	},
+	{
+		"ratingKey": "10299",
+		"key": "/library/metadata/10299",
+		"guid": "plex://movie/5d776c44fb0d55001f58290e",
+		"studio": "Working Title Films",
+		"type": "movie",
+		"title": "Darkest Hour",
+		"contentRating": "PG-13",
+		"summary": "In May 1940, the fate of World War II hangs on Winston Churchill, who must decide whether to negotiate with Adolf Hitler, or fight on knowing that it could mean the end of the British Empire.",
+		"rating": 8.4,
+		"audienceRating": 8.2,
+		"year": 2017,
+		"tagline": "Never never never surrender",
+		"thumb": "/library/metadata/10299/thumb/1710700606",
+		"duration": 7494496,
+		"originallyAvailableAt": "2017-12-01",
+		"addedAt": 1521583072,
+		"updatedAt": 1710700606,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23023,
+				"duration": 7494496,
+				"bitrate": 17718,
+				"width": 1920,
+				"height": 1038,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23136,
+						"key": "/library/parts/23136/1521583072/file.mkv",
+						"duration": 7494496,
+						"file": "/volume1/Movies/Darkest Hour (2017).mkv",
+						"size": 16598388367,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "History"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Joe Wright"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Anthony McCarten"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Gary Oldman"
+			},
+			{
+				"tag": "Kristin Scott Thomas"
+			},
+			{
+				"tag": "Ben Mendelsohn"
+			}
+		]
+	},
+	{
+		"ratingKey": "9529",
+		"key": "/library/metadata/9529",
+		"guid": "plex://movie/5d7768650ab244002006cebf",
+		"studio": "Dune Entertainment",
+		"type": "movie",
+		"title": "Date Night",
+		"contentRating": "PG-13",
+		"summary": "Phil and Claire Foster fear that their mild-mannered relationship may be falling into a stale rut. During their weekly date night, their dinner reservation leads to their being mistaken for a couple of thieves—and now a number of unsavoury characters want Phil and Claire killed.",
+		"rating": 6.7,
+		"audienceRating": 5.5,
+		"year": 2010,
+		"tagline": "One ordinary couple. One little white lie.",
+		"thumb": "/library/metadata/9529/thumb/1712000186",
+		"duration": 6096138,
+		"originallyAvailableAt": "2010-04-07",
+		"addedAt": 1678568206,
+		"updatedAt": 1712000186,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21316,
+				"duration": 6096138,
+				"bitrate": 41451,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21417,
+						"key": "/library/parts/21417/1677594813/file.m2ts",
+						"duration": 6096138,
+						"file": "/volume1/Movies/Date Night (2010).m2ts",
+						"size": 33467068416,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Crime"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Shawn Levy"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Josh Klausner"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Steve Carell"
+			},
+			{
+				"tag": "Tina Fey"
+			},
+			{
+				"tag": "Mark Wahlberg"
+			}
+		]
+	},
+	{
+		"ratingKey": "5513",
+		"key": "/library/metadata/5513",
+		"guid": "plex://movie/5d776d1523d5a3001f5201a7",
+		"studio": "New Amsterdam Entertainment",
+		"type": "movie",
+		"title": "Dawn of the Dead",
+		"contentRating": "R",
+		"summary": "A nurse, a policeman, a young married couple, a salesman and other survivors of a worldwide plague that is producing aggressive, flesh-eating zombies, take refuge in a mega Midwestern shopping mall.",
+		"rating": 7.6,
+		"audienceRating": 7.7,
+		"viewOffset": 3551238,
+		"lastViewedAt": 1704773320,
+		"year": 2003,
+		"tagline": "When there's no more room in Hell, the dead will walk the Earth.",
+		"thumb": "/library/metadata/5513/thumb/1711898798",
+		"art": "/library/metadata/5513/art/1711898798",
+		"duration": 6552512,
+		"originallyAvailableAt": "2003-11-30",
+		"addedAt": 1679521408,
+		"updatedAt": 1711898798,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 11770,
+				"duration": 6552512,
+				"bitrate": 24462,
+				"width": 1920,
+				"height": 816,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11826,
+						"key": "/library/parts/11826/1679458965/file.mkv",
+						"duration": 6552512,
+						"file": "/volume1/Movies/Dawn of the Dead (2004).mkv",
+						"size": 20036037246,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Zack Snyder"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "George A. Romero"
+			},
+			{
+				"tag": "James Gunn"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "France"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sarah Polley"
+			},
+			{
+				"tag": "Ving Rhames"
+			},
+			{
+				"tag": "Ty Burrell"
+			}
+		]
+	},
+	{
+		"ratingKey": "965",
+		"key": "/library/metadata/965",
+		"guid": "plex://movie/5d776971f617c9002015fb21",
+		"studio": "TSG Entertainment",
+		"type": "movie",
+		"title": "Dawn of the Planet of the Apes",
+		"contentRating": "PG-13",
+		"summary": "A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier. They reach a fragile peace, but it proves short-lived, as both sides are brought to the brink of a war that will determine who will emerge as Earth's dominant species.",
+		"rating": 9.1,
+		"audienceRating": 8.8,
+		"year": 2014,
+		"tagline": "One last chance for peace.",
+		"thumb": "/library/metadata/965/thumb/1712000186",
+		"art": "/library/metadata/965/art/1712000186",
+		"duration": 7824900,
+		"originallyAvailableAt": "2014-07-09",
+		"addedAt": 1590227130,
+		"updatedAt": 1712000186,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23024,
+				"duration": 7824900,
+				"bitrate": 16086,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23137,
+						"key": "/library/parts/23137/1590227130/file.mkv",
+						"duration": 7824900,
+						"file": "/volume1/Movies/Dawn of the Planet of the Apes (2014) 3D.mkv",
+						"size": 15737238585,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
+			{
+				"id": 23025,
+				"duration": 7824288,
+				"bitrate": 30003,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23138,
+						"key": "/library/parts/23138/1590249638/file.mkv",
+						"duration": 7824288,
+						"file": "/volume1/Movies/Dawn of the Planet of the Apes (2014).mkv",
+						"size": 29349975366,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Matt Reeves"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Mark Bomback"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Andy Serkis"
+			},
+			{
+				"tag": "Jason Clarke"
+			},
+			{
+				"tag": "Gary Oldman"
+			}
+		]
+	},
+	{
+		"ratingKey": "6057",
+		"key": "/library/metadata/6057",
+		"guid": "plex://movie/5d776825961905001eb90ccb",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "The Day After Tomorrow",
+		"titleSort": "Day After Tomorrow",
+		"contentRating": "PG-13",
+		"summary": "Jack Hall, paleoclimatologist, must make a daring trek from Washington, D.C. to New York City to reach his son, trapped in the cross-hairs of a sudden international storm which plunges the planet into a new Ice Age.",
+		"rating": 4.5,
+		"audienceRating": 5,
+		"viewCount": 5,
+		"lastViewedAt": 1705462359,
+		"year": 2004,
+		"tagline": "Where will you be?",
+		"thumb": "/library/metadata/6057/thumb/1711898798",
+		"art": "/library/metadata/6057/art/1711898798",
+		"duration": 7421046,
+		"originallyAvailableAt": "2004-05-26",
+		"addedAt": 1679783046,
+		"updatedAt": 1711898798,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13025,
+				"duration": 7421046,
+				"bitrate": 47547,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13082,
+						"key": "/library/parts/13082/1679877182/file.mkv",
+						"duration": 7421046,
+						"file": "/volume1/Movies/The Day After Tomorrow (2004).mkv",
+						"size": 44106368712,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Roland Emmerich"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Roland Emmerich"
+			},
+			{
+				"tag": "Jeffrey Nachmanoff"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Dennis Quaid"
+			},
+			{
+				"tag": "Jake Gyllenhaal"
+			},
+			{
+				"tag": "Emmy Rossum"
+			}
+		]
+	},
+	{
+		"ratingKey": "10302",
+		"key": "/library/metadata/10302",
+		"guid": "plex://movie/5f90753550bfe7002d765f7e",
+		"studio": "87Eleven",
+		"type": "movie",
+		"title": "Day Shift",
+		"contentRating": "R",
+		"summary": "A hard-working, blue-collar dad just wants to provide a good life for his quick-witted 10-year-old daughter. His mundane San Fernando Valley pool cleaning job is a front for his real source of income: hunting and killing vampires.",
+		"rating": 5.6,
+		"audienceRating": 7.6,
+		"year": 2022,
+		"tagline": "Some jobs really go for the throat.",
+		"thumb": "/library/metadata/10302/thumb/1712000186",
+		"duration": 6800832,
+		"originallyAvailableAt": "2022-08-12",
+		"addedAt": 1677447015,
+		"updatedAt": 1712000186,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23026,
+				"duration": 6800832,
+				"bitrate": 22037,
+				"width": 3840,
+				"height": 2160,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "hevc",
+				"videoResolution": "4k",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main 10",
+				"Part": [
+					{
+						"id": 23139,
+						"key": "/library/parts/23139/1675948375/file.mkv",
+						"duration": 6800832,
+						"file": "/volume1/Movies/Day Shift (2022).mkv",
+						"size": 18737457483,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "main 10"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Fantasy"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "J.J. Perry"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Shay Hatten"
+			},
+			{
+				"tag": "Tyler Tice"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jamie Foxx"
+			},
+			{
+				"tag": "Dave Franco"
+			},
+			{
+				"tag": "Natasha Liu Bordizzo"
+			}
+		]
+	},
+	{
+		"ratingKey": "2903",
+		"key": "/library/metadata/2903",
+		"guid": "plex://movie/5d776836103a2d001f567f81",
+		"studio": "Davis Entertainment",
+		"type": "movie",
+		"title": "Daylight",
+		"contentRating": "PG-13",
+		"summary": "Trouble strikes when runaway robbers in a getaway car hit truck full of explosives in the tunnel connecting Manhattan and New Jersey. Survivors are left in a weakened tunnel blocked at both exits. As Kit Latura approaches the tunnel, he sees the impact and knows he gotta take action. With time running out, he enters the tunnel through a system of maintenance walkways. Can he get the survivors out before the tunnel fills up?",
+		"rating": 2.6,
+		"audienceRating": 3.7,
+		"viewOffset": 4173480,
+		"lastViewedAt": 1700428852,
+		"year": 1996,
+		"tagline": "No air. No escape. No time.",
+		"thumb": "/library/metadata/2903/thumb/1711898798",
+		"art": "/library/metadata/2903/art/1711898798",
+		"duration": 6937419,
+		"originallyAvailableAt": "1996-12-06",
+		"addedAt": 1677432307,
+		"updatedAt": 1711898798,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13574,
+				"duration": 6937419,
+				"bitrate": 44359,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13634,
+						"key": "/library/parts/13634/1679982369/file.mkv",
+						"duration": 6937419,
+						"file": "/volume1/Movies/Daylight (1996).mkv",
+						"size": 38467381935,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Rob Cohen"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Leslie Bohem"
+			},
+			{
+				"tag": "Julie Hansen"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sylvester Stallone"
+			},
+			{
+				"tag": "Amy Brenneman"
+			},
+			{
+				"tag": "Viggo Mortensen"
+			}
+		]
+	},
+	{
+		"ratingKey": "10286",
+		"key": "/library/metadata/10286",
+		"guid": "plex://movie/5d776827151a60001f24ada6",
+		"studio": "WingNut Films",
+		"type": "movie",
+		"title": "Dead Alive",
+		"originalTitle": "Braindead",
+		"contentRating": "R",
+		"summary": "A young man's mother is bitten by a Sumatran rat-monkey. She gets sick and dies, at which time she comes back to life, killing and eating dogs, nurses, friends, and neighbors.",
+		"rating": 8.9,
+		"audienceRating": 8.6,
+		"year": 1992,
+		"tagline": "Some things won't stay down... even after they die.",
+		"thumb": "/library/metadata/10286/thumb/1711898732",
+		"duration": 6216251,
+		"originallyAvailableAt": "1992-08-13",
+		"addedAt": 1680079590,
+		"updatedAt": 1711898732,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23010,
+				"duration": 6216251,
+				"bitrate": 27372,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "mpeg2video",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "main",
+				"Part": [
+					{
+						"id": 23122,
+						"key": "/library/parts/23122/1680074556/file.mkv",
+						"duration": 6216251,
+						"file": "/volume1/Movies/Dead Alive (1992).mkv",
+						"size": 21297379940,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "main"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peter Jackson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Peter Jackson"
+			},
+			{
+				"tag": "Fran Walsh"
+			}
+		],
+		"Country": [
+			{
+				"tag": "New Zealand"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Timothy Balme"
+			},
+			{
+				"tag": "Diana Peñalver"
+			},
+			{
+				"tag": "Elizabeth Moody"
+			}
+		]
+	},
+	{
+		"ratingKey": "10287",
+		"key": "/library/metadata/10287",
+		"guid": "plex://movie/5d776b257a53e9001e71bb98",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Deadpool",
+		"contentRating": "R",
+		"summary": "This is the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
+		"rating": 8.5,
+		"audienceRating": 9,
+		"year": 2016,
+		"tagline": "Witness the beginning of a happy ending.",
+		"thumb": "/library/metadata/10287/thumb/1712000187",
+		"duration": 6496000,
+		"originallyAvailableAt": "2016-02-09",
+		"addedAt": 1463194171,
+		"updatedAt": 1712000187,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23011,
+				"duration": 6496000,
+				"bitrate": 34924,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 8,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23123,
+						"key": "/library/parts/23123/1463194171/file.mkv",
+						"duration": 6496000,
+						"file": "/volume1/Movies/Deadpool (2016).mkv",
+						"size": 28364870231,
+						"audioProfile": "ma",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Tim Miller"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Rhett Reese"
+			},
+			{
+				"tag": "Paul Wernick"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ryan Reynolds"
+			},
+			{
+				"tag": "Morena Baccarin"
+			},
+			{
+				"tag": "Ed Skrein"
+			}
+		]
+	},
+	{
+		"ratingKey": "10288",
+		"key": "/library/metadata/10288",
+		"guid": "plex://movie/5d776c1c51dd69001fe37d4f",
+		"studio": "Maximum Effort",
+		"type": "movie",
+		"title": "Deadpool 2",
+		"contentRating": "R",
+		"summary": "After losing Vanessa (Morena Baccarin), the love of his life, fourth-wall-breaking mercenary Wade Wilson, aka Deadpool (Ryan Reynolds), must assemble a team and protect a young mutant Russell Collins, aka Firefist (Julian Dennison), from Cable (Josh Brolin), a no-nonsense, dangerous cyborg from the future, and must also learn the most important lesson of all: to be part of a family again.",
+		"rating": 8.4,
+		"audienceRating": 8.5,
+		"year": 2018,
+		"tagline": "Prepare for the Second Coming.",
+		"thumb": "/library/metadata/10288/thumb/1712000187",
+		"duration": 8046912,
+		"originallyAvailableAt": "2018-05-15",
+		"addedAt": 1585339198,
+		"updatedAt": 1712000187,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23012,
+				"duration": 8046912,
+				"bitrate": 22007,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23124,
+						"key": "/library/parts/23124/1585339198/file.mkv",
+						"duration": 8046912,
+						"file": "/volume1/Movies/Deadpool 2 (2018).mkv",
+						"size": 22141383384,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David Leitch"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Rhett Reese"
+			},
+			{
+				"tag": "Ryan Reynolds"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ryan Reynolds"
+			},
+			{
+				"tag": "Josh Brolin"
+			},
+			{
+				"tag": "Morena Baccarin"
+			}
+		]
+	},
+	{
+		"ratingKey": "7251",
+		"key": "/library/metadata/7251",
+		"guid": "plex://movie/5d9f3d0268e4c8001fb68802",
+		"studio": "Title Media",
+		"type": "movie",
+		"title": "The Death of Stalin",
+		"titleSort": "Death of Stalin",
+		"contentRating": "R",
+		"summary": "When dictator Joseph Stalin dies, his parasitic cronies square off in a frantic power struggle to become the next Soviet leader. As they bumble, brawl and back-stab their way to the top, the question remains — just who is running the government?",
+		"rating": 9.5,
+		"audienceRating": 7.9,
+		"year": 2017,
+		"tagline": "In the Kremlin, no one can hear you scheme",
+		"thumb": "/library/metadata/7251/thumb/1711898799",
+		"art": "/library/metadata/7251/art/1711898799",
+		"duration": 6394528,
+		"originallyAvailableAt": "2017-10-20",
+		"addedAt": 1680645454,
+		"updatedAt": 1711898799,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 15772,
+				"duration": 6394528,
+				"bitrate": 37856,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "aac",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "lc",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 15836,
+						"key": "/library/parts/15836/1680582435/file.mkv",
+						"duration": 6394528,
+						"file": "/volume1/Movies/The Death of Stalin (2017).mkv",
+						"size": 30258632950,
+						"audioProfile": "lc",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Armando Iannucci"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "David Schneider"
+			},
+			{
+				"tag": "Armando Iannucci"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Belgium"
+			},
+			{
+				"tag": "Canada"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Steve Buscemi"
+			},
+			{
+				"tag": "Simon Russell Beale"
+			},
+			{
+				"tag": "Jeffrey Tambor"
+			}
+		]
+	},
+	{
+		"ratingKey": "10289",
+		"key": "/library/metadata/10289",
+		"guid": "plex://movie/5d7768335af944001f1f9479",
+		"studio": "Calimari Productions",
+		"type": "movie",
+		"title": "Deep Rising",
+		"contentRating": "R",
+		"summary": "A group of heavily armed hijackers board a luxury ocean liner in the South Pacific Ocean to loot it, only to do battle with a series of large-sized, tentacled, man-eating sea creatures who had already invaded the ship.",
+		"rating": 3.4,
+		"audienceRating": 4.3,
+		"viewOffset": 2957837,
+		"lastViewedAt": 1678130554,
+		"year": 1997,
+		"tagline": "Full scream ahead",
+		"thumb": "/library/metadata/10289/thumb/1711898733",
+		"duration": 6380032,
+		"originallyAvailableAt": "1997-11-30",
+		"addedAt": 1575163637,
+		"updatedAt": 1711898733,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23013,
+				"duration": 6380032,
+				"bitrate": 18081,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23125,
+						"key": "/library/parts/23125/1575163637/file.mkv",
+						"duration": 6380032,
+						"file": "/volume1/Movies/Deep Rising (1998).mkv",
+						"size": 14424138887,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Action"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Stephen Sommers"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Stephen Sommers"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Canada"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Treat Williams"
+			},
+			{
+				"tag": "Famke Janssen"
+			},
+			{
+				"tag": "Anthony Heald"
+			}
+		]
+	},
+	{
+		"ratingKey": "9530",
+		"key": "/library/metadata/9530",
+		"guid": "plex://movie/5d776b2ef617c90020173086",
+		"studio": "Summit Entertainment",
+		"type": "movie",
+		"title": "Deepwater Horizon",
+		"contentRating": "PG-13",
+		"summary": "A dramatization of the disaster in April 2010, when the offshore drilling rig called the Deepwater Horizon exploded, resulting in the worst oil spill in American history.",
+		"rating": 8.2,
+		"audienceRating": 8.2,
+		"viewOffset": 3438000,
+		"lastViewedAt": 1677613797,
+		"year": 2016,
+		"tagline": "When faced with our darkest hour, hope is not a tactic.",
+		"thumb": "/library/metadata/9530/thumb/1712000188",
+		"duration": 6437504,
+		"originallyAvailableAt": "2016-09-28",
+		"addedAt": 1483129433,
+		"updatedAt": 1712000188,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21317,
+				"duration": 6437504,
+				"bitrate": 15023,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21418,
+						"key": "/library/parts/21418/1483129433/file.mkv",
+						"duration": 6437504,
+						"file": "/volume1/Movies/Deepwater Horizon (2016).mkv",
+						"size": 12090620677,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Peter Berg"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "J.C. Chandor"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Hong Kong"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Mark Wahlberg"
+			},
+			{
+				"tag": "Kurt Russell"
+			},
+			{
+				"tag": "John Malkovich"
+			}
+		]
+	},
+	{
+		"ratingKey": "10290",
+		"key": "/library/metadata/10290",
+		"guid": "plex://movie/5d776a03f617c90020167bf1",
+		"studio": "LStar Capital",
+		"type": "movie",
+		"title": "Deliver Us from Evil",
+		"contentRating": "R",
+		"summary": "New York police officer Ralph Sarchie investigates a series of crimes. He joins forces with an unconventional priest, schooled in the rites of exorcism, to combat the possessions that are terrorizing their city.",
+		"rating": 2.9,
+		"audienceRating": 4.2,
+		"viewOffset": 699741,
+		"lastViewedAt": 1704774052,
+		"year": 2014,
+		"tagline": "You haven't seen true evil.",
+		"thumb": "/library/metadata/10290/thumb/1710700611",
+		"duration": 7106486,
+		"originallyAvailableAt": "2014-07-02",
+		"addedAt": 1677975683,
+		"updatedAt": 1710700611,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23014,
+				"duration": 7106486,
+				"bitrate": 22158,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23126,
+						"key": "/library/parts/23126/1677499470/file.mkv",
+						"duration": 7106486,
+						"file": "/volume1/Movies/Deliver Us from Evil (2014).mkv",
+						"size": 19683418921,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Scott Derrickson"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Scott Derrickson"
+			},
+			{
+				"tag": "Paul Harris Boardman"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Eric Bana"
+			},
+			{
+				"tag": "Olivia Munn"
+			},
+			{
+				"tag": "Edgar Ramírez"
+			}
+		]
+	},
+	{
+		"ratingKey": "10291",
+		"key": "/library/metadata/10291",
+		"guid": "plex://movie/5d77687d6f4521001eaa93ce",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Devil",
+		"contentRating": "PG-13",
+		"summary": "A group of people are trapped in an elevator and the Devil is mysteriously amongst them.",
+		"rating": 5,
+		"audienceRating": 4.3,
+		"year": 2010,
+		"tagline": "Bad things happen for a reason.",
+		"thumb": "/library/metadata/10291/thumb/1712000188",
+		"duration": 4821343,
+		"originallyAvailableAt": "2010-09-16",
+		"addedAt": 1677447015,
+		"updatedAt": 1712000188,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23015,
+				"duration": 4821343,
+				"bitrate": 33387,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "vc1",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "advanced",
+				"Part": [
+					{
+						"id": 23127,
+						"key": "/library/parts/23127/1677370892/file.mkv",
+						"duration": 4821343,
+						"file": "/volume1/Movies/Devil (2010).mkv",
+						"size": 20124849703,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"videoProfile": "advanced"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Thriller"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "John Erick Dowdle"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "M. Night Shyamalan"
+			},
+			{
+				"tag": "Brian Nelson"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Chris Messina"
+			},
+			{
+				"tag": "Bojana Novaković"
+			},
+			{
+				"tag": "Jenny O'Hara"
+			}
+		]
+	},
+	{
+		"ratingKey": "7784",
+		"key": "/library/metadata/7784",
+		"guid": "plex://movie/5d77682a7e9a3c0020c6b180",
+		"studio": "Monarchy Enterprises B.V.",
+		"type": "movie",
+		"title": "The Devil's Advocate",
+		"titleSort": "Devil's Advocate",
+		"contentRating": "R",
+		"summary": "An exceptionally-adept Florida lawyer is offered a job at a high-end New York City law firm with a high-end boss--the biggest opportunity of his career to date.",
+		"rating": 6.3,
+		"audienceRating": 8,
+		"viewCount": 2,
+		"lastViewedAt": 1682922713,
+		"year": 1997,
+		"tagline": "The newest attorney at the world's most powerful law firm has never lost a case. But he's about to lose his soul.",
+		"thumb": "/library/metadata/7784/thumb/1711898799",
+		"art": "/library/metadata/7784/art/1711898799",
+		"duration": 8635689,
+		"originallyAvailableAt": "1997-10-17",
+		"addedAt": 1681430871,
+		"updatedAt": 1711898799,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 16994,
+				"duration": 8635689,
+				"bitrate": 23251,
+				"width": 1920,
+				"height": 800,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17061,
+						"key": "/library/parts/17061/1681299426/file.mkv",
+						"duration": 8635689,
+						"file": "/volume1/Movies/The Devil's Advocate (1997).mkv",
+						"size": 25106513732,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Taylor Hackford"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Andrew Neiderman"
+			},
+			{
+				"tag": "Jonathan Lemkin"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Germany"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Keanu Reeves"
+			},
+			{
+				"tag": "Al Pacino"
+			},
+			{
+				"tag": "Charlize Theron"
+			}
+		]
+	},
+	{
+		"ratingKey": "5502",
+		"key": "/library/metadata/5502",
+		"guid": "plex://movie/5d9f35436fc551001ef80fdc",
+		"studio": "Mosfilm",
+		"type": "movie",
+		"title": "The Diamond Arm",
+		"titleSort": "Diamond Arm",
+		"originalTitle": "Бриллиантовая рука",
+		"contentRating": "PG-13",
+		"summary": "Semyon Gorbunkov goes on a cruise. In Istanbul, he slips and breaks his arm. What he didn't know is that this was a signal for a gang of smugglers (a real smuggler - Gena - was also on board the same ship). So his arm gets bandaged with gold and diamonds. After he returns home, the gangsters are trying to get their stuff back, while the police try to catch them using Gorbunkov and his arm.",
+		"audienceRating": 8.7,
+		"viewCount": 1,
+		"lastViewedAt": 1691534792,
+		"year": 1969,
+		"tagline": "A cinematographic novel in 2 parts from the life of smugglers",
+		"thumb": "/library/metadata/5502/thumb/1711898800",
+		"art": "/library/metadata/5502/art/1711898800",
+		"duration": 5895200,
+		"originallyAvailableAt": "1969-04-28",
+		"addedAt": 1679417531,
+		"updatedAt": 1711898800,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"Media": [
+			{
+				"id": 11756,
+				"duration": 5895200,
+				"bitrate": 24178,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 2,
+				"audioCodec": "truehd",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 11812,
+						"key": "/library/parts/11812/1679367623/file.mkv",
+						"duration": 5895200,
+						"file": "/volume1/Movies/Бриллиантовая рука (1968).mkv",
+						"size": 17816489587,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Adventure"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Leonid Gaidai"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Leonid Gaidai"
+			},
+			{
+				"tag": "Moris Slobodskoy"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Russian Federation"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Yuriy Nikulin"
+			},
+			{
+				"tag": "Nina Grebeshkova"
+			},
+			{
+				"tag": "Nonna Mordyukova"
+			}
+		]
+	},
+	{
+		"ratingKey": "8146",
+		"key": "/library/metadata/8146",
+		"guid": "plex://movie/5d7768bafb0d55001f518853",
+		"studio": "Paramount",
+		"type": "movie",
+		"title": "The Dictator",
+		"titleSort": "Dictator",
+		"contentRating": "R",
+		"summary": "The Republic of Wadiya is ruled by an eccentric and oppressive leader named Hafez Aladeen. Aladeen is summoned to New York to a UN assembly to address concerns about his country's nuclear weapons program, but the trip goes awry.",
+		"rating": 5.6,
+		"audienceRating": 4.4,
+		"viewOffset": 931000,
+		"lastViewedAt": 1701899682,
+		"year": 2012,
+		"tagline": "Make way for Aladeen.",
+		"thumb": "/library/metadata/8146/thumb/1711898799",
+		"art": "/library/metadata/8146/art/1711898799",
+		"duration": 4998176,
+		"originallyAvailableAt": "2012-05-16",
+		"addedAt": 1684062349,
+		"updatedAt": 1711898799,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 17715,
+				"duration": 4998176,
+				"bitrate": 35511,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17784,
+						"key": "/library/parts/17784/1702079804/file.mkv",
+						"duration": 4998176,
+						"file": "/volume3/MoviesB/Movis/The Dictator (2012).mkv",
+						"size": 22189470959,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Larry Charles"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Sacha Baron Cohen"
+			},
+			{
+				"tag": "Jeff Schaffer"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United Kingdom"
+			},
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Sacha Baron Cohen"
+			},
+			{
+				"tag": "Ben Kingsley"
+			},
+			{
+				"tag": "Anna Faris"
+			}
+		]
+	},
+	{
+		"ratingKey": "10292",
+		"key": "/library/metadata/10292",
+		"guid": "plex://movie/5d7768680ab244002006d25a",
+		"studio": "EON Productions",
+		"type": "movie",
+		"title": "Die Another Day",
+		"contentRating": "PG-13",
+		"summary": "James Bond is sent to investigate the connection between a North Korean terrorist and a diamond mogul, who is funding the development of an international space weapon.",
+		"rating": 5.5,
+		"audienceRating": 4.1,
+		"viewCount": 1,
+		"lastViewedAt": 1700176360,
+		"year": 2002,
+		"tagline": "He's never been cooler.",
+		"thumb": "/library/metadata/10292/thumb/1711898735",
+		"duration": 7954912,
+		"originallyAvailableAt": "2002-11-20",
+		"addedAt": 1680205918,
+		"updatedAt": 1711898735,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23016,
+				"duration": 7954912,
+				"bitrate": 26303,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23128,
+						"key": "/library/parts/23128/1680224103/file.ts",
+						"duration": 7954912,
+						"file": "/volume1/Movies/Die Another Day (2002).ts",
+						"size": 27139577540,
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Lee Tamahori"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Ian Fleming"
+			},
+			{
+				"tag": "Robert Wade"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Spain"
+			},
+			{
+				"tag": "United Kingdom"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Pierce Brosnan"
+			},
+			{
+				"tag": "Halle Berry"
+			},
+			{
+				"tag": "Toby Stephens"
+			}
+		]
+	},
+	{
+		"ratingKey": "10293",
+		"key": "/library/metadata/10293",
+		"guid": "plex://movie/5d776829103a2d001f564e3d",
+		"studio": "Gordon Company",
+		"type": "movie",
+		"title": "Die Hard 2",
+		"contentRating": "R",
+		"summary": "Off-duty cop John McClane is gripped with a feeling of déjà vu when, on a snowy Christmas Eve in the nation’s capital, terrorists seize a major international airport, holding thousands of holiday travelers hostage. Renegade military commandos led by a murderous rogue officer plot to rescue a drug lord from justice and are prepared for every contingency except one: McClane’s smart-mouthed heroics.",
+		"rating": 6.9,
+		"audienceRating": 7,
+		"viewOffset": 3071475,
+		"lastViewedAt": 1699222947,
+		"year": 1990,
+		"tagline": "Die harder.",
+		"thumb": "/library/metadata/10293/thumb/1712000188",
+		"duration": 7403072,
+		"originallyAvailableAt": "1990-07-03",
+		"addedAt": 1677432345,
+		"updatedAt": 1712000188,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23017,
+				"duration": 7403072,
+				"bitrate": 27611,
+				"width": 1920,
+				"height": 812,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23129,
+						"key": "/library/parts/23129/1449641970/file.mkv",
+						"duration": 7403072,
+						"file": "/volume1/Movies/Die Hard 2 (1990).mkv",
+						"size": 25550854526,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Renny Harlin"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Steven E. de Souza"
+			},
+			{
+				"tag": "Doug Richardson"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Bruce Willis"
+			},
+			{
+				"tag": "Bonnie Bedelia"
+			},
+			{
+				"tag": "William Sadler"
+			}
+		]
+	},
+	{
+		"ratingKey": "10294",
+		"key": "/library/metadata/10294",
+		"guid": "plex://movie/5d776829eb5d26001f1de1d1",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Die Hard with a Vengeance",
+		"contentRating": "R",
+		"summary": "New York detective John McClane is back and kicking bad-guy butt in the third installment of this action-packed series, which finds him teaming with civilian Zeus Carver to prevent the loss of innocent lives. McClane thought he'd seen it all, until a genius named Simon engages McClane, his new \"partner\" -- and his beloved city -- in a deadly game that demands their concentration.",
+		"rating": 5.9,
+		"audienceRating": 8.3,
+		"year": 1995,
+		"tagline": "Think fast. Look alive. Die hard.",
+		"thumb": "/library/metadata/10294/thumb/1711898736",
+		"duration": 7711776,
+		"originallyAvailableAt": "1995-05-19",
+		"addedAt": 1677432346,
+		"updatedAt": 1711898736,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23018,
+				"duration": 7711776,
+				"bitrate": 30609,
+				"width": 1920,
+				"height": 816,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23130,
+						"key": "/library/parts/23130/1449667752/file.mkv",
+						"duration": 7711776,
+						"file": "/volume1/Movies/Die Hard With a Vengeance (1995).mkv",
+						"size": 29515804407,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Adventure"
+			}
+		],
+		"Director": [
+			{
+				"tag": "John McTiernan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Jonathan Hensleigh"
+			},
+			{
+				"tag": "Roderick Thorp"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Bruce Willis"
+			},
+			{
+				"tag": "Samuel L. Jackson"
+			},
+			{
+				"tag": "Jeremy Irons"
+			}
+		]
+	},
+	{
+		"ratingKey": "10295",
+		"key": "/library/metadata/10295",
+		"guid": "plex://movie/5d776831e6d55c002040c4cb",
+		"studio": "DreamWorks Pictures",
+		"type": "movie",
+		"title": "Disturbia",
+		"contentRating": "PG-13",
+		"summary": "Kale is a 17-year-old placed under house arrest after punching his teacher. He is confined to his house, and decides to use his free time spying on his neighbors. Things start to get weird when guests enter the Turner's house and don't come back out. Kale and his friends, Ronnie and Ashley, start to grow more and more interested in what is actually happening within the house of Robert Turner.",
+		"rating": 7,
+		"audienceRating": 7.7,
+		"year": 2007,
+		"tagline": "The quieter the street, the darker the secrets....",
+		"thumb": "/library/metadata/10295/thumb/1711898737",
+		"duration": 6276288,
+		"originallyAvailableAt": "2007-04-12",
+		"addedAt": 1678127167,
+		"updatedAt": 1711898737,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23019,
+				"duration": 6276288,
+				"bitrate": 16869,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23131,
+						"key": "/library/parts/23131/1677929723/file.mkv",
+						"duration": 6276288,
+						"file": "/volume1/Movies/Disturbia (2007).mkv",
+						"size": 13236299270,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Mystery"
+			},
+			{
+				"tag": "Thriller"
+			}
+		],
+		"Director": [
+			{
+				"tag": "D. J. Caruso"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Christopher Landon"
+			},
+			{
+				"tag": "Carl Ellsworth"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Shia LaBeouf"
+			},
+			{
+				"tag": "Sarah Roemer"
+			},
+			{
+				"tag": "Carrie-Anne Moss"
+			}
+		]
+	},
+	{
+		"ratingKey": "9531",
+		"key": "/library/metadata/9531",
+		"guid": "plex://movie/5d7768adebdf2200209c5d46",
+		"studio": "The Weinstein Company",
+		"type": "movie",
+		"title": "Django Unchained",
+		"contentRating": "R",
+		"summary": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.",
+		"rating": 8.7,
+		"audienceRating": 9.2,
+		"year": 2012,
+		"tagline": "Life, liberty, and the pursuit of vengeance.",
+		"thumb": "/library/metadata/9531/thumb/1711898800",
+		"duration": 9922871,
+		"originallyAvailableAt": "2012-12-25",
+		"addedAt": 1540085315,
+		"updatedAt": 1711898800,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 21318,
+				"duration": 9922871,
+				"bitrate": 8699,
+				"width": 1280,
+				"height": 534,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21419,
+						"key": "/library/parts/21419/1540085315/file.mkv",
+						"duration": 9922871,
+						"file": "/volume1/Movies/Django Unchained (2012).mkv",
+						"size": 10794044996,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Western"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Quentin Tarantino"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Quentin Tarantino"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jamie Foxx"
+			},
+			{
+				"tag": "Christoph Waltz"
+			},
+			{
+				"tag": "Leonardo DiCaprio"
+			}
+		]
+	},
+	{
+		"ratingKey": "10283",
+		"key": "/library/metadata/10283",
+		"guid": "plex://movie/5d776da0594b2b001e70ddb5",
+		"studio": "Vertigo Entertainment",
+		"type": "movie",
+		"title": "Doctor Sleep",
+		"contentRating": "R",
+		"summary": "Years following the events of The Shining (1980), a now-adult Dan Torrance must protect a young girl with similar powers from a cult known as The True Knot, who prey on children with powers to remain immortal.",
+		"rating": 7.8,
+		"audienceRating": 8.9,
+		"viewCount": 1,
+		"lastViewedAt": 1681864152,
+		"year": 2019,
+		"tagline": "Return to the Overlook.",
+		"thumb": "/library/metadata/10283/thumb/1711898728",
+		"duration": 9118591,
+		"originallyAvailableAt": "2019-10-30",
+		"addedAt": 1580177211,
+		"updatedAt": 1711898728,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23007,
+				"duration": 9118591,
+				"bitrate": 7695,
+				"width": 1920,
+				"height": 1040,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23119,
+						"key": "/library/parts/23119/1580177211/file.mkv",
+						"duration": 9118591,
+						"file": "/volume1/Movies/Doctor Sleep (2019).mkv",
+						"size": 8775282015,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Horror"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Mike Flanagan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Stephen King"
+			},
+			{
+				"tag": "Mike Flanagan"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Ewan McGregor"
+			},
+			{
+				"tag": "Kyliegh Curran"
+			},
+			{
+				"tag": "Rebecca Ferguson"
+			}
+		]
+	},
+	{
+		"ratingKey": "9384",
+		"key": "/library/metadata/9384",
+		"guid": "plex://movie/5d776d4796b655001fe44b28",
+		"studio": "Marvel Studios",
+		"type": "movie",
+		"title": "Doctor Strange in the Multiverse of Madness",
+		"contentRating": "PG-13",
+		"summary": "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others.",
+		"rating": 7.3,
+		"audienceRating": 8.5,
+		"year": 2022,
+		"tagline": "Enter a new dimension of Strange.",
+		"thumb": "/library/metadata/9384/thumb/1711898801",
+		"art": "/library/metadata/9384/art/1711898801",
+		"duration": 7591264,
+		"originallyAvailableAt": "2022-05-04",
+		"addedAt": 1710700296,
+		"updatedAt": 1711898801,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20953,
+				"duration": 7591264,
+				"bitrate": 15516,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21034,
+						"key": "/library/parts/21034/1710043137/file.mkv",
+						"duration": 7591264,
+						"file": "/volume3/MoviesB/Movis/Doctor Strange in the Multiverse of Madness (2022) 3D.mkv",
+						"size": 14727312340,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Fantasy"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Sam Raimi"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Michael Waldron"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Benedict Cumberbatch"
+			},
+			{
+				"tag": "Elizabeth Olsen"
+			},
+			{
+				"tag": "Chiwetel Ejiofor"
+			}
+		]
+	},
+	{
+		"ratingKey": "6776",
+		"key": "/library/metadata/6776",
+		"guid": "plex://movie/5d7768265af944001f1f697c",
+		"studio": "Zentropa Entertainments",
+		"type": "movie",
+		"title": "Dogville",
+		"contentRating": "R",
+		"summary": "A mysterious woman named Grace hides in a small mountain town from criminals who pursue her. The town is two-faced and offers to harbor Grace as long as she can make it worth their effort, so Grace works hard under the employ of various townspeople to win their favor. Tensions flare, however, and Grace's status as a helpless outsider provokes vicious contempt and abuse from the citizens of Dogville.",
+		"rating": 7,
+		"audienceRating": 8.9,
+		"viewOffset": 1088351,
+		"lastViewedAt": 1696289447,
+		"year": 2003,
+		"tagline": "A quiet little town not far from here.",
+		"thumb": "/library/metadata/6776/thumb/1712000189",
+		"art": "/library/metadata/6776/art/1712000189",
+		"duration": 10674122,
+		"originallyAvailableAt": "2003-05-21",
+		"addedAt": 1680346463,
+		"updatedAt": 1712000189,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 14692,
+				"duration": 10674122,
+				"bitrate": 6842,
+				"width": 1280,
+				"height": 544,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 14752,
+						"key": "/library/parts/14752/1680312462/file.mkv",
+						"duration": 10674122,
+						"file": "/volume1/Movies/Dogville (2003).mkv",
+						"size": 9129469619,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Crime"
+			},
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Lars von Trier"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Lars von Trier"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Denmark"
+			},
+			{
+				"tag": "Finland"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Nicole Kidman"
+			},
+			{
+				"tag": "Paul Bettany"
+			},
+			{
+				"tag": "John Hurt"
+			}
+		]
+	},
+	{
+		"ratingKey": "6282",
+		"key": "/library/metadata/6282",
+		"guid": "plex://movie/5e1622597d3bc8003d780366",
+		"studio": "Hyperobject Industries",
+		"type": "movie",
+		"title": "Don't Look Up",
+		"contentRating": "R",
+		"summary": "Two low-level astronomers must go on a giant media tour to warn humankind of an approaching comet that will destroy planet Earth.",
+		"rating": 5.5,
+		"audienceRating": 7.8,
+		"viewCount": 1,
+		"lastViewedAt": 1682812882,
+		"year": 2021,
+		"tagline": "Based on truly possible events.",
+		"thumb": "/library/metadata/6282/thumb/1711898802",
+		"art": "/library/metadata/6282/art/1711898802",
+		"duration": 8591648,
+		"originallyAvailableAt": "2021-12-08",
+		"addedAt": 1680033838,
+		"updatedAt": 1711898802,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 13578,
+				"duration": 8591648,
+				"bitrate": 8966,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "eac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 13638,
+						"key": "/library/parts/13638/1680019693/file.mkv",
+						"duration": 8591648,
+						"file": "/volume1/Movies/Don't Look Up (2021).mkv",
+						"size": 9628554339,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			},
+			{
+				"tag": "Science Fiction"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Adam McKay"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Adam McKay"
+			},
+			{
+				"tag": "David Sirota"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jennifer Lawrence"
+			},
+			{
+				"tag": "Leonardo DiCaprio"
+			},
+			{
+				"tag": "Meryl Streep"
+			}
+		]
+	},
+	{
+		"ratingKey": "10284",
+		"key": "/library/metadata/10284",
+		"guid": "plex://movie/5d776833f59e580021898657",
+		"studio": "20th Century Fox",
+		"type": "movie",
+		"title": "Down Periscope",
+		"contentRating": "PG-13",
+		"summary": "Lt. Cmdr. Tom Dodge is assigned as Captain to the USS Stingray, an old diesel driven submarine that has seen better days. With a crew that consists only of weird guys (and a gal), he's headed against the atomic powered USS Orlando, with the mission to destroy a dummy battleship.",
+		"rating": 1.1,
+		"audienceRating": 6.2,
+		"viewCount": 1,
+		"skipCount": 1,
+		"lastViewedAt": 1704517359,
+		"year": 1996,
+		"tagline": "A rusty sub. A rebel commander. A renegade crew. When destiny called, they should have hung up.",
+		"thumb": "/library/metadata/10284/thumb/1710700614",
+		"duration": 5568160,
+		"originallyAvailableAt": "1996-03-01",
+		"addedAt": 1677432457,
+		"updatedAt": 1710700614,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 23008,
+				"duration": 5568160,
+				"bitrate": 5965,
+				"width": 1280,
+				"height": 692,
+				"aspectRatio": 1.85,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "720",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23120,
+						"key": "/library/parts/23120/1510799921/file.mkv",
+						"duration": 5568160,
+						"file": "/volume1/Movies/Down Periscope (1996).mkv",
+						"size": 4151480423,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "David S. Ward"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Hugh Wilson"
+			},
+			{
+				"tag": "Andrew Kurtzman"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Kelsey Grammer"
+			},
+			{
+				"tag": "Lauren Holly"
+			},
+			{
+				"tag": "Rob Schneider"
+			}
+		]
+	},
+	{
+		"ratingKey": "5963",
+		"key": "/library/metadata/5963",
+		"guid": "plex://movie/5d776888decfcd001f2ebaf6",
+		"studio": "Universal Pictures",
+		"type": "movie",
+		"title": "Dracula Untold",
+		"contentRating": "PG-13",
+		"summary": "As his kingdom is being threatened by the Turks, young prince Vlad Tepes must become a monster feared by his own people in order to obtain the power needed to protect his own family, and the families of his kingdom.",
+		"rating": 2.5,
+		"audienceRating": 5.8,
+		"viewOffset": 2374002,
+		"lastViewedAt": 1681086748,
+		"year": 2014,
+		"tagline": "Every bloodline has a beginning",
+		"thumb": "/library/metadata/5963/thumb/1712000191",
+		"art": "/library/metadata/5963/art/1712000191",
+		"duration": 5528416,
+		"originallyAvailableAt": "2014-10-01",
+		"addedAt": 1679783031,
+		"updatedAt": 1712000191,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 12795,
+				"duration": 5528416,
+				"bitrate": 44387,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"audioProfile": "dts",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 12852,
+						"key": "/library/parts/12852/1679808197/file.mkv",
+						"duration": 5528416,
+						"file": "/volume1/Movies/Dracula Untold (2014).mkv",
+						"size": 30673650503,
+						"audioProfile": "dts",
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Gary Shore"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Matt Sazama"
+			},
+			{
+				"tag": "Burk Sharpless"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Luke Evans"
+			},
+			{
+				"tag": "Dominic Cooper"
+			},
+			{
+				"tag": "Sarah Gadon"
+			}
+		]
+	},
+	{
+		"ratingKey": "7988",
+		"key": "/library/metadata/7988",
+		"guid": "plex://movie/5d7768302e80df001ebddbb6",
+		"studio": "Kasdan Pictures",
+		"type": "movie",
+		"title": "Dreamcatcher",
+		"contentRating": "R",
+		"summary": "Four childhood friends, Jonesy, Beaver, Pete and Henry all share a special secret. Each year, they take a trip into Maine woods. This year is different. A blizzard occurs, and they recover a man found wandering around. Unbeknownst to them, this wandering individual isn't the only being to be found. Now they must act fast to stop the outbreak developing and to prevent the world from its doom.",
+		"rating": 2.8,
+		"audienceRating": 3.5,
+		"year": 2003,
+		"tagline": "Four friends hung a dreamcatcher in their cabin. It's about to catch something it cannot stop.",
+		"thumb": "/library/metadata/7988/thumb/1711898802",
+		"art": "/library/metadata/7988/art/1711898802",
+		"duration": 8027040,
+		"originallyAvailableAt": "2003-03-21",
+		"addedAt": 1684062337,
+		"updatedAt": 1711898802,
+		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.rotten",
+		"Media": [
+			{
+				"id": 17444,
+				"duration": 8027040,
+				"bitrate": 46641,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 17513,
+						"key": "/library/parts/17513/1683085145/file.mkv",
+						"duration": 8027040,
+						"file": "/volume3/MoviesB/Movis/Dreamcatcher (2003).mkv",
+						"size": 46811174592,
+						"container": "mkv",
+						"hasThumbnail": "1",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			},
+			{
+				"tag": "Horror"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Lawrence Kasdan"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "William Goldman"
+			},
+			{
+				"tag": "Stephen King"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Morgan Freeman"
+			},
+			{
+				"tag": "Thomas Jane"
+			},
+			{
+				"tag": "Jason Lee"
+			}
+		]
+	},
+	{
+		"ratingKey": "7599",
+		"key": "/library/metadata/7599",
+		"guid": "plex://movie/5d776d157a53e9001e7506b2",
+		"studio": "Seasonal Film Corporation",
+		"type": "movie",
+		"title": "Drunken Master",
+		"originalTitle": "醉拳",
+		"contentRating": "PG-13",
+		"summary": "The father of Wong Fei-hong, who has been attempting to teach his son kung-fu, but has found him too disobedient to teach and decides to send him off to his uncle, a cruel and torturous master of the 8-Drunken Genii kung-fu. After much suffering the son comes back to rescue the father from an assassin.",
+		"audienceRating": 7.4,
+		"year": 1978,
+		"tagline": "The Original Kung Fu Comedy!",
+		"thumb": "/library/metadata/7599/thumb/1711898802",
+		"art": "/library/metadata/7599/art/1711898802",
+		"duration": 6672123,
+		"originallyAvailableAt": "1978-10-05",
+		"addedAt": 1681040036,
+		"updatedAt": 1711898802,
+		"audienceRatingImage": "imdb://image.rating",
+		"chapterSource": "media",
+		"hasPremiumPrimaryExtra": "1",
+		"Media": [
+			{
+				"id": 16549,
+				"duration": 6672123,
+				"bitrate": 26981,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 2,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 16614,
+						"key": "/library/parts/16614/1680986924/file.mkv",
+						"duration": 6672123,
+						"file": "/volume1/Movies/Drunken Master (1978).mkv",
+						"size": 22507370271,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Action"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Yuen Woo-Ping"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Yuen Woo-Ping"
+			},
+			{
+				"tag": "Ng See-Yuen"
+			}
+		],
+		"Country": [
+			{
+				"tag": "Hong Kong"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Jackie Chan"
+			},
+			{
+				"tag": "Yuen Siu-Tien"
+			},
+			{
+				"tag": "Hwang Jang-Lee"
+			}
+		]
+	},
+	{
+		"ratingKey": "9267",
+		"key": "/library/metadata/9267",
+		"guid": "plex://movie/6040a29753b2b5002c4cfa1a",
+		"studio": "Black Bear Pictures",
+		"type": "movie",
+		"title": "Dumb Money",
+		"contentRating": "R",
+		"summary": "Vlogger Keith Gill sinks his life savings into GameStop stock and posts about it. When social media starts blowing up, so do his life and the lives of everyone following him. As a stock tip becomes a movement, everyone gets rich—until the billionaires fight back, and both sides find their worlds turned upside down.",
+		"rating": 8.4,
+		"audienceRating": 8.5,
+		"year": 2023,
+		"tagline": "When Wall Street rigged the game, he changed it.",
+		"thumb": "/library/metadata/9267/thumb/1712000191",
+		"art": "/library/metadata/9267/art/1712000191",
+		"duration": 6302304,
+		"originallyAvailableAt": "2023-09-20",
+		"addedAt": 1703602674,
+		"updatedAt": 1712000191,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"chapterSource": "media",
+		"hasPremiumExtras": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 20955,
+				"duration": 6302304,
+				"bitrate": 17146,
+				"width": 1920,
+				"height": 804,
+				"aspectRatio": 2.35,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 21036,
+						"key": "/library/parts/21036/1708216346/file.mkv",
+						"duration": 6302304,
+						"file": "/volume3/MoviesB/Movis/Dumb Money (2023).mkv",
+						"size": 13510618068,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Biography"
+			},
+			{
+				"tag": "Comedy"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Craig Gillespie"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Lauren Schuker Blum"
+			},
+			{
+				"tag": "Rebecca Angelo"
+			}
+		],
+		"Country": [
+			{
+				"tag": "United States of America"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Paul Dano"
+			},
+			{
+				"tag": "Shailene Woodley"
+			},
+			{
+				"tag": "America Ferrera"
+			}
+		]
+	},
+	{
 		"ratingKey": "9394",
 		"key": "/library/metadata/9394",
 		"guid": "plex://movie/5d776cac47dd6e001f6ee059",
@@ -91,12 +17935,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9,
 		"year": 2021,
 		"tagline": "It begins.",
-		"thumb": "/library/metadata/9394/thumb/1711898572",
-		"art": "/library/metadata/9394/art/1711898572",
+		"thumb": "/library/metadata/9394/thumb/1712000192",
+		"art": "/library/metadata/9394/art/1712000192",
 		"duration": 9326651,
 		"originallyAvailableAt": "2021-09-15",
 		"addedAt": 1710700297,
-		"updatedAt": 1711898572,
+		"updatedAt": 1712000192,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -197,8 +18041,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9361",
-		"key": "/library/metadata/9361",
+		"ratingKey": "10383",
+		"key": "/library/metadata/10383",
 		"guid": "plex://movie/5eb8f22237ccbe0041723253",
 		"studio": "Legendary Pictures",
 		"type": "movie",
@@ -209,21 +18053,21 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.5,
 		"year": 2024,
 		"tagline": "Long live the fighters.",
-		"thumb": "/library/metadata/9361/thumb/1711898803",
-		"art": "/library/metadata/9361/art/1711898803",
-		"duration": 9567849,
+		"thumb": "/library/metadata/10383/thumb/1712000141",
+		"art": "/library/metadata/10383/art/1712000141",
+		"duration": 9567850,
 		"originallyAvailableAt": "2024-02-27",
-		"addedAt": 1710700289,
-		"updatedAt": 1711898803,
+		"addedAt": 1712000138,
+		"updatedAt": 1712000141,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 20895,
-				"duration": 9567849,
-				"bitrate": 1952,
+				"id": 23195,
+				"duration": 9567850,
+				"bitrate": 1954,
 				"width": 1152,
 				"height": 480,
 				"aspectRatio": 2.35,
@@ -236,10 +18080,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 20971,
-						"key": "/library/parts/20971/1710547695/file.mkv",
-						"duration": 9567849,
-						"file": "/volume3/MoviesB/TEMP/Dune Part Two (2024).mkv",
+						"id": 23324,
+						"key": "/library/parts/23324/1710547695/file.mkv",
+						"duration": 9567850,
+						"file": "/volume3/MoviesB/Movis/Dune Part Two (2024).mkv",
 						"size": 2336771706,
 						"container": "mkv",
 						"videoProfile": "high"
@@ -300,12 +18144,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1698108628,
 		"year": 2023,
 		"tagline": "No experience necessary.",
-		"thumb": "/library/metadata/8391/thumb/1711898803",
-		"art": "/library/metadata/8391/art/1711898803",
+		"thumb": "/library/metadata/8391/thumb/1712000192",
+		"art": "/library/metadata/8391/art/1712000192",
 		"duration": 8049056,
 		"originallyAvailableAt": "2023-03-24",
 		"addedAt": 1687726279,
-		"updatedAt": 1711898803,
+		"updatedAt": 1712000192,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -488,12 +18332,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.7,
 		"year": 2010,
 		"tagline": "Let's not and say we did.",
-		"thumb": "/library/metadata/5514/thumb/1711898804",
-		"art": "/library/metadata/5514/art/1711898804",
+		"thumb": "/library/metadata/5514/thumb/1712000192",
+		"art": "/library/metadata/5514/art/1712000192",
 		"duration": 5544512,
 		"originallyAvailableAt": "2010-09-16",
 		"addedAt": 1679521409,
-		"updatedAt": 1711898804,
+		"updatedAt": 1712000192,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -580,7 +18424,7 @@ export const json_plex: IPlex[] = [
 		"year": 1987,
 		"tagline": "Shock has its value.",
 		"thumb": "/library/metadata/10285/thumb/1711898730",
-		"duration": 5424086,
+		"duration": 5424085,
 		"originallyAvailableAt": "1987-11-25",
 		"addedAt": 1677432460,
 		"updatedAt": 1711898730,
@@ -590,8 +18434,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 23009,
-				"duration": 5424086,
-				"bitrate": 2710,
+				"duration": 5424085,
+				"bitrate": 2708,
 				"width": 720,
 				"height": 480,
 				"aspectRatio": 1.78,
@@ -606,7 +18450,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23121,
 						"key": "/library/parts/23121/1388044232/file.mkv",
-						"duration": 5424086,
+						"duration": 5424085,
 						"file": "/volume1/Movies/Eddie Murphy Raw (1987).mkv",
 						"size": 1837445951,
 						"container": "mkv",
@@ -784,12 +18628,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1678495171,
 		"year": 2000,
 		"tagline": "It's all about... ME!",
-		"thumb": "/library/metadata/5337/thumb/1710700617",
-		"art": "/library/metadata/5337/art/1710700617",
+		"thumb": "/library/metadata/5337/thumb/1712000192",
+		"art": "/library/metadata/5337/art/1712000192",
 		"duration": 4715744,
 		"originallyAvailableAt": "2000-11-22",
 		"addedAt": 1679138993,
-		"updatedAt": 1710700617,
+		"updatedAt": 1712000192,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -873,11 +18717,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.2,
 		"year": 2001,
 		"tagline": "A single bullet can change history.",
-		"thumb": "/library/metadata/9534/thumb/1710700332",
+		"thumb": "/library/metadata/9534/thumb/1712000192",
 		"duration": 7865992,
 		"originallyAvailableAt": "2001-03-14",
 		"addedAt": 1491777780,
-		"updatedAt": 1710700332,
+		"updatedAt": 1712000192,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -1071,7 +18915,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22998,
 				"duration": 7415072,
-				"bitrate": 9259,
+				"bitrate": 9255,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -1607,7 +19451,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22999,
 				"duration": 5408040,
-				"bitrate": 1084,
+				"bitrate": 1074,
 				"width": 592,
 				"height": 352,
 				"aspectRatio": 1.66,
@@ -1894,12 +19738,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.6,
 		"year": 1999,
 		"tagline": "Mischief. Mayhem. Soap.",
-		"thumb": "/library/metadata/7498/thumb/1711898807",
-		"art": "/library/metadata/7498/art/1711898807",
+		"thumb": "/library/metadata/7498/thumb/1712000194",
+		"art": "/library/metadata/7498/art/1712000194",
 		"duration": 8348415,
 		"originallyAvailableAt": "1999-10-15",
 		"addedAt": 1680956625,
-		"updatedAt": 1711898807,
+		"updatedAt": 1712000194,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -2179,7 +20023,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 23000,
 				"duration": 5411200,
-				"bitrate": 27380,
+				"bitrate": 27373,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -2260,11 +20104,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1694965800,
 		"year": 2006,
 		"tagline": "This ride will be the death of you.",
-		"thumb": "/library/metadata/10277/thumb/1711898725",
+		"thumb": "/library/metadata/10277/thumb/1712000195",
 		"duration": 5569152,
 		"originallyAvailableAt": "2006-02-09",
 		"addedAt": 1590215494,
-		"updatedAt": 1711898725,
+		"updatedAt": 1712000195,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -2274,7 +20118,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 23001,
 				"duration": 5569152,
-				"bitrate": 21317,
+				"bitrate": 21310,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -2353,11 +20197,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.3,
 		"year": 2011,
 		"tagline": "Death has never been closer.",
-		"thumb": "/library/metadata/10278/thumb/1711898726",
+		"thumb": "/library/metadata/10278/thumb/1712000195",
 		"duration": 5510912,
 		"originallyAvailableAt": "2011-08-12",
 		"addedAt": 1590219105,
-		"updatedAt": 1711898726,
+		"updatedAt": 1712000195,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -2367,7 +20211,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 23002,
 				"duration": 5510912,
-				"bitrate": 16105,
+				"bitrate": 16101,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -2657,7 +20501,7 @@ export const json_plex: IPlex[] = [
 		"year": 1997,
 		"tagline": "Passion has no limits.",
 		"thumb": "/library/metadata/10279/thumb/1711898727",
-		"duration": 6231058,
+		"duration": 6231057,
 		"originallyAvailableAt": "1997-10-17",
 		"addedAt": 1539677965,
 		"updatedAt": 1711898727,
@@ -2666,8 +20510,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 23003,
-				"duration": 6231058,
-				"bitrate": 12419,
+				"duration": 6231057,
+				"bitrate": 24226,
 				"width": 1920,
 				"height": 816,
 				"aspectRatio": 2.35,
@@ -2682,7 +20526,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23115,
 						"key": "/library/parts/23115/1494810892/file.mkv",
-						"duration": 6231058,
+						"duration": 6231057,
 						"file": "/volume1/Movies/Firelight (1997).mkv",
 						"size": 9673279985,
 						"container": "mkv",
@@ -2742,12 +20586,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.5,
 		"year": 2012,
 		"tagline": "Some miracles are not what they seem.",
-		"thumb": "/library/metadata/6334/thumb/1711898808",
-		"art": "/library/metadata/6334/art/1711898808",
+		"thumb": "/library/metadata/6334/thumb/1712000196",
+		"art": "/library/metadata/6334/art/1712000196",
 		"duration": 8315360,
 		"originallyAvailableAt": "2012-11-02",
 		"addedAt": 1680079593,
-		"updatedAt": 1711898808,
+		"updatedAt": 1712000196,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -2834,7 +20678,7 @@ export const json_plex: IPlex[] = [
 		"year": 2010,
 		"tagline": "You never forget your first love.",
 		"thumb": "/library/metadata/10280/thumb/1711898727",
-		"duration": 5580573,
+		"duration": 5580572,
 		"originallyAvailableAt": "2010-09-10",
 		"addedAt": 1678553872,
 		"updatedAt": 1711898727,
@@ -2846,8 +20690,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 23004,
-				"duration": 5580573,
-				"bitrate": 21730,
+				"duration": 5580572,
+				"bitrate": 21726,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -2862,7 +20706,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23116,
 						"key": "/library/parts/23116/1678143440/file.mkv",
-						"duration": 5580573,
+						"duration": 5580572,
 						"file": "/volume1/Movies/Flipped (2010).mkv",
 						"size": 15158098336,
 						"container": "mkv",
@@ -2938,7 +20782,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22910,
 				"duration": 6746560,
-				"bitrate": 23439,
+				"bitrate": 22256,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -3106,12 +20950,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.5,
 		"year": 1994,
 		"tagline": "The world will never be the same once you've seen it through the eyes of Forrest Gump.",
-		"thumb": "/library/metadata/7360/thumb/1711898809",
-		"art": "/library/metadata/7360/art/1711898809",
+		"thumb": "/library/metadata/7360/thumb/1712000197",
+		"art": "/library/metadata/7360/art/1712000197",
 		"duration": 8527903,
 		"originallyAvailableAt": "1994-07-06",
 		"addedAt": 1680820233,
-		"updatedAt": 1711898809,
+		"updatedAt": 1712000197,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -3306,7 +21150,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22995,
 				"duration": 6358464,
-				"bitrate": 9868,
+				"bitrate": 9865,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -3385,11 +21229,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.6,
 		"year": 1999,
 		"tagline": "Go behind the lies.",
-		"thumb": "/library/metadata/9628/thumb/1711898809",
+		"thumb": "/library/metadata/9628/thumb/1712000198",
 		"duration": 6984128,
 		"originallyAvailableAt": "1999-06-18",
 		"addedAt": 1677432297,
-		"updatedAt": 1711898809,
+		"updatedAt": 1712000198,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -3570,11 +21414,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.8,
 		"year": 2012,
 		"tagline": "The odds are against him. So is everyone else.",
-		"thumb": "/library/metadata/10272/thumb/1711898721",
-		"duration": 5759766,
+		"thumb": "/library/metadata/10272/thumb/1712000198",
+		"duration": 5759763,
 		"originallyAvailableAt": "2012-03-15",
 		"addedAt": 1680956629,
-		"updatedAt": 1711898721,
+		"updatedAt": 1712000198,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -3583,8 +21427,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22996,
-				"duration": 5759766,
-				"bitrate": 40643,
+				"duration": 5759763,
+				"bitrate": 40637,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -3600,7 +21444,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23108,
 						"key": "/library/parts/23108/1681005124/file.mkv",
-						"duration": 5759766,
+						"duration": 5759763,
 						"file": "/volume1/Movies/Get the Gringo (2012).mkv",
 						"size": 29262053818,
 						"audioProfile": "dts",
@@ -3659,12 +21503,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.9,
 		"year": 1995,
 		"tagline": "It found a voice... Now it needs a body.",
-		"thumb": "/library/metadata/8362/thumb/1711898810",
-		"art": "/library/metadata/8362/art/1711898810",
+		"thumb": "/library/metadata/8362/thumb/1712000198",
+		"art": "/library/metadata/8362/art/1712000198",
 		"duration": 4959989,
 		"originallyAvailableAt": "1995-11-18",
 		"addedAt": 1684456062,
-		"updatedAt": 1711898810,
+		"updatedAt": 1712000198,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -3759,7 +21603,7 @@ export const json_plex: IPlex[] = [
 		"year": 2017,
 		"tagline": "There's nothing sadder than a puppet without a ghost.",
 		"thumb": "/library/metadata/10273/thumb/1711898722",
-		"duration": 6416744,
+		"duration": 6416743,
 		"originallyAvailableAt": "2017-03-29",
 		"addedAt": 1501362903,
 		"updatedAt": 1711898722,
@@ -3771,8 +21615,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22997,
-				"duration": 6416744,
-				"bitrate": 11470,
+				"duration": 6416743,
+				"bitrate": 11467,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -3787,7 +21631,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23109,
 						"key": "/library/parts/23109/1501362903/file.mkv",
-						"duration": 6416744,
+						"duration": 6416743,
 						"file": "/volume1/Movies/Ghost in the Shell (2017) 3D.mkv",
 						"size": 9199953713,
 						"container": "mkv",
@@ -4164,11 +22008,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1705112860,
 		"year": 2011,
 		"tagline": "What is hidden in snow, comes forth in the thaw.",
-		"thumb": "/library/metadata/9629/thumb/1711898811",
+		"thumb": "/library/metadata/9629/thumb/1712000199",
 		"duration": 9487520,
 		"originallyAvailableAt": "2011-12-20",
 		"addedAt": 1678914438,
-		"updatedAt": 1711898811,
+		"updatedAt": 1712000199,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -4437,11 +22281,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.7,
 		"year": 2019,
 		"tagline": "You Cannot Contain What You Are",
-		"thumb": "/library/metadata/10239/thumb/1711898717",
-		"duration": 7753343,
+		"thumb": "/library/metadata/10239/thumb/1712000200",
+		"duration": 7753388,
 		"originallyAvailableAt": "2019-01-16",
 		"addedAt": 1576976526,
-		"updatedAt": 1711898717,
+		"updatedAt": 1712000200,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -4450,8 +22294,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22907,
-				"duration": 7753343,
-				"bitrate": 9337,
+				"duration": 7753388,
+				"bitrate": 9327,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -4468,7 +22312,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23019,
 						"key": "/library/parts/23019/1576976526/file.m4v",
-						"duration": 7753343,
+						"duration": 7753388,
 						"file": "/volume1/Movies/Glass (2019).m4v",
 						"size": 9048961786,
 						"container": "mp4",
@@ -4529,12 +22373,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.6,
 		"year": 2023,
 		"tagline": "Say your prayers.",
-		"thumb": "/library/metadata/8648/thumb/1711898812",
-		"art": "/library/metadata/8648/art/1711898812",
+		"thumb": "/library/metadata/8648/thumb/1712000200",
+		"art": "/library/metadata/8648/art/1712000200",
 		"duration": 7210784,
 		"originallyAvailableAt": "2023-06-22",
 		"addedAt": 1691529160,
-		"updatedAt": 1711898812,
+		"updatedAt": 1712000200,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -4714,12 +22558,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.1,
 		"year": 2021,
 		"tagline": "One Will Fall",
-		"thumb": "/library/metadata/9135/thumb/1711898813",
-		"art": "/library/metadata/9135/art/1711898813",
+		"thumb": "/library/metadata/9135/thumb/1712000200",
+		"art": "/library/metadata/9135/art/1712000200",
 		"duration": 6788800,
 		"originallyAvailableAt": "2021-03-24",
 		"addedAt": 1703602661,
-		"updatedAt": 1711898813,
+		"updatedAt": 1712000200,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -4805,12 +22649,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.3,
 		"year": 2019,
 		"tagline": "Long live the king.",
-		"thumb": "/library/metadata/9132/thumb/1711898813",
-		"art": "/library/metadata/9132/art/1711898813",
+		"thumb": "/library/metadata/9132/thumb/1712000200",
+		"art": "/library/metadata/9132/art/1712000200",
 		"duration": 7902912,
 		"originallyAvailableAt": "2019-05-29",
 		"addedAt": 1703602660,
-		"updatedAt": 1711898813,
+		"updatedAt": 1712000200,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -4820,7 +22664,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 20282,
 				"duration": 7902912,
-				"bitrate": 27091,
+				"bitrate": 27020,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -4991,12 +22835,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1683420327,
 		"year": 2000,
 		"tagline": "Ice Cold, Hot Wired.",
-		"thumb": "/library/metadata/7948/thumb/1711898813",
-		"art": "/library/metadata/7948/art/1711898813",
+		"thumb": "/library/metadata/7948/thumb/1712000201",
+		"art": "/library/metadata/7948/art/1712000201",
 		"duration": 7136594,
 		"originallyAvailableAt": "2000-06-08",
 		"addedAt": 1682980667,
-		"updatedAt": 1711898813,
+		"updatedAt": 1712000201,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -5097,7 +22941,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 16989,
 				"duration": 5680928,
-				"bitrate": 12524,
+				"bitrate": 12526,
 				"width": 1920,
 				"height": 1040,
 				"aspectRatio": 1.85,
@@ -5110,10 +22954,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 17056,
-						"key": "/library/parts/17056/1681453949/file.mkv",
+						"id": 23309,
+						"key": "/library/parts/23309/1681453949/file.mkv",
 						"duration": 5680928,
-						"file": "/volume1/Movies/A Good Old Fashioned Orgy (2011) Rip.mkv",
+						"file": "/volume1/Movies/A Good Old Fashioned Orgy (2011).mkv",
 						"size": 8894889459,
 						"container": "mkv",
 						"videoProfile": "high"
@@ -5175,12 +23019,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.4,
 		"year": 1997,
 		"tagline": "Some people can never believe in themselves, until someone believes in them.",
-		"thumb": "/library/metadata/7502/thumb/1711898813",
-		"art": "/library/metadata/7502/art/1711898813",
+		"thumb": "/library/metadata/7502/thumb/1712000201",
+		"art": "/library/metadata/7502/art/1712000201",
 		"duration": 7593440,
 		"originallyAvailableAt": "1997-11-30",
 		"addedAt": 1680956626,
-		"updatedAt": 1711898813,
+		"updatedAt": 1712000201,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -5744,11 +23588,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1680044581,
 		"year": 2011,
 		"tagline": "Breaking the Law to Protect It.",
-		"thumb": "/library/metadata/9989/thumb/1711898635",
+		"thumb": "/library/metadata/9989/thumb/1712000203",
 		"duration": 7133168,
 		"originallyAvailableAt": "2011-01-12",
 		"addedAt": 1444196588,
-		"updatedAt": 1711898635,
+		"updatedAt": 1712000203,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -5833,11 +23677,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.5,
 		"year": 2011,
 		"tagline": "In brightest day. In blackest night.",
-		"thumb": "/library/metadata/10240/thumb/1711898718",
+		"thumb": "/library/metadata/10240/thumb/1712000203",
 		"duration": 6842208,
 		"originallyAvailableAt": "2011-06-14",
 		"addedAt": 1483155370,
-		"updatedAt": 1711898718,
+		"updatedAt": 1712000203,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -5847,7 +23691,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22908,
 				"duration": 6842208,
-				"bitrate": 14312,
+				"bitrate": 14309,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -6016,12 +23860,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.1,
 		"year": 2012,
 		"tagline": "Live or die on this day.",
-		"thumb": "/library/metadata/7269/thumb/1711898816",
-		"art": "/library/metadata/7269/art/1711898816",
+		"thumb": "/library/metadata/7269/thumb/1712000203",
+		"art": "/library/metadata/7269/art/1712000203",
 		"duration": 7052582,
 		"originallyAvailableAt": "2012-01-26",
 		"addedAt": 1680645456,
-		"updatedAt": 1711898816,
+		"updatedAt": 1712000203,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -6250,7 +24094,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22909,
 				"duration": 7251232,
-				"bitrate": 14155,
+				"bitrate": 14158,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.33,
@@ -8871,7 +26715,7 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.9,
 		"year": 2008,
 		"thumb": "/library/metadata/10173/thumb/1711898696",
-		"duration": 6530497,
+		"duration": 6530526,
 		"originallyAvailableAt": "2008-12-17",
 		"addedAt": 1677432348,
 		"updatedAt": 1711898696,
@@ -8881,8 +26725,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22782,
-				"duration": 6530497,
-				"bitrate": 9047,
+				"duration": 6530526,
+				"bitrate": 9044,
 				"width": 1280,
 				"height": 546,
 				"aspectRatio": 2.35,
@@ -8897,7 +26741,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22893,
 						"key": "/library/parts/22893/1482717568/file.mkv",
-						"duration": 6530497,
+						"duration": 6530526,
 						"file": "/volume1/Movies/Largo Winch (2008).mkv",
 						"size": 7385211815,
 						"container": "mkv",
@@ -8976,7 +26820,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22903,
 				"duration": 7318336,
-				"bitrate": 14068,
+				"bitrate": 14065,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -9070,7 +26914,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22904,
 				"duration": 7180896,
-				"bitrate": 13250,
+				"bitrate": 13246,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -9134,6 +26978,99 @@ export const json_plex: IPlex[] = [
 			},
 			{
 				"tag": "Doug Jones"
+			}
+		]
+	},
+	{
+		"ratingKey": "10435",
+		"key": "/library/metadata/10435",
+		"guid": "plex://movie/5d77688a374a5b001fec89a8",
+		"studio": "DreamWorks Pictures",
+		"type": "movie",
+		"title": "The Help",
+		"titleSort": "Help",
+		"contentRating": "PG-13",
+		"summary": "An aspiring author during the civil rights movement of the 1960s decides to write a book detailing the African American maids' point of view on the white families for which they work, and the hardships they go through on a daily basis.",
+		"rating": 7.6,
+		"audienceRating": 8.9,
+		"year": 2011,
+		"tagline": "Change begins with a whisper.",
+		"thumb": "/library/metadata/10435/thumb/1712000147",
+		"art": "/library/metadata/10435/art/1712000147",
+		"duration": 8774976,
+		"originallyAvailableAt": "2011-08-10",
+		"addedAt": 1712000144,
+		"updatedAt": 1712000147,
+		"audienceRatingImage": "rottentomatoes://image.rating.upright",
+		"hasPremiumExtras": "1",
+		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
+		"Media": [
+			{
+				"id": 23331,
+				"duration": 8774976,
+				"bitrate": 30942,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "dca-ma",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mpegts",
+				"videoFrameRate": "24p",
+				"audioProfile": "ma",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23460,
+						"key": "/library/parts/23460/1711911160/file.m2ts",
+						"duration": 8774976,
+						"file": "/volume3/MoviesB/Movis/The Help (2011).m2ts",
+						"size": 33939068928,
+						"audioProfile": "ma",
+						"container": "mpegts",
+						"packetLength": 188,
+						"videoProfile": "high"
+					}
+				]
+			}
+		],
+		"Genre": [
+			{
+				"tag": "Drama"
+			}
+		],
+		"Director": [
+			{
+				"tag": "Tate Taylor"
+			}
+		],
+		"Writer": [
+			{
+				"tag": "Tate Taylor"
+			},
+			{
+				"tag": "Kathryn Stockett"
+			}
+		],
+		"Country": [
+			{
+				"tag": "India"
+			},
+			{
+				"tag": "United Arab Emirates"
+			}
+		],
+		"Role": [
+			{
+				"tag": "Emma Stone"
+			},
+			{
+				"tag": "Viola Davis"
+			},
+			{
+				"tag": "Octavia Spencer"
 			}
 		]
 	},
@@ -9245,12 +27182,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1709419190,
 		"year": 2012,
 		"tagline": "No one will fight for his students like Mr. Voss.",
-		"thumb": "/library/metadata/5978/thumb/1711898824",
-		"art": "/library/metadata/5978/art/1711898824",
+		"thumb": "/library/metadata/5978/thumb/1712000208",
+		"art": "/library/metadata/5978/art/1712000208",
 		"duration": 6295297,
 		"originallyAvailableAt": "2012-10-10",
 		"addedAt": 1679783032,
-		"updatedAt": 1711898824,
+		"updatedAt": 1712000208,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -9518,12 +27455,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1680451687,
 		"year": 2005,
 		"tagline": "Tom Stall had the perfect life...until he became a hero.",
-		"thumb": "/library/metadata/5683/thumb/1711898824",
-		"art": "/library/metadata/5683/art/1711898824",
-		"duration": 5743414,
+		"thumb": "/library/metadata/5683/thumb/1712000208",
+		"art": "/library/metadata/5683/art/1712000208",
+		"duration": 5743412,
 		"originallyAvailableAt": "2005-09-30",
 		"addedAt": 1679685981,
-		"updatedAt": 1711898824,
+		"updatedAt": 1712000208,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -9532,8 +27469,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 12113,
-				"duration": 5743414,
-				"bitrate": 27175,
+				"duration": 5743412,
+				"bitrate": 27168,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -9548,7 +27485,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23289,
 						"key": "/library/parts/23289/1679665600/file.mkv",
-						"duration": 5743414,
+						"duration": 5743412,
 						"file": "/volume1/Movies/A History of Violence (2005).mkv",
 						"size": 19509873610,
 						"container": "mkv",
@@ -9715,7 +27652,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 16864,
 				"duration": 10951392,
-				"bitrate": 57695,
+				"bitrate": 57711,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -9742,8 +27679,8 @@ export const json_plex: IPlex[] = [
 			},
 			{
 				"id": 16967,
-				"duration": 10953955,
-				"bitrate": 11250,
+				"duration": 10953956,
+				"bitrate": 11252,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -9756,10 +27693,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 17114,
-						"key": "/library/parts/17114/1681215017/file.mkv",
-						"duration": 10953955,
-						"file": "/volume1/Movies/The Hobbit An Unexpected Journey (2012) [ExtendedCut  3D].mkv",
+						"id": 23315,
+						"key": "/library/parts/23315/1681215017/file.mkv",
+						"duration": 10953956,
+						"file": "/volume1/Movies/The Hobbit An Unexpected Journey (2012) 3D  Ex.mkv",
 						"size": 15406844462,
 						"container": "mkv",
 						"videoProfile": "high"
@@ -9848,16 +27785,14 @@ export const json_plex: IPlex[] = [
 				"videoResolution": "1080",
 				"container": "mkv",
 				"videoFrameRate": "24p",
-				"audioProfile": "ma",
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 17115,
-						"key": "/library/parts/17115/1681502306/file.mkv",
+						"id": 23311,
+						"key": "/library/parts/23311/1681502306/file.mkv",
 						"duration": 8669056,
-						"file": "/volume1/Movies/The Hobbit The Battle of the Five Armies (2014) {Extended Cut, 3D}.mkv",
+						"file": "/volume1/Movies/The Hobbit The Battle of the Five Armies (2014) 3D Ex.mkv",
 						"size": 13665934169,
-						"audioProfile": "ma",
 						"container": "mkv",
 						"videoProfile": "high"
 					}
@@ -9866,7 +27801,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 17368,
 				"duration": 9843840,
-				"bitrate": 55161,
+				"bitrate": 55178,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -9880,10 +27815,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 17437,
-						"key": "/library/parts/17437/1681586162/file.mkv",
+						"id": 23312,
+						"key": "/library/parts/23312/1681586162/file.mkv",
 						"duration": 9843840,
-						"file": "/volume1/Movies/The Hobbit The Battle of the Five Armies (2014) {Extended Cut}.mkv",
+						"file": "/volume1/Movies/The Hobbit The Battle of the Five Armies (2014) Ex.mkv",
 						"size": 67894847875,
 						"audioProfile": "ma",
 						"container": "mkv",
@@ -9952,7 +27887,7 @@ export const json_plex: IPlex[] = [
 		"tagline": "Beyond darkness... beyond desolation... lies the greatest danger of all.",
 		"thumb": "/library/metadata/7830/thumb/1711898825",
 		"art": "/library/metadata/7830/art/1711898825",
-		"duration": 11195873,
+		"duration": 11201911,
 		"originallyAvailableAt": "2013-12-11",
 		"addedAt": 1681513254,
 		"updatedAt": 1711898825,
@@ -9962,6 +27897,32 @@ export const json_plex: IPlex[] = [
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
+			{
+				"id": 21547,
+				"duration": 11201911,
+				"bitrate": 10068,
+				"width": 1920,
+				"height": 1080,
+				"aspectRatio": 1.78,
+				"audioChannels": 6,
+				"audioCodec": "ac3",
+				"videoCodec": "h264",
+				"videoResolution": "1080",
+				"container": "mkv",
+				"videoFrameRate": "24p",
+				"videoProfile": "high",
+				"Part": [
+					{
+						"id": 23313,
+						"key": "/library/parts/23313/1681489903/file.mkv",
+						"duration": 11201911,
+						"file": "/volume1/Movies/The Hobbit The Desolation of Smaug (2013) 3D Ex.mkv",
+						"size": 14097485867,
+						"container": "mkv",
+						"videoProfile": "high"
+					}
+				]
+			},
 			{
 				"id": 17294,
 				"duration": 11195873,
@@ -9979,38 +27940,12 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 17362,
-						"key": "/library/parts/17362/1681503758/file.mkv",
+						"id": 23314,
+						"key": "/library/parts/23314/1681503758/file.mkv",
 						"duration": 11195873,
-						"file": "/volume1/Movies/The Hobbit The Desolation of Smaug (2013) [Extended Edition].mkv",
+						"file": "/volume1/Movies/The Hobbit The Desolation of Smaug (2013) Ex.mkv",
 						"size": 76686609288,
 						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 21547,
-				"duration": 11201911,
-				"bitrate": 10066,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21648,
-						"key": "/library/parts/21648/1681489903/file.mkv",
-						"duration": 11201911,
-						"file": "/volume1/Movies/The Hobbit The Desolation of Smaug (2013) {Extended Edition, 3D}.mkv",
-						"size": 14097485867,
 						"container": "mkv",
 						"videoProfile": "high"
 					}
@@ -10072,12 +28007,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.2,
 		"year": 2023,
 		"tagline": "Discomfort and joy.",
-		"thumb": "/library/metadata/9240/thumb/1711898825",
-		"art": "/library/metadata/9240/art/1711898825",
+		"thumb": "/library/metadata/9240/thumb/1712000210",
+		"art": "/library/metadata/9240/art/1712000210",
 		"duration": 8005872,
 		"originallyAvailableAt": "2023-11-10",
 		"addedAt": 1703602671,
-		"updatedAt": 1711898825,
+		"updatedAt": 1712000210,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -10345,12 +28280,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.4,
 		"year": 2017,
 		"tagline": "Starting over is not for beginners.",
-		"thumb": "/library/metadata/8512/thumb/1711898827",
-		"art": "/library/metadata/8512/art/1711898827",
+		"thumb": "/library/metadata/8512/thumb/1712000211",
+		"art": "/library/metadata/8512/art/1712000211",
 		"duration": 5839724,
 		"originallyAvailableAt": "2017-09-07",
 		"addedAt": 1688512795,
-		"updatedAt": 1711898827,
+		"updatedAt": 1712000211,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -10442,7 +28377,7 @@ export const json_plex: IPlex[] = [
 		"year": 1990,
 		"tagline": "A family comedy without the family.",
 		"thumb": "/library/metadata/10237/thumb/1711898715",
-		"duration": 6175040,
+		"duration": 6175081,
 		"originallyAvailableAt": "1990-11-16",
 		"addedAt": 1449352797,
 		"updatedAt": 1711898715,
@@ -10454,8 +28389,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22905,
-				"duration": 6175040,
-				"bitrate": 10417,
+				"duration": 6175081,
+				"bitrate": 10411,
 				"width": 1280,
 				"height": 688,
 				"aspectRatio": 1.85,
@@ -10470,7 +28405,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23017,
 						"key": "/library/parts/23017/1449352797/file.mkv",
-						"duration": 6175040,
+						"duration": 6175081,
 						"file": "/volume1/Movies/Home Alone (1990).mkv",
 						"size": 8040556816,
 						"container": "mkv",
@@ -10532,11 +28467,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1697755678,
 		"year": 1992,
 		"tagline": "He's up past his bedtime in the city that never sleeps.",
-		"thumb": "/library/metadata/10238/thumb/1711898716",
+		"thumb": "/library/metadata/10238/thumb/1712000210",
 		"duration": 7201472,
 		"originallyAvailableAt": "1992-11-20",
 		"addedAt": 1449412505,
-		"updatedAt": 1711898716,
+		"updatedAt": 1712000210,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -10544,7 +28479,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22906,
 				"duration": 7201472,
-				"bitrate": 38493,
+				"bitrate": 38483,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -10909,7 +28844,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22900,
 				"duration": 5491520,
-				"bitrate": 11591,
+				"bitrate": 11589,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -10985,7 +28920,7 @@ export const json_plex: IPlex[] = [
 		"year": 2015,
 		"tagline": "They're back to raise a little terror",
 		"thumb": "/library/metadata/10233/thumb/1711898711",
-		"duration": 5358395,
+		"duration": 5358394,
 		"originallyAvailableAt": "2015-09-21",
 		"addedAt": 1482790606,
 		"updatedAt": 1711898711,
@@ -10997,8 +28932,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22901,
-				"duration": 5358395,
-				"bitrate": 9107,
+				"duration": 5358394,
+				"bitrate": 9105,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -11013,7 +28948,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23013,
 						"key": "/library/parts/23013/1482790606/file.mkv",
-						"duration": 5358395,
+						"duration": 5358394,
 						"file": "/volume1/Movies/Hotel Transylvania 2 (2015) 3D.mkv",
 						"size": 6100197200,
 						"container": "mkv",
@@ -11073,12 +29008,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.7,
 		"year": 2016,
 		"tagline": "Welcome to the party",
-		"thumb": "/library/metadata/6790/thumb/1711898828",
-		"art": "/library/metadata/6790/art/1711898828",
+		"thumb": "/library/metadata/6790/thumb/1712000212",
+		"art": "/library/metadata/6790/art/1712000212",
 		"duration": 6589056,
 		"originallyAvailableAt": "2016-02-08",
 		"addedAt": 1680346466,
-		"updatedAt": 1711898828,
+		"updatedAt": 1712000212,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -11259,24 +29194,26 @@ export const json_plex: IPlex[] = [
 		"originalTitle": "ハウルの動く城",
 		"contentRating": "PG",
 		"summary": "When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
-		"audienceRating": 10,
+		"rating": 8.7,
+		"audienceRating": 9.3,
 		"viewOffset": 2616474,
 		"viewCount": 2,
 		"lastViewedAt": 1698606855,
 		"year": 2004,
 		"tagline": "The two lived there.",
-		"thumb": "/library/metadata/10234/thumb/1711898712",
-		"duration": 7163200,
+		"thumb": "/library/metadata/10234/thumb/1712000212",
+		"duration": 7163199,
 		"originallyAvailableAt": "2004-11-20",
 		"addedAt": 1678568213,
-		"updatedAt": 1711898712,
+		"updatedAt": 1712000212,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
+		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
 				"id": 22902,
-				"duration": 7163200,
-				"bitrate": 43878,
+				"duration": 7163199,
+				"bitrate": 41239,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -11292,7 +29229,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 23014,
 						"key": "/library/parts/23014/1509151757/file.m2ts",
-						"duration": 7163200,
+						"duration": 7163199,
 						"file": "/volume1/Movies/Howl's Moving Castle (2004).m2ts",
 						"size": 39288250368,
 						"audioProfile": "ma",
@@ -11443,12 +29380,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.8,
 		"year": 2011,
 		"tagline": "Unlock the secret.",
-		"thumb": "/library/metadata/5623/thumb/1711898829",
-		"art": "/library/metadata/5623/art/1711898829",
+		"thumb": "/library/metadata/5623/thumb/1712000212",
+		"art": "/library/metadata/5623/art/1712000212",
 		"duration": 7581056,
 		"originallyAvailableAt": "2011-11-23",
 		"addedAt": 1482709107,
-		"updatedAt": 1711898829,
+		"updatedAt": 1712000212,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -11561,12 +29498,12 @@ export const json_plex: IPlex[] = [
 		"viewOffset": 876433,
 		"lastViewedAt": 1707595898,
 		"year": 2024,
-		"thumb": "/library/metadata/9265/thumb/1711898829",
-		"art": "/library/metadata/9265/art/1711898829",
+		"thumb": "/library/metadata/9265/thumb/1712000212",
+		"art": "/library/metadata/9265/art/1712000212",
 		"duration": 5485271,
 		"originallyAvailableAt": "2024-02-15",
 		"addedAt": 1703602674,
-		"updatedAt": 1711898829,
+		"updatedAt": 1712000212,
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
@@ -11662,7 +29599,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 20568,
 				"duration": 8929920,
-				"bitrate": 2094,
+				"bitrate": 2092,
 				"width": 1072,
 				"height": 448,
 				"aspectRatio": 2.35,
@@ -12102,7 +30039,7 @@ export const json_plex: IPlex[] = [
 		"tagline": "A truckload of cell phones... turns into a boatload of cash!",
 		"thumb": "/library/metadata/8392/thumb/1711898830",
 		"art": "/library/metadata/8392/art/1711898830",
-		"duration": 5362000,
+		"duration": 5361083,
 		"originallyAvailableAt": "1998-05-27",
 		"addedAt": 1687726280,
 		"updatedAt": 1711898830,
@@ -12111,8 +30048,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 18384,
-				"duration": 5362000,
-				"bitrate": 2322,
+				"duration": 5361083,
+				"bitrate": 2312,
 				"width": 720,
 				"height": 544,
 				"aspectRatio": 1.33,
@@ -12126,7 +30063,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22118,
 						"key": "/library/parts/22118/1685308389/file.avi",
-						"duration": 5362000,
+						"duration": 5361083,
 						"file": "/volume3/MoviesB/Movis/I Got the Hook Up (1998).avi",
 						"size": 1555998720,
 						"container": "avi"
@@ -12396,12 +30333,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6,
 		"year": 2009,
 		"tagline": "The man who tried to cheat the devil.",
-		"thumb": "/library/metadata/6200/thumb/1711898831",
-		"art": "/library/metadata/6200/art/1711898831",
+		"thumb": "/library/metadata/6200/thumb/1712000213",
+		"art": "/library/metadata/6200/art/1712000213",
 		"duration": 7370405,
 		"originallyAvailableAt": "2009-10-16",
 		"addedAt": 1679955280,
-		"updatedAt": 1711898831,
+		"updatedAt": 1712000213,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -12493,72 +30430,19 @@ export const json_plex: IPlex[] = [
 		"tagline": "Defend your nation. Become your enemy.",
 		"thumb": "/library/metadata/7015/thumb/1711898831",
 		"art": "/library/metadata/7015/art/1711898831",
-		"duration": 6516576,
+		"duration": 6516520,
 		"originallyAvailableAt": "2016-08-19",
 		"addedAt": 1680449344,
 		"updatedAt": 1711898831,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 15231,
-				"duration": 6516576,
-				"bitrate": 6459,
-				"width": 1280,
-				"height": 536,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 15295,
-						"key": "/library/parts/15295/1680438125/file.mkv",
-						"duration": 6516576,
-						"file": "/volume1/Movies/Imperium (2016).mkv",
-						"size": 5261371895,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 16712,
-				"duration": 6516576,
-				"bitrate": 6459,
-				"width": 1280,
-				"height": 536,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16777,
-						"key": "/library/parts/16777/1681135317/file.mkv",
-						"duration": 6516576,
-						"file": "/volume1/Movies/Imperium (2016) ituns.mkv",
-						"size": 5261371895,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
 				"id": 16862,
-				"duration": 6516544,
-				"bitrate": 1910,
+				"duration": 6516520,
+				"bitrate": 1920,
 				"width": 720,
 				"height": 304,
 				"aspectRatio": 2.35,
@@ -12571,10 +30455,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "advanced simple",
 				"Part": [
 					{
-						"id": 16929,
-						"key": "/library/parts/16929/1681173923/file.avi",
-						"duration": 6516544,
-						"file": "/volume1/Movies/Imperium (2016) sdimedia.avi",
+						"id": 23316,
+						"key": "/library/parts/23316/1681173923/file.avi",
+						"duration": 6516520,
+						"file": "/volume1/Movies/Imperium (2016).avi",
 						"size": 1563965440,
 						"container": "avi",
 						"videoProfile": "advanced simple"
@@ -13292,12 +31176,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.4,
 		"year": 2018,
 		"tagline": "It's time to get back to being incredible.",
-		"thumb": "/library/metadata/1319/thumb/1711898704",
-		"art": "/library/metadata/1319/art/1711898704",
+		"thumb": "/library/metadata/1319/thumb/1712000215",
+		"art": "/library/metadata/1319/art/1712000215",
 		"duration": 7070176,
 		"originallyAvailableAt": "2018-06-13",
 		"addedAt": 1546130830,
-		"updatedAt": 1711898704,
+		"updatedAt": 1712000215,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -13335,7 +31219,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22793,
 				"duration": 7070240,
-				"bitrate": 9475,
+				"bitrate": 9472,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -13500,12 +31384,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.8,
 		"year": 2023,
 		"tagline": "His final adventure will be his greatest.",
-		"thumb": "/library/metadata/8690/thumb/1711898833",
-		"art": "/library/metadata/8690/art/1711898833",
+		"thumb": "/library/metadata/8690/thumb/1712000216",
+		"art": "/library/metadata/8690/art/1712000216",
 		"duration": 9273952,
 		"originallyAvailableAt": "2023-06-28",
 		"addedAt": 1694816481,
-		"updatedAt": 1711898833,
+		"updatedAt": 1712000216,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -13591,7 +31475,7 @@ export const json_plex: IPlex[] = [
 		"year": 1988,
 		"tagline": "The man with the hat is back. And this time, he's bringing his Dad.",
 		"thumb": "/library/metadata/10185/thumb/1711898705",
-		"duration": 7608226,
+		"duration": 7608225,
 		"originallyAvailableAt": "1988-11-30",
 		"addedAt": 1677432342,
 		"updatedAt": 1711898705,
@@ -13602,8 +31486,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22794,
-				"duration": 7608226,
-				"bitrate": 4936,
+				"duration": 7608225,
+				"bitrate": 4934,
 				"width": 1280,
 				"height": 546,
 				"aspectRatio": 2.35,
@@ -13618,7 +31502,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22906,
 						"key": "/library/parts/22906/1483049463/file.mkv",
-						"duration": 7608226,
+						"duration": 7608225,
 						"file": "/volume1/Movies/Indiana Jones and the Last Crusade (1989).mkv",
 						"size": 4694378858,
 						"container": "mkv",
@@ -13872,7 +31756,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22841,
 				"duration": 10143936,
-				"bitrate": 23915,
+				"bitrate": 23909,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -13967,7 +31851,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22842,
 				"duration": 5357568,
-				"bitrate": 15906,
+				"bitrate": 15903,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -14040,12 +31924,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.4,
 		"year": 2023,
 		"tagline": "Sons. Brothers. Champions.",
-		"thumb": "/library/metadata/9467/thumb/1711898834",
-		"art": "/library/metadata/9467/art/1711898834",
+		"thumb": "/library/metadata/9467/thumb/1712000217",
+		"art": "/library/metadata/9467/art/1712000217",
 		"duration": 7923419,
 		"originallyAvailableAt": "2023-12-21",
 		"addedAt": 1710700313,
-		"updatedAt": 1711898834,
+		"updatedAt": 1712000217,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -14236,7 +32120,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22843,
 				"duration": 7561760,
-				"bitrate": 15639,
+				"bitrate": 15636,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -14328,7 +32212,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22844,
 				"duration": 7479168,
-				"bitrate": 14791,
+				"bitrate": 14783,
 				"width": 1920,
 				"height": 816,
 				"aspectRatio": 2.35,
@@ -14404,12 +32288,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 2.3,
 		"year": 2019,
 		"tagline": "Arnold Schwarzenegger Vs. Jackie Chan",
-		"thumb": "/library/metadata/7904/thumb/1711898709",
-		"art": "/library/metadata/7904/art/1711898709",
-		"duration": 7239107,
+		"thumb": "/library/metadata/7904/thumb/1712000218",
+		"art": "/library/metadata/7904/art/1712000218",
+		"duration": 7239106,
 		"originallyAvailableAt": "2019-08-16",
 		"addedAt": 1681581631,
-		"updatedAt": 1711898709,
+		"updatedAt": 1712000218,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -14418,8 +32302,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22845,
-				"duration": 7239107,
-				"bitrate": 20277,
+				"duration": 7239106,
+				"bitrate": 20275,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -14434,7 +32318,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22957,
 						"key": "/library/parts/22957/1681581734/file.mkv",
-						"duration": 7239107,
+						"duration": 7239106,
 						"file": "/volume1/Movies/Iron Mask (2019) 3D.mkv",
 						"size": 18348543462,
 						"container": "mkv",
@@ -14445,7 +32329,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22861,
 				"duration": 7241280,
-				"bitrate": 10365,
+				"bitrate": 10362,
 				"width": 1280,
 				"height": 676,
 				"aspectRatio": 1.85,
@@ -14617,11 +32501,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1678743483,
 		"year": 2017,
 		"tagline": "You’ll float too.",
-		"thumb": "/library/metadata/10180/thumb/1711898700",
+		"thumb": "/library/metadata/10180/thumb/1712000218",
 		"duration": 8082432,
 		"originallyAvailableAt": "2017-09-06",
 		"addedAt": 1514775747,
-		"updatedAt": 1711898700,
+		"updatedAt": 1712000218,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -14631,7 +32515,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22789,
 				"duration": 8082432,
-				"bitrate": 9495,
+				"bitrate": 9492,
 				"width": 1280,
 				"height": 534,
 				"aspectRatio": 2.35,
@@ -14705,12 +32589,12 @@ export const json_plex: IPlex[] = [
 		"summary": "Shurik Timofeev builds a working model of a time machine. By accident, Ivan Bunsha, an apartment complex manager, and George Miloslavsky, a petty burglar, are transferred to the 16th century Moscow, while Tsar Ivan the Terrible goes into the year 1973.",
 		"audienceRating": 8.8,
 		"year": 1973,
-		"thumb": "/library/metadata/5563/thumb/1711898835",
-		"art": "/library/metadata/5563/art/1711898835",
+		"thumb": "/library/metadata/5563/thumb/1712000218",
+		"art": "/library/metadata/5563/art/1712000218",
 		"duration": 5499136,
 		"originallyAvailableAt": "1973-05-31",
 		"addedAt": 1679521416,
-		"updatedAt": 1711898835,
+		"updatedAt": 1712000218,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"Media": [
@@ -14795,12 +32679,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1709504387,
 		"year": 2011,
 		"tagline": "His twin sister is coming for the holidays... ...and it ain't pretty.",
-		"thumb": "/library/metadata/6512/thumb/1711898836",
-		"art": "/library/metadata/6512/art/1711898836",
+		"thumb": "/library/metadata/6512/thumb/1712000219",
+		"art": "/library/metadata/6512/art/1712000219",
 		"duration": 5449451,
 		"originallyAvailableAt": "2011-11-11",
 		"addedAt": 1680131686,
-		"updatedAt": 1711898836,
+		"updatedAt": 1712000219,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -14837,9 +32721,6 @@ export const json_plex: IPlex[] = [
 		"Genre": [
 			{
 				"tag": "Comedy"
-			},
-			{
-				"tag": "Family"
 			}
 		],
 		"Director": [
@@ -15117,122 +32998,6 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "8853",
-		"key": "/library/metadata/8853",
-		"guid": "plex://movie/61ed4a54dd9b992940c3b6a0",
-		"studio": "Why Not Productions",
-		"type": "movie",
-		"title": "Jeanne du Barry",
-		"contentRating": "NR",
-		"summary": "The life of Jeanne Bécu who was born as the illegitimate daughter of an impoverished seamstress in 1743 and went on to rise through the Court of Louis XV to become his last official mistress.",
-		"rating": 4.9,
-		"year": 2023,
-		"thumb": "/library/metadata/8853/thumb/1711898837",
-		"art": "/library/metadata/8853/art/1711898837",
-		"duration": 7035712,
-		"originallyAvailableAt": "2023-05-16",
-		"addedAt": 1699010873,
-		"updatedAt": 1711898837,
-		"chapterSource": "media",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 19639,
-				"duration": 7035712,
-				"bitrate": 5892,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19714,
-						"key": "/library/parts/19714/1695514813/file.mkv",
-						"duration": 7035712,
-						"file": "/volume3/MoviesB/Movis/Jeanne du Barry (2023) 4Gb.mkv",
-						"size": 5192356748,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 19664,
-				"duration": 6996042,
-				"bitrate": 18775,
-				"width": 1920,
-				"height": 1038,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19739,
-						"key": "/library/parts/19739/1696712506/file.mkv",
-						"duration": 6996042,
-						"file": "/volume3/MoviesB/Movis/Jeanne du Barry (2023).mkv",
-						"size": 16421968614,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Biography"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Maïwenn"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Maïwenn"
-			},
-			{
-				"tag": "Teddy Lussi-Modeste"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Belgium"
-			},
-			{
-				"tag": "France"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Maïwenn"
-			},
-			{
-				"tag": "Johnny Depp"
-			},
-			{
-				"tag": "Benjamin Lavernhe"
-			}
-		]
-	},
-	{
 		"ratingKey": "9585",
 		"key": "/library/metadata/9585",
 		"guid": "plex://movie/5d7768335af944001f1f9535",
@@ -15333,11 +33098,11 @@ export const json_plex: IPlex[] = [
 		"skipCount": 1,
 		"year": 2012,
 		"tagline": "Lost in our world, found in another.",
-		"thumb": "/library/metadata/10181/thumb/1711898701",
+		"thumb": "/library/metadata/10181/thumb/1712000220",
 		"duration": 7921824,
 		"originallyAvailableAt": "2012-03-07",
 		"addedAt": 1470008549,
-		"updatedAt": 1711898701,
+		"updatedAt": 1712000220,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -15347,7 +33112,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22790,
 				"duration": 7921824,
-				"bitrate": 16414,
+				"bitrate": 16411,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -15438,7 +33203,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22791,
 				"duration": 6071456,
-				"bitrate": 12675,
+				"bitrate": 12670,
 				"width": 1280,
 				"height": 534,
 				"aspectRatio": 2.35,
@@ -15523,7 +33288,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22792,
 				"duration": 7309152,
-				"bitrate": 9112,
+				"bitrate": 9109,
 				"width": 1280,
 				"height": 692,
 				"aspectRatio": 1.85,
@@ -15605,12 +33370,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1697837370,
 		"year": 2014,
 		"tagline": "Defend your Honor.",
-		"thumb": "/library/metadata/7272/thumb/1711898837",
-		"art": "/library/metadata/7272/art/1711898837",
+		"thumb": "/library/metadata/7272/thumb/1712000221",
+		"art": "/library/metadata/7272/art/1712000221",
 		"duration": 8492576,
 		"originallyAvailableAt": "2014-10-09",
 		"addedAt": 1680645456,
-		"updatedAt": 1711898837,
+		"updatedAt": 1712000221,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -15801,32 +33566,6 @@ export const json_plex: IPlex[] = [
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
 		"Media": [
-			{
-				"id": 12647,
-				"duration": 6989984,
-				"bitrate": 14221,
-				"width": 1920,
-				"height": 1036,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12704,
-						"key": "/library/parts/12704/1539566331/file.mkv",
-						"duration": 6989984,
-						"file": "/volume1/Movies/Just Go with It (2011) BDRip.mkv",
-						"size": 12425300270,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
 			{
 				"id": 12938,
 				"duration": 6989984,
@@ -16364,12 +34103,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1703633432,
 		"year": 2013,
 		"tagline": "You Can't Fight Your Destiny.",
-		"thumb": "/library/metadata/5354/thumb/1711898838",
-		"art": "/library/metadata/5354/art/1711898838",
+		"thumb": "/library/metadata/5354/thumb/1712000222",
+		"art": "/library/metadata/5354/art/1712000222",
 		"duration": 6180192,
 		"originallyAvailableAt": "2013-08-14",
 		"addedAt": 1679235522,
-		"updatedAt": 1711898838,
+		"updatedAt": 1712000222,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -16459,12 +34198,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.4,
 		"year": 2023,
 		"tagline": "Greed is an animal that hungers for blood.",
-		"thumb": "/library/metadata/9158/thumb/1711898838",
-		"art": "/library/metadata/9158/art/1711898838",
+		"thumb": "/library/metadata/9158/thumb/1712000222",
+		"art": "/library/metadata/9158/art/1712000222",
 		"duration": 12489893,
 		"originallyAvailableAt": "2023-10-18",
 		"addedAt": 1703602663,
-		"updatedAt": 1711898838,
+		"updatedAt": 1712000222,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -16742,7 +34481,7 @@ export const json_plex: IPlex[] = [
 		"year": 2005,
 		"tagline": "The eighth wonder of the world.",
 		"thumb": "/library/metadata/10175/thumb/1711898697",
-		"duration": 12010048,
+		"duration": 12010047,
 		"originallyAvailableAt": "2005-12-12",
 		"addedAt": 1489359190,
 		"updatedAt": 1711898697,
@@ -16753,8 +34492,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22784,
-				"duration": 12010048,
-				"bitrate": 13866,
+				"duration": 12010047,
+				"bitrate": 13861,
 				"width": 1920,
 				"height": 816,
 				"aspectRatio": 2.35,
@@ -16769,7 +34508,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22895,
 						"key": "/library/parts/22895/1489359190/file.mkv",
-						"duration": 12010048,
+						"duration": 12010047,
 						"file": "/volume1/Movies/King Kong (2005).mkv",
 						"size": 20816590899,
 						"container": "mkv",
@@ -16833,12 +34572,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.3,
 		"year": 2020,
 		"tagline": "An aspiring comedian is stuck living with his mom in Staten Island, N.Y. following the events of September 11th.",
-		"thumb": "/library/metadata/8394/thumb/1711900784",
-		"art": "/library/metadata/8394/art/1711900784",
+		"thumb": "/library/metadata/8394/thumb/1712000223",
+		"art": "/library/metadata/8394/art/1712000223",
 		"duration": 8243392,
 		"originallyAvailableAt": "2020-06-12",
 		"addedAt": 1687726281,
-		"updatedAt": 1711900784,
+		"updatedAt": 1712000223,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -16924,12 +34663,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.2,
 		"year": 2010,
 		"tagline": "Find your voice.",
-		"thumb": "/library/metadata/7053/thumb/1711898841",
-		"art": "/library/metadata/7053/art/1711898841",
+		"thumb": "/library/metadata/7053/thumb/1712000223",
+		"art": "/library/metadata/7053/art/1712000223",
 		"duration": 7108160,
 		"originallyAvailableAt": "2010-12-16",
 		"addedAt": 1680449352,
-		"updatedAt": 1711898841,
+		"updatedAt": 1712000223,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -17121,7 +34860,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22785,
 				"duration": 5769888,
-				"bitrate": 10258,
+				"bitrate": 10250,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -17214,7 +34953,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22786,
 				"duration": 6571776,
-				"bitrate": 9702,
+				"bitrate": 9697,
 				"width": 1280,
 				"height": 534,
 				"aspectRatio": 2.35,
@@ -17302,7 +35041,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22787,
 				"duration": 7814080,
-				"bitrate": 17751,
+				"bitrate": 17748,
 				"width": 1920,
 				"height": 1036,
 				"aspectRatio": 1.85,
@@ -17387,7 +35126,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22788,
 				"duration": 7976320,
-				"bitrate": 21330,
+				"bitrate": 21327,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -17565,7 +35304,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22780,
 				"duration": 4500544,
-				"bitrate": 39139,
+				"bitrate": 36997,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -17748,7 +35487,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22781,
 				"duration": 4887360,
-				"bitrate": 13799,
+				"bitrate": 26631,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -18094,12 +35833,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.7,
 		"year": 2001,
 		"tagline": "Born into Wealth. Groomed by the Elite. Trained for Combat.",
-		"thumb": "/library/metadata/7601/thumb/1711898843",
-		"art": "/library/metadata/7601/art/1711898843",
+		"thumb": "/library/metadata/7601/thumb/1712000225",
+		"art": "/library/metadata/7601/art/1712000225",
 		"duration": 6157336,
 		"originallyAvailableAt": "2001-06-14",
 		"addedAt": 1681040037,
-		"updatedAt": 1711898843,
+		"updatedAt": 1712000225,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -18281,7 +36020,7 @@ export const json_plex: IPlex[] = [
 		"year": 2011,
 		"tagline": "The Burma Conspiracy",
 		"thumb": "/library/metadata/10174/thumb/1711898696",
-		"duration": 7097142,
+		"duration": 7097140,
 		"originallyAvailableAt": "2011-02-16",
 		"addedAt": 1677432347,
 		"updatedAt": 1711898696,
@@ -18289,8 +36028,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22783,
-				"duration": 7097142,
-				"bitrate": 12949,
+				"duration": 7097140,
+				"bitrate": 12945,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -18306,7 +36045,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22894,
 						"key": "/library/parts/22894/1482637131/file.mkv",
-						"duration": 7097142,
+						"duration": 7097140,
 						"file": "/volume1/Movies/Largo Winch II (2011).mkv",
 						"size": 11487251610,
 						"audioProfile": "dts",
@@ -18742,12 +36481,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1682723449,
 		"year": 2003,
 		"tagline": "In the face of an enemy, in the heart of one man, lies the soul of a warrior.",
-		"thumb": "/library/metadata/5672/thumb/1711898845",
-		"art": "/library/metadata/5672/art/1711898845",
+		"thumb": "/library/metadata/5672/thumb/1712000226",
+		"art": "/library/metadata/5672/art/1712000226",
 		"duration": 9251232,
 		"originallyAvailableAt": "2003-12-05",
 		"addedAt": 1679652803,
-		"updatedAt": 1711898845,
+		"updatedAt": 1712000226,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -19202,12 +36941,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1705199309,
 		"year": 2010,
 		"tagline": "Anna planned to propose to her boyfriend on February 29th. This is not her boyfriend.",
-		"thumb": "/library/metadata/5394/thumb/1711898845",
-		"art": "/library/metadata/5394/art/1711898845",
+		"thumb": "/library/metadata/5394/thumb/1712000228",
+		"art": "/library/metadata/5394/art/1712000228",
 		"duration": 6009295,
 		"originallyAvailableAt": "2010-01-08",
 		"addedAt": 1679313376,
-		"updatedAt": 1711898845,
+		"updatedAt": 1712000228,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -19297,11 +37036,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.8,
 		"year": 1994,
 		"tagline": "He's got a secret weapon with a lot of kick.",
-		"thumb": "/library/metadata/9951/thumb/1711898624",
+		"thumb": "/library/metadata/9951/thumb/1712000228",
 		"duration": 6126162,
 		"originallyAvailableAt": "1994-02-03",
 		"addedAt": 1677432442,
-		"updatedAt": 1711898624,
+		"updatedAt": 1712000228,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -19388,7 +37127,7 @@ export const json_plex: IPlex[] = [
 		"tagline": "If these two can learn to stand each other... the bad guys don't stand a chance.",
 		"thumb": "/library/metadata/10162/thumb/1711898688",
 		"art": "/library/metadata/10162/art/1711898688",
-		"duration": 6616544,
+		"duration": 6616542,
 		"originallyAvailableAt": "1987-03-06",
 		"addedAt": 1677432447,
 		"updatedAt": 1711898688,
@@ -19399,8 +37138,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22771,
-				"duration": 6616544,
-				"bitrate": 18865,
+				"duration": 6616542,
+				"bitrate": 18858,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -19415,7 +37154,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22881,
 						"key": "/library/parts/22881/1449682876/file.mkv",
-						"duration": 6616544,
+						"duration": 6616542,
 						"file": "/volume1/Movies/Lethal Weapon (1987).mkv",
 						"size": 15602351108,
 						"container": "mkv",
@@ -19487,7 +37226,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22772,
 				"duration": 6867168,
-				"bitrate": 16923,
+				"bitrate": 16916,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -19575,7 +37314,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22773,
 				"duration": 7073980,
-				"bitrate": 14905,
+				"bitrate": 14900,
 				"width": 1920,
 				"height": 796,
 				"aspectRatio": 2.35,
@@ -19665,7 +37404,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22774,
 				"duration": 7643680,
-				"bitrate": 15212,
+				"bitrate": 15207,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -19741,7 +37480,7 @@ export const json_plex: IPlex[] = [
 		"year": 2001,
 		"tagline": "Seen from a distance, it's perfect.",
 		"thumb": "/library/metadata/10167/thumb/1711898691",
-		"duration": 7522147,
+		"duration": 7522146,
 		"originallyAvailableAt": "2001-11-09",
 		"addedAt": 1678553871,
 		"updatedAt": 1711898691,
@@ -19752,8 +37491,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22776,
-				"duration": 7522147,
-				"bitrate": 4851,
+				"duration": 7522146,
+				"bitrate": 4849,
 				"width": 1280,
 				"height": 606,
 				"aspectRatio": 2.2,
@@ -19768,7 +37507,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22886,
 						"key": "/library/parts/22886/1678113034/file.mkv",
-						"duration": 7522147,
+						"duration": 7522146,
 						"file": "/volume1/Movies/Life as a House (2001).mkv",
 						"size": 4561641737,
 						"container": "mkv",
@@ -20104,12 +37843,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.4,
 		"year": 2011,
 		"tagline": "Everything is possible when you open your mind.",
-		"thumb": "/library/metadata/7141/thumb/1711898847",
-		"art": "/library/metadata/7141/art/1711898847",
+		"thumb": "/library/metadata/7141/thumb/1712000229",
+		"art": "/library/metadata/7141/art/1712000229",
 		"duration": 6333824,
 		"originallyAvailableAt": "2011-03-17",
 		"addedAt": 1680645445,
-		"updatedAt": 1711898847,
+		"updatedAt": 1712000229,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -20197,11 +37936,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8,
 		"year": 2012,
 		"tagline": "The Hours That Changed History.",
-		"thumb": "/library/metadata/10168/thumb/1711898693",
-		"duration": 8997030,
+		"thumb": "/library/metadata/10168/thumb/1712000229",
+		"duration": 8997033,
 		"originallyAvailableAt": "2012-11-16",
 		"addedAt": 1482721334,
-		"updatedAt": 1711898693,
+		"updatedAt": 1712000229,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -20210,8 +37949,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22777,
-				"duration": 8997030,
-				"bitrate": 11289,
+				"duration": 8997033,
+				"bitrate": 11285,
 				"width": 1280,
 				"height": 534,
 				"aspectRatio": 2.35,
@@ -20227,7 +37966,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22887,
 						"key": "/library/parts/22887/1482721334/file.mkv",
-						"duration": 8997030,
+						"duration": 8997033,
 						"file": "/volume1/Movies/Lincoln (2012).mkv",
 						"size": 12696466280,
 						"audioProfile": "dts",
@@ -20388,7 +38127,7 @@ export const json_plex: IPlex[] = [
 		"year": 2007,
 		"tagline": "If you don't STAND for something, you might FALL for anything.",
 		"thumb": "/library/metadata/10169/thumb/1711898693",
-		"duration": 5503577,
+		"duration": 5503576,
 		"originallyAvailableAt": "2007-11-07",
 		"addedAt": 1678127166,
 		"updatedAt": 1711898693,
@@ -20399,8 +38138,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22778,
-				"duration": 5503577,
-				"bitrate": 12700,
+				"duration": 5503576,
+				"bitrate": 12698,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -20415,7 +38154,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22888,
 						"key": "/library/parts/22888/1677938813/file.mkv",
-						"duration": 5503577,
+						"duration": 5503576,
 						"file": "/volume1/Movies/Lions for Lambs (2007).mkv",
 						"size": 8737209722,
 						"container": "mkv",
@@ -20480,7 +38219,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22779,
 				"duration": 5083104,
-				"bitrate": 23723,
+				"bitrate": 22506,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -20932,12 +38671,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1707090503,
 		"year": 2012,
 		"tagline": "Take no prisoners.",
-		"thumb": "/library/metadata/6022/thumb/1711898848",
-		"art": "/library/metadata/6022/art/1711898848",
+		"thumb": "/library/metadata/6022/thumb/1712000230",
+		"art": "/library/metadata/6022/art/1712000230",
 		"duration": 5717622,
 		"originallyAvailableAt": "2012-04-12",
 		"addedAt": 1679783037,
-		"updatedAt": 1711898848,
+		"updatedAt": 1712000230,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -21030,11 +38769,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9,
 		"year": 2017,
 		"tagline": "His time has come.",
-		"thumb": "/library/metadata/10157/thumb/1711898684",
-		"duration": 8243318,
+		"thumb": "/library/metadata/10157/thumb/1712000231",
+		"duration": 8243316,
 		"originallyAvailableAt": "2017-02-28",
 		"addedAt": 1585179248,
-		"updatedAt": 1711898684,
+		"updatedAt": 1712000231,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -21043,8 +38782,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22766,
-				"duration": 8243318,
-				"bitrate": 19330,
+				"duration": 8243316,
+				"bitrate": 19324,
 				"width": 1920,
 				"height": 808,
 				"aspectRatio": 2.35,
@@ -21060,7 +38799,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22876,
 						"key": "/library/parts/22876/1585179248/file.mkv",
-						"duration": 8243318,
+						"duration": 8243316,
 						"file": "/volume1/Movies/Logan (2017).mkv",
 						"size": 19917747610,
 						"audioProfile": "dts",
@@ -21124,11 +38863,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1700697007,
 		"year": 2017,
 		"tagline": "See how the other half steals.",
-		"thumb": "/library/metadata/10158/thumb/1711898685",
+		"thumb": "/library/metadata/10158/thumb/1712000231",
 		"duration": 7143200,
 		"originallyAvailableAt": "2017-08-17",
 		"addedAt": 1584927996,
-		"updatedAt": 1711898685,
+		"updatedAt": 1712000231,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -21138,7 +38877,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22767,
 				"duration": 7143200,
-				"bitrate": 15786,
+				"bitrate": 15783,
 				"width": 1920,
 				"height": 804,
 				"aspectRatio": 2.35,
@@ -21223,7 +38962,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22768,
 				"duration": 7814816,
-				"bitrate": 13451,
+				"bitrate": 13444,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -21475,12 +39214,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1691184865,
 		"year": 2023,
 		"tagline": "To be a hero, it takes a lot of gut.",
-		"thumb": "/library/metadata/8625/thumb/1711900791",
-		"art": "/library/metadata/8625/art/1711900791",
+		"thumb": "/library/metadata/8625/thumb/1712000231",
+		"art": "/library/metadata/8625/art/1712000231",
 		"duration": 6744320,
 		"originallyAvailableAt": "2023-05-24",
 		"addedAt": 1691100414,
-		"updatedAt": 1711900791,
+		"updatedAt": 1712000231,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -21654,12 +39393,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1709505217,
 		"year": 2015,
 		"tagline": "The future belongs to the mad.",
-		"thumb": "/library/metadata/185/thumb/1711898850",
-		"art": "/library/metadata/185/art/1711898850",
+		"thumb": "/library/metadata/185/thumb/1712000232",
+		"art": "/library/metadata/185/art/1712000232",
 		"duration": 7223424,
 		"originallyAvailableAt": "2015-05-13",
 		"addedAt": 1503021501,
-		"updatedAt": 1711898850,
+		"updatedAt": 1712000232,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -21775,12 +39514,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1709336587,
 		"year": 2023,
 		"tagline": "One murder is a crime. Two is a mystery.",
-		"thumb": "/library/metadata/8650/thumb/1711898849",
-		"art": "/library/metadata/8650/art/1711898849",
+		"thumb": "/library/metadata/8650/thumb/1712000232",
+		"art": "/library/metadata/8650/art/1712000232",
 		"duration": 5955840,
 		"originallyAvailableAt": "2023-06-15",
 		"addedAt": 1691529161,
-		"updatedAt": 1711898849,
+		"updatedAt": 1712000232,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -22049,12 +39788,12 @@ export const json_plex: IPlex[] = [
 		"skipCount": 1,
 		"year": 2012,
 		"tagline": "You can only push an innocent man so far",
-		"thumb": "/library/metadata/7027/thumb/1711900791",
-		"art": "/library/metadata/7027/art/1711900791",
+		"thumb": "/library/metadata/7027/thumb/1712000233",
+		"art": "/library/metadata/7027/art/1712000233",
 		"duration": 6143179,
 		"originallyAvailableAt": "2012-01-26",
 		"addedAt": 1680449347,
-		"updatedAt": 1711900791,
+		"updatedAt": 1712000233,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -22140,7 +39879,7 @@ export const json_plex: IPlex[] = [
 		"tagline": "Breathtaking... A truly incredible piece of cinema!",
 		"thumb": "/library/metadata/8863/thumb/1711898851",
 		"art": "/library/metadata/8863/art/1711898851",
-		"duration": 8252367,
+		"duration": 8252369,
 		"originallyAvailableAt": "2016-11-17",
 		"addedAt": 1699010875,
 		"updatedAt": 1711898851,
@@ -22152,8 +39891,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 19665,
-				"duration": 8252367,
-				"bitrate": 24785,
+				"duration": 8252369,
+				"bitrate": 24791,
 				"width": 1920,
 				"height": 1038,
 				"aspectRatio": 1.85,
@@ -22167,10 +39906,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 19740,
-						"key": "/library/parts/19740/1698539693/file.mkv",
-						"duration": 8252367,
-						"file": "/volume3/MoviesB/Movis/Manchester by the Sea (2016) Rip.mkv",
+						"id": 23306,
+						"key": "/library/parts/23306/1698539693/file.mkv",
+						"duration": 8252369,
+						"file": "/volume3/MoviesB/Movis/Manchester by the Sea (2016).mkv",
 						"size": 25573555141,
 						"audioProfile": "dts",
 						"container": "mkv",
@@ -22498,7 +40237,7 @@ export const json_plex: IPlex[] = [
 		"year": 1994,
 		"tagline": "In their hands, a deck of cards was the only thing more dangerous than a gun.",
 		"thumb": "/library/metadata/10160/thumb/1711898686",
-		"duration": 7596619,
+		"duration": 7596617,
 		"originallyAvailableAt": "1994-05-20",
 		"addedAt": 1677432392,
 		"updatedAt": 1711898686,
@@ -22509,8 +40248,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22769,
-				"duration": 7596619,
-				"bitrate": 18201,
+				"duration": 7596617,
+				"bitrate": 18195,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -22525,7 +40264,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22879,
 						"key": "/library/parts/22879/1449687488/file.mkv",
-						"duration": 7596619,
+						"duration": 7596617,
 						"file": "/volume1/Movies/Maverick (1994).mkv",
 						"size": 17282914428,
 						"container": "mkv",
@@ -22788,7 +40527,7 @@ export const json_plex: IPlex[] = [
 		"year": 1997,
 		"tagline": "He's a menace to high society.",
 		"thumb": "/library/metadata/10161/thumb/1711898687",
-		"duration": 6351888,
+		"duration": 6351887,
 		"originallyAvailableAt": "1997-01-23",
 		"addedAt": 1677432438,
 		"updatedAt": 1711898687,
@@ -22798,8 +40537,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22770,
-				"duration": 6351888,
-				"bitrate": 12838,
+				"duration": 6351887,
+				"bitrate": 12835,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -22814,7 +40553,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22880,
 						"key": "/library/parts/22880/1532052656/file.mkv",
-						"duration": 6351888,
+						"duration": 6351887,
 						"file": "/volume1/Movies/Meet Wally Sparks (1996).mkv",
 						"size": 10192977519,
 						"container": "mkv",
@@ -22871,12 +40610,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.2,
 		"year": 2010,
 		"tagline": "A superhero movie with a mind of its own",
-		"thumb": "/library/metadata/3268/thumb/1711898853",
-		"art": "/library/metadata/3268/art/1711898853",
+		"thumb": "/library/metadata/3268/thumb/1712000235",
+		"art": "/library/metadata/3268/art/1712000235",
 		"duration": 5734688,
 		"originallyAvailableAt": "2010-10-28",
 		"addedAt": 1482779983,
-		"updatedAt": 1711898853,
+		"updatedAt": 1712000235,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -23051,12 +40790,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7,
 		"year": 2012,
 		"tagline": "Back in time.",
-		"thumb": "/library/metadata/7611/thumb/1711898853",
-		"art": "/library/metadata/7611/art/1711898853",
+		"thumb": "/library/metadata/7611/thumb/1712000235",
+		"art": "/library/metadata/7611/art/1712000235",
 		"duration": 6350420,
 		"originallyAvailableAt": "2012-05-23",
 		"addedAt": 1681074825,
-		"updatedAt": 1711898853,
+		"updatedAt": 1712000235,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -23147,11 +40886,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1681941594,
 		"year": 2009,
 		"tagline": "No goats. No glory.",
-		"thumb": "/library/metadata/9652/thumb/1711898854",
+		"thumb": "/library/metadata/9652/thumb/1712000235",
 		"duration": 5612815,
 		"originallyAvailableAt": "2009-11-05",
 		"addedAt": 1678568207,
-		"updatedAt": 1711898854,
+		"updatedAt": 1712000235,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -23225,96 +40964,6 @@ export const json_plex: IPlex[] = [
 			},
 			{
 				"tag": "Jeff Bridges"
-			}
-		]
-	},
-	{
-		"ratingKey": "9732",
-		"key": "/library/metadata/9732",
-		"guid": "plex://movie/5d776a8596b655001fdf0dc2",
-		"studio": "Right of Way Films",
-		"type": "movie",
-		"title": "Men, Women & Children",
-		"contentRating": "R",
-		"summary": "Follows the story of a group of high school teenagers and their parents as they attempt to navigate the many ways the internet has changed their relationships, their communication, their self-image, and their love lives.",
-		"rating": 3.3,
-		"audienceRating": 4.4,
-		"year": 2014,
-		"tagline": "Discover how little you know about the people you know.",
-		"thumb": "/library/metadata/9732/thumb/1711898561",
-		"art": "/library/metadata/9732/art/1711898561",
-		"duration": 7167232,
-		"originallyAvailableAt": "2014-10-17",
-		"addedAt": 1711898558,
-		"updatedAt": 1711898561,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21823,
-				"duration": 7167232,
-				"bitrate": 20215,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21924,
-						"key": "/library/parts/21924/1711837010/file.mkv",
-						"duration": 7167232,
-						"file": "/volume3/MoviesB/TEMP/Men, Women & Children (2014).mkv",
-						"size": 18110893358,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jason Reitman"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jason Reitman"
-			},
-			{
-				"tag": "Erin Cressida Wilson"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Adam Sandler"
-			},
-			{
-				"tag": "Jennifer Garner"
-			},
-			{
-				"tag": "Rosemarie DeWitt"
 			}
 		]
 	},
@@ -23405,8 +41054,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9773",
-		"key": "/library/metadata/9773",
+		"ratingKey": "10436",
+		"key": "/library/metadata/10436",
 		"guid": "plex://movie/5d776c3dad5437001f7b7f66",
 		"studio": "Gilded Halfwing",
 		"type": "movie",
@@ -23418,17 +41067,17 @@ export const json_plex: IPlex[] = [
 		"rating": 9.2,
 		"audienceRating": 7.2,
 		"year": 2017,
-		"thumb": "/library/metadata/9773/thumb/1711898566",
-		"art": "/library/metadata/9773/art/1711898566",
+		"thumb": "/library/metadata/10436/thumb/1712000146",
+		"art": "/library/metadata/10436/art/1712000146",
 		"duration": 6761504,
 		"originallyAvailableAt": "2017-10-13",
-		"addedAt": 1711898564,
-		"updatedAt": 1711898566,
+		"addedAt": 1712000145,
+		"updatedAt": 1712000146,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 21924,
+				"id": 23332,
 				"duration": 6761504,
 				"bitrate": 7853,
 				"width": 1920,
@@ -23443,10 +41092,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "main",
 				"Part": [
 					{
-						"id": 22025,
-						"key": "/library/parts/22025/1711850475/file.mkv",
+						"id": 23461,
+						"key": "/library/parts/23461/1711850475/file.mkv",
 						"duration": 6761504,
-						"file": "/volume3/MoviesB/TEMP/The Meyerowitz Stories (2017).mkv",
+						"file": "/volume3/MoviesB/Movis/The Meyerowitz Stories (2017).mkv",
 						"size": 6636972939,
 						"container": "mkv",
 						"videoProfile": "main"
@@ -23589,12 +41238,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9,
 		"year": 2004,
 		"tagline": "Beyond his silence, there is a past. Beyond her dreams, there is a feeling. Beyond hope, there is a memory. Beyond their journey, there is a love.",
-		"thumb": "/library/metadata/7142/thumb/1711898855",
-		"art": "/library/metadata/7142/art/1711898855",
+		"thumb": "/library/metadata/7142/thumb/1712000236",
+		"art": "/library/metadata/7142/art/1712000236",
 		"duration": 7952384,
 		"originallyAvailableAt": "2004-12-15",
 		"addedAt": 1680645446,
-		"updatedAt": 1711898855,
+		"updatedAt": 1712000236,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -23684,11 +41333,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.2,
 		"year": 2019,
 		"tagline": "I'm fine.",
-		"thumb": "/library/metadata/10372/thumb/1711898758",
+		"thumb": "/library/metadata/10372/thumb/1712000236",
 		"duration": 6753952,
 		"originallyAvailableAt": "2019-08-30",
 		"addedAt": 1678568210,
-		"updatedAt": 1711898758,
+		"updatedAt": 1712000236,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -23696,7 +41345,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 23174,
 				"duration": 6753952,
-				"bitrate": 1899,
+				"bitrate": 1897,
 				"width": 936,
 				"height": 392,
 				"aspectRatio": 2.35,
@@ -23769,12 +41418,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8,
 		"year": 2002,
 		"tagline": "Everybody runs.",
-		"thumb": "/library/metadata/6171/thumb/1711898855",
-		"art": "/library/metadata/6171/art/1711898855",
+		"thumb": "/library/metadata/6171/thumb/1712000236",
+		"art": "/library/metadata/6171/art/1712000236",
 		"duration": 8709717,
 		"originallyAvailableAt": "2002-06-20",
 		"addedAt": 1679863621,
-		"updatedAt": 1711898855,
+		"updatedAt": 1712000236,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -23957,7 +41606,7 @@ export const json_plex: IPlex[] = [
 		"year": 2008,
 		"tagline": "There is evil...On the other side.",
 		"thumb": "/library/metadata/10154/thumb/1711898682",
-		"duration": 6672124,
+		"duration": 6672123,
 		"originallyAvailableAt": "2008-08-14",
 		"addedAt": 1587174296,
 		"updatedAt": 1711898682,
@@ -23967,8 +41616,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22763,
-				"duration": 6672124,
-				"bitrate": 26538,
+				"duration": 6672123,
+				"bitrate": 26531,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -23984,7 +41633,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22873,
 						"key": "/library/parts/22873/1587174296/file.mkv",
-						"duration": 6672124,
+						"duration": 6672123,
 						"file": "/volume1/Movies/Mirrors (2008).mkv",
 						"size": 22133136596,
 						"audioProfile": "dts",
@@ -24153,7 +41802,7 @@ export const json_plex: IPlex[] = [
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 21824,
+				"id": 23196,
 				"duration": 7929601,
 				"bitrate": 22424,
 				"width": 3840,
@@ -24168,43 +41817,14 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "main 10",
 				"Part": [
 					{
-						"id": 21925,
-						"key": "/library/parts/21925/1711861942/file.mkv",
+						"id": 23325,
+						"key": "/library/parts/23325/1711861942/file.mkv",
 						"duration": 7929601,
-						"file": "/volume3/MoviesB/TEMP/Miss Sloane (2016).mkv",
+						"file": "/volume3/MoviesB/Movis/Miss Sloane (2016).mkv",
 						"size": 22226717345,
 						"container": "mkv",
 						"hasThumbnail": "1",
 						"videoProfile": "main 10"
-					}
-				]
-			},
-			{
-				"id": 10956,
-				"duration": 7931019,
-				"bitrate": 42074,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11012,
-						"key": "/library/parts/11012/1678992308/file.m2ts",
-						"duration": 7931019,
-						"file": "/volume1/Movies/Miss Sloane (2016).m2ts",
-						"size": 41710983168,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
 					}
 				]
 			}
@@ -24366,7 +41986,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22764,
 				"duration": 8845312,
-				"bitrate": 10848,
+				"bitrate": 10845,
 				"width": 1280,
 				"height": 676,
 				"aspectRatio": 1.85,
@@ -24452,7 +42072,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22765,
 				"duration": 7976320,
-				"bitrate": 18773,
+				"bitrate": 18770,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -24542,38 +42162,9 @@ export const json_plex: IPlex[] = [
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 15258,
-				"duration": 7893792,
-				"bitrate": 39200,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22811,
-						"key": "/library/parts/22811/1680321099/file.m2ts",
-						"duration": 7893792,
-						"file": "/volume1/Movies/Mission Impossible - Rogue Nation (2015).m2ts",
-						"size": 38679386112,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
 				"id": 22702,
 				"duration": 7893792,
-				"bitrate": 17977,
+				"bitrate": 17975,
 				"width": 1920,
 				"height": 804,
 				"aspectRatio": 2.35,
@@ -24651,11 +42242,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1695171768,
 		"year": 2006,
 		"tagline": "The mission begins 05:05:06.",
-		"thumb": "/library/metadata/10132/thumb/1707466949",
+		"thumb": "/library/metadata/10132/thumb/1712000238",
 		"duration": 7523968,
 		"originallyAvailableAt": "2006-05-03",
 		"addedAt": 1677432350,
-		"updatedAt": 1707466949,
+		"updatedAt": 1712000238,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -24727,8 +42318,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9734",
-		"key": "/library/metadata/9734",
+		"ratingKey": "10391",
+		"key": "/library/metadata/10391",
 		"guid": "plex://movie/5d776c3d7a53e9001e73db78",
 		"studio": "Entertainment One",
 		"type": "movie",
@@ -24739,12 +42330,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.4,
 		"year": 2017,
 		"tagline": "Deal with her.",
-		"thumb": "/library/metadata/9734/thumb/1711898562",
-		"art": "/library/metadata/9734/art/1711898562",
+		"thumb": "/library/metadata/10391/thumb/1712000141",
+		"art": "/library/metadata/10391/art/1712000141",
 		"duration": 8461344,
 		"originallyAvailableAt": "2017-12-07",
-		"addedAt": 1711898558,
-		"updatedAt": 1711898562,
+		"addedAt": 1712000139,
+		"updatedAt": 1712000141,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -24752,7 +42343,7 @@ export const json_plex: IPlex[] = [
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 21825,
+				"id": 23215,
 				"duration": 8461344,
 				"bitrate": 15352,
 				"width": 1920,
@@ -24767,10 +42358,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 21926,
-						"key": "/library/parts/21926/1711852018/file.mkv",
+						"id": 23344,
+						"key": "/library/parts/23344/1711852018/file.mkv",
 						"duration": 8461344,
-						"file": "/volume3/MoviesB/TEMP/Molly's Game (2017) iTunes.mkv",
+						"file": "/volume3/MoviesB/Movis/Molly's Game (2017) iTunes.mkv",
 						"size": 16237230749,
 						"container": "mkv",
 						"hasThumbnail": "1",
@@ -24779,7 +42370,7 @@ export const json_plex: IPlex[] = [
 				]
 			},
 			{
-				"id": 21853,
+				"id": 23216,
 				"duration": 8413739,
 				"bitrate": 39946,
 				"width": 1920,
@@ -24795,10 +42386,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 21954,
-						"key": "/library/parts/21954/1711892996/file.mkv",
+						"id": 23345,
+						"key": "/library/parts/23345/1711892996/file.mkv",
 						"duration": 8413739,
-						"file": "/volume3/MoviesB/TEMP/Molly's Game (2017).mkv",
+						"file": "/volume3/MoviesB/Movis/Molly's Game (2017).mkv",
 						"size": 42012254804,
 						"audioProfile": "ma",
 						"container": "mkv",
@@ -25369,11 +42960,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.7,
 		"year": 1995,
 		"tagline": "Nothing in this world has prepared you for this.",
-		"thumb": "/library/metadata/10152/thumb/1711898680",
+		"thumb": "/library/metadata/10152/thumb/1712000239",
 		"duration": 6082880,
 		"originallyAvailableAt": "1995-07-13",
 		"addedAt": 1677432446,
-		"updatedAt": 1711898680,
+		"updatedAt": 1712000239,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -25382,7 +42973,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22761,
 				"duration": 6082880,
-				"bitrate": 7576,
+				"bitrate": 7573,
 				"width": 1280,
 				"height": 720,
 				"aspectRatio": 1.78,
@@ -25910,7 +43501,7 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8,
 		"year": 2019,
 		"thumb": "/library/metadata/10153/thumb/1711898681",
-		"duration": 8661375,
+		"duration": 8661419,
 		"originallyAvailableAt": "2019-10-30",
 		"addedAt": 1579743258,
 		"updatedAt": 1711898681,
@@ -25922,8 +43513,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22762,
-				"duration": 8661375,
-				"bitrate": 10335,
+				"duration": 8661419,
+				"bitrate": 10323,
 				"width": 1920,
 				"height": 1036,
 				"aspectRatio": 1.85,
@@ -25940,7 +43531,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22872,
 						"key": "/library/parts/22872/1579743258/file.m4v",
-						"duration": 8661375,
+						"duration": 8661419,
 						"file": "/volume1/Movies/Motherless Brooklyn (2019).m4v",
 						"size": 11189414820,
 						"container": "mp4",
@@ -26468,12 +44059,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1690495051,
 		"year": 2005,
 		"tagline": "The hardest trick is making them stay.",
-		"thumb": "/library/metadata/5404/thumb/1707466969",
-		"art": "/library/metadata/5404/art/1707466969",
+		"thumb": "/library/metadata/5404/thumb/1712000241",
+		"art": "/library/metadata/5404/art/1712000241",
 		"duration": 5878581,
 		"originallyAvailableAt": "2005-07-29",
 		"addedAt": 1679313378,
-		"updatedAt": 1707466969,
+		"updatedAt": 1712000241,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -26922,11 +44513,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.4,
 		"year": 1988,
 		"tagline": "You've read the ad, now see the movie!",
-		"thumb": "/library/metadata/9654/thumb/1711898862",
+		"thumb": "/library/metadata/9654/thumb/1712000241",
 		"duration": 5099936,
 		"originallyAvailableAt": "1988-11-30",
 		"addedAt": 1677432297,
-		"updatedAt": 1711898862,
+		"updatedAt": 1712000241,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -27103,19 +44694,19 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.4,
 		"year": 2005,
 		"tagline": "You'll learn to love her. Warts and all.",
-		"thumb": "/library/metadata/10129/thumb/1711898676",
-		"duration": 5916971,
+		"thumb": "/library/metadata/10129/thumb/1712000241",
+		"duration": 5916981,
 		"originallyAvailableAt": "2005-10-21",
 		"addedAt": 1678568210,
-		"updatedAt": 1711898676,
+		"updatedAt": 1712000241,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
 				"id": 22700,
-				"duration": 5916971,
-				"bitrate": 41414,
+				"duration": 5916981,
+				"bitrate": 39050,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -27130,7 +44721,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22809,
 						"key": "/library/parts/22809/1482584685/file.m2ts",
-						"duration": 5916971,
+						"duration": 5916981,
 						"file": "/volume1/Movies/Nanny McPhee (2005).m2ts",
 						"size": 30630340608,
 						"container": "mpegts",
@@ -27182,13277 +44773,6 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9294",
-		"key": "/library/metadata/9294",
-		"guid": "plex://movie/5d776d1951dd69001fe3fe86",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Babe",
-		"contentRating": "G",
-		"summary": "Gentle farmer Arthur Hoggett wins a piglet Babe at a county fair. Narrowly escaping his fate as Christmas dinner, Babe bonds with motherly border collie Fly and discovers that he too can herd sheep. But will the other animals accept him?",
-		"rating": 9.7,
-		"audienceRating": 6.7,
-		"viewOffset": 4038842,
-		"lastViewedAt": 1704602166,
-		"year": 1995,
-		"tagline": "A little pig goes a long way.",
-		"thumb": "/library/metadata/9294/thumb/1711898774",
-		"art": "/library/metadata/9294/art/1711898774",
-		"duration": 5515744,
-		"originallyAvailableAt": "1995-08-04",
-		"addedAt": 1704597974,
-		"updatedAt": 1711898774,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20702,
-				"duration": 5515744,
-				"bitrate": 34588,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 20778,
-						"key": "/library/parts/20778/1704160421/file.mkv",
-						"duration": 5515744,
-						"file": "/volume3/MoviesB/Movis/Babe (1995).mkv",
-						"size": 23851071989,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Family"
-			},
-			{
-				"tag": "Fantasy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Chris Noonan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "George Miller"
-			},
-			{
-				"tag": "Dick King-Smith"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Australia"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Christine Cavanaugh"
-			},
-			{
-				"tag": "Miriam Margolyes"
-			},
-			{
-				"tag": "Danny Mann"
-			}
-		]
-	},
-	{
-		"ratingKey": "2837",
-		"key": "/library/metadata/2837",
-		"guid": "plex://movie/5d9f34fd9dd5f4001e8430d1",
-		"studio": "United Artists",
-		"type": "movie",
-		"title": "Baby Boom",
-		"contentRating": "PG",
-		"summary": "The life of super-yuppie J.C. is thrown into turmoil when she inherits a baby from a distant relative.",
-		"rating": 6.7,
-		"audienceRating": 6.2,
-		"year": 1987,
-		"tagline": "JC Wiatt, corporate powerhouse, just received an inheritance. And it sucks.",
-		"thumb": "/library/metadata/2837/thumb/1711898775",
-		"art": "/library/metadata/2837/art/1711898775",
-		"duration": 6618111,
-		"originallyAvailableAt": "1987-10-30",
-		"addedAt": 1677432288,
-		"updatedAt": 1711898775,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21309,
-				"duration": 6618111,
-				"bitrate": 14280,
-				"width": 1280,
-				"height": 694,
-				"aspectRatio": 1.85,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21410,
-						"key": "/library/parts/21410/1678056994/file.mkv",
-						"duration": 6618111,
-						"file": "/volume1/Movies/Baby Boom (1987).mkv",
-						"size": 11815257299,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Charles Shyer"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Nancy Meyers"
-			},
-			{
-				"tag": "Charles Shyer"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Diane Keaton"
-			},
-			{
-				"tag": "Sam Shepard"
-			},
-			{
-				"tag": "Harold Ramis"
-			}
-		]
-	},
-	{
-		"ratingKey": "8219",
-		"key": "/library/metadata/8219",
-		"guid": "plex://movie/5d7768244de0ee001fcc7fed",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Back to the Future",
-		"contentRating": "PG",
-		"summary": "Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean \"time machine\" invented by a slightly mad scientist. During his often hysterical, always amazing trip back in time, Marty must make certain his teenage parents-to-be meet and fall in love - so he can get back to the future.",
-		"rating": 9.3,
-		"audienceRating": 9.4,
-		"year": 1985,
-		"tagline": "He was never in time for his classes. He wasn't in time for his dinner. Then one day...he wasn't in his time at all.",
-		"thumb": "/library/metadata/8219/thumb/1711898776",
-		"art": "/library/metadata/8219/art/1711898776",
-		"duration": 6961067,
-		"originallyAvailableAt": "1985-07-03",
-		"addedAt": 1684062355,
-		"updatedAt": 1711898776,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 18162,
-				"duration": 6961067,
-				"bitrate": 24643,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mp4",
-				"videoFrameRate": "24p",
-				"optimizedForStreaming": 1,
-				"has64bitOffsets": true,
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 18231,
-						"key": "/library/parts/18231/1684627060/file.m4v",
-						"duration": 6961067,
-						"file": "/volume3/MoviesB/Movis/Back to the Future (1985).m4v",
-						"size": 21490705746,
-						"container": "mp4",
-						"has64bitOffsets": true,
-						"hasChapterVideoStream": true,
-						"hasThumbnail": "1",
-						"optimizedForStreaming": true,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Adventure"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Robert Zemeckis"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Robert Zemeckis"
-			},
-			{
-				"tag": "Bob Gale"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Michael J. Fox"
-			},
-			{
-				"tag": "Christopher Lloyd"
-			},
-			{
-				"tag": "Crispin Glover"
-			}
-		]
-	},
-	{
-		"ratingKey": "8241",
-		"key": "/library/metadata/8241",
-		"guid": "plex://movie/5d776d1023d5a3001f52001d",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Back to the Future Part II",
-		"contentRating": "PG",
-		"summary": "Marty McFly has only just gotten back from the past, when he is once again picked up by Dr. Emmett Brown and sent through time to the future. Marty's job in the future is to pose as his own son to prevent him from being thrown in prison. Unfortunately, things get worse when the future changes the present.",
-		"rating": 6.2,
-		"audienceRating": 8.5,
-		"year": 1989,
-		"tagline": "Getting back was only the beginning.",
-		"thumb": "/library/metadata/8241/thumb/1711898776",
-		"art": "/library/metadata/8241/art/1711898776",
-		"duration": 6479402,
-		"originallyAvailableAt": "1989-11-22",
-		"addedAt": 1684062356,
-		"updatedAt": 1711898776,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 18163,
-				"duration": 6479402,
-				"bitrate": 22344,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mp4",
-				"videoFrameRate": "24p",
-				"optimizedForStreaming": 1,
-				"has64bitOffsets": true,
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 18232,
-						"key": "/library/parts/18232/1684627099/file.m4v",
-						"duration": 6479402,
-						"file": "/volume3/MoviesB/Movis/Back to the Future Part II (1989).m4v",
-						"size": 18145498852,
-						"container": "mp4",
-						"has64bitOffsets": true,
-						"hasChapterVideoStream": true,
-						"hasThumbnail": "1",
-						"optimizedForStreaming": true,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Adventure"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Robert Zemeckis"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Robert Zemeckis"
-			},
-			{
-				"tag": "Bob Gale"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Michael J. Fox"
-			},
-			{
-				"tag": "Christopher Lloyd"
-			},
-			{
-				"tag": "Lea Thompson"
-			}
-		]
-	},
-	{
-		"ratingKey": "8360",
-		"key": "/library/metadata/8360",
-		"guid": "plex://movie/5d776d10fb0d55001f596237",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Back to the Future Part III",
-		"contentRating": "PG",
-		"summary": "Stranded in 1955, Marty McFly learns about the death of Doc Brown in 1885 and must travel back in time to save him. With no fuel readily available for the DeLorean, the two must figure how to escape the Old West before Emmett is murdered.",
-		"rating": 8,
-		"audienceRating": 7.8,
-		"year": 1990,
-		"tagline": "They've saved the best trip for last... But this time they may have gone too far.",
-		"thumb": "/library/metadata/8360/thumb/1710700580",
-		"art": "/library/metadata/8360/art/1710700580",
-		"duration": 7097727,
-		"originallyAvailableAt": "1990-05-25",
-		"addedAt": 1684707222,
-		"updatedAt": 1710700580,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 18164,
-				"duration": 7097727,
-				"bitrate": 18151,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mp4",
-				"videoFrameRate": "24p",
-				"optimizedForStreaming": 1,
-				"has64bitOffsets": true,
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 18233,
-						"key": "/library/parts/18233/1684627099/file.m4v",
-						"duration": 7097727,
-						"file": "/volume3/MoviesB/Movis/Back to the Future Part III (1990).m4v",
-						"size": 16147151874,
-						"container": "mp4",
-						"has64bitOffsets": true,
-						"hasChapterVideoStream": true,
-						"hasThumbnail": "1",
-						"optimizedForStreaming": true,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Adventure"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Robert Zemeckis"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Robert Zemeckis"
-			},
-			{
-				"tag": "Bob Gale"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Michael J. Fox"
-			},
-			{
-				"tag": "Christopher Lloyd"
-			},
-			{
-				"tag": "Mary Steenburgen"
-			}
-		]
-	},
-	{
-		"ratingKey": "5942",
-		"key": "/library/metadata/5942",
-		"guid": "plex://movie/5d776834a091de001f2e7cfa",
-		"studio": "Dimension Films",
-		"type": "movie",
-		"title": "Bad Santa",
-		"contentRating": "R",
-		"summary": "A miserable conman and his partner pose as Santa and his Little Helper to rob department stores on Christmas Eve. But they run into problems when the conman befriends a troubled kid.",
-		"rating": 7.8,
-		"audienceRating": 7.5,
-		"year": 2003,
-		"tagline": "He doesn't care if you're naughty or nice.",
-		"thumb": "/library/metadata/5942/thumb/1710700580",
-		"art": "/library/metadata/5942/art/1710700580",
-		"duration": 5956470,
-		"originallyAvailableAt": "2003-11-26",
-		"addedAt": 1679783026,
-		"updatedAt": 1710700580,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 12744,
-				"duration": 5956470,
-				"bitrate": 31451,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 12801,
-						"key": "/library/parts/12801/1679793642/file.mkv",
-						"duration": 5956470,
-						"file": "/volume1/Movies/Bad Santa (2003).mkv",
-						"size": 23416858992,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Terry Zwigoff"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Glenn Ficarra"
-			},
-			{
-				"tag": "John Requa"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Billy Bob Thornton"
-			},
-			{
-				"tag": "Tony Cox"
-			},
-			{
-				"tag": "Brett Kelly"
-			}
-		]
-	},
-	{
-		"ratingKey": "5943",
-		"key": "/library/metadata/5943",
-		"guid": "plex://movie/5d77689151dd69001fe0e1a2",
-		"studio": "Columbia Pictures",
-		"type": "movie",
-		"title": "Bad Teacher",
-		"contentRating": "R",
-		"summary": "A lazy, incompetent middle school teacher who hates her job, her students, and her co-workers is forced to return to teaching to make enough money for breast implants after her wealthy fiancé dumps her.",
-		"rating": 4.5,
-		"audienceRating": 3.6,
-		"year": 2011,
-		"tagline": "She doesn't give an F.",
-		"thumb": "/library/metadata/5943/thumb/1711898776",
-		"art": "/library/metadata/5943/art/1711898776",
-		"duration": 5857899,
-		"originallyAvailableAt": "2011-06-17",
-		"addedAt": 1679783026,
-		"updatedAt": 1711898776,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 12745,
-				"duration": 5857899,
-				"bitrate": 37935,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12802,
-						"key": "/library/parts/12802/1679786976/file.mkv",
-						"duration": 5857899,
-						"file": "/volume1/Movies/Bad Teacher (2011).mkv",
-						"size": 27777591172,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jake Kasdan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Gene Stupnitsky"
-			},
-			{
-				"tag": "Lee Eisenberg"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Cameron Diaz"
-			},
-			{
-				"tag": "Jason Segel"
-			},
-			{
-				"tag": "Justin Timberlake"
-			}
-		]
-	},
-	{
-		"ratingKey": "5511",
-		"key": "/library/metadata/5511",
-		"guid": "plex://movie/5d776a3dfb0d55001f53f19e",
-		"studio": "Darko Entertainment",
-		"type": "movie",
-		"title": "Bad Words",
-		"contentRating": "R",
-		"summary": "An adult, who has been a school dropout, finds a loophole in the regulations and participates in the largest spelling bee in the USA, The Golden Quill. His aim is to take revenge for something done to him in the past.",
-		"rating": 6.6,
-		"audienceRating": 6.1,
-		"year": 2013,
-		"tagline": "The end justifies the mean.",
-		"thumb": "/library/metadata/5511/thumb/1711898777",
-		"art": "/library/metadata/5511/art/1711898777",
-		"duration": 5342707,
-		"originallyAvailableAt": "2013-11-01",
-		"addedAt": 1679521407,
-		"updatedAt": 1711898777,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 11768,
-				"duration": 5342707,
-				"bitrate": 8174,
-				"width": 1280,
-				"height": 534,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11824,
-						"key": "/library/parts/11824/1679441609/file.mkv",
-						"duration": 5342707,
-						"file": "/volume1/Movies/Bad Words (2013).mkv",
-						"size": 5458818739,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jason Bateman"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Andrew Dodge"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jason Bateman"
-			},
-			{
-				"tag": "Kathryn Hahn"
-			},
-			{
-				"tag": "Rohan Chand"
-			}
-		]
-	},
-	{
-		"ratingKey": "9624",
-		"key": "/library/metadata/9624",
-		"guid": "plex://movie/5d77706c96b655001fe95cd9",
-		"studio": "Mike Zoss Productions",
-		"type": "movie",
-		"title": "The Ballad of Buster Scruggs",
-		"titleSort": "Ballad of Buster Scruggs",
-		"contentRating": "R",
-		"summary": "Vignettes weaving together the stories of six individuals in the old West at the end of the Civil War. Following the tales of a sharp-shooting songster, a wannabe bank robber, two weary traveling performers, a lone gold prospector, a woman traveling the West to an uncertain future, and a motley crew of strangers undertaking a carriage ride.",
-		"rating": 8.9,
-		"audienceRating": 7.8,
-		"skipCount": 1,
-		"year": 2018,
-		"tagline": "Stories live forever. People don't.",
-		"thumb": "/library/metadata/9624/thumb/1711898776",
-		"duration": 7998752,
-		"originallyAvailableAt": "2018-11-09",
-		"addedAt": 1677432269,
-		"updatedAt": 1711898776,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21540,
-				"duration": 7998752,
-				"bitrate": 6414,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main",
-				"Part": [
-					{
-						"id": 21641,
-						"key": "/library/parts/21641/1563920065/file.mkv",
-						"duration": 7998752,
-						"file": "/volume1/Movies/The Ballad of Buster Scruggs (2018).mkv",
-						"size": 6419588716,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "main"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Western"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Joel Coen"
-			},
-			{
-				"tag": "Ethan Coen"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Joel Coen"
-			},
-			{
-				"tag": "Ethan Coen"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Tim Blake Nelson"
-			},
-			{
-				"tag": "Willie Watson"
-			},
-			{
-				"tag": "Clancy Brown"
-			}
-		]
-	},
-	{
-		"ratingKey": "6428",
-		"key": "/library/metadata/6428",
-		"guid": "plex://movie/5d9f34f8b0262f001f6e9085",
-		"studio": "Rogue Pictures",
-		"type": "movie",
-		"title": "Balls of Fury",
-		"contentRating": "PG-13",
-		"summary": "Down-and-out former professional ping-pong phenom, Randy Daytona, is sucked into a maelstrom when FBI Agent Ernie Rodriguez recruits him for a secret mission. Randy is determined to bounce back and win, and to smoke out his father's killer -- arch-fiend Feng.",
-		"rating": 2.1,
-		"audienceRating": 3.3,
-		"viewCount": 1,
-		"lastViewedAt": 1705981563,
-		"year": 2007,
-		"tagline": "A huge comedy with tiny balls.",
-		"thumb": "/library/metadata/6428/thumb/1711898777",
-		"art": "/library/metadata/6428/art/1711898777",
-		"duration": 5426304,
-		"originallyAvailableAt": "2007-08-29",
-		"addedAt": 1680111709,
-		"updatedAt": 1711898777,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13861,
-				"duration": 5426304,
-				"bitrate": 20955,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 13921,
-						"key": "/library/parts/13921/1680413654/file.mkv",
-						"duration": 5426304,
-						"file": "/volume1/Movies/Balls of Fury (2007).mkv",
-						"size": 14213421648,
-						"container": "mkv",
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Crime"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Robert Ben Garant"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Thomas Lennon"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Dan Fogler"
-			},
-			{
-				"tag": "Christopher Walken"
-			},
-			{
-				"tag": "George Lopez"
-			}
-		]
-	},
-	{
-		"ratingKey": "9625",
-		"key": "/library/metadata/9625",
-		"guid": "plex://movie/5e4d255892dd13003df160ca",
-		"studio": "Searchlight Pictures",
-		"type": "movie",
-		"title": "The Banshees of Inisherin",
-		"titleSort": "Banshees of Inisherin",
-		"contentRating": "R",
-		"summary": "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both of them.",
-		"rating": 9.6,
-		"audienceRating": 7.5,
-		"year": 2022,
-		"tagline": "Everything was fine yesterday.",
-		"thumb": "/library/metadata/9625/thumb/1711900744",
-		"duration": 6835038,
-		"originallyAvailableAt": "2022-10-20",
-		"addedAt": 1677975679,
-		"updatedAt": 1711900744,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21541,
-				"duration": 6835038,
-				"bitrate": 20296,
-				"width": 1920,
-				"height": 802,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21642,
-						"key": "/library/parts/21642/1677896244/file.mkv",
-						"duration": 6835038,
-						"file": "/volume1/Movies/The Banshees of Inisherin (2022).mkv",
-						"size": 17344301283,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Martin McDonagh"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Martin McDonagh"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Colin Farrell"
-			},
-			{
-				"tag": "Brendan Gleeson"
-			},
-			{
-				"tag": "Kerry Condon"
-			}
-		]
-	},
-	{
-		"ratingKey": "8826",
-		"key": "/library/metadata/8826",
-		"guid": "plex://movie/5d776bb6ad5437001f7a7b68",
-		"studio": "LuckyChap Entertainment",
-		"type": "movie",
-		"title": "Barbie",
-		"contentRating": "PG-13",
-		"summary": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
-		"rating": 8.8,
-		"audienceRating": 8.3,
-		"year": 2023,
-		"tagline": "She's everything. He's just Ken.",
-		"thumb": "/library/metadata/8826/thumb/1711898777",
-		"art": "/library/metadata/8826/art/1711898777",
-		"duration": 6842144,
-		"originallyAvailableAt": "2023-07-19",
-		"addedAt": 1699010870,
-		"updatedAt": 1711898777,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 19568,
-				"duration": 6842144,
-				"bitrate": 16630,
-				"width": 1920,
-				"height": 960,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19643,
-						"key": "/library/parts/19643/1695518760/file.mkv",
-						"duration": 6842144,
-						"file": "/volume3/MoviesB/Movis/Barbie (2023).mkv",
-						"size": 14225900883,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Fantasy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Greta Gerwig"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Noah Baumbach"
-			},
-			{
-				"tag": "Greta Gerwig"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Margot Robbie"
-			},
-			{
-				"tag": "Ryan Gosling"
-			},
-			{
-				"tag": "America Ferrera"
-			}
-		]
-	},
-	{
-		"ratingKey": "9524",
-		"key": "/library/metadata/9524",
-		"guid": "plex://movie/5d776836e6d55c002040d570",
-		"studio": "Intermedia",
-		"type": "movie",
-		"title": "Basic",
-		"contentRating": "R",
-		"summary": "A D.E.A. Agent investigates the disappearance of a legendary Army Ranger Drill Sergeant and several of his cadets during a training exercise gone severely awry.",
-		"rating": 2.1,
-		"audienceRating": 6.2,
-		"year": 2003,
-		"tagline": "Deception is their most dangerous weapon.",
-		"thumb": "/library/metadata/9524/thumb/1711898778",
-		"duration": 5892704,
-		"originallyAvailableAt": "2003-03-28",
-		"addedAt": 1677432269,
-		"updatedAt": 1711898778,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21310,
-				"duration": 5892704,
-				"bitrate": 6352,
-				"width": 1280,
-				"height": 532,
-				"aspectRatio": 2.35,
-				"audioChannels": 7,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "es",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21411,
-						"key": "/library/parts/21411/1454819043/file.mkv",
-						"duration": 5892704,
-						"file": "/volume1/Movies/Basic (2003).mkv",
-						"size": 4680830277,
-						"audioProfile": "es",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "John McTiernan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "James Vanderbilt"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Germany"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "John Travolta"
-			},
-			{
-				"tag": "Connie Nielsen"
-			},
-			{
-				"tag": "Samuel L. Jackson"
-			}
-		]
-	},
-	{
-		"ratingKey": "9815",
-		"key": "/library/metadata/9815",
-		"guid": "plex://movie/5d77687f61141d001fb1c083",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Battleship",
-		"contentRating": "PG-13",
-		"summary": "An international fleet of naval warships encounters an alien armada while on a Naval war games exercise and faces the biggest threat mankind has ever faced. An intense battle is fought on sea, land and air. If they lose, the world could face a major extinction event and an alien invasion. Will humans win this alien war, what are the aliens doing here, and what do they want?",
-		"rating": 3.4,
-		"audienceRating": 5.4,
-		"viewCount": 1,
-		"lastViewedAt": 1680356007,
-		"year": 2012,
-		"tagline": "The battle for Earth begins at sea.",
-		"thumb": "/library/metadata/9815/thumb/1711898581",
-		"duration": 7874945,
-		"originallyAvailableAt": "2012-04-11",
-		"addedAt": 1465519214,
-		"updatedAt": 1711898581,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 22022,
-				"duration": 7874945,
-				"bitrate": 29264,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22129,
-						"key": "/library/parts/22129/1465519214/file.mkv",
-						"duration": 7874945,
-						"file": "/volume1/Movies/Battleship (2012).mkv",
-						"size": 28806365531,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Peter Berg"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Erich Hoeber"
-			},
-			{
-				"tag": "Jon Hoeber"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Hong Kong"
-			},
-			{
-				"tag": "Japan"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Taylor Kitsch"
-			},
-			{
-				"tag": "Tadanobu Asano"
-			},
-			{
-				"tag": "Rihanna"
-			}
-		]
-	},
-	{
-		"ratingKey": "8654",
-		"key": "/library/metadata/8654",
-		"guid": "plex://movie/61e52547facc2cece8a1c348",
-		"studio": "Imagine Entertainment",
-		"type": "movie",
-		"title": "The Beanie Bubble",
-		"titleSort": "Beanie Bubble",
-		"contentRating": "R",
-		"summary": "Ty was a frustrated toy salesman until his collaboration with three women turned his stuffed animals into a defining '90s trend. This behind-the-scenes look at history's biggest toy craze is a wild story about what—and who—is valued in this world.",
-		"audienceRating": 6.3,
-		"viewOffset": 2575000,
-		"lastViewedAt": 1693783759,
-		"year": 2023,
-		"tagline": "The crazy behind the craze.",
-		"thumb": "/library/metadata/8654/thumb/1710700582",
-		"art": "/library/metadata/8654/art/1710700582",
-		"duration": 6610496,
-		"originallyAvailableAt": "2023-07-28",
-		"addedAt": 1691529162,
-		"updatedAt": 1710700582,
-		"audienceRatingImage": "imdb://image.rating",
-		"hasPremiumPrimaryExtra": "1",
-		"Media": [
-			{
-				"id": 19076,
-				"duration": 6610496,
-				"bitrate": 11467,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19151,
-						"key": "/library/parts/19151/1691189034/file.mkv",
-						"duration": 6610496,
-						"file": "/volume3/MoviesB/Movis/The Beanie Bubble (2023).mkv",
-						"size": 9477581371,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Kristin Gore"
-			},
-			{
-				"tag": "Damian Kulash"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Kristin Gore"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Zach Galifianakis"
-			},
-			{
-				"tag": "Elizabeth Banks"
-			},
-			{
-				"tag": "Sarah Snook"
-			}
-		]
-	},
-	{
-		"ratingKey": "5222",
-		"key": "/library/metadata/5222",
-		"guid": "plex://movie/5d776b6cfb0d55001f5678b1",
-		"studio": "Walt Disney Pictures",
-		"type": "movie",
-		"title": "Beauty and the Beast",
-		"contentRating": "PG",
-		"summary": "Disney's animated classic takes on a new form, with a widened mythology and an all-star cast. A young Prince, imprisoned in the form of a Beast (Dan Stevens), can be freed only by true love. What may be his only opportunity arrives when he meets Belle (Emma Watson), the only human girl to ever visit the castle since it was enchanted.",
-		"rating": 7.1,
-		"audienceRating": 8,
-		"viewCount": 1,
-		"skipCount": 1,
-		"lastViewedAt": 1678400558,
-		"year": 2017,
-		"tagline": "Be our guest.",
-		"thumb": "/library/metadata/5222/thumb/1711898779",
-		"art": "/library/metadata/5222/art/1711898779",
-		"duration": 7756896,
-		"originallyAvailableAt": "2017-03-16",
-		"addedAt": 1679138984,
-		"updatedAt": 1711898779,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 11108,
-				"duration": 7756896,
-				"bitrate": 10564,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11164,
-						"key": "/library/parts/11164/1679012129/file.mkv",
-						"duration": 7756896,
-						"file": "/volume1/Movies/Beauty and the Beast (2017) 3D.mkv",
-						"size": 10243358969,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 11138,
-				"duration": 7756896,
-				"bitrate": 37694,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11194,
-						"key": "/library/parts/11194/1679017531/file.m2ts",
-						"duration": 7756896,
-						"file": "/volume1/Movies/Beauty and the Beast (2017).m2ts",
-						"size": 36548935680,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Musical"
-			},
-			{
-				"tag": "Family"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Bill Condon"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Stephen Chbosky"
-			},
-			{
-				"tag": "Linda Woolverton"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Emma Watson"
-			},
-			{
-				"tag": "Dan Stevens"
-			},
-			{
-				"tag": "Luke Evans"
-			}
-		]
-	},
-	{
-		"ratingKey": "9816",
-		"key": "/library/metadata/9816",
-		"guid": "plex://movie/5d776c447a53e9001e73ebc7",
-		"studio": "Radar Pictures",
-		"type": "movie",
-		"title": "Beirut",
-		"contentRating": "R",
-		"summary": "In 1980s Beirut, Mason Skiles is a former U.S. diplomat who is called back into service to save a colleague from the group that is possibly responsible for his own family's death. Meanwhile, a CIA field agent who is working under cover at the American embassy is tasked with keeping Mason alive and ensuring that the mission is a success.",
-		"rating": 8.2,
-		"audienceRating": 5.7,
-		"viewCount": 1,
-		"skipCount": 1,
-		"lastViewedAt": 1700524567,
-		"year": 2018,
-		"tagline": "Beirut, 1982: The Paris of the Middle East Was Burning",
-		"thumb": "/library/metadata/9816/thumb/1711898582",
-		"duration": 6585249,
-		"originallyAvailableAt": "2018-04-11",
-		"addedAt": 1589904756,
-		"updatedAt": 1711898582,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22023,
-				"duration": 6585249,
-				"bitrate": 38919,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22130,
-						"key": "/library/parts/22130/1589904756/file.mkv",
-						"duration": 6585249,
-						"file": "/volume1/Movies/Beirut (2018).mkv",
-						"size": 32036591528,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Thriller"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Brad Anderson"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Tony Gilroy"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jon Hamm"
-			},
-			{
-				"tag": "Rosamund Pike"
-			},
-			{
-				"tag": "Shea Whigham"
-			}
-		]
-	},
-	{
-		"ratingKey": "4843",
-		"key": "/library/metadata/4843",
-		"guid": "plex://movie/5d776c04ad5437001f7b0f4c",
-		"studio": "Bazelevs Production",
-		"type": "movie",
-		"title": "The Best Day Ever",
-		"titleSort": "Best Day Ever",
-		"originalTitle": "Самый лучший день",
-		"summary": "The provincial traffic police captain Petya Vasyutin is going to marry his beloved girl Olya, but succumbs to the brilliance of the metropolitan pop star Alina Shyopot. Catching him drunk at the wheel, she decides to seduce Petya in order to avoid punishment. Having lost his bride, Vasyutin is trying to correct his mistakes and return his beloved.",
-		"audienceRating": 4.5,
-		"viewOffset": 3351166,
-		"viewCount": 3,
-		"lastViewedAt": 1707857868,
-		"year": 2015,
-		"thumb": "/library/metadata/4843/thumb/1711898779",
-		"art": "/library/metadata/4843/art/1711898779",
-		"duration": 6424667,
-		"originallyAvailableAt": "2015-12-24",
-		"addedAt": 1678568212,
-		"updatedAt": 1711898779,
-		"audienceRatingImage": "imdb://image.rating",
-		"Media": [
-			{
-				"id": 10171,
-				"duration": 6424667,
-				"bitrate": 25692,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 10222,
-						"key": "/library/parts/10222/1673816665/file.m2ts",
-						"duration": 6424667,
-						"file": "/volume1/Movies/Самый лучший день (2015).m2ts",
-						"size": 20632940544,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Zhora Kryzhovnikov"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Zhora Kryzhovnikov"
-			},
-			{
-				"tag": "Alexey Kazakov"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Russian Federation"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Dmitriy Nagiev"
-			},
-			{
-				"tag": "Yuliya Aleksandrova"
-			},
-			{
-				"tag": "Inna Churikova"
-			}
-		]
-	},
-	{
-		"ratingKey": "9623",
-		"key": "/library/metadata/9623",
-		"guid": "plex://movie/5d776ad1ad5437001f789a4e",
-		"studio": "Walt Disney Pictures",
-		"type": "movie",
-		"title": "The BFG",
-		"titleSort": "BFG",
-		"contentRating": "PG",
-		"summary": "An orphan little girl befriends a benevolent giant who takes her to Giant Country, where they attempt to stop the man-eating giants that are invading the human world.",
-		"rating": 7.4,
-		"audienceRating": 5.7,
-		"year": 2016,
-		"tagline": "The world is more giant than you can imagine.",
-		"thumb": "/library/metadata/9623/thumb/1711898779",
-		"duration": 7029146,
-		"originallyAvailableAt": "2016-06-30",
-		"addedAt": 1487205694,
-		"updatedAt": 1711898779,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21539,
-				"duration": 7029146,
-				"bitrate": 10275,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21640,
-						"key": "/library/parts/21640/1487205694/file.mkv",
-						"duration": 7029146,
-						"file": "/volume1/Movies/The BFG (2016) 3D.mkv",
-						"size": 9029908063,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Family"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Steven Spielberg"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Roald Dahl"
-			},
-			{
-				"tag": "Melissa Mathison"
-			}
-		],
-		"Country": [
-			{
-				"tag": "India"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mark Rylance"
-			},
-			{
-				"tag": "Ruby Barnhill"
-			},
-			{
-				"tag": "Rebecca Hall"
-			}
-		]
-	},
-	{
-		"ratingKey": "6702",
-		"key": "/library/metadata/6702",
-		"guid": "plex://movie/5d9f34f86fc551001ef7f8d7",
-		"studio": "TriStar Pictures",
-		"type": "movie",
-		"title": "The Big Hit",
-		"titleSort": "Big Hit",
-		"contentRating": "R",
-		"summary": "To payoff his second girlfriend's debt, hitman Melvin Smiley undertakes a kidnapping job with his usual associates. In a world of prospective Jewish in-laws and late movie fees, the hitman falls in love with the victim and must settle the score with those out to double-cross him.",
-		"rating": 4.1,
-		"audienceRating": 5.7,
-		"year": 1998,
-		"tagline": "Nothing's more dangerous than some nice guys... with a little time to kill.",
-		"thumb": "/library/metadata/6702/thumb/1711898779",
-		"art": "/library/metadata/6702/art/1711898779",
-		"duration": 5483520,
-		"originallyAvailableAt": "1998-04-24",
-		"addedAt": 1680205914,
-		"updatedAt": 1711898779,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 14538,
-				"duration": 5483520,
-				"bitrate": 23441,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg2video",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main",
-				"Part": [
-					{
-						"id": 14598,
-						"key": "/library/parts/14598/1680228151/file.mkv",
-						"duration": 5483520,
-						"file": "/volume1/Movies/The Big Hit (1998).mkv",
-						"size": 16067438616,
-						"container": "mkv",
-						"videoProfile": "main"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Kirk Wong Chi-Keung"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Ben Ramsey"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			},
-			{
-				"tag": "Canada"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mark Wahlberg"
-			},
-			{
-				"tag": "Lou Diamond Phillips"
-			},
-			{
-				"tag": "Christina Applegate"
-			}
-		]
-	},
-	{
-		"ratingKey": "5169",
-		"key": "/library/metadata/5169",
-		"guid": "plex://movie/5d776b679ab544002150af34",
-		"studio": "Paramount",
-		"type": "movie",
-		"title": "The Big Short",
-		"titleSort": "Big Short",
-		"contentRating": "R",
-		"summary": "In 2006-2007 a group of investors bet against the United States mortgage market. In their research, they discover how flawed and corrupt the market is.",
-		"rating": 8.9,
-		"audienceRating": 8.8,
-		"viewCount": 1,
-		"lastViewedAt": 1686451677,
-		"year": 2015,
-		"tagline": "This is a true story.",
-		"thumb": "/library/metadata/5169/thumb/1711898779",
-		"art": "/library/metadata/5169/art/1711898779",
-		"duration": 7835084,
-		"originallyAvailableAt": "2015-12-23",
-		"addedAt": 1679010391,
-		"updatedAt": 1711898779,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 10957,
-				"duration": 7835084,
-				"bitrate": 33989,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11013,
-						"key": "/library/parts/11013/1678970247/file.mkv",
-						"duration": 7835084,
-						"file": "/volume1/Movies/The Big Short (2015).mkv",
-						"size": 33288333901,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Adam McKay"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Adam McKay"
-			},
-			{
-				"tag": "Michael Lewis"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Steve Carell"
-			},
-			{
-				"tag": "Christian Bale"
-			},
-			{
-				"tag": "John Magaro"
-			}
-		]
-	},
-	{
-		"ratingKey": "6759",
-		"key": "/library/metadata/6759",
-		"guid": "plex://movie/5d77682b8718ba001e3126e0",
-		"studio": "Touchstone Pictures",
-		"type": "movie",
-		"title": "Big Trouble",
-		"contentRating": "PG-13",
-		"summary": "The story of how a mysterious suitcase brings together, and changes, the lives of a divorced dad, an unhappy housewife, two hitmen, a pair of street thugs, two love struck teens, two FBI men and a psychedelic toad. Based on Pulitzer Prize-winning humorist Dave Barry's best-selling first novel, \"Big Trouble.\"",
-		"rating": 4.8,
-		"audienceRating": 5.4,
-		"year": 2002,
-		"tagline": "They have forty-five minutes to save the world. They need forty-six.",
-		"thumb": "/library/metadata/6759/thumb/1711898779",
-		"art": "/library/metadata/6759/art/1711898779",
-		"duration": 5106560,
-		"originallyAvailableAt": "2002-04-05",
-		"addedAt": 1680346462,
-		"updatedAt": 1711898779,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 14673,
-				"duration": 5106560,
-				"bitrate": 41107,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 14733,
-						"key": "/library/parts/14733/1680160187/file.m2ts",
-						"duration": 5106560,
-						"file": "/volume1/Movies/Big Trouble (2002).m2ts",
-						"size": 26239586304,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Barry Sonnenfeld"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Robert Ramsey"
-			},
-			{
-				"tag": "Matthew Stone"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Tim Allen"
-			},
-			{
-				"tag": "Rene Russo"
-			},
-			{
-				"tag": "Omar Epps"
-			}
-		]
-	},
-	{
-		"ratingKey": "9360",
-		"key": "/library/metadata/9360",
-		"guid": "plex://movie/5d7768313c3c2a001fbcd1f0",
-		"studio": "TAFT Entertainment Pictures",
-		"type": "movie",
-		"title": "Big Trouble in Little China",
-		"contentRating": "PG-13",
-		"summary": "A rough-and-tumble trucker and his side kick face off with an ancient sorcerer in a supernatural battle beneath Chinatown.",
-		"rating": 7.4,
-		"audienceRating": 8.2,
-		"year": 1986,
-		"tagline": "Jack Burton's in for some serious trouble and you're in for some serious fun.",
-		"thumb": "/library/metadata/9360/thumb/1711898780",
-		"art": "/library/metadata/9360/art/1711898780",
-		"duration": 5988000,
-		"originallyAvailableAt": "1986-07-02",
-		"addedAt": 1710700288,
-		"updatedAt": 1711898780,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20894,
-				"duration": 5988000,
-				"bitrate": 34658,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 20970,
-						"key": "/library/parts/20970/1710128265/file.m2ts",
-						"duration": 5988000,
-						"file": "/volume3/MoviesB/TEMP/Big Trouble in Little China (1986).m2ts",
-						"size": 27467286528,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "John Carpenter"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "W.D. Richter"
-			},
-			{
-				"tag": "David Z. Weinstein"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kurt Russell"
-			},
-			{
-				"tag": "Kim Cattrall"
-			},
-			{
-				"tag": "Dennis Dun"
-			}
-		]
-	},
-	{
-		"ratingKey": "7478",
-		"key": "/library/metadata/7478",
-		"guid": "plex://movie/5d77682a6f4521001ea99b0a",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Bird on a Wire",
-		"contentRating": "PG-13",
-		"summary": "Rick has been given a new identity by the FBI for helping convict a drug dealing FBI agent. Fifteen years later his former fiance recognises him. Rick's FBI 'minder' has been replaced by a corrupt agent who helps the drug dealing FBI agent and his accomplice locate him. There are many subsequent chase scenes as Rick and girlfriend revisit his former haunts.",
-		"rating": 2.5,
-		"audienceRating": 4.1,
-		"viewCount": 1,
-		"skipCount": 1,
-		"lastViewedAt": 1693008514,
-		"year": 1990,
-		"tagline": "He’s every woman’s dream and one woman’s nightmare.",
-		"thumb": "/library/metadata/7478/thumb/1711898780",
-		"art": "/library/metadata/7478/art/1711898780",
-		"duration": 6634656,
-		"originallyAvailableAt": "1990-05-18",
-		"addedAt": 1680956619,
-		"updatedAt": 1711898780,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 16294,
-				"duration": 6634656,
-				"bitrate": 31419,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16358,
-						"key": "/library/parts/16358/1680904444/file.m2ts",
-						"duration": 6634656,
-						"file": "/volume1/Movies/Bird on a Wire (1990).m2ts",
-						"size": 28140693504,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "John Badham"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "David Seltzer"
-			},
-			{
-				"tag": "Louis Venosta"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mel Gibson"
-			},
-			{
-				"tag": "Goldie Hawn"
-			},
-			{
-				"tag": "David Carradine"
-			}
-		]
-	},
-	{
-		"ratingKey": "6938",
-		"key": "/library/metadata/6938",
-		"guid": "plex://movie/5d776a1bfb0d55001f53aa67",
-		"studio": "TSG Entertainment",
-		"type": "movie",
-		"title": "Birdman or (The Unexpected Virtue of Ignorance)",
-		"contentRating": "R",
-		"summary": "A fading actor best known for his portrayal of a popular superhero attempts to mount a comeback by appearing in a Broadway play. As opening night approaches, his attempts to become more altruistic, rebuild his career, and reconnect with friends and family prove more difficult than expected.",
-		"rating": 9.1,
-		"audienceRating": 7.8,
-		"year": 2014,
-		"tagline": "How did we end up here?",
-		"thumb": "/library/metadata/6938/thumb/1711898780",
-		"art": "/library/metadata/6938/art/1711898780",
-		"duration": 7157227,
-		"originallyAvailableAt": "2014-11-13",
-		"addedAt": 1680449330,
-		"updatedAt": 1711898780,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15058,
-				"duration": 7157227,
-				"bitrate": 47603,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 15122,
-						"key": "/library/parts/15122/1680459649/file.mkv",
-						"duration": 7157227,
-						"file": "/volume1/Movies/Birdman (2014).mkv",
-						"size": 42588225124,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Alejandro González Iñárritu"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Alejandro González Iñárritu"
-			},
-			{
-				"tag": "Armando Bo"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Michael Keaton"
-			},
-			{
-				"tag": "Emma Stone"
-			},
-			{
-				"tag": "Zach Galifianakis"
-			}
-		]
-	},
-	{
-		"ratingKey": "6939",
-		"key": "/library/metadata/6939",
-		"guid": "plex://movie/5d9f357e6fc551001ef81df3",
-		"studio": "Menage Atroz",
-		"type": "movie",
-		"title": "Biutiful",
-		"contentRating": "R",
-		"summary": "Uxbal, single father of two children, finds his life in chaos as he is forced to deal with his life in order to escape the heat of crime in underground Barcelona, to break with the love for the divorced, manic depressive, abusive mother of his children and to regain spiritual insight in his life as he is diagnosed with terminal cancer.",
-		"rating": 6.6,
-		"audienceRating": 7.5,
-		"viewOffset": 6982989,
-		"lastViewedAt": 1696207527,
-		"year": 2010,
-		"tagline": "You don't choose your family. We all belong to somebody, but to belong to Uxbal and Marambra, is both a blessing and a curse.",
-		"thumb": "/library/metadata/6939/thumb/1711900746",
-		"art": "/library/metadata/6939/art/1711900746",
-		"duration": 8882923,
-		"originallyAvailableAt": "2010-10-20",
-		"addedAt": 1680449330,
-		"updatedAt": 1711900746,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15059,
-				"duration": 8882923,
-				"bitrate": 31419,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 15123,
-						"key": "/library/parts/15123/1680572154/file.mkv",
-						"duration": 8882923,
-						"file": "/volume1/Movies/Biutiful (2010).mkv",
-						"size": 34886761302,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Alejandro González Iñárritu"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Alejandro González Iñárritu"
-			},
-			{
-				"tag": "Armando Bo"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Mexico"
-			},
-			{
-				"tag": "Spain"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Javier Bardem"
-			},
-			{
-				"tag": "Maricel Álvarez"
-			},
-			{
-				"tag": "Hanaa Bouchaib"
-			}
-		]
-	},
-	{
-		"ratingKey": "10117",
-		"key": "/library/metadata/10117",
-		"guid": "plex://movie/5d776b05fb0d55001f559234",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Black Panther",
-		"contentRating": "PG-13",
-		"summary": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
-		"rating": 9.6,
-		"audienceRating": 7.9,
-		"year": 2018,
-		"tagline": "Long live the king.",
-		"thumb": "/library/metadata/10117/thumb/1711898668",
-		"duration": 8073190,
-		"originallyAvailableAt": "2018-02-13",
-		"addedAt": 1677447016,
-		"updatedAt": 1711898668,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22688,
-				"duration": 8073190,
-				"bitrate": 10474,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22797,
-						"key": "/library/parts/22797/1676675293/file.mkv",
-						"duration": 8073190,
-						"file": "/volume1/Movies/Black Panther (2018) 3D.mkv",
-						"size": 10569949163,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ryan Coogler"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Ryan Coogler"
-			},
-			{
-				"tag": "Joe Robert Cole"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Chadwick Boseman"
-			},
-			{
-				"tag": "Michael B. Jordan"
-			},
-			{
-				"tag": "Lupita Nyong'o"
-			}
-		]
-	},
-	{
-		"ratingKey": "9814",
-		"key": "/library/metadata/9814",
-		"guid": "plex://movie/5d77702e6afb3d0020613fd1",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Black Panther: Wakanda Forever",
-		"contentRating": "PG-13",
-		"summary": "Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect the kingdom of Wakanda from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for their nation.",
-		"rating": 8.3,
-		"audienceRating": 9.4,
-		"viewCount": 1,
-		"lastViewedAt": 1679086297,
-		"year": 2022,
-		"tagline": "Forever.",
-		"thumb": "/library/metadata/9814/thumb/1711898580",
-		"duration": 9679040,
-		"originallyAvailableAt": "2022-11-09",
-		"addedAt": 1677447016,
-		"updatedAt": 1711898580,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22021,
-				"duration": 9679040,
-				"bitrate": 18383,
-				"width": 1920,
-				"height": 804,
-				"aspectRatio": 2.35,
-				"audioChannels": 8,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22127,
-						"key": "/library/parts/22127/1676852411/file.mkv",
-						"duration": 9679040,
-						"file": "/volume1/Movies/Black Panther Wakanda Forever (2022).mkv",
-						"size": 22241463997,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ryan Coogler"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Stan Lee"
-			},
-			{
-				"tag": "Jack Kirby"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Letitia Wright"
-			},
-			{
-				"tag": "Tenoch Huerta Mejía"
-			},
-			{
-				"tag": "Lupita Nyong'o"
-			}
-		]
-	},
-	{
-		"ratingKey": "6943",
-		"key": "/library/metadata/6943",
-		"guid": "plex://movie/5d77687d33f255001e857fdb",
-		"studio": "Fox Searchlight Pictures",
-		"type": "movie",
-		"title": "Black Swan",
-		"contentRating": "R",
-		"summary": "Nina is a talented but unstable ballerina on the verge of stardom. Pushed to the breaking point by her artistic director and a seductive rival, Nina's grip on reality slips, plunging her into a waking nightmare.",
-		"rating": 8.5,
-		"audienceRating": 8.4,
-		"year": 2010,
-		"tagline": "Perfection is not just about control. It's also about letting go.",
-		"thumb": "/library/metadata/6943/thumb/1711898780",
-		"art": "/library/metadata/6943/art/1711898780",
-		"duration": 6487531,
-		"originallyAvailableAt": "2010-12-17",
-		"addedAt": 1680449332,
-		"updatedAt": 1711898780,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15064,
-				"duration": 6487531,
-				"bitrate": 34290,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22128,
-						"key": "/library/parts/22128/1680449093/file.mkv",
-						"duration": 6487531,
-						"file": "/volume1/Movies/Black Swan (2010).mkv",
-						"size": 27806832068,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Darren Aronofsky"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Mark Heyman"
-			},
-			{
-				"tag": "Andres Heinz"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Natalie Portman"
-			},
-			{
-				"tag": "Mila Kunis"
-			},
-			{
-				"tag": "Vincent Cassel"
-			}
-		]
-	},
-	{
-		"ratingKey": "8466",
-		"key": "/library/metadata/8466",
-		"guid": "plex://movie/5d776d9847dd6e001f6f4847",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Black Widow",
-		"contentRating": "PG-13",
-		"summary": "In Marvel Studios' action-packed spy thriller \"Black Widow,\" Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
-		"rating": 7.9,
-		"audienceRating": 9.1,
-		"year": 2021,
-		"tagline": "Her world. Her secrets. Her legacy.",
-		"thumb": "/library/metadata/8466/thumb/1711898781",
-		"art": "/library/metadata/8466/art/1711898781",
-		"duration": 8026848,
-		"originallyAvailableAt": "2021-07-07",
-		"addedAt": 1688512792,
-		"updatedAt": 1711898781,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 18568,
-				"duration": 8026848,
-				"bitrate": 37311,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 18642,
-						"key": "/library/parts/18642/1688324182/file.mkv",
-						"duration": 8026848,
-						"file": "/volume3/MoviesB/Movis/Black Widow (2021).mkv",
-						"size": 37442415995,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Science Fiction"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Cate Shortland"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jac Schaeffer"
-			},
-			{
-				"tag": "Eric Pearson"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Scarlett Johansson"
-			},
-			{
-				"tag": "Florence Pugh"
-			},
-			{
-				"tag": "Rachel Weisz"
-			}
-		]
-	},
-	{
-		"ratingKey": "8606",
-		"key": "/library/metadata/8606",
-		"guid": "plex://movie/6309f715039fb88ac14e0a1a",
-		"studio": "Zapruder Films",
-		"type": "movie",
-		"title": "BlackBerry",
-		"contentRating": "R",
-		"summary": "A company that toppled global giants before succumbing to the ruthlessly competitive forces of Silicon Valley. This is not a conventional tale of modern business failure by fraud and greed. The rise and fall of BlackBerry reveals the dangerous speed at which innovators race along the information superhighway.",
-		"rating": 9.8,
-		"audienceRating": 9.4,
-		"viewCount": 1,
-		"lastViewedAt": 1689206840,
-		"year": 2023,
-		"tagline": "Work hard. Fail hard.",
-		"thumb": "/library/metadata/8606/thumb/1711898781",
-		"art": "/library/metadata/8606/art/1711898781",
-		"duration": 7173440,
-		"originallyAvailableAt": "2023-05-11",
-		"addedAt": 1689205210,
-		"updatedAt": 1711898781,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 18962,
-				"duration": 7173440,
-				"bitrate": 7080,
-				"width": 1920,
-				"height": 960,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19036,
-						"key": "/library/parts/19036/1688927134/file.mkv",
-						"duration": 7173440,
-						"file": "/volume3/MoviesB/Movis/BlackBerry (2023).mkv",
-						"size": 6351218932,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Biography"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Matt Johnson"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Matt Johnson"
-			},
-			{
-				"tag": "Matthew Miller"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "Finland"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jay Baruchel"
-			},
-			{
-				"tag": "Glenn Howerton"
-			},
-			{
-				"tag": "Matt Johnson"
-			}
-		]
-	},
-	{
-		"ratingKey": "8754",
-		"key": "/library/metadata/8754",
-		"guid": "plex://movie/5f409a04fea1a1003faff2cb",
-		"studio": "MRC",
-		"type": "movie",
-		"title": "The Blackening",
-		"titleSort": "Blackening",
-		"contentRating": "R",
-		"summary": "Seven black friends go away for the weekend, only to find themselves trapped in a cabin with a killer who has a vendetta. They must pit their street smarts and knowledge of horror movies against the murderer to stay alive.",
-		"rating": 8.7,
-		"audienceRating": 8.5,
-		"year": 2023,
-		"tagline": "We can't all die first.",
-		"thumb": "/library/metadata/8754/thumb/1711898781",
-		"art": "/library/metadata/8754/art/1711898781",
-		"duration": 5817856,
-		"originallyAvailableAt": "2023-06-16",
-		"addedAt": 1694816492,
-		"updatedAt": 1711898781,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 19295,
-				"duration": 5817856,
-				"bitrate": 40086,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "truehd",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19370,
-						"key": "/library/parts/19370/1692558458/file.mkv",
-						"duration": 5817856,
-						"file": "/volume3/MoviesB/Movis/The Blackening (2022).mkv",
-						"size": 29203732941,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Tim Story"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Tracy Oliver"
-			},
-			{
-				"tag": "Dewayne Perkins"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Grace Byers"
-			},
-			{
-				"tag": "Jermaine Fowler"
-			},
-			{
-				"tag": "Melvin Gregg"
-			}
-		]
-	},
-	{
-		"ratingKey": "9813",
-		"key": "/library/metadata/9813",
-		"guid": "plex://movie/5d776d85fb0d55001f5a2858",
-		"studio": "Focus Features",
-		"type": "movie",
-		"title": "BlacKkKlansman",
-		"contentRating": "R",
-		"summary": "Ron Stallworth, an African American police officer from Colorado Springs, Colorado, successfully infiltrates the local Ku Klux Klan branch aided by a Jewish surrogate who eventually becomes its leader. Based on actual events.",
-		"rating": 9.6,
-		"audienceRating": 8.3,
-		"viewCount": 2,
-		"lastViewedAt": 1707275351,
-		"year": 2018,
-		"tagline": "Infiltrate hate.",
-		"thumb": "/library/metadata/9813/thumb/1711898579",
-		"duration": 8089088,
-		"originallyAvailableAt": "2018-08-09",
-		"addedAt": 1544492585,
-		"updatedAt": 1711898579,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22020,
-				"duration": 8089088,
-				"bitrate": 10441,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22126,
-						"key": "/library/parts/22126/1544492585/file.mkv",
-						"duration": 8089088,
-						"file": "/volume1/Movies/BlacKkKlansman (2018).mkv",
-						"size": 10557546485,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Crime"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Spike Lee"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Spike Lee"
-			},
-			{
-				"tag": "Kevin Willmott"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "John David Washington"
-			},
-			{
-				"tag": "Adam Driver"
-			},
-			{
-				"tag": "Topher Grace"
-			}
-		]
-	},
-	{
-		"ratingKey": "9526",
-		"key": "/library/metadata/9526",
-		"guid": "plex://movie/5d77686954c0f0001f30806a",
-		"studio": "New Line Cinema",
-		"type": "movie",
-		"title": "Blade",
-		"contentRating": "R",
-		"summary": "In a world where vampires walk the earth, Blade has a goal. His goal is to rid the world of all vampire evil. When Blade witnesses a vampire bite Dr. Karen Jenson, he fights away the beast and takes Jenson back to his hideout. Here, alongside Abraham Whistler, Blade attempts to help heal Jenson. The vampire Quinn who was attacked by Blade, reports back to his master Deacon Frost, who is planning a huge surprise for the human population.",
-		"rating": 5.9,
-		"audienceRating": 7.8,
-		"viewCount": 1,
-		"lastViewedAt": 1678560429,
-		"year": 1998,
-		"tagline": "Against an army of Immortals, one warrior must draw first blood.",
-		"thumb": "/library/metadata/9526/thumb/1711898781",
-		"duration": 7215136,
-		"originallyAvailableAt": "1998-08-21",
-		"addedAt": 1469853131,
-		"updatedAt": 1711898781,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21313,
-				"duration": 7215136,
-				"bitrate": 16865,
-				"width": 1920,
-				"height": 812,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21414,
-						"key": "/library/parts/21414/1469853131/file.mkv",
-						"duration": 7215136,
-						"file": "/volume1/Movies/Blade (1998).mkv",
-						"size": 15216928542,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Stephen Norrington"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "David S. Goyer"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Wesley Snipes"
-			},
-			{
-				"tag": "Stephen Dorff"
-			},
-			{
-				"tag": "Kris Kristofferson"
-			}
-		]
-	},
-	{
-		"ratingKey": "5945",
-		"key": "/library/metadata/5945",
-		"guid": "plex://movie/5d776b95594b2b001e6de3f3",
-		"studio": "Alcon Entertainment",
-		"type": "movie",
-		"title": "Blade Runner 2049",
-		"contentRating": "R",
-		"summary": "Thirty years after the events of Blade Runner (1982), a new Blade Runner, L.A.P.D. Officer \"K\" (Ryan Gosling), unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former L.A.P.D. Blade Runner, who has been missing for thirty years.",
-		"rating": 8.8,
-		"audienceRating": 8.8,
-		"year": 2017,
-		"tagline": "The key to the future is finally unearthed.",
-		"thumb": "/library/metadata/5945/thumb/1711898783",
-		"art": "/library/metadata/5945/art/1711898783",
-		"duration": 9827851,
-		"originallyAvailableAt": "2017-10-04",
-		"addedAt": 1679783029,
-		"updatedAt": 1711898783,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 12749,
-				"duration": 9827851,
-				"bitrate": 28658,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12806,
-						"key": "/library/parts/12806/1679796478/file.mkv",
-						"duration": 9827851,
-						"file": "/volume1/Movies/Blade Runner 2049 (2017).mkv",
-						"size": 35206263065,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 13279,
-				"duration": 9807840,
-				"bitrate": 9475,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13338,
-						"key": "/library/parts/13338/1679788274/file.mkv",
-						"duration": 9807840,
-						"file": "/volume1/Movies/Blade Runner 2049 (2017) 3D.mkv",
-						"size": 11616732634,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Science Fiction"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Denis Villeneuve"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Philip K. Dick"
-			},
-			{
-				"tag": "Hampton Fancher"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ryan Gosling"
-			},
-			{
-				"tag": "Harrison Ford"
-			},
-			{
-				"tag": "Sylvia Hoeks"
-			}
-		]
-	},
-	{
-		"ratingKey": "9793",
-		"key": "/library/metadata/9793",
-		"guid": "local://9793",
-		"type": "movie",
-		"title": "Blade Runner Black Out 2022",
-		"summary": "",
-		"viewOffset": 427042,
-		"lastViewedAt": 1707591673,
-		"year": 2022,
-		"thumb": "/library/metadata/9793/thumb/1711898568",
-		"art": "/library/metadata/9793/art/1711898568",
-		"duration": 945504,
-		"addedAt": 1684184144,
-		"updatedAt": 1711898568,
-		"Media": [
-			{
-				"id": 21978,
-				"duration": 945504,
-				"bitrate": 10687,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "hevc",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main 10",
-				"Part": [
-					{
-						"id": 22079,
-						"key": "/library/parts/22079/1684103735/file.mkv",
-						"duration": 945504,
-						"file": "/volume3/MoviesB/Movis/Blade Runner Black Out 2022 (2022).mkv",
-						"size": 1263091920,
-						"container": "mkv",
-						"videoProfile": "main 10"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Short"
-			},
-			{
-				"tag": "Music"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jordany Puello"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "SuavaMan"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "SuavaMan"
-			}
-		]
-	},
-	{
-		"ratingKey": "3201",
-		"key": "/library/metadata/3201",
-		"guid": "plex://movie/5d776a6bad5437001f77d7fb",
-		"studio": "GulfStream Pictures",
-		"type": "movie",
-		"title": "Blended",
-		"contentRating": "PG-13",
-		"summary": "After a blind date gone horribly wrong, Jim and Lauren agree they never, ever want to see each other again. Well, that's all about to change when the two find themselves and their respective families (including children) all stuck together in one suite at an African Safari vacation spot.",
-		"rating": 1.5,
-		"audienceRating": 6.4,
-		"viewCount": 2,
-		"skipCount": 2,
-		"lastViewedAt": 1696110787,
-		"year": 2014,
-		"tagline": "Single Dad, No Clue. Single Mom, Flying Solo.",
-		"thumb": "/library/metadata/3201/thumb/1711898782",
-		"art": "/library/metadata/3201/art/1711898782",
-		"duration": 7033792,
-		"originallyAvailableAt": "2014-05-22",
-		"addedAt": 1677432450,
-		"updatedAt": 1711898782,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 12492,
-				"duration": 7033792,
-				"bitrate": 36119,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12549,
-						"key": "/library/parts/12549/1678116586/file.m2ts",
-						"duration": 7033792,
-						"file": "/volume1/Movies/Blended (2014).m2ts",
-						"size": 31756541952,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Frank Coraci"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Ivan Menchell"
-			},
-			{
-				"tag": "Clare Sera"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Adam Sandler"
-			},
-			{
-				"tag": "Drew Barrymore"
-			},
-			{
-				"tag": "Kevin Nealon"
-			}
-		]
-	},
-	{
-		"ratingKey": "10368",
-		"key": "/library/metadata/10368",
-		"guid": "plex://movie/5d7768285af944001f1f708f",
-		"studio": "Permut Presentations",
-		"type": "movie",
-		"title": "Blind Date",
-		"contentRating": "PG-13",
-		"summary": "When bachelor Walter Davis is set up with his sister-in-law's pretty cousin, Nadia Gates, a seemingly average blind date turns into a chaotic night on the town. Walter's brother, Ted, tells him not to let Nadia drink alcohol, but he dismisses the warning and her behaviour gets increasingly wild. Walter and Nadia's numerous incidents are made even worse as her former lover David relentlessly follows them around town.",
-		"rating": 2.4,
-		"audienceRating": 4.2,
-		"viewCount": 1,
-		"lastViewedAt": 1705450787,
-		"year": 1987,
-		"tagline": "A date with her is every man's dream come true. And with dreams like her - who needs nightmares?",
-		"thumb": "/library/metadata/10368/thumb/1711898756",
-		"duration": 5713739,
-		"originallyAvailableAt": "1987-03-27",
-		"addedAt": 1677432445,
-		"updatedAt": 1711898756,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23170,
-				"duration": 5713739,
-				"bitrate": 13796,
-				"width": 1280,
-				"height": 536,
-				"aspectRatio": 2.35,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23285,
-						"key": "/library/parts/23285/1449641385/file.mkv",
-						"duration": 5713739,
-						"file": "/volume1/Movies/Blind Date (1987).mkv",
-						"size": 9852998416,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Blake Edwards"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Dale Launer"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kim Basinger"
-			},
-			{
-				"tag": "Bruce Willis"
-			},
-			{
-				"tag": "John Larroquette"
-			}
-		]
-	},
-	{
-		"ratingKey": "10369",
-		"key": "/library/metadata/10369",
-		"guid": "plex://movie/5d776d98f617c9002018a386",
-		"studio": "Summit Entertainment",
-		"type": "movie",
-		"title": "Blindspotting",
-		"contentRating": "R",
-		"summary": "Collin must make it through his final three days of probation for a chance at a new beginning. He and his troublemaking childhood best friend, Miles, work as movers, and when Collin witnesses a police shooting, the two men’s friendship is tested as they grapple with identity and their changed realities in the rapidly-gentrifying neighborhood they grew up in.",
-		"rating": 9.4,
-		"audienceRating": 8.7,
-		"viewCount": 1,
-		"skipCount": 1,
-		"lastViewedAt": 1700703695,
-		"year": 2018,
-		"tagline": "Change the way you see.",
-		"thumb": "/library/metadata/10369/thumb/1711898757",
-		"duration": 5725762,
-		"originallyAvailableAt": "2018-07-26",
-		"addedAt": 1678717664,
-		"updatedAt": 1711898757,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23171,
-				"duration": 5725762,
-				"bitrate": 40949,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "truehd",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23286,
-						"key": "/library/parts/23286/1678592781/file.mkv",
-						"duration": 5725762,
-						"file": "/volume1/Movies/Blindspotting (2018).mkv",
-						"size": 29308216465,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Carlos López Estrada"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Daveed Diggs"
-			},
-			{
-				"tag": "Rafael Casal"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Daveed Diggs"
-			},
-			{
-				"tag": "Rafael Casal"
-			},
-			{
-				"tag": "Janina Gavankar"
-			}
-		]
-	},
-	{
-		"ratingKey": "8827",
-		"key": "/library/metadata/8827",
-		"guid": "plex://movie/5d7770a5fb0d55001f5f59bb",
-		"studio": "Warner Bros. Pictures",
-		"type": "movie",
-		"title": "Blue Beetle",
-		"contentRating": "PG-13",
-		"summary": "An alien scarab chooses Jaime Reyes to be its symbiotic host, bestowing the recent college graduate with a suit of armor that's capable of extraordinary powers, forever changing his destiny as he becomes the superhero known as Blue Beetle.",
-		"rating": 7.8,
-		"audienceRating": 9.1,
-		"year": 2023,
-		"tagline": "Jaime Reyes is a superhero whether he likes it or not.",
-		"thumb": "/library/metadata/8827/thumb/1711898783",
-		"art": "/library/metadata/8827/art/1711898783",
-		"duration": 7689264,
-		"originallyAvailableAt": "2023-08-16",
-		"addedAt": 1699010870,
-		"updatedAt": 1711898783,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 19569,
-				"duration": 7689264,
-				"bitrate": 8042,
-				"width": 1920,
-				"height": 802,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19644,
-						"key": "/library/parts/19644/1695515889/file.mkv",
-						"duration": 7689264,
-						"file": "/volume3/MoviesB/Movis/Blue Beetle (2023).mkv",
-						"size": 7731867733,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ángel Manuel Soto"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Gareth Dunnet-Alcocer"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Xolo Mariduena"
-			},
-			{
-				"tag": "Bruna Marquezine"
-			},
-			{
-				"tag": "Susan Sarandon"
-			}
-		]
-	},
-	{
-		"ratingKey": "8445",
-		"key": "/library/metadata/8445",
-		"guid": "plex://movie/5d7768387e9a3c0020c6d5e7",
-		"studio": "Scott Free Productions",
-		"type": "movie",
-		"title": "Body of Lies",
-		"contentRating": "R",
-		"summary": "A CIA agent on the ground in Jordan hunts down a powerful terrorist leader while being caught between the unclear intentions of his American supervisors and Jordan Intelligence.",
-		"rating": 5.5,
-		"audienceRating": 6.2,
-		"viewOffset": 6352201,
-		"lastViewedAt": 1689123822,
-		"year": 2008,
-		"tagline": "Trust no one. Deceive everyone.",
-		"thumb": "/library/metadata/8445/thumb/1711898783",
-		"art": "/library/metadata/8445/art/1711898783",
-		"duration": 7699274,
-		"originallyAvailableAt": "2008-10-09",
-		"addedAt": 1687727405,
-		"updatedAt": 1711898783,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 18533,
-				"duration": 7699274,
-				"bitrate": 35507,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 18606,
-						"key": "/library/parts/18606/1687660668/file.m2ts",
-						"duration": 7699274,
-						"file": "/volume3/MoviesB/Movis/Body of Lies (2008).m2ts",
-						"size": 36725483520,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ridley Scott"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "William Monahan"
-			},
-			{
-				"tag": "David Ignatius"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Leonardo DiCaprio"
-			},
-			{
-				"tag": "Russell Crowe"
-			},
-			{
-				"tag": "Mark Strong"
-			}
-		]
-	},
-	{
-		"ratingKey": "6257",
-		"key": "/library/metadata/6257",
-		"guid": "plex://movie/5d7768452ec6b5001f6beaa6",
-		"studio": "Alcon Entertainment",
-		"type": "movie",
-		"title": "The Book of Eli",
-		"titleSort": "Book of Eli",
-		"contentRating": "R",
-		"summary": "A drifter fights his way across a ravaged, post-apocalyptic America while protecting a sacred book that holds the secrets to humanity's salvation.",
-		"rating": 4.7,
-		"audienceRating": 6.4,
-		"viewOffset": 869994,
-		"skipCount": 2,
-		"lastViewedAt": 1700347902,
-		"year": 2010,
-		"tagline": "Some will kill to have it. He will kill to protect it.",
-		"thumb": "/library/metadata/6257/thumb/1711898783",
-		"art": "/library/metadata/6257/art/1711898783",
-		"duration": 7062112,
-		"originallyAvailableAt": "2010-01-14",
-		"addedAt": 1680033832,
-		"updatedAt": 1711898783,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13525,
-				"duration": 7062112,
-				"bitrate": 38653,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 14984,
-						"key": "/library/parts/14984/1680040465/file.mkv",
-						"duration": 7062112,
-						"file": "/volume1/Movies/The Book of Eli (2010).mkv",
-						"size": 34121876908,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Albert Hughes"
-			},
-			{
-				"tag": "Allen Hughes"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Gary Whitta"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Denzel Washington"
-			},
-			{
-				"tag": "Gary Oldman"
-			},
-			{
-				"tag": "Mila Kunis"
-			}
-		]
-	},
-	{
-		"ratingKey": "7985",
-		"key": "/library/metadata/7985",
-		"guid": "plex://movie/5d776826961905001eb90fd1",
-		"studio": "20th Century Fox",
-		"type": "movie",
-		"title": "Borat",
-		"originalTitle": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
-		"contentRating": "R",
-		"summary": "Kazakh TV talking head Borat is dispatched to the United States to report on the greatest country in the world. With a documentary crew in tow, Borat becomes more interested in locating and marrying Pamela Anderson.",
-		"rating": 9.1,
-		"audienceRating": 7.9,
-		"viewOffset": 434000,
-		"lastViewedAt": 1684886596,
-		"year": 2006,
-		"tagline": "Come to Kazakhstan, it's nice!",
-		"thumb": "/library/metadata/7985/thumb/1711898783",
-		"art": "/library/metadata/7985/art/1711898783",
-		"duration": 5028096,
-		"originallyAvailableAt": "2006-11-01",
-		"addedAt": 1684062335,
-		"updatedAt": 1711898783,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 17441,
-				"duration": 5028096,
-				"bitrate": 24364,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17510,
-						"key": "/library/parts/17510/1684021627/file.m2ts",
-						"duration": 5028096,
-						"file": "/volume3/MoviesB/Movis/Borat (2006).m2ts",
-						"size": 16221210624,
-						"audioProfile": "dts",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Larry Charles"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Sacha Baron Cohen"
-			},
-			{
-				"tag": "Anthony Hines"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sacha Baron Cohen"
-			},
-			{
-				"tag": "Ken Davitian"
-			},
-			{
-				"tag": "Luenell"
-			}
-		]
-	},
-	{
-		"ratingKey": "7986",
-		"key": "/library/metadata/7986",
-		"guid": "plex://movie/5f590e23449ca9003fd2a392",
-		"studio": "Four by Two",
-		"type": "movie",
-		"title": "Borat Subsequent Moviefilm",
-		"originalTitle": "Borat Subsequent Moviefilm: Delivery of Prodigious Bribe to American Regime for Make Benefit Once Glorious Nation of Kazakhstan",
-		"contentRating": "R",
-		"summary": "14 years after making a film about his journey across the USA, Borat risks life and limb when he returns to the United States with his young daughter, and reveals more about the culture, the COVID-19 pandemic, and the political elections.",
-		"rating": 8.5,
-		"audienceRating": 6.2,
-		"year": 2020,
-		"tagline": "Delivery of prodigious bribe to American regime for make benefit once glorious nation of Kazakhstan.",
-		"thumb": "/library/metadata/7986/thumb/1711898784",
-		"art": "/library/metadata/7986/art/1711898784",
-		"duration": 5764704,
-		"originallyAvailableAt": "2020-10-23",
-		"addedAt": 1684062336,
-		"updatedAt": 1711898784,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 17442,
-				"duration": 5764704,
-				"bitrate": 16446,
-				"width": 3840,
-				"height": 2160,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "hevc",
-				"videoResolution": "4k",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main 10",
-				"Part": [
-					{
-						"id": 17511,
-						"key": "/library/parts/17511/1684016884/file.mkv",
-						"duration": 5764704,
-						"file": "/volume3/MoviesB/Movis/Borat Subsequent Moviefilm (2020).mkv",
-						"size": 11853799002,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "main 10"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jason Woliner"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Sacha Baron Cohen"
-			},
-			{
-				"tag": "Anthony Hines"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sacha Baron Cohen"
-			},
-			{
-				"tag": "Maria Bakalova"
-			},
-			{
-				"tag": "Tom Hanks"
-			}
-		]
-	},
-	{
-		"ratingKey": "9794",
-		"key": "/library/metadata/9794",
-		"guid": "plex://movie/5d776833999c64001ec2ec8a",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Bordello of Blood",
-		"contentRating": "R",
-		"summary": "The old bag of bones 'Cryptkeeper' returns for his second full length feature flick about a funeral home that's a front for a whorehouse run by vampires.",
-		"rating": 1.4,
-		"audienceRating": 3.1,
-		"year": 1996,
-		"tagline": "Evil bites!",
-		"thumb": "/library/metadata/9794/thumb/1711898570",
-		"duration": 5190048,
-		"originallyAvailableAt": "1996-08-16",
-		"addedAt": 1710700310,
-		"updatedAt": 1711898570,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21979,
-				"duration": 5190048,
-				"bitrate": 45887,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22080,
-						"key": "/library/parts/22080/1703360095/file.m2ts",
-						"duration": 5190048,
-						"file": "/volume3/MoviesB/Movis/Bordello of Blood (1996).m2ts",
-						"size": 29769639936,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Gilbert Adler"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Robert Zemeckis"
-			},
-			{
-				"tag": "Bob Gale"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Dennis Miller"
-			},
-			{
-				"tag": "Erika Eleniak"
-			},
-			{
-				"tag": "Angie Everhart"
-			}
-		]
-	},
-	{
-		"ratingKey": "6870",
-		"key": "/library/metadata/6870",
-		"guid": "plex://movie/5d7768881999bc0020dc8370",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "The Bourne Legacy",
-		"titleSort": "Bourne Legacy",
-		"contentRating": "PG-13",
-		"summary": "An expansion of the universe from Robert Ludlum's novels, centered on a new hero whose stakes have been triggered by the events of the previous three films.",
-		"rating": 5.6,
-		"audienceRating": 5.8,
-		"viewCount": 4,
-		"lastViewedAt": 1707086909,
-		"year": 2012,
-		"tagline": "There Was Never Just One",
-		"thumb": "/library/metadata/6870/thumb/1710700590",
-		"art": "/library/metadata/6870/art/1710700590",
-		"duration": 8102304,
-		"originallyAvailableAt": "2012-08-08",
-		"addedAt": 1680346475,
-		"updatedAt": 1710700590,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 14921,
-				"duration": 8102304,
-				"bitrate": 40077,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 14985,
-						"key": "/library/parts/14985/1680522370/file.mkv",
-						"duration": 8102304,
-						"file": "/volume1/Movies/The Bourne Legacy (2012).mkv",
-						"size": 40589226184,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Tony Gilroy"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Tony Gilroy"
-			},
-			{
-				"tag": "Robert Ludlum"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jeremy Renner"
-			},
-			{
-				"tag": "Rachel Weisz"
-			},
-			{
-				"tag": "Edward Norton"
-			}
-		]
-	},
-	{
-		"ratingKey": "8143",
-		"key": "/library/metadata/8143",
-		"guid": "plex://movie/5d7769e923d5a3001f4fe200",
-		"studio": "Laika",
-		"type": "movie",
-		"title": "The Boxtrolls",
-		"titleSort": "Boxtrolls",
-		"contentRating": "PG",
-		"summary": "A young orphaned boy raised by underground cave-dwelling trash collectors tries to save his friends from an evil exterminator.",
-		"rating": 7.8,
-		"audienceRating": 6.3,
-		"year": 2014,
-		"tagline": "When troubles strikes friends stack together",
-		"thumb": "/library/metadata/8143/thumb/1711898784",
-		"art": "/library/metadata/8143/art/1711898784",
-		"duration": 5769763,
-		"originallyAvailableAt": "2014-09-10",
-		"addedAt": 1684062348,
-		"updatedAt": 1711898784,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 17712,
-				"duration": 5769763,
-				"bitrate": 22141,
-				"width": 1920,
-				"height": 2160,
-				"aspectRatio": 1.33,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "2.7k",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17781,
-						"key": "/library/parts/17781/1683355628/file.mkv",
-						"duration": 5769763,
-						"file": "/volume3/MoviesB/Movis/The Boxtrolls (2014) 3D.mkv",
-						"size": 15970808401,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 17714,
-				"duration": 5769760,
-				"bitrate": 7382,
-				"width": 1280,
-				"height": 720,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17783,
-						"key": "/library/parts/17783/1683332338/file.mkv",
-						"duration": 5769760,
-						"file": "/volume3/MoviesB/Movis/The Boxtrolls (2014).mkv",
-						"size": 5325879176,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Adventure"
-			},
-			{
-				"tag": "Animation"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Anthony Stacchi"
-			},
-			{
-				"tag": "Graham Annable"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Anthony Stacchi"
-			},
-			{
-				"tag": "Irena Brignull"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ben Kingsley"
-			},
-			{
-				"tag": "Isaac Hempstead-Wright"
-			},
-			{
-				"tag": "Elle Fanning"
-			}
-		]
-	},
-	{
-		"ratingKey": "7042",
-		"key": "/library/metadata/7042",
-		"guid": "plex://movie/5d77683b54f42c001f8c5791",
-		"studio": "BBC Film",
-		"type": "movie",
-		"title": "The Boy in the Striped Pajamas",
-		"titleSort": "Boy in the Striped Pajamas",
-		"contentRating": "PG-13",
-		"summary": "Through the innocent eyes of Bruno, the eight-year-old son of the commandant at a German concentration camp, a forbidden friendship with a Jewish boy on the other side of the camp fence has startling and unexpected consequences.",
-		"rating": 6.5,
-		"audienceRating": 8.5,
-		"year": 2008,
-		"tagline": "Lines may divide us, but hope will unite us.",
-		"thumb": "/library/metadata/7042/thumb/1711898784",
-		"art": "/library/metadata/7042/art/1711898784",
-		"duration": 5669088,
-		"originallyAvailableAt": "2008-09-12",
-		"addedAt": 1680449350,
-		"updatedAt": 1711898784,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15286,
-				"duration": 5669088,
-				"bitrate": 24386,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22519,
-						"key": "/library/parts/22519/1680447966/file.mkv",
-						"duration": 5669088,
-						"file": "/volume1/Movies/The Boy in the Striped Pajamas (2008).mkv",
-						"size": 17280874015,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "War"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Mark Herman"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Mark Herman"
-			},
-			{
-				"tag": "John Boyne"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Asa Butterfield"
-			},
-			{
-				"tag": "Jack Scanlon"
-			},
-			{
-				"tag": "Vera Farmiga"
-			}
-		]
-	},
-	{
-		"ratingKey": "7479",
-		"key": "/library/metadata/7479",
-		"guid": "plex://movie/5d7768d97a53e9001e6da6a6",
-		"studio": "Detour Filmproduction",
-		"type": "movie",
-		"title": "Boyhood",
-		"contentRating": "R",
-		"summary": "The film tells a story of a divorced couple trying to raise their young son. The story follows the boy for twelve years, from first grade at age 6 through 12th grade at age 17-18, and examines his relationship with his parents as he grows.",
-		"rating": 9.7,
-		"audienceRating": 8,
-		"viewOffset": 709647,
-		"lastViewedAt": 1681082729,
-		"year": 2014,
-		"tagline": "12 years in the making.",
-		"thumb": "/library/metadata/7479/thumb/1711898784",
-		"art": "/library/metadata/7479/art/1711898784",
-		"duration": 9927967,
-		"originallyAvailableAt": "2014-06-05",
-		"addedAt": 1680956619,
-		"updatedAt": 1711898784,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 16295,
-				"duration": 9927967,
-				"bitrate": 38096,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16359,
-						"key": "/library/parts/16359/1681168086/file.mkv",
-						"duration": 9927967,
-						"file": "/volume1/Movies/Boyhood (2014).mkv",
-						"size": 47283495562,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Richard Linklater"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Richard Linklater"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ellar Coltrane"
-			},
-			{
-				"tag": "Patricia Arquette"
-			},
-			{
-				"tag": "Ethan Hawke"
-			}
-		]
-	},
-	{
-		"ratingKey": "7480",
-		"key": "/library/metadata/7480",
-		"guid": "plex://movie/5d776824eb5d26001f1dd005",
-		"studio": "Icon Entertainment International",
-		"type": "movie",
-		"title": "Braveheart",
-		"contentRating": "R",
-		"summary": "Enraged at the slaughter of Murron, his new bride and childhood love, Scottish warrior William Wallace slays a platoon of the local English lord's soldiers. This leads the village to revolt and, eventually, the entire country to rise up against English rule.",
-		"rating": 7.6,
-		"audienceRating": 8.5,
-		"year": 1995,
-		"tagline": "Every man dies, not every man truly lives.",
-		"thumb": "/library/metadata/7480/thumb/1711898784",
-		"art": "/library/metadata/7480/art/1711898784",
-		"duration": 10677845,
-		"originallyAvailableAt": "1995-05-24",
-		"addedAt": 1680956620,
-		"updatedAt": 1711898784,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 16296,
-				"duration": 10677845,
-				"bitrate": 31965,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16360,
-						"key": "/library/parts/16360/1680927176/file.m2ts",
-						"duration": 10677845,
-						"file": "/volume1/Movies/Braveheart (1995).m2ts",
-						"size": 46363680768,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Mel Gibson"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Randall Wallace"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mel Gibson"
-			},
-			{
-				"tag": "Catherine McCormack"
-			},
-			{
-				"tag": "Sophie Marceau"
-			}
-		]
-	},
-	{
-		"ratingKey": "9296",
-		"key": "/library/metadata/9296",
-		"guid": "plex://movie/6042035f1b8c44002dc4b2c9",
-		"studio": "Loose Cannon Pictures",
-		"type": "movie",
-		"title": "Breakwater",
-		"contentRating": "R",
-		"summary": "A young ex-con risks his newfound freedom to track down the estranged daughter of a fellow inmate, and unknowingly brings a devil from her past straight to her doorstep.",
-		"rating": 3.3,
-		"audienceRating": 5,
-		"year": 2023,
-		"tagline": "The deepest secrets are the last to rise.",
-		"thumb": "/library/metadata/9296/thumb/1711898785",
-		"art": "/library/metadata/9296/art/1711898785",
-		"duration": 5830944,
-		"originallyAvailableAt": "2023-12-22",
-		"addedAt": 1704597975,
-		"updatedAt": 1711898785,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 20704,
-				"duration": 5830944,
-				"bitrate": 3002,
-				"width": 1024,
-				"height": 426,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "576",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21029,
-						"key": "/library/parts/21029/1703802394/file.mkv",
-						"duration": 5830944,
-						"file": "/volume3/MoviesB/Movis/Breakwater (2023).mkv",
-						"size": 2189927909,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Thriller"
-			},
-			{
-				"tag": "Crime"
-			}
-		],
-		"Director": [
-			{
-				"tag": "James Rowe"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "James Rowe"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Dermot Mulroney"
-			},
-			{
-				"tag": "Darren Mann"
-			},
-			{
-				"tag": "Alyssa Goss"
-			}
-		]
-	},
-	{
-		"ratingKey": "10370",
-		"key": "/library/metadata/10370",
-		"guid": "plex://movie/5d776b2cad5437001f796262",
-		"studio": "TSG Entertainment",
-		"type": "movie",
-		"title": "Bridge of Spies",
-		"contentRating": "PG-13",
-		"summary": "During the Cold War, an American lawyer is recruited to defend an arrested Soviet spy in court, and then help the CIA facilitate an exchange of the spy for the Soviet captured American U2 spy plane pilot, Francis Gary Powers.",
-		"rating": 9.1,
-		"audienceRating": 8.7,
-		"viewOffset": 2583916,
-		"lastViewedAt": 1679879106,
-		"year": 2015,
-		"tagline": "In the shadow of war, one man showed the world what we stood for.",
-		"thumb": "/library/metadata/10370/thumb/1711898757",
-		"duration": 8479680,
-		"originallyAvailableAt": "2015-10-14",
-		"addedAt": 1589865629,
-		"updatedAt": 1711898757,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23172,
-				"duration": 8479680,
-				"bitrate": 17782,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23287,
-						"key": "/library/parts/23287/1589865629/file.mkv",
-						"duration": 8479680,
-						"file": "/volume1/Movies/Bridge of Spies (2015).mkv",
-						"size": 18848190789,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Thriller"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Steven Spielberg"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Joel Coen"
-			},
-			{
-				"tag": "Ethan Coen"
-			}
-		],
-		"Country": [
-			{
-				"tag": "India"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Tom Hanks"
-			},
-			{
-				"tag": "Mark Rylance"
-			},
-			{
-				"tag": "Amy Ryan"
-			}
-		]
-	},
-	{
-		"ratingKey": "9295",
-		"key": "/library/metadata/9295",
-		"guid": "plex://movie/5d7769c451dd69001fe1b5ed",
-		"studio": "Studioul Cinematografic Bucuresti",
-		"type": "movie",
-		"title": "Brigade Miscellaneous Steps In",
-		"originalTitle": "Brigada Diverse intră în acțiune",
-		"summary": "Follows the Communist Romanian Militia 'miscellaneous brigade' and the 'diverse' crimes that it solves.",
-		"audienceRating": 8.6,
-		"year": 1974,
-		"thumb": "/library/metadata/9295/thumb/1710700593",
-		"art": "/library/metadata/9295/art/1710700593",
-		"duration": 6015680,
-		"originallyAvailableAt": "1974-05-10",
-		"addedAt": 1704597975,
-		"updatedAt": 1710700593,
-		"audienceRatingImage": "imdb://image.rating",
-		"Media": [
-			{
-				"id": 20703,
-				"duration": 6015680,
-				"bitrate": 12348,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "PAL",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 20779,
-						"key": "/library/parts/20779/1705267541/file.mkv",
-						"duration": 6015680,
-						"file": "/volume3/MoviesB/Movis/Brigada Diverse intra in actiune (1970).mkv",
-						"size": 9287118178,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Mircea Drăgan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Nicolae Țic"
-			},
-			{
-				"tag": "Mircea Drăgan"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Romania"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Toma Caragiu"
-			},
-			{
-				"tag": "Sebastian Papaiani"
-			},
-			{
-				"tag": "Puiu Călinescu"
-			}
-		]
-	},
-	{
-		"ratingKey": "6170",
-		"key": "/library/metadata/6170",
-		"guid": "plex://movie/5d77705fad5437001f820468",
-		"studio": "Troll Court Entertainment",
-		"type": "movie",
-		"title": "Brightburn",
-		"contentRating": "R",
-		"summary": "What if a child from another world crash-landed on Earth, but instead of becoming a hero to mankind, he proved to be something far more sinister?",
-		"rating": 5.7,
-		"audienceRating": 6.7,
-		"viewOffset": 1823060,
-		"skipCount": 1,
-		"lastViewedAt": 1690075045,
-		"year": 2019,
-		"tagline": "Evil has found its superhero",
-		"thumb": "/library/metadata/6170/thumb/1711898785",
-		"art": "/library/metadata/6170/art/1711898785",
-		"duration": 5430464,
-		"originallyAvailableAt": "2019-05-09",
-		"addedAt": 1679863620,
-		"updatedAt": 1711898785,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13314,
-				"duration": 5430464,
-				"bitrate": 39552,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13373,
-						"key": "/library/parts/13373/1679850384/file.m2ts",
-						"duration": 5430464,
-						"file": "/volume1/Movies/Brightburn (2019).m2ts",
-						"size": 26847909888,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Science Fiction"
-			}
-		],
-		"Director": [
-			{
-				"tag": "David Yarovesky"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Brian Gunn"
-			},
-			{
-				"tag": "Mark Gunn"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jackson A. Dunn"
-			},
-			{
-				"tag": "Elizabeth Banks"
-			},
-			{
-				"tag": "David Denman"
-			}
-		]
-	},
-	{
-		"ratingKey": "9527",
-		"key": "/library/metadata/9527",
-		"guid": "plex://movie/5d776902fb0d55001f51f807",
-		"studio": "1984 Private Defense Contractors",
-		"type": "movie",
-		"title": "Broken City",
-		"contentRating": "R",
-		"summary": "In a broken city rife with injustice, ex-cop Billy Taggart seeks redemption and revenge after being double-crossed and then framed by its most powerful figure, the mayor. Billy's relentless pursuit of justice, matched only by his streetwise toughness, makes him an unstoppable force - and the mayor's worst nightmare.",
-		"rating": 2.7,
-		"audienceRating": 4,
-		"viewOffset": 4444015,
-		"lastViewedAt": 1679015763,
-		"year": 2013,
-		"tagline": "Proof Can Be a Powerful Weapon.",
-		"thumb": "/library/metadata/9527/thumb/1710700327",
-		"duration": 6521536,
-		"originallyAvailableAt": "2013-01-18",
-		"addedAt": 1679004055,
-		"updatedAt": 1710700327,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21314,
-				"duration": 6521536,
-				"bitrate": 42450,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21415,
-						"key": "/library/parts/21415/1678916045/file.mkv",
-						"duration": 6521536,
-						"file": "/volume1/Movies/Broken City (2013).mkv",
-						"size": 34611684476,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Allen Hughes"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Brian Tucker"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mark Wahlberg"
-			},
-			{
-				"tag": "Russell Crowe"
-			},
-			{
-				"tag": "Catherine Zeta-Jones"
-			}
-		]
-	},
-	{
-		"ratingKey": "6969",
-		"key": "/library/metadata/6969",
-		"guid": "plex://movie/5d776830999c64001ec2e4a1",
-		"studio": "Davis Films",
-		"type": "movie",
-		"title": "Brotherhood of the Wolf",
-		"originalTitle": "Le Pacte des loups",
-		"contentRating": "R",
-		"summary": "In 18th-century France, the Chevalier de Fronsac and his Native American friend Mani are sent to the Gevaudan province at the king's behest to investigate the killings of hundreds by a mysterious beast.",
-		"rating": 7.3,
-		"audienceRating": 7.8,
-		"viewOffset": 3726099,
-		"lastViewedAt": 1693012346,
-		"year": 2001,
-		"tagline": "The year is 1766... The hunt for a killer has begun.",
-		"thumb": "/library/metadata/6969/thumb/1710700593",
-		"art": "/library/metadata/6969/art/1710700593",
-		"duration": 9019970,
-		"originallyAvailableAt": "2001-01-31",
-		"addedAt": 1680449335,
-		"updatedAt": 1710700593,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15139,
-				"duration": 9019970,
-				"bitrate": 22143,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 15203,
-						"key": "/library/parts/15203/1680456924/file.mkv",
-						"duration": 9019970,
-						"file": "/volume1/Movies/Brotherhood of the Wolf (2001).mkv",
-						"size": 24965810116,
-						"container": "mkv",
-						"videoProfile": "advanced"
-					}
-				]
-			},
-			{
-				"id": 19940,
-				"duration": 8364042,
-				"bitrate": 35770,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 20015,
-						"key": "/library/parts/20015/1696890559/file.m2ts",
-						"duration": 8364042,
-						"file": "/volume3/MoviesB/Movis/Brotherhood of the Wolf (2001).m2ts",
-						"size": 39924652032,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Christophe Gans"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Christophe Gans"
-			},
-			{
-				"tag": "Stéphane Cabel"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Samuel Le Bihan"
-			},
-			{
-				"tag": "Vincent Cassel"
-			},
-			{
-				"tag": "Émilie Dequenne"
-			}
-		]
-	},
-	{
-		"ratingKey": "6040",
-		"key": "/library/metadata/6040",
-		"guid": "plex://movie/5d77682ef59e580021897cfe",
-		"studio": "Summit Entertainment",
-		"type": "movie",
-		"title": "The Brothers Grimm",
-		"titleSort": "Brothers Grimm",
-		"contentRating": "PG-13",
-		"summary": "Folklore collectors and con artists, Jake and Will Grimm, travel from village to village pretending to protect townsfolk from enchanted creatures and performing exorcisms. However, they are put to the test when they encounter a real magical curse in a haunted forest with real magical beings, requiring genuine courage.",
-		"rating": 3.8,
-		"audienceRating": 3.9,
-		"userRating": 10,
-		"lastRatedAt": 1681513349,
-		"year": 2005,
-		"tagline": "Eliminating Evil Since 1812.",
-		"thumb": "/library/metadata/6040/thumb/1710062056",
-		"art": "/library/metadata/6040/art/1710062056",
-		"duration": 7119459,
-		"originallyAvailableAt": "2005-08-26",
-		"addedAt": 1679783040,
-		"updatedAt": 1710062056,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 12976,
-				"duration": 7119459,
-				"bitrate": 60558,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13033,
-						"key": "/library/parts/13033/1679948468/file.mkv",
-						"duration": 7119459,
-						"file": "/volume1/Movies/The Brothers Grimm (2005).mkv",
-						"size": 53892690333,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Terry Gilliam"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Terry Gilliam"
-			},
-			{
-				"tag": "Ehren Kruger"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Czech Republic"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Matt Damon"
-			},
-			{
-				"tag": "Heath Ledger"
-			},
-			{
-				"tag": "Lena Headey"
-			}
-		]
-	},
-	{
-		"ratingKey": "9528",
-		"key": "/library/metadata/9528",
-		"guid": "plex://movie/5ef5ee195d76fa003a8c6342",
-		"studio": "87North Productions",
-		"type": "movie",
-		"title": "Bullet Train",
-		"contentRating": "R",
-		"summary": "Unlucky assassin Ladybug (Brad Pitt) is determined to do his job peacefully after one too many gigs has gone off the rails. Fate has other plans, however: Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe--all with connected, yet conflicting, objectives--on the world's fastest train. The end of the line is just the beginning in this non-stop thrill-ride through modern-day Japan.",
-		"rating": 5.4,
-		"audienceRating": 7.6,
-		"viewOffset": 259229,
-		"lastViewedAt": 1677951137,
-		"year": 2022,
-		"tagline": "The end of the line is just the beginning.",
-		"thumb": "/library/metadata/9528/thumb/1711898786",
-		"duration": 7591808,
-		"originallyAvailableAt": "2022-08-03",
-		"addedAt": 1677447015,
-		"updatedAt": 1711898786,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21315,
-				"duration": 7591808,
-				"bitrate": 33946,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21416,
-						"key": "/library/parts/21416/1675908231/file.m2ts",
-						"duration": 7591808,
-						"file": "/volume1/Movies/Bullet Train (2022).m2ts",
-						"size": 34582536192,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "David Leitch"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Kotaro Isaka"
-			},
-			{
-				"tag": "Zak Olkewicz"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Brad Pitt"
-			},
-			{
-				"tag": "Joey King"
-			},
-			{
-				"tag": "Aaron Taylor-Johnson"
-			}
-		]
-	},
-	{
-		"ratingKey": "8893",
-		"key": "/library/metadata/8893",
-		"guid": "plex://movie/5fad5dc41a63c6002ded3715",
-		"studio": "Double Nickel Entertainment",
-		"type": "movie",
-		"title": "The Burial",
-		"titleSort": "Burial",
-		"contentRating": "R",
-		"summary": "Inspired by true events, when a handshake deal goes sour, funeral home owner Jeremiah O'Keefe (Academy Award® winner Tommy Lee Jones) enlists charismatic, smooth-talking attorney Willie E. Gary (Academy Award® winner Jamie Foxx) to save his family business. Tempers flare and laughter ensues as the unlikely pair bond while exposing corporate corruption and racial injustice in this inspirational, triumphant story.",
-		"rating": 9.2,
-		"audienceRating": 8.2,
-		"year": 2023,
-		"tagline": "Never settle.",
-		"thumb": "/library/metadata/8893/thumb/1711898787",
-		"art": "/library/metadata/8893/art/1711898787",
-		"duration": 7633504,
-		"originallyAvailableAt": "2023-09-13",
-		"addedAt": 1699010877,
-		"updatedAt": 1711898787,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 19747,
-				"duration": 7633504,
-				"bitrate": 10225,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19822,
-						"key": "/library/parts/19822/1697587359/file.mkv",
-						"duration": 7633504,
-						"file": "/volume3/MoviesB/Movis/The Burial (2023).mkv",
-						"size": 9759554624,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Margaret Betts"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Doug Wright"
-			},
-			{
-				"tag": "Margaret Betts"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Tommy Lee Jones"
-			},
-			{
-				"tag": "Jamie Foxx"
-			},
-			{
-				"tag": "Jurnee Smollett"
-			}
-		]
-	},
-	{
-		"ratingKey": "9382",
-		"key": "/library/metadata/9382",
-		"guid": "plex://movie/60d5962c5bab4c002cff56dd",
-		"studio": "SF Studios",
-		"type": "movie",
-		"title": "Burn All My Letters",
-		"originalTitle": "Bränn alla mina brev",
-		"summary": "After an argument with his wife, author Alex Schulman realizes he must deal with his anger. It is an anger that has been passed down through the generations, and all the family's conflicts and vendettas seem to start with one and the same person, grandfather Sven Stolpe. In \"Burn all my letters\" we follow Karin and Sven Stolpe, and the short affair Karin had with Olof Lagercrantz in the early 1930s, which created ripples over the decades.",
-		"audienceRating": 6.2,
-		"year": 2022,
-		"thumb": "/library/metadata/9382/thumb/1711898787",
-		"art": "/library/metadata/9382/art/1711898787",
-		"duration": 7174916,
-		"originallyAvailableAt": "2022-09-23",
-		"addedAt": 1710700294,
-		"updatedAt": 1711898787,
-		"audienceRatingImage": "imdb://image.rating",
-		"chapterSource": "media",
-		"Media": [
-			{
-				"id": 20951,
-				"duration": 7174916,
-				"bitrate": 25630,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21030,
-						"key": "/library/parts/21030/1710081542/file.mkv",
-						"duration": 7174916,
-						"file": "/volume3/MoviesB/Movis/Burn All My Letters (2023).mkv",
-						"size": 22954027562,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Björn Runge"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Alex Schulman"
-			},
-			{
-				"tag": "Veronica Zacco"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Sweden"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Asta Kamma August"
-			},
-			{
-				"tag": "Bill Skarsgård"
-			},
-			{
-				"tag": "Gustav Lindh"
-			}
-		]
-	},
-	{
-		"ratingKey": "7352",
-		"key": "/library/metadata/7352",
-		"guid": "plex://movie/5d77684a85719b001f3a77d2",
-		"studio": "Lionsgate",
-		"type": "movie",
-		"title": "The Cabin in the Woods",
-		"titleSort": "Cabin in the Woods",
-		"contentRating": "R",
-		"summary": "Five college friends head out to a remote cabin for a getaway, but things don't go as planned when they start getting killed. They soon discover that there is more to the cabin than it seems.",
-		"rating": 9.2,
-		"audienceRating": 7.4,
-		"year": 2012,
-		"tagline": "You think you know the story.",
-		"thumb": "/library/metadata/7352/thumb/1711898787",
-		"art": "/library/metadata/7352/art/1711898787",
-		"duration": 5705599,
-		"originallyAvailableAt": "2012-04-12",
-		"addedAt": 1680700864,
-		"updatedAt": 1711898787,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 16014,
-				"duration": 5705599,
-				"bitrate": 69162,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16078,
-						"key": "/library/parts/16078/1680642333/file.mkv",
-						"duration": 5705599,
-						"file": "/volume1/Movies/The Cabin in the Woods (2011).mkv",
-						"size": 49340431729,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Drew Goddard"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Joss Whedon"
-			},
-			{
-				"tag": "Drew Goddard"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kristen Connolly"
-			},
-			{
-				"tag": "Fran Kranz"
-			},
-			{
-				"tag": "Chris Hemsworth"
-			}
-		]
-	},
-	{
-		"ratingKey": "8894",
-		"key": "/library/metadata/8894",
-		"guid": "plex://movie/639a1d0fbc2aa252e88871ed",
-		"studio": "Loveless",
-		"type": "movie",
-		"title": "The Caine Mutiny Court-Martial",
-		"titleSort": "Caine Mutiny Court-Martial",
-		"contentRating": "PG-13",
-		"summary": "Follows a naval officer who stands trial for mutiny after taking command from a ship captain he felt was acting in an unstable way, putting both the ship and its crew in danger.",
-		"rating": 9.4,
-		"audienceRating": 7.6,
-		"year": 2023,
-		"tagline": "Honor and the truth are about to be judged.",
-		"thumb": "/library/metadata/8894/thumb/1711900750",
-		"art": "/library/metadata/8894/art/1711900750",
-		"duration": 6521664,
-		"originallyAvailableAt": "2023-10-06",
-		"addedAt": 1699010877,
-		"updatedAt": 1711900750,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 19748,
-				"duration": 6521664,
-				"bitrate": 9338,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19823,
-						"key": "/library/parts/19823/1697586411/file.mkv",
-						"duration": 6521664,
-						"file": "/volume3/MoviesB/Movis/The Caine Mutiny Court-Martial (2023).mkv",
-						"size": 7614066228,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "War"
-			}
-		],
-		"Director": [
-			{
-				"tag": "William Friedkin"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "William Friedkin"
-			},
-			{
-				"tag": "Herman Wouk"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kiefer Sutherland"
-			},
-			{
-				"tag": "Jason Clarke"
-			},
-			{
-				"tag": "Jake Lacy"
-			}
-		]
-	},
-	{
-		"ratingKey": "7438",
-		"key": "/library/metadata/7438",
-		"guid": "plex://movie/5d7770407a53e9001e79e5b9",
-		"studio": "Boo Pictures",
-		"type": "movie",
-		"title": "Capernaum",
-		"originalTitle": "کفرناحوم",
-		"contentRating": "R",
-		"summary": "Zain, a 12-year-old boy scrambling to survive on the streets of Beirut, sues his parents for having brought him into such an unjust world, where being a refugee with no documents means that your rights can easily be denied.",
-		"rating": 9,
-		"audienceRating": 9.3,
-		"year": 2018,
-		"tagline": "It takes courage to hope.",
-		"thumb": "/library/metadata/7438/thumb/1711898787",
-		"art": "/library/metadata/7438/art/1711898787",
-		"duration": 7588960,
-		"originallyAvailableAt": "2018-09-20",
-		"addedAt": 1680883932,
-		"updatedAt": 1711898787,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 16192,
-				"duration": 7588960,
-				"bitrate": 35777,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16256,
-						"key": "/library/parts/16256/1680873929/file.mkv",
-						"duration": 7588960,
-						"file": "/volume1/Movies/Capernaum (2018).mkv",
-						"size": 33942493755,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Nadine Labaki"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Nadine Labaki"
-			},
-			{
-				"tag": "Jihad Hojeily"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Cyprus"
-			},
-			{
-				"tag": "France"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Zain Al Rafeea"
-			},
-			{
-				"tag": "Yordanos Shifera"
-			},
-			{
-				"tag": "Boluwatife Treasure Bankole"
-			}
-		]
-	},
-	{
-		"ratingKey": "10330",
-		"key": "/library/metadata/10330",
-		"guid": "plex://movie/5d776adcfb0d55001f553b34",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Captain America: Civil War",
-		"contentRating": "PG-13",
-		"summary": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
-		"rating": 9.1,
-		"audienceRating": 8.9,
-		"year": 2016,
-		"tagline": "United we stand. Divided we fall.",
-		"thumb": "/library/metadata/10330/thumb/1710700595",
-		"duration": 8861088,
-		"originallyAvailableAt": "2016-04-27",
-		"addedAt": 1482700042,
-		"updatedAt": 1710700595,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23088,
-				"duration": 8861088,
-				"bitrate": 10219,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23203,
-						"key": "/library/parts/23203/1482700042/file.mkv",
-						"duration": 8861088,
-						"file": "/volume1/Movies/Captain America Civil War (2016) 3D.mkv",
-						"size": 11319400147,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Anthony Russo"
-			},
-			{
-				"tag": "Joe Russo"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Christopher Markus"
-			},
-			{
-				"tag": "Stephen McFeely"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Chris Evans"
-			},
-			{
-				"tag": "Robert Downey Jr."
-			},
-			{
-				"tag": "Scarlett Johansson"
-			}
-		]
-	},
-	{
-		"ratingKey": "935",
-		"key": "/library/metadata/935",
-		"guid": "plex://movie/5d77682a103a2d001f564ffb",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Captain America: The First Avenger",
-		"contentRating": "PG-13",
-		"summary": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\". But being Captain America comes at a price as he attempts to take down a warmonger and a terrorist organization.",
-		"rating": 8,
-		"audienceRating": 7.5,
-		"year": 2011,
-		"tagline": "When patriots become heroes",
-		"thumb": "/library/metadata/935/thumb/1711898753",
-		"art": "/library/metadata/935/art/1711898753",
-		"duration": 7451616,
-		"originallyAvailableAt": "2011-07-22",
-		"addedAt": 1571097450,
-		"updatedAt": 1711898753,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23089,
-				"duration": 7451616,
-				"bitrate": 20217,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23204,
-						"key": "/library/parts/23204/1571097450/file.mkv",
-						"duration": 7451616,
-						"file": "/volume1/Movies/Captain America The First Avenger (2011) 3D.mkv",
-						"size": 18831617414,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 23090,
-				"duration": 7451616,
-				"bitrate": 8243,
-				"width": 1280,
-				"height": 544,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23205,
-						"key": "/library/parts/23205/1489362110/file.mkv",
-						"duration": 7451616,
-						"file": "/volume1/Movies/Captain America The First Avenger (2011).mkv",
-						"size": 7677619676,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Joe Johnston"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Christopher Markus"
-			},
-			{
-				"tag": "Stephen McFeely"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Chris Evans"
-			},
-			{
-				"tag": "Tommy Lee Jones"
-			},
-			{
-				"tag": "Hugo Weaving"
-			}
-		]
-	},
-	{
-		"ratingKey": "10366",
-		"key": "/library/metadata/10366",
-		"guid": "plex://movie/5d77690896b655001fdc8aca",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Captain America: The Winter Soldier",
-		"contentRating": "PG-13",
-		"summary": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
-		"rating": 9,
-		"audienceRating": 9.2,
-		"year": 2014,
-		"tagline": "In heroes we trust.",
-		"thumb": "/library/metadata/10366/thumb/1711898755",
-		"duration": 8154230,
-		"originallyAvailableAt": "2014-03-26",
-		"addedAt": 1482672427,
-		"updatedAt": 1711898755,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23168,
-				"duration": 8154230,
-				"bitrate": 9406,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23283,
-						"key": "/library/parts/23283/1482672427/file.mkv",
-						"duration": 8154230,
-						"file": "/volume1/Movies/Captain America The Winter Soldier (2014) 3D.mkv",
-						"size": 9587113068,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Anthony Russo"
-			},
-			{
-				"tag": "Joe Russo"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Christopher Markus"
-			},
-			{
-				"tag": "Stephen McFeely"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Chris Evans"
-			},
-			{
-				"tag": "Scarlett Johansson"
-			},
-			{
-				"tag": "Sebastian Stan"
-			}
-		]
-	},
-	{
-		"ratingKey": "10367",
-		"key": "/library/metadata/10367",
-		"guid": "plex://movie/5d9f3c7c9dd5f4001e84c1a7",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Captain Marvel",
-		"contentRating": "PG-13",
-		"summary": "After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls, Danvers begins to discover there's more to her past. With help from S.H.I.E.L.D. agent Nick Fury, they set out to unravel the truth.",
-		"rating": 7.9,
-		"audienceRating": 4.5,
-		"year": 2019,
-		"tagline": "Higher. Further. Faster.",
-		"thumb": "/library/metadata/10367/thumb/1711898755",
-		"duration": 7422332,
-		"originallyAvailableAt": "2019-03-06",
-		"addedAt": 1568507888,
-		"updatedAt": 1711898755,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23169,
-				"duration": 7422332,
-				"bitrate": 10923,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23284,
-						"key": "/library/parts/23284/1568507888/file.mkv",
-						"duration": 7422332,
-						"file": "/volume1/Movies/Captain Marvel (2019) 3D.mkv",
-						"size": 10133903295,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ryan Fleck"
-			},
-			{
-				"tag": "Anna Boden"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jack Kirby"
-			},
-			{
-				"tag": "Joe Simon"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Brie Larson"
-			},
-			{
-				"tag": "Samuel L. Jackson"
-			},
-			{
-				"tag": "Ben Mendelsohn"
-			}
-		]
-	},
-	{
-		"ratingKey": "8266",
-		"key": "/library/metadata/8266",
-		"guid": "plex://movie/5eb8f22581daba0040d46c7e",
-		"studio": "Goldenart Production",
-		"type": "movie",
-		"title": "Caravaggio's Shadow",
-		"originalTitle": "L'ombra di Caravaggio",
-		"summary": "The Catholic Church secretly investigates Caravaggio as the Pope weighs whether to grant him clemency for killing a rival.",
-		"audienceRating": 6.6,
-		"year": 2022,
-		"thumb": "/library/metadata/8266/thumb/1711898788",
-		"art": "/library/metadata/8266/art/1711898788",
-		"duration": 7100128,
-		"originallyAvailableAt": "2022-11-03",
-		"addedAt": 1684062360,
-		"updatedAt": 1711898788,
-		"audienceRatingImage": "imdb://image.rating",
-		"chapterSource": "media",
-		"Media": [
-			{
-				"id": 17976,
-				"duration": 7100128,
-				"bitrate": 36017,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21031,
-						"key": "/library/parts/21031/1682809198/file.mkv",
-						"duration": 7100128,
-						"file": "/volume3/MoviesB/Movis/Caravaggio's Shadow (2022).mkv",
-						"size": 31953592280,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Biography"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Michele Placido"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Michele Placido"
-			},
-			{
-				"tag": "Sandro Petraglia"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			},
-			{
-				"tag": "Italy"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Riccardo Scamarcio"
-			},
-			{
-				"tag": "Louis Garrel"
-			},
-			{
-				"tag": "Isabelle Huppert"
-			}
-		]
-	},
-	{
-		"ratingKey": "3429",
-		"key": "/library/metadata/3429",
-		"guid": "plex://movie/5d9f356e6fc551001ef8193b",
-		"studio": "CTB Film Company",
-		"type": "movie",
-		"title": "Cargo 200",
-		"originalTitle": "Груз 200",
-		"summary": "The Soviet Union in 1984, the decline of the Soviet Era. The daughter of the Secretary of the Regional Committee of the Communist Party in a small town disappears one night after leaving a dance club. There are no witnesses, no suspects. The same night a brutal murder occurs in a house in the outskirts of town. The murderer is the owner of the house. Police captain Zhurov has to investigate both cases . . .",
-		"rating": 8.1,
-		"audienceRating": 8,
-		"year": 2007,
-		"tagline": "Odinnadtsatyy film Alekseya Balabanova (Eleventh film by Aleksey Balabanov)",
-		"thumb": "/library/metadata/3429/thumb/1711898788",
-		"art": "/library/metadata/3429/art/1711898788",
-		"duration": 5359712,
-		"originallyAvailableAt": "2007-06-14",
-		"addedAt": 1512964210,
-		"updatedAt": 1711898788,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 7276,
-				"duration": 5359712,
-				"bitrate": 4623,
-				"width": 1152,
-				"height": 648,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "576",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 7280,
-						"key": "/library/parts/7280/1512964210/file.mkv",
-						"duration": 5359712,
-						"file": "/volume1/Movies/Груз 200 (2007).mkv",
-						"size": 3097070755,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Aleksey Balabanov"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Aleksey Balabanov"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Russian Federation"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Agniya Kuznetsova"
-			},
-			{
-				"tag": "Aleksey Poluyan"
-			},
-			{
-				"tag": "Leonid Gromov"
-			}
-		]
-	},
-	{
-		"ratingKey": "7337",
-		"key": "/library/metadata/7337",
-		"guid": "plex://movie/5d7768686f4521001eaa5cac",
-		"studio": "Metro-Goldwyn-Mayer",
-		"type": "movie",
-		"title": "Casino Royale",
-		"contentRating": "PG-13",
-		"summary": "After earning 00 status and a licence to kill, secret agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, Montenegro.",
-		"rating": 9.4,
-		"audienceRating": 9,
-		"viewOffset": 1971692,
-		"viewCount": 1,
-		"lastViewedAt": 1681083576,
-		"year": 2006,
-		"tagline": "Everyone has a past. Every legend has a beginning.",
-		"thumb": "/library/metadata/7337/thumb/1711898788",
-		"art": "/library/metadata/7337/art/1711898788",
-		"duration": 8673130,
-		"originallyAvailableAt": "2006-11-14",
-		"addedAt": 1680700862,
-		"updatedAt": 1711898788,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15997,
-				"duration": 8673130,
-				"bitrate": 49017,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16061,
-						"key": "/library/parts/16061/1680625511/file.m2ts",
-						"duration": 8673130,
-						"file": "/volume1/Movies/Casino Royale (2006).m2ts",
-						"size": 57041147904,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Martin Campbell"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Paul Haggis"
-			},
-			{
-				"tag": "Ian Fleming"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Daniel Craig"
-			},
-			{
-				"tag": "Eva Green"
-			},
-			{
-				"tag": "Mads Mikkelsen"
-			}
-		]
-	},
-	{
-		"ratingKey": "8607",
-		"key": "/library/metadata/8607",
-		"guid": "plex://movie/613c7a7192d089d57482fc09",
-		"studio": "Gold Circle Films",
-		"type": "movie",
-		"title": "Champions",
-		"contentRating": "PG-13",
-		"summary": "A former minor-league basketball coach is ordered by the court to manage a team of players with intellectual disabilities. He soon realizes that despite his doubts, together, this team can go further than they ever imagined.",
-		"rating": 5.9,
-		"audienceRating": 9.5,
-		"viewOffset": 1690207,
-		"lastViewedAt": 1689208837,
-		"year": 2023,
-		"tagline": "Every dream team starts somewhere.",
-		"thumb": "/library/metadata/8607/thumb/1711898788",
-		"art": "/library/metadata/8607/art/1711898788",
-		"duration": 7424128,
-		"originallyAvailableAt": "2023-03-09",
-		"addedAt": 1689205211,
-		"updatedAt": 1711898788,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 18963,
-				"duration": 7424128,
-				"bitrate": 39365,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19037,
-						"key": "/library/parts/19037/1688941036/file.mkv",
-						"duration": 7424128,
-						"file": "/volume3/MoviesB/Movis/Champions (2023).mkv",
-						"size": 36484332672,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Bobby Farrelly"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Javier Fesser"
-			},
-			{
-				"tag": "David Marqués"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Woody Harrelson"
-			},
-			{
-				"tag": "Kaitlin Olson"
-			},
-			{
-				"tag": "Cheech Marin"
-			}
-		]
-	},
-	{
-		"ratingKey": "6080",
-		"key": "/library/metadata/6080",
-		"guid": "plex://movie/5d7768243c3c2a001fbca85a",
-		"studio": "Warner Bros. Pictures",
-		"type": "movie",
-		"title": "Charlie and the Chocolate Factory",
-		"contentRating": "PG",
-		"summary": "When Willy Wonka decides to let five children into his chocolate factory, he decides to release five golden tickets in five separate chocolate bars, causing complete mayhem. The tickets start to be found, with the fifth going to a very special boy, called Charlie Bucket. With his Grandpa, Charlie joins the rest of the children to experience the most amazing factory ever. But not everything goes to plan within the factory.",
-		"rating": 8.3,
-		"audienceRating": 5.1,
-		"viewOffset": 2057000,
-		"lastViewedAt": 1679786966,
-		"year": 2005,
-		"tagline": "Prepare for a taste of adventure.",
-		"thumb": "/library/metadata/6080/thumb/1711898788",
-		"art": "/library/metadata/6080/art/1711898788",
-		"duration": 6925952,
-		"originallyAvailableAt": "2005-07-13",
-		"addedAt": 1679138988,
-		"updatedAt": 1711898788,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 13070,
-				"duration": 6925952,
-				"bitrate": 18678,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 13128,
-						"key": "/library/parts/13128/1679054180/file.mkv",
-						"duration": 6925952,
-						"file": "/volume1/Movies/Charlie and the Chocolate Factory (2005).mkv",
-						"size": 16170712931,
-						"container": "mkv",
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Adventure"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Tim Burton"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Roald Dahl"
-			},
-			{
-				"tag": "John August"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Johnny Depp"
-			},
-			{
-				"tag": "Freddie Highmore"
-			},
-			{
-				"tag": "David Kelly"
-			}
-		]
-	},
-	{
-		"ratingKey": "5238",
-		"key": "/library/metadata/5238",
-		"guid": "plex://movie/5d9f34f668e4c8001fb5db5e",
-		"studio": "Metro-Goldwyn-Mayer",
-		"type": "movie",
-		"title": "Charlie Bartlett",
-		"contentRating": "R",
-		"summary": "Awkward teenager Charlie Bartlett has trouble fitting in at a new high school. Charlie needs some friends fast, and decides that the best way to find them is to appoint himself the resident psychiatrist. He becomes one of the most popular guys in school by doling out advice and, occasionally, medication, to the student body.",
-		"rating": 5.8,
-		"audienceRating": 7.1,
-		"year": 2008,
-		"tagline": "Popularity is a state of mind.",
-		"thumb": "/library/metadata/5238/thumb/1710700598",
-		"art": "/library/metadata/5238/art/1710700598",
-		"duration": 5813472,
-		"originallyAvailableAt": "2008-02-22",
-		"addedAt": 1679138987,
-		"updatedAt": 1710700598,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 11139,
-				"duration": 5813472,
-				"bitrate": 10201,
-				"width": 1280,
-				"height": 692,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11195,
-						"key": "/library/parts/11195/1679107759/file.mkv",
-						"duration": 5813472,
-						"file": "/volume1/Movies/Charlie Bartlett (2007).mkv",
-						"size": 7412780219,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jon Poll"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Gustin Nash"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Anton Yelchin"
-			},
-			{
-				"tag": "Robert Downey Jr."
-			},
-			{
-				"tag": "Hope Davis"
-			}
-		]
-	},
-	{
-		"ratingKey": "5353",
-		"key": "/library/metadata/5353",
-		"guid": "plex://movie/5d776a4323d5a3001f50254e",
-		"studio": "Altus Media",
-		"type": "movie",
-		"title": "Chef",
-		"contentRating": "R",
-		"summary": "When Chef Carl Casper suddenly quits his job at a prominent Los Angeles restaurant after refusing to compromise his creative integrity for its controlling owner, he is left to figure out what's next. Finding himself in Miami, he teams up with his ex-wife, his friend and his son to launch a food truck. Taking to the road, Chef Carl goes back to his roots to reignite his passion for the kitchen -- and zest for life and love.",
-		"rating": 8.7,
-		"audienceRating": 8.5,
-		"viewOffset": 5259115,
-		"skipCount": 1,
-		"lastViewedAt": 1679277907,
-		"year": 2014,
-		"tagline": "Starting from scratch never tasted so good.",
-		"thumb": "/library/metadata/5353/thumb/1711898789",
-		"art": "/library/metadata/5353/art/1711898789",
-		"duration": 6905920,
-		"originallyAvailableAt": "2014-05-08",
-		"addedAt": 1679235522,
-		"updatedAt": 1711898789,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 11430,
-				"duration": 6905920,
-				"bitrate": 38859,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11486,
-						"key": "/library/parts/11486/1679147531/file.m2ts",
-						"duration": 6905920,
-						"file": "/volume1/Movies/Chef (2014).m2ts",
-						"size": 33544366080,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jon Favreau"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jon Favreau"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jon Favreau"
-			},
-			{
-				"tag": "John Leguizamo"
-			},
-			{
-				"tag": "Bobby Cannavale"
-			}
-		]
-	},
-	{
-		"ratingKey": "5432",
-		"key": "/library/metadata/5432",
-		"guid": "plex://movie/5d77683b61141d001fb16515",
-		"studio": "Fox Searchlight Pictures",
-		"type": "movie",
-		"title": "Choke",
-		"contentRating": "R",
-		"summary": "Sex addict and colonial theme park worker, Victor Mancini, has devised a complicated scam to pay for his mom's hospital bills while she suffers from an Alzheimer's disease that hides the truth about his childhood. He pretends to choke on food in a restaurant and the person who \"saves\" him will feel responsible for Victor for the rest of their lives.",
-		"rating": 5.6,
-		"audienceRating": 5.2,
-		"viewOffset": 4437184,
-		"viewCount": 2,
-		"lastViewedAt": 1708639141,
-		"year": 2008,
-		"tagline": "From the author of Fight Club",
-		"thumb": "/library/metadata/5432/thumb/1711898790",
-		"art": "/library/metadata/5432/art/1711898790",
-		"duration": 5506543,
-		"originallyAvailableAt": "2008-10-30",
-		"addedAt": 1679355140,
-		"updatedAt": 1711898790,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 11603,
-				"duration": 5506543,
-				"bitrate": 12844,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11659,
-						"key": "/library/parts/11659/1679314844/file.mkv",
-						"duration": 5506543,
-						"file": "/volume1/Movies/Choke (2008).mkv",
-						"size": 8840974300,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Clark Gregg"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Chuck Palahniuk"
-			},
-			{
-				"tag": "Clark Gregg"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sam Rockwell"
-			},
-			{
-				"tag": "Anjelica Huston"
-			},
-			{
-				"tag": "Kelly Macdonald"
-			}
-		]
-	},
-	{
-		"ratingKey": "9165",
-		"key": "/library/metadata/9165",
-		"guid": "plex://movie/5d77682f8718ba001e31357e",
-		"studio": "Hughes Entertainment",
-		"type": "movie",
-		"title": "Christmas Vacation",
-		"originalTitle": "National Lampoon's Christmas Vacation",
-		"contentRating": "PG-13",
-		"summary": "It's Christmas time and the Griswolds are preparing for a family seasonal celebration, but things never run smoothly for Clark, his wife Ellen and their two kids. Clark's continual bad luck is worsened by his obnoxious family guests, but he manages to keep going knowing that his Christmas bonus is due soon.",
-		"rating": 7,
-		"audienceRating": 8.6,
-		"year": 1989,
-		"tagline": "Yule crack up!",
-		"thumb": "/library/metadata/9165/thumb/1711898862",
-		"art": "/library/metadata/9165/art/1711898862",
-		"duration": 5832640,
-		"originallyAvailableAt": "1989-11-30",
-		"addedAt": 1703602664,
-		"updatedAt": 1711898862,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20363,
-				"duration": 5832640,
-				"bitrate": 7017,
-				"width": 1280,
-				"height": 724,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21140,
-						"key": "/library/parts/21140/1703358142/file.mkv",
-						"duration": 5832640,
-						"file": "/volume3/MoviesB/Movis/National Lampoon's Christmas Vacation (1989).mkv",
-						"size": 5117738571,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jeremiah S. Chechik"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "John Hughes"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Chevy Chase"
-			},
-			{
-				"tag": "Beverly D'Angelo"
-			},
-			{
-				"tag": "Juliette Lewis"
-			}
-		]
-	},
-	{
-		"ratingKey": "5103",
-		"key": "/library/metadata/5103",
-		"guid": "plex://movie/5d77683aeb5d26001f1e1dc1",
-		"studio": "Revolution Studios",
-		"type": "movie",
-		"title": "Christmas with the Kranks",
-		"contentRating": "PG",
-		"summary": "With their daughter, Blair, away in Peru, Luther and Nora Krank decide to skip Christmas all together until she decides to come home, causing an uproar when they have to celebrate it at the last minute.",
-		"rating": 0.5,
-		"audienceRating": 3.9,
-		"viewCount": 1,
-		"skipCount": 1,
-		"lastViewedAt": 1704044965,
-		"year": 2004,
-		"tagline": "Their Christmas will turn the town upside down!",
-		"thumb": "/library/metadata/5103/thumb/1711898790",
-		"art": "/library/metadata/5103/art/1711898790",
-		"duration": 5932288,
-		"originallyAvailableAt": "2004-11-24",
-		"addedAt": 1679004053,
-		"updatedAt": 1711898790,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 10794,
-				"duration": 5932288,
-				"bitrate": 15575,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 10850,
-						"key": "/library/parts/10850/1678925341/file.mkv",
-						"duration": 5932288,
-						"file": "/volume1/Movies/Christmas with the Kranks (2004).mkv",
-						"size": 11549771633,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Family"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Joe Roth"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Chris Columbus"
-			},
-			{
-				"tag": "John Grisham"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Tim Allen"
-			},
-			{
-				"tag": "Jamie Lee Curtis"
-			},
-			{
-				"tag": "Dan Aykroyd"
-			}
-		]
-	},
-	{
-		"ratingKey": "6982",
-		"key": "/library/metadata/6982",
-		"guid": "plex://movie/5d7768298a7581001f12c0d6",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Cinderella Man",
-		"contentRating": "PG-13",
-		"summary": "The true story of James J. Braddock, a supposedly washed-up boxer, who returned to the spotlight to win the heavyweight championship of the world.",
-		"rating": 8,
-		"audienceRating": 9.1,
-		"year": 2005,
-		"tagline": "One man's extraordinary fight to save the family he loved.",
-		"thumb": "/library/metadata/6982/thumb/1711898790",
-		"art": "/library/metadata/6982/art/1711898790",
-		"duration": 8662368,
-		"originallyAvailableAt": "2005-06-02",
-		"addedAt": 1680449336,
-		"updatedAt": 1711898790,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15166,
-				"duration": 8662368,
-				"bitrate": 34975,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 15230,
-						"key": "/library/parts/15230/1680390297/file.m2ts",
-						"duration": 8662368,
-						"file": "/volume1/Movies/Cinderella Man (2005).m2ts",
-						"size": 37870645248,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Biography"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ron Howard"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Akiva Goldsman"
-			},
-			{
-				"tag": "Cliff Hollingsworth"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Russell Crowe"
-			},
-			{
-				"tag": "Renée Zellweger"
-			},
-			{
-				"tag": "Paul Giamatti"
-			}
-		]
-	},
-	{
-		"ratingKey": "3182",
-		"key": "/library/metadata/3182",
-		"guid": "plex://movie/5d7768337228e5001f1de39b",
-		"studio": "TriStar Pictures",
-		"type": "movie",
-		"title": "Cliffhanger",
-		"contentRating": "R",
-		"summary": "Whilst crossing a ledge, 4000 feet above the earth, Gabe's friend's equipment fails to work and she slips out of his hand, falling to the ground. Almost a year later, Gabe is asked to go back to the same mountain range and rescue a group of 'stranded' people. The only catch is that these so called 'stranded' people are in fact looking for three boxes filled with $100,000,000 and they need a mountain ranger to lead them to them!!",
-		"rating": 6.8,
-		"audienceRating": 5.2,
-		"viewCount": 2,
-		"skipCount": 1,
-		"lastViewedAt": 1699316988,
-		"year": 1992,
-		"tagline": "The height of adventure.",
-		"thumb": "/library/metadata/3182/thumb/1711898790",
-		"art": "/library/metadata/3182/art/1711898790",
-		"duration": 6762794,
-		"originallyAvailableAt": "1992-11-30",
-		"addedAt": 1677432445,
-		"updatedAt": 1711898790,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 16548,
-				"duration": 6762794,
-				"bitrate": 57822,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16613,
-						"key": "/library/parts/16613/1681103287/file.mkv",
-						"duration": 6762794,
-						"file": "/volume1/Movies/Cliffhanger (1993).mkv",
-						"size": 48893150474,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Renny Harlin"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Michael France"
-			},
-			{
-				"tag": "Sylvester Stallone"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			},
-			{
-				"tag": "Italy"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sylvester Stallone"
-			},
-			{
-				"tag": "John Lithgow"
-			},
-			{
-				"tag": "Michael Rooker"
-			}
-		]
-	},
-	{
-		"ratingKey": "9772",
-		"key": "/library/metadata/9772",
-		"guid": "plex://movie/5d776a79594b2b001e6bda40",
-		"studio": "Golden Spike (II)",
-		"type": "movie",
-		"title": "The Cobbler",
-		"titleSort": "Cobbler",
-		"contentRating": "PG-13",
-		"summary": "Max Simkin repairs shoes in the same New York shop that has been in his family for generations. Disenchanted with the grind of daily life, Max stumbles upon a magical heirloom that allows him to step into the lives of his customers and see the world in a new way. Sometimes walking in another man's shoes is the only way one can discover who they really are.",
-		"rating": 1,
-		"audienceRating": 3.6,
-		"year": 2015,
-		"tagline": "Saving the neighborhood one sole at a time.",
-		"thumb": "/library/metadata/9772/thumb/1711898566",
-		"art": "/library/metadata/9772/art/1711898566",
-		"duration": 5883628,
-		"originallyAvailableAt": "2015-02-05",
-		"addedAt": 1711898564,
-		"updatedAt": 1711898566,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 21923,
-				"duration": 5883628,
-				"bitrate": 14447,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22024,
-						"key": "/library/parts/22024/1711837010/file.mkv",
-						"duration": 5883628,
-						"file": "/volume3/MoviesB/TEMP/The Cobbler (2014).mkv",
-						"size": 10625116736,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Fantasy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Tom McCarthy"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Tom McCarthy"
-			},
-			{
-				"tag": "Paul Sado"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Adam Sandler"
-			},
-			{
-				"tag": "Dan Stevens"
-			},
-			{
-				"tag": "Steve Buscemi"
-			}
-		]
-	},
-	{
-		"ratingKey": "8811",
-		"key": "/library/metadata/8811",
-		"guid": "plex://movie/5ed3f1ab0dfb380041ad62c7",
-		"studio": "Point Grey Pictures",
-		"type": "movie",
-		"title": "Cobweb",
-		"contentRating": "R",
-		"summary": "An eight-year-old boy tries to investigate the mysterious knocking sounds that are coming from inside the walls of his house, unveiling a dark secret that his sinister parents have kept hidden from him.",
-		"rating": 5.9,
-		"audienceRating": 7.1,
-		"viewCount": 1,
-		"lastViewedAt": 1694999748,
-		"year": 2023,
-		"tagline": "Sooner or later, family secrets creep out.",
-		"thumb": "/library/metadata/8811/thumb/1711898791",
-		"art": "/library/metadata/8811/art/1711898791",
-		"duration": 5285321,
-		"originallyAvailableAt": "2023-07-20",
-		"addedAt": 1694998526,
-		"updatedAt": 1711898791,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 19529,
-				"duration": 5285321,
-				"bitrate": 38562,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19604,
-						"key": "/library/parts/19604/1694911920/file.mkv",
-						"duration": 5285321,
-						"file": "/volume3/MoviesB/Movis/Cobweb (2023).mkv",
-						"size": 25479890920,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Samuel Bodin"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Chris Thomas Devlin"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Lizzy Caplan"
-			},
-			{
-				"tag": "Antony Starr"
-			},
-			{
-				"tag": "Cleopatra Coleman"
-			}
-		]
-	},
-	{
-		"ratingKey": "10320",
-		"key": "/library/metadata/10320",
-		"guid": "plex://movie/5d776f48fb0d55001f5db8c4",
-		"studio": "Colony Pictures",
-		"type": "movie",
-		"title": "Code 8",
-		"contentRating": "Not Rated",
-		"summary": "In a world where people with \"special\" abilities are living in poverty, Conner Reed (Robbie Amell) is a powerful young man who is struggling to pay for his ailing mother's medical treatment. To earn money, he joins a lucrative criminal world led by Garrett (Stephen Amell), who works for a drug lord (Greg Bryk).",
-		"rating": 8.1,
-		"audienceRating": 6.2,
-		"viewCount": 1,
-		"lastViewedAt": 1709257243,
-		"year": 2019,
-		"tagline": "Fear is the most dangerous power",
-		"thumb": "/library/metadata/10320/thumb/1711898743",
-		"duration": 5904768,
-		"originallyAvailableAt": "2019-12-04",
-		"addedAt": 1678568209,
-		"updatedAt": 1711898743,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23078,
-				"duration": 5904768,
-				"bitrate": 30928,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23191,
-						"key": "/library/parts/23191/1678539521/file.mkv",
-						"duration": 5904768,
-						"file": "/volume1/Movies/Code 8 (2019).mkv",
-						"size": 22828059491,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Science Fiction"
-			},
-			{
-				"tag": "Crime"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jeff Chan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jeff Chan"
-			},
-			{
-				"tag": "Chris Paré"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Robbie Amell"
-			},
-			{
-				"tag": "Stephen Amell"
-			},
-			{
-				"tag": "Kari Matchett"
-			}
-		]
-	},
-	{
-		"ratingKey": "10321",
-		"key": "/library/metadata/10321",
-		"guid": "plex://movie/5d77682b8718ba001e312775",
-		"studio": "Miramax",
-		"type": "movie",
-		"title": "Cold Mountain",
-		"contentRating": "R",
-		"summary": "This Civil War saga addresses romance, friendship, and the ravages of war - both in the field and on the home front. Captures the horrors of war for both those fighting it, and for those left behind. This is a tale of hope, longing, redemption, second chances, and faith.",
-		"rating": 7,
-		"audienceRating": 7.7,
-		"year": 2003,
-		"tagline": "Find the strength. Find the courage. No matter what it takes... find the way home.",
-		"thumb": "/library/metadata/10321/thumb/1711898744",
-		"duration": 9265931,
-		"originallyAvailableAt": "2003-12-25",
-		"addedAt": 1482709306,
-		"updatedAt": 1711898744,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23079,
-				"duration": 9265931,
-				"bitrate": 28331,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23192,
-						"key": "/library/parts/23192/1679661265/file.mkv",
-						"duration": 9265931,
-						"file": "/volume1/Movies/Cold Mountain (2003).mkv",
-						"size": 32814674962,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Anthony Minghella"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Anthony Minghella"
-			},
-			{
-				"tag": "Charles Frazier"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jude Law"
-			},
-			{
-				"tag": "Nicole Kidman"
-			},
-			{
-				"tag": "Renée Zellweger"
-			}
-		]
-	},
-	{
-		"ratingKey": "9990",
-		"key": "/library/metadata/9990",
-		"guid": "plex://movie/5d7769f996b655001fddf9f4",
-		"studio": "RLJ Entertainment",
-		"type": "movie",
-		"title": "The Colony",
-		"titleSort": "Colony",
-		"contentRating": "Not Rated",
-		"summary": "Groups of people - colonies - are forced underground due to another ice age. Colony 7 goes to check on Colony 5, which they lost contact with. When they get there they find that the colony has fallen and there is a whole new enemy that they have to face on their way back.",
-		"rating": 2.1,
-		"audienceRating": 2.3,
-		"viewOffset": 709000,
-		"lastViewedAt": 1691623823,
-		"year": 2013,
-		"tagline": "One day, it started to snow .. and it never stopped",
-		"thumb": "/library/metadata/9990/thumb/1711898636",
-		"duration": 5666166,
-		"originallyAvailableAt": "2013-06-13",
-		"addedAt": 1393211715,
-		"updatedAt": 1711898636,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 22384,
-				"duration": 5666166,
-				"bitrate": 2072,
-				"width": 720,
-				"height": 304,
-				"aspectRatio": 2.35,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 22492,
-						"key": "/library/parts/22492/1393211715/file.avi",
-						"duration": 5666166,
-						"file": "/volume1/Movies/The Colony (2013).avi",
-						"size": 1467762688,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Science Fiction"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jeff Renfroe"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jeff Renfroe"
-			},
-			{
-				"tag": "Patrick Tarr"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kevin Zegers"
-			},
-			{
-				"tag": "Laurence Fishburne"
-			},
-			{
-				"tag": "Bill Paxton"
-			}
-		]
-	},
-	{
-		"ratingKey": "7947",
-		"key": "/library/metadata/7947",
-		"guid": "plex://movie/5d7768365af944001f1fa174",
-		"studio": "SLM Production Group",
-		"type": "movie",
-		"title": "Commando",
-		"contentRating": "R",
-		"summary": "A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.",
-		"rating": 6.7,
-		"audienceRating": 6.8,
-		"viewCount": 1,
-		"lastViewedAt": 1699142689,
-		"year": 1985,
-		"tagline": "Somewhere, somehow, someone's going to pay.",
-		"thumb": "/library/metadata/7947/thumb/1711898792",
-		"art": "/library/metadata/7947/art/1711898792",
-		"duration": 5510016,
-		"originallyAvailableAt": "1985-10-04",
-		"addedAt": 1682980665,
-		"updatedAt": 1711898792,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 17351,
-				"duration": 5510016,
-				"bitrate": 39637,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17419,
-						"key": "/library/parts/17419/1681601268/file.mkv",
-						"duration": 5510016,
-						"file": "/volume1/Movies/Commando (1985).mkv",
-						"size": 27310097452,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Mark L. Lester"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Steven E. de Souza"
-			},
-			{
-				"tag": "Jeph Loeb"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Arnold Schwarzenegger"
-			},
-			{
-				"tag": "Rae Dawn Chong"
-			},
-			{
-				"tag": "Dan Hedaya"
-			}
-		]
-	},
-	{
-		"ratingKey": "10322",
-		"key": "/library/metadata/10322",
-		"guid": "plex://movie/5d77683585719b001f3a3987",
-		"studio": "Paramount",
-		"type": "movie",
-		"title": "Congo",
-		"contentRating": "PG-13",
-		"summary": "Eight people embark on an expedition into the Congo, a mysterious expanse of unexplored Africa where human greed and the laws of nature have gone berserk. When the thrill-seekers -- some with ulterior motives -- stumble across a race of killer apes.",
-		"rating": 2,
-		"audienceRating": 2.9,
-		"viewOffset": 2883006,
-		"lastViewedAt": 1679791365,
-		"year": 1995,
-		"tagline": "Where you are the endangered species.",
-		"thumb": "/library/metadata/10322/thumb/1711898745",
-		"duration": 6226000,
-		"originallyAvailableAt": "1995-06-09",
-		"addedAt": 1677432343,
-		"updatedAt": 1711898745,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23080,
-				"duration": 6226000,
-				"bitrate": 4022,
-				"width": 720,
-				"height": 400,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "PAL",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 23193,
-						"key": "/library/parts/23193/1482370406/file.avi",
-						"duration": 6226000,
-						"file": "/volume1/Movies/Congo (1995).avi",
-						"size": 3129864192,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Frank Marshall"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Michael Crichton"
-			},
-			{
-				"tag": "John Patrick Shanley"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Laura Linney"
-			},
-			{
-				"tag": "Dylan Walsh"
-			},
-			{
-				"tag": "Ernie Hudson"
-			}
-		]
-	},
-	{
-		"ratingKey": "10323",
-		"key": "/library/metadata/10323",
-		"guid": "plex://movie/5d7768328718ba001e313d86",
-		"studio": "Silver Pictures",
-		"type": "movie",
-		"title": "Conspiracy Theory",
-		"contentRating": "R",
-		"summary": "Jerry Fletcher is a man in love with a woman he observes from afar. She works for the government. Fletcher is an outspoken critic of that government. He has conspiracy theories for everything, from aliens to political assassinations. But soon, one of his theories finds itself to be accurate. But which one? Some dangerous people want him dead, and the only person he trusts is the woman he loves, but does not know.",
-		"rating": 5.7,
-		"audienceRating": 6.4,
-		"year": 1997,
-		"tagline": "What if your most paranoid nightmares had just come true?",
-		"thumb": "/library/metadata/10323/thumb/1711898746",
-		"duration": 8120064,
-		"originallyAvailableAt": "1997-08-07",
-		"addedAt": 1677432455,
-		"updatedAt": 1711898746,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23081,
-				"duration": 8120064,
-				"bitrate": 20737,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23194,
-						"key": "/library/parts/23194/1449723837/file.mkv",
-						"duration": 8120064,
-						"file": "/volume1/Movies/Conspiracy Theory (1997).mkv",
-						"size": 21048542343,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Richard Donner"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Brian Helgeland"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mel Gibson"
-			},
-			{
-				"tag": "Julia Roberts"
-			},
-			{
-				"tag": "Patrick Stewart"
-			}
-		]
-	},
-	{
-		"ratingKey": "5512",
-		"key": "/library/metadata/5512",
-		"guid": "plex://movie/5d77682754f42c001f8c2910",
-		"studio": "Village Roadshow Pictures",
-		"type": "movie",
-		"title": "Constantine",
-		"contentRating": "R",
-		"summary": "John Constantine has literally been to Hell and back. When he teams up with a policewoman to solve the mysterious suicide of her twin sister, their investigation takes them through the world of demons and angels that exists beneath the landscape of contemporary Los Angeles.",
-		"rating": 4.6,
-		"audienceRating": 7.2,
-		"year": 2005,
-		"tagline": "Hell wants him. Heaven won't take him. Earth needs him.",
-		"thumb": "/library/metadata/5512/thumb/1711898792",
-		"art": "/library/metadata/5512/art/1711898792",
-		"duration": 7247328,
-		"originallyAvailableAt": "2005-02-08",
-		"addedAt": 1679521408,
-		"updatedAt": 1711898792,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 11769,
-				"duration": 7247328,
-				"bitrate": 29440,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 11825,
-						"key": "/library/parts/11825/1679452634/file.m2ts",
-						"duration": 7247328,
-						"file": "/volume1/Movies/Constantine (2005).m2ts",
-						"size": 26670483456,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Fantasy"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Francis Lawrence"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jamie Delano"
-			},
-			{
-				"tag": "Garth Ennis"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Germany"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Keanu Reeves"
-			},
-			{
-				"tag": "Rachel Weisz"
-			},
-			{
-				"tag": "Shia LaBeouf"
-			}
-		]
-	},
-	{
-		"ratingKey": "8684",
-		"key": "/library/metadata/8684",
-		"guid": "plex://movie/5d776d1923d5a3001f52079e",
-		"studio": "South Side Amusement Company",
-		"type": "movie",
-		"title": "Contact",
-		"contentRating": "PG",
-		"summary": "A radio astronomer receives the first extraterrestrial radio signal ever picked up on Earth. As the world powers scramble to decipher the message and decide upon a course of action, she must make some difficult decisions between her beliefs, the truth, and reality.",
-		"rating": 6.8,
-		"audienceRating": 7.8,
-		"year": 1997,
-		"tagline": "Take a journey to the heart of the universe.",
-		"thumb": "/library/metadata/8684/thumb/1711898792",
-		"art": "/library/metadata/8684/art/1711898792",
-		"duration": 8980895,
-		"originallyAvailableAt": "1997-07-11",
-		"addedAt": 1694816480,
-		"updatedAt": 1711898792,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 19144,
-				"duration": 8980895,
-				"bitrate": 25754,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 19219,
-						"key": "/library/parts/19219/1691933122/file.m2ts",
-						"duration": 8980895,
-						"file": "/volume3/MoviesB/Movis/Contact (1997).m2ts",
-						"size": 31168690176,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Science Fiction"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Robert Zemeckis"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "James V. Hart"
-			},
-			{
-				"tag": "Michael Goldenberg"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jodie Foster"
-			},
-			{
-				"tag": "Matthew McConaughey"
-			},
-			{
-				"tag": "James Woods"
-			}
-		]
-	},
-	{
-		"ratingKey": "9083",
-		"key": "/library/metadata/9083",
-		"guid": "plex://movie/5d776870374a5b001fec5850",
-		"studio": "Participant",
-		"type": "movie",
-		"title": "Contagion",
-		"contentRating": "PG-13",
-		"summary": "As an epidemic of a lethal airborne virus - that kills within days - rapidly grows, the worldwide medical community races to find a cure and control the panic that spreads faster than the virus itself.",
-		"rating": 8.5,
-		"audienceRating": 6.3,
-		"lastViewedAt": 1703603069,
-		"year": 2011,
-		"tagline": "Nothing spreads like fear.",
-		"thumb": "/library/metadata/9083/thumb/1710700601",
-		"art": "/library/metadata/9083/art/1710700601",
-		"duration": 6386080,
-		"originallyAvailableAt": "2011-09-08",
-		"addedAt": 1703602656,
-		"updatedAt": 1710700601,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20168,
-				"duration": 6386080,
-				"bitrate": 21181,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21032,
-						"key": "/library/parts/21032/1703557864/file.mkv",
-						"duration": 6386080,
-						"file": "/volume3/MoviesB/Movis/Contagion (2011).mkv",
-						"size": 16911172989,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Thriller"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Steven Soderbergh"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Scott Z. Burns"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			},
-			{
-				"tag": "United Arab Emirates"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Marion Cotillard"
-			},
-			{
-				"tag": "Matt Damon"
-			},
-			{
-				"tag": "Laurence Fishburne"
-			}
-		]
-	},
-	{
-		"ratingKey": "6290",
-		"key": "/library/metadata/6290",
-		"guid": "plex://movie/5d7768334de0ee001fccaf29",
-		"studio": "Paramount",
-		"type": "movie",
-		"title": "The Core",
-		"titleSort": "Core",
-		"contentRating": "PG-13",
-		"summary": "The Earth's core has stopped spinning. Disasters are happening around the globe, including; animals acting in bizarre ways, monstrous thunderstorms. Dr. Josh Keyes and his crew of 5 go down to the centre to set off a nuclear device, hoping to make the core start spinning again, or humanity will cease.",
-		"rating": 3.9,
-		"audienceRating": 3.4,
-		"viewOffset": 5246000,
-		"viewCount": 1,
-		"lastViewedAt": 1691628722,
-		"year": 2003,
-		"tagline": "The only way out is in.",
-		"thumb": "/library/metadata/6290/thumb/1711898793",
-		"art": "/library/metadata/6290/art/1711898793",
-		"duration": 8099040,
-		"originallyAvailableAt": "2003-03-28",
-		"addedAt": 1680033847,
-		"updatedAt": 1711898793,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13593,
-				"duration": 8099040,
-				"bitrate": 35508,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13653,
-						"key": "/library/parts/13653/1680019461/file.mkv",
-						"duration": 8099040,
-						"file": "/volume1/Movies/The Core (2003).mkv",
-						"size": 35947562117,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jon Amiel"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Cooper Layne"
-			},
-			{
-				"tag": "John Rogers"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			},
-			{
-				"tag": "Canada"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Aaron Eckhart"
-			},
-			{
-				"tag": "Hilary Swank"
-			},
-			{
-				"tag": "Delroy Lindo"
-			}
-		]
-	},
-	{
-		"ratingKey": "6984",
-		"key": "/library/metadata/6984",
-		"guid": "plex://movie/5d77690a594b2b001e69b749",
-		"studio": "BBC Film",
-		"type": "movie",
-		"title": "Coriolanus",
-		"contentRating": "R",
-		"summary": "The citizens of Rome are hungry. Coriolanus, the hero of Rome, a great soldier and a man of inflexible self-belief despises the people. His extreme views ignite a mass riot. Rome is bloody. Manipulated and out-maneuvered by politicians and even his own mother Volumnia, Coriolanus is banished from Rome. He offers his life or his services to his sworn enemy Tullus Aufidius.",
-		"rating": 9.2,
-		"audienceRating": 5.8,
-		"year": 2012,
-		"tagline": "Nature teaches beasts to know their friends.",
-		"thumb": "/library/metadata/6984/thumb/1711898793",
-		"art": "/library/metadata/6984/art/1711898793",
-		"duration": 7399434,
-		"originallyAvailableAt": "2012-01-18",
-		"addedAt": 1680449337,
-		"updatedAt": 1711898793,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15168,
-				"duration": 7399434,
-				"bitrate": 22949,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 15232,
-						"key": "/library/parts/15232/1680418916/file.mkv",
-						"duration": 7399434,
-						"file": "/volume1/Movies/Coriolanus (2011).mkv",
-						"size": 21226008051,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ralph Fiennes"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "John Logan"
-			},
-			{
-				"tag": "William Shakespeare"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Italy"
-			},
-			{
-				"tag": "Montenegro"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ralph Fiennes"
-			},
-			{
-				"tag": "Gerard Butler"
-			},
-			{
-				"tag": "Lubna Azabal"
-			}
-		]
-	},
-	{
-		"ratingKey": "5564",
-		"key": "/library/metadata/5564",
-		"guid": "plex://movie/5d7768a4ebdf2200209c4aab",
-		"studio": "Mosfilm",
-		"type": "movie",
-		"title": "Cossacks of the Kuban",
-		"originalTitle": "Кубанские казаки",
-		"summary": "In the steppes of the Kuban love is born on two collective farms while wheat is (enthusiastically) gathered. Galina, the energetic chairwoman of one of the two kolkhozes, vies with her male counterpart for the best harvest. At the same time Gordey, her rival, a former soldier, is (and has been for ages) in love with her. On her part, Dasha a collective farm worker, has heartbeat for a young technician of the competing kolkhoz...",
-		"audienceRating": 6.4,
-		"viewOffset": 2840486,
-		"lastViewedAt": 1679526811,
-		"year": 1950,
-		"thumb": "/library/metadata/5564/thumb/1711898793",
-		"art": "/library/metadata/5564/art/1711898793",
-		"duration": 6534195,
-		"originallyAvailableAt": "1950-02-26",
-		"addedAt": 1679521416,
-		"updatedAt": 1711898793,
-		"audienceRatingImage": "imdb://image.rating",
-		"Media": [
-			{
-				"id": 11880,
-				"duration": 6534195,
-				"bitrate": 23214,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "pcm_bluray",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11936,
-						"key": "/library/parts/11936/1679400740/file.m2ts",
-						"duration": 6534195,
-						"file": "/volume1/Movies/Кубанские казаки (1949).m2ts",
-						"size": 18960316416,
-						"container": "mpegts",
-						"packetLength": 192,
-						"timeStamp": true,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Musical"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ivan Pyryev"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Nikolay Pogodin"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Russian Federation"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Marina Ladynina"
-			},
-			{
-				"tag": "Ekaterina Savinova"
-			},
-			{
-				"tag": "Sergei Lukyanov"
-			}
-		]
-	},
-	{
-		"ratingKey": "9383",
-		"key": "/library/metadata/9383",
-		"guid": "plex://movie/610bbe58c51572002daf6a3b",
-		"studio": "Gravier Productions",
-		"type": "movie",
-		"title": "Coup de Chance",
-		"originalTitle": "Coup de chance",
-		"contentRating": "PG-13",
-		"summary": "Fanny and Jean have everything of the ideal couple: fulfilled in their professional life, they live in a magnificent apartment in the beautiful districts of Paris and seem to be in love as on the first day. But when Fanny crosses, by chance, Alain, a former high school friend, she is immediately capsized. They see each other again very quickly and get closer and closer.",
-		"rating": 8.5,
-		"year": 2023,
-		"thumb": "/library/metadata/9383/thumb/1711898793",
-		"art": "/library/metadata/9383/art/1711898793",
-		"duration": 5575296,
-		"originallyAvailableAt": "2023-09-27",
-		"addedAt": 1710700296,
-		"updatedAt": 1711898793,
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20952,
-				"duration": 5575296,
-				"bitrate": 10731,
-				"width": 3840,
-				"height": 1920,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "hevc",
-				"videoResolution": "4k",
-				"container": "mkv",
-				"videoFrameRate": "PAL",
-				"videoProfile": "main",
-				"Part": [
-					{
-						"id": 21033,
-						"key": "/library/parts/21033/1706313324/file.mkv",
-						"duration": 5575296,
-						"file": "/volume3/MoviesB/Movis/Coup de chance (2023).mkv",
-						"size": 7480157332,
-						"container": "mkv",
-						"videoProfile": "main"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Woody Allen"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Woody Allen"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Lou de Laâge"
-			},
-			{
-				"tag": "Valérie Lemercier"
-			},
-			{
-				"tag": "Melvil Poupaud"
-			}
-		]
-	},
-	{
-		"ratingKey": "10324",
-		"key": "/library/metadata/10324",
-		"guid": "plex://movie/5d77688ad11dd30020227698",
-		"studio": "DreamWorks Pictures",
-		"type": "movie",
-		"title": "Cowboys & Aliens",
-		"contentRating": "PG-13",
-		"summary": "A stranger stumbles into the desert town of Absolution with no memory of his past and a futuristic shackle around his wrist. With the help of mysterious beauty Ella and the iron-fisted Colonel Dolarhyde, he finds himself leading an unlikely posse of cowboys, outlaws, and Apache warriors against a common enemy from beyond this world in an epic showdown for survival.",
-		"rating": 4.4,
-		"audienceRating": 4.3,
-		"viewOffset": 3844239,
-		"lastViewedAt": 1697938542,
-		"year": 2011,
-		"tagline": "First Contact. Last Stand.",
-		"thumb": "/library/metadata/10324/thumb/1711898747",
-		"duration": 8113472,
-		"originallyAvailableAt": "2011-07-29",
-		"addedAt": 1482716550,
-		"updatedAt": 1711898747,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23082,
-				"duration": 8113472,
-				"bitrate": 17887,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23195,
-						"key": "/library/parts/23195/1482716550/file.mkv",
-						"duration": 8113472,
-						"file": "/volume1/Movies/Cowboys & Aliens (2011).mkv",
-						"size": 18140470276,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Science Fiction"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jon Favreau"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Steve Oedekerk"
-			},
-			{
-				"tag": "Alex Kurtzman"
-			}
-		],
-		"Country": [
-			{
-				"tag": "India"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Daniel Craig"
-			},
-			{
-				"tag": "Harrison Ford"
-			},
-			{
-				"tag": "Olivia Wilde"
-			}
-		]
-	},
-	{
-		"ratingKey": "7987",
-		"key": "/library/metadata/7987",
-		"guid": "plex://movie/5d776d21ad5437001f7cde4d",
-		"studio": "Color Force",
-		"type": "movie",
-		"title": "Crazy Rich Asians",
-		"contentRating": "PG-13",
-		"summary": "Rachel Chu, an American-born Chinese NYU professor, travels with her boyfriend, Nick to his hometown in Singapore for his best friend's wedding. Before long, his secret is out: Nick's family is wealthy, and he's considered the most eligible bachelor in Asia. Every single woman is incredibly jealous of Rachel and wants to bring her down.",
-		"rating": 9.1,
-		"audienceRating": 7.6,
-		"year": 2018,
-		"tagline": "The only thing crazier than love is family.",
-		"thumb": "/library/metadata/7987/thumb/1711898793",
-		"art": "/library/metadata/7987/art/1711898793",
-		"duration": 7239232,
-		"originallyAvailableAt": "2018-08-15",
-		"addedAt": 1684062336,
-		"updatedAt": 1711898793,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 17443,
-				"duration": 7239232,
-				"bitrate": 36474,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17512,
-						"key": "/library/parts/17512/1683353771/file.mkv",
-						"duration": 7239232,
-						"file": "/volume3/MoviesB/Movis/Crazy Rich Asians (2018).mkv",
-						"size": 32968024710,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jon M. Chu"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Pete Chiarelli"
-			},
-			{
-				"tag": "Adele Lim"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Constance Wu"
-			},
-			{
-				"tag": "Henry Golding"
-			},
-			{
-				"tag": "Michelle Yeoh"
-			}
-		]
-	},
-	{
-		"ratingKey": "5951",
-		"key": "/library/metadata/5951",
-		"guid": "plex://movie/5d77688bdecfcd001f2ec182",
-		"studio": "Warner Bros. Pictures",
-		"type": "movie",
-		"title": "Crazy, Stupid, Love.",
-		"contentRating": "PG-13",
-		"summary": "A middle-aged husband's life changes dramatically when his wife asks him for a divorce. He seeks to rediscover his manhood with the help of a newfound friend, Jacob, learning to pick up girls at bars.",
-		"rating": 7.9,
-		"audienceRating": 7.8,
-		"viewOffset": 3701267,
-		"lastViewedAt": 1696202804,
-		"year": 2011,
-		"tagline": "This is crazy. This is stupid. This is love.",
-		"thumb": "/library/metadata/5951/thumb/1711898793",
-		"art": "/library/metadata/5951/art/1711898793",
-		"duration": 7087104,
-		"originallyAvailableAt": "2011-07-28",
-		"addedAt": 1679783030,
-		"updatedAt": 1711898793,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 12761,
-				"duration": 7087104,
-				"bitrate": 18651,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12818,
-						"key": "/library/parts/12818/1679783291/file.mkv",
-						"duration": 7087104,
-						"file": "/volume1/Movies/Crazy, Stupid, Love (2011).mkv",
-						"size": 16522815716,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Glenn Ficarra"
-			},
-			{
-				"tag": "John Requa"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Dan Fogelman"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Steve Carell"
-			},
-			{
-				"tag": "Ryan Gosling"
-			},
-			{
-				"tag": "Julianne Moore"
-			}
-		]
-	},
-	{
-		"ratingKey": "8642",
-		"key": "/library/metadata/8642",
-		"guid": "plex://movie/5d9f356968e4c8001fb5f849",
-		"studio": "BBC Film",
-		"type": "movie",
-		"title": "Creation",
-		"contentRating": "PG-13",
-		"summary": "What happens when a world-renowned scientist, crushed by the loss of his eldest daughter, formulates a theory in conflict with religious dogma? This is the story of Charles Darwin and his master-work \"The Origin of Species\". It tells of a global revolution played out within the confines of a small English village; a passionate marriage torn apart by the most dangerous idea in history; and a theory saved from extinction by the logic of a child.",
-		"rating": 4.7,
-		"audienceRating": 4.9,
-		"year": 2009,
-		"tagline": "Faith evolves.",
-		"thumb": "/library/metadata/8642/thumb/1710700603",
-		"art": "/library/metadata/8642/art/1710700603",
-		"duration": 6511936,
-		"originallyAvailableAt": "2009-09-25",
-		"addedAt": 1691529158,
-		"updatedAt": 1710700603,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 19051,
-				"duration": 6511936,
-				"bitrate": 21033,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 19125,
-						"key": "/library/parts/19125/1691447389/file.mkv",
-						"duration": 6511936,
-						"file": "/volume3/MoviesB/Movis/Creation (2009).mkv",
-						"size": 17124448079,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jon Amiel"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jon Amiel"
-			},
-			{
-				"tag": "John Collee"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Paul Bettany"
-			},
-			{
-				"tag": "Jennifer Connelly"
-			},
-			{
-				"tag": "Martha West"
-			}
-		]
-	},
-	{
-		"ratingKey": "9216",
-		"key": "/library/metadata/9216",
-		"guid": "plex://movie/5e40c3e46d9025003f6cd4ed",
-		"studio": "New Regency Pictures",
-		"type": "movie",
-		"title": "The Creator",
-		"titleSort": "Creator",
-		"contentRating": "PG-13",
-		"summary": "Amid a future war between the human race and the forces of artificial intelligence, Joshua, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war-and mankind itself.",
-		"rating": 6.7,
-		"audienceRating": 7.6,
-		"year": 2023,
-		"tagline": "This is a fight for our very existence.",
-		"thumb": "/library/metadata/9216/thumb/1711898794",
-		"art": "/library/metadata/9216/art/1711898794",
-		"duration": 8155264,
-		"originallyAvailableAt": "2023-09-27",
-		"addedAt": 1703602668,
-		"updatedAt": 1711898794,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20501,
-				"duration": 8155264,
-				"bitrate": 37798,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21252,
-						"key": "/library/parts/21252/1702687426/file.mkv",
-						"duration": 8155264,
-						"file": "/volume3/MoviesB/Movis/The Creator (2023).mkv",
-						"size": 38548403216,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Romance"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Gareth Edwards"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Chris Weitz"
-			},
-			{
-				"tag": "Gareth Edwards"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "John David Washington"
-			},
-			{
-				"tag": "Madeleine Yuna Voyles"
-			},
-			{
-				"tag": "Gemma Chan"
-			}
-		]
-	},
-	{
-		"ratingKey": "9810",
-		"key": "/library/metadata/9810",
-		"guid": "plex://movie/5d7768a0ebdf2200209c4172",
-		"studio": "Gaumont",
-		"type": "movie",
-		"title": "The Crimson Rivers",
-		"titleSort": "Crimson Rivers",
-		"originalTitle": "Les Rivières pourpres",
-		"contentRating": "R",
-		"summary": "Two French policemen, one investigating a grisly murder at a remote mountain college, the other working on the desecration of a young girl's grave by skinheads, are brought together by the clues from their respective cases. Soon after they start working together, more murders are committed, and the pair begin to discover just what dark secrets are behind the killings.",
-		"rating": 6.8,
-		"audienceRating": 7,
-		"year": 2000,
-		"tagline": "Evil rises to new heights.",
-		"thumb": "/library/metadata/9810/thumb/1711898577",
-		"duration": 6371872,
-		"originallyAvailableAt": "2000-09-27",
-		"addedAt": 1699471554,
-		"updatedAt": 1711898577,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22017,
-				"duration": 6371872,
-				"bitrate": 37817,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 7,
-				"audioCodec": "dca",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "hra",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 22121,
-						"key": "/library/parts/22121/1694366035/file.m2ts",
-						"duration": 6371872,
-						"file": "/volume3/MoviesB/Movis/The Crimson Rivers (2000).m2ts",
-						"size": 30120357888,
-						"audioProfile": "hra",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Crime"
-			},
-			{
-				"tag": "Mystery"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Mathieu Kassovitz"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jean-Christophe Grangé"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jean Reno"
-			},
-			{
-				"tag": "Vincent Cassel"
-			},
-			{
-				"tag": "Nadia Farès"
-			}
-		]
-	},
-	{
-		"ratingKey": "9795",
-		"key": "/library/metadata/9795",
-		"guid": "plex://movie/5d7768a033f255001e85b38c",
-		"studio": "Studio Légende",
-		"type": "movie",
-		"title": "Crimson Rivers II: Angels of the Apocalypse",
-		"originalTitle": "Les Rivières pourpres 2 : Les Anges de l'apocalypse",
-		"contentRating": "R",
-		"summary": "Chief Niemans is investigating a series of ritual murders: The victims are crucified. He teams up with young officer Reda, who gets embroiled after a man dressed as a monk tries to kill a confused guy Reda picked up on the street. Together with a specialist on christian mythology they uncover a mysterious group called \"Angels of the Apokalypse\".",
-		"audienceRating": 5.9,
-		"viewCount": 1,
-		"lastViewedAt": 1697913164,
-		"year": 2004,
-		"tagline": "An unholy crime... An unstoppable killer... Caught in a deadly tide.",
-		"thumb": "/library/metadata/9795/thumb/1711898571",
-		"duration": 5953035,
-		"originallyAvailableAt": "2004-02-18",
-		"addedAt": 1694816484,
-		"updatedAt": 1711898571,
-		"audienceRatingImage": "imdb://image.rating",
-		"hasPremiumPrimaryExtra": "1",
-		"Media": [
-			{
-				"id": 21980,
-				"duration": 5953035,
-				"bitrate": 12192,
-				"width": 1920,
-				"height": 812,
-				"aspectRatio": 2.35,
-				"audioChannels": 7,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "es",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22081,
-						"key": "/library/parts/22081/1694375489/file.mkv",
-						"duration": 5953035,
-						"file": "/volume3/MoviesB/Movis/Crimson Rivers 2 Angels of the Apocalypse (2004).mkv",
-						"size": 9072307178,
-						"audioProfile": "es",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Olivier Dahan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Luc Besson"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jean Reno"
-			},
-			{
-				"tag": "Benoît Magimel"
-			},
-			{
-				"tag": "Camille Natta"
-			}
-		]
-	},
-	{
-		"ratingKey": "9991",
-		"key": "/library/metadata/9991",
-		"guid": "plex://movie/5d776d4847dd6e001f6f1e5e",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "The Croods: A New Age",
-		"titleSort": "Croods: A New Age",
-		"contentRating": "PG",
-		"summary": "The prehistoric family the Croods are challenged by a rival family the Bettermans, who claim to be better and more evolved.",
-		"rating": 7.7,
-		"audienceRating": 9.4,
-		"year": 2020,
-		"tagline": "The future ain't what it used to be.",
-		"thumb": "/library/metadata/9991/thumb/1711898637",
-		"duration": 5714560,
-		"originallyAvailableAt": "2020-11-25",
-		"addedAt": 1677975684,
-		"updatedAt": 1711898637,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22385,
-				"duration": 5714560,
-				"bitrate": 35533,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "truehd",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22493,
-						"key": "/library/parts/22493/1617203728/file.mkv",
-						"duration": 5714560,
-						"file": "/volume1/Movies/The Croods A New Age (2020).mkv",
-						"size": 25381586306,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Animation"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Joel Crawford"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "John Cleese"
-			},
-			{
-				"tag": "Chris Sanders"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Nicolas Cage"
-			},
-			{
-				"tag": "Emma Stone"
-			},
-			{
-				"tag": "Ryan Reynolds"
-			}
-		]
-	},
-	{
-		"ratingKey": "9626",
-		"key": "/library/metadata/9626",
-		"guid": "plex://movie/5d776c79594b2b001e6f4975",
-		"studio": "Bazelevs Production",
-		"type": "movie",
-		"title": "The Current War",
-		"titleSort": "Current War",
-		"contentRating": "PG-13",
-		"summary": "The dramatic story of the cutthroat race between electricity titans Thomas A. Edison and George Westinghouse to determine whose electrical system would power the modern world.",
-		"rating": 6.1,
-		"audienceRating": 7.9,
-		"year": 2018,
-		"tagline": "Power changes everything",
-		"thumb": "/library/metadata/9626/thumb/1711898794",
-		"duration": 6137856,
-		"originallyAvailableAt": "2018-02-01",
-		"addedAt": 1585932706,
-		"updatedAt": 1711898794,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21542,
-				"duration": 6137856,
-				"bitrate": 37587,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21643,
-						"key": "/library/parts/21643/1585932706/file.mkv",
-						"duration": 6137856,
-						"file": "/volume1/Movies/The Current War (2017).mkv",
-						"size": 28841492134,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Alfonso Gomez-Rejon"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Michael Mitnick"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Russian Federation"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Benedict Cumberbatch"
-			},
-			{
-				"tag": "Michael Shannon"
-			},
-			{
-				"tag": "Nicholas Hoult"
-			}
-		]
-	},
-	{
-		"ratingKey": "10296",
-		"key": "/library/metadata/10296",
-		"guid": "plex://movie/5d77682985719b001f3a14bc",
-		"studio": "Carolco Pictures",
-		"type": "movie",
-		"title": "Cutthroat Island",
-		"contentRating": "PG-13",
-		"summary": "Morgan Adams and her slave, William Shaw, are on a quest to recover the three portions of a treasure map. Unfortunately, the final portion is held by her murderous uncle, Dawg. Her crew is skeptical of her leadership abilities, so she must complete her quest before they mutiny against her. This is made yet more difficult by the efforts of the British crown to end her piratical raids.",
-		"rating": 4,
-		"audienceRating": 4,
-		"viewCount": 2,
-		"lastViewedAt": 1708824993,
-		"year": 1995,
-		"tagline": "Be bold. Be brave. Be prepared.",
-		"thumb": "/library/metadata/10296/thumb/1711898738",
-		"duration": 7491584,
-		"originallyAvailableAt": "1995-12-22",
-		"addedAt": 1677432435,
-		"updatedAt": 1711898738,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23020,
-				"duration": 7491584,
-				"bitrate": 3341,
-				"width": 1040,
-				"height": 440,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "aac",
-				"videoCodec": "h264",
-				"videoResolution": "576",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "lc",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23132,
-						"key": "/library/parts/23132/1495841876/file.mkv",
-						"duration": 7491584,
-						"file": "/volume1/Movies/Cutthroat Island (1995).mkv",
-						"size": 3128843106,
-						"audioProfile": "lc",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Renny Harlin"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Bruce A. Evans"
-			},
-			{
-				"tag": "Raynold Gideon"
-			}
-		],
-		"Country": [
-			{
-				"tag": "France"
-			},
-			{
-				"tag": "Germany"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Geena Davis"
-			},
-			{
-				"tag": "Matthew Modine"
-			},
-			{
-				"tag": "Frank Langella"
-			}
-		]
-	},
-	{
-		"ratingKey": "5649",
-		"key": "/library/metadata/5649",
-		"guid": "plex://movie/5d7768273c3c2a001fbcb129",
-		"studio": "Imagine Entertainment",
-		"type": "movie",
-		"title": "The Da Vinci Code",
-		"titleSort": "Da Vinci Code",
-		"contentRating": "PG-13",
-		"summary": "A murder inside the Louvre, and clues in Da Vinci paintings, lead to the discovery of a religious mystery protected by a secret society for two thousand years, which could shake the foundations of Christianity.",
-		"rating": 2.5,
-		"audienceRating": 5.7,
-		"viewOffset": 1937826,
-		"lastViewedAt": 1693142431,
-		"year": 2006,
-		"tagline": "Seek the truth.",
-		"thumb": "/library/metadata/5649/thumb/1711898795",
-		"art": "/library/metadata/5649/art/1711898795",
-		"duration": 10477472,
-		"originallyAvailableAt": "2006-05-17",
-		"addedAt": 1679614294,
-		"updatedAt": 1711898795,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 12052,
-				"duration": 10477472,
-				"bitrate": 13100,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12108,
-						"key": "/library/parts/12108/1679472674/file.mkv",
-						"duration": 10477472,
-						"file": "/volume1/Movies/The Da Vinci Code (2006).mkv",
-						"size": 17156623163,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Thriller"
-			},
-			{
-				"tag": "Mystery"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ron Howard"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Akiva Goldsman"
-			},
-			{
-				"tag": "Dan Brown"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Tom Hanks"
-			},
-			{
-				"tag": "Audrey Tautou"
-			},
-			{
-				"tag": "Ian McKellen"
-			}
-		]
-	},
-	{
-		"ratingKey": "7439",
-		"key": "/library/metadata/7439",
-		"guid": "plex://movie/5d776ae7fb0d55001f554fb1",
-		"studio": "Paramount",
-		"type": "movie",
-		"title": "Daddy's Home",
-		"contentRating": "PG-13",
-		"summary": "Stepfather Brad Whitaker is hoping for his stepchildren to love him and treat him like a dad. All is going well until the biological father, Dusty Mayron, shows up, then everything takes a toll. His stepchildren start putting him second and their father first, and now Dusty will have to learn that being a good dad is about pains and struggles. Brad will also experience once again what it's like to be a stepdad.",
-		"rating": 3,
-		"audienceRating": 4.9,
-		"viewOffset": 431482,
-		"skipCount": 2,
-		"lastViewedAt": 1682723663,
-		"year": 2015,
-		"tagline": "Choose your Daddy",
-		"thumb": "/library/metadata/7439/thumb/1711898795",
-		"art": "/library/metadata/7439/art/1711898795",
-		"duration": 5761964,
-		"originallyAvailableAt": "2015-12-25",
-		"addedAt": 1680883934,
-		"updatedAt": 1711898795,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 16193,
-				"duration": 5761964,
-				"bitrate": 70461,
-				"width": 3840,
-				"height": 2160,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "hevc",
-				"videoResolution": "4k",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "main 10",
-				"Part": [
-					{
-						"id": 16257,
-						"key": "/library/parts/16257/1680891476/file.mkv",
-						"duration": 5761964,
-						"file": "/volume1/Movies/Daddy's Home (2015).mkv",
-						"size": 50752492046,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "main 10"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Family"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Sean Anders"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Adam McKay"
-			},
-			{
-				"tag": "Chris Henchy"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Will Ferrell"
-			},
-			{
-				"tag": "Mark Wahlberg"
-			},
-			{
-				"tag": "Linda Cardellini"
-			}
-		]
-	},
-	{
-		"ratingKey": "7628",
-		"key": "/library/metadata/7628",
-		"guid": "plex://movie/5d776c7c7a53e9001e7441a3",
-		"studio": "Red Granite Pictures",
-		"type": "movie",
-		"title": "Daddy‘s Home",
-		"contentRating": "PG-13",
-		"summary": "Having finally gotten used to each other's existence, Brad and Dusty must now deal with their intrusive fathers during the holidays.",
-		"rating": 2.1,
-		"audienceRating": 5.1,
-		"userRating": 2,
-		"lastRatedAt": 1681075301,
-		"year": 2017,
-		"tagline": "More Daddies. More Problems.",
-		"thumb": "/library/metadata/7628/thumb/1711898796",
-		"art": "/library/metadata/7628/art/1711898796",
-		"duration": 5981952,
-		"originallyAvailableAt": "2017-11-08",
-		"addedAt": 1680956622,
-		"updatedAt": 1711898796,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 16614,
-				"duration": 5981952,
-				"bitrate": 38460,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "truehd",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16679,
-						"key": "/library/parts/16679/1680943670/file.m2ts",
-						"duration": 5981952,
-						"file": "/volume1/Movies/Daddy‘s Home 2 (2017).m2ts",
-						"size": 31272732672,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Sean Anders"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Sean Anders"
-			},
-			{
-				"tag": "John Morris"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Will Ferrell"
-			},
-			{
-				"tag": "Mark Wahlberg"
-			},
-			{
-				"tag": "Mel Gibson"
-			}
-		]
-	},
-	{
-		"ratingKey": "10297",
-		"key": "/library/metadata/10297",
-		"guid": "plex://movie/5d77682e8718ba001e31340e",
-		"studio": "Intermedia",
-		"type": "movie",
-		"title": "Dark Blue",
-		"contentRating": "R",
-		"summary": "A robbery homicide investigation triggers a series of events that will cause a corrupt LAPD officer to question his tactics.",
-		"rating": 5.9,
-		"audienceRating": 5.2,
-		"year": 2003,
-		"tagline": "Sworn to protect. Sworn to serve. Sworn to secrecy.",
-		"thumb": "/library/metadata/10297/thumb/1711898739",
-		"duration": 7079072,
-		"originallyAvailableAt": "2003-01-10",
-		"addedAt": 1677432441,
-		"updatedAt": 1711898739,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23021,
-				"duration": 7079072,
-				"bitrate": 2648,
-				"width": 720,
-				"height": 304,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 23133,
-						"key": "/library/parts/23133/1460838194/file.avi",
-						"duration": 7079072,
-						"file": "/volume1/Movies/Dark Blue (2002).avi",
-						"size": 2342995968,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Crime"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Ron Shelton"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "David Ayer"
-			},
-			{
-				"tag": "James Ellroy"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Germany"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kurt Russell"
-			},
-			{
-				"tag": "Scott Speedman"
-			},
-			{
-				"tag": "Michael Michele"
-			}
-		]
-	},
-	{
-		"ratingKey": "9731",
-		"key": "/library/metadata/9731",
-		"guid": "plex://movie/5e5d3afc01f65d003eca60d8",
-		"studio": "Matt Tolmach Productions",
-		"type": "movie",
-		"title": "Dark Harvest",
-		"contentRating": "R",
-		"summary": "In a small Midwestern town, a deadly annual ritual unfolds when the mythical nightmare, Sawtooth Jack, rises from the cornfields and challenges the town’s teenage boys in a bloody battle of survival.",
-		"rating": 6.7,
-		"audienceRating": 4.7,
-		"year": 2023,
-		"tagline": "Evil stalks.",
-		"thumb": "/library/metadata/9731/thumb/1711898561",
-		"art": "/library/metadata/9731/art/1711898561",
-		"duration": 5743285,
-		"originallyAvailableAt": "2023-10-12",
-		"addedAt": 1711898556,
-		"updatedAt": 1711898561,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21822,
-				"duration": 5743285,
-				"bitrate": 2185,
-				"width": 720,
-				"height": 304,
-				"aspectRatio": 2.35,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 21923,
-						"key": "/library/parts/21923/1710711700/file.avi",
-						"duration": 5743285,
-						"file": "/volume3/MoviesB/TEMP/Dark Harvest (2023).avi",
-						"size": 1568909312,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Fantasy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "David Slade"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Norman Partridge"
-			},
-			{
-				"tag": "Michael Gilio"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Casey Likes"
-			},
-			{
-				"tag": "Emyri Crutchfield"
-			},
-			{
-				"tag": "Jeremy Davies"
-			}
-		]
-	},
-	{
-		"ratingKey": "9992",
-		"key": "/library/metadata/9992",
-		"guid": "plex://movie/5d7768883ab0e7001f503bc0",
-		"studio": "Syncopy",
-		"type": "movie",
-		"title": "The Dark Knight Rises",
-		"titleSort": "Dark Knight Rises",
-		"contentRating": "PG-13",
-		"summary": "Eight years after the Joker's reign of chaos, Batman is coerced out of exile with the assistance of the mysterious Selina Kyle in order to defend Gotham City from the vicious guerrilla terrorist Bane.",
-		"rating": 8.7,
-		"audienceRating": 9,
-		"year": 2012,
-		"tagline": "A fire will rise.",
-		"thumb": "/library/metadata/9992/thumb/1711898638",
-		"duration": 9873888,
-		"originallyAvailableAt": "2012-07-19",
-		"addedAt": 1482663063,
-		"updatedAt": 1711898638,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 22386,
-				"duration": 9873888,
-				"bitrate": 20480,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 22494,
-						"key": "/library/parts/22494/1482663063/file.mkv",
-						"duration": 9873888,
-						"file": "/volume1/Movies/The Dark Knight Rises (2012).mkv",
-						"size": 25277735216,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Crime"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Christopher Nolan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Christopher Nolan"
-			},
-			{
-				"tag": "Jonathan Nolan"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Christian Bale"
-			},
-			{
-				"tag": "Michael Caine"
-			},
-			{
-				"tag": "Gary Oldman"
-			}
-		]
-	},
-	{
-		"ratingKey": "10298",
-		"key": "/library/metadata/10298",
-		"guid": "plex://movie/5d776b6923d5a3001f5102fa",
-		"studio": "Genre Films",
-		"type": "movie",
-		"title": "Dark Phoenix",
-		"contentRating": "PG-13",
-		"summary": "Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix, causing the X-Men to decide if her life is worth more than all of humanity.",
-		"rating": 2.2,
-		"audienceRating": 6.4,
-		"year": 2019,
-		"tagline": "A Phoenix will rise. The X-Men will fall.",
-		"thumb": "/library/metadata/10298/thumb/1711898740",
-		"duration": 6836416,
-		"originallyAvailableAt": "2019-06-05",
-		"addedAt": 1585253990,
-		"updatedAt": 1711898740,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23022,
-				"duration": 6836416,
-				"bitrate": 16510,
-				"width": 1920,
-				"height": 804,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23134,
-						"key": "/library/parts/23134/1585253990/file.mkv",
-						"duration": 6836416,
-						"file": "/volume1/Movies/Dark Phoenix (2019).mkv",
-						"size": 14109057817,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Simon Kinberg"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Simon Kinberg"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sophie Turner"
-			},
-			{
-				"tag": "James McAvoy"
-			},
-			{
-				"tag": "Nicholas Hoult"
-			}
-		]
-	},
-	{
-		"ratingKey": "6683",
-		"key": "/library/metadata/6683",
-		"guid": "plex://movie/5d77708c90a8de0020329203",
-		"studio": "Participant",
-		"type": "movie",
-		"title": "Dark Waters",
-		"contentRating": "PG-13",
-		"summary": "A tenacious attorney uncovers a dark secret that connects a growing number of unexplained deaths to one of the world's largest corporations. In the process, he risks everything — his future, his family, and his own life — to expose the truth.",
-		"rating": 8.9,
-		"audienceRating": 9.5,
-		"year": 2019,
-		"tagline": "The truth has a man on the inside.",
-		"thumb": "/library/metadata/6683/thumb/1711898797",
-		"art": "/library/metadata/6683/art/1711898797",
-		"duration": 7623125,
-		"originallyAvailableAt": "2019-11-27",
-		"addedAt": 1680205910,
-		"updatedAt": 1711898797,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 14499,
-				"duration": 7623125,
-				"bitrate": 42396,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23135,
-						"key": "/library/parts/23135/1680339758/file.mkv",
-						"duration": 7623125,
-						"file": "/volume1/Movies/Dark Waters (2019).mkv",
-						"size": 40399162426,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Biography"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Todd Haynes"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Matthew Michael Carnahan"
-			},
-			{
-				"tag": "Mario Correa"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mark Ruffalo"
-			},
-			{
-				"tag": "Anne Hathaway"
-			},
-			{
-				"tag": "Tim Robbins"
-			}
-		]
-	},
-	{
-		"ratingKey": "10299",
-		"key": "/library/metadata/10299",
-		"guid": "plex://movie/5d776c44fb0d55001f58290e",
-		"studio": "Working Title Films",
-		"type": "movie",
-		"title": "Darkest Hour",
-		"contentRating": "PG-13",
-		"summary": "In May 1940, the fate of World War II hangs on Winston Churchill, who must decide whether to negotiate with Adolf Hitler, or fight on knowing that it could mean the end of the British Empire.",
-		"rating": 8.4,
-		"audienceRating": 8.2,
-		"year": 2017,
-		"tagline": "Never never never surrender",
-		"thumb": "/library/metadata/10299/thumb/1710700606",
-		"duration": 7494496,
-		"originallyAvailableAt": "2017-12-01",
-		"addedAt": 1521583072,
-		"updatedAt": 1710700606,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23023,
-				"duration": 7494496,
-				"bitrate": 17718,
-				"width": 1920,
-				"height": 1038,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23136,
-						"key": "/library/parts/23136/1521583072/file.mkv",
-						"duration": 7494496,
-						"file": "/volume1/Movies/Darkest Hour (2017).mkv",
-						"size": 16598388367,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "History"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Joe Wright"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Anthony McCarten"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Gary Oldman"
-			},
-			{
-				"tag": "Kristin Scott Thomas"
-			},
-			{
-				"tag": "Ben Mendelsohn"
-			}
-		]
-	},
-	{
-		"ratingKey": "9529",
-		"key": "/library/metadata/9529",
-		"guid": "plex://movie/5d7768650ab244002006cebf",
-		"studio": "Dune Entertainment",
-		"type": "movie",
-		"title": "Date Night",
-		"contentRating": "PG-13",
-		"summary": "Phil and Claire Foster fear that their mild-mannered relationship may be falling into a stale rut. During their weekly date night, their dinner reservation leads to their being mistaken for a couple of thieves—and now a number of unsavoury characters want Phil and Claire killed.",
-		"rating": 6.7,
-		"audienceRating": 5.5,
-		"year": 2010,
-		"tagline": "One ordinary couple. One little white lie.",
-		"thumb": "/library/metadata/9529/thumb/1711898797",
-		"duration": 6096138,
-		"originallyAvailableAt": "2010-04-07",
-		"addedAt": 1678568206,
-		"updatedAt": 1711898797,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21316,
-				"duration": 6096138,
-				"bitrate": 41451,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21417,
-						"key": "/library/parts/21417/1677594813/file.m2ts",
-						"duration": 6096138,
-						"file": "/volume1/Movies/Date Night (2010).m2ts",
-						"size": 33467068416,
-						"audioProfile": "ma",
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Crime"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Shawn Levy"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Josh Klausner"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Steve Carell"
-			},
-			{
-				"tag": "Tina Fey"
-			},
-			{
-				"tag": "Mark Wahlberg"
-			}
-		]
-	},
-	{
-		"ratingKey": "5513",
-		"key": "/library/metadata/5513",
-		"guid": "plex://movie/5d776d1523d5a3001f5201a7",
-		"studio": "New Amsterdam Entertainment",
-		"type": "movie",
-		"title": "Dawn of the Dead",
-		"contentRating": "R",
-		"summary": "A nurse, a policeman, a young married couple, a salesman and other survivors of a worldwide plague that is producing aggressive, flesh-eating zombies, take refuge in a mega Midwestern shopping mall.",
-		"rating": 7.6,
-		"audienceRating": 7.7,
-		"viewOffset": 3551238,
-		"lastViewedAt": 1704773320,
-		"year": 2003,
-		"tagline": "When there's no more room in Hell, the dead will walk the Earth.",
-		"thumb": "/library/metadata/5513/thumb/1711898798",
-		"art": "/library/metadata/5513/art/1711898798",
-		"duration": 6552512,
-		"originallyAvailableAt": "2003-11-30",
-		"addedAt": 1679521408,
-		"updatedAt": 1711898798,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 11770,
-				"duration": 6552512,
-				"bitrate": 24462,
-				"width": 1920,
-				"height": 816,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11826,
-						"key": "/library/parts/11826/1679458965/file.mkv",
-						"duration": 6552512,
-						"file": "/volume1/Movies/Dawn of the Dead (2004).mkv",
-						"size": 20036037246,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Zack Snyder"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "George A. Romero"
-			},
-			{
-				"tag": "James Gunn"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "France"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sarah Polley"
-			},
-			{
-				"tag": "Ving Rhames"
-			},
-			{
-				"tag": "Ty Burrell"
-			}
-		]
-	},
-	{
-		"ratingKey": "965",
-		"key": "/library/metadata/965",
-		"guid": "plex://movie/5d776971f617c9002015fb21",
-		"studio": "TSG Entertainment",
-		"type": "movie",
-		"title": "Dawn of the Planet of the Apes",
-		"contentRating": "PG-13",
-		"summary": "A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier. They reach a fragile peace, but it proves short-lived, as both sides are brought to the brink of a war that will determine who will emerge as Earth's dominant species.",
-		"rating": 9.1,
-		"audienceRating": 8.8,
-		"year": 2014,
-		"tagline": "One last chance for peace.",
-		"thumb": "/library/metadata/965/thumb/1711898741",
-		"art": "/library/metadata/965/art/1711898741",
-		"duration": 7824901,
-		"originallyAvailableAt": "2014-07-09",
-		"addedAt": 1590227130,
-		"updatedAt": 1711898741,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23024,
-				"duration": 7824901,
-				"bitrate": 16089,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23137,
-						"key": "/library/parts/23137/1590227130/file.mkv",
-						"duration": 7824901,
-						"file": "/volume1/Movies/Dawn of the Planet of the Apes (2014) 3D.mkv",
-						"size": 15737238585,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 23025,
-				"duration": 7824288,
-				"bitrate": 30009,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23138,
-						"key": "/library/parts/23138/1590249638/file.mkv",
-						"duration": 7824288,
-						"file": "/volume1/Movies/Dawn of the Planet of the Apes (2014).mkv",
-						"size": 29349975366,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Matt Reeves"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Mark Bomback"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Andy Serkis"
-			},
-			{
-				"tag": "Jason Clarke"
-			},
-			{
-				"tag": "Gary Oldman"
-			}
-		]
-	},
-	{
-		"ratingKey": "6057",
-		"key": "/library/metadata/6057",
-		"guid": "plex://movie/5d776825961905001eb90ccb",
-		"studio": "20th Century Fox",
-		"type": "movie",
-		"title": "The Day After Tomorrow",
-		"titleSort": "Day After Tomorrow",
-		"contentRating": "PG-13",
-		"summary": "Jack Hall, paleoclimatologist, must make a daring trek from Washington, D.C. to New York City to reach his son, trapped in the cross-hairs of a sudden international storm which plunges the planet into a new Ice Age.",
-		"rating": 4.5,
-		"audienceRating": 5,
-		"viewCount": 5,
-		"lastViewedAt": 1705462359,
-		"year": 2004,
-		"tagline": "Where will you be?",
-		"thumb": "/library/metadata/6057/thumb/1711898798",
-		"art": "/library/metadata/6057/art/1711898798",
-		"duration": 7421046,
-		"originallyAvailableAt": "2004-05-26",
-		"addedAt": 1679783046,
-		"updatedAt": 1711898798,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13025,
-				"duration": 7421046,
-				"bitrate": 47547,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13082,
-						"key": "/library/parts/13082/1679877182/file.mkv",
-						"duration": 7421046,
-						"file": "/volume1/Movies/The Day After Tomorrow (2004).mkv",
-						"size": 44106368712,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Roland Emmerich"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Roland Emmerich"
-			},
-			{
-				"tag": "Jeffrey Nachmanoff"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Dennis Quaid"
-			},
-			{
-				"tag": "Jake Gyllenhaal"
-			},
-			{
-				"tag": "Emmy Rossum"
-			}
-		]
-	},
-	{
-		"ratingKey": "10302",
-		"key": "/library/metadata/10302",
-		"guid": "plex://movie/5f90753550bfe7002d765f7e",
-		"studio": "87Eleven",
-		"type": "movie",
-		"title": "Day Shift",
-		"contentRating": "R",
-		"summary": "A hard-working, blue-collar dad just wants to provide a good life for his quick-witted 10-year-old daughter. His mundane San Fernando Valley pool cleaning job is a front for his real source of income: hunting and killing vampires.",
-		"rating": 5.6,
-		"audienceRating": 7.6,
-		"year": 2022,
-		"tagline": "Some jobs really go for the throat.",
-		"thumb": "/library/metadata/10302/thumb/1711900757",
-		"duration": 6800832,
-		"originallyAvailableAt": "2022-08-12",
-		"addedAt": 1677447015,
-		"updatedAt": 1711900757,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23026,
-				"duration": 6800832,
-				"bitrate": 22041,
-				"width": 3840,
-				"height": 2160,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "hevc",
-				"videoResolution": "4k",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main 10",
-				"Part": [
-					{
-						"id": 23139,
-						"key": "/library/parts/23139/1675948375/file.mkv",
-						"duration": 6800832,
-						"file": "/volume1/Movies/Day Shift (2022).mkv",
-						"size": 18737457483,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "main 10"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Fantasy"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "J.J. Perry"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Shay Hatten"
-			},
-			{
-				"tag": "Tyler Tice"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jamie Foxx"
-			},
-			{
-				"tag": "Dave Franco"
-			},
-			{
-				"tag": "Natasha Liu Bordizzo"
-			}
-		]
-	},
-	{
-		"ratingKey": "2903",
-		"key": "/library/metadata/2903",
-		"guid": "plex://movie/5d776836103a2d001f567f81",
-		"studio": "Davis Entertainment",
-		"type": "movie",
-		"title": "Daylight",
-		"contentRating": "PG-13",
-		"summary": "Trouble strikes when runaway robbers in a getaway car hit truck full of explosives in the tunnel connecting Manhattan and New Jersey. Survivors are left in a weakened tunnel blocked at both exits. As Kit Latura approaches the tunnel, he sees the impact and knows he gotta take action. With time running out, he enters the tunnel through a system of maintenance walkways. Can he get the survivors out before the tunnel fills up?",
-		"rating": 2.6,
-		"audienceRating": 3.7,
-		"viewOffset": 4173480,
-		"lastViewedAt": 1700428852,
-		"year": 1996,
-		"tagline": "No air. No escape. No time.",
-		"thumb": "/library/metadata/2903/thumb/1711898798",
-		"art": "/library/metadata/2903/art/1711898798",
-		"duration": 6937419,
-		"originallyAvailableAt": "1996-12-06",
-		"addedAt": 1677432307,
-		"updatedAt": 1711898798,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13574,
-				"duration": 6937419,
-				"bitrate": 44359,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13634,
-						"key": "/library/parts/13634/1679982369/file.mkv",
-						"duration": 6937419,
-						"file": "/volume1/Movies/Daylight (1996).mkv",
-						"size": 38467381935,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Rob Cohen"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Leslie Bohem"
-			},
-			{
-				"tag": "Julie Hansen"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sylvester Stallone"
-			},
-			{
-				"tag": "Amy Brenneman"
-			},
-			{
-				"tag": "Viggo Mortensen"
-			}
-		]
-	},
-	{
-		"ratingKey": "10286",
-		"key": "/library/metadata/10286",
-		"guid": "plex://movie/5d776827151a60001f24ada6",
-		"studio": "WingNut Films",
-		"type": "movie",
-		"title": "Dead Alive",
-		"originalTitle": "Braindead",
-		"contentRating": "R",
-		"summary": "A young man's mother is bitten by a Sumatran rat-monkey. She gets sick and dies, at which time she comes back to life, killing and eating dogs, nurses, friends, and neighbors.",
-		"rating": 8.9,
-		"audienceRating": 8.6,
-		"year": 1992,
-		"tagline": "Some things won't stay down... even after they die.",
-		"thumb": "/library/metadata/10286/thumb/1711898732",
-		"duration": 6216252,
-		"originallyAvailableAt": "1992-08-13",
-		"addedAt": 1680079590,
-		"updatedAt": 1711898732,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23010,
-				"duration": 6216252,
-				"bitrate": 27409,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg2video",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main",
-				"Part": [
-					{
-						"id": 23122,
-						"key": "/library/parts/23122/1680074556/file.mkv",
-						"duration": 6216252,
-						"file": "/volume1/Movies/Dead Alive (1992).mkv",
-						"size": 21297379940,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "main"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Peter Jackson"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Peter Jackson"
-			},
-			{
-				"tag": "Fran Walsh"
-			}
-		],
-		"Country": [
-			{
-				"tag": "New Zealand"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Timothy Balme"
-			},
-			{
-				"tag": "Diana Peñalver"
-			},
-			{
-				"tag": "Elizabeth Moody"
-			}
-		]
-	},
-	{
-		"ratingKey": "10287",
-		"key": "/library/metadata/10287",
-		"guid": "plex://movie/5d776b257a53e9001e71bb98",
-		"studio": "20th Century Fox",
-		"type": "movie",
-		"title": "Deadpool",
-		"contentRating": "R",
-		"summary": "This is the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
-		"rating": 8.5,
-		"audienceRating": 9,
-		"year": 2016,
-		"tagline": "Witness the beginning of a happy ending.",
-		"thumb": "/library/metadata/10287/thumb/1711898732",
-		"duration": 6496000,
-		"originallyAvailableAt": "2016-02-09",
-		"addedAt": 1463194171,
-		"updatedAt": 1711898732,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23011,
-				"duration": 6496000,
-				"bitrate": 34932,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 8,
-				"audioCodec": "dca-ma",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "ma",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23123,
-						"key": "/library/parts/23123/1463194171/file.mkv",
-						"duration": 6496000,
-						"file": "/volume1/Movies/Deadpool (2016).mkv",
-						"size": 28364870231,
-						"audioProfile": "ma",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Tim Miller"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Rhett Reese"
-			},
-			{
-				"tag": "Paul Wernick"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ryan Reynolds"
-			},
-			{
-				"tag": "Morena Baccarin"
-			},
-			{
-				"tag": "Ed Skrein"
-			}
-		]
-	},
-	{
-		"ratingKey": "10288",
-		"key": "/library/metadata/10288",
-		"guid": "plex://movie/5d776c1c51dd69001fe37d4f",
-		"studio": "Maximum Effort",
-		"type": "movie",
-		"title": "Deadpool 2",
-		"contentRating": "R",
-		"summary": "After losing Vanessa (Morena Baccarin), the love of his life, fourth-wall-breaking mercenary Wade Wilson, aka Deadpool (Ryan Reynolds), must assemble a team and protect a young mutant Russell Collins, aka Firefist (Julian Dennison), from Cable (Josh Brolin), a no-nonsense, dangerous cyborg from the future, and must also learn the most important lesson of all: to be part of a family again.",
-		"rating": 8.4,
-		"audienceRating": 8.5,
-		"year": 2018,
-		"tagline": "Prepare for the Second Coming.",
-		"thumb": "/library/metadata/10288/thumb/1711898732",
-		"duration": 8046912,
-		"originallyAvailableAt": "2018-05-15",
-		"addedAt": 1585339198,
-		"updatedAt": 1711898732,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23012,
-				"duration": 8046912,
-				"bitrate": 22012,
-				"width": 1920,
-				"height": 804,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23124,
-						"key": "/library/parts/23124/1585339198/file.mkv",
-						"duration": 8046912,
-						"file": "/volume1/Movies/Deadpool 2 (2018).mkv",
-						"size": 22141383384,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "David Leitch"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Rhett Reese"
-			},
-			{
-				"tag": "Ryan Reynolds"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ryan Reynolds"
-			},
-			{
-				"tag": "Josh Brolin"
-			},
-			{
-				"tag": "Morena Baccarin"
-			}
-		]
-	},
-	{
-		"ratingKey": "7251",
-		"key": "/library/metadata/7251",
-		"guid": "plex://movie/5d9f3d0268e4c8001fb68802",
-		"studio": "Title Media",
-		"type": "movie",
-		"title": "The Death of Stalin",
-		"titleSort": "Death of Stalin",
-		"contentRating": "R",
-		"summary": "When dictator Joseph Stalin dies, his parasitic cronies square off in a frantic power struggle to become the next Soviet leader. As they bumble, brawl and back-stab their way to the top, the question remains — just who is running the government?",
-		"rating": 9.5,
-		"audienceRating": 7.9,
-		"year": 2017,
-		"tagline": "In the Kremlin, no one can hear you scheme",
-		"thumb": "/library/metadata/7251/thumb/1711898799",
-		"art": "/library/metadata/7251/art/1711898799",
-		"duration": 6394528,
-		"originallyAvailableAt": "2017-10-20",
-		"addedAt": 1680645454,
-		"updatedAt": 1711898799,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 15772,
-				"duration": 6394528,
-				"bitrate": 37856,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "aac",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "lc",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 15836,
-						"key": "/library/parts/15836/1680582435/file.mkv",
-						"duration": 6394528,
-						"file": "/volume1/Movies/The Death of Stalin (2017).mkv",
-						"size": 30258632950,
-						"audioProfile": "lc",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Armando Iannucci"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "David Schneider"
-			},
-			{
-				"tag": "Armando Iannucci"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Belgium"
-			},
-			{
-				"tag": "Canada"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Steve Buscemi"
-			},
-			{
-				"tag": "Simon Russell Beale"
-			},
-			{
-				"tag": "Jeffrey Tambor"
-			}
-		]
-	},
-	{
-		"ratingKey": "10289",
-		"key": "/library/metadata/10289",
-		"guid": "plex://movie/5d7768335af944001f1f9479",
-		"studio": "Calimari Productions",
-		"type": "movie",
-		"title": "Deep Rising",
-		"contentRating": "R",
-		"summary": "A group of heavily armed hijackers board a luxury ocean liner in the South Pacific Ocean to loot it, only to do battle with a series of large-sized, tentacled, man-eating sea creatures who had already invaded the ship.",
-		"rating": 3.4,
-		"audienceRating": 4.3,
-		"viewOffset": 2957837,
-		"lastViewedAt": 1678130554,
-		"year": 1997,
-		"tagline": "Full scream ahead",
-		"thumb": "/library/metadata/10289/thumb/1711898733",
-		"duration": 6380032,
-		"originallyAvailableAt": "1997-11-30",
-		"addedAt": 1575163637,
-		"updatedAt": 1711898733,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23013,
-				"duration": 6380032,
-				"bitrate": 18087,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23125,
-						"key": "/library/parts/23125/1575163637/file.mkv",
-						"duration": 6380032,
-						"file": "/volume1/Movies/Deep Rising (1998).mkv",
-						"size": 14424138887,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Action"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Stephen Sommers"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Stephen Sommers"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Canada"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Treat Williams"
-			},
-			{
-				"tag": "Famke Janssen"
-			},
-			{
-				"tag": "Anthony Heald"
-			}
-		]
-	},
-	{
-		"ratingKey": "9530",
-		"key": "/library/metadata/9530",
-		"guid": "plex://movie/5d776b2ef617c90020173086",
-		"studio": "Summit Entertainment",
-		"type": "movie",
-		"title": "Deepwater Horizon",
-		"contentRating": "PG-13",
-		"summary": "A dramatization of the disaster in April 2010, when the offshore drilling rig called the Deepwater Horizon exploded, resulting in the worst oil spill in American history.",
-		"rating": 8.2,
-		"audienceRating": 8.2,
-		"viewOffset": 3438000,
-		"lastViewedAt": 1677613797,
-		"year": 2016,
-		"tagline": "When faced with our darkest hour, hope is not a tactic.",
-		"thumb": "/library/metadata/9530/thumb/1711900758",
-		"duration": 6437504,
-		"originallyAvailableAt": "2016-09-28",
-		"addedAt": 1483129433,
-		"updatedAt": 1711900758,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21317,
-				"duration": 6437504,
-				"bitrate": 15023,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21418,
-						"key": "/library/parts/21418/1483129433/file.mkv",
-						"duration": 6437504,
-						"file": "/volume1/Movies/Deepwater Horizon (2016).mkv",
-						"size": 12090620677,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Peter Berg"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "J.C. Chandor"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Hong Kong"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Mark Wahlberg"
-			},
-			{
-				"tag": "Kurt Russell"
-			},
-			{
-				"tag": "John Malkovich"
-			}
-		]
-	},
-	{
-		"ratingKey": "10290",
-		"key": "/library/metadata/10290",
-		"guid": "plex://movie/5d776a03f617c90020167bf1",
-		"studio": "LStar Capital",
-		"type": "movie",
-		"title": "Deliver Us from Evil",
-		"contentRating": "R",
-		"summary": "New York police officer Ralph Sarchie investigates a series of crimes. He joins forces with an unconventional priest, schooled in the rites of exorcism, to combat the possessions that are terrorizing their city.",
-		"rating": 2.9,
-		"audienceRating": 4.2,
-		"viewOffset": 699741,
-		"lastViewedAt": 1704774052,
-		"year": 2014,
-		"tagline": "You haven't seen true evil.",
-		"thumb": "/library/metadata/10290/thumb/1710700611",
-		"duration": 7106486,
-		"originallyAvailableAt": "2014-07-02",
-		"addedAt": 1677975683,
-		"updatedAt": 1710700611,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23014,
-				"duration": 7106486,
-				"bitrate": 22158,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23126,
-						"key": "/library/parts/23126/1677499470/file.mkv",
-						"duration": 7106486,
-						"file": "/volume1/Movies/Deliver Us from Evil (2014).mkv",
-						"size": 19683418921,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Scott Derrickson"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Scott Derrickson"
-			},
-			{
-				"tag": "Paul Harris Boardman"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Eric Bana"
-			},
-			{
-				"tag": "Olivia Munn"
-			},
-			{
-				"tag": "Edgar Ramírez"
-			}
-		]
-	},
-	{
-		"ratingKey": "10291",
-		"key": "/library/metadata/10291",
-		"guid": "plex://movie/5d77687d6f4521001eaa93ce",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Devil",
-		"contentRating": "PG-13",
-		"summary": "A group of people are trapped in an elevator and the Devil is mysteriously amongst them.",
-		"rating": 5,
-		"audienceRating": 4.3,
-		"year": 2010,
-		"tagline": "Bad things happen for a reason.",
-		"thumb": "/library/metadata/10291/thumb/1711898735",
-		"duration": 4821344,
-		"originallyAvailableAt": "2010-09-16",
-		"addedAt": 1677447015,
-		"updatedAt": 1711898735,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23015,
-				"duration": 4821344,
-				"bitrate": 33393,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "vc1",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "advanced",
-				"Part": [
-					{
-						"id": 23127,
-						"key": "/library/parts/23127/1677370892/file.mkv",
-						"duration": 4821344,
-						"file": "/volume1/Movies/Devil (2010).mkv",
-						"size": 20124849703,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"videoProfile": "advanced"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Thriller"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "John Erick Dowdle"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "M. Night Shyamalan"
-			},
-			{
-				"tag": "Brian Nelson"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Chris Messina"
-			},
-			{
-				"tag": "Bojana Novaković"
-			},
-			{
-				"tag": "Jenny O'Hara"
-			}
-		]
-	},
-	{
-		"ratingKey": "7784",
-		"key": "/library/metadata/7784",
-		"guid": "plex://movie/5d77682a7e9a3c0020c6b180",
-		"studio": "Monarchy Enterprises B.V.",
-		"type": "movie",
-		"title": "The Devil's Advocate",
-		"titleSort": "Devil's Advocate",
-		"contentRating": "R",
-		"summary": "An exceptionally-adept Florida lawyer is offered a job at a high-end New York City law firm with a high-end boss--the biggest opportunity of his career to date.",
-		"rating": 6.3,
-		"audienceRating": 8,
-		"viewCount": 2,
-		"lastViewedAt": 1682922713,
-		"year": 1997,
-		"tagline": "The newest attorney at the world's most powerful law firm has never lost a case. But he's about to lose his soul.",
-		"thumb": "/library/metadata/7784/thumb/1711898799",
-		"art": "/library/metadata/7784/art/1711898799",
-		"duration": 8635689,
-		"originallyAvailableAt": "1997-10-17",
-		"addedAt": 1681430871,
-		"updatedAt": 1711898799,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 16994,
-				"duration": 8635689,
-				"bitrate": 23251,
-				"width": 1920,
-				"height": 800,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17061,
-						"key": "/library/parts/17061/1681299426/file.mkv",
-						"duration": 8635689,
-						"file": "/volume1/Movies/The Devil's Advocate (1997).mkv",
-						"size": 25106513732,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Taylor Hackford"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Andrew Neiderman"
-			},
-			{
-				"tag": "Jonathan Lemkin"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Germany"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Keanu Reeves"
-			},
-			{
-				"tag": "Al Pacino"
-			},
-			{
-				"tag": "Charlize Theron"
-			}
-		]
-	},
-	{
-		"ratingKey": "5502",
-		"key": "/library/metadata/5502",
-		"guid": "plex://movie/5d9f35436fc551001ef80fdc",
-		"studio": "Mosfilm",
-		"type": "movie",
-		"title": "The Diamond Arm",
-		"titleSort": "Diamond Arm",
-		"originalTitle": "Бриллиантовая рука",
-		"contentRating": "PG-13",
-		"summary": "Semyon Gorbunkov goes on a cruise. In Istanbul, he slips and breaks his arm. What he didn't know is that this was a signal for a gang of smugglers (a real smuggler - Gena - was also on board the same ship). So his arm gets bandaged with gold and diamonds. After he returns home, the gangsters are trying to get their stuff back, while the police try to catch them using Gorbunkov and his arm.",
-		"audienceRating": 8.7,
-		"viewCount": 1,
-		"lastViewedAt": 1691534792,
-		"year": 1969,
-		"tagline": "A cinematographic novel in 2 parts from the life of smugglers",
-		"thumb": "/library/metadata/5502/thumb/1711898800",
-		"art": "/library/metadata/5502/art/1711898800",
-		"duration": 5895200,
-		"originallyAvailableAt": "1969-04-28",
-		"addedAt": 1679417531,
-		"updatedAt": 1711898800,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"Media": [
-			{
-				"id": 11756,
-				"duration": 5895200,
-				"bitrate": 24178,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "truehd",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 11812,
-						"key": "/library/parts/11812/1679367623/file.mkv",
-						"duration": 5895200,
-						"file": "/volume1/Movies/Бриллиантовая рука (1968).mkv",
-						"size": 17816489587,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Adventure"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Leonid Gaidai"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Leonid Gaidai"
-			},
-			{
-				"tag": "Moris Slobodskoy"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Russian Federation"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Yuriy Nikulin"
-			},
-			{
-				"tag": "Nina Grebeshkova"
-			},
-			{
-				"tag": "Nonna Mordyukova"
-			}
-		]
-	},
-	{
-		"ratingKey": "8146",
-		"key": "/library/metadata/8146",
-		"guid": "plex://movie/5d7768bafb0d55001f518853",
-		"studio": "Paramount",
-		"type": "movie",
-		"title": "The Dictator",
-		"titleSort": "Dictator",
-		"contentRating": "R",
-		"summary": "The Republic of Wadiya is ruled by an eccentric and oppressive leader named Hafez Aladeen. Aladeen is summoned to New York to a UN assembly to address concerns about his country's nuclear weapons program, but the trip goes awry.",
-		"rating": 5.6,
-		"audienceRating": 4.4,
-		"viewOffset": 931000,
-		"lastViewedAt": 1701899682,
-		"year": 2012,
-		"tagline": "Make way for Aladeen.",
-		"thumb": "/library/metadata/8146/thumb/1711898799",
-		"art": "/library/metadata/8146/art/1711898799",
-		"duration": 4998176,
-		"originallyAvailableAt": "2012-05-16",
-		"addedAt": 1684062349,
-		"updatedAt": 1711898799,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 17715,
-				"duration": 4998176,
-				"bitrate": 35511,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17784,
-						"key": "/library/parts/17784/1702079804/file.mkv",
-						"duration": 4998176,
-						"file": "/volume3/MoviesB/Movis/The Dictator (2012).mkv",
-						"size": 22189470959,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Larry Charles"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Sacha Baron Cohen"
-			},
-			{
-				"tag": "Jeff Schaffer"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United Kingdom"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Sacha Baron Cohen"
-			},
-			{
-				"tag": "Ben Kingsley"
-			},
-			{
-				"tag": "Anna Faris"
-			}
-		]
-	},
-	{
-		"ratingKey": "10292",
-		"key": "/library/metadata/10292",
-		"guid": "plex://movie/5d7768680ab244002006d25a",
-		"studio": "EON Productions",
-		"type": "movie",
-		"title": "Die Another Day",
-		"contentRating": "PG-13",
-		"summary": "James Bond is sent to investigate the connection between a North Korean terrorist and a diamond mogul, who is funding the development of an international space weapon.",
-		"rating": 5.5,
-		"audienceRating": 4.1,
-		"viewCount": 1,
-		"lastViewedAt": 1700176360,
-		"year": 2002,
-		"tagline": "He's never been cooler.",
-		"thumb": "/library/metadata/10292/thumb/1711898735",
-		"duration": 7954912,
-		"originallyAvailableAt": "2002-11-20",
-		"addedAt": 1680205918,
-		"updatedAt": 1711898735,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23016,
-				"duration": 7954912,
-				"bitrate": 27293,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mpegts",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23128,
-						"key": "/library/parts/23128/1680224103/file.ts",
-						"duration": 7954912,
-						"file": "/volume1/Movies/Die Another Day (2002).ts",
-						"size": 27139577540,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Lee Tamahori"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Ian Fleming"
-			},
-			{
-				"tag": "Robert Wade"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Spain"
-			},
-			{
-				"tag": "United Kingdom"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Pierce Brosnan"
-			},
-			{
-				"tag": "Halle Berry"
-			},
-			{
-				"tag": "Toby Stephens"
-			}
-		]
-	},
-	{
-		"ratingKey": "10293",
-		"key": "/library/metadata/10293",
-		"guid": "plex://movie/5d776829103a2d001f564e3d",
-		"studio": "Gordon Company",
-		"type": "movie",
-		"title": "Die Hard 2",
-		"contentRating": "R",
-		"summary": "Off-duty cop John McClane is gripped with a feeling of déjà vu when, on a snowy Christmas Eve in the nation’s capital, terrorists seize a major international airport, holding thousands of holiday travelers hostage. Renegade military commandos led by a murderous rogue officer plot to rescue a drug lord from justice and are prepared for every contingency except one: McClane’s smart-mouthed heroics.",
-		"rating": 6.9,
-		"audienceRating": 7,
-		"viewOffset": 3071475,
-		"lastViewedAt": 1699222947,
-		"year": 1990,
-		"tagline": "Die harder.",
-		"thumb": "/library/metadata/10293/thumb/1710700612",
-		"duration": 7403072,
-		"originallyAvailableAt": "1990-07-03",
-		"addedAt": 1677432345,
-		"updatedAt": 1710700612,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23017,
-				"duration": 7403072,
-				"bitrate": 27611,
-				"width": 1920,
-				"height": 812,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23129,
-						"key": "/library/parts/23129/1449641970/file.mkv",
-						"duration": 7403072,
-						"file": "/volume1/Movies/Die Hard 2 (1990).mkv",
-						"size": 25550854526,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Renny Harlin"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Steven E. de Souza"
-			},
-			{
-				"tag": "Doug Richardson"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Bruce Willis"
-			},
-			{
-				"tag": "Bonnie Bedelia"
-			},
-			{
-				"tag": "William Sadler"
-			}
-		]
-	},
-	{
-		"ratingKey": "10294",
-		"key": "/library/metadata/10294",
-		"guid": "plex://movie/5d776829eb5d26001f1de1d1",
-		"studio": "20th Century Fox",
-		"type": "movie",
-		"title": "Die Hard with a Vengeance",
-		"contentRating": "R",
-		"summary": "New York detective John McClane is back and kicking bad-guy butt in the third installment of this action-packed series, which finds him teaming with civilian Zeus Carver to prevent the loss of innocent lives. McClane thought he'd seen it all, until a genius named Simon engages McClane, his new \"partner\" -- and his beloved city -- in a deadly game that demands their concentration.",
-		"rating": 5.9,
-		"audienceRating": 8.3,
-		"year": 1995,
-		"tagline": "Think fast. Look alive. Die hard.",
-		"thumb": "/library/metadata/10294/thumb/1711898736",
-		"duration": 7711776,
-		"originallyAvailableAt": "1995-05-19",
-		"addedAt": 1677432346,
-		"updatedAt": 1711898736,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23018,
-				"duration": 7711776,
-				"bitrate": 30619,
-				"width": 1920,
-				"height": 816,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23130,
-						"key": "/library/parts/23130/1449667752/file.mkv",
-						"duration": 7711776,
-						"file": "/volume1/Movies/Die Hard With a Vengeance (1995).mkv",
-						"size": 29515804407,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Adventure"
-			}
-		],
-		"Director": [
-			{
-				"tag": "John McTiernan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jonathan Hensleigh"
-			},
-			{
-				"tag": "Roderick Thorp"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Bruce Willis"
-			},
-			{
-				"tag": "Samuel L. Jackson"
-			},
-			{
-				"tag": "Jeremy Irons"
-			}
-		]
-	},
-	{
-		"ratingKey": "10295",
-		"key": "/library/metadata/10295",
-		"guid": "plex://movie/5d776831e6d55c002040c4cb",
-		"studio": "DreamWorks Pictures",
-		"type": "movie",
-		"title": "Disturbia",
-		"contentRating": "PG-13",
-		"summary": "Kale is a 17-year-old placed under house arrest after punching his teacher. He is confined to his house, and decides to use his free time spying on his neighbors. Things start to get weird when guests enter the Turner's house and don't come back out. Kale and his friends, Ronnie and Ashley, start to grow more and more interested in what is actually happening within the house of Robert Turner.",
-		"rating": 7,
-		"audienceRating": 7.7,
-		"year": 2007,
-		"tagline": "The quieter the street, the darker the secrets....",
-		"thumb": "/library/metadata/10295/thumb/1711898737",
-		"duration": 6276288,
-		"originallyAvailableAt": "2007-04-12",
-		"addedAt": 1678127167,
-		"updatedAt": 1711898737,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23019,
-				"duration": 6276288,
-				"bitrate": 16872,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23131,
-						"key": "/library/parts/23131/1677929723/file.mkv",
-						"duration": 6276288,
-						"file": "/volume1/Movies/Disturbia (2007).mkv",
-						"size": 13236299270,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Mystery"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "D. J. Caruso"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Christopher Landon"
-			},
-			{
-				"tag": "Carl Ellsworth"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Shia LaBeouf"
-			},
-			{
-				"tag": "Sarah Roemer"
-			},
-			{
-				"tag": "Carrie-Anne Moss"
-			}
-		]
-	},
-	{
-		"ratingKey": "9531",
-		"key": "/library/metadata/9531",
-		"guid": "plex://movie/5d7768adebdf2200209c5d46",
-		"studio": "The Weinstein Company",
-		"type": "movie",
-		"title": "Django Unchained",
-		"contentRating": "R",
-		"summary": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.",
-		"rating": 8.7,
-		"audienceRating": 9.2,
-		"year": 2012,
-		"tagline": "Life, liberty, and the pursuit of vengeance.",
-		"thumb": "/library/metadata/9531/thumb/1711898800",
-		"duration": 9922871,
-		"originallyAvailableAt": "2012-12-25",
-		"addedAt": 1540085315,
-		"updatedAt": 1711898800,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21318,
-				"duration": 9922871,
-				"bitrate": 8699,
-				"width": 1280,
-				"height": 534,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21419,
-						"key": "/library/parts/21419/1540085315/file.mkv",
-						"duration": 9922871,
-						"file": "/volume1/Movies/Django Unchained (2012).mkv",
-						"size": 10794044996,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Western"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Quentin Tarantino"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Quentin Tarantino"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jamie Foxx"
-			},
-			{
-				"tag": "Christoph Waltz"
-			},
-			{
-				"tag": "Leonardo DiCaprio"
-			}
-		]
-	},
-	{
-		"ratingKey": "10283",
-		"key": "/library/metadata/10283",
-		"guid": "plex://movie/5d776da0594b2b001e70ddb5",
-		"studio": "Vertigo Entertainment",
-		"type": "movie",
-		"title": "Doctor Sleep",
-		"contentRating": "R",
-		"summary": "Years following the events of The Shining (1980), a now-adult Dan Torrance must protect a young girl with similar powers from a cult known as The True Knot, who prey on children with powers to remain immortal.",
-		"rating": 7.8,
-		"audienceRating": 8.9,
-		"viewCount": 1,
-		"lastViewedAt": 1681864152,
-		"year": 2019,
-		"tagline": "Return to the Overlook.",
-		"thumb": "/library/metadata/10283/thumb/1711898728",
-		"duration": 9118592,
-		"originallyAvailableAt": "2019-10-30",
-		"addedAt": 1580177211,
-		"updatedAt": 1711898728,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 23007,
-				"duration": 9118592,
-				"bitrate": 7699,
-				"width": 1920,
-				"height": 1040,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23119,
-						"key": "/library/parts/23119/1580177211/file.mkv",
-						"duration": 9118592,
-						"file": "/volume1/Movies/Doctor Sleep (2019).mkv",
-						"size": 8775282015,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Mike Flanagan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Stephen King"
-			},
-			{
-				"tag": "Mike Flanagan"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Ewan McGregor"
-			},
-			{
-				"tag": "Kyliegh Curran"
-			},
-			{
-				"tag": "Rebecca Ferguson"
-			}
-		]
-	},
-	{
-		"ratingKey": "9384",
-		"key": "/library/metadata/9384",
-		"guid": "plex://movie/5d776d4796b655001fe44b28",
-		"studio": "Marvel Studios",
-		"type": "movie",
-		"title": "Doctor Strange in the Multiverse of Madness",
-		"contentRating": "PG-13",
-		"summary": "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others.",
-		"rating": 7.3,
-		"audienceRating": 8.5,
-		"year": 2022,
-		"tagline": "Enter a new dimension of Strange.",
-		"thumb": "/library/metadata/9384/thumb/1711898801",
-		"art": "/library/metadata/9384/art/1711898801",
-		"duration": 7591264,
-		"originallyAvailableAt": "2022-05-04",
-		"addedAt": 1710700296,
-		"updatedAt": 1711898801,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20953,
-				"duration": 7591264,
-				"bitrate": 15516,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21034,
-						"key": "/library/parts/21034/1710043137/file.mkv",
-						"duration": 7591264,
-						"file": "/volume3/MoviesB/Movis/Doctor Strange in the Multiverse of Madness (2022) 3D.mkv",
-						"size": 14727312340,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Fantasy"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Sam Raimi"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Michael Waldron"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Benedict Cumberbatch"
-			},
-			{
-				"tag": "Elizabeth Olsen"
-			},
-			{
-				"tag": "Chiwetel Ejiofor"
-			}
-		]
-	},
-	{
-		"ratingKey": "6776",
-		"key": "/library/metadata/6776",
-		"guid": "plex://movie/5d7768265af944001f1f697c",
-		"studio": "YLE",
-		"type": "movie",
-		"title": "Dogville",
-		"contentRating": "R",
-		"summary": "A mysterious woman named Grace hides in a small mountain town from criminals who pursue her. The town is two-faced and offers to harbor Grace as long as she can make it worth their effort, so Grace works hard under the employ of various townspeople to win their favor. Tensions flare, however, and Grace's status as a helpless outsider provokes vicious contempt and abuse from the citizens of Dogville.",
-		"rating": 7,
-		"audienceRating": 8.9,
-		"viewOffset": 1088351,
-		"lastViewedAt": 1696289447,
-		"year": 2003,
-		"tagline": "A quiet little town not far from here.",
-		"thumb": "/library/metadata/6776/thumb/1711898801",
-		"art": "/library/metadata/6776/art/1711898801",
-		"duration": 10674122,
-		"originallyAvailableAt": "2003-05-21",
-		"addedAt": 1680346463,
-		"updatedAt": 1711898801,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 14692,
-				"duration": 10674122,
-				"bitrate": 6842,
-				"width": 1280,
-				"height": 544,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 14752,
-						"key": "/library/parts/14752/1680312462/file.mkv",
-						"duration": 10674122,
-						"file": "/volume1/Movies/Dogville (2003).mkv",
-						"size": 9129469619,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Crime"
-			},
-			{
-				"tag": "Drama"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Lars von Trier"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Lars von Trier"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Germany"
-			},
-			{
-				"tag": "Denmark"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Nicole Kidman"
-			},
-			{
-				"tag": "Paul Bettany"
-			},
-			{
-				"tag": "John Hurt"
-			}
-		]
-	},
-	{
-		"ratingKey": "6282",
-		"key": "/library/metadata/6282",
-		"guid": "plex://movie/5e1622597d3bc8003d780366",
-		"studio": "Hyperobject Industries",
-		"type": "movie",
-		"title": "Don't Look Up",
-		"contentRating": "R",
-		"summary": "Two low-level astronomers must go on a giant media tour to warn humankind of an approaching comet that will destroy planet Earth.",
-		"rating": 5.5,
-		"audienceRating": 7.8,
-		"viewCount": 1,
-		"lastViewedAt": 1682812882,
-		"year": 2021,
-		"tagline": "Based on truly possible events.",
-		"thumb": "/library/metadata/6282/thumb/1711898802",
-		"art": "/library/metadata/6282/art/1711898802",
-		"duration": 8591648,
-		"originallyAvailableAt": "2021-12-08",
-		"addedAt": 1680033838,
-		"updatedAt": 1711898802,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 13578,
-				"duration": 8591648,
-				"bitrate": 8966,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "eac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 13638,
-						"key": "/library/parts/13638/1680019693/file.mkv",
-						"duration": 8591648,
-						"file": "/volume1/Movies/Don't Look Up (2021).mkv",
-						"size": 9628554339,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			},
-			{
-				"tag": "Science Fiction"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Adam McKay"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Adam McKay"
-			},
-			{
-				"tag": "David Sirota"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jennifer Lawrence"
-			},
-			{
-				"tag": "Leonardo DiCaprio"
-			},
-			{
-				"tag": "Meryl Streep"
-			}
-		]
-	},
-	{
-		"ratingKey": "10284",
-		"key": "/library/metadata/10284",
-		"guid": "plex://movie/5d776833f59e580021898657",
-		"studio": "20th Century Fox",
-		"type": "movie",
-		"title": "Down Periscope",
-		"contentRating": "PG-13",
-		"summary": "Lt. Cmdr. Tom Dodge is assigned as Captain to the USS Stingray, an old diesel driven submarine that has seen better days. With a crew that consists only of weird guys (and a gal), he's headed against the atomic powered USS Orlando, with the mission to destroy a dummy battleship.",
-		"rating": 1.1,
-		"audienceRating": 6.2,
-		"viewCount": 1,
-		"skipCount": 1,
-		"lastViewedAt": 1704517359,
-		"year": 1996,
-		"tagline": "A rusty sub. A rebel commander. A renegade crew. When destiny called, they should have hung up.",
-		"thumb": "/library/metadata/10284/thumb/1710700614",
-		"duration": 5568160,
-		"originallyAvailableAt": "1996-03-01",
-		"addedAt": 1677432457,
-		"updatedAt": 1710700614,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 23008,
-				"duration": 5568160,
-				"bitrate": 5965,
-				"width": 1280,
-				"height": 692,
-				"aspectRatio": 1.85,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "720",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 23120,
-						"key": "/library/parts/23120/1510799921/file.mkv",
-						"duration": 5568160,
-						"file": "/volume1/Movies/Down Periscope (1996).mkv",
-						"size": 4151480423,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "David S. Ward"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Hugh Wilson"
-			},
-			{
-				"tag": "Andrew Kurtzman"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Kelsey Grammer"
-			},
-			{
-				"tag": "Lauren Holly"
-			},
-			{
-				"tag": "Rob Schneider"
-			}
-		]
-	},
-	{
-		"ratingKey": "5963",
-		"key": "/library/metadata/5963",
-		"guid": "plex://movie/5d776888decfcd001f2ebaf6",
-		"studio": "Universal Pictures",
-		"type": "movie",
-		"title": "Dracula Untold",
-		"contentRating": "PG-13",
-		"summary": "As his kingdom is being threatened by the Turks, young prince Vlad Tepes must become a monster feared by his own people in order to obtain the power needed to protect his own family, and the families of his kingdom.",
-		"rating": 2.5,
-		"audienceRating": 5.8,
-		"viewOffset": 2374002,
-		"lastViewedAt": 1681086748,
-		"year": 2014,
-		"tagline": "Every bloodline has a beginning",
-		"thumb": "/library/metadata/5963/thumb/1710700615",
-		"art": "/library/metadata/5963/art/1710700615",
-		"duration": 5528416,
-		"originallyAvailableAt": "2014-10-01",
-		"addedAt": 1679783031,
-		"updatedAt": 1710700615,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 12795,
-				"duration": 5528416,
-				"bitrate": 44387,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "dca",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"audioProfile": "dts",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 12852,
-						"key": "/library/parts/12852/1679808197/file.mkv",
-						"duration": 5528416,
-						"file": "/volume1/Movies/Dracula Untold (2014).mkv",
-						"size": 30673650503,
-						"audioProfile": "dts",
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Gary Shore"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Matt Sazama"
-			},
-			{
-				"tag": "Burk Sharpless"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Luke Evans"
-			},
-			{
-				"tag": "Dominic Cooper"
-			},
-			{
-				"tag": "Sarah Gadon"
-			}
-		]
-	},
-	{
-		"ratingKey": "7988",
-		"key": "/library/metadata/7988",
-		"guid": "plex://movie/5d7768302e80df001ebddbb6",
-		"studio": "Kasdan Pictures",
-		"type": "movie",
-		"title": "Dreamcatcher",
-		"contentRating": "R",
-		"summary": "Four childhood friends, Jonesy, Beaver, Pete and Henry all share a special secret. Each year, they take a trip into Maine woods. This year is different. A blizzard occurs, and they recover a man found wandering around. Unbeknownst to them, this wandering individual isn't the only being to be found. Now they must act fast to stop the outbreak developing and to prevent the world from its doom.",
-		"rating": 2.8,
-		"audienceRating": 3.5,
-		"year": 2003,
-		"tagline": "Four friends hung a dreamcatcher in their cabin. It's about to catch something it cannot stop.",
-		"thumb": "/library/metadata/7988/thumb/1711898802",
-		"art": "/library/metadata/7988/art/1711898802",
-		"duration": 8027040,
-		"originallyAvailableAt": "2003-03-21",
-		"addedAt": 1684062337,
-		"updatedAt": 1711898802,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 17444,
-				"duration": 8027040,
-				"bitrate": 46641,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 17513,
-						"key": "/library/parts/17513/1683085145/file.mkv",
-						"duration": 8027040,
-						"file": "/volume3/MoviesB/Movis/Dreamcatcher (2003).mkv",
-						"size": 46811174592,
-						"container": "mkv",
-						"hasThumbnail": "1",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Drama"
-			},
-			{
-				"tag": "Horror"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Lawrence Kasdan"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "William Goldman"
-			},
-			{
-				"tag": "Stephen King"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Morgan Freeman"
-			},
-			{
-				"tag": "Thomas Jane"
-			},
-			{
-				"tag": "Jason Lee"
-			}
-		]
-	},
-	{
-		"ratingKey": "7599",
-		"key": "/library/metadata/7599",
-		"guid": "plex://movie/5d776d157a53e9001e7506b2",
-		"studio": "Seasonal Film Corporation",
-		"type": "movie",
-		"title": "Drunken Master",
-		"originalTitle": "醉拳",
-		"contentRating": "PG-13",
-		"summary": "The father of Wong Fei-hong, who has been attempting to teach his son kung-fu, but has found him too disobedient to teach and decides to send him off to his uncle, a cruel and torturous master of the 8-Drunken Genii kung-fu. After much suffering the son comes back to rescue the father from an assassin.",
-		"audienceRating": 7.4,
-		"year": 1978,
-		"tagline": "The Original Kung Fu Comedy!",
-		"thumb": "/library/metadata/7599/thumb/1711898802",
-		"art": "/library/metadata/7599/art/1711898802",
-		"duration": 6672123,
-		"originallyAvailableAt": "1978-10-05",
-		"addedAt": 1681040036,
-		"updatedAt": 1711898802,
-		"audienceRatingImage": "imdb://image.rating",
-		"chapterSource": "media",
-		"hasPremiumPrimaryExtra": "1",
-		"Media": [
-			{
-				"id": 16549,
-				"duration": 6672123,
-				"bitrate": 26981,
-				"width": 1920,
-				"height": 804,
-				"aspectRatio": 2.35,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 16614,
-						"key": "/library/parts/16614/1680986924/file.mkv",
-						"duration": 6672123,
-						"file": "/volume1/Movies/Drunken Master (1978).mkv",
-						"size": 22507370271,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Yuen Woo-Ping"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Yuen Woo-Ping"
-			},
-			{
-				"tag": "Ng See-Yuen"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Hong Kong"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Jackie Chan"
-			},
-			{
-				"tag": "Yuen Siu-Tien"
-			},
-			{
-				"tag": "Hwang Jang-Lee"
-			}
-		]
-	},
-	{
-		"ratingKey": "9267",
-		"key": "/library/metadata/9267",
-		"guid": "plex://movie/6040a29753b2b5002c4cfa1a",
-		"studio": "Black Bear Pictures",
-		"type": "movie",
-		"title": "Dumb Money",
-		"contentRating": "R",
-		"summary": "Vlogger Keith Gill sinks his life savings into GameStop stock and posts about it. When social media starts blowing up, so do his life and the lives of everyone following him. As a stock tip becomes a movement, everyone gets rich—until the billionaires fight back, and both sides find their worlds turned upside down.",
-		"rating": 8.4,
-		"audienceRating": 8.5,
-		"year": 2023,
-		"tagline": "When Wall Street rigged the game, he changed it.",
-		"thumb": "/library/metadata/9267/thumb/1711900761",
-		"art": "/library/metadata/9267/art/1711900761",
-		"duration": 6302304,
-		"originallyAvailableAt": "2023-09-20",
-		"addedAt": 1703602674,
-		"updatedAt": 1711900761,
-		"audienceRatingImage": "rottentomatoes://image.rating.upright",
-		"chapterSource": "media",
-		"hasPremiumExtras": "1",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 20955,
-				"duration": 6302304,
-				"bitrate": 17146,
-				"width": 1920,
-				"height": 804,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "high",
-				"Part": [
-					{
-						"id": 21036,
-						"key": "/library/parts/21036/1708216346/file.mkv",
-						"duration": 6302304,
-						"file": "/volume3/MoviesB/Movis/Dumb Money (2023).mkv",
-						"size": 13510618068,
-						"container": "mkv",
-						"videoProfile": "high"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Biography"
-			},
-			{
-				"tag": "Comedy"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Craig Gillespie"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Lauren Schuker Blum"
-			},
-			{
-				"tag": "Rebecca Angelo"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Paul Dano"
-			},
-			{
-				"tag": "Shailene Woodley"
-			},
-			{
-				"tag": "America Ferrera"
-			}
-		]
-	},
-	{
 		"ratingKey": "10130",
 		"key": "/library/metadata/10130",
 		"guid": "plex://movie/5d776866374a5b001fec472d",
@@ -40468,11 +44788,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1704051528,
 		"year": 2010,
 		"tagline": "The magic's back, warts and all.",
-		"thumb": "/library/metadata/10130/thumb/1711898677",
+		"thumb": "/library/metadata/10130/thumb/1712000241",
 		"duration": 6554816,
 		"originallyAvailableAt": "2010-03-25",
 		"addedAt": 1679313378,
-		"updatedAt": 1711898677,
+		"updatedAt": 1712000241,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -40481,7 +44801,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22701,
 				"duration": 6554816,
-				"bitrate": 11177,
+				"bitrate": 11172,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -40559,12 +44879,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.9,
 		"year": 2023,
 		"tagline": "He came from nothing. He conquered everything.",
-		"thumb": "/library/metadata/9313/thumb/1711898863",
-		"art": "/library/metadata/9313/art/1711898863",
+		"thumb": "/library/metadata/9313/thumb/1712000242",
+		"art": "/library/metadata/9313/art/1712000242",
 		"duration": 8990880,
 		"originallyAvailableAt": "2023-11-22",
 		"addedAt": 1704597979,
-		"updatedAt": 1711898863,
+		"updatedAt": 1712000242,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -40647,12 +44967,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1681604065,
 		"year": 2004,
 		"tagline": "In order to break the code, one man will have to break all the rules.",
-		"thumb": "/library/metadata/7824/thumb/1711898863",
-		"art": "/library/metadata/7824/art/1711898863",
+		"thumb": "/library/metadata/7824/thumb/1712000242",
+		"art": "/library/metadata/7824/art/1712000242",
 		"duration": 7864512,
 		"originallyAvailableAt": "2004-11-19",
 		"addedAt": 1681513246,
-		"updatedAt": 1711898863,
+		"updatedAt": 1712000242,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -40736,12 +45056,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.7,
 		"year": 2007,
 		"tagline": "The greatest adventure history has ever revealed.",
-		"thumb": "/library/metadata/7825/thumb/1711898863",
-		"art": "/library/metadata/7825/art/1711898863",
+		"thumb": "/library/metadata/7825/thumb/1712000242",
+		"art": "/library/metadata/7825/art/1712000242",
 		"duration": 7472480,
 		"originallyAvailableAt": "2007-12-18",
 		"addedAt": 1681513246,
-		"updatedAt": 1711898863,
+		"updatedAt": 1712000242,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -40912,12 +45232,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.4,
 		"year": 2016,
 		"tagline": "It's parenthood vs. sisterhood.",
-		"thumb": "/library/metadata/5694/thumb/1711898863",
-		"art": "/library/metadata/5694/art/1711898863",
+		"thumb": "/library/metadata/5694/thumb/1712000242",
+		"art": "/library/metadata/5694/art/1712000242",
 		"duration": 5543840,
 		"originallyAvailableAt": "2016-05-04",
 		"addedAt": 1679685986,
-		"updatedAt": 1711898863,
+		"updatedAt": 1712000242,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -41466,12 +45786,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.9,
 		"year": 2022,
 		"tagline": "What’s a bad miracle?",
-		"thumb": "/library/metadata/8653/thumb/1711898864",
-		"art": "/library/metadata/8653/art/1711898864",
+		"thumb": "/library/metadata/8653/thumb/1712000244",
+		"art": "/library/metadata/8653/art/1712000244",
 		"duration": 7830880,
 		"originallyAvailableAt": "2022-07-21",
 		"addedAt": 1691529162,
-		"updatedAt": 1711898864,
+		"updatedAt": 1712000244,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -41644,12 +45964,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.1,
 		"year": 2013,
 		"tagline": "Earth is a memory worth fighting for",
-		"thumb": "/library/metadata/5917/thumb/1711898864",
-		"art": "/library/metadata/5917/art/1711898864",
+		"thumb": "/library/metadata/5917/thumb/1712000245",
+		"art": "/library/metadata/5917/art/1712000245",
 		"duration": 7482336,
 		"originallyAvailableAt": "2013-04-10",
 		"addedAt": 1679755484,
-		"updatedAt": 1711898864,
+		"updatedAt": 1712000245,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -41918,11 +46238,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1709345548,
 		"year": 2019,
 		"tagline": "Anybody order fried sauerkraut?!",
-		"thumb": "/library/metadata/10124/thumb/1711898673",
+		"thumb": "/library/metadata/10124/thumb/1712000245",
 		"duration": 9689696,
 		"originallyAvailableAt": "2019-07-24",
 		"addedAt": 1613251575,
-		"updatedAt": 1711898673,
+		"updatedAt": 1712000245,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -41932,7 +46252,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22695,
 				"duration": 9689696,
-				"bitrate": 8835,
+				"bitrate": 8832,
 				"width": 1280,
 				"height": 536,
 				"aspectRatio": 2.35,
@@ -41992,92 +46312,6 @@ export const json_plex: IPlex[] = [
 			},
 			{
 				"tag": "Margot Robbie"
-			}
-		]
-	},
-	{
-		"ratingKey": "9315",
-		"key": "/library/metadata/9315",
-		"guid": "plex://movie/635c132c911f421d53f6df32",
-		"studio": "BondIt Media Capital",
-		"type": "movie",
-		"title": "One Ranger",
-		"contentRating": "R",
-		"summary": "British Intelligence meets Texas Justice in this white-knuckle action-thriller. A gun-slinging Texas ranger tracks a bank robber across the desert - only to discover he's an international terrorist set on detonating a bomb in the heart of London. When the lawman's partner is killed, he is drawn into partnership with a British intelligence agent and her boss to bring the outlaw to justice - dead or alive.",
-		"rating": 2.5,
-		"audienceRating": 2.6,
-		"year": 2023,
-		"tagline": "London is about to get a taste of Texas.",
-		"thumb": "/library/metadata/9315/thumb/1711898865",
-		"art": "/library/metadata/9315/art/1711898865",
-		"duration": 5765573,
-		"originallyAvailableAt": "2023-05-04",
-		"addedAt": 1704597980,
-		"updatedAt": 1711898865,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"hasPremiumExtras": "1",
-		"hasPremiumPrimaryExtra": "1",
-		"ratingImage": "rottentomatoes://image.rating.rotten",
-		"Media": [
-			{
-				"id": 20745,
-				"duration": 5765573,
-				"bitrate": 2157,
-				"width": 720,
-				"height": 304,
-				"aspectRatio": 2.35,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 21141,
-						"key": "/library/parts/21141/1703803719/file.avi",
-						"duration": 5765573,
-						"file": "/volume3/MoviesB/Movis/One Ranger (2023) 5.2.avi",
-						"size": 1560993792,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Action"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Jesse V. Johnson"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Jesse V. Johnson"
-			}
-		],
-		"Country": [
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Thomas Jane"
-			},
-			{
-				"tag": "Dominique Tipper"
-			},
-			{
-				"tag": "John Malkovich"
 			}
 		]
 	},
@@ -42280,12 +46514,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1708633327,
 		"year": 2023,
 		"tagline": "The world forever changes.",
-		"thumb": "/library/metadata/9166/thumb/1711898866",
-		"art": "/library/metadata/9166/art/1711898866",
+		"thumb": "/library/metadata/9166/thumb/1712000245",
+		"art": "/library/metadata/9166/art/1712000245",
 		"duration": 10822207,
 		"originallyAvailableAt": "2023-07-19",
 		"addedAt": 1703602665,
-		"updatedAt": 1711898866,
+		"updatedAt": 1712000245,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -42644,7 +46878,7 @@ export const json_plex: IPlex[] = [
 		"year": 1987,
 		"tagline": "From opulence... to rags... to love.",
 		"thumb": "/library/metadata/10125/thumb/1711898673",
-		"duration": 6730516,
+		"duration": 6730515,
 		"originallyAvailableAt": "1987-11-30",
 		"addedAt": 1677432310,
 		"updatedAt": 1711898673,
@@ -42655,8 +46889,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22696,
-				"duration": 6730516,
-				"bitrate": 10094,
+				"duration": 6730515,
+				"bitrate": 10089,
 				"width": 1280,
 				"height": 696,
 				"aspectRatio": 1.85,
@@ -42671,7 +46905,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22805,
 						"key": "/library/parts/22805/1449646278/file.mkv",
-						"duration": 6730516,
+						"duration": 6730515,
 						"file": "/volume1/Movies/Overboard (1987).mkv",
 						"size": 8492093071,
 						"container": "mkv",
@@ -42823,12 +47057,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1700177153,
 		"year": 2023,
 		"tagline": "An American excess story.",
-		"thumb": "/library/metadata/9034/thumb/1711898868",
-		"art": "/library/metadata/9034/art/1711898868",
+		"thumb": "/library/metadata/9034/thumb/1712000246",
+		"art": "/library/metadata/9034/art/1712000246",
 		"duration": 7489120,
 		"originallyAvailableAt": "2023-10-27",
 		"addedAt": 1699471555,
-		"updatedAt": 1711898868,
+		"updatedAt": 1712000246,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -42854,32 +47088,6 @@ export const json_plex: IPlex[] = [
 						"key": "/library/parts/20091/1699403653/file.mkv",
 						"duration": 7489120,
 						"file": "/volume3/MoviesB/Movis/Pain Hustlers (2023).mkv",
-						"size": 5837327803,
-						"container": "mkv",
-						"videoProfile": "main"
-					}
-				]
-			},
-			{
-				"id": 21054,
-				"duration": 7489120,
-				"bitrate": 6233,
-				"width": 1920,
-				"height": 1080,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "h264",
-				"videoResolution": "1080",
-				"container": "mkv",
-				"videoFrameRate": "24p",
-				"videoProfile": "main",
-				"Part": [
-					{
-						"id": 21144,
-						"key": "/library/parts/21144/1704060148/file.mkv",
-						"duration": 7489120,
-						"file": "/volume3/MoviesB/Movis/Pain Hustlers (2023) 6.5.mkv",
 						"size": 5837327803,
 						"container": "mkv",
 						"videoProfile": "main"
@@ -43032,12 +47240,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.8,
 		"year": 2021,
 		"tagline": "Family is who you make it.",
-		"thumb": "/library/metadata/8683/thumb/1711898868",
-		"art": "/library/metadata/8683/art/1711898868",
+		"thumb": "/library/metadata/8683/thumb/1712000246",
+		"art": "/library/metadata/8683/art/1712000246",
 		"duration": 6654944,
 		"originallyAvailableAt": "2021-01-29",
 		"addedAt": 1694816480,
-		"updatedAt": 1711898868,
+		"updatedAt": 1712000246,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -43225,7 +47433,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22698,
 				"duration": 6477024,
-				"bitrate": 16534,
+				"bitrate": 16530,
 				"width": 1920,
 				"height": 816,
 				"aspectRatio": 2.35,
@@ -43391,12 +47599,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.4,
 		"year": 2023,
 		"tagline": "What a good story this is.",
-		"thumb": "/library/metadata/8709/thumb/1711898869",
-		"art": "/library/metadata/8709/art/1711898869",
+		"thumb": "/library/metadata/8709/thumb/1712000247",
+		"art": "/library/metadata/8709/art/1712000247",
 		"duration": 6328480,
 		"originallyAvailableAt": "2023-06-16",
 		"addedAt": 1694816486,
-		"updatedAt": 1711898869,
+		"updatedAt": 1712000247,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -43768,7 +47976,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22689,
 				"duration": 7201664,
-				"bitrate": 4896,
+				"bitrate": 4892,
 				"width": 1280,
 				"height": 720,
 				"aspectRatio": 1.78,
@@ -43845,12 +48053,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 3.6,
 		"year": 2019,
 		"tagline": "He's whoever you want him to be.",
-		"thumb": "/library/metadata/5815/thumb/1711898870",
-		"art": "/library/metadata/5815/art/1711898870",
+		"thumb": "/library/metadata/5815/thumb/1712000248",
+		"art": "/library/metadata/5815/art/1712000248",
 		"duration": 5440192,
 		"originallyAvailableAt": "2019-04-12",
 		"addedAt": 1679741417,
-		"updatedAt": 1711898870,
+		"updatedAt": 1712000248,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -44040,7 +48248,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22690,
 				"duration": 8844480,
-				"bitrate": 13093,
+				"bitrate": 13088,
 				"width": 1920,
 				"height": 816,
 				"aspectRatio": 2.35,
@@ -44482,12 +48690,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6,
 		"year": 2017,
 		"tagline": "All pirates must die.",
-		"thumb": "/library/metadata/9035/thumb/1711898871",
-		"art": "/library/metadata/9035/art/1711898871",
+		"thumb": "/library/metadata/9035/thumb/1712000249",
+		"art": "/library/metadata/9035/art/1712000249",
 		"duration": 7747296,
 		"originallyAvailableAt": "2017-05-23",
 		"addedAt": 1699471556,
-		"updatedAt": 1711898871,
+		"updatedAt": 1712000249,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -44816,12 +49024,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.7,
 		"year": 2007,
 		"tagline": "Humanity's last hope… rests on a high power machine gun!",
-		"thumb": "/library/metadata/5628/thumb/1710700698",
-		"art": "/library/metadata/5628/art/1710700698",
+		"thumb": "/library/metadata/5628/thumb/1712000249",
+		"art": "/library/metadata/5628/art/1712000249",
 		"duration": 6333376,
 		"originallyAvailableAt": "2007-04-06",
 		"addedAt": 1679614290,
-		"updatedAt": 1710700698,
+		"updatedAt": 1712000249,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -45004,7 +49212,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22691,
 				"duration": 7133472,
-				"bitrate": 15976,
+				"bitrate": 15973,
 				"width": 1920,
 				"height": 960,
 				"aspectRatio": 1.85,
@@ -45082,12 +49290,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.9,
 		"year": 2023,
 		"tagline": "She's like nothing you've ever seen.",
-		"thumb": "/library/metadata/9424/thumb/1711898872",
-		"art": "/library/metadata/9424/art/1711898872",
+		"thumb": "/library/metadata/9424/thumb/1712000250",
+		"art": "/library/metadata/9424/art/1712000250",
 		"duration": 8500000,
 		"originallyAvailableAt": "2023-11-30",
 		"addedAt": 1710700306,
-		"updatedAt": 1711898872,
+		"updatedAt": 1712000250,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -45270,11 +49478,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.6,
 		"year": 2009,
 		"tagline": "She loves everything about her son ... except who he is.",
-		"thumb": "/library/metadata/10121/thumb/1711900805",
+		"thumb": "/library/metadata/10121/thumb/1712000250",
 		"duration": 5370336,
 		"originallyAvailableAt": "2009-01-24",
 		"addedAt": 1677432354,
-		"updatedAt": 1711900805,
+		"updatedAt": 1712000250,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -45283,7 +49491,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22692,
 				"duration": 5370336,
-				"bitrate": 6633,
+				"bitrate": 6630,
 				"width": 1280,
 				"height": 720,
 				"aspectRatio": 1.78,
@@ -45730,11 +49938,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1690318996,
 		"year": 2005,
 		"tagline": "A romance ahead of its time.",
-		"thumb": "/library/metadata/10122/thumb/1711898671",
+		"thumb": "/library/metadata/10122/thumb/1712000251",
 		"duration": 7697920,
 		"originallyAvailableAt": "2005-09-16",
 		"addedAt": 1679417525,
-		"updatedAt": 1711898671,
+		"updatedAt": 1712000251,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -45743,7 +49951,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22693,
 				"duration": 7697920,
-				"bitrate": 37499,
+				"bitrate": 35582,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -45824,11 +50032,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.8,
 		"year": 2010,
 		"tagline": "Defy the Future",
-		"thumb": "/library/metadata/10123/thumb/1711898672",
+		"thumb": "/library/metadata/10123/thumb/1712000251",
 		"duration": 6953504,
 		"originallyAvailableAt": "2010-05-19",
 		"addedAt": 1475885752,
-		"updatedAt": 1711898672,
+		"updatedAt": 1712000251,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -45837,7 +50045,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22694,
 				"duration": 6953504,
-				"bitrate": 16214,
+				"bitrate": 16209,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -45999,12 +50207,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.1,
 		"year": 1981,
 		"tagline": "Never leave vengeance to amateurs.",
-		"thumb": "/library/metadata/8704/thumb/1711898874",
-		"art": "/library/metadata/8704/art/1711898874",
+		"thumb": "/library/metadata/8704/thumb/1712000252",
+		"art": "/library/metadata/8704/art/1712000252",
 		"duration": 6494025,
 		"originallyAvailableAt": "1981-10-21",
 		"addedAt": 1694816484,
-		"updatedAt": 1711898874,
+		"updatedAt": 1712000252,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"Media": [
@@ -46551,11 +50759,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1678225062,
 		"year": 1981,
 		"tagline": "Indiana Jones - the new hero from the creators of JAWS and STAR WARS.",
-		"thumb": "/library/metadata/10101/thumb/1711898665",
+		"thumb": "/library/metadata/10101/thumb/1712000253",
 		"duration": 6914400,
 		"originallyAvailableAt": "1981-06-12",
 		"addedAt": 1677432314,
-		"updatedAt": 1711898665,
+		"updatedAt": 1712000253,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -46641,7 +50849,7 @@ export const json_plex: IPlex[] = [
 		"tagline": "A better reality awaits.",
 		"thumb": "/library/metadata/894/thumb/1711898667",
 		"art": "/library/metadata/894/art/1711898667",
-		"duration": 8398307,
+		"duration": 8398305,
 		"originallyAvailableAt": "2018-03-28",
 		"addedAt": 1531878388,
 		"updatedAt": 1711898667,
@@ -46653,8 +50861,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 22664,
-				"duration": 8398307,
-				"bitrate": 14218,
+				"duration": 8398305,
+				"bitrate": 14216,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -46669,7 +50877,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22773,
 						"key": "/library/parts/22773/1531878388/file.mkv",
-						"duration": 8398307,
+						"duration": 8398305,
 						"file": "/volume1/Movies/Ready Player One (2018) 3D.mkv",
 						"size": 14926362331,
 						"container": "mkv",
@@ -46679,8 +50887,8 @@ export const json_plex: IPlex[] = [
 			},
 			{
 				"id": 22665,
-				"duration": 8398272,
-				"bitrate": 9344,
+				"duration": 8398316,
+				"bitrate": 9335,
 				"width": 1920,
 				"height": 800,
 				"aspectRatio": 2.35,
@@ -46697,7 +50905,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22774,
 						"key": "/library/parts/22774/1531009119/file.m4v",
-						"duration": 8398272,
+						"duration": 8398316,
 						"file": "/volume1/Movies/Ready Player One (2018).m4v",
 						"size": 9809382933,
 						"container": "mp4",
@@ -46867,7 +51075,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22666,
 				"duration": 7807872,
-				"bitrate": 24307,
+				"bitrate": 24304,
 				"width": 1920,
 				"height": 804,
 				"aspectRatio": 2.35,
@@ -47121,11 +51329,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.9,
 		"year": 2002,
 		"tagline": "They're extremely intelligent. Highly evolved. And they don't like sharing the planet.",
-		"thumb": "/library/metadata/9619/thumb/1711898877",
+		"thumb": "/library/metadata/9619/thumb/1712000255",
 		"duration": 6118028,
 		"originallyAvailableAt": "2002-07-12",
 		"addedAt": 1677432292,
-		"updatedAt": 1711898877,
+		"updatedAt": 1712000255,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -47485,12 +51693,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.5,
 		"year": 2021,
 		"tagline": "Witness the beginning of evil.",
-		"thumb": "/library/metadata/9438/thumb/1711900808",
-		"art": "/library/metadata/9438/art/1711900808",
-		"duration": 6449442,
+		"thumb": "/library/metadata/9438/thumb/1712000255",
+		"art": "/library/metadata/9438/art/1712000255",
+		"duration": 6449443,
 		"originallyAvailableAt": "2021-11-24",
 		"addedAt": 1710700308,
-		"updatedAt": 1711900808,
+		"updatedAt": 1712000255,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -47498,8 +51706,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 21093,
-				"duration": 6449442,
-				"bitrate": 31762,
+				"duration": 6449443,
+				"bitrate": 31768,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -47512,10 +51720,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 21185,
-						"key": "/library/parts/21185/1706498131/file.mkv",
-						"duration": 6449442,
-						"file": "/volume3/MoviesB/Movis/Resident Evil Welcome to Raccoon City (2021) 1080i.mkv",
+						"id": 23307,
+						"key": "/library/parts/23307/1706498131/file.mkv",
+						"duration": 6449443,
+						"file": "/volume3/MoviesB/Movis/Resident Evil Welcome to Raccoon City (2021).mkv",
 						"size": 25610470498,
 						"container": "mkv",
 						"hasThumbnail": "1",
@@ -47575,12 +51783,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.6,
 		"year": 2023,
 		"tagline": "All roads lead to the truth.",
-		"thumb": "/library/metadata/9040/thumb/1711898877",
-		"art": "/library/metadata/9040/art/1711898877",
+		"thumb": "/library/metadata/9040/thumb/1712000256",
+		"art": "/library/metadata/9040/art/1712000256",
 		"duration": 5468801,
 		"originallyAvailableAt": "2023-08-23",
 		"addedAt": 1699471557,
-		"updatedAt": 1711898877,
+		"updatedAt": 1712000256,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -47671,12 +51879,12 @@ export const json_plex: IPlex[] = [
 		"viewOffset": 1921800,
 		"lastViewedAt": 1680317693,
 		"year": 2018,
-		"thumb": "/library/metadata/6600/thumb/1711898878",
-		"art": "/library/metadata/6600/art/1711898878",
+		"thumb": "/library/metadata/6600/thumb/1712000256",
+		"art": "/library/metadata/6600/art/1712000256",
 		"duration": 5422752,
 		"originallyAvailableAt": "2018-02-14",
 		"addedAt": 1680174369,
-		"updatedAt": 1711898878,
+		"updatedAt": 1712000256,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -47762,12 +51970,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.6,
 		"year": 2005,
 		"tagline": "Your mind will not accept a game this big.",
-		"thumb": "/library/metadata/7041/thumb/1711898878",
-		"art": "/library/metadata/7041/art/1711898878",
+		"thumb": "/library/metadata/7041/thumb/1712000256",
+		"art": "/library/metadata/7041/art/1712000256",
 		"duration": 6681300,
 		"originallyAvailableAt": "2005-09-11",
 		"addedAt": 1680449350,
-		"updatedAt": 1711898878,
+		"updatedAt": 1712000256,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -48113,8 +52321,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9745",
-		"key": "/library/metadata/9745",
+		"ratingKey": "10413",
+		"key": "/library/metadata/10413",
 		"guid": "plex://movie/5d776bdafb0d55001f5750cf",
 		"studio": "Metro-Goldwyn-Mayer",
 		"type": "movie",
@@ -48125,12 +52333,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.5,
 		"year": 2024,
 		"tagline": "Take it outside.",
-		"thumb": "/library/metadata/9745/thumb/1711898563",
-		"art": "/library/metadata/9745/art/1711898563",
+		"thumb": "/library/metadata/10413/thumb/1712000143",
+		"art": "/library/metadata/10413/art/1712000143",
 		"duration": 7405600,
 		"originallyAvailableAt": "2024-03-21",
-		"addedAt": 1711898561,
-		"updatedAt": 1711898563,
+		"addedAt": 1712000141,
+		"updatedAt": 1712000143,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -48138,7 +52346,7 @@ export const json_plex: IPlex[] = [
 		"ratingImage": "rottentomatoes://image.rating.rotten",
 		"Media": [
 			{
-				"id": 21854,
+				"id": 23273,
 				"duration": 7405600,
 				"bitrate": 21559,
 				"width": 3840,
@@ -48153,10 +52361,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "main 10",
 				"Part": [
 					{
-						"id": 21955,
-						"key": "/library/parts/21955/1711319025/file.mkv",
+						"id": 23402,
+						"key": "/library/parts/23402/1711319025/file.mkv",
 						"duration": 7405600,
-						"file": "/volume3/MoviesB/TEMP/Road House (2024) 4k HDR10.mkv",
+						"file": "/volume3/MoviesB/Movis/Road House (2024) 4k HDR10.mkv",
 						"size": 19957487231,
 						"container": "mkv",
 						"videoProfile": "main 10"
@@ -49143,102 +53351,6 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9791",
-		"key": "/library/metadata/9791",
-		"guid": "plex://movie/6328b13005342e6cae4a664d",
-		"studio": "Epic Pictures Group",
-		"type": "movie",
-		"title": "Satanic Hispanics",
-		"contentRating": "R",
-		"summary": "When police raid a house in El Paso, they find it full of dead Latinos, and only one survivor. He’s known as The Traveler, and when they take him to the station for questioning, he tells them those lands are full of magic and talks about the horrors he’s encountered in his long time on this earth, about portals to other worlds, mythical creatures, demons and the undead. Stories about Latin American legends.",
-		"rating": 9.2,
-		"audienceRating": 5.4,
-		"year": 2022,
-		"tagline": "5 Stories from 5 Latino AF Directors",
-		"thumb": "/library/metadata/9791/thumb/1711898568",
-		"art": "/library/metadata/9791/art/1711898568",
-		"duration": 6761015,
-		"originallyAvailableAt": "2022-11-25",
-		"addedAt": 1711898566,
-		"updatedAt": 1711898568,
-		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
-		"ratingImage": "rottentomatoes://image.rating.ripe",
-		"Media": [
-			{
-				"id": 21974,
-				"duration": 6761015,
-				"bitrate": 1859,
-				"width": 720,
-				"height": 304,
-				"aspectRatio": 2.35,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 22075,
-						"key": "/library/parts/22075/1711750556/file.avi",
-						"duration": 6761015,
-						"file": "/volume3/MoviesB/TEMP/Satanic Hispanics (2022)/Satanic.Hispanics.2022.D.BDRip.1.46Gb.MegaPeer.avi",
-						"size": 1570811904,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
-			}
-		],
-		"Genre": [
-			{
-				"tag": "Horror"
-			},
-			{
-				"tag": "Thriller"
-			}
-		],
-		"Director": [
-			{
-				"tag": "Eduardo Sánchez"
-			},
-			{
-				"tag": "Mike Mendez"
-			},
-			{
-				"tag": "Alejandro Brugués"
-			}
-		],
-		"Writer": [
-			{
-				"tag": "Demián Rugna"
-			},
-			{
-				"tag": "Pete Barnstrom"
-			}
-		],
-		"Country": [
-			{
-				"tag": "Mexico"
-			},
-			{
-				"tag": "United States of America"
-			}
-		],
-		"Role": [
-			{
-				"tag": "Efren Ramirez"
-			},
-			{
-				"tag": "Greg Grunberg"
-			},
-			{
-				"tag": "Sonya Eddy"
-			}
-		]
-	},
-	{
 		"ratingKey": "7187",
 		"key": "/library/metadata/7187",
 		"guid": "plex://movie/5d7768c8ebdf2200209c8aed",
@@ -49343,12 +53455,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.5,
 		"year": 1998,
 		"tagline": "The mission is a man.",
-		"thumb": "/library/metadata/3527/thumb/1711898663",
-		"art": "/library/metadata/3527/art/1711898663",
+		"thumb": "/library/metadata/3527/thumb/1712000258",
+		"art": "/library/metadata/3527/art/1712000258",
 		"duration": 10125856,
 		"originallyAvailableAt": "1998-07-24",
 		"addedAt": 1489020559,
-		"updatedAt": 1711898663,
+		"updatedAt": 1712000258,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -49429,12 +53541,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.9,
 		"year": 2023,
 		"tagline": "Witness the return of Jigsaw.",
-		"thumb": "/library/metadata/9063/thumb/1711900811",
-		"art": "/library/metadata/9063/art/1711900811",
+		"thumb": "/library/metadata/9063/thumb/1712000258",
+		"art": "/library/metadata/9063/art/1712000258",
 		"duration": 7103296,
 		"originallyAvailableAt": "2023-09-25",
 		"addedAt": 1699471558,
-		"updatedAt": 1711900811,
+		"updatedAt": 1712000258,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -49604,12 +53716,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.2,
 		"year": 2001,
 		"tagline": "More merciless. More shameless.",
-		"thumb": "/library/metadata/6385/thumb/1707551760",
-		"art": "/library/metadata/6385/art/1707551760",
+		"thumb": "/library/metadata/6385/thumb/1712000259",
+		"art": "/library/metadata/6385/art/1712000259",
 		"duration": 4947201,
 		"originallyAvailableAt": "2001-07-04",
 		"addedAt": 1680079600,
-		"updatedAt": 1707551760,
+		"updatedAt": 1712000259,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -49781,12 +53893,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.1,
 		"year": 2006,
 		"tagline": "Bury the grudge. Burn the village.  See the saw.",
-		"thumb": "/library/metadata/6384/thumb/1711898883",
-		"art": "/library/metadata/6384/art/1711898883",
+		"thumb": "/library/metadata/6384/thumb/1712000259",
+		"art": "/library/metadata/6384/art/1712000259",
 		"duration": 5372376,
 		"originallyAvailableAt": "2006-04-12",
 		"addedAt": 1680079600,
-		"updatedAt": 1711898883,
+		"updatedAt": 1712000259,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -49872,12 +53984,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1694046285,
 		"year": 2013,
 		"tagline": "Evil is coming. Bring protection.",
-		"thumb": "/library/metadata/6567/thumb/1711898883",
-		"art": "/library/metadata/6567/art/1711898883",
+		"thumb": "/library/metadata/6567/thumb/1712000259",
+		"art": "/library/metadata/6567/art/1712000259",
 		"duration": 5146720,
 		"originallyAvailableAt": "2013-04-11",
 		"addedAt": 1680131690,
-		"updatedAt": 1711898883,
+		"updatedAt": 1712000259,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -50246,12 +54358,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.5,
 		"year": 1995,
 		"tagline": "Seven deadly sins. Seven ways to die.",
-		"thumb": "/library/metadata/7396/thumb/1711898885",
-		"art": "/library/metadata/7396/art/1711898885",
+		"thumb": "/library/metadata/7396/thumb/1712000260",
+		"art": "/library/metadata/7396/art/1712000260",
 		"duration": 7614887,
 		"originallyAvailableAt": "1995-09-22",
 		"addedAt": 1680820273,
-		"updatedAt": 1711898885,
+		"updatedAt": 1712000260,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -50701,12 +54813,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1680993819,
 		"year": 2011,
 		"tagline": "Ugly truth, sweet lies.",
-		"thumb": "/library/metadata/7530/thumb/1711898886",
-		"art": "/library/metadata/7530/art/1711898886",
+		"thumb": "/library/metadata/7530/thumb/1712000261",
+		"art": "/library/metadata/7530/art/1712000261",
 		"duration": 7378592,
 		"originallyAvailableAt": "2011-03-16",
 		"addedAt": 1680956630,
-		"updatedAt": 1711898886,
+		"updatedAt": 1712000261,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -50714,7 +54826,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 16425,
 				"duration": 7378592,
-				"bitrate": 3388,
+				"bitrate": 3386,
 				"width": 1152,
 				"height": 622,
 				"aspectRatio": 1.85,
@@ -50787,11 +54899,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1694980406,
 		"year": 2005,
 		"tagline": "They aim to misbehave.",
-		"thumb": "/library/metadata/10069/thumb/1711898658",
+		"thumb": "/library/metadata/10069/thumb/1712000261",
 		"duration": 7142560,
 		"originallyAvailableAt": "2005-09-29",
 		"addedAt": 1474506471,
-		"updatedAt": 1711898658,
+		"updatedAt": 1712000261,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -50872,12 +54984,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.3,
 		"year": 2004,
 		"tagline": "Mishaps. Misadventures. Mayhem. Oh joy.",
-		"thumb": "/library/metadata/4931/thumb/1711898761",
-		"art": "/library/metadata/4931/art/1711898761",
+		"thumb": "/library/metadata/4931/thumb/1712000261",
+		"art": "/library/metadata/4931/art/1712000261",
 		"duration": 6478528,
 		"originallyAvailableAt": "2004-12-16",
 		"addedAt": 1678717662,
-		"updatedAt": 1711898761,
+		"updatedAt": 1712000261,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -50885,7 +54997,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22024,
 				"duration": 6478528,
-				"bitrate": 51328,
+				"bitrate": 48261,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -50908,33 +55020,6 @@ export const json_plex: IPlex[] = [
 						"container": "mpegts",
 						"packetLength": 188,
 						"videoProfile": "high"
-					}
-				]
-			},
-			{
-				"id": 23175,
-				"duration": 6250611,
-				"bitrate": 1342,
-				"width": 720,
-				"height": 480,
-				"aspectRatio": 1.78,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg2video",
-				"videoResolution": "480",
-				"container": "mpegts",
-				"videoFrameRate": "NTSC",
-				"videoProfile": "main",
-				"Part": [
-					{
-						"id": 23291,
-						"key": "/library/parts/23291/1678678509/file.m2ts",
-						"duration": 6250611,
-						"file": "/volume1/Movies/A Series of Unfortunate Events (2004) bihaind sceen.m2ts",
-						"size": 1048872960,
-						"container": "mpegts",
-						"packetLength": 188,
-						"videoProfile": "main"
 					}
 				]
 			}
@@ -51084,12 +55169,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.1,
 		"year": 2013,
 		"tagline": "By Any Means Necessary",
-		"thumb": "/library/metadata/5458/thumb/1711898886",
-		"art": "/library/metadata/5458/art/1711898886",
+		"thumb": "/library/metadata/5458/thumb/1712000262",
+		"art": "/library/metadata/5458/art/1712000262",
 		"duration": 6387933,
 		"originallyAvailableAt": "2013-12-18",
 		"addedAt": 1679355142,
-		"updatedAt": 1711898886,
+		"updatedAt": 1712000262,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"Media": [
@@ -51437,12 +55522,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.1,
 		"year": 2011,
 		"tagline": "In a land torn by strife, the righteous monks of Shaolin stand as a beacon of hope for the oppressed masses.",
-		"thumb": "/library/metadata/7979/thumb/1711898887",
-		"art": "/library/metadata/7979/art/1711898887",
+		"thumb": "/library/metadata/7979/thumb/1712000263",
+		"art": "/library/metadata/7979/art/1712000263",
 		"duration": 7865984,
 		"originallyAvailableAt": "2011-01-20",
 		"addedAt": 1682980676,
-		"updatedAt": 1711898887,
+		"updatedAt": 1712000263,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
@@ -51532,12 +55617,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1681758606,
 		"year": 2017,
 		"tagline": "A Fairy Tale for Troubled Times",
-		"thumb": "/library/metadata/5817/thumb/1711898889",
-		"art": "/library/metadata/5817/art/1711898889",
+		"thumb": "/library/metadata/5817/thumb/1712000263",
+		"art": "/library/metadata/5817/art/1712000263",
 		"duration": 7399455,
 		"originallyAvailableAt": "2017-12-08",
 		"addedAt": 1526772896,
-		"updatedAt": 1711898889,
+		"updatedAt": 1712000263,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -51562,10 +55647,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 12493,
-						"key": "/library/parts/12493/1526772896/file.m4v",
+						"id": 23310,
+						"key": "/library/parts/23310/1526772896/file.m4v",
 						"duration": 7399455,
-						"file": "/volume1/Movies/The Shape of Water (2017) BDRip.m4v",
+						"file": "/volume1/Movies/The Shape of Water (2017).m4v",
 						"size": 8791291775,
 						"container": "mp4",
 						"has64bitOffsets": true,
@@ -51717,12 +55802,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.8,
 		"year": 1994,
 		"tagline": "Fear can hold you prisoner. Hope can set you free.",
-		"thumb": "/library/metadata/7431/thumb/1711898888",
-		"art": "/library/metadata/7431/art/1711898888",
+		"thumb": "/library/metadata/7431/thumb/1712000263",
+		"art": "/library/metadata/7431/art/1712000263",
 		"duration": 8553742,
 		"originallyAvailableAt": "1994-09-23",
 		"addedAt": 1680820277,
-		"updatedAt": 1711898888,
+		"updatedAt": 1712000263,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -52294,11 +56379,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1703466685,
 		"year": 2007,
 		"tagline": "Yesterday was about honor. Today is about justice.",
-		"thumb": "/library/metadata/10064/thumb/1711900815",
+		"thumb": "/library/metadata/10064/thumb/1712000264",
 		"duration": 7541984,
 		"originallyAvailableAt": "2007-03-18",
 		"addedAt": 1677432453,
-		"updatedAt": 1711900815,
+		"updatedAt": 1712000264,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -52308,7 +56393,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22559,
 				"duration": 7541984,
-				"bitrate": 8936,
+				"bitrate": 8932,
 				"width": 1280,
 				"height": 534,
 				"aspectRatio": 2.35,
@@ -52463,8 +56548,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9766",
-		"key": "/library/metadata/9766",
+		"ratingKey": "10414",
+		"key": "/library/metadata/10414",
 		"guid": "plex://movie/620e054437d2152fbfae3de4",
 		"studio": "Benaroya Pictures",
 		"type": "movie",
@@ -52473,19 +56558,19 @@ export const json_plex: IPlex[] = [
 		"rating": 10,
 		"audienceRating": 6.5,
 		"year": 2023,
-		"thumb": "/library/metadata/9766/thumb/1711898563",
-		"art": "/library/metadata/9766/art/1711898563",
+		"thumb": "/library/metadata/10414/thumb/1712000143",
+		"art": "/library/metadata/10414/art/1712000143",
 		"duration": 5537952,
 		"originallyAvailableAt": "2023-11-10",
-		"addedAt": 1711898562,
-		"updatedAt": 1711898563,
+		"addedAt": 1712000142,
+		"updatedAt": 1712000143,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 21911,
+				"id": 23274,
 				"duration": 5537952,
 				"bitrate": 36555,
 				"width": 1920,
@@ -52500,10 +56585,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 22012,
-						"key": "/library/parts/22012/1711859596/file.mkv",
+						"id": 23403,
+						"key": "/library/parts/23403/1711859596/file.mkv",
 						"duration": 5537952,
-						"file": "/volume3/MoviesB/TEMP/Showdown at the Grand (2023).mkv",
+						"file": "/volume3/MoviesB/Movis/Showdown at the Grand (2023).mkv",
 						"size": 25304983601,
 						"container": "mkv",
 						"videoProfile": "high"
@@ -52649,11 +56734,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.5,
 		"year": 2015,
 		"tagline": "The border is just another line to cross.",
-		"thumb": "/library/metadata/10065/thumb/1711898655",
+		"thumb": "/library/metadata/10065/thumb/1712000264",
 		"duration": 7280352,
 		"originallyAvailableAt": "2015-09-17",
 		"addedAt": 1540081837,
-		"updatedAt": 1711898655,
+		"updatedAt": 1712000264,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -52739,11 +56824,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.5,
 		"year": 2018,
 		"tagline": "Some missions need a hitman...others need a soldier.",
-		"thumb": "/library/metadata/10066/thumb/1711898656",
+		"thumb": "/library/metadata/10066/thumb/1712000264",
 		"duration": 7344352,
 		"originallyAvailableAt": "2018-06-27",
 		"addedAt": 1540130752,
-		"updatedAt": 1711898656,
+		"updatedAt": 1712000264,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -52825,12 +56910,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.9,
 		"year": 2004,
 		"tagline": "In search of wine. In search of women. In search of themselves.",
-		"thumb": "/library/metadata/5419/thumb/1711898890",
-		"art": "/library/metadata/5419/art/1711898890",
+		"thumb": "/library/metadata/5419/thumb/1712000264",
+		"art": "/library/metadata/5419/art/1712000264",
 		"duration": 7435840,
 		"originallyAvailableAt": "2004-10-22",
 		"addedAt": 1679313379,
-		"updatedAt": 1711898890,
+		"updatedAt": 1712000264,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -52922,11 +57007,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1698603109,
 		"year": 2012,
 		"tagline": "Watch For The Signs",
-		"thumb": "/library/metadata/10067/thumb/1711898657",
+		"thumb": "/library/metadata/10067/thumb/1712000265",
 		"duration": 7328011,
 		"originallyAvailableAt": "2012-11-21",
 		"addedAt": 1677432354,
-		"updatedAt": 1711898657,
+		"updatedAt": 1712000265,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -53108,12 +57193,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.8,
 		"year": 2023,
 		"tagline": "Vengeance is golden.",
-		"thumb": "/library/metadata/8393/thumb/1711900816",
-		"art": "/library/metadata/8393/art/1711900816",
+		"thumb": "/library/metadata/8393/thumb/1712000265",
+		"art": "/library/metadata/8393/art/1712000265",
 		"duration": 5482080,
 		"originallyAvailableAt": "2023-01-27",
 		"addedAt": 1687726281,
-		"updatedAt": 1711900816,
+		"updatedAt": 1712000265,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -53377,12 +57462,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.6,
 		"year": 2012,
 		"tagline": "Think on your sins.",
-		"thumb": "/library/metadata/6691/thumb/1710700721",
-		"art": "/library/metadata/6691/art/1710700721",
+		"thumb": "/library/metadata/6691/thumb/1712000266",
+		"art": "/library/metadata/6691/art/1712000266",
 		"duration": 8590272,
 		"originallyAvailableAt": "2012-10-24",
 		"addedAt": 1680205913,
-		"updatedAt": 1710700721,
+		"updatedAt": 1712000266,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -53476,12 +57561,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1692449997,
 		"year": 1998,
 		"tagline": "Heads will roll.",
-		"thumb": "/library/metadata/6198/thumb/1711898891",
-		"art": "/library/metadata/6198/art/1711898891",
+		"thumb": "/library/metadata/6198/thumb/1712000266",
+		"art": "/library/metadata/6198/art/1712000266",
 		"duration": 6315637,
 		"originallyAvailableAt": "1998-11-30",
 		"addedAt": 1679955279,
-		"updatedAt": 1711898891,
+		"updatedAt": 1712000266,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -53930,11 +58015,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.7,
 		"year": 2010,
 		"tagline": "You don't get to 500 million friends without making a few enemies.",
-		"thumb": "/library/metadata/9936/thumb/1711898615",
+		"thumb": "/library/metadata/9936/thumb/1712000267",
 		"duration": 7235264,
 		"originallyAvailableAt": "2010-10-01",
 		"addedAt": 1677975685,
-		"updatedAt": 1711898615,
+		"updatedAt": 1712000267,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -54455,8 +58540,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9767",
-		"key": "/library/metadata/9767",
+		"ratingKey": "10417",
+		"key": "/library/metadata/10417",
 		"guid": "plex://movie/61bd9c2d56728830d402be29",
 		"studio": "Page Fifty-Four Pictures",
 		"type": "movie",
@@ -54466,19 +58551,19 @@ export const json_plex: IPlex[] = [
 		"rating": 8,
 		"audienceRating": 6.7,
 		"year": 2024,
-		"thumb": "/library/metadata/9767/thumb/1711898564",
-		"art": "/library/metadata/9767/art/1711898564",
+		"thumb": "/library/metadata/10417/thumb/1712000143",
+		"art": "/library/metadata/10417/art/1712000143",
 		"duration": 5622784,
 		"originallyAvailableAt": "2024-01-10",
-		"addedAt": 1711898562,
-		"updatedAt": 1711898564,
+		"addedAt": 1712000143,
+		"updatedAt": 1712000143,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 21912,
+				"id": 23281,
 				"duration": 5622784,
 				"bitrate": 2236,
 				"width": 862,
@@ -54493,10 +58578,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 22013,
-						"key": "/library/parts/22013/1710711950/file.mkv",
+						"id": 23410,
+						"key": "/library/parts/23410/1710711950/file.mkv",
 						"duration": 5622784,
-						"file": "/volume3/MoviesB/TEMP/Sometimes I Think About Dying (2023).mkv",
+						"file": "/volume3/MoviesB/Movis/Sometimes I Think About Dying (2023).mkv",
 						"size": 1571314342,
 						"container": "mkv",
 						"hasThumbnail": "1",
@@ -54650,11 +58735,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1678489648,
 		"year": 2001,
 		"tagline": "The tunnel led Chihiro to a mysterious town.",
-		"thumb": "/library/metadata/10048/thumb/1711898650",
+		"thumb": "/library/metadata/10048/thumb/1712000268",
 		"duration": 7472267,
 		"originallyAvailableAt": "2001-07-20",
 		"addedAt": 1464397402,
-		"updatedAt": 1711898650,
+		"updatedAt": 1712000268,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -55107,11 +59192,11 @@ export const json_plex: IPlex[] = [
 		"skipCount": 1,
 		"year": 2016,
 		"tagline": "The final frontier...and beyond.",
-		"thumb": "/library/metadata/10005/thumb/1711898643",
+		"thumb": "/library/metadata/10005/thumb/1712000270",
 		"duration": 7342252,
 		"originallyAvailableAt": "2016-07-20",
 		"addedAt": 1478130702,
-		"updatedAt": 1711898643,
+		"updatedAt": 1712000270,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -55317,11 +59402,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.2,
 		"year": 2017,
 		"tagline": "Let the Past Die",
-		"thumb": "/library/metadata/10007/thumb/1711898645",
+		"thumb": "/library/metadata/10007/thumb/1712000270",
 		"duration": 9111648,
 		"originallyAvailableAt": "2017-12-13",
 		"addedAt": 1533172310,
-		"updatedAt": 1711898645,
+		"updatedAt": 1712000270,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -55501,11 +59586,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7,
 		"year": 1997,
 		"tagline": "A new kind of enemy. A new kind of war.",
-		"thumb": "/library/metadata/10008/thumb/1711898646",
+		"thumb": "/library/metadata/10008/thumb/1712000270",
 		"duration": 7767808,
 		"originallyAvailableAt": "1997-11-07",
 		"addedAt": 1285955565,
-		"updatedAt": 1711898646,
+		"updatedAt": 1712000270,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -55861,12 +59946,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1708306578,
 		"year": 2007,
 		"tagline": "If the sun dies, so do we.",
-		"thumb": "/library/metadata/6288/thumb/1711898896",
-		"art": "/library/metadata/6288/art/1711898896",
+		"thumb": "/library/metadata/6288/thumb/1712000271",
+		"art": "/library/metadata/6288/art/1712000271",
 		"duration": 6448512,
 		"originallyAvailableAt": "2007-04-04",
 		"addedAt": 1680033847,
-		"updatedAt": 1711898896,
+		"updatedAt": 1712000271,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -55952,12 +60037,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1698614392,
 		"year": 2011,
 		"tagline": "It Arrives.",
-		"thumb": "/library/metadata/1291/thumb/1711898896",
-		"art": "/library/metadata/1291/art/1711898896",
+		"thumb": "/library/metadata/1291/thumb/1712000271",
+		"art": "/library/metadata/1291/art/1712000271",
 		"duration": 6708768,
 		"originallyAvailableAt": "2011-06-09",
 		"addedAt": 1503060894,
-		"updatedAt": 1711898896,
+		"updatedAt": 1712000271,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -56216,12 +60301,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 3,
 		"year": 2004,
 		"tagline": "This year, Christmas comes early. Really early. Like... October 22nd.",
-		"thumb": "/library/metadata/5632/thumb/1710700731",
-		"art": "/library/metadata/5632/art/1710700731",
+		"thumb": "/library/metadata/5632/thumb/1712000272",
+		"art": "/library/metadata/5632/art/1712000272",
 		"duration": 5443905,
 		"originallyAvailableAt": "2004-10-22",
 		"addedAt": 1679614293,
-		"updatedAt": 1710700731,
+		"updatedAt": 1712000272,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -56607,7 +60692,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 21141,
 				"duration": 5542976,
-				"bitrate": 36559,
+				"bitrate": 34499,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -57487,12 +61572,12 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1707877502,
 		"year": 2009,
 		"tagline": "The End Begins.",
-		"thumb": "/library/metadata/7103/thumb/1711898898",
-		"art": "/library/metadata/7103/art/1711898898",
+		"thumb": "/library/metadata/7103/thumb/1712000273",
+		"art": "/library/metadata/7103/art/1712000273",
 		"duration": 7051104,
 		"originallyAvailableAt": "2009-05-21",
 		"addedAt": 1680485168,
-		"updatedAt": 1711898898,
+		"updatedAt": 1712000273,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -57751,8 +61836,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9768",
-		"key": "/library/metadata/9768",
+		"ratingKey": "10419",
+		"key": "/library/metadata/10419",
 		"guid": "plex://movie/5d7768e296b655001fdc42c5",
 		"studio": "Relativity Media",
 		"type": "movie",
@@ -57763,12 +61848,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.1,
 		"year": 2012,
 		"tagline": "The story of a child… and his son.",
-		"thumb": "/library/metadata/9768/thumb/1711898568",
-		"art": "/library/metadata/9768/art/1711898568",
+		"thumb": "/library/metadata/10419/thumb/1712000144",
+		"art": "/library/metadata/10419/art/1712000144",
 		"duration": 6867872,
 		"originallyAvailableAt": "2012-06-14",
-		"addedAt": 1711898563,
-		"updatedAt": 1711898568,
+		"addedAt": 1712000143,
+		"updatedAt": 1712000144,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -57776,7 +61861,7 @@ export const json_plex: IPlex[] = [
 		"ratingImage": "rottentomatoes://image.rating.rotten",
 		"Media": [
 			{
-				"id": 21913,
+				"id": 23285,
 				"duration": 6867872,
 				"bitrate": 13600,
 				"width": 1920,
@@ -57791,10 +61876,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 22014,
-						"key": "/library/parts/22014/1711847163/file.mkv",
+						"id": 23414,
+						"key": "/library/parts/23414/1711847163/file.mkv",
 						"duration": 6867872,
-						"file": "/volume3/MoviesB/TEMP/That's My Boy (2012).mkv",
+						"file": "/volume3/MoviesB/Movis/That's My Boy (2012).mkv",
 						"size": 11675190977,
 						"container": "mkv",
 						"videoProfile": "high"
@@ -58305,12 +62390,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.1,
 		"year": 2013,
 		"tagline": "Nothing ruins a party like the end of the world.",
-		"thumb": "/library/metadata/5819/thumb/1711898900",
-		"art": "/library/metadata/5819/art/1711898900",
+		"thumb": "/library/metadata/5819/thumb/1712000274",
+		"art": "/library/metadata/5819/art/1712000274",
 		"duration": 6401408,
 		"originallyAvailableAt": "2013-06-12",
 		"addedAt": 1679741420,
-		"updatedAt": 1711898900,
+		"updatedAt": 1712000274,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -58488,11 +62573,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.7,
 		"year": 2017,
 		"tagline": "No hammer. No problem.",
-		"thumb": "/library/metadata/9933/thumb/1711898614",
+		"thumb": "/library/metadata/9933/thumb/1712000275",
 		"duration": 7830720,
 		"originallyAvailableAt": "2017-10-24",
 		"addedAt": 1571090905,
-		"updatedAt": 1711898614,
+		"updatedAt": 1712000275,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -59591,12 +63676,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.5,
 		"year": 2011,
 		"tagline": "The invasion we always feared. An enemy we never expected.",
-		"thumb": "/library/metadata/1456/thumb/1711900825",
-		"art": "/library/metadata/1456/art/1711900825",
+		"thumb": "/library/metadata/1456/thumb/1712000278",
+		"art": "/library/metadata/1456/art/1712000278",
 		"duration": 9263616,
 		"originallyAvailableAt": "2011-06-28",
 		"addedAt": 1416840467,
-		"updatedAt": 1711900825,
+		"updatedAt": 1712000278,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -59606,7 +63691,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 22205,
 				"duration": 9263616,
-				"bitrate": 17605,
+				"bitrate": 17602,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -59631,8 +63716,8 @@ export const json_plex: IPlex[] = [
 			},
 			{
 				"id": 22206,
-				"duration": 9263318,
-				"bitrate": 44227,
+				"duration": 9263316,
+				"bitrate": 44219,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -59648,7 +63733,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22314,
 						"key": "/library/parts/22314/1451721662/file.mkv",
-						"duration": 9263318,
+						"duration": 9263316,
 						"file": "/volume1/Movies/Transformers Dark of the Moon (2011).mkv",
 						"size": 51211181545,
 						"audioProfile": "ma",
@@ -59706,12 +63791,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.1,
 		"year": 2023,
 		"tagline": "Unite or fall.",
-		"thumb": "/library/metadata/8908/thumb/1711900826",
-		"art": "/library/metadata/8908/art/1711900826",
+		"thumb": "/library/metadata/8908/thumb/1712000278",
+		"art": "/library/metadata/8908/art/1712000278",
 		"duration": 7651520,
 		"originallyAvailableAt": "2023-06-06",
 		"addedAt": 1699010880,
-		"updatedAt": 1711900826,
+		"updatedAt": 1712000278,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -59797,12 +63882,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6,
 		"year": 2011,
 		"tagline": "Nothing stands still.",
-		"thumb": "/library/metadata/7061/thumb/1711898902",
-		"art": "/library/metadata/7061/art/1711898902",
+		"thumb": "/library/metadata/7061/thumb/1712000278",
+		"art": "/library/metadata/7061/art/1712000278",
 		"duration": 8334326,
 		"originallyAvailableAt": "2011-05-17",
 		"addedAt": 1680449352,
-		"updatedAt": 1711898902,
+		"updatedAt": 1712000278,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -60066,12 +64151,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.5,
 		"year": 2010,
 		"tagline": "Punishment comes one way or another.",
-		"thumb": "/library/metadata/6917/thumb/1711898903",
-		"art": "/library/metadata/6917/art/1711898903",
+		"thumb": "/library/metadata/6917/thumb/1712000278",
+		"art": "/library/metadata/6917/art/1712000278",
 		"duration": 6620416,
 		"originallyAvailableAt": "2010-12-22",
 		"addedAt": 1680346485,
-		"updatedAt": 1711898903,
+		"updatedAt": 1712000278,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -60340,12 +64425,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.5,
 		"year": 2010,
 		"tagline": "Evil just messed with the wrong hillbillies.",
-		"thumb": "/library/metadata/3245/thumb/1711898903",
-		"art": "/library/metadata/3245/art/1711898903",
-		"duration": 5314517,
+		"thumb": "/library/metadata/3245/thumb/1712000278",
+		"art": "/library/metadata/3245/art/1712000278",
+		"duration": 5314528,
 		"originallyAvailableAt": "2010-12-09",
 		"addedAt": 1677432457,
-		"updatedAt": 1711898903,
+		"updatedAt": 1712000278,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -60353,8 +64438,8 @@ export const json_plex: IPlex[] = [
 		"Media": [
 			{
 				"id": 13610,
-				"duration": 5314517,
-				"bitrate": 29430,
+				"duration": 5314528,
+				"bitrate": 27751,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -60370,7 +64455,7 @@ export const json_plex: IPlex[] = [
 					{
 						"id": 22306,
 						"key": "/library/parts/22306/1679968244/file.m2ts",
-						"duration": 5314517,
+						"duration": 5314528,
 						"file": "/volume1/Movies/Tucker and Dale vs Evil (2010).m2ts",
 						"size": 19550969856,
 						"audioProfile": "ma",
@@ -60710,12 +64795,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8.7,
 		"year": 2022,
 		"tagline": "Nicolas Cage is Nick Cage.",
-		"thumb": "/library/metadata/7855/thumb/1711900827",
-		"art": "/library/metadata/7855/art/1711900827",
+		"thumb": "/library/metadata/7855/thumb/1712000279",
+		"art": "/library/metadata/7855/art/1712000279",
 		"duration": 6411456,
 		"originallyAvailableAt": "2022-04-20",
 		"addedAt": 1681513263,
-		"updatedAt": 1711900827,
+		"updatedAt": 1712000279,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -60877,8 +64962,8 @@ export const json_plex: IPlex[] = [
 		]
 	},
 	{
-		"ratingKey": "9789",
-		"key": "/library/metadata/9789",
+		"ratingKey": "10437",
+		"key": "/library/metadata/10437",
 		"guid": "plex://movie/5d776d6451dd69001fe42408",
 		"studio": "A24",
 		"type": "movie",
@@ -60889,19 +64974,19 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.2,
 		"year": 2019,
 		"tagline": "This is how I win.",
-		"thumb": "/library/metadata/9789/thumb/1711898568",
-		"art": "/library/metadata/9789/art/1711898568",
+		"thumb": "/library/metadata/10437/thumb/1712000147",
+		"art": "/library/metadata/10437/art/1712000147",
 		"duration": 8151189,
 		"originallyAvailableAt": "2019-12-25",
-		"addedAt": 1711898565,
-		"updatedAt": 1711898568,
+		"addedAt": 1712000145,
+		"updatedAt": 1712000147,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
 		"Media": [
 			{
-				"id": 21970,
+				"id": 23333,
 				"duration": 8151189,
 				"bitrate": 39344,
 				"width": 1920,
@@ -60916,10 +65001,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 22071,
-						"key": "/library/parts/22071/1711886446/file.mkv",
+						"id": 23462,
+						"key": "/library/parts/23462/1711886446/file.mkv",
 						"duration": 8151189,
-						"file": "/volume3/MoviesB/TEMP/Uncut Gems (2019).mkv",
+						"file": "/volume3/MoviesB/Movis/Uncut Gems (2019).mkv",
 						"size": 40087575649,
 						"container": "mkv",
 						"videoProfile": "high"
@@ -60981,12 +65066,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.2,
 		"year": 1991,
 		"tagline": "It's not a job... It's an Adventure!",
-		"thumb": "/library/metadata/8216/thumb/1711898905",
-		"art": "/library/metadata/8216/art/1711898905",
+		"thumb": "/library/metadata/8216/thumb/1712000280",
+		"art": "/library/metadata/8216/art/1712000280",
 		"duration": 6151744,
 		"originallyAvailableAt": "1991-11-30",
 		"addedAt": 1684062354,
-		"updatedAt": 1711898905,
+		"updatedAt": 1712000280,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -61070,12 +65155,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 3.8,
 		"year": 1995,
 		"tagline": "Last time he rocked the boat. This time the sky's the limit.",
-		"thumb": "/library/metadata/8217/thumb/1711898905",
-		"art": "/library/metadata/8217/art/1711898905",
+		"thumb": "/library/metadata/8217/thumb/1712000280",
+		"art": "/library/metadata/8217/art/1712000280",
 		"duration": 5978972,
 		"originallyAvailableAt": "1995-07-14",
 		"addedAt": 1684062355,
-		"updatedAt": 1711898905,
+		"updatedAt": 1712000280,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -61749,7 +65834,7 @@ export const json_plex: IPlex[] = [
 			{
 				"id": 19315,
 				"duration": 5942176,
-				"bitrate": 36815,
+				"bitrate": 39088,
 				"width": 1920,
 				"height": 1080,
 				"aspectRatio": 1.78,
@@ -61763,10 +65848,10 @@ export const json_plex: IPlex[] = [
 				"videoProfile": "high",
 				"Part": [
 					{
-						"id": 19390,
-						"key": "/library/parts/19390/1692055170/file.m2ts",
+						"id": 23308,
+						"key": "/library/parts/23308/1692055170/file.m2ts",
 						"duration": 5942176,
-						"file": "/volume3/MoviesB/Movis/Vacation (2015) BluRay.m2ts",
+						"file": "/volume3/MoviesB/Movis/Vacation (2015).m2ts",
 						"size": 29033822208,
 						"audioProfile": "ma",
 						"container": "mpegts",
@@ -62041,12 +66126,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 6.1,
 		"year": 2018,
 		"tagline": "The untold true story that changed the course of history.",
-		"thumb": "/library/metadata/7321/thumb/1711898908",
-		"art": "/library/metadata/7321/art/1711898908",
+		"thumb": "/library/metadata/7321/thumb/1712000282",
+		"art": "/library/metadata/7321/art/1712000282",
 		"duration": 7947552,
 		"originallyAvailableAt": "2018-12-25",
 		"addedAt": 1680645459,
-		"updatedAt": 1711898908,
+		"updatedAt": 1712000282,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -62343,32 +66428,6 @@ export const json_plex: IPlex[] = [
 						"videoProfile": "high"
 					}
 				]
-			},
-			{
-				"id": 21606,
-				"duration": 6231232,
-				"bitrate": 2001,
-				"width": 688,
-				"height": 384,
-				"aspectRatio": 1.78,
-				"audioChannels": 6,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "24p",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 21707,
-						"key": "/library/parts/21707/1494196604/file.avi",
-						"duration": 6231232,
-						"file": "/volume1/Movies/Volcano (1997).avi",
-						"size": 1569425408,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
 			}
 		],
 		"Genre": [
@@ -62507,12 +66566,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.5,
 		"year": 1995,
 		"tagline": "A man in search. A woman in need. A story of fate.",
-		"thumb": "/library/metadata/5391/thumb/1711898909",
-		"art": "/library/metadata/5391/art/1711898909",
+		"thumb": "/library/metadata/5391/thumb/1712000282",
+		"art": "/library/metadata/5391/art/1712000282",
 		"duration": 6135200,
 		"originallyAvailableAt": "1995-05-27",
 		"addedAt": 1679313374,
-		"updatedAt": 1711898909,
+		"updatedAt": 1712000282,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -63443,12 +67502,12 @@ export const json_plex: IPlex[] = [
 		"skipCount": 1,
 		"year": 2001,
 		"tagline": "For those who take their action raw.",
-		"thumb": "/library/metadata/8778/thumb/1711898910",
-		"art": "/library/metadata/8778/art/1711898910",
+		"thumb": "/library/metadata/8778/thumb/1712000284",
+		"art": "/library/metadata/8778/art/1712000284",
 		"duration": 5633632,
 		"originallyAvailableAt": "2001-10-31",
 		"addedAt": 1694816495,
-		"updatedAt": 1711898910,
+		"updatedAt": 1712000284,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumPrimaryExtra": "1",
@@ -63852,32 +67911,6 @@ export const json_plex: IPlex[] = [
 						"videoProfile": "high"
 					}
 				]
-			},
-			{
-				"id": 22287,
-				"duration": 5132000,
-				"bitrate": 2289,
-				"width": 720,
-				"height": 432,
-				"aspectRatio": 1.66,
-				"audioChannels": 2,
-				"audioCodec": "ac3",
-				"videoCodec": "mpeg4",
-				"videoResolution": "sd",
-				"container": "avi",
-				"videoFrameRate": "PAL",
-				"videoProfile": "advanced simple",
-				"Part": [
-					{
-						"id": 22395,
-						"key": "/library/parts/22395/1259109114/file.avi",
-						"duration": 5132000,
-						"file": "/volume1/Movies/The Wedding Date (2005).avi",
-						"size": 1468434432,
-						"container": "avi",
-						"videoProfile": "advanced simple"
-					}
-				]
 			}
 		],
 		"Genre": [
@@ -63938,11 +67971,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1679166775,
 		"year": 2015,
 		"tagline": "He's the best man... money can buy.",
-		"thumb": "/library/metadata/9914/thumb/1711898611",
+		"thumb": "/library/metadata/9914/thumb/1712000284",
 		"duration": 6086080,
 		"originallyAvailableAt": "2015-01-14",
 		"addedAt": 1678127169,
-		"updatedAt": 1711898611,
+		"updatedAt": 1712000284,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -64473,12 +68506,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 4.4,
 		"year": 2011,
 		"tagline": "Ally's looking for the best ex of her life.",
-		"thumb": "/library/metadata/6061/thumb/1710700751",
-		"art": "/library/metadata/6061/art/1710700751",
+		"thumb": "/library/metadata/6061/thumb/1712000285",
+		"art": "/library/metadata/6061/art/1712000285",
 		"duration": 7034144,
 		"originallyAvailableAt": "2011-09-29",
 		"addedAt": 1679783048,
-		"updatedAt": 1710700751,
+		"updatedAt": 1712000285,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -64565,11 +68598,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 7.9,
 		"year": 1995,
 		"tagline": "A story about love at second sight.",
-		"thumb": "/library/metadata/9870/thumb/1711898597",
+		"thumb": "/library/metadata/9870/thumb/1712000285",
 		"duration": 5939360,
 		"originallyAvailableAt": "1995-04-21",
 		"addedAt": 1474419186,
-		"updatedAt": 1711898597,
+		"updatedAt": 1712000285,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.ripe",
@@ -64653,12 +68686,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.4,
 		"year": 2014,
 		"tagline": "The road to greatness can take you to the edge.",
-		"thumb": "/library/metadata/9871/thumb/1711898599",
-		"art": "/library/metadata/9871/art/1711898599",
+		"thumb": "/library/metadata/9871/thumb/1712000286",
+		"art": "/library/metadata/9871/art/1712000286",
 		"duration": 6405567,
 		"originallyAvailableAt": "2014-10-15",
 		"addedAt": 1678127167,
-		"updatedAt": 1711898599,
+		"updatedAt": 1712000286,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -65231,11 +69264,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 8,
 		"year": 2023,
 		"tagline": "Do nothing. Stay and fight. Leave.",
-		"thumb": "/library/metadata/9725/thumb/1711898913",
+		"thumb": "/library/metadata/9725/thumb/1712000287",
 		"duration": 6248660,
 		"originallyAvailableAt": "2023-01-20",
 		"addedAt": 1678717660,
-		"updatedAt": 1711898913,
+		"updatedAt": 1712000287,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",
@@ -65323,12 +69356,12 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 9.1,
 		"year": 2023,
 		"tagline": "Every good thing in this world started with a dream.",
-		"thumb": "/library/metadata/9507/thumb/1711898913",
-		"art": "/library/metadata/9507/art/1711898913",
+		"thumb": "/library/metadata/9507/thumb/1712000287",
+		"art": "/library/metadata/9507/art/1712000287",
 		"duration": 7042868,
 		"originallyAvailableAt": "2023-12-06",
 		"addedAt": 1710700318,
-		"updatedAt": 1711898913,
+		"updatedAt": 1712000287,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -65599,11 +69632,11 @@ export const json_plex: IPlex[] = [
 		"audienceRating": 5.6,
 		"year": 1998,
 		"tagline": "It's not just a movie. It's every movie.",
-		"thumb": "/library/metadata/9727/thumb/1711898914",
+		"thumb": "/library/metadata/9727/thumb/1712000287",
 		"duration": 5160160,
 		"originallyAvailableAt": "1998-07-23",
 		"addedAt": 1677432270,
-		"updatedAt": 1711898914,
+		"updatedAt": 1712000287,
 		"audienceRatingImage": "rottentomatoes://image.rating.spilled",
 		"hasPremiumPrimaryExtra": "1",
 		"ratingImage": "rottentomatoes://image.rating.rotten",
@@ -66657,11 +70690,11 @@ export const json_plex: IPlex[] = [
 		"lastViewedAt": 1711317673,
 		"year": 2013,
 		"tagline": "The greatest manhunt in history.",
-		"thumb": "/library/metadata/9819/thumb/1711898585",
+		"thumb": "/library/metadata/9819/thumb/1712000289",
 		"duration": 9419435,
 		"originallyAvailableAt": "2013-01-04",
 		"addedAt": 1678568215,
-		"updatedAt": 1711898585,
+		"updatedAt": 1712000289,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"hasPremiumExtras": "1",
 		"hasPremiumPrimaryExtra": "1",
@@ -66929,12 +70962,12 @@ export const json_plex: IPlex[] = [
 		"rating": 9.3,
 		"audienceRating": 7.8,
 		"year": 2023,
-		"thumb": "/library/metadata/9471/thumb/1711898916",
-		"art": "/library/metadata/9471/art/1711898916",
+		"thumb": "/library/metadata/9471/thumb/1712000289",
+		"art": "/library/metadata/9471/art/1712000289",
 		"duration": 6284194,
 		"originallyAvailableAt": "2023-12-14",
 		"addedAt": 1710700315,
-		"updatedAt": 1711898916,
+		"updatedAt": 1712000289,
 		"audienceRatingImage": "rottentomatoes://image.rating.upright",
 		"chapterSource": "media",
 		"hasPremiumExtras": "1",

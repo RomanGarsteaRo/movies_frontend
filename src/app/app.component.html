@@ -45,7 +45,7 @@
 		<div class="plex" *ngIf="plex">
 			<div>Plex</div>
 			<div>{{plex.length}} <!--total json items--></div>
-<!--			<div>{{plex.length - numberOfItemsPlex}}&lt;!&ndash;not show&ndash;&gt;</div>-->
+			<div>{{numberOfItemsPlexInData}}<!--not show--></div>
 		</div>
 
 	</div>
@@ -69,9 +69,9 @@
 					<span class="tag" *ngFor="let tag of item.tags">{{tag}}</span>
 				</div>
 
-				<div></div>
-<!--				<div class="json_plex" [ngClass]="{'no_json': item.plex === 'N/A'}">{{item.plex === 'N/A' ? 'N/A' : '+'}}</div>-->
-				<!--<div class="json_omdb" [ngClass]="{'no_json': item.omdb === 'N/A'}">{{item.omdb === 'N/A' ? 'N/A' : '+'}}</div>-->
+
+				<div class="json_plex" [ngClass]="{'no_json': group?.plex === null}">{{group.plex === null ? 'N/A' : '+'}}</div>
+<!--				<div class="json_omdb" [ngClass]="{'no_json': item.omdb === 'N/A'}">{{item.omdb === 'N/A' ? 'N/A' : '+'}}</div>-->
 			</div>
 		</ng-container>
 

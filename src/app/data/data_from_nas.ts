@@ -91,11 +91,6 @@ export const json_nas = [
 		"size": "8616521276"
 	},
 	{
-		"id": "Miss Sloane (2016).m2ts",
-		"path": "\\\\NAS\\Movies\\Miss Sloane (2016).m2ts",
-		"size": "41710983168"
-	},
-	{
 		"id": "Beauty and the Beast (2017) 3D.mkv",
 		"path": "\\\\NAS\\Movies\\Beauty and the Beast (2017) 3D.mkv",
 		"size": "10243358969"
@@ -556,8 +551,8 @@ export const json_nas = [
 		"size": "27777591172"
 	},
 	{
-		"id": "Crazy, Stupid, Love (2011).mkv",
-		"path": "\\\\NAS\\Movies\\Crazy, Stupid, Love (2011).mkv",
+		"id": "Crazy, Stupid, Love. (2011).mkv",
+		"path": "\\\\NAS\\Movies\\Crazy, Stupid, Love. (2011).mkv",
 		"size": "16522815716"
 	},
 	{
@@ -651,8 +646,8 @@ export const json_nas = [
 		"size": "13473526369"
 	},
 	{
-		"id": "Guardians of the Galaxy (2017) 3D.mkv",
-		"path": "\\\\NAS\\Movies\\Guardians of the Galaxy (2017) 3D.mkv",
+		"id": "Guardians of the Galaxy Vol. 2 (2017) 3D.mkv",
+		"path": "\\\\NAS\\Movies\\Guardians of the Galaxy Vol. 2 (2017) 3D.mkv",
 		"size": "14175654587"
 	},
 	{
@@ -741,8 +736,8 @@ export const json_nas = [
 		"size": "46506000384"
 	},
 	{
-		"id": "Guardians of the Galaxy (2017).m2ts",
-		"path": "\\\\NAS\\Movies\\Guardians of the Galaxy (2017).m2ts",
+		"id": "Guardians of the Galaxy Vol. 2 (2017).m2ts",
+		"path": "\\\\NAS\\Movies\\Guardians of the Galaxy Vol. 2 (2017).m2ts",
 		"size": "37118275584"
 	},
 	{
@@ -801,8 +796,8 @@ export const json_nas = [
 		"size": "28492231212"
 	},
 	{
-		"id": "Thank You for Smoking‎ (2005).mkv",
-		"path": "\\\\NAS\\Movies\\Thank You for Smoking‎ (2005).mkv",
+		"id": "Thank You for Smoking (2005).mkv",
+		"path": "\\\\NAS\\Movies\\Thank You for Smoking (2005).mkv",
 		"size": "7160389509"
 	},
 	{
@@ -1156,8 +1151,8 @@ export const json_nas = [
 		"size": "34886761302"
 	},
 	{
-		"id": "Birdman (2014).mkv",
-		"path": "\\\\NAS\\Movies\\Birdman (2014).mkv",
+		"id": "Birdman or (The Unexpected Virtue of Ignorance) (2014).mkv",
+		"path": "\\\\NAS\\Movies\\Birdman or (The Unexpected Virtue of Ignorance) (2014).mkv",
 		"size": "42588225124"
 	},
 	{
@@ -1301,8 +1296,8 @@ export const json_nas = [
 		"size": "58032933899"
 	},
 	{
-		"id": "Seven (1995).mkv",
-		"path": "\\\\NAS\\Movies\\Seven (1995).mkv",
+		"id": "Se7en (1995).mkv",
+		"path": "\\\\NAS\\Movies\\Se7en (1995).mkv",
 		"size": "48370939270"
 	},
 	{
@@ -2036,11 +2031,6 @@ export const json_nas = [
 		"size": "15468421914"
 	},
 	{
-		"id": "Mission Impossible - Rogue Nation (2015).m2ts",
-		"path": "\\\\NAS\\Movies\\Mission Impossible - Rogue Nation (2015).m2ts",
-		"size": "38679386112"
-	},
-	{
 		"id": "Nanny McPhee Returns (2010).mkv",
 		"path": "\\\\NAS\\Movies\\Nanny McPhee Returns (2010).mkv",
 		"size": "9157515645"
@@ -2076,8 +2066,8 @@ export const json_nas = [
 		"size": "19031893380"
 	},
 	{
-		"id": "WALL-E (2008).mkv",
-		"path": "\\\\NAS\\Movies\\WALL-E (2008).mkv",
+		"id": "WALL·E (2008).mkv",
+		"path": "\\\\NAS\\Movies\\WALL·E (2008).mkv",
 		"size": "38142583230"
 	},
 	{
@@ -2371,8 +2361,8 @@ export const json_nas = [
 		"size": "18536000231"
 	},
 	{
-		"id": "X-Men 3 The Last Stand (2006).mkv",
-		"path": "\\\\NAS\\Movies\\X-Men 3 The Last Stand (2006).mkv",
+		"id": "X-Men The Last Stand (2006).mkv",
+		"path": "\\\\NAS\\Movies\\X-Men The Last Stand (2006).mkv",
 		"size": "18554260020"
 	},
 	{
@@ -3211,6 +3201,11 @@ export const json_nas = [
 		"size": "14225900883"
 	},
 	{
+		"id": "Big Trouble in Little China (1986).m2ts",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Big Trouble in Little China (1986).m2ts",
+		"size": "27467286528"
+	},
+	{
 		"id": "Black Widow (2021).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Black Widow (2021).mkv",
 		"size": "37442415995"
@@ -3316,6 +3311,11 @@ export const json_nas = [
 		"size": "9072307178"
 	},
 	{
+		"id": "Dark Harvest (2023).avi",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Dark Harvest (2023).avi",
+		"size": "1568909312"
+	},
+	{
 		"id": "Doctor Strange in the Multiverse of Madness (2022) 3D.mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Doctor Strange in the Multiverse of Madness (2022) 3D.mkv",
 		"size": "14727312340"
@@ -3339,6 +3339,11 @@ export const json_nas = [
 		"id": "Dune (2021).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Dune (2021).mkv",
 		"size": "71332921817"
+	},
+	{
+		"id": "Dune Part Two (2024).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Dune Part Two (2024).mkv",
+		"size": "2336771706"
 	},
 	{
 		"id": "Dungeons & Dragons Honor Among Thieves (2023).mkv",
@@ -3386,8 +3391,8 @@ export const json_nas = [
 		"size": "18670902285"
 	},
 	{
-		"id": "Guardians of the Galaxy (2023).mkv",
-		"path": "\\\\NAS\\MoviesB\\Movis\\Guardians of the Galaxy (2023).mkv",
+		"id": "Guardians of the Galaxy Vol. 3 (2023).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Guardians of the Galaxy Vol. 3 (2023).mkv",
 		"size": "39839166650"
 	},
 	{
@@ -3551,9 +3556,24 @@ export const json_nas = [
 		"size": "14526150684"
 	},
 	{
+		"id": "Miss Sloane (2016).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Miss Sloane (2016).mkv",
+		"size": "22226717345"
+	},
+	{
 		"id": "Mission Impossible - Dead Reckoning (2023).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Mission Impossible - Dead Reckoning (2023).mkv",
 		"size": "40472866314"
+	},
+	{
+		"id": "Molly's Game (2017) iTunes.mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Molly's Game (2017) iTunes.mkv",
+		"size": "16237230749"
+	},
+	{
+		"id": "Molly's Game (2017).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Molly's Game (2017).mkv",
+		"size": "42012254804"
 	},
 	{
 		"id": "Mortdecai (2015).m4v",
@@ -3691,6 +3711,11 @@ export const json_nas = [
 		"size": "7388938139"
 	},
 	{
+		"id": "Road House (2024) 4k HDR10.mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Road House (2024) 4k HDR10.mkv",
+		"size": "19957487231"
+	},
+	{
 		"id": "Safe (2012).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Safe (2012).mkv",
 		"size": "27272628789"
@@ -3714,6 +3739,11 @@ export const json_nas = [
 		"id": "Shazam! Fury of the Gods (2023).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Shazam! Fury of the Gods (2023).mkv",
 		"size": "9303369839"
+	},
+	{
+		"id": "Showdown at the Grand (2023).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Showdown at the Grand (2023).mkv",
+		"size": "25304983601"
 	},
 	{
 		"id": "Showdown in Little Tokyo (1991).mkv",
@@ -3744,6 +3774,11 @@ export const json_nas = [
 		"id": "Some Like It Hot (1959).m2ts",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Some Like It Hot (1959).m2ts",
 		"size": "42845104128"
+	},
+	{
+		"id": "Sometimes I Think About Dying (2023).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Sometimes I Think About Dying (2023).mkv",
+		"size": "1571314342"
 	},
 	{
 		"id": "Sound of Freedom (2023).mkv",
@@ -3789,6 +3824,11 @@ export const json_nas = [
 		"id": "Taxi 5 (2018).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Taxi 5 (2018).mkv",
 		"size": "3944970191"
+	},
+	{
+		"id": "That's My Boy (2012).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\That's My Boy (2012).mkv",
+		"size": "11675190977"
 	},
 	{
 		"id": "The Beanie Bubble (2023).mkv",
@@ -3851,6 +3891,11 @@ export const json_nas = [
 		"size": "17347279842"
 	},
 	{
+		"id": "The Help (2011).m2ts",
+		"path": "\\\\NAS\\MoviesB\\Movis\\The Help (2011).m2ts",
+		"size": "33939068928"
+	},
+	{
 		"id": "The Holdovers (2023).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\The Holdovers (2023).mkv",
 		"size": "3239286685"
@@ -3889,6 +3934,11 @@ export const json_nas = [
 		"id": "The Machine (2023).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\The Machine (2023).mkv",
 		"size": "9322237689"
+	},
+	{
+		"id": "The Meyerowitz Stories (2017).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\The Meyerowitz Stories (2017).mkv",
+		"size": "6636972939"
 	},
 	{
 		"id": "The Mortuary Collection (2019).mkv",
@@ -3964,6 +4014,11 @@ export const json_nas = [
 		"id": "Transformers Rise of the Beasts (2023).mkv",
 		"path": "\\\\NAS\\MoviesB\\Movis\\Transformers Rise of the Beasts (2023).mkv",
 		"size": "30869096788"
+	},
+	{
+		"id": "Uncut Gems (2019).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Uncut Gems (2019).mkv",
+		"size": "40087575649"
 	},
 	{
 		"id": "Under Siege (1992).m2ts",
