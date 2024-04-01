@@ -74,7 +74,7 @@ export class AppComponent implements AfterViewInit {
 	public duplicate!: INasExtended[];
 	public rusName!: IMovie[];
 	public enName!: IMovie[];
-	public movies3d!: INasExtended[];
+	public movies3d!: number;
 	public averageSize!: IFileSize;
 	public averageYear!: number;
 	public numberOfItemsOmdb!: number;
@@ -116,7 +116,7 @@ export class AppComponent implements AfterViewInit {
 		arr = arr.sort((a: INasExtended,b: INasExtended) => a.id.localeCompare(b.id));
 		console.log(arr[20]);
 		arr = this.transformMovieData(arr);
-		// arr = this.sortData(arr);
+		arr = this.sortData(arr);
 		arr = arr.slice();
 		this.listOfMovies = arr;
 		this.numberOfFiles = this.getNumberOfFiles(arr);
@@ -124,10 +124,10 @@ export class AppComponent implements AfterViewInit {
 		this.enName = this.getEnName(arr);
 		this.averageYear = this.getAverageYear(arr);
 		this.averageSize = this.getAverageSize(arr);
-		// this.duplicate = this.getDuplicate(arr);
-		// this.movies3d = this.getMovies3d(arr);
-		// this.numberOfItemsOmdb = this.getNumberOfOmdbItemsInData(arr);
+		this.movies3d = this.getMovies3d(arr);
 		// this.numberOfItemsPlex = this.getNumberOfPlexItemsInData(arr);
+		// this.numberOfItemsOmdb = this.getNumberOfOmdbItemsInData(arr);
+		// this.duplicate = this.getDuplicate(arr);
 		console.log(arr[20]);
 	}
 
@@ -158,8 +158,16 @@ export class AppComponent implements AfterViewInit {
 		return arr.filter(movie => russianTitleRegex.test(movie.title));
 	}
 
-	private getMovies3d(arr: INasExtended[]): INasExtended[] {
-		return arr.filter(item => item.id.indexOf('3D') >= 0);
+	private getMovies3d(arr: IMovie[]): number {
+		return arr.reduce((acc: number, item: IMovie) => {
+			let count = 0;
+			item.assets.forEach(file=> {
+				if(file.tags.find(tag => tag === '3D')) {
+					count++;
+				}
+			})
+			return acc += count;
+		}, 0);
 	}
 
 	private convertBytesToIFileSize(bytes: number | IFileSize): IFileSize {
@@ -347,8 +355,13 @@ export class AppComponent implements AfterViewInit {
 		},0)
 	}
 
-	private sortData(arr: any[]) {
-		return [];
+	private sortData(arr: IMovie[]): IMovie[] {
+		arr = arr.sort((a: IMovie,b: IMovie) => a.title.localeCompare(b.title));
+		arr.forEach((movie: IMovie) => movie.assets.sort((a: INasExtended,b: INasExtended)=> {
+			return a.tags.length - b.tags.length;
+		}))
+
+		return arr;
 	}
 }
 

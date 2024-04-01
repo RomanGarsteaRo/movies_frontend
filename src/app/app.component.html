@@ -3,8 +3,8 @@
 
 <div class="container">
 
-	<div class="stat">
 
+	<div class="stat">
 		<!--Total-->
 		<div class="total group">
 				<span class="value">{{numberOfFiles}}</span>
@@ -29,10 +29,9 @@
 			<span class="label">en</span>
 			<span class="value">{{rusName.length}}</span>
 			<span class="label">ru</span>
+			<span class="value">{{movies3d}}</span>
+			<span class="label">3D</span>
 		</div>
-
-
-
 
 
 		<!--OMDB JSON-->
@@ -43,12 +42,17 @@
 <!--		</div>-->
 
 		<!--Plex JSON-->
-<!--		<div class="plex" *ngIf="plex">-->
-<!--			<div>Plex</div>-->
-<!--			<div>{{plex.length}} &lt;!&ndash;total json items&ndash;&gt;</div>-->
+		<div class="plex" *ngIf="plex">
+			<div>Plex</div>
+			<div>{{plex.length}} <!--total json items--></div>
 <!--			<div>{{plex.length - numberOfItemsPlex}}&lt;!&ndash;not show&ndash;&gt;</div>-->
-<!--		</div>-->
+		</div>
 
+	</div>
+
+
+	<!--Sort-->
+	<div class="sort">
 
 	</div>
 
@@ -60,15 +64,14 @@
 				<div class="number">{{j === 0 ? i + 1 + '.' : ''}}</div>
 				<div class="year">{{j === 0 ? item.year : ''}}</div>
 				<ui-file-size [size]="item.size"></ui-file-size>
-				<div>{{item.title}}</div>
-<!--				<div class="tags">-->
-<!--					<span *ngFor="let tag of item.tags">{{tag}}</span>-->
-<!--				</div>-->
+				<div class="title-box">
+					<span>{{item.title}}</span>
+					<span class="tag" *ngFor="let tag of item.tags">{{tag}}</span>
+				</div>
 
-
-
-				<!--			<div class="json_omdb" [ngClass]="{'no_json': item.omdb === 'N/A'}">{{item.omdb === 'N/A' ? 'N/A' : '+'}}</div>-->
-				<!--			<div class="json_plex" [ngClass]="{'no_json': item.plex === 'N/A'}">{{item.plex === 'N/A' ? 'N/A' : '+'}}</div>-->
+				<div></div>
+<!--				<div class="json_plex" [ngClass]="{'no_json': item.plex === 'N/A'}">{{item.plex === 'N/A' ? 'N/A' : '+'}}</div>-->
+				<!--<div class="json_omdb" [ngClass]="{'no_json': item.omdb === 'N/A'}">{{item.omdb === 'N/A' ? 'N/A' : '+'}}</div>-->
 			</div>
 		</ng-container>
 

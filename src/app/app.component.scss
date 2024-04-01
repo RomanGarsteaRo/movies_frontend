@@ -25,7 +25,10 @@
 		$year: 80px;
 		$title: 400px;
 		$size: 80px;
-		$grid-template-columns: $total $year $size $title;
+		$plex: 80px;
+
+		$grid-template-columns: $total $year $size $title $plex;
+
 		.stat {
 			overflow: auto;
 			display: grid;
@@ -95,6 +98,18 @@
 					display: flex;
 					justify-content: end;
 					color: #3b3b3b;
+				}
+				.size{}
+				.title-box{
+					display: flex;
+					flex-direction: row;
+					column-gap: 6px;
+					align-items: center;
+					.title{}
+					.tag{
+						font-size: 12px;
+						border: 1px solid #851010;
+					}
 				}
 				.tags{
 					display: flex;
