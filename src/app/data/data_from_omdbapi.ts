@@ -34,10 +34,6 @@ export interface IOmdb {
 
 export const json_omdb: IOmdb[] = [
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "1917",
 		"Year": "2019",
 		"Rated": "R",
@@ -73,6 +69,46 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "25 Dec 2019",
 		"BoxOffice": "$159,227,644",
+		"Production": "N/A",
+		"Website": "N/A",
+		"Response": "True"
+	},
+	{
+		"Title": "3:10 to Yuma",
+		"Year": "2007",
+		"Rated": "R",
+		"Released": "07 Sep 2007",
+		"Runtime": "122 min",
+		"Genre": "Action, Crime, Drama",
+		"Director": "James Mangold",
+		"Writer": "Halsted Welles, Michael Brandt, Derek Haas",
+		"Actors": "Russell Crowe, Christian Bale, Ben Foster",
+		"Plot": "Rancher Dan Evans heads into Bisbee to clear up issues concerning the sale of his land when he witnesses the closing events of a stagecoach robbery led by famed outlaw Ben Wade. Shortly thereafter, Wade is captured by the law in Bisbee and Evans finds himself one of the escorts who will take Wade to the 3:10 to Yuma train in Contention for the reward of $200. Evans' effort to take Wade to the station is in part an effort to save his land but also part of an inner battle to determine whether he can be more than just a naive rancher in the eyes of his impetuous and gun slinging son William Evans. The transport to Contention is hazardous and filled with ambushes by Indians, pursuits by Wade's vengeful gang and Wade's own conniving and surreptitious demeanor that makes the ride all the more intense.",
+		"Language": "English, Chinese",
+		"Country": "United States",
+		"Awards": "Nominated for 2 Oscars. 3 wins & 32 nominations total",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BODE0NTcxNTQzNF5BMl5BanBnXkFtZTcwMzczOTIzMw@@._V1_SX300.jpg",
+		"Ratings": [
+			{
+				"Source": "Internet Movie Database",
+				"Value": "7.6/10"
+			},
+			{
+				"Source": "Rotten Tomatoes",
+				"Value": "89%"
+			},
+			{
+				"Source": "Metacritic",
+				"Value": "76/100"
+			}
+		],
+		"Metascore": "76",
+		"imdbRating": "7.6",
+		"imdbVotes": "330,229",
+		"imdbID": "tt0381849",
+		"Type": "movie",
+		"DVD": "14 Dec 2015",
+		"BoxOffice": "$53,606,916",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -118,6 +154,46 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
+		"Title": "6 Souls",
+		"Year": "2010",
+		"Rated": "R",
+		"Released": "01 Mar 2013",
+		"Runtime": "112 min",
+		"Genre": "Horror, Thriller",
+		"Director": "Måns Mårlind, Björn Stein",
+		"Writer": "Michael Cooney",
+		"Actors": "Julianne Moore, Jonathan Rhys Meyers, Jeffrey DeMunn",
+		"Plot": "After the death of her husband, Dr. Cara Harding's faith in God has been shaken, but not her belief in science. In an attempt to get her more open to accepting unexplainable psychiatric theories, her father introduces her to Adam, a patient with multiple personalities who also takes on some of the physical characteristics of his other personalities. But Cara quickly discovers that his other personalities were murder victims and the more she finds out about Adam and his past, the closer she and her loved ones are to becoming murder victims themselves.",
+		"Language": "English",
+		"Country": "United States",
+		"Awards": "N/A",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BMTM3Njk3ODA2M15BMl5BanBnXkFtZTcwNzUzOTMxOQ@@._V1_SX300.jpg",
+		"Ratings": [
+			{
+				"Source": "Internet Movie Database",
+				"Value": "6.0/10"
+			},
+			{
+				"Source": "Rotten Tomatoes",
+				"Value": "7%"
+			},
+			{
+				"Source": "Metacritic",
+				"Value": "28/100"
+			}
+		],
+		"Metascore": "28",
+		"imdbRating": "6.0",
+		"imdbVotes": "36,444",
+		"imdbID": "tt1179069",
+		"Type": "movie",
+		"DVD": "10 Aug 2016",
+		"BoxOffice": "N/A",
+		"Production": "N/A",
+		"Website": "N/A",
+		"Response": "True"
+	},
+	{
 		"Title": "A Most Violent Year",
 		"Year": "2014",
 		"Rated": "R",
@@ -156,10 +232,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "After the Sunset",
@@ -634,46 +706,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "300: Rise of an Empire",
-		"Year": "2014",
-		"Rated": "R",
-		"Released": "07 Mar 2014",
-		"Runtime": "102 min",
-		"Genre": "Action, Drama, War",
-		"Director": "Noam Murro",
-		"Writer": "Zack Snyder, Kurt Johnstad, Frank Miller",
-		"Actors": "Sullivan Stapleton, Eva Green, Lena Headey",
-		"Plot": "After its victory over Leonidas' 300, the Persian Army under the command of Xerxes marches towards the major Greek city-states. The Democratic city of Athens, first on the path of Xerxes' army, bases its strength on its fleet, led by admiral Themistocles. Themistocles is forced to an unwilling alliance with the traditional rival of Athens, oligarchic Sparta whose might lies with its superior infantry troops. But Xerxes still reigns supreme in numbers over sea and land.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "2 wins & 7 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTEwNTU2MjAwMDdeQTJeQWpwZ15BbWU3MDk2Njc2Njk@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.2/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "46%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "48/100"
-			}
-		],
-		"Metascore": "48",
-		"imdbRating": "6.2",
-		"imdbVotes": "314,044",
-		"imdbID": "tt1253863",
-		"Type": "movie",
-		"DVD": "14 Dec 2015",
-		"BoxOffice": "$106,580,051",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "100 Girls",
 		"Year": "2000",
 		"Rated": "R",
@@ -745,87 +777,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "14 Dec 2015",
 		"BoxOffice": "$106,580,051",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-
-	{
-		"Title": "Aladdin",
-		"Year": "1992",
-		"Rated": "G",
-		"Released": "25 Nov 1992",
-		"Runtime": "90 min",
-		"Genre": "Animation, Adventure, Comedy",
-		"Director": "Ron Clements, John Musker",
-		"Writer": "Ron Clements, John Musker, Ted Elliott",
-		"Actors": "Scott Weinger, Robin Williams, Linda Larkin",
-		"Plot": "Aladdin is a poor street urchin who spends his time stealing food from the marketplace in the city of Agrabah. His adventures begin when he meets a young girl who happens to be Princess Jasmine, who is forced to be married by her wacky yet estranged father. Aladdin's luck suddenly changes when he retrieves a magical lamp from the Cave of Wonders. What he unwittingly gets is a fun-loving genie who only wishes to have his freedom. Little do they know is that the Sultan's sinister advisor Jafar has his own plans for both Aladdin and the lamp.",
-		"Language": "English, Russian",
-		"Country": "United States, Japan",
-		"Awards": "Won 2 Oscars. 35 wins & 22 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZTg5ZTVmM2EtZjdhZC00MzBjLWEwZTYtNWIwZDczYzZkMzA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "95%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "86/100"
-			}
-		],
-		"Metascore": "86",
-		"imdbRating": "8.0",
-		"imdbVotes": "463,286",
-		"imdbID": "tt0103639",
-		"Type": "movie",
-		"DVD": "01 Sep 2016",
-		"BoxOffice": "$217,350,219",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Alien",
-		"Year": "1979",
-		"Rated": "R",
-		"Released": "22 Jun 1979",
-		"Runtime": "117 min",
-		"Genre": "Horror, Sci-Fi",
-		"Director": "Ridley Scott",
-		"Writer": "Dan O'Bannon, Ronald Shusett",
-		"Actors": "Sigourney Weaver, Tom Skerritt, John Hurt",
-		"Plot": "In the distant future, the crew of the commercial spaceship Nostromo are on their way home when they pick up a distress call from a distant moon. The crew are under obligation to investigate and the spaceship descends on the moon afterwards. After a rough landing, three crew members leave the spaceship to explore the area on the moon. At the same time as they discover a hive colony of some unknown creature, the ship's computer deciphers the message to be a warning, not a distress call. When one of the eggs is disturbed, the crew realizes that they are not alone on the spaceship and they must deal with the consequences.",
-		"Language": "English",
-		"Country": "United Kingdom, United States",
-		"Awards": "Won 1 Oscar. 19 wins & 22 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "93%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "89/100"
-			}
-		],
-		"Metascore": "89",
-		"imdbRating": "8.5",
-		"imdbVotes": "944,526",
-		"imdbID": "tt0078748",
-		"Type": "movie",
-		"DVD": "02 Nov 2014",
-		"BoxOffice": "$81,900,459",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -950,7 +901,6 @@ export const json_omdb: IOmdb[] = [
 		"Website": "N/A",
 		"Response": "True"
 	},
-
 	{
 		"Title": "Apocalypto",
 		"Year": "2006",
@@ -1185,35 +1135,6 @@ export const json_omdb: IOmdb[] = [
 		"BoxOffice": "$148,478,011",
 		"Production": "N/A",
 		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Birdman",
-		"Year": "1967–1987",
-		"Rated": "TV-G",
-		"Released": "09 Sep 1967",
-		"Runtime": "30 min",
-		"Genre": "Animation, Action, Adventure",
-		"Director": "N/A",
-		"Writer": "N/A",
-		"Actors": "Keith Andes, Don Messick, John Stephenson",
-		"Plot": "A winged superhero who gets his powers from the sun battles various evildoers with the help of his eagle sidekick Avenger.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZTk3NjA1M2EtYTQ2Ny00ZTlmLThjMTQtYzhiY2I1ODM0MzdlXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.7/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "6.7",
-		"imdbVotes": "1,071",
-		"imdbID": "tt0061237",
-		"Type": "series",
-		"totalSeasons": "1",
 		"Response": "True"
 	},
 	{
@@ -1697,75 +1618,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "BrainDead",
-		"Year": "2016",
-		"Rated": "TV-14",
-		"Released": "13 Jun 2016",
-		"Runtime": "1 min",
-		"Genre": "Comedy, Drama, Horror",
-		"Director": "N/A",
-		"Writer": "Michelle King, Robert King",
-		"Actors": "Mary Elizabeth Winstead, Danny Pino, Aaron Tveit",
-		"Plot": "A young, fresh-faced Hill staffer gets her first job in Washington, D.C. to discover two things: The government has stopped working, and alien spawn have come to earth and eaten the brains of a growing number of Congressmen and Hill staffers.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTg4MzgzOTAyNl5BMl5BanBnXkFtZTgwNzYxNjg0ODE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "8.0",
-		"imdbVotes": "11,999",
-		"imdbID": "tt4877736",
-		"Type": "series",
-		"totalSeasons": "1",
-		"Response": "True"
-	},
-	{
-		"Title": "Blade Runner 2049",
-		"Year": "2017",
-		"Rated": "R",
-		"Released": "06 Oct 2017",
-		"Runtime": "164 min",
-		"Genre": "Action, Drama, Mystery",
-		"Director": "Denis Villeneuve",
-		"Writer": "Hampton Fancher, Michael Green, Philip K. Dick",
-		"Actors": "Harrison Ford, Ryan Gosling, Ana de Armas",
-		"Plot": "Thirty years after the events of Blade Runner (1982), a new Blade Runner, L.A.P.D. Officer \"K\" (Ryan Gosling), unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former L.A.P.D. Blade Runner, who has been missing for thirty years.",
-		"Language": "English, Finnish, Japanese, Hungarian, Russian, Somali, Spanish",
-		"Country": "United States, United Kingdom, Canada, Spain",
-		"Awards": "Won 2 Oscars. 100 wins & 163 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "88%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "81/100"
-			}
-		],
-		"Metascore": "81",
-		"imdbRating": "8.0",
-		"imdbVotes": "656,743",
-		"imdbID": "tt1856101",
-		"Type": "movie",
-		"DVD": "26 Dec 2017",
-		"BoxOffice": "$92,071,675",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Boyhood",
 		"Year": "2014",
 		"Rated": "R",
@@ -2086,62 +1938,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Astérix",
-		"Year": "2024–",
-		"Rated": "N/A",
-		"Released": "N/A",
-		"Runtime": "N/A",
-		"Genre": "Animation, Action, Adventure",
-		"Director": "N/A",
-		"Writer": "René Goscinny, Albert Uderzo",
-		"Actors": "N/A",
-		"Plot": "In the glory days of the Roman Empire, one village of fierce French warriors holds the Romans at bay.",
-		"Language": "French",
-		"Country": "France, United States",
-		"Awards": "N/A",
-		"Poster": "N/A",
-		"Ratings": [],
-		"Metascore": "N/A",
-		"imdbRating": "N/A",
-		"imdbVotes": "N/A",
-		"imdbID": "tt14164922",
-		"Type": "series",
-		"totalSeasons": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Aritmiya",
-		"Year": "1992",
-		"Rated": "N/A",
-		"Released": "10 Jun 1992",
-		"Runtime": "84 min",
-		"Genre": "Drama",
-		"Director": "Ivan Balevski",
-		"Writer": "Ivan Balevski",
-		"Actors": "Hristo Garbov, Alexandr Triffonov, Katya Paskaleva",
-		"Plot": "The plot deals with a party. A company display extremely uninhibited behavior. There are a youth whose spirits have permanently grown old. There is a lady foreigner among them; her preserved spirit is totally different. In the morning she is found dead.",
-		"Language": "Bulgarian",
-		"Country": "Bulgaria",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZDNlNmNmYzctYzVlOS00MjI2LWI5NWQtY2ZhODlkZGM3YjhmXkEyXkFqcGdeQXVyMzg1OTY0NjI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "5.5/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "5.5",
-		"imdbVotes": "11",
-		"imdbID": "tt0283892",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Alita: Battle Angel",
 		"Year": "2019",
 		"Rated": "PG-13",
@@ -2217,46 +2013,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "10 Sep 2015",
 		"BoxOffice": "$32,886,940",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Beauty and the Beast",
-		"Year": "1991",
-		"Rated": "G",
-		"Released": "22 Nov 1991",
-		"Runtime": "84 min",
-		"Genre": "Animation, Family, Fantasy",
-		"Director": "Gary Trousdale, Kirk Wise",
-		"Writer": "Linda Woolverton, Brenda Chapman, Chris Sanders",
-		"Actors": "Paige O'Hara, Robby Benson, Jesse Corti",
-		"Plot": "Having lived a life in selfishness, young Prince Adam is cursed by a mysterious enchantress to having the appearance of a monstrous beast. His only hope is to learn to love a young woman and earn her love in return in order to redeem himself. Ten years later, his chance shows itself when a young maiden named Belle (Paige O'Hara) offers to take her ill father Maurice's (Rex Everhart's) place as his prisoner. With help from the castle's enchanted staff, Belle learns to appreciate her captor and immediately falls in love with him. Back in the village however, unscrupulous hunter Gaston (Richard White) has his own plans for Belle.",
-		"Language": "English, Russian, French",
-		"Country": "United States, Japan",
-		"Awards": "Won 2 Oscars. 33 wins & 32 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "93%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "95/100"
-			}
-		],
-		"Metascore": "95",
-		"imdbRating": "8.0",
-		"imdbVotes": "478,016",
-		"imdbID": "tt0101414",
-		"Type": "movie",
-		"DVD": "06 Sep 2016",
-		"BoxOffice": "$218,967,620",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -2542,90 +2298,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
-		"Title": "Alita: Battle Angel",
-		"Year": "2019",
-		"Rated": "PG-13",
-		"Released": "14 Feb 2019",
-		"Runtime": "122 min",
-		"Genre": "Action, Adventure, Sci-Fi",
-		"Director": "Robert Rodriguez",
-		"Writer": "James Cameron, Laeta Kalogridis, Yukito Kishiro",
-		"Actors": "Rosa Salazar, Christoph Waltz, Jennifer Connelly",
-		"Plot": "Alita is a creation from an age of despair. Found by the mysterious Dr. Ido while trolling for cyborg parts, Alita becomes a lethal, dangerous being. She cannot remember who she is, or where she came from. But to Dr. Ido, the truth is all too clear. She is the one being who can break the cycle of death and destruction left behind from Tiphares. But to accomplish her true purpose, she must fight and kill. And that is where Alita's true significance comes to bear. She is an angel from heaven. She is an angel of death.",
-		"Language": "English, Spanish",
-		"Country": "Japan, Canada, United States",
-		"Awards": "10 wins & 25 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTQzYWYwYjctY2JhZS00NTYzLTllM2UtZWY5ZTk0NmYwYzIyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.3/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "62%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "53/100"
-			}
-		],
-		"Metascore": "53",
-		"imdbRating": "7.3",
-		"imdbVotes": "290,601",
-		"imdbID": "tt0437086",
-		"Type": "movie",
-		"DVD": "09 Jul 2019",
-		"BoxOffice": "$85,838,210",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Beauty and the Beast",
-		"Year": "1991",
-		"Rated": "G",
-		"Released": "22 Nov 1991",
-		"Runtime": "84 min",
-		"Genre": "Animation, Family, Fantasy",
-		"Director": "Gary Trousdale, Kirk Wise",
-		"Writer": "Linda Woolverton, Brenda Chapman, Chris Sanders",
-		"Actors": "Paige O'Hara, Robby Benson, Jesse Corti",
-		"Plot": "Having lived a life in selfishness, young Prince Adam is cursed by a mysterious enchantress to having the appearance of a monstrous beast. His only hope is to learn to love a young woman and earn her love in return in order to redeem himself. Ten years later, his chance shows itself when a young maiden named Belle (Paige O'Hara) offers to take her ill father Maurice's (Rex Everhart's) place as his prisoner. With help from the castle's enchanted staff, Belle learns to appreciate her captor and immediately falls in love with him. Back in the village however, unscrupulous hunter Gaston (Richard White) has his own plans for Belle.",
-		"Language": "English, Russian, French",
-		"Country": "United States, Japan",
-		"Awards": "Won 2 Oscars. 33 wins & 32 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "93%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "95/100"
-			}
-		],
-		"Metascore": "95",
-		"imdbRating": "8.0",
-		"imdbVotes": "478,016",
-		"imdbID": "tt0101414",
-		"Type": "movie",
-		"DVD": "06 Sep 2016",
-		"BoxOffice": "$218,967,620",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Caravaggio's Shadow",
 		"Year": "2022",
 		"Rated": "N/A",
@@ -2850,10 +2522,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Back to the Future Part III",
 		"Year": "1990",
 		"Rated": "PG",
@@ -2965,46 +2633,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "27 Jul 2021",
 		"BoxOffice": "$11,274,610",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Arthur Christmas",
-		"Year": "2011",
-		"Rated": "PG",
-		"Released": "23 Nov 2011",
-		"Runtime": "97 min",
-		"Genre": "Animation, Adventure, Comedy",
-		"Director": "Sarah Smith, Barry Cook",
-		"Writer": "Peter Baynham, Sarah Smith",
-		"Actors": "James McAvoy, Jim Broadbent, Bill Nighy",
-		"Plot": "This movie reveals the incredible, never-before seen answer to every child's question: \"So how does Santa deliver all those presents in one night?\" The answer: Santa's (Jim Broadbent's) exhilarating, ultra-high-tech operation hidden beneath the North Pole. But at the center of this movie is a story about a family in a state of comic dysfunction and an unlikely hero, Arthur (James McAvoy), with an urgent mission that must be completed before Christmas morning dawns.",
-		"Language": "English",
-		"Country": "United Kingdom, United States",
-		"Awards": "Nominated for 2 BAFTA 3 wins & 23 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNTczMjMwMTE2OV5BMl5BanBnXkFtZTcwNDU0NTAwNw@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.1/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "92%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "69/100"
-			}
-		],
-		"Metascore": "69",
-		"imdbRating": "7.1",
-		"imdbVotes": "66,763",
-		"imdbID": "tt1430607",
-		"Type": "movie",
-		"DVD": "06 Nov 2012",
-		"BoxOffice": "$46,462,469",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -3370,38 +2998,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Blade Runner: Black Out 2022",
-		"Year": "2017",
-		"Rated": "N/A",
-		"Released": "26 Sep 2017",
-		"Runtime": "15 min",
-		"Genre": "Animation, Short, Sci-Fi",
-		"Director": "Shin'ichirô Watanabe",
-		"Writer": "Shin'ichirô Watanabe",
-		"Actors": "Jovan Jackson, Luci Christian, Bryson Baugus, Edward James Olmos",
-		"Plot": "In 2022, a powerful weapon causes a global blackout that has massive implications all over the world.",
-		"Language": "English",
-		"Country": "USA, Japan",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZGNiNmNiMTctMDI4OS00OWYxLWE4ZWEtZjFkZjU4ZmY5YzEyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.3/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "7.3",
-		"imdbVotes": "7,731",
-		"imdbID": "tt7428594",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Biutiful",
 		"Year": "2010",
 		"Rated": "R",
@@ -3638,46 +3234,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Brotherhood of the Wolf",
-		"Year": "2001",
-		"Rated": "R",
-		"Released": "25 Jan 2002",
-		"Runtime": "142 min",
-		"Genre": "Action, Adventure, Drama",
-		"Director": "Christophe Gans",
-		"Writer": "Stéphane Cabel, Christophe Gans",
-		"Actors": "Samuel Le Bihan, Mark Dacascos, Jérémie Renier",
-		"Plot": "In 1764 something was stalking the mountains of central France. A 'beast' that pounced on humans and animals with terrible ferocity. Indeed they beast became so notorious that the King of France dispatched envoys to find out what was happening and to kill the creature. By the end, the Beast of Gevaudan had killed over 100 people.To this day, no one is entirely sure what it was, a wolf? a hyena? or something supernatural? The Beast is a popular myth in France, albeit one rooted firmly in reality; somewhat surprisingly it is little known to the outside world, and perhaps incredibly it has never been made into a movie. Until now. Based on the true story of the Beast of the Gevaudan that terrorized France in the eighteenth century, the movie aims to tell first and explain afterwards. In the first part, a special envoy of the King of France, altogether biologist, explorer and philosopher, arrives in the Gevaudan region, in the mountainous central part of France. The Beast has been attacking women and children for months and nobody has been able to harm it or even take a good look at it. In the second part, our hero Chevalier de Fronsac will not only have to fight the Beast, but also ignorance, bigotry and conspiracy and will rely on two women, one an aristocrat, the other a prostitute, as well as the enigmatic Mani, an Iroquois he met in New-France (Canada).",
-		"Language": "French, German, Italian",
-		"Country": "France",
-		"Awards": "4 wins & 22 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMjRiNjU5OTYtZDAyNi00ZTI3LTlkNjAtYWM2YjIzNzdkM2NiXkEyXkFqcGdeQXVyNTI2ODA2NTc@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "73%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "57/100"
-			}
-		],
-		"Metascore": "57",
-		"imdbRating": "7.0",
-		"imdbVotes": "71,004",
-		"imdbID": "tt0237534",
-		"Type": "movie",
-		"DVD": "27 Jul 2021",
-		"BoxOffice": "$11,274,610",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Breakwater",
 		"Year": "2023",
 		"Rated": "R",
@@ -3789,7 +3345,6 @@ export const json_omdb: IOmdb[] = [
 		"Website": "N/A",
 		"Response": "True"
 	},
-
 	{
 		"Title": "Contact",
 		"Year": "1997",
@@ -3866,46 +3421,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "06 Nov 2018",
 		"BoxOffice": "$174,837,452",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Dogman",
-		"Year": "2018",
-		"Rated": "Not Rated",
-		"Released": "12 Apr 2019",
-		"Runtime": "103 min",
-		"Genre": "Crime, Drama, Thriller",
-		"Director": "Matteo Garrone",
-		"Writer": "Ugo Chiti, Matteo Garrone, Massimo Gaudioso",
-		"Actors": "Marcello Fonte, Edoardo Pesce, Nunzia Schiano",
-		"Plot": "Marcello, a small and gentle dog groomer, finds himself involved in a dangerous relationship of subjugation with Simone, a former violent boxer who terrorizes the entire neighborhood. In an effort to reaffirm his dignity, Marcello will submit to an unexpected act of vengeance.",
-		"Language": "Italian",
-		"Country": "Italy, France",
-		"Awards": "Nominated for 1 BAFTA Award40 wins & 32 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZWIzMmYzNmMtZWNkMy00YzU2LTgzYTQtNDZhMmFmZDkwNTlmXkEyXkFqcGdeQXVyODAzODU1NDQ@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.2/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "84%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "71/100"
-			}
-		],
-		"Metascore": "71",
-		"imdbRating": "7.2",
-		"imdbVotes": "29,249",
-		"imdbID": "tt6768578",
-		"Type": "movie",
-		"DVD": "16 Jul 2019",
-		"BoxOffice": "$148,225",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -4943,46 +4458,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Harry Potter and the Deathly Hallows: Part 1",
-		"Year": "2010",
-		"Rated": "PG-13",
-		"Released": "19 Nov 2010",
-		"Runtime": "146 min",
-		"Genre": "Adventure, Family, Fantasy",
-		"Director": "David Yates",
-		"Writer": "Steve Kloves, J.K. Rowling",
-		"Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
-		"Plot": "Voldemort's (Ralph Fiennes') power is growing stronger. He now has control over the Ministry of Magic and Hogwarts. Harry (Daniel Radcliffe), Ron (Rupert Grint), and Hermione (Emma Watson) decide to finish Dumbledore's (Sir Michael Gambon's) work and find the rest of the Horcruxes to defeat the Dark Lord. But little hope remains for the trio and the rest of the Wizarding World, so everything they do must go as planned.",
-		"Language": "English, Latin",
-		"Country": "United Kingdom, United States",
-		"Awards": "Nominated for 2 Oscars. 15 wins & 55 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.7/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "77%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "65/100"
-			}
-		],
-		"Metascore": "65",
-		"imdbRating": "7.7",
-		"imdbVotes": "595,870",
-		"imdbID": "tt0926084",
-		"Type": "movie",
-		"DVD": "19 Jul 2013",
-		"BoxOffice": "$296,374,621",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Good Will Hunting",
 		"Year": "1997",
 		"Rated": "R",
@@ -5615,10 +5090,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Daddy's Home 2",
 		"Year": "2017",
 		"Rated": "PG-13",
@@ -5890,46 +5361,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "09 Jan 2016",
 		"BoxOffice": "$100,462,298",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Eternals",
-		"Year": "2021",
-		"Rated": "PG-13",
-		"Released": "05 Nov 2021",
-		"Runtime": "156 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Chloé Zhao",
-		"Writer": "Chloé Zhao, Patrick Burleigh, Ryan Firpo",
-		"Actors": "Gemma Chan, Richard Madden, Angelina Jolie",
-		"Plot": "Following the events of Avengers: Endgame (2019), an unexpected tragedy forces the Eternals, ancient aliens who have been living on Earth in secret for thousands of years, out of the shadows to reunite against mankind's most ancient enemy, the Deviants.",
-		"Language": "English, American Sign , Marathi, Assyrian Neo-Aramaic, Spanish, Sumerian, Latin, Sanskrit, Greek, Ancient (to 1453), Arabic",
-		"Country": "United States",
-		"Awards": "7 wins & 18 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTExZmVjY2ItYTAzYi00MDdlLWFlOWItNTJhMDRjMzQ5ZGY0XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.3/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "47%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "52/100"
-			}
-		],
-		"Metascore": "52",
-		"imdbRating": "6.3",
-		"imdbVotes": "382,313",
-		"imdbID": "tt9032400",
-		"Type": "movie",
-		"DVD": "12 Jan 2022",
-		"BoxOffice": "$164,870,234",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -6451,10 +5882,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Creation",
 		"Year": "2009",
 		"Rated": "PG-13",
@@ -6695,77 +6122,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Gone in Sixty Seconds at Ascot Raceway",
-		"Year": "2020",
-		"Rated": "N/A",
-		"Released": "02 Jan 2020",
-		"Runtime": "N/A",
-		"Genre": "Documentary, Short",
-		"Director": "Max Votolato",
-		"Writer": "N/A",
-		"Actors": "J.C. Agajanian Jr.",
-		"Plot": "N/A",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BYTkyYmI3YjAtZTMxZC00Y2VkLWI0NDUtZTNhZjNhMTYxMjZmXkEyXkFqcGdeQXVyNTEyOTYyNDA@._V1_SX300.jpg",
-		"Ratings": [],
-		"Metascore": "N/A",
-		"imdbRating": "N/A",
-		"imdbVotes": "N/A",
-		"imdbID": "tt18930694",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
-		"Title": "Hugo",
-		"Year": "2011",
-		"Rated": "PG",
-		"Released": "23 Nov 2011",
-		"Runtime": "126 min",
-		"Genre": "Adventure, Drama, Family",
-		"Director": "Martin Scorsese",
-		"Writer": "John Logan, Brian Selznick",
-		"Actors": "Asa Butterfield, Chloë Grace Moretz, Christopher Lee",
-		"Plot": "Hugo is an orphan boy living in the walls of a train station in 1930s Paris. He learned to fix clocks and other gadgets from his father and uncle which he puts to use keeping the train station clocks running. The only thing that he has left that connects him to his dead father is an automaton (mechanical man) that doesn't work without a special key. Hugo needs to find the key to unlock the secret he believes it contains. On his adventures, he meets George Melies, a shopkeeper, who works in the train station, and his adventure-seeking god-daughter. Hugo finds that they have a surprising connection to his father and the automaton, and he discovers it unlocks some memories the old man has buried inside regarding his past.",
-		"Language": "English",
-		"Country": "United States, United Kingdom",
-		"Awards": "Won 5 Oscars. 61 wins & 192 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMjAzNzk5MzgyNF5BMl5BanBnXkFtZTcwOTE4NDU5Ng@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "93%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "83/100"
-			}
-		],
-		"Metascore": "83",
-		"imdbRating": "7.5",
-		"imdbVotes": "335,777",
-		"imdbID": "tt0970179",
-		"Type": "movie",
-		"DVD": "06 Jun 2014",
-		"BoxOffice": "$73,864,507",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Hostage",
 		"Year": "2005",
 		"Rated": "R",
@@ -6801,46 +6157,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "01 Oct 2016",
 		"BoxOffice": "$34,639,939",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Ghostbusters",
-		"Year": "1984",
-		"Rated": "PG",
-		"Released": "08 Jun 1984",
-		"Runtime": "105 min",
-		"Genre": "Action, Comedy, Fantasy",
-		"Director": "Ivan Reitman",
-		"Writer": "Dan Aykroyd, Harold Ramis, Rick Moranis",
-		"Actors": "Bill Murray, Dan Aykroyd, Sigourney Weaver",
-		"Plot": "Peter Venkman, Ray Stantz and Egon Spengler work at Columbia University. where they delve into the paranormal and fiddle with many unethical experiments on their students. As they are kicked out of the University, they really understand the paranormal and go into business for themselves. Under the new snazzy business name of 'Ghostbusters', and living in the old firehouse building they work out of, they are called to rid New York City of paranormal phenomenon at everyone's whim. - for a price. They make national press as the media reports the Ghostbusters are the cause of it all. Thrown in jail by the EPA, the mayor takes a chance and calls on them to help save the city. Unbeknownst to all, a long dead Gozer worshiper (Evo Shandor) erected a downtown apartment building which is the cause of all the paranormal activity. They find out the building could resurrect the ancient Hittite god, Gozer, and bring an end to all of humanity. Who are you gonna call to stop this terrible world-ending menace?",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "Nominated for 2 Oscars. 8 wins & 9 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "95%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "71/100"
-			}
-		],
-		"Metascore": "71",
-		"imdbRating": "7.8",
-		"imdbVotes": "443,374",
-		"imdbID": "tt0087332",
-		"Type": "movie",
-		"DVD": "16 Apr 2012",
-		"BoxOffice": "$243,578,797",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -6913,46 +6229,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "N/A",
 		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Godzilla",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "16 May 2014",
-		"Runtime": "123 min",
-		"Genre": "Action, Adventure, Sci-Fi",
-		"Director": "Gareth Edwards",
-		"Writer": "Dave Callaham, Max Borenstein",
-		"Actors": "Aaron Taylor-Johnson, Elizabeth Olsen, Bryan Cranston",
-		"Plot": "In 1999, the Janjira nuclear plant was mysteriously destroyed with most hands lost including supervisor Joe Brody's colleague and wife, Sandra. Years later, Joe's son, Ford, a US Navy ordnance disposal officer, must go to Japan to help his estranged father who obsessively searches for the truth of the incident. In doing so, father and son discover the disaster's secret cause on the wreck's very grounds. This enables them to witness the reawakening of a terrible threat to all of Humanity, which is made all the worse with a second secret revival elsewhere. Against this cataclysm, the only hope for the world may be Godzilla, but the challenge for the King of the Monsters will be great even as Humanity struggles to understand the destructive ally they have.",
-		"Language": "English, Japanese",
-		"Country": "United States, Japan",
-		"Awards": "7 wins & 31 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZDFmYTM4NzAtNWM0ZC00MGJlLWEyYzQtYzA3ZTFiNzc1YjllXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.4/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "76%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "62/100"
-			}
-		],
-		"Metascore": "62",
-		"imdbRating": "6.4",
-		"imdbVotes": "437,047",
-		"imdbID": "tt0831387",
-		"Type": "movie",
-		"DVD": "26 Aug 2014",
-		"BoxOffice": "$200,676,069",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -7350,46 +6626,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Ghostbusters",
-		"Year": "1984",
-		"Rated": "PG",
-		"Released": "08 Jun 1984",
-		"Runtime": "105 min",
-		"Genre": "Action, Comedy, Fantasy",
-		"Director": "Ivan Reitman",
-		"Writer": "Dan Aykroyd, Harold Ramis, Rick Moranis",
-		"Actors": "Bill Murray, Dan Aykroyd, Sigourney Weaver",
-		"Plot": "Peter Venkman, Ray Stantz and Egon Spengler work at Columbia University. where they delve into the paranormal and fiddle with many unethical experiments on their students. As they are kicked out of the University, they really understand the paranormal and go into business for themselves. Under the new snazzy business name of 'Ghostbusters', and living in the old firehouse building they work out of, they are called to rid New York City of paranormal phenomenon at everyone's whim. - for a price. They make national press as the media reports the Ghostbusters are the cause of it all. Thrown in jail by the EPA, the mayor takes a chance and calls on them to help save the city. Unbeknownst to all, a long dead Gozer worshiper (Evo Shandor) erected a downtown apartment building which is the cause of all the paranormal activity. They find out the building could resurrect the ancient Hittite god, Gozer, and bring an end to all of humanity. Who are you gonna call to stop this terrible world-ending menace?",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "Nominated for 2 Oscars. 8 wins & 9 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "95%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "71/100"
-			}
-		],
-		"Metascore": "71",
-		"imdbRating": "7.8",
-		"imdbVotes": "443,374",
-		"imdbID": "tt0087332",
-		"Type": "movie",
-		"DVD": "16 Apr 2012",
-		"BoxOffice": "$243,578,797",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Goon",
 		"Year": "2011",
 		"Rated": "R",
@@ -7429,199 +6665,6 @@ export const json_omdb: IOmdb[] = [
 		"Website": "N/A",
 		"Response": "True"
 	},
-	{
-		"Title": "Edge of Tomorrow",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "06 Jun 2014",
-		"Runtime": "113 min",
-		"Genre": "Action, Adventure, Sci-Fi",
-		"Director": "Doug Liman",
-		"Writer": "Christopher McQuarrie, Jez Butterworth, John-Henry Butterworth",
-		"Actors": "Tom Cruise, Emily Blunt, Bill Paxton",
-		"Plot": "An alien race has hit the Earth in an unrelenting assault, unbeatable by any military unit in the world. Major William Cage (Cruise) is an officer who has never seen a day of combat when he is unceremoniously dropped into what amounts to a suicide mission. Killed within minutes, Cage now finds himself inexplicably thrown into a time loop-forcing him to live out the same brutal combat over and over, fighting and dying again...and again. But with each battle, Cage becomes able to engage the adversaries with increasing skill, alongside Special Forces warrior Rita Vrataski (Blunt). And, as Cage and Vrataski take the fight to the aliens, each repeated encounter gets them one step closer to defeating the enemy!",
-		"Language": "English",
-		"Country": "United States, Canada",
-		"Awards": "11 wins & 38 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.9/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "91%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "71/100"
-			}
-		],
-		"Metascore": "71",
-		"imdbRating": "7.9",
-		"imdbVotes": "728,259",
-		"imdbID": "tt1631867",
-		"Type": "movie",
-		"DVD": "10 Nov 2015",
-		"BoxOffice": "$100,206,256",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Guardians of the Galaxy",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "01 Aug 2014",
-		"Runtime": "121 min",
-		"Genre": "Action, Adventure, Comedy",
-		"Director": "James Gunn",
-		"Writer": "James Gunn, Nicole Perlman, Dan Abnett",
-		"Actors": "Chris Pratt, Vin Diesel, Bradley Cooper",
-		"Plot": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the \"Guardians of the Galaxy\" to save the galaxy.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "Nominated for 2 Oscars. 52 wins & 103 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "92%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "76/100"
-			}
-		],
-		"Metascore": "76",
-		"imdbRating": "8.0",
-		"imdbVotes": "1,266,525",
-		"imdbID": "tt2015381",
-		"Type": "movie",
-		"DVD": "15 Nov 2015",
-		"BoxOffice": "$333,718,600",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "How I Spent My Summer Vacation",
-		"Year": "1967",
-		"Rated": "Approved",
-		"Released": "07 Jan 1967",
-		"Runtime": "100 min",
-		"Genre": "Adventure, Drama, Mystery",
-		"Director": "William Hale",
-		"Writer": "Gene R. Kearney",
-		"Actors": "Robert Wagner, Peter Lawford, Lola Albright",
-		"Plot": "American Jack Washington is hiding in Paris under an assumed name. He also sports a beard to hide his facial traits. One day he finds a job ad in the local paper. The agency interviewing him is a front for a secret organization hired to find him. At the job interview, the interviewers guess his real identity and tell him that he is accepted for the post. The job itself is that of a male companion for billionaire Lewis Gannet who lives in a castle in the Alps at the Swiss-Italian border. Jack is taken there by helicopter and is uneasy about his employer's abode which looks like a fortress, complete with armed uniformed guards, guard dogs and hi-tech security. Lewis Gannet recognizes that his new hire is in fact Jack Washington and invites him to a briefing room where he requests that Jack tells him the whole story of how Jack got involved with the family of millionaire Ned Pine. Jack Washington starts reminiscing about how he used to date Nikki Pine, the spoiled daughter of the rich Pine family. Her family never approved of Jack, who was poor, awkward, lacking social skills, on top of lacking sporting abilities and professional ambitions. Nikki eventually married another man. Years later, Jack moved to Paris and there he bumped into his old flame, Nikki. By this time, Nikki was divorced and free. She invites Jack on her parents' mega-yacht, moored in Monte-Carlo, to spend the whole summer with the Pine family. Although many years have passed since Jack was dating their daughter Nikki, the Pines waste no opportunity to humiliate their guest and to remind their daughter what a looser Jack is. The father especially, Ned Pine, who happens to be a very passionate and avid sports fanatic, constantly challenges Jack to a myriad of different games and sports available right there on the courts built aboard the huge yacht. Jack obliges but he always fails to defeat Mr. Pine who cannot stand to loose any game, especially when playing against Jack. But, during his stay on the yacht with the Pine family, Jack discovers strange facts about the family and about the real purpose of the cruise on the Mediterranean Sea. Suspecting that crime is involved, Jack starts documenting the daily facts into a journal he keeps in secret, where he attaches photos he daily takes on the yacht, sketches and drawings he makes, maps, bits and pieces of information he obtains through eavesdropping or by interrogating the yacht's crew and servants. What will he discover ?",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BY2QyYjJhYzktZTMyMi00YTc5LWE5ZDQtOGM1NjAwYzlmYjEzXkEyXkFqcGdeQXVyMjU5OTg5NDc@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.1/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "7.1",
-		"imdbVotes": "226",
-		"imdbID": "tt0061788",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Guardians of the Galaxy",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "01 Aug 2014",
-		"Runtime": "121 min",
-		"Genre": "Action, Adventure, Comedy",
-		"Director": "James Gunn",
-		"Writer": "James Gunn, Nicole Perlman, Dan Abnett",
-		"Actors": "Chris Pratt, Vin Diesel, Bradley Cooper",
-		"Plot": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the \"Guardians of the Galaxy\" to save the galaxy.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "Nominated for 2 Oscars. 52 wins & 103 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "92%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "76/100"
-			}
-		],
-		"Metascore": "76",
-		"imdbRating": "8.0",
-		"imdbVotes": "1,266,525",
-		"imdbID": "tt2015381",
-		"Type": "movie",
-		"DVD": "15 Nov 2015",
-		"BoxOffice": "$333,718,600",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Guardians of the Galaxy",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "01 Aug 2014",
-		"Runtime": "121 min",
-		"Genre": "Action, Adventure, Comedy",
-		"Director": "James Gunn",
-		"Writer": "James Gunn, Nicole Perlman, Dan Abnett",
-		"Actors": "Chris Pratt, Vin Diesel, Bradley Cooper",
-		"Plot": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the \"Guardians of the Galaxy\" to save the galaxy.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "Nominated for 2 Oscars. 52 wins & 103 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "92%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "76/100"
-			}
-		],
-		"Metascore": "76",
-		"imdbRating": "8.0",
-		"imdbVotes": "1,266,525",
-		"imdbID": "tt2015381",
-		"Type": "movie",
-		"DVD": "15 Nov 2015",
-		"BoxOffice": "$333,718,600",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-
 	{
 		"Title": "Imperium",
 		"Year": "2016",
@@ -7783,14 +6826,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "In the Heart of the Sea",
 		"Year": "2015",
 		"Rated": "PG-13",
@@ -7906,33 +6941,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "08 Oct 2016",
 		"BoxOffice": "$25,268,157",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Joyeuses Pâques, Avril!",
-		"Year": "2000",
-		"Rated": "N/A",
-		"Released": "24 Apr 2000",
-		"Runtime": "23 min",
-		"Genre": "Animation, Family",
-		"Director": "José Xavier",
-		"Writer": "Olivier Dehors, Françoise Gaspari",
-		"Actors": "Philippe Dumat",
-		"Plot": "N/A",
-		"Language": "French",
-		"Country": "France",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BOTQ5YjkzMzQtMDQ4NS00MDNiLThkOGMtZWFkNDE3NDYyNzhiXkEyXkFqcGdeQXVyMTQ3Njg3MQ@@._V1_SX300.jpg",
-		"Ratings": [],
-		"Metascore": "N/A",
-		"imdbRating": "N/A",
-		"imdbVotes": "N/A",
-		"imdbID": "tt11099102",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -8133,42 +7141,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "04 Sep 2012",
 		"BoxOffice": "$103,028,109",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Jeanne du Barry",
-		"Year": "2023",
-		"Rated": "N/A",
-		"Released": "16 May 2023",
-		"Runtime": "113 min",
-		"Genre": "Biography, Drama, History",
-		"Director": "Maïwenn",
-		"Writer": "Maïwenn, Teddy Lussi-Modeste, Nicolas Livecchi",
-		"Actors": "Maïwenn, Johnny Depp, Benjamin Lavernhe",
-		"Plot": "The life of Jeanne Bécu who was born as the illegitimate daughter of an impoverished seamstress in 1743 and went on to rise through the Court of Louis XV to become his last official mistress.",
-		"Language": "French, Latin, German",
-		"Country": "France, Belgium, United Kingdom, Russia, Saudi Arabia",
-		"Awards": "3 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNDEyOGMwOTYtMGI4Ni00NWExLWE1ZmItMjViZDBmMTdhNDA2XkEyXkFqcGdeQXVyNjkyNzI2MTQ@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.7/10"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "51/100"
-			}
-		],
-		"Metascore": "51",
-		"imdbRating": "6.7",
-		"imdbVotes": "9,700",
-		"imdbID": "tt17277414",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -8445,62 +7417,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "01 Aug 2013",
 		"BoxOffice": "$65,660,196",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Les rivières pourpres",
-		"Year": "2018–",
-		"Rated": "N/A",
-		"Released": "06 Sep 2019",
-		"Runtime": "39S min",
-		"Genre": "Crime, Mystery, Thriller",
-		"Director": "N/A",
-		"Writer": "Jean-Christophe Grangé",
-		"Actors": "Olivier Marchal, Erika Sainte, Ken Duken",
-		"Plot": "Following the Guernon case in the mid 2000s, captain Pierre Niémans was transferred to the head of the Central Office against violent crime (OCCS). This new confidential unit deals with the most complex cases, where the clues are few and where serial murders must be resolved as quickly as possible. It is during a particularly difficult mission that Niémans stumbles upon his best pupil and spiritual daughter, Camille Delaunay.",
-		"Language": "French",
-		"Country": "France, Belgium, Germany",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNGNlOGZiYWEtYzJhMS00ZGM0LWE5NWItNmRlMTc3ZGQzZTRjXkEyXkFqcGdeQXVyNjMxNDE2ODU@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.8/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "6.8",
-		"imdbVotes": "2,076",
-		"imdbID": "tt7349016",
-		"Type": "series",
-		"totalSeasons": "4",
-		"Response": "True"
-	},
-	{
-		"Title": "À la manière de - Le fabuleux destin d'Amélie Poulain",
-		"Year": "2018",
-		"Rated": "N/A",
-		"Released": "06 Aug 2018",
-		"Runtime": "3 min",
-		"Genre": "Short",
-		"Director": "Justine Goaziou",
-		"Writer": "N/A",
-		"Actors": "Cerise Raimbault, Mathieu Uhl",
-		"Plot": "A short scene as a tribute to this cult film.",
-		"Language": "French",
-		"Country": "France",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZTVlNzA5ZDYtMzFlMi00MWU2LTliZGYtOGE4M2JlMjAyNzY4XkEyXkFqcGdeQXVyODg2NjAzMTg@._V1_SX300.jpg",
-		"Ratings": [],
-		"Metascore": "N/A",
-		"imdbRating": "N/A",
-		"imdbVotes": "N/A",
-		"imdbID": "tt9009174",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -9146,46 +8062,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Kate",
-		"Year": "2021",
-		"Rated": "R",
-		"Released": "10 Sep 2021",
-		"Runtime": "106 min",
-		"Genre": "Action, Adventure, Crime",
-		"Director": "Cedric Nicolas-Troyan",
-		"Writer": "Umair Aleem",
-		"Actors": "Mary Elizabeth Winstead, Woody Harrelson, Miku Martineau",
-		"Plot": "Meticulous and preternaturally skilled, Kate is the perfect specimen of a finely tuned assassin at the height of her game. But when she uncharacteristically blows an assignment targeting a member of the yakuza in Tokyo, she quickly discovers she's been poisoned, a brutally slow execution that gives her less than 24 hours to exact revenge on her killers. As her body swiftly deteriorates, Kate forms an unlikely bond with the teenage daughter of one of her past victims.",
-		"Language": "English, Japanese",
-		"Country": "United States",
-		"Awards": "1 nomination",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BN2IyYzI4YmQtNzBmMi00Mjg3LWI4NTMtNmZjNjk3YjIwZmJhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.2/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "46%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "47/100"
-			}
-		],
-		"Metascore": "47",
-		"imdbRating": "6.2",
-		"imdbVotes": "69,679",
-		"imdbID": "tt7737528",
-		"Type": "movie",
-		"DVD": "10 Sep 2021",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Land of the Lost",
 		"Year": "2009",
 		"Rated": "PG-13",
@@ -9702,10 +8578,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Men in Black",
 		"Year": "1997",
 		"Rated": "PG-13",
@@ -9820,10 +8692,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "Just Like Heaven",
@@ -10258,10 +9126,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Mad Max: Fury Road",
 		"Year": "2015",
 		"Rated": "R",
@@ -10502,10 +9366,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Limitless",
 		"Year": "2011",
 		"Rated": "PG-13",
@@ -10626,10 +9486,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Pineapple Express",
 		"Year": "2008",
 		"Rated": "R",
@@ -10703,39 +9559,6 @@ export const json_omdb: IOmdb[] = [
 		"BoxOffice": "$35,608,245",
 		"Production": "N/A",
 		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
-		"Title": "Les visiteurs",
-		"Year": "1980",
-		"Rated": "N/A",
-		"Released": "03 Apr 1980",
-		"Runtime": "52 min",
-		"Genre": "Sci-Fi",
-		"Director": "N/A",
-		"Writer": "N/A",
-		"Actors": "Josep Maria Flotats, Barbara Kramer, Piéral",
-		"Plot": "Les Visiteurs may not be the finest sci-fi frecnh tv show, especially given the lack of experience and production means for sci-fi. SFX are terrible, the plot is very average and the \"around the world location\" was a comon trick to make productions more exotive but still cheap, thanks a trade (local production costs against local transmission right). These 1960, 1970 productions has generally more than 2 or 3 production netwrok in the wake of the european alliance (started with the eurovision broadcasting agreement).Then, with all its limitations, Les Visiteurs has the freshness of its time: 1980 french recession has not yet imprinted tv shows (with more social topics): Les Visiteurs surfs on1970 mainstream concepts: environement/climate change, slave labour, younger generations vs grownups/socially established, feminism/women having equal rights. At last bit not least, the \"outter space aliens\" with \"super powers\" and the \"we can't be alone in this world\" flair try to give some substance - with alternate results - to the scenario.The Visiteurs is a simple, nice, bit naive watch for 1970 born kids. Millenials stay away!",
-		"Language": "French",
-		"Country": "France, West Germany",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BODViMTc4ZWMtODZlYi00NGZkLThhMTctNDRmNDM4NzlmMjE2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.6/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "6.6",
-		"imdbVotes": "37",
-		"imdbID": "tt0281519",
-		"Type": "series",
-		"totalSeasons": "1",
 		"Response": "True"
 	},
 	{
@@ -11011,10 +9834,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Neighbors 2: Sorority Rising",
 		"Year": "2016",
 		"Rated": "R",
@@ -11211,46 +10030,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Imperium",
-		"Year": "2016",
-		"Rated": "R",
-		"Released": "19 Aug 2016",
-		"Runtime": "109 min",
-		"Genre": "Biography, Crime, Drama",
-		"Director": "Daniel Ragussis",
-		"Writer": "Michael German, Joe Turner Lin, Daniel Ragussis",
-		"Actors": "Daniel Radcliffe, Toni Collette, Tracy Letts",
-		"Plot": "Idealistic FBI agent Nate Foster goes undercover to take down a radical white supremacy terrorist group. The up-and-coming analyst must confront the challenge of sticking to a new identity while maintaining his real principles as he navigates the dangerous underworld of white supremacy.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTk5MzY4MDkwOV5BMl5BanBnXkFtZTgwMzY4MzczOTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "84%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "68/100"
-			}
-		],
-		"Metascore": "68",
-		"imdbRating": "6.5",
-		"imdbVotes": "49,406",
-		"imdbID": "tt4781612",
-		"Type": "movie",
-		"DVD": "06 Nov 2016",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Men in Black 3",
 		"Year": "2012",
 		"Rated": "PG-13",
@@ -11291,86 +10070,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Jack Reacher",
-		"Year": "2012",
-		"Rated": "PG-13",
-		"Released": "21 Dec 2012",
-		"Runtime": "130 min",
-		"Genre": "Action, Mystery, Thriller",
-		"Director": "Christopher McQuarrie",
-		"Writer": "Lee Child, Christopher McQuarrie",
-		"Actors": "Tom Cruise, Rosamund Pike, Richard Jenkins",
-		"Plot": "In an innocent heartland city, five are shot dead by an expert sniper. The police quickly identify and arrest the culprit, and build a slam-dunk case. But instead of confessing, the accused man writes the words, \"Get Jack Reacher.\" Reacher himself sees the news report and turns up in the city. The defense is immensely relieved, but Reacher has come to bury the guy. Shocked at the accused's request, Reacher sets out to confirm for himself the absolute certainty of the man's guilt, but comes up with more than he bargained for.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "1 win & 6 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTM1NjUxMDI3OV5BMl5BanBnXkFtZTcwNjg1ODM3OA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "63%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "50/100"
-			}
-		],
-		"Metascore": "50",
-		"imdbRating": "7.0",
-		"imdbVotes": "363,747",
-		"imdbID": "tt0790724",
-		"Type": "movie",
-		"DVD": "31 Dec 2014",
-		"BoxOffice": "$80,070,736",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "In the Heart of the Sea",
-		"Year": "2015",
-		"Rated": "PG-13",
-		"Released": "11 Dec 2015",
-		"Runtime": "122 min",
-		"Genre": "Action, Adventure, Biography",
-		"Director": "Ron Howard",
-		"Writer": "Charles Leavitt, Rick Jaffa, Amanda Silver",
-		"Actors": "Chris Hemsworth, Cillian Murphy, Brendan Gleeson",
-		"Plot": "In the winter of 1820, the New England whaling ship Essex was assaulted by something no one could believe: a whale of mammoth size and will, and an almost human sense of vengeance. The real-life maritime disaster would inspire Herman Melville's Moby-Dick. But that told only half the story. \"In the Heart of the Sea\" reveals the encounter's harrowing aftermath, as the ship's surviving crew is pushed to their limits and forced to do the unthinkable to stay alive. Braving storms, starvation, panic and despair, the men will call into question their deepest beliefs, from the value of their lives to the morality of their trade, as their captain searches for direction on the open sea and his first mate still seeks to bring the great whale down.",
-		"Language": "English",
-		"Country": "United States, Australia, Spain",
-		"Awards": "1 win & 6 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMjA5NzUwODExM15BMl5BanBnXkFtZTgwNjM0MzE4NjE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.9/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "43%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "47/100"
-			}
-		],
-		"Metascore": "47",
-		"imdbRating": "6.9",
-		"imdbVotes": "148,230",
-		"imdbID": "tt1390411",
-		"Type": "movie",
-		"DVD": "10 Aug 2016",
-		"BoxOffice": "$25,020,758",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Mad God",
 		"Year": "2021",
 		"Rated": "Unrated",
@@ -11406,82 +10105,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "16 Jun 2022",
 		"BoxOffice": "$325,042",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Just Go with It",
-		"Year": "2011",
-		"Rated": "PG-13",
-		"Released": "11 Feb 2011",
-		"Runtime": "117 min",
-		"Genre": "Comedy, Romance",
-		"Director": "Dennis Dugan",
-		"Writer": "Allan Loeb, Timothy Dowling, I.A.L. Diamond",
-		"Actors": "Adam Sandler, Jennifer Aniston, Brooklyn Decker",
-		"Plot": "Danny (Adam Sandler) must engage Katherine (Jennifer Aniston), his faithful assistant, to pretend to be his soon to be ex-wife. Danny must pretend that he is married, because he lied to his dream girl, Palmer (Brooklyn Decker) the most gorgeous woman in the world. To keep the woman he loves, covering up one lie soon turns into many lies.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "5 wins & 13 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTM3MzM3NDE5MV5BMl5BanBnXkFtZTcwNDE5MTUxNA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.4/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "19%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "33/100"
-			}
-		],
-		"Metascore": "33",
-		"imdbRating": "6.4",
-		"imdbVotes": "264,131",
-		"imdbID": "tt1564367",
-		"Type": "movie",
-		"DVD": "04 Sep 2012",
-		"BoxOffice": "$103,028,109",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Jeanne du Barry",
-		"Year": "2023",
-		"Rated": "N/A",
-		"Released": "16 May 2023",
-		"Runtime": "113 min",
-		"Genre": "Biography, Drama, History",
-		"Director": "Maïwenn",
-		"Writer": "Maïwenn, Teddy Lussi-Modeste, Nicolas Livecchi",
-		"Actors": "Maïwenn, Johnny Depp, Benjamin Lavernhe",
-		"Plot": "The life of Jeanne Bécu who was born as the illegitimate daughter of an impoverished seamstress in 1743 and went on to rise through the Court of Louis XV to become his last official mistress.",
-		"Language": "French, Latin, German",
-		"Country": "France, Belgium, United Kingdom, Russia, Saudi Arabia",
-		"Awards": "3 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNDEyOGMwOTYtMGI4Ni00NWExLWE1ZmItMjViZDBmMTdhNDA2XkEyXkFqcGdeQXVyNjkyNzI2MTQ@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.7/10"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "51/100"
-			}
-		],
-		"Metascore": "51",
-		"imdbRating": "6.7",
-		"imdbVotes": "9,700",
-		"imdbID": "tt17277414",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -11607,42 +10230,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "One Ranger",
-		"Year": "2023",
-		"Rated": "R",
-		"Released": "05 May 2023",
-		"Runtime": "95 min",
-		"Genre": "Action, Thriller",
-		"Director": "Jesse V. Johnson",
-		"Writer": "Jesse V. Johnson",
-		"Actors": "Thomas Jane, Dean Jagger, Dominique Tipper",
-		"Plot": "Recruited by British intelligence, a Texas Ranger must track down and stop a dangerous terrorist from attacking London.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BYTU3ZDJjNmEtZDgxNi00NzA4LWI0MWUtMWRjMDFlZTdiZTM0XkEyXkFqcGdeQXVyNjE2MzI5ODM@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "5.1/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "25%"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "5.1",
-		"imdbVotes": "3,433",
-		"imdbID": "tt23037488",
-		"Type": "movie",
-		"DVD": "05 May 2023",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Never Rarely Sometimes Always",
 		"Year": "2020",
 		"Rated": "PG-13",
@@ -11723,10 +10310,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Million Dollar Baby",
 		"Year": "2004",
 		"Rated": "PG-13",
@@ -11802,86 +10385,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "29 Nov 2016",
 		"BoxOffice": "$20,700,082",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
-		"Title": "Pain Hustlers",
-		"Year": "2023",
-		"Rated": "R",
-		"Released": "27 Oct 2023",
-		"Runtime": "123 min",
-		"Genre": "Crime, Drama",
-		"Director": "David Yates",
-		"Writer": "Wells Tower, Evan Hughes",
-		"Actors": "Emily Blunt, Chris Evans, Catherine O'Hara",
-		"Plot": "Liza dreams of a better life for herself and her daughter. Hired to work for a bankrupt pharmaceutical company, Liza skyrockets with sales and into the high life, putting her in the middle of a federal criminal conspiracy.",
-		"Language": "English",
-		"Country": "United Kingdom, United States",
-		"Awards": "1 nomination",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNWMxYjNhZmEtNDBjZi00ZjFmLWJlZDMtYTVlYjljMmNkZWFhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "23%"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "6.5",
-		"imdbVotes": "40,641",
-		"imdbID": "tt15257160",
-		"Type": "movie",
-		"DVD": "27 Oct 2023",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Jerry Maguire",
-		"Year": "1996",
-		"Rated": "R",
-		"Released": "13 Dec 1996",
-		"Runtime": "139 min",
-		"Genre": "Comedy, Drama, Romance",
-		"Director": "Cameron Crowe",
-		"Writer": "Cameron Crowe",
-		"Actors": "Tom Cruise, Cuba Gooding Jr., Renée Zellweger",
-		"Plot": "Jerry Maguire (Tom Cruise) is a successful sports agent. The biggest clients, the respect, a beautiful fiancée, he has it all. Until one night he questions his purpose. His place in the world, and finally comes to terms with what's wrong with his career and life. Recording all of his thoughts in a mission statement, Jerry feels he has a new lease on life. Unfortunately his opinions aren't met with enthusiasm from his superiors and after dishonorably being stripped of his high earning clients and elite status within the agency, Jerry steps out into the sports business armed with only one volatile client, Rod Tidwell (Cuba Gooding, Jr.), and the only person with belief in his abilities, Dorothy Boyd (Renée Zellweger), with the impossible task of rebuilding what he once had. Along the way, he faces the harsh truth which he'd ignored in the past and a host of hardships that he'd never faced before.",
-		"Language": "English, American Sign ",
-		"Country": "United States",
-		"Awards": "Won 1 Oscar. 26 wins & 41 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BYTM0ZWNmZTUtOTVkZS00MTZiLTg3M2QtZjA0Y2RmOWM1NWEyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.3/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "84%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "77/100"
-			}
-		],
-		"Metascore": "77",
-		"imdbRating": "7.3",
-		"imdbVotes": "285,392",
-		"imdbID": "tt0116695",
-		"Type": "movie",
-		"DVD": "01 Nov 2012",
-		"BoxOffice": "$153,952,592",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -11967,86 +10470,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "I, Robot",
-		"Year": "2004",
-		"Rated": "PG-13",
-		"Released": "16 Jul 2004",
-		"Runtime": "115 min",
-		"Genre": "Action, Mystery, Sci-Fi",
-		"Director": "Alex Proyas",
-		"Writer": "Jeff Vintar, Akiva Goldsman, Isaac Asimov",
-		"Actors": "Will Smith, Bridget Moynahan, Bruce Greenwood",
-		"Plot": "In 2035, techno-phobic homicide detective Del Spooner of the Chicago PD heads the investigation of the apparent suicide of leading robotics scientist, Dr. Alfred Lanning. Unconvinced of the motive, Spooner's investigation into Lanning's death reveals a trail of secrets and agendas within the USR (United States Robotics) corporation and suspicions of murder. Little does he know that his investigation would lead to uncovering a larger threat to humanity.",
-		"Language": "English",
-		"Country": "United States, Germany",
-		"Awards": "Nominated for 1 Oscar. 1 win & 15 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNmE1OWI2ZGItMDUyOS00MmU5LWE0MzUtYTQ0YzA1YTE5MGYxXkEyXkFqcGdeQXVyMDM5ODIyNw@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.1/10"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "59/100"
-			}
-		],
-		"Metascore": "59",
-		"imdbRating": "7.1",
-		"imdbVotes": "571,077",
-		"imdbID": "tt0343818",
-		"Type": "movie",
-		"DVD": "08 Jun 2004",
-		"BoxOffice": "$144,801,023",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
-		"Title": "Mad Max: Fury Road",
-		"Year": "2015",
-		"Rated": "R",
-		"Released": "15 May 2015",
-		"Runtime": "120 min",
-		"Genre": "Action, Adventure, Sci-Fi",
-		"Director": "George Miller",
-		"Writer": "George Miller, Brendan McCarthy, Nick Lathouris",
-		"Actors": "Tom Hardy, Charlize Theron, Nicholas Hoult",
-		"Plot": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and almost everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order. There's Max, a man of action and a man of few words, who seeks peace of mind following the loss of his wife and child in the aftermath of the chaos. And Furiosa, a woman of action and a woman who believes her path to survival may be achieved if she can make it across the desert back to her childhood homeland.",
-		"Language": "English, Russian",
-		"Country": "Australia",
-		"Awards": "Won 6 Oscars. 245 wins & 233 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.1/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "97%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "90/100"
-			}
-		],
-		"Metascore": "90",
-		"imdbRating": "8.1",
-		"imdbVotes": "1,078,789",
-		"imdbID": "tt1392190",
-		"Type": "movie",
-		"DVD": "10 Aug 2016",
-		"BoxOffice": "$154,280,290",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Planet Terror",
 		"Year": "2007",
 		"Rated": "R",
@@ -12118,118 +10541,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "07 Feb 2017",
 		"BoxOffice": "$47,695,371",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Jack the Giant Slayer",
-		"Year": "2013",
-		"Rated": "PG-13",
-		"Released": "01 Mar 2013",
-		"Runtime": "114 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Bryan Singer",
-		"Writer": "Darren Lemke, Christopher McQuarrie, Dan Studney",
-		"Actors": "Nicholas Hoult, Stanley Tucci, Ewan McGregor",
-		"Plot": "Sent to the market by his uncle to sell their horse and buy thatch for their roof, Jack meets the beautiful Princess Isabelle, whom he rescues from ruffians. He returns home with only a handful of beans given to him by a monk who claimed they were sacred, but that does little to impress his uncle, who tosses them away. In the night, the Princess arrives, having run off to keep herself from marrying Roderick, who is clearly only interested in becoming king. Soon, the beans take root with a giant stalk carrying away the princess and Jack's house. He soon sets off on an adventure with the king's guards to rescue the princess, only to find that a mythical land filled with giants really exists.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "1 win & 4 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMjE1NDMxMjI0OV5BMl5BanBnXkFtZTcwMjQyMDExOQ@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.3/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "52%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "51/100"
-			}
-		],
-		"Metascore": "51",
-		"imdbRating": "6.3",
-		"imdbVotes": "146,118",
-		"imdbID": "tt1351685",
-		"Type": "movie",
-		"DVD": "12 Sep 2013",
-		"BoxOffice": "$65,187,603",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Monsters University",
-		"Year": "2013",
-		"Rated": "G",
-		"Released": "21 Jun 2013",
-		"Runtime": "104 min",
-		"Genre": "Animation, Adventure, Comedy",
-		"Director": "Dan Scanlon",
-		"Writer": "Dan Scanlon, Daniel Gerson, Robert L. Baird",
-		"Actors": "Billy Crystal, John Goodman, Steve Buscemi",
-		"Plot": "Mike Wazowski (Billy Crystal) and James P. \"Sully\" Sullivan (John Goodman) are an inseparable pair, but that wasn't always the case. From the moment these two mismatched monsters met, they couldn't stand each other. This movie unlocks the door to how Mike and Sully overcame their differences and became the best of friends.",
-		"Language": "English",
-		"Country": "United States, Japan",
-		"Awards": "Nominated for 2 BAFTA 9 wins & 58 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTUyODgwMDU3M15BMl5BanBnXkFtZTcwOTM4MjcxOQ@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.2/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "80%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "65/100"
-			}
-		],
-		"Metascore": "65",
-		"imdbRating": "7.2",
-		"imdbVotes": "387,942",
-		"imdbID": "tt1453405",
-		"Type": "movie",
-		"DVD": "13 May 2015",
-		"BoxOffice": "$268,492,764",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Measuring the World",
-		"Year": "2012",
-		"Rated": "N/A",
-		"Released": "25 Oct 2012",
-		"Runtime": "119 min",
-		"Genre": "Biography, Drama, History",
-		"Director": "Detlev Buck",
-		"Writer": "Daniel Kehlmann, Detlev Buck, Daniel Nocke",
-		"Actors": "Albrecht Schuch, Baldanpurev Sambuu, Agi Ariunsaichan Dawaachu",
-		"Plot": "\"Die Vermessung der Welt\" follows two brilliant and eccentric scientists, Alexander von Humboldt and Carl Friedrich Gauss, on their life paths in early-19th-century Germany.",
-		"Language": "German",
-		"Country": "Germany, Austria",
-		"Awards": "3 wins & 6 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BOTkwOTI2NjYyM15BMl5BanBnXkFtZTgwNjYwNjAzMTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "5.7/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "5.7",
-		"imdbVotes": "3,137",
-		"imdbID": "tt1571401",
-		"Type": "movie",
-		"DVD": "N/A",
-		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -12627,46 +10938,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Imperium",
-		"Year": "2016",
-		"Rated": "R",
-		"Released": "19 Aug 2016",
-		"Runtime": "109 min",
-		"Genre": "Biography, Crime, Drama",
-		"Director": "Daniel Ragussis",
-		"Writer": "Michael German, Joe Turner Lin, Daniel Ragussis",
-		"Actors": "Daniel Radcliffe, Toni Collette, Tracy Letts",
-		"Plot": "Idealistic FBI agent Nate Foster goes undercover to take down a radical white supremacy terrorist group. The up-and-coming analyst must confront the challenge of sticking to a new identity while maintaining his real principles as he navigates the dangerous underworld of white supremacy.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTk5MzY4MDkwOV5BMl5BanBnXkFtZTgwMzY4MzczOTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "84%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "68/100"
-			}
-		],
-		"Metascore": "68",
-		"imdbRating": "6.5",
-		"imdbVotes": "49,406",
-		"imdbID": "tt4781612",
-		"Type": "movie",
-		"DVD": "06 Nov 2016",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Predator 2",
 		"Year": "1990",
 		"Rated": "R",
@@ -12979,46 +11250,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Legally Blonde 2: Red, White & Blonde",
-		"Year": "2003",
-		"Rated": "PG-13",
-		"Released": "02 Jul 2003",
-		"Runtime": "95 min",
-		"Genre": "Comedy",
-		"Director": "Charles Herman-Wurmfeld",
-		"Writer": "Amanda Brown, Eve Ahlert, Dennis Drake",
-		"Actors": "Reese Witherspoon, Sally Field, Bob Newhart",
-		"Plot": "Sassy postgrad Elle Woods (Reese Witherspoon) is all about animal rights. In fact, she puts her nuptial plans on hold to head to Washington, D.C. to get an anti-animal testing bill passed. Her building's doorman quickly shows her the ways and workings of our nation's capital.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "3 wins & 5 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTkwNzExMjk0MF5BMl5BanBnXkFtZTcwOTUzNDcyMw@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "4.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "36%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "47/100"
-			}
-		],
-		"Metascore": "47",
-		"imdbRating": "4.8",
-		"imdbVotes": "72,377",
-		"imdbID": "tt0333780",
-		"Type": "movie",
-		"DVD": "01 Feb 2017",
-		"BoxOffice": "$90,186,328",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Screamers",
 		"Year": "1995",
 		"Rated": "R",
@@ -13133,10 +11364,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "Shot Caller",
@@ -14075,10 +12302,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "Romancing the Stone",
 		"Year": "1984",
 		"Rated": "PG",
@@ -14348,46 +12571,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Seven Samurai",
-		"Year": "1954",
-		"Rated": "Not Rated",
-		"Released": "19 Nov 1956",
-		"Runtime": "207 min",
-		"Genre": "Action, Drama",
-		"Director": "Akira Kurosawa",
-		"Writer": "Akira Kurosawa, Shinobu Hashimoto, Hideo Oguni",
-		"Actors": "Toshirô Mifune, Takashi Shimura, Keiko Tsushima",
-		"Plot": "A veteran samurai, who has fallen on hard times, answers a village's request for protection from bandits. He gathers 6 other samurai to help him, and they teach the townspeople how to defend themselves, and they supply the samurai with three small meals a day. The film culminates in a giant battle when 40 bandits attack the village.",
-		"Language": "Japanese",
-		"Country": "Japan",
-		"Awards": "Nominated for 2 Oscars. 5 wins & 9 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNTkwY2I5NWMtMjNlNi00ZThjLWI4NzQtNDI4M2I4OGM1YjAzXkEyXkFqcGdeQXVyNzYxODE3NTQ@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.6/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "100%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "98/100"
-			}
-		],
-		"Metascore": "98",
-		"imdbRating": "8.6",
-		"imdbVotes": "363,557",
-		"imdbID": "tt0047478",
-		"Type": "movie",
-		"DVD": "29 Nov 2011",
-		"BoxOffice": "$318,649",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Savages",
 		"Year": "2012",
 		"Rated": "R",
@@ -14463,46 +12646,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "08 Oct 2016",
 		"BoxOffice": "$110,003,217",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Pirates of the Caribbean: Dead Men Tell No Tales",
-		"Year": "2017",
-		"Rated": "PG-13",
-		"Released": "26 May 2017",
-		"Runtime": "129 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Joachim Rønning, Espen Sandberg",
-		"Writer": "Jeff Nathanson, Terry Rossio, Ted Elliott",
-		"Actors": "Johnny Depp, Geoffrey Rush, Javier Bardem",
-		"Plot": "Captain Jack Sparrow (Johnny Depp) finds the winds of ill-fortune blowing even more strongly when deadly ghost pirates led by his old nemesis, the terrifying Captain Salazar (Javier Bardem), escape from the Devil's Triangle, determined to kill every pirate at sea...including him. Captain Jack's only hope of survival lies in seeking out the legendary Trident of Poseidon, a powerful artifact that bestows upon its possessor total control over the seas.",
-		"Language": "English, Spanish",
-		"Country": "United States, Australia, United Kingdom, Canada",
-		"Awards": "1 win & 14 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTYyMTcxNzc5M15BMl5BanBnXkFtZTgwOTg2ODE2MTI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "30%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "39/100"
-			}
-		],
-		"Metascore": "39",
-		"imdbRating": "6.5",
-		"imdbVotes": "343,186",
-		"imdbID": "tt1790809",
-		"Type": "movie",
-		"DVD": "10 Jul 2017",
-		"BoxOffice": "$172,558,876",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -14623,86 +12766,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "01 Mar 2011",
 		"BoxOffice": "$30,328,156",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Pirates of the Caribbean: On Stranger Tides",
-		"Year": "2011",
-		"Rated": "PG-13",
-		"Released": "20 May 2011",
-		"Runtime": "136 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Rob Marshall",
-		"Writer": "Ted Elliott, Terry Rossio, Stuart Beattie",
-		"Actors": "Johnny Depp, Penélope Cruz, Ian McShane",
-		"Plot": "Captain Jack Sparrow (Johnny Depp) crosses paths with a woman from his past, Angelica (Penélope Cruz), and he's not sure if it's love, or if she's a ruthless con artist who's using him to find the fabled Fountain of Youth. When she forces him aboard the Queen Anne's Revenge, the ship of the formidable pirate Blackbeard (Ian McShane), Jack finds himself on an unexpected adventure in which he doesn't know who to fear more: Blackbeard or the woman from his past.",
-		"Language": "English, Spanish",
-		"Country": "United States, United Kingdom",
-		"Awards": "3 wins & 31 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMjE5MjkwODI3Nl5BMl5BanBnXkFtZTcwNjcwMDk4NA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.6/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "33%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "45/100"
-			}
-		],
-		"Metascore": "45",
-		"imdbRating": "6.6",
-		"imdbVotes": "560,613",
-		"imdbID": "tt1298650",
-		"Type": "movie",
-		"DVD": "01 Jan 2014",
-		"BoxOffice": "$241,071,802",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Shelter",
-		"Year": "2007",
-		"Rated": "R",
-		"Released": "16 Apr 2009",
-		"Runtime": "97 min",
-		"Genre": "Drama, Romance, Sport",
-		"Director": "Jonah Markowitz",
-		"Writer": "Jonah Markowitz",
-		"Actors": "Trevor Wright, Brad Rowe, Tina Holmes",
-		"Plot": "When his college dreams are sidelined by family obligations, a young man finds comfort in surfing with his best friend's brother.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "11 wins",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTQwMjcxMjc5MF5BMl5BanBnXkFtZTcwODAzNzc5MQ@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.6/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "60%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "66/100"
-			}
-		],
-		"Metascore": "66",
-		"imdbRating": "7.6",
-		"imdbVotes": "23,852",
-		"imdbID": "tt0942384",
-		"Type": "movie",
-		"DVD": "14 Feb 2017",
-		"BoxOffice": "$142,666",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -14943,7 +13006,6 @@ export const json_omdb: IOmdb[] = [
 		"Website": "N/A",
 		"Response": "True"
 	},
-
 	{
 		"Title": "Stargate",
 		"Year": "1994",
@@ -15411,10 +13473,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "Taxi 2",
@@ -16147,10 +14205,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "The Beanie Bubble",
@@ -17177,46 +15231,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "The Karate Kid",
-		"Year": "1984",
-		"Rated": "PG",
-		"Released": "22 Jun 1984",
-		"Runtime": "126 min",
-		"Genre": "Action, Drama, Family",
-		"Director": "John G. Avildsen",
-		"Writer": "Robert Mark Kamen",
-		"Actors": "Ralph Macchio, Pat Morita, Elisabeth Shue",
-		"Plot": "Daniel and his mother move from New Jersey to California. She has a wonderful new job, but Daniel quickly discovers that a dark haired Italian boy with a Jersey accent doesn't fit into the blond surfer crowd. Daniel manages to talk his way out of some fights, but he is finally cornered by several who belong to the same karate school. As Daniel is passing out from the beating he sees Miyagi, the elderly gardener leaps into the fray and save him by outfighting half a dozen teenagers. Miyagi and Daniel soon find out the real motivator behind the boys' violent attitude in the form of their karate teacher. Miyagi promises to teach Daniel karate and arranges a fight at the all-valley tournament some months off. When his training begins, Daniel doesn't understand what he is being shown. Miyagi seems more interested in having Daniel paint fences and wax cars than teaching him Karate.",
-		"Language": "English, Japanese",
-		"Country": "United States",
-		"Awards": "Nominated for 1 Oscar. 3 wins & 3 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BNTkzY2YzNmYtY2ViMS00MThiLWFlYTEtOWQ1OTBiOGEwMTdhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.3/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "89%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "60/100"
-			}
-		],
-		"Metascore": "60",
-		"imdbRating": "7.3",
-		"imdbVotes": "242,106",
-		"imdbID": "tt0087538",
-		"Type": "movie",
-		"DVD": "16 Apr 2012",
-		"BoxOffice": "$91,077,276",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "The Last Queen",
 		"Year": "2022",
 		"Rated": "N/A",
@@ -17288,46 +15302,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "01 May 2012",
 		"BoxOffice": "$102,705,852",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Machine",
-		"Year": "2013",
-		"Rated": "R",
-		"Released": "21 Mar 2014",
-		"Runtime": "91 min",
-		"Genre": "Action, Drama, Sci-Fi",
-		"Director": "Caradog W. James",
-		"Writer": "Caradog W. James",
-		"Actors": "Toby Stephens, Caity Lotz, Denis Lawson",
-		"Plot": "Two artificial intelligence engineers come together as they work to create the first ever self-aware artificial intelligence. A veteran AI engineer secretly hopes to develop technology to help his diseased daughter, even if it means funding comes from the powerful Ministry of Defence (MoD). His new partner, a young woman gifted in the field of AI, is brought on after her breakthroughs are recognized by the MoD. Things go wrong when the MoD takes over and advances the researchers' work to the next level, teaching the AI to kill and follow MoD instructions with its new and nearly indestructible body.",
-		"Language": "English, Chinese",
-		"Country": "United Kingdom",
-		"Awards": "8 wins & 4 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTUwMDg1NTk1OV5BMl5BanBnXkFtZTgwMzAyNDczMTE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.0/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "79%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "52/100"
-			}
-		],
-		"Metascore": "52",
-		"imdbRating": "6.0",
-		"imdbVotes": "32,029",
-		"imdbID": "tt2317225",
-		"Type": "movie",
-		"DVD": "11 Mar 2017",
-		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -17644,46 +15618,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "29 Mar 2005",
 		"BoxOffice": "$261,441,092",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Little Mermaid",
-		"Year": "1989",
-		"Rated": "G",
-		"Released": "17 Nov 1989",
-		"Runtime": "83 min",
-		"Genre": "Animation, Adventure, Family",
-		"Director": "Ron Clements, John Musker",
-		"Writer": "John Musker, Ron Clements, Hans Christian Andersen",
-		"Actors": "Jodi Benson, Samuel E. Wright, Rene Auberjonois",
-		"Plot": "In Disney's beguiling animated romp, rebellious 16-year-old mermaid Ariel is fascinated with life on land. On one of her visits to the surface, which are forbidden by her controlling father, King Triton, she falls for a human prince. Determined to be with her new love, Ariel makes a dangerous deal with the sea witch Ursula to become human for three days. But when plans go awry for the star-crossed lovers, the king must make the ultimate sacrifice for his daughter.",
-		"Language": "English, French, Russian",
-		"Country": "United States",
-		"Awards": "Won 2 Oscars. 16 wins & 8 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BOWUyNDA0ZmItMzg2My00YjJhLTk1N2QtYTAxYTc0NzMzNDI0XkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.6/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "91%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "88/100"
-			}
-		],
-		"Metascore": "88",
-		"imdbRating": "7.6",
-		"imdbVotes": "289,584",
-		"imdbID": "tt0097757",
-		"Type": "movie",
-		"DVD": "21 May 2017",
-		"BoxOffice": "$111,543,479",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -18029,86 +15963,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "The Boxtrolls",
-		"Year": "2014",
-		"Rated": "PG",
-		"Released": "26 Sep 2014",
-		"Runtime": "96 min",
-		"Genre": "Animation, Adventure, Comedy",
-		"Director": "Graham Annable, Anthony Stacchi",
-		"Writer": "Irena Brignull, Adam Pava, Alan Snow",
-		"Actors": "Ben Kingsley, Jared Harris, Nick Frost",
-		"Plot": "THE BOXTROLLS are a community of quirky, mischievous creatures who have lovingly raised an orphaned human boy named Eggs in the amazing cavernous home they've built beneath the streets of a city called Cheesebridge. The story is about a young orphaned boy raised by underground cave-dwelling trash collectors who tries to save his friends from an evil exterminator, the town's villain, Archibald Snatcher. When Snatcher comes up with a plot to get rid of the Boxtrolls. Eggs decides to venture above ground and \"into the light,\" where he meets and teams up with fabulously feisty Winnie. Together, they devise a daring plan to save The BoxTrolls family. The film is based upon the children's novel 'Here Be Monsters' by Alan Snow.",
-		"Language": "English",
-		"Country": "United States, Canada",
-		"Awards": "Nominated for 1 Oscar. 8 wins & 61 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTQxODA5MDkyNV5BMl5BanBnXkFtZTgwMDMyNjkzMjE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "78%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "61/100"
-			}
-		],
-		"Metascore": "61",
-		"imdbRating": "6.8",
-		"imdbVotes": "61,082",
-		"imdbID": "tt0787474",
-		"Type": "movie",
-		"DVD": "21 Jan 2016",
-		"BoxOffice": "$50,837,305",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Hobbit: An Unexpected Journey",
-		"Year": "2012",
-		"Rated": "PG-13",
-		"Released": "14 Dec 2012",
-		"Runtime": "169 min",
-		"Genre": "Adventure, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Martin Freeman, Ian McKellen, Richard Armitage",
-		"Plot": "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's \"precious\" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know.",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 3 Oscars. 11 wins & 76 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "64%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "58/100"
-			}
-		],
-		"Metascore": "58",
-		"imdbRating": "7.8",
-		"imdbVotes": "868,449",
-		"imdbID": "tt0903624",
-		"Type": "movie",
-		"DVD": "11 Dec 2015",
-		"BoxOffice": "$303,030,651",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "The Fighter",
 		"Year": "2010",
 		"Rated": "R",
@@ -18147,10 +16001,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "The Iron Lady",
@@ -18228,46 +16078,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "25 Sep 2014",
 		"BoxOffice": "$258,387,334",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Hobbit: The Battle of the Five Armies",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "17 Dec 2014",
-		"Runtime": "144 min",
-		"Genre": "Adventure, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Ian McKellen, Martin Freeman, Richard Armitage",
-		"Plot": "After the Dragon leaves the Lonely Mountain, the people of Lake-town see a threat coming. Orcs, dwarves, elves and people prepare for war. Bilbo sees Thorin going mad and tries to help. Meanwhile, Gandalf is rescued from the Necromancer's prison and his rescuers realize who the Necromancer is.",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 1 Oscar. 8 wins & 56 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.4/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "59%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "59/100"
-			}
-		],
-		"Metascore": "59",
-		"imdbRating": "7.4",
-		"imdbVotes": "568,745",
-		"imdbID": "tt2310332",
-		"Type": "movie",
-		"DVD": "03 Mar 2015",
-		"BoxOffice": "$255,138,261",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
@@ -18513,206 +16323,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "The Hobbit: The Desolation of Smaug",
-		"Year": "2013",
-		"Rated": "PG-13",
-		"Released": "13 Dec 2013",
-		"Runtime": "161 min",
-		"Genre": "Adventure, Drama, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Ian McKellen, Martin Freeman, Richard Armitage",
-		"Plot": "After successfully crossing over (and under) the Misty Mountains, Thorin and Company must seek aid from a powerful stranger before taking on the dangers of Mirkwood Forest--without their Wizard. If they reach the human settlement of Lake-town it will be time for the hobbit Bilbo Baggins to fulfill his contract with the dwarves. The party must complete the journey to Lonely Mountain and burglar Baggins must seek out the Secret Door that will give them access to the hoard of the dragon Smaug. And, where has Gandalf got off to? And what is his secret business to the south?",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 3 Oscars. 19 wins & 90 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "75%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "66/100"
-			}
-		],
-		"Metascore": "66",
-		"imdbRating": "7.8",
-		"imdbVotes": "700,621",
-		"imdbID": "tt1170358",
-		"Type": "movie",
-		"DVD": "25 Sep 2014",
-		"BoxOffice": "$258,387,334",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Hobbit: An Unexpected Journey",
-		"Year": "2012",
-		"Rated": "PG-13",
-		"Released": "14 Dec 2012",
-		"Runtime": "169 min",
-		"Genre": "Adventure, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Martin Freeman, Ian McKellen, Richard Armitage",
-		"Plot": "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's \"precious\" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know.",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 3 Oscars. 11 wins & 76 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "64%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "58/100"
-			}
-		],
-		"Metascore": "58",
-		"imdbRating": "7.8",
-		"imdbVotes": "868,449",
-		"imdbID": "tt0903624",
-		"Type": "movie",
-		"DVD": "11 Dec 2015",
-		"BoxOffice": "$303,030,651",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Hobbit: The Battle of the Five Armies",
-		"Year": "2014",
-		"Rated": "PG-13",
-		"Released": "17 Dec 2014",
-		"Runtime": "144 min",
-		"Genre": "Adventure, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Ian McKellen, Martin Freeman, Richard Armitage",
-		"Plot": "After the Dragon leaves the Lonely Mountain, the people of Lake-town see a threat coming. Orcs, dwarves, elves and people prepare for war. Bilbo sees Thorin going mad and tries to help. Meanwhile, Gandalf is rescued from the Necromancer's prison and his rescuers realize who the Necromancer is.",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 1 Oscar. 8 wins & 56 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.4/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "59%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "59/100"
-			}
-		],
-		"Metascore": "59",
-		"imdbRating": "7.4",
-		"imdbVotes": "568,745",
-		"imdbID": "tt2310332",
-		"Type": "movie",
-		"DVD": "03 Mar 2015",
-		"BoxOffice": "$255,138,261",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Hobbit: The Desolation of Smaug",
-		"Year": "2013",
-		"Rated": "PG-13",
-		"Released": "13 Dec 2013",
-		"Runtime": "161 min",
-		"Genre": "Adventure, Drama, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Ian McKellen, Martin Freeman, Richard Armitage",
-		"Plot": "After successfully crossing over (and under) the Misty Mountains, Thorin and Company must seek aid from a powerful stranger before taking on the dangers of Mirkwood Forest--without their Wizard. If they reach the human settlement of Lake-town it will be time for the hobbit Bilbo Baggins to fulfill his contract with the dwarves. The party must complete the journey to Lonely Mountain and burglar Baggins must seek out the Secret Door that will give them access to the hoard of the dragon Smaug. And, where has Gandalf got off to? And what is his secret business to the south?",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 3 Oscars. 19 wins & 90 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "75%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "66/100"
-			}
-		],
-		"Metascore": "66",
-		"imdbRating": "7.8",
-		"imdbVotes": "700,621",
-		"imdbID": "tt1170358",
-		"Type": "movie",
-		"DVD": "25 Sep 2014",
-		"BoxOffice": "$258,387,334",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Hobbit: An Unexpected Journey",
-		"Year": "2012",
-		"Rated": "PG-13",
-		"Released": "14 Dec 2012",
-		"Runtime": "169 min",
-		"Genre": "Adventure, Fantasy",
-		"Director": "Peter Jackson",
-		"Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
-		"Actors": "Martin Freeman, Ian McKellen, Richard Armitage",
-		"Plot": "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's \"precious\" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know.",
-		"Language": "English",
-		"Country": "New Zealand, United States",
-		"Awards": "Nominated for 3 Oscars. 11 wins & 76 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "64%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "58/100"
-			}
-		],
-		"Metascore": "58",
-		"imdbRating": "7.8",
-		"imdbVotes": "868,449",
-		"imdbID": "tt0903624",
-		"Type": "movie",
-		"DVD": "11 Dec 2015",
-		"BoxOffice": "$303,030,651",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "The Abyss",
 		"Year": "1989",
 		"Rated": "PG-13",
@@ -18752,7 +16362,6 @@ export const json_omdb: IOmdb[] = [
 		"Website": "N/A",
 		"Response": "True"
 	},
-
 	{
 		"Title": "The Mortuary Collection",
 		"Year": "2019",
@@ -19308,10 +16917,6 @@ export const json_omdb: IOmdb[] = [
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
 	},
 	{
 		"Title": "The Naked Gun 2½: The Smell of Fear",
@@ -20096,78 +17701,6 @@ export const json_omdb: IOmdb[] = [
 		"imdbID": "tt3708886",
 		"Type": "movie",
 		"DVD": "30 Mar 2017",
-		"BoxOffice": "N/A",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "The Monster",
-		"Year": "2016",
-		"Rated": "R",
-		"Released": "06 Oct 2016",
-		"Runtime": "91 min",
-		"Genre": "Drama, Fantasy, Horror",
-		"Director": "Bryan Bertino",
-		"Writer": "Bryan Bertino",
-		"Actors": "Zoe Kazan, Ella Ballentine, Aaron Douglas",
-		"Plot": "Kathy is the alcoholic and smoking addicted mother of the young, but mature teenager Lizzy. They live together since Kathy's husband Roy left her, and she neglects her daughter. Kathy is supposed to drive Lizzy to her father's home in the morning, but she sleeps until late afternoon and they have to travel during a rainy night. While driving through a lonely road through the woods, Kathy hits a wolf that breaks her car, leaving them stranded on the empty road. They call 911 and while waiting for the tow truck and an ambulance, the wolf disappears from the road. When the tow truck arrives, the mechanic Jesse tells that he needs to fix the axle and an oil leakage to tow her car. While repairing the vehicle, a monster attacks him but neither Kathy nor Lizzy note. When they seek Jesse out, they realize that they are not alone in the spot. Further, Kathy learns that monsters do exist. Will they be rescued on time?",
-		"Language": "English",
-		"Country": "United States, Canada",
-		"Awards": "6 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BOTI2MjY3MDkzOV5BMl5BanBnXkFtZTgwODQ4NTQ0MDI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "5.4/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "80%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "69/100"
-			}
-		],
-		"Metascore": "69",
-		"imdbRating": "5.4",
-		"imdbVotes": "19,130",
-		"imdbID": "tt3976144",
-		"Type": "movie",
-		"DVD": "09 Mar 2017",
-		"BoxOffice": "$12,544",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Zatoichi",
-		"Year": "1989",
-		"Rated": "Not Rated",
-		"Released": "04 Feb 1989",
-		"Runtime": "116 min",
-		"Genre": "Action, Drama",
-		"Director": "Shintarô Katsu",
-		"Writer": "Tatsumi Ichiyama, Shintarô Katsu, Tsutomu Nakamura",
-		"Actors": "Shintarô Katsu, Kanako Higuchi, Takanori Jinnai",
-		"Plot": "Older, wiser but still a wandering loner, the blind, peace-loving masseur Ichi seeks a peaceful life in a rural village. When he's caught in the middle of a power struggle between two rival Yakuza clans, his reputation as a deadly defender of the innocent is put to the ultimate test in a series of sword-slashing showdowns.",
-		"Language": "Japanese",
-		"Country": "Japan",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BODI1OTEzZjgtZWVhYy00NTFmLThmMjgtMzI3YmViNWFjZmUxXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.1/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "7.1",
-		"imdbVotes": "1,857",
-		"imdbID": "tt0202152",
-		"Type": "movie",
-		"DVD": "30 Nov 2016",
 		"BoxOffice": "N/A",
 		"Production": "N/A",
 		"Website": "N/A",
@@ -21286,79 +18819,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "The Truth About Cats",
-		"Year": "2014–",
-		"Rated": "N/A",
-		"Released": "07 Oct 2014",
-		"Runtime": "59 min",
-		"Genre": "Documentary",
-		"Director": "N/A",
-		"Writer": "N/A",
-		"Actors": "Liz Bonnin, John Beach, John Bradshaw",
-		"Plot": "Cat experts scientifically follow 100 cats in Brighton, England. This 3-part series explores how a cat functions as a wild animal in a domestic world; how cats use their senses to interpret their environment; and how cats communicate.",
-		"Language": "English",
-		"Country": "United Kingdom",
-		"Awards": "N/A",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZGIxZjkzZWQtNTQ1MS00M2FlLTlkOTgtYTc4MzA3MDhiMTkzXkEyXkFqcGdeQXVyNzY2MjQ3MTg@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.9/10"
-			}
-		],
-		"Metascore": "N/A",
-		"imdbRating": "7.9",
-		"imdbVotes": "55",
-		"imdbID": "tt5115388",
-		"Type": "series",
-		"totalSeasons": "1",
-		"Response": "True"
-	},
-	{
-		"Title": "Tucker and Dale vs Evil",
-		"Year": "2010",
-		"Rated": "R",
-		"Released": "09 Dec 2010",
-		"Runtime": "89 min",
-		"Genre": "Comedy, Horror",
-		"Director": "Eli Craig",
-		"Writer": "Eli Craig, Morgan Jurgenson",
-		"Actors": "Tyler Labine, Alan Tudyk, Katrina Bowden",
-		"Plot": "Two lovable hillbillies are headed to their \"fixer-upper\" vacation cabin to drink some beer, do some fishin', and have a good time. But when they run into a group of preppy college kids who assume from their looks that they must be in-bred, chainsaw-wielding killers, Tucker &amp; Dale's vacation takes a bloody and hilarious turn for the worse.",
-		"Language": "English",
-		"Country": "Canada, United Kingdom, United States, India",
-		"Awards": "12 wins & 14 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BODQ5NDQ0MjkwMF5BMl5BanBnXkFtZTcwNDg1OTU4NQ@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "7.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "85%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "65/100"
-			}
-		],
-		"Metascore": "65",
-		"imdbRating": "7.5",
-		"imdbVotes": "192,712",
-		"imdbID": "tt1465522",
-		"Type": "movie",
-		"DVD": "03 Jan 2017",
-		"BoxOffice": "$223,838",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Response": "False",
-		"Error": "Movie not found!"
-	},
-	{
 		"Title": "The Saint",
 		"Year": "1997",
 		"Rated": "PG-13",
@@ -21715,46 +19175,6 @@ export const json_omdb: IOmdb[] = [
 		"Response": "True"
 	},
 	{
-		"Title": "Thor: The Dark World",
-		"Year": "2013",
-		"Rated": "PG-13",
-		"Released": "08 Nov 2013",
-		"Runtime": "112 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Alan Taylor",
-		"Writer": "Christopher L. Yost, Christopher Markus, Stephen McFeely",
-		"Actors": "Chris Hemsworth, Natalie Portman, Tom Hiddleston",
-		"Plot": "Thousands of years ago, a race of beings known as Dark Elves tried to send the universe into darkness by using a weapon known as the Aether. Warriors from Asgard stopped them, but their leader Malekith (Christopher Eccleston) escaped to wait for another opportunity. The warriors find the Aether, and since it cannot be destroyed, they try to hide it. In the present day, Jane Foster (Natalie Portman) awaits the return of Thor (Chris Hemsworth), although it has been two years since they last saw once another. In the meantime, Thor has been trying to bring peace to the nine realms. Jane discovers an anomaly similar to the one that brought Thor to Earth. She goes to investigate, finds a wormhole, and is sucked into it. Back on Asgard, Thor wishes to return to Earth, but his father, Odin (Sir Anthony Hopkins), refuses to let him. Thor learns from Heimdall (Idris Elba), who can see into all of the realms, that Jane disappeared. Thor then returns to Earth just as Jane reappears. However, when some Policemen try to arrest her, an unknown energy repulses them. Thor then brings Jane to Asgard to find out what happened to her. When the energy is released again, they discover that when Jane disappeared, she crossed paths with the Aether and it entered her. Malekith, upon sensing that the time to strike is now, seeks out the Aether. He attacks Asgard and Thor's mother Frigga (Rene Russo) is killed protecting Jane. Odin wants to keep Jane on Asgard so that Malekith will come. Thor disagrees with his plan, so with his cohorts, he decides to take Jane away. He enlists the aid of his brother, Loki (Tom Hiddleston). Unfortunately, Loki's motivations remain unknown.",
-		"Language": "English",
-		"Country": "United States",
-		"Awards": "4 wins & 21 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.8/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "67%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "54/100"
-			}
-		],
-		"Metascore": "54",
-		"imdbRating": "6.8",
-		"imdbVotes": "719,979",
-		"imdbID": "tt1981115",
-		"Type": "movie",
-		"DVD": "06 Sep 2015",
-		"BoxOffice": "$206,362,140",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
 		"Title": "Under Siege",
 		"Year": "1992",
 		"Rated": "R",
@@ -22106,166 +19526,6 @@ export const json_omdb: IOmdb[] = [
 		"Type": "movie",
 		"DVD": "23 May 2016",
 		"BoxOffice": "$58,884,188",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Volcano",
-		"Year": "1997",
-		"Rated": "PG-13",
-		"Released": "25 Apr 1997",
-		"Runtime": "104 min",
-		"Genre": "Action, Drama, Sci-Fi",
-		"Director": "Mick Jackson",
-		"Writer": "Jerome Armstrong, Billy Ray",
-		"Actors": "Tommy Lee Jones, Anne Heche, Gaby Hoffmann",
-		"Plot": "Something unspeakably chilling is ultimately starting to heat up at The City of Los Angeles! Beneath the famed La Brea Tar Pits, a raging volcano has formed, raining a storm of deadly fire bombs and an endless tide of white-hot lava upon the stunned city!",
-		"Language": "English, Spanish, German",
-		"Country": "United States",
-		"Awards": "1 win & 1 nomination",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BZWRiYzgwZjQtNjdlMi00MTQ4LWEzYTMtZmIyMzE5MThlMzNlXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "5.5/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "49%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "55/100"
-			}
-		],
-		"Metascore": "55",
-		"imdbRating": "5.5",
-		"imdbVotes": "81,034",
-		"imdbID": "tt0120461",
-		"Type": "movie",
-		"DVD": "01 Mar 2013",
-		"BoxOffice": "$49,323,468",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Valerian and the City of a Thousand Planets",
-		"Year": "2017",
-		"Rated": "PG-13",
-		"Released": "21 Jul 2017",
-		"Runtime": "136 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Luc Besson",
-		"Writer": "Pierre Christin, Jean-Claude Mézières, Luc Besson",
-		"Actors": "Dane DeHaan, Cara Delevingne, Clive Owen",
-		"Plot": "In the twenty-eighth century, space station Alpha is a city where beings from different planets live together exchanging their knowledge and culture. Peace is granted by a human force, including Major Valerian (Dane DeHaan) and his partner Sergeant Laureline (Cara Delevingne). They are assigned by the Defense Minister (Herbie Hancock) to retrieve the last species of converter in a dangerous mission. They succeed and back to Alpha, unknown humanoids abduct Commander Arun Filitt (Clive Owen) expecting to steal the converter. They head to a forbidden area that is infected, but Valerian and Laureline follow them and disclose a hidden secret about the race and the infected area.",
-		"Language": "English, French, Hindi",
-		"Country": "France, China, Belgium, Germany, United Arab Emirates, United States, Canada",
-		"Awards": "11 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMTkxMDAxNDUyNV5BMl5BanBnXkFtZTgwOTc3MzcxMjI@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.4/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "48%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "51/100"
-			}
-		],
-		"Metascore": "51",
-		"imdbRating": "6.4",
-		"imdbVotes": "196,014",
-		"imdbID": "tt2239822",
-		"Type": "movie",
-		"DVD": "07 Nov 2017",
-		"BoxOffice": "$41,189,488",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Warcraft",
-		"Year": "2016",
-		"Rated": "PG-13",
-		"Released": "10 Jun 2016",
-		"Runtime": "123 min",
-		"Genre": "Action, Adventure, Fantasy",
-		"Director": "Duncan Jones",
-		"Writer": "Charles Leavitt, Duncan Jones",
-		"Actors": "Travis Fimmel, Paula Patton, Ben Foster",
-		"Plot": "When the world of the Orcs of Draenor is being destroyed by the evil fel magic that uses life-force, the powerful warlock Gul'dan creates a portal to the world of Azeroth and forms the Horde with members of the Orc clans. He also captures many prisoners to keep the portal open. The king of Azeroth, Llane Wrynn and his brother-in-law, Anduin Lothar are informed by the apprentice of magician Khadgar that he has found fel magic in dead bodies and the king decides to summon the Guardian of Tirisfal, Medivh, to protect his kingdom. Lothar and Khadgar head to Kharazhan to meet Medivh and an ominous shadow points a book out to Khadgar, who takes it and hides. Anduin, Khadgar and Medivh and a group of soldiers are attacked by Orcs and they capture the slave Garona, who is released by King Llane, and she shows them the location of the portal. Garona is contacted by the Orc chief of a clan Durotan that wants to meet King Llane to stop the fel magic. Meanwhile Khadgar learns that the gate was opened with the help of someone in Azeroth. Shall King Llane trust Garona and Durotan, who might be the traitor?",
-		"Language": "English",
-		"Country": "China, United States, Canada, Japan",
-		"Awards": "2 wins & 3 nominations",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BMjIwNTM0Mzc5MV5BMl5BanBnXkFtZTgwMDk5NDU1ODE@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "6.7/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "29%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "32/100"
-			}
-		],
-		"Metascore": "32",
-		"imdbRating": "6.7",
-		"imdbVotes": "276,735",
-		"imdbID": "tt0803096",
-		"Type": "movie",
-		"DVD": "23 Feb 2017",
-		"BoxOffice": "$47,365,290",
-		"Production": "N/A",
-		"Website": "N/A",
-		"Response": "True"
-	},
-	{
-		"Title": "Up",
-		"Year": "2009",
-		"Rated": "PG",
-		"Released": "29 May 2009",
-		"Runtime": "96 min",
-		"Genre": "Animation, Adventure, Comedy",
-		"Director": "Pete Docter, Bob Peterson",
-		"Writer": "Pete Docter, Bob Peterson, Tom McCarthy",
-		"Actors": "Edward Asner, Jordan Nagai, John Ratzenberger",
-		"Plot": "As a boy, Carl Fredricksen wanted to explore South America and find the forbidden Paradise Falls. About 64 years later he gets to begin his journey along with Boy Scout Russell by lifting his house with thousands of balloons. On their journey, they make many new friends including a talking dog, and figure out that someone has evil plans. Carl soon realizes that this evildoer is his childhood idol.",
-		"Language": "English, Ukrainian, Russian",
-		"Country": "United States",
-		"Awards": "Won 2 Oscars. 80 wins & 87 nominations total",
-		"Poster": "https://m.media-amazon.com/images/M/MV5BYjBkM2RjMzItM2M3Ni00N2NjLWE3NzMtMGY4MzE4MDAzMTRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
-		"Ratings": [
-			{
-				"Source": "Internet Movie Database",
-				"Value": "8.3/10"
-			},
-			{
-				"Source": "Rotten Tomatoes",
-				"Value": "98%"
-			},
-			{
-				"Source": "Metacritic",
-				"Value": "88/100"
-			}
-		],
-		"Metascore": "88",
-		"imdbRating": "8.3",
-		"imdbVotes": "1,115,316",
-		"imdbID": "tt1049413",
-		"Type": "movie",
-		"DVD": "01 Jan 2014",
-		"BoxOffice": "$293,004,164",
 		"Production": "N/A",
 		"Website": "N/A",
 		"Response": "True"

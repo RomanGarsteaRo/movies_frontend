@@ -33,14 +33,6 @@
 			<span class="label">3D</span>
 		</div>
 
-
-		<!--OMDB JSON-->
-<!--		<div class="omdb" *ngIf="omdb">-->
-<!--			<div>Omdb</div>-->
-<!--			<div>{{omdb.length}} &lt;!&ndash;total json items&ndash;&gt;</div>-->
-<!--			<div>{{omdb.length - numberOfOmdbItemsInData}}&lt;!&ndash;not show&ndash;&gt;</div>-->
-<!--		</div>-->
-
 		<!--Plex JSON-->
 		<div class="plex" *ngIf="plex">
 			<div>Plex</div>
@@ -48,19 +40,32 @@
 			<div>{{numberOfItemsPlexInData}}<!--not show--></div>
 		</div>
 
+		<!--OMDB JSON-->
+		<div class="omdb" *ngIf="omdb">
+			<div>Omdb</div>
+			<div>{{omdb.length}} <!--total json items--></div>
+			<div>{{numberOfItemsOmdbInData}}<!--not show--></div>
+		</div>
+
+
 	</div>
 
 
 	<!--Sort-->
 	<div class="sort">
-
+		<div class="material-icons total"></div>
+		<div class="material-icons year"  (click)="onSortByYear()">swap_vert</div>
+		<div class="material-icons size"  (click)="onSortBySize()">swap_vert</div>
+		<div class="material-icons title" (click)="onSortByTitle()">swap_vert</div>
+		<div class="material-icons plex">swap_vert</div>
+		<div class="material-icons omdb" (click)="onSortOmdb()">swap_vert</div>
 	</div>
 
 
 	<div class="tab">
 
 		<ng-container *ngFor="let group of listOfMovies; let i = index">
-			<div class="row" *ngFor="let item of group.assets; let j = index">
+			<div class="row" *ngFor="let item of group.nas; let j = index">
 				<div class="number">{{j === 0 ? i + 1 + '.' : ''}}</div>
 				<div class="year">{{j === 0 ? item.year : ''}}</div>
 				<ui-file-size [size]="item.size"></ui-file-size>
@@ -71,7 +76,7 @@
 
 
 				<div class="json_plex" [ngClass]="{'no_json': group?.plex === null}">{{group.plex === null ? 'N/A' : '+'}}</div>
-<!--				<div class="json_omdb" [ngClass]="{'no_json': item.omdb === 'N/A'}">{{item.omdb === 'N/A' ? 'N/A' : '+'}}</div>-->
+				<div class="json_omdb" [ngClass]="{'no_json': group?.omdb === null}">{{group.omdb === null ? 'N/A' : '+'}}</div>
 			</div>
 		</ng-container>
 

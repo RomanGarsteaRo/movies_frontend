@@ -306,8 +306,8 @@ export const json_nas = [
 		"size": "38720200704"
 	},
 	{
-		"id": "Shelter (2010).m2ts",
-		"path": "\\\\NAS\\Movies\\Shelter (2010).m2ts",
+		"id": "6 Souls (2010).m2ts",
+		"path": "\\\\NAS\\Movies\\6 Souls (2010).m2ts",
 		"size": "36887814144"
 	},
 	{
@@ -581,8 +581,8 @@ export const json_nas = [
 		"size": "9102020035"
 	},
 	{
-		"id": "Lockout (2011).mkv",
-		"path": "\\\\NAS\\Movies\\Lockout (2011).mkv",
+		"id": "Lockout (2012).mkv",
+		"path": "\\\\NAS\\Movies\\Lockout (2012).mkv",
 		"size": "43909602529"
 	},
 	{
@@ -1941,8 +1941,8 @@ export const json_nas = [
 		"size": "20124849703"
 	},
 	{
-		"id": "300 (2007).m2ts",
-		"path": "\\\\NAS\\Movies\\300 (2007).m2ts",
+		"id": "300 (2006).m2ts",
+		"path": "\\\\NAS\\Movies\\300 (2006).m2ts",
 		"size": "22607075328"
 	},
 	{
@@ -1986,8 +1986,8 @@ export const json_nas = [
 		"size": "21297379940"
 	},
 	{
-		"id": "Daddy‘s Home 2 (2017).m2ts",
-		"path": "\\\\NAS\\Movies\\Daddy‘s Home 2 (2017).m2ts",
+		"id": "Daddy's Home 2 (2017).m2ts",
+		"path": "\\\\NAS\\Movies\\Daddy's Home 2 (2017).m2ts",
 		"size": "31272732672"
 	},
 	{
@@ -2424,11 +2424,6 @@ export const json_nas = [
 		"id": "Prayers for Bobby (2008).mkv",
 		"path": "\\\\NAS\\Movies\\Prayers for Bobby (2008).mkv",
 		"size": "4452429006"
-	},
-	{
-		"id": "The Monster (1994).avi",
-		"path": "\\\\NAS\\Movies\\The Monster (1994).avi",
-		"size": "2345390080"
 	},
 	{
 		"id": "Hotel Transylvania (2012) 3D.mkv",
@@ -3261,8 +3256,8 @@ export const json_nas = [
 		"size": "39924652032"
 	},
 	{
-		"id": "Burn All My Letters (2023).mkv",
-		"path": "\\\\NAS\\MoviesB\\Movis\\Burn All My Letters (2023).mkv",
+		"id": "Burn All My Letters (2022).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Burn All My Letters (2022).mkv",
 		"size": "22954027562"
 	},
 	{
@@ -3561,8 +3556,8 @@ export const json_nas = [
 		"size": "22226717345"
 	},
 	{
-		"id": "Mission Impossible - Dead Reckoning (2023).mkv",
-		"path": "\\\\NAS\\MoviesB\\Movis\\Mission Impossible - Dead Reckoning (2023).mkv",
+		"id": "Mission Impossible - Dead Reckoning Part One (2023).mkv",
+		"path": "\\\\NAS\\MoviesB\\Movis\\Mission Impossible - Dead Reckoning Part One (2023).mkv",
 		"size": "40472866314"
 	},
 	{
