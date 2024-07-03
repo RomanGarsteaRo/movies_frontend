@@ -1,29 +1,21 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {AsyncPipe, CommonModule, DecimalPipe, NgForOf, NgIf} from "@angular/common";
 import {FileSizeComponent} from "../../ui/file-size/file-size.component";
 import {NoCommaPipe} from "../../ui/no-comma.pipe";
 import {IOmdb, json_omdb} from "../../data/data_from_omdbapi";
 import {IPlex, json_plex} from "../../data/data_from_plex";
-import {from, map, mergeMap, Observable, tap, toArray} from "rxjs";
+import {Observable, tap} from "rxjs";
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
-import {json_nas} from "../../data/data_from_nas";
-import {environment} from "../../../environments/environment";
-
-/*
-TODO
-normalize file name in server side
-1. exclude two space  "  ".replace(" ")
-
-*/
+import {EndPoint, UrlBase} from "../../services/url/UrlBase";
 
 interface INas {
-	id: string,
+	fileName: string,
 	path: string,
 	size: string,
 }
 
 interface INasExtended {
-	id: string,
+	fileName: string,
 	path: string,
 	size: IFileSize,
 
@@ -71,7 +63,7 @@ const SizeUnits: { [key: string]: number } = {
   templateUrl: './movies-list.component.html',
   styleUrl: './movies-list.component.scss'
 })
-export class MoviesListComponent implements AfterViewInit {
+export class MoviesListComponent {
 
 	private nasBaseURL:  string = 'http://localhost:3000/';
 	private omdbBaseURL: string = 'http://www.omdbapi.com/';  // ?apikey=8adee8c7&plot=full&t=
@@ -81,8 +73,8 @@ export class MoviesListComponent implements AfterViewInit {
 	public listOfMovies!: IMovie[];
 	public numberOfFiles!: number;
 	public duplicate!: INasExtended[];
-	public rusName!: IMovie[];
-	public enName!: IMovie[];
+	public rusTitle!: IMovie[];
+	public enTitle!: IMovie[];
 	public movies3d!: number;
 	public averageSize!: IFileSize;
 	public averageYear!: number;
@@ -90,59 +82,47 @@ export class MoviesListComponent implements AfterViewInit {
 	public numberOfItemsOmdbInData!: number;
 	public plex: IPlex[] = [...json_plex];
 	public omdb: IOmdb[] = [...json_omdb];
-	public omdbDownload!: Observable<IOmdb>;
+	public omdbDownload!: IOmdb | undefined;
 
 	constructor(private http: HttpClient) {
-		// Transform omdb json for DB
-		this.transformOMDB();
 
-		// Get data from BackEnd
-		// let $list = this.getList().subscribe();
-
-		// Get data static from var in json
-		this.init(json_nas);
-	}
-
-	ngAfterViewInit() {
-		console.log('ngAfterViewInit');
+		/**
+		  *	  1. Get data from BackEnd
+		  *	  	    [{"id": "The Man from U.N.C.L.E. (2015).m2ts",
+		  *         "path": "\\\\NAS\\Movies\\The Man from U.N.C.L.E. (2015).m2ts",
+		  *         "size": "39542323200"}...]
+		  *	  2. Init
+		  *
+		  */
+		this.getList().subscribe();
 	}
 
 	public getList(): Observable<INasExtended[]> {
 		const url: string = this.nasBaseURL;
 		return this.http.get<INasExtended[]>(url).pipe(
 			tap(arr => this.init(arr)),
-
-
-			// GET JSON from OMDB
-			// mergeMap(arr => this.processMovieList(this.enName.slice(0,20))),
-			// mergeMap(arr => this.processMovieList(this.enName.slice(20,25))),
-			// mergeMap(arr => this.processMovieList(this.enName.slice(25,100))),
-			// mergeMap(arr => this.processMovieList(this.enName.slice(100,200))),
-			// mergeMap(arr => this.processMovieList(this.enName.slice(200,400))),
-			// mergeMap(arr => this.processMovieList(this.enName.slice(400, 500))),
-			// mergeMap(arr => this.processMovieList(this.enName.slice(500, 592))),
 		);
 	}
 
 	private init(arr: any[]):void {
 		arr = this.transformMovieData(arr);
 		arr = this.sortData(arr);
-		// this.omdb = this.deleteDuplicateInOmdbJson(this.omdb);
 		this.addPlexJsonToData(arr);
 		this.addOmdbJsonToData(arr);
+
 		this.listOfMovies = arr;
 		this.numberOfFiles = this.getNumberOfFiles(arr);
-		this.rusName = this.getRusName(arr);
-		this.enName = this.getEnName(arr);
+		this.rusTitle = this.getRusName(arr);
+		this.enTitle = this.getEnName(arr);
 		this.averageYear = this.getAverageYear(arr);
 		this.averageSize = this.getAverageSize(arr);
 		this.movies3d = this.getMovies3d(arr);
 		this.numberOfItemsPlexInData = this.getNumberOfPlexItemsInData(arr);
 		this.numberOfItemsOmdbInData = this.getNumberOfOmdbItemsInData(arr);
-		// this.duplicate = this.getDuplicate(arr);
-		// console.log(arr[20]);
+		this.duplicate = this.getDuplicate(arr);
 
-		console.log(arr);
+		console.log(arr[20]);
+		// console.log(arr);
 	}
 
 	private transformMovieData(arr: INas[]): IMovie[] {
@@ -151,14 +131,14 @@ export class MoviesListComponent implements AfterViewInit {
 
 		// 1. Transform data: IMovie[] to INasExtended[]
 		let NasExtended: INasExtended[] = arr.map((movie: INas) => {
-			const match = movie.id.match(/^(.+?)\s\((\d{4})\)/);
+			const match = movie.fileName.match(/^(.+?)\s\((\d{4})\)/);
 			const title= match?.[1] || '';
 			const year: number | string = parseInt(match?.[2] || '', 10) || 'N/A';
-			const format= movie.id.match(/(?:\.([^.]+))?$/)?.[1] || '';
-			const tags: string[] = this.getTagsFromTitle(movie.id);
+			const format= movie.fileName.match(/(?:\.([^.]+))?$/)?.[1] || '';
+			const tags: string[] = this.getTagsFromTitle(movie.fileName);
 
 			return {
-				id: movie.id,
+				fileName: movie.fileName,
 				path: movie.path,
 				size: this.convertBytesToIFileSize(+movie.size),
 				title: title,
@@ -199,41 +179,7 @@ export class MoviesListComponent implements AfterViewInit {
 
 
 
-	private deleteDuplicateInOmdbJson(arr: IOmdb[]): any[]{
-		// console.log(arr.length);
-		let notDuplicateTitle: Set<string> = new Set<string>();
-		let newArr: IOmdb[] = [];
-		// let duplicateArr: IOmdb[] = [];
-		arr.forEach(item => {
-			if(item?.Title && !notDuplicateTitle.has(item.Title)) {
-				notDuplicateTitle.add(item.Title);
-				newArr.push(item);
-			} else {
-				// duplicateArr.push(item);
-			}
 
-		})
-		// console.log(newArr.length);
-		// console.log(arr.length - newArr.length);
-		// console.log(duplicateArr);
-		// console.log(newArr);
-
-		return newArr;
-	}
-
-	private processMovieList(arr: INasExtended[]): Observable<INasExtended[]> {
-		return from(arr).pipe(
-			mergeMap(movie => this.processMovie(movie)),
-			toArray(),
-			tap(arr => console.log(arr)),
-		);
-	}
-
-	private processMovie(movie: INasExtended): Observable<INasExtended> {
-		return this.http.get<any>(`${this.omdbBaseURL + movie.title}`).pipe(
-			map(movieDetails => movieDetails)
-		);
-	}
 
 	private getDuplicate(arr: INasExtended[]): INasExtended[] {
 		// https://flexiple.com/javascript/find-duplicates-javascript-array
@@ -363,9 +309,8 @@ export class MoviesListComponent implements AfterViewInit {
 	}
 
 
-
-	/* Sort **********************************************************************************/
-
+	// Sort ////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	private sortData(arr: IMovie[]): IMovie[] {
 		arr = arr.sort((a: IMovie,b: IMovie) => a.title.localeCompare(b.title));
@@ -374,8 +319,6 @@ export class MoviesListComponent implements AfterViewInit {
 		}))
 		return arr;
 	}
-
-	// TODO sortByTitle, sortByYear, sortBySize
 
 	onSortByYear() {
 		setTimeout(()=> {
@@ -399,8 +342,6 @@ export class MoviesListComponent implements AfterViewInit {
 
 	onSortByTitle() {
 		setTimeout(()=> {
-			let titleA = this.listOfMovies[0].title;
-			let titleB = this.listOfMovies[1].title;
 			if (this.listOfMovies[0].title > this.listOfMovies[1].title) {
 				this.listOfMovies = this.listOfMovies.sort((a, b) =>  a.title.localeCompare(b.title));
 			} else {
@@ -409,6 +350,7 @@ export class MoviesListComponent implements AfterViewInit {
 		},0)
 	}
 
+	// Have or not have data
 	onSortPlex() {
 		setTimeout(()=> {
 			if (this.listOfMovies[0].plex !== null && this.listOfMovies[this.listOfMovies.length - 1].plex === null) {
@@ -427,6 +369,7 @@ export class MoviesListComponent implements AfterViewInit {
 		},0)
 	}
 
+	// Have or not have data
 	onSortOmdb() {
 		setTimeout(()=> {
 			if (this.listOfMovies[0].omdb !== null && this.listOfMovies[this.listOfMovies.length - 1].omdb === null) {
@@ -446,7 +389,8 @@ export class MoviesListComponent implements AfterViewInit {
 	}
 
 
-	/* Plex *********************************************************************************/
+	// PLEX ////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	private addPlexJsonToData(arr: IMovie[]): void {
 		let plexNotFounded: IPlex[] = [...this.plex];
@@ -462,8 +406,6 @@ export class MoviesListComponent implements AfterViewInit {
 			}
 		})
 
-		// console.log(plexNotFounded.map(item=> ({title: item.title, year: item.year})));
-		// console.log(plexNotFounded);
 	}
 
 	private addOmdbJsonToData(arr: IMovie[]) {
@@ -487,9 +429,7 @@ export class MoviesListComponent implements AfterViewInit {
 			}
 		})
 
-		console.log(omdbNotFounded.map(item=> ({title: item.Title, year: item.Year})));
-		// console.log(omdbNotFounded);
-		// console.log(arr);
+		// console.log(omdbNotFounded.map(item=> ({title: item.Title, year: item.Year})));
 
 	}
 
@@ -550,37 +490,40 @@ export class MoviesListComponent implements AfterViewInit {
 		let title = group.plex?.title || group.title;
 		let year: number | string = group.plex?.year || group.year;
 		const params = new HttpParams().appendAll({t: title, plot: 'full', apikey: this.omdbApiKey, y: year});
-		this.omdbDownload = this.http.get<any>(this.omdbBaseURL, {params}).pipe(tap(data=> console.log(data)));
+		this.http.get<any>(this.omdbBaseURL, {params}).pipe(tap(data=> {
+			this.omdbDownload = this.adaptOmdbJson(data);
+			console.log(this.omdbDownload);
+		})).subscribe();
 	}
 
 
-	// Exclude property 'Ratings'
-	// Add     property 'RottRating'  ("Rotten Tomatoes Rating")
-	private transformOMDB() {
-		console.log(this.omdb.map(item => {
-			const { Ratings, ...remainingObject} = item;
-			const newObj: any = {};
-			if (Ratings) {
-				for(let i = 0; i <= Ratings.length; i++) {
-					if (Ratings[i]?.Source === "Rotten Tomatoes") {
-						newObj['RottRating'] = Ratings[i].Value;
-					}
+	private adaptOmdbJson(data: IOmdb): IOmdb{
+		const { Ratings, ...remainingObject} = data;
+		const newObj: any = {};
+		if (Ratings) {
+			for(let i = 0; i <= Ratings.length; i++) {
+				if (Ratings[i]?.Source === "Rotten Tomatoes") {
+					newObj['RotRating'] = Ratings[i].Value;
 				}
 			}
-			return {...remainingObject, ...newObj};
-		}));
+		}
+		return {...remainingObject, ...newObj};
 	}
 
 
 
-	saveOmdbJson(group: IMovie) {
+	saveOmdbJson() {
+		if (!this.omdbDownload) {return;}
+		let headers = new HttpHeaders().append('Content-Type', 'application/json; charset=utf-8');
 
-		let option = {};
-		this.http.post<IOmdb>('http://localhost:3000/', group, this.options);
+		// .append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+		this.http.post<IOmdb>(UrlBase.url + EndPoint.movies.root, this.omdbDownload, {headers}).subscribe();
+
+
 	}
 
 	get options() {
-		let headers = new HttpHeaders().append('Content-Type', 'application/json; charset=utf-8')
+		let headers = new HttpHeaders().append('Content-Type', 'application/json; charset=utf-8');
 		return {headers, params: undefined};
 	}
 }

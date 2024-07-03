@@ -4,7 +4,7 @@
 		<div class="total group">
 			<span class="value">{{numberOfFiles}}</span>
 			<span class="label">files</span>
-			<span class="value">{{listOfMovies.length}}</span>
+			<span class="value">{{listOfMovies ? listOfMovies.length : ''}}</span>
 			<span class="label">movies</span>
 		</div>
 
@@ -20,9 +20,9 @@
 
 		<!--Title-->
 		<div class="title group">
-			<span class="value">{{enName.length}}</span>
+			<span class="value">{{enTitle ? enTitle.length : ''}}</span>
 			<span class="label">en</span>
-			<span class="value">{{rusName.length}}</span>
+			<span class="value">{{rusTitle ? rusTitle.length : ''}}</span>
 			<span class="label">ru</span>
 			<span class="value">{{movies3d}}</span>
 			<span class="label">3D</span>
@@ -69,7 +69,7 @@
 				<div class="json_omdb" [ngClass]="{'no_json': group?.omdb === null}">{{group.omdb === null ? 'N/A' : '+'}}</div>
 
 				<span *ngIf="group?.omdb === null" class="download" (click)="getOmdbJson(group)">DOWNLOAD</span>
-				<span *ngIf="group?.omdb === null" class="download" (click)="saveOmdbJson(group)">SAVE</span>
+				<span *ngIf="group?.omdb === null" class="download" (click)="saveOmdbJson()">SAVE</span>
 			</div>
 		</ng-container>
 
@@ -77,11 +77,11 @@
 </div>
 
 <div class="data">
-	<ng-container *ngIf="omdbDownload | async">
-		<img src="{{(omdbDownload | async)?.Poster}}" alt="">
-		<div><span class="label">Title:</span><span class="value"></span>{{(omdbDownload | async)?.Title}}</div>
-		<div><span class="label">Year:</span><span class="value"></span>{{(omdbDownload | async)?.Year}}</div>
-		<div><span class="label">Imdb:</span><span class="value"></span>{{(omdbDownload | async)?.imdbRating}}</div>
-		<div><span class="label">Metascore:</span><span class="value"></span>{{(omdbDownload | async)?.Metascore}}</div>
+	<ng-container *ngIf="omdbDownload">
+		<img src="{{omdbDownload.Poster}}" alt="">
+		<div><span class="label">Title:</span><span class="value"></span>{{omdbDownload.Title}}</div>
+		<div><span class="label">Year:</span><span class="value"></span>{{omdbDownload.Year}}</div>
+		<div><span class="label">Imdb:</span><span class="value"></span>{{omdbDownload.imdbRating}}</div>
+		<div><span class="label">Metascore:</span><span class="value"></span>{{omdbDownload.Metascore}}</div>
 	</ng-container>
 </div>

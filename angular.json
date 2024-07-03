@@ -75,7 +75,11 @@
 							"buildTarget": "movies_frontend:build:development"
 						}
 					},
-					"defaultConfiguration": "development"
+					"defaultConfiguration": "development",
+					"options": {
+						"buildTarget": "your-application-name:build",
+						"proxyConfig": "src/proxy.conf.json"
+					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
