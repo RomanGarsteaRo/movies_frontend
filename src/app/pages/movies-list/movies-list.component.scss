@@ -25,15 +25,15 @@
 		$year: 80px;
 		$size: 80px;
 		$title: 400px;
-		$plex: 40px;
-		$omdb: 40px;
+		$plex: 80px;
+		$omdb: 80px;
 		$download: 80px;
 		$save: 80px;
 
 		$grid-template-columns: $total $year $size $title $plex $omdb $download $save;
 
 		.stat {
-			overflow: auto;
+			overflow: hidden;
 			display: grid;
 			grid-template-columns: $grid-template-columns;
 			grid-auto-flow: row;
@@ -51,13 +51,36 @@
 				color: #474646;
 			}
 
-			.total.group{
+			.horizontal-label{
 				display: grid;
 				grid-template-columns: 40px max-content;
 				grid-auto-flow: row;
 				grid-auto-rows: min-content;
 				column-gap: 2px;
 			}
+			.vertical-label{
+				display: flex;
+				flex-direction: column;
+				row-gap: 12px;
+				.item {
+					display: flex;
+					flex-direction: column;
+					.value{
+						display: flex;
+						height: 12px;
+						justify-content: center;
+						align-items: center;
+					}
+					.label{
+						display: flex;
+						height: 6px;
+						justify-content: center;
+						align-items: center;
+						white-space: nowrap;
+					}
+				}
+			}
+
 			.year{
 				display: flex;
 				justify-content: end;
@@ -77,6 +100,7 @@
 				flex-direction: column;
 				font-size: 14px;
 			}
+
 		}
 
 		.sort{

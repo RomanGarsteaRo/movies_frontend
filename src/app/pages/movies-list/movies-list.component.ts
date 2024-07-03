@@ -7,6 +7,7 @@ import {IPlex, json_plex} from "../../data/data_from_plex";
 import {Observable, tap} from "rxjs";
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
 import {EndPoint, UrlBase} from "../../services/url/UrlBase";
+import {OmdbManager} from "../../services/ombd-manager.class";
 
 interface INas {
 	fileName: string,
@@ -68,6 +69,7 @@ export class MoviesListComponent {
 	private nasBaseURL:  string = 'http://localhost:3000/';
 	private omdbBaseURL: string = 'http://www.omdbapi.com/';  // ?apikey=8adee8c7&plot=full&t=
 	private omdbApiKey:  string = '8adee8c7';
+	private plexJsonURL: string = "https://10-0-0-143.b235164b334f4933bace62d0694b3418.plex.direct:32400/library/sections/1/all?type=1&includeCollections=1&includeExternalMedia=1&X-Plex-Product=Plex%20Web&X-Plex-Version=4.87.2&X-Plex-Client-Identifier=yxti8gld2yndgo8hh9zauojl&X-Plex-Platform=Chrome&X-Plex-Platform-Version=126.0&X-Plex-Features=external-media%2Cindirect-media%2Chub-style-list&X-Plex-Model=bundled&X-Plex-Device=Windows&X-Plex-Device-Name=Chrome&X-Plex-Device-Screen-Resolution=1920x919%2C1920x1080&X-Plex-Container-Start=0&X-Plex-Container-Size=763&X-Plex-Token=uqUhdUPHx6rHGwZa2jg4&X-Plex-Provider-Version=5.1&X-Plex-Text-Format=plain&X-Plex-Language=en"
 
 	public $list!: Observable<INasExtended[]>;
 	public listOfMovies!: IMovie[];
@@ -83,19 +85,30 @@ export class MoviesListComponent {
 	public plex: IPlex[] = [...json_plex];
 	public omdb: IOmdb[] = [...json_omdb];
 	public omdbDownload!: IOmdb | undefined;
+	public omdbNotAssociated!: IOmdb[];
 
 	constructor(private http: HttpClient) {
 
 		/**
 		  *	  1. Get data from BackEnd
 		  *	  	    [{"id": "The Man from U.N.C.L.E. (2015).m2ts",
-		  *         "path": "\\\\NAS\\Movies\\The Man from U.N.C.L.E. (2015).m2ts",
-		  *         "size": "39542323200"}...]
-		  *	  2. Init
+		  *           "path": "\\\\NAS\\Movies\\The Man from U.N.C.L.E. (2015).m2ts",
+		  *           "size": "39542323200"}...]
+		  *	  2. init() -> in subscribe
 		  *
 		  */
 		this.getList().subscribe();
 	}
+
+
+
+
+
+
+
+	// Init ////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 	public getList(): Observable<INasExtended[]> {
 		const url: string = this.nasBaseURL;
@@ -106,9 +119,10 @@ export class MoviesListComponent {
 
 	private init(arr: any[]):void {
 		arr = this.transformMovieData(arr);
-		arr = this.sortData(arr);
-		this.addPlexJsonToData(arr);
 		this.addOmdbJsonToData(arr);
+		this.addPlexJsonToData(arr);
+		arr = this.sortData(arr);
+
 
 		this.listOfMovies = arr;
 		this.numberOfFiles = this.getNumberOfFiles(arr);
@@ -120,9 +134,7 @@ export class MoviesListComponent {
 		this.numberOfItemsPlexInData = this.getNumberOfPlexItemsInData(arr);
 		this.numberOfItemsOmdbInData = this.getNumberOfOmdbItemsInData(arr);
 		this.duplicate = this.getDuplicate(arr);
-
-		console.log(arr[20]);
-		// console.log(arr);
+		console.log(arr);
 	}
 
 	private transformMovieData(arr: INas[]): IMovie[] {
@@ -177,32 +189,6 @@ export class MoviesListComponent {
 		return result;
 	}
 
-
-
-
-
-	private getDuplicate(arr: INasExtended[]): INasExtended[] {
-		// https://flexiple.com/javascript/find-duplicates-javascript-array
-		return arr.filter((item, index) => arr.indexOf(item) !== index);
-	}
-
-	private getRusName(arr: IMovie[]): IMovie[] {
-		const russianTitleRegex: RegExp = /[а-яА-ЯЁё]/;
-		return arr.filter(movie => russianTitleRegex.test(movie.title));
-	}
-
-	private getMovies3d(arr: IMovie[]): number {
-		return arr.reduce((acc: number, item: IMovie) => {
-			let count = 0;
-			item.nas.forEach(file=> {
-				if(file.tags.find(tag => tag === '3D')) {
-					count++;
-				}
-			})
-			return acc += count;
-		}, 0);
-	}
-
 	private convertBytesToIFileSize(bytes: number | IFileSize): IFileSize {
 
 		if (typeof bytes !== "number") {
@@ -234,27 +220,6 @@ export class MoviesListComponent {
 		}
 	}
 
-	private getAverageSize(arr: IMovie[]): IFileSize {
-		let size: number = 0;
-		arr.forEach(item => {
-			item.nas.forEach((movie: INasExtended)=> size += movie.size.sizeInByte)
-		});
-		return this.convertBytesToIFileSize(size/ this.listOfMovies.length);
-	}
-
-	private getEnName(arr: IMovie[]): IMovie[] {
-		const russianTitleRegex: RegExp = /[а-яА-ЯЁё]/;
-		return arr.filter(movie => !russianTitleRegex.test(movie.title));
-	}
-
-	private getAverageYear(arr: IMovie[]): number {
-		let size: number = 0;
-		arr.forEach(item => size += +item.year);
-		return size / this.listOfMovies.length;
-	}
-
-
-
 	private normalizeTitle(fileName: string | undefined): string | undefined {
 		// https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words
 
@@ -276,11 +241,47 @@ export class MoviesListComponent {
 		return fileName || undefined;
 	}
 
-	// private getNumberOfOmdbItemsInData(arr: INasExtended[]): number {
-	// 	return arr.reduce((accumulator, currentValue) => currentValue.omdb !== 'N/A' ? accumulator : ++accumulator, 0);
-	// }
 
+	private getDuplicate(arr: INasExtended[]): INasExtended[] {
+		// https://flexiple.com/javascript/find-duplicates-javascript-array
+		return arr.filter((item, index) => arr.indexOf(item) !== index);
+	}
 
+	private getRusName(arr: IMovie[]): IMovie[] {
+		const russianTitleRegex: RegExp = /[а-яА-ЯЁё]/;
+		return arr.filter(movie => russianTitleRegex.test(movie.title));
+	}
+
+	private getMovies3d(arr: IMovie[]): number {
+		return arr.reduce((acc: number, item: IMovie) => {
+			let count = 0;
+			item.nas.forEach(file=> {
+				if(file.tags.find(tag => tag === '3D')) {
+					count++;
+				}
+			})
+			return acc += count;
+		}, 0);
+	}
+
+	private getAverageSize(arr: IMovie[]): IFileSize {
+		let size: number = 0;
+		arr.forEach(item => {
+			item.nas.forEach((movie: INasExtended)=> size += movie.size.sizeInByte)
+		});
+		return this.convertBytesToIFileSize(size/ this.listOfMovies.length);
+	}
+
+	private getEnName(arr: IMovie[]): IMovie[] {
+		const russianTitleRegex: RegExp = /[а-яА-ЯЁё]/;
+		return arr.filter(movie => !russianTitleRegex.test(movie.title));
+	}
+
+	private getAverageYear(arr: IMovie[]): number {
+		let size: number = 0;
+		arr.forEach(item => size += +item.year);
+		return size / this.listOfMovies.length;
+	}
 
 	private getNasTitleUnique(arr: INasExtended[]): Set<string> {
 		let unique: Set<string> = new Set<string>();
@@ -408,31 +409,6 @@ export class MoviesListComponent {
 
 	}
 
-	private addOmdbJsonToData(arr: IMovie[]) {
-		let omdbNotFounded: IOmdb[] = [...this.omdb];
-		arr.forEach(movieItem=> {
-
-			let foundedOmdbItem: IOmdb | undefined = omdbNotFounded.find(omdbItem=> {
-				// Wrong Title in Omdb
-				if (movieItem.title === 'Pride & Prejudice' && omdbItem.Title === 'Pride and Prejudice') return true;
-
-				let nasTitleNorm:  string | undefined = this.normalizeTitle(movieItem.title);
-				let omdbTitleNorm: string | undefined = this.normalizeTitle(omdbItem.Title);
-				return (nasTitleNorm === omdbTitleNorm) && (movieItem.year.toString() === omdbItem.Year);
-			});
-
-			if (foundedOmdbItem) {
-				// Exclude founded item to plex arr
-				omdbNotFounded = omdbNotFounded.filter(item => item !== foundedOmdbItem);
-				// Add founded plex item to data
-				movieItem.omdb = foundedOmdbItem;
-			}
-		})
-
-		// console.log(omdbNotFounded.map(item=> ({title: item.Title, year: item.Year})));
-
-	}
-
 	private getNumberOfPlexItemsInData(arr: IMovie[]): number {
 		return arr.reduce((acc:number, cur:IMovie) => cur.plex !== null ? ++acc : acc, 0);
 	}
@@ -485,45 +461,64 @@ export class MoviesListComponent {
 	}
 
 
+	// OMDB ////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+	private addOmdbJsonToData(arr: IMovie[]) {
+		this.omdbNotAssociated = [...this.omdb];
+		arr.forEach(movieItem=> {
+			let foundedOmdbItem: IOmdb | undefined = this.omdbNotAssociated.find(omdbItem=> {
+				// Wrong Title in Omdb
+				if (movieItem.title === 'Pride & Prejudice' && omdbItem.Title === 'Pride and Prejudice') return true;
+
+				let nasTitleNorm:  string | undefined = this.normalizeTitle(movieItem.title);
+				let omdbTitleNorm: string | undefined = this.normalizeTitle(omdbItem.Title);
+				return (nasTitleNorm === omdbTitleNorm) && (movieItem.year.toString() === omdbItem.Year);
+			});
+
+			if (foundedOmdbItem) {
+				// 1. Exclude founded item to plex arr
+				this.omdbNotAssociated = this.omdbNotAssociated.filter(item => item !== foundedOmdbItem);
+				// 2. Add founded plex item to data
+				movieItem.omdb = OmdbManager.adapter(foundedOmdbItem);
+			}
+		})
+		console.log(this.omdbNotAssociated.map(item=> ({title: item.Title, year: item.Year})));
+	}
+
+	// Get OMDB JSON from OMDB api
 	getOmdbJson(group: IMovie): void {
 		let title = group.plex?.title || group.title;
 		let year: number | string = group.plex?.year || group.year;
 		const params = new HttpParams().appendAll({t: title, plot: 'full', apikey: this.omdbApiKey, y: year});
 		this.http.get<any>(this.omdbBaseURL, {params}).pipe(tap(data=> {
-			this.omdbDownload = this.adaptOmdbJson(data);
+			this.omdbDownload = OmdbManager.adapter(data);
 			console.log(this.omdbDownload);
 		})).subscribe();
 	}
 
 
-	private adaptOmdbJson(data: IOmdb): IOmdb{
-		const { Ratings, ...remainingObject} = data;
-		const newObj: any = {};
-		if (Ratings) {
-			for(let i = 0; i <= Ratings.length; i++) {
-				if (Ratings[i]?.Source === "Rotten Tomatoes") {
-					newObj['RotRating'] = Ratings[i].Value;
-				}
-			}
-		}
-		return {...remainingObject, ...newObj};
-	}
-
-
-
-	saveOmdbJson() {
-		if (!this.omdbDownload) {return;}
+	// Save OMDB JSON to DB
+	saveOmdbJson(movie: IOmdb) {
 		let headers = new HttpHeaders().append('Content-Type', 'application/json; charset=utf-8');
 
 		// .append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
-		this.http.post<IOmdb>(UrlBase.url + EndPoint.movies.root, this.omdbDownload, {headers}).subscribe();
-
-
+		this.http.post<IOmdb>(UrlBase.url + EndPoint.movies.root, movie, {headers}).subscribe();
 	}
 
 	get options() {
 		let headers = new HttpHeaders().append('Content-Type', 'application/json; charset=utf-8');
 		return {headers, params: undefined};
 	}
+
+	public addToDB() {
+		this.listOfMovies.forEach(movie => {
+			if(movie.omdb) {
+				this.saveOmdbJson(movie.omdb);
+			}
+		})
+
+	}
+
 }

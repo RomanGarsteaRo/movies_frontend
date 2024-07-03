@@ -1,11 +1,13 @@
+
 <div class="container">
 	<div class="stat">
 		<!--Total-->
-		<div class="total group">
+		<div class="horizontal-label">
 			<span class="value">{{numberOfFiles}}</span>
 			<span class="label">files</span>
 			<span class="value">{{listOfMovies ? listOfMovies.length : ''}}</span>
 			<span class="label">movies</span>
+			<!--<input type="button" value="Add to DB" (click)="addToDB()"/>-->
 		</div>
 
 		<!--Year-->
@@ -19,7 +21,7 @@
 		</div>
 
 		<!--Title-->
-		<div class="title group">
+		<div class="horizontal-label">
 			<span class="value">{{enTitle ? enTitle.length : ''}}</span>
 			<span class="label">en</span>
 			<span class="value">{{rusTitle ? rusTitle.length : ''}}</span>
@@ -28,18 +30,32 @@
 			<span class="label">3D</span>
 		</div>
 
-		<!--Plex JSON-->
-		<div class="plex" *ngIf="plex">
-			<div>Plex</div>
-			<div>{{plex.length}} <!--total json items--></div>
-			<div>{{numberOfItemsPlexInData}}<!--not show--></div>
+		<!--Plex-->
+		<div class="vertical-label" *ngIf="plex">
+			<div class="item">
+				<div class="value">{{plex.length}}</div>
+				<div class="label">total plex</div>
+			</div>
+			<div class="item">
+				<div class="value">{{numberOfItemsPlexInData}}</div>
+				<div class="label">total associated</div>
+			</div>
 		</div>
 
-		<!--OMDB JSON-->
-		<div class="omdb" *ngIf="omdb">
-			<div>Omdb</div>
-			<div>{{omdb.length}} <!--total json items--></div>
-			<div>{{numberOfItemsOmdbInData}}<!--not show--></div>
+		<!--OMDB-->
+		<div class="vertical-label" *ngIf="omdb">
+			<div class="item">
+				<div class="value">{{omdb.length}}</div>
+				<div class="label">total omdb</div>
+			</div>
+			<div class="item">
+				<div class="value">{{numberOfItemsOmdbInData}}</div>
+				<div class="label">associated</div>
+			</div>
+			<div class="item">
+				<div class="value">{{omdbNotAssociated?.length}}</div>
+				<div class="label">not associated</div>
+			</div>
 		</div>
 
 
@@ -69,7 +85,7 @@
 				<div class="json_omdb" [ngClass]="{'no_json': group?.omdb === null}">{{group.omdb === null ? 'N/A' : '+'}}</div>
 
 				<span *ngIf="group?.omdb === null" class="download" (click)="getOmdbJson(group)">DOWNLOAD</span>
-				<span *ngIf="group?.omdb === null" class="download" (click)="saveOmdbJson()">SAVE</span>
+				<span *ngIf="group?.omdb === null" class="download">SAVE</span>
 			</div>
 		</ng-container>
 
