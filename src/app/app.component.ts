@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {MoviesListComponent} from "./pages/movies-list/movies-list.component";
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import {ViewListComponent} from "./pages/view-list/view-list.component";
 import {UrlBase} from "./services/url/UrlBase";
 import {environment} from "../environments/environment";
 import {UrlOmdb} from "./services/url/UrlOmdb";
@@ -9,7 +9,7 @@ import {UrlOmdb} from "./services/url/UrlOmdb";
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [RouterOutlet, MoviesListComponent],
+	imports: [RouterOutlet, ViewListComponent, RouterLink, RouterLinkActive],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss'
 })

@@ -1,7 +1,16 @@
-import {IOmdb} from "../data/data_from_omdbapi";
+import {IOmdb} from "./omdb.interface";
 
 
 export class OmdbManager {
+
+	// Method to manage the object by adding missing properties and removing unnecessary ones
+	public static adapter(obj: Partial<IOmdb>): Partial<IOmdb> {
+		obj = this.addMissingProperties(obj);
+		obj = this.removeUnnecessaryProperties(obj);
+		obj = this.addRotRating(obj);
+		return obj;
+	}
+
 	private static validKeys: Set<string> = new Set([
 		"Title",
 		"Year",
@@ -29,7 +38,6 @@ export class OmdbManager {
 		"Website",
 		"Response",
 	]);
-
 	private static defaultValues: Partial<IOmdb> = {
 		Title: "N/A",
 		Year: "N/A",
@@ -82,15 +90,7 @@ export class OmdbManager {
 		return obj;
 	}
 
-	// Method to manage the object by adding missing properties and removing unnecessary ones
-	public static adapter(obj: Partial<IOmdb>): Partial<IOmdb> {
-		obj = this.addMissingProperties(obj);
-		obj = this.removeUnnecessaryProperties(obj);
-		obj = this.addRotRating(obj);
-		return obj;
-	}
-
-	// Exclude "Ratings" and Add "RotRating"
+	// Transform "Ratings" to "RotRating"
 	private static addRotRating(obj: Partial<IOmdb>) {
 		const { Ratings, ...remainingObject} = obj;
 		const newObj: any = {};

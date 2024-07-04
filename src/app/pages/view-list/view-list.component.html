@@ -1,0 +1,104 @@
+
+<div class="container">
+	<div class="stat">
+		<!--Total-->
+		<div class="horizontal-label">
+			<span class="value">{{files ? files.length : 'N/A'}}</span>
+			<span class="label">files</span>
+			<span class="value">{{movies ? movies.length : 'N/A'}}</span>
+			<span class="label">movies</span>
+		</div>
+
+		<!--Year-->
+		<div class="average-year">
+			<div>{{(averageYear | number: '0.0-0' | noComma) || "N/A"}}</div>
+		</div>
+
+		<!--Size-->
+		<div class="average-size">
+			<ui-file-size *ngIf="averageSize" [size]="averageSize"></ui-file-size>
+			<div *ngIf="!averageSize">"N/A"</div>
+		</div>
+
+		<!--Imdb-->
+		<div class="average-imdb">
+			<div>{{ averageImdb | number: '0.0-1' | noComma }}</div>
+		</div>
+
+		<!--Title-->
+		<div class="horizontal-label">
+			<span class="value">{{moviesEn ? moviesEn.length : 'N/A'}}</span>
+			<span class="label">en</span>
+			<span class="value">{{moviesRus ? moviesRus.length : 'N/A'}}</span>
+			<span class="label">ru</span>
+			<span class="value">{{movies3d}}</span>
+			<span class="label">3D</span>
+			<span class="value">{{duplicate ? duplicate.length : 'N/A'}}</span>
+			<span class="label">duplicate</span>
+		</div>
+
+		<!--Plex-->
+		<div class="horizontal-label" *ngIf="plex">
+			<div class="value">{{plex.length}}</div>
+			<div class="label">total plex</div>
+			<div class="value">{{plexAssociated || 0}}</div>
+			<div class="label">associated</div>
+			<div class="value">{{plexNotAssociated ? plexNotAssociated.length : 0}}</div>
+			<div class="label">not associated</div>
+			<div class="value">{{movies.length - plex.length}}</div>
+			<div class="label">not founded</div>
+		</div>
+
+		<!--OMDB-->
+		<div class="horizontal-label" *ngIf="omdb">
+			<div class="value">{{omdb.length}}</div>
+			<div class="label">total omdb</div>
+			<div class="value">{{omdbAssociated || 0}}</div>
+			<div class="label">associated</div>
+			<div class="value">{{omdbNotAssociated ? omdbNotAssociated.length : 0}}</div>
+			<div class="label">not associated</div>
+			<div class="value">{{movies.length - omdb.length}}</div>
+			<div class="label">not founded</div>
+		</div>
+
+
+	</div>
+	<div class="sort">
+		<div class="material-icons total"></div>
+		<div class="material-icons year"  (click)="onSortByYear()">swap_vert</div>
+		<div class="material-icons size"  (click)="onSortBySize()">swap_vert</div>
+		<div class="material-icons imdb"  (click)="onSortByImdb()">swap_vert</div>
+		<div class="material-icons title" (click)="onSortByTitle()">swap_vert</div>
+		<div class="material-icons plex" (click)="onSortPlex()">swap_vert</div>
+		<div class="material-icons omdb" (click)="onSortOmdb()">swap_vert</div>
+	</div>
+	<div class="tab">
+
+		<ng-container *ngFor="let group of movies; let i = index">
+			<div class="row" *ngFor="let item of group.nas; let j = index">
+				<div class="number">{{j === 0 ? i + 1 + '.' : ''}}</div>
+				<div class="year">{{j === 0 ? item.year : ''}}</div>
+				<ui-file-size [size]="item.size"></ui-file-size>
+				<div class="imdb">{{j === 0 && group?.omdb ? group.omdb?.imdbRating : ''}}</div>
+				<div class="title-box">
+					<span>{{group.plex?.title || item.title}}</span>
+					<span class="tag" *ngFor="let tag of item.tags">{{tag}}</span>
+				</div>
+
+				<div class="json_plex" *ngIf="j === 0" [ngClass]="{'no_json': group?.plex === null}">{{group.plex === null ? 'N/A' : '+'}}</div>
+				<div class="json_omdb" *ngIf="j === 0" [ngClass]="{'no_json': group?.omdb === null}">{{group.omdb === null ? 'N/A' : '+'}}</div>
+			</div>
+		</ng-container>
+
+	</div>
+</div>
+
+<!--<div class="data">-->
+<!--	<ng-container *ngIf="omdbDownload">-->
+<!--		<img src="{{omdbDownload.Poster}}" alt="">-->
+<!--		<div><span class="label">Title:</span><span class="value"></span>{{omdbDownload.Title}}</div>-->
+<!--		<div><span class="label">Year:</span><span class="value"></span>{{omdbDownload.Year}}</div>-->
+<!--		<div><span class="label">Imdb:</span><span class="value"></span>{{omdbDownload.imdbRating}}</div>-->
+<!--		<div><span class="label">Metascore:</span><span class="value"></span>{{omdbDownload.Metascore}}</div>-->
+<!--	</ng-container>-->
+<!--</div>-->

@@ -1,7 +1,14 @@
+<div class="header">
+	<div class="menu-bar">
+		<div class="menu-button" routerLink="/list"   routerLinkActive="active" ariaCurrentWhenActive="page">LIST</div>
+		<div class="menu-button" routerLink="/poster" routerLinkActive="active" ariaCurrentWhenActive="page">POSTER</div>
+	</div>
+</div>
 
+<div class="content">
+	<router-outlet />
+</div>
 
-<app-movies-list></app-movies-list>
-<router-outlet />
 
 
 

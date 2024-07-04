@@ -2,4 +2,36 @@
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background-color: #1f2023;
+	color: #5d5d5d;
+	padding-top: 12px;
+
+	.header{
+		padding-left: 130px;
+		.menu-bar{
+			display: flex;
+			column-gap: 24px;
+			.menu-button{
+				cursor: pointer;
+				user-select: none;
+				color: #646464;
+				&.active{
+					color: #e0115b;
+				}
+				&:hover:not(.active){
+					color: #7e7e7e;
+				}
+				&:active:not(.active){
+					color: #a8a8a8;
+				}
+
+			}
+		}
+	}
+
+	.content{
+
+	}
 }
