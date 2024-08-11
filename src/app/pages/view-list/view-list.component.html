@@ -1,5 +1,11 @@
 
 <div class="container">
+	<div>
+		<button (click)="increment()">Increment</button><div></div>
+		<div>Current Count: {{ count$ | async }}</div><div></div>
+		<button (click)="decrement()">Decrement</button><div></div>
+		<button (click)="reset()">Reset Counter</button><div></div>
+	</div>
 	<div class="stat">
 		<!--Total-->
 		<div class="horizontal-label">
