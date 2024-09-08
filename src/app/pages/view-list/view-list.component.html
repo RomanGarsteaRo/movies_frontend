@@ -1,11 +1,5 @@
 
 <div class="container">
-	<div>
-		<button (click)="increment()">Increment</button><div></div>
-		<div>Current Count: {{ count$ | async }}</div><div></div>
-		<button (click)="decrement()">Decrement</button><div></div>
-		<button (click)="reset()">Reset Counter</button><div></div>
-	</div>
 	<div class="stat">
 		<!--Total-->
 		<div class="horizontal-label">
@@ -79,23 +73,23 @@
 		<div class="material-icons omdb" (click)="onSortOmdb()">swap_vert</div>
 	</div>
 	<div class="tab">
+		<div class=scroll>
+			<ng-container *ngFor="let group of movies; let i = index">
+				<div class="row" *ngFor="let item of group.nas; let j = index">
+					<div class="number">{{j === 0 ? i + 1 + '.' : ''}}</div>
+					<div class="year">{{j === 0 ? item.year : ''}}</div>
+					<ui-file-size [size]="item.size"></ui-file-size>
+					<div class="imdb">{{j === 0 && group?.omdb ? group.omdb?.imdbRating : ''}}</div>
+					<div class="title-box">
+						<span>{{group.plex?.title || item.title}}</span>
+						<span class="tag" *ngFor="let tag of item.tags">{{tag}}</span>
+					</div>
 
-		<ng-container *ngFor="let group of movies; let i = index">
-			<div class="row" *ngFor="let item of group.nas; let j = index">
-				<div class="number">{{j === 0 ? i + 1 + '.' : ''}}</div>
-				<div class="year">{{j === 0 ? item.year : ''}}</div>
-				<ui-file-size [size]="item.size"></ui-file-size>
-				<div class="imdb">{{j === 0 && group?.omdb ? group.omdb?.imdbRating : ''}}</div>
-				<div class="title-box">
-					<span>{{group.plex?.title || item.title}}</span>
-					<span class="tag" *ngFor="let tag of item.tags">{{tag}}</span>
+					<div class="json_plex" *ngIf="j === 0" [ngClass]="{'no_json': group?.plex === null}">{{group.plex === null ? 'N/A' : '+'}}</div>
+					<div class="json_omdb" *ngIf="j === 0" [ngClass]="{'no_json': group?.omdb === null}">{{group.omdb === null ? 'N/A' : '+'}}</div>
 				</div>
-
-				<div class="json_plex" *ngIf="j === 0" [ngClass]="{'no_json': group?.plex === null}">{{group.plex === null ? 'N/A' : '+'}}</div>
-				<div class="json_omdb" *ngIf="j === 0" [ngClass]="{'no_json': group?.omdb === null}">{{group.omdb === null ? 'N/A' : '+'}}</div>
-			</div>
-		</ng-container>
-
+			</ng-container>
+		</div>
 	</div>
 </div>
 

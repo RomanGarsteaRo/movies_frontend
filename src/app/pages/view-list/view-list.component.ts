@@ -3,13 +3,12 @@ import {AsyncPipe, CommonModule, DecimalPipe, NgForOf, NgIf} from "@angular/comm
 import {FileSizeComponent} from "../../ui/file-size/file-size.component";
 import {NoCommaPipe} from "../../ui/no-comma.pipe";
 import {IPlex} from "../../data/data_from_plex";
-import {forkJoin, Observable} from "rxjs";
+import {forkJoin} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {OmdbService} from "../../services/omdb/omdb.service";
 import {OmdbManager} from "../../services/omdb/ombd.manager.class";
 import {IOmdb} from "../../services/omdb/omdb.interface";
-import {Store} from "@ngrx/store";
-import {decrement, increment, reset} from "../../state/app.actions";
+
 
 
 export interface INas {
@@ -69,11 +68,9 @@ const SizeUnits: { [key: string]: number } = {
 })
 export class ViewListComponent {
 
-	public count$: Observable<number>
-
 	private nasBaseURL: string = 'http://localhost:3000/';
 	private nasOmdb: string = 'http://localhost:3000/movies';
-	private plexURL: string = "https://10-0-0-143.b235164b334f4933bace62d0694b3418.plex.direct:32400/library/sections/1/all?type=1&includeCollections=1&includeExternalMedia=1&X-Plex-Product=Plex%20Web&X-Plex-Version=4.87.2&X-Plex-Client-Identifier=yxti8gld2yndgo8hh9zauojl&X-Plex-Platform=Chrome&X-Plex-Platform-Version=126.0&X-Plex-Features=external-media%2Cindirect-media%2Chub-style-list&X-Plex-Model=bundled&X-Plex-Device=Windows&X-Plex-Device-Name=Chrome&X-Plex-Device-Screen-Resolution=1920x919%2C1920x1080&X-Plex-Container-Start=0&X-Plex-Container-Size=763&X-Plex-Token=uqUhdUPHx6rHGwZa2jg4&X-Plex-Provider-Version=5.1&X-Plex-Text-Format=plain&X-Plex-Language=en"
+	private plexURL: string = "https://10-0-0-145.b235164b334f4933bace62d0694b3418.plex.direct:32400/library/sections/1/all?type=1&includeCollections=1&includeExternalMedia=1&X-Plex-Product=Plex%20Web&X-Plex-Version=4.87.2&X-Plex-Client-Identifier=yxti8gld2yndgo8hh9zauojl&X-Plex-Platform=Chrome&X-Plex-Platform-Version=126.0&X-Plex-Features=external-media%2Cindirect-media%2Chub-style-list&X-Plex-Model=bundled&X-Plex-Device=Windows&X-Plex-Device-Name=Chrome&X-Plex-Device-Screen-Resolution=1920x919%2C1920x1080&X-Plex-Container-Start=0&X-Plex-Container-Size=763&X-Plex-Token=uqUhdUPHx6rHGwZa2jg4&X-Plex-Provider-Version=5.1&X-Plex-Text-Format=plain&X-Plex-Language=en"
 
 	public files:    INas[] = [];
 	public plex:    IPlex[] = [];
@@ -97,13 +94,7 @@ export class ViewListComponent {
 
 	constructor(private http: HttpClient,
 				private omdbService: OmdbService,
-				private store: Store<{ count: number }>
 				) {
-
-
-		// TODO: Connect `this.count$` stream to the current store `count` state
-		this.count$ = store.select('count');
-
 
 		/**
 		 *	 1. Get data from NAS (all file data)
@@ -133,22 +124,6 @@ export class ViewListComponent {
 			// console.log();
 		});
 	}
-
-	increment() {
-		// TODO: Dispatch an increment action
-		this.store.dispatch(increment());
-	}
-
-	decrement() {
-		// TODO: Dispatch a decrement action
-		this.store.dispatch(decrement());
-	}
-
-	reset() {
-		// TODO: Dispatch a reset action
-		this.store.dispatch(reset());
-	}
-
 
 	// Init ////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////////
