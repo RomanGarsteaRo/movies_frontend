@@ -8,6 +8,7 @@ import {Component} from '@angular/core';
 Название фильма + movie poster (например, "Titanic movie poster")
 Название фильма + cover art (например, "Avatar cover art")
 Название фильма + film cover (например, "Gladiator film cover")
+
 */
 
 

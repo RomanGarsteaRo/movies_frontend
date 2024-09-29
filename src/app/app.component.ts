@@ -8,9 +8,7 @@ import {AsyncPipe} from "@angular/common";
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [
-		RouterOutlet, RouterLink, RouterLinkActive, AsyncPipe,
-	],
+	imports: [RouterOutlet, RouterLink, RouterLinkActive, AsyncPipe,],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss'
 })
