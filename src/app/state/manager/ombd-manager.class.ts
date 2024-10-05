@@ -1,0 +1,112 @@
+import {IOmdb} from "../models/omdb.interface";
+
+
+export class OmdbManager {
+
+	// Method to manage the object by adding missing properties and removing unnecessary ones
+	public static adapter(obj: Partial<IOmdb>): Partial<IOmdb> {
+		obj = this.addMissingProperties(obj);
+		obj = this.removeUnnecessaryProperties(obj);
+		obj = this.addRotRating(obj);
+		return obj;
+	}
+
+	private static validKeys: Set<string> = new Set([
+		"Title",
+		"Year",
+		"Rated",
+		"Released",
+		"Runtime",
+		"Genre",
+		"Director",
+		"Writer",
+		"Actors",
+		"Plot",
+		"Language",
+		"Country",
+		"Awards",
+		"Poster",
+		"Ratings",
+		"RotRating",
+		"Metascore",
+		"imdbRating",
+		"imdbVotes",
+		"imdbID",
+		"Type",
+		"DVD",
+		"BoxOffice",
+		"Production",
+		"Website",
+		"Response",
+		"Error",
+	]);
+	private static defaultValues: Partial<IOmdb> = {
+		Title: "N/A",
+		Year: "N/A",
+		Rated: "N/A",
+		Released: "N/A",
+		Runtime: "N/A",
+		Genre: "N/A",
+		Director: "N/A",
+		Writer: "N/A",
+		Actors: "N/A",
+		Plot: "N/A",
+		Language: "N/A",
+		Country: "N/A",
+		Awards: "N/A",
+		Poster: "N/A",
+		Ratings: [],
+		RotRating: "N/A",
+		Metascore: "N/A",
+		imdbRating: "N/A",
+		imdbVotes: "N/A",
+		imdbID: "N/A",
+		Type: "N/A",
+		DVD: "N/A",
+		BoxOffice: "N/A",
+		Production: "N/A",
+		Website: "N/A",
+		Response: "N/A",
+		Error: "N/A",
+	};
+
+	// Method to add missing properties with default values
+	private static addMissingProperties(obj: Partial<IOmdb>): Partial<IOmdb> {
+		for (const key of this.validKeys) {
+			if (!obj.hasOwnProperty(key)) {
+				(obj as any)[key] = (this.defaultValues as any)[key];
+			} else if (key === "Ratings" && !Array.isArray(obj.Ratings)) {
+				obj.Ratings = [];
+			}
+		}
+
+		return obj;
+	}
+
+	// Method to remove unnecessary properties
+	private static removeUnnecessaryProperties(obj: Partial<IOmdb>): Partial<IOmdb> {
+		for (const key in obj) {
+			if (!this.validKeys.has(key)) {
+				delete (obj as any)[key];
+			}
+		}
+
+		return obj;
+	}
+
+	// Transform "Ratings" to "RotRating"
+	private static addRotRating(obj: Partial<IOmdb>) {
+		if ('RotRating' in obj) {return obj}
+		const { Ratings, ...remainingObject} = obj;
+		const newObj: any = {};
+		if (Ratings) {
+			let findRotRating = Ratings.find(item => item.Source === "Rotten Tomatoes");
+			if (findRotRating) {
+				newObj['RotRating'] = findRotRating.Value || "N/A";
+			} else {
+				newObj['RotRating'] = "N/A";
+			}
+		}
+		return {...remainingObject, ...newObj};
+	}
+}

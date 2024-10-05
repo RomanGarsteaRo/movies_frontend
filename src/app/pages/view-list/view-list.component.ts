@@ -134,14 +134,14 @@ export class ViewListComponent {
 		this.addOmdbJsonToData();
 		this.addPlexJsonToData();
 
-		this.averageYear = this.getAverageYear();
-		this.averageSize = this.getAverageSize();
-		this.averageImdb = this.getAverageImdb();
+		this.averageYear    = this.getAverageYear();
+		this.averageSize    = this.getAverageSize();
+		this.averageImdb    = this.getAverageImdb();
 
-		this.moviesRus = this.getRusName(this.movies);
-		this.moviesEn  = this.getEnName(this.movies);
-		this.movies3d  = this.getMovies3d(this.movies);
-		this.duplicate = this.getDuplicate(this.movies);
+		this.moviesRus      = this.getRusName(this.movies);
+		this.moviesEn       = this.getEnName(this.movies);
+		this.movies3d       = this.getMovies3d(this.movies);
+		this.duplicate      = this.getDuplicate(this.movies);
 
 		this.plexAssociated = this.getPlexAssociated();
 		this.omdbAssociated = this.getOmdbAssociated();
