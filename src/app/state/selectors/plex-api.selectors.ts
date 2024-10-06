@@ -10,7 +10,7 @@ export const plexApi_error = createSelector(plexApiState, (state: PlexApiState) 
 
 
 export const PlexApiSelectors = {
-	all: plexApi_movies,
+	movies: plexApi_movies,
 	loading: plexApi_loading,
 	error: plexApi_error,
 };

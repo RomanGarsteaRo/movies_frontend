@@ -15,11 +15,11 @@ export class PlexApiEffects {
 
 	getAll$ = createEffect(() =>
 		this.actions$.pipe(
-			ofType(PlexApiActions.loadMovies),
+			ofType(PlexApiActions.getAll),
 			mergeMap(() =>
 				this.plexApiService.getAll().pipe(
-					map(movies => PlexApiActions.loadMoviesSuccess({movies})),
-					catchError(error => of(PlexApiActions.loadMoviesFailure({error})))
+					map(movies => PlexApiActions.getAllSuccess({movies})),
+					catchError(error => of(PlexApiActions.getAllFailure({error})))
 				)
 			)
 		)

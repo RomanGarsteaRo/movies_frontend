@@ -5,6 +5,8 @@ import {environment} from "../environments/environment";
 import {UrlOmdb} from "./services/url/UrlOmdb";
 import {AsyncPipe} from "@angular/common";
 import {AppService} from "./app.service";
+import {select, Store} from "@ngrx/store";
+import {PlexApiSelectors} from "./state/selectors";
 
 
 @Component({
@@ -16,8 +18,8 @@ import {AppService} from "./app.service";
 })
 export class AppComponent implements OnInit{
 
-	constructor(appService: AppService) {
-		appService.init();
+	constructor(private appService: AppService,
+				private store: Store) {
 	}
 
 

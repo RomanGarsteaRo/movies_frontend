@@ -15,7 +15,7 @@ export class FileSrvService {
 
 	all(): Observable<IFile[]> {
 		const url = `${this.baseURL}/all`;
-		return this.http.post<IFile[]>(url, null).pipe(
+		return this.http.get<IFile[]>(url).pipe(
 			catchError(error => throwError(() => error))
 		);
 	}

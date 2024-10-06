@@ -5,8 +5,8 @@ import {IPlex} from "../models/plex.interface";
 export const PlexApiActions = createActionGroup({
 	source: 'PLEX',
 	events: {
-		'Load Movies': emptyProps(),
-		'Load Movies Success': props<{ movies: any[] }>(),
-		'Load Movies Failure': props<{ error: any }>(),
+		'Get All': emptyProps(),
+		'Get All Success': props<{ movies: any[] }>(),
+		'Get All Failure': props<{ error: any }>(),
 	}
 });

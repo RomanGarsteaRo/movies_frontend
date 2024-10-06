@@ -1,56 +1,69 @@
 import {Injectable} from '@angular/core';
 import {IOmdb} from "./services/omdb/omdb.interface";
 import {IPlex} from "./data/data_from_plex";
+import {combineLatest, filter} from "rxjs";
+import {FileUtils, IFile, IFileExtended} from "./state/models/file.interface";
+import {select, Store} from "@ngrx/store";
+import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "./state/selectors";
+import {FileSrvActions, MoviesActions, OmdbDbActions, PlexApiActions} from "./state/actions";
+import {IMovie, MovieUtils} from "./state/models/movie.interface";
+import {SortService} from "./services/sort.service";
+import {MoviesSelectors} from "./state/selectors/movies.selectors";
+import {OmdbUtils} from "./services/omdb/omdb.utils";
+import {PlexUtils} from "./services/plex/plex.utils";
 
-export interface INas {
-	fileName: string,
-	path: string,
-	size: string,
-}
-
-export interface INasExtended {
-	fileName: string,
-	path: string,
-	size: IFileSize,
-
-	title: string,
-	year: number | string,
-	format: string,
-	tags: string[],
-}
-
-export interface IMovie {
-	title: string,
-	year: number | string,
-
-	nas: INasExtended[],
-	omdb: IOmdb | null,
-	plex: IPlex | null,
-}
-
-export interface IFileSize {
-	sizeInByte: number,
-	sizeInUnit: number;
-	unit: string;
-}
-
-const SizeUnits: { [key: string]: number } = {
-	Bytes: 1,
-	KB: 1024,
-	MB: 1024 * 1024,
-	GB: 1024 * 1024 * 1024,
-	TB: 1024 * 1024 * 1024 * 1024
-};
 
 @Injectable({
 	providedIn: 'root'
 })
 export class AppService {
 
-	constructor() {}
+	public  files!: IFileExtended[] | null;
+	public movies!: IMovie[]        | null;
 
-	public init(){
+	constructor(
+		private store: Store,
+		private sort: SortService,
+	) {
+		this.store.dispatch(FileSrvActions.getAll());
+		this.store.dispatch(OmdbDbActions.getAll());
+		this.store.dispatch(PlexApiActions.getAll());
 
+
+		/**
+		 *	 1. Get files from server
+		 *	  	    [{"id": "The Man from U.N.C.L.E. (2015).m2ts",
+		 *           "path": "\\\\NAS\\Movies\\The Man from U.N.C.L.E. (2015).m2ts",
+		 *           "size": "39542323200"}...]
+		 *   2. Get Plex json from API
+		 *   3. Get OMDB json from DB
+		 *	 4. init()
+		 *
+		 */
+		combineLatest([
+			this.store.pipe(select(FileSrvSelectors.files)),
+			this.store.pipe(select(OmdbDbSelectors.movies)),
+			this.store.pipe(select(PlexApiSelectors.movies))
+		]).pipe(
+			filter(([files, omdb, plex]) => !!files.length && !!omdb.length && !!plex.length)
+		).subscribe(([files, omdb, plex]) => {
+			this.init(files, omdb, plex)
+		});
+
+
+		this.store.pipe(select(MoviesSelectors.movies)).subscribe();
 	}
 
+
+	private init(files: IFile[], omdb: IOmdb[], plex: IPlex[]): void {
+
+		this.files  = FileUtils.transformIFileToIFileExtended(files);
+		this.movies = MovieUtils.transformIFileExtendedToIMovie(this.files);
+		this.movies = OmdbUtils.addOmdbToMovies(this.movies, omdb);
+		this.movies = PlexUtils.addPlexToMovies(this.movies, plex);
+
+		if (this.movies) {
+			this.store.dispatch(MoviesActions.updateMovies({ movies: this.movies }));
+		}
+	}
 }

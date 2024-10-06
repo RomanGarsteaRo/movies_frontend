@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {DecimalPipe} from "@angular/common";
-import {} from "../../app.component";
-import {IFileSize} from "../../pages/view-list/view-list.component";
+import {IFileSize} from "../../state/models/file.interface";
+
 
 @Component({
   selector: 'ui-file-size',

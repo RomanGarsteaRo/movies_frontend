@@ -1,7 +1,7 @@
 import {IOmdb} from "./omdb.interface";
 
 
-export class OmdbManager {
+export class OmdbAdapter {
 
 	// Method to manage the object by adding missing properties and removing unnecessary ones
 	public static adapter(obj: Partial<IOmdb>): Partial<IOmdb> {
@@ -68,6 +68,8 @@ export class OmdbManager {
 
 	// Method to add missing properties with default values
 	private static addMissingProperties(obj: Partial<IOmdb>): Partial<IOmdb> {
+		obj = {...obj};
+
 		for (const key of this.validKeys) {
 			if (!obj.hasOwnProperty(key)) {
 				(obj as any)[key] = (this.defaultValues as any)[key];

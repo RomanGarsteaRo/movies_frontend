@@ -17,18 +17,18 @@ export const initialState: PlexApiState = {
 
 export const plexApiReducer = createReducer(
 	initialState,
-	on(PlexApiActions.loadMovies, (state) => ({
+	on(PlexApiActions.getAll, (state) => ({
 		...state,
 		loading: true,
 		error: null
 	})),
-	on(PlexApiActions.loadMoviesSuccess, (state, { movies }) => ({
+	on(PlexApiActions.getAllSuccess, (state, { movies }) => ({
 		...state,
 		movies: [...movies],
 		loading: false,
 		error: null
 	})),
-	on(PlexApiActions.loadMoviesFailure, (state, { error }) => ({
+	on(PlexApiActions.getAllFailure, (state, { error }) => ({
 		...state,
 		loading: false,
 		error

@@ -2,6 +2,9 @@
 // export const path = 'http://www.omdbapi.com/?t=Warrior&plot=full&apikey=8adee8c7&y=2011';
 
 
+import {IMovie} from "./movie.interface";
+import {OmdbAdapter} from "../../services/omdb/ombd.adapter.class";
+
 export interface IOmdb {
 	"imdbID"?: string,
 	"Title"?: string,
@@ -18,7 +21,7 @@ export interface IOmdb {
 	"Country"?: string,
 	"Awards"?: string,
 	"Poster"?: string,
-	"Ratings"?: {"Source": string, "Value": string }[],
+	"Ratings"?: { "Source": string, "Value": string }[],
 	"RotRating"?: string,
 	"Metascore"?: string,
 	"imdbRating"?: string,
