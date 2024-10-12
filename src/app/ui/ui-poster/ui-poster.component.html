@@ -1,0 +1,24 @@
+
+
+
+	<!--TODO ngSrc-->
+	<img [src]="getUrl(movie)" alt="Movie Title 1" (click)="openMovieDetails(movie)">
+
+	<div class="info">
+		<div class="first-row">
+			<span class="year">{{movie.omdb?.Year}}</span>
+			<span class="title" ellipsis>{{movie.plex?.title}}</span>
+		</div>
+
+		<div class="second-row">
+			<span class="data" *ngIf="movie.omdb?.imdbRating !== 'N/A'">{{movie.omdb?.imdbRating}}</span>
+			<span class="NA" *ngIf="!movie.omdb?.imdbRating || movie.omdb?.imdbRating === 'N/A'">N/A</span>
+			<span class="separator">|</span>
+			<span class="data" *ngIf="movie?.plex?.rating">{{((movie?.plex?.rating || 0) * 10) + '%'}}</span>
+			<span class="NA"   *ngIf="!movie?.plex?.rating || movie.omdb?.Metascore === 'N/A'">N/A</span>
+			<span class="separator">|</span>
+			<span class="data" *ngIf="movie.omdb?.Metascore !== 'N/A'">{{movie.omdb?.Metascore}}</span>
+			<span class="NA"   *ngIf="!movie.omdb?.imdbRating || movie.omdb?.Metascore === 'N/A'">N/A</span>
+		</div>
+	</div>
+
