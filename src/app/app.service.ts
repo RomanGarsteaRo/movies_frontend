@@ -49,9 +49,6 @@ export class AppService {
 		).subscribe(([files, omdb, plex]) => {
 			this.init(files, omdb, plex)
 		});
-
-
-		this.store.pipe(select(MoviesSelectors.movies)).subscribe();
 	}
 
 

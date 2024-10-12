@@ -1,0 +1,39 @@
+<!--
+
+																				MIME-тип
+1.  MP4 (широко поддерживаемый формат)  										type="video/mp4
+2.  WebM (формат, оптимизированный для веба) 									type="video/webm
+3.  Matroska (MKV) (многокомпонентный формат для видео, аудио и субтитров)		type="video/x-matroska"
+4.  Ogg (открытый мультимедийный контейнер)										type="video/ogg"
+5.  AVI (старый формат, который иногда еще используется)						type="video/x-msvideo"   video/x-msvideo
+6.  QuickTime (MOV) (формат Apple)												type="video/quicktime"
+7.  MPEG (старый стандарт кодирования видео)									type="video/mpeg"
+8.  3GP (формат для мобильных телефонов)										type="video/3gpp"
+9.  FLV (Flash Video, устаревший формат)										type="video/x-flv"
+10,	Формат M4V — это разновидность формата MP4, созданная компанией Apple.		type="video/x-m4v"  	 video/x-m4v
+
+-->
+
+
+<!--<video id="myVideo" width="600" controls>-->
+<!--	<source [src]="videoSrc" type="video/x-msvideo">-->
+<!--&lt;!&ndash;	<source src="http://localhost:3000/player/play?filename=\\NAS\Movies\The Monster (1994).mkv" type="video/mp4">&ndash;&gt;-->
+<!--&lt;!&ndash;	<source src="http://localhost:3000/player/play?filename=\\NAS\Movies\The Colony (2013).avi" type="video/avi">&ndash;&gt;-->
+<!--&lt;!&ndash;	<source src="http://localhost:3000/player/play?filename=\\NAS\Movies\The Shape of Water (2017).m4v" type="video/mp4">&ndash;&gt;-->
+<!--	Your browser does not support the video tag.-->
+<!--</video>-->
+
+<figure id="videoContainer">
+	<video id="video" controls preload="metadata">
+		<source [src]="videoSrc" type="video/x-msvideo" />
+
+
+	</video>
+</figure>
+
+
+
+<!--<button (click)="loadVideo('\\\\NAS\\Movies\\The Shape of Water (2017).m4v')">Загрузить видео</button>-->
+<button (click)="loadVideo('\\\\NAS\\Movies\\Fatso (2008).avi')">Загрузить видео</button>
+
+
