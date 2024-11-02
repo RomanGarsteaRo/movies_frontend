@@ -1,14 +1,13 @@
 import {Injectable} from '@angular/core';
 import {IOmdb} from "./services/omdb/omdb.interface";
 import {IPlex} from "./data/data_from_plex";
-import {combineLatest, filter} from "rxjs";
+import {combineLatest, filter, Subject} from "rxjs";
 import {FileUtils, IFile, IFileExtended} from "./state/models/file.interface";
 import {select, Store} from "@ngrx/store";
 import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "./state/selectors";
 import {FileSrvActions, MoviesActions, OmdbDbActions, PlexApiActions} from "./state/actions";
 import {IMovie, MovieUtils} from "./state/models/movie.interface";
 import {SortService} from "./services/sort.service";
-import {MoviesSelectors} from "./state/selectors/movies.selectors";
 import {OmdbUtils} from "./services/omdb/omdb.utils";
 import {PlexUtils} from "./services/plex/plex.utils";
 
@@ -20,6 +19,10 @@ export class AppService {
 
 	public  files!: IFileExtended[] | null;
 	public movies!: IMovie[]        | null;
+
+	// Panels
+	public filter: Subject<boolean> = new Subject<boolean>();
+
 
 	constructor(
 		private store: Store,

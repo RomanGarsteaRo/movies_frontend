@@ -1,12 +1,14 @@
-import {Component} from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
 import {IMovie} from "../../state/models/movie.interface";
 import {Observable} from "rxjs";
 import {AsyncPipe, NgForOf, NgIf, SlicePipe} from "@angular/common";
 import {EllipsisDirective} from "../../ui/ellipsis.directive";
-import {Router} from "@angular/router";
 import {UiPosterComponent} from "../../ui/ui-poster/ui-poster.component";
+import {OverlayModule} from "@angular/cdk/overlay";
+import {UiFiltersComponent} from "../../ui/ui-filters/ui-filters.component";
+import {AppService} from "../../app.service";
 
 
 /*
@@ -28,17 +30,35 @@ import {UiPosterComponent} from "../../ui/ui-poster/ui-poster.component";
 		NgForOf,
 		SlicePipe,
 		EllipsisDirective,
-		UiPosterComponent
+		UiPosterComponent,
+		UiFiltersComponent,
+		OverlayModule,
 	],
 	templateUrl: './view-poster.component.html',
 	styleUrl: './view-poster.component.scss'
 })
-export class ViewPosterComponent {
+export class ViewPosterComponent implements OnInit{
 
-	movies$: Observable<IMovie[]>
+	@HostBinding('style')
+	styles: 	{ [key: string]: string } = {};
+	movies$: 	Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
+	filter$: 	Observable<boolean>  = this.appService.filter;
 
-	constructor( private store: Store) {
-		this.movies$ = this.store.pipe(select(MoviesSelectors.movies));
+	constructor( private store: Store,
+				 private appService: AppService,
+	) {}
+
+	ngOnInit(): void {
+		this.filter$.subscribe((isFilterPanel) => {
+			if (isFilterPanel) {
+				this.styles = {
+					'grid-template-columns': 'auto min-content',
+					'column-gap': '88px'
+				};
+			} else {
+				this.styles = {};
+			}
+		});
 	}
 
 }

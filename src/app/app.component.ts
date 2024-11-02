@@ -18,15 +18,21 @@ import {PlexApiSelectors} from "./state/selectors";
 })
 export class AppComponent implements OnInit{
 
+	public isFilterPanel: boolean = false;
+
 	constructor(private appService: AppService,
 				private store: Store) {
 	}
-
 
 	ngOnInit() {
 		UrlBase.url = environment.baseUrl;
 		UrlOmdb.url = environment.omdbUrl;
 		UrlOmdb.key = environment.omdbKey;
+	}
+
+	onFilter() {
+		this.isFilterPanel = !this.isFilterPanel;
+		this.appService.filter.next(this.isFilterPanel);
 	}
 }
 

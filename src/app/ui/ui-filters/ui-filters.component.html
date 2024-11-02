@@ -1,0 +1,37 @@
+
+
+
+
+<div class="genre" cdkDropListGroup>
+	<div class="buttons">
+		<div class="button">Add</div>
+	</div>
+
+
+
+	<div class="content"
+		 cdkDropList
+		 cdkDropListOrientation="mixed"
+		 [cdkDropListData]="groups"
+		 (cdkDropListDropped)="dropGroup($event)"
+	>
+
+		<div class="group" *ngFor="let group of groups" cdkDrag>
+			<div class="title">{{group.title}}</div>
+			<div class="list" cdkDropList [cdkDropListData]="group.items" (cdkDropListDropped)="drop($event)">
+				@for (item of group.items; track item) {
+					<ui-button-toggle cdkDrag>{{item}}</ui-button-toggle>
+				}
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+

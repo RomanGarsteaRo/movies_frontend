@@ -1,11 +1,26 @@
 
-<section *ngIf="movies$ | async as movies" class="poster-grid">
 
-	<ui-poster *ngFor="let movie of movies | slice:0: 50"
-			   [movie]="movie"
-	></ui-poster>
 
-</section>
+
+
+<div class="posters-container">
+	<ui-poster *ngFor="let movie of movies$ | async | slice:0: 50" [movie]="movie"></ui-poster>
+</div>
+
+
+<ui-filters *ngIf="filter$ | async"></ui-filters>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

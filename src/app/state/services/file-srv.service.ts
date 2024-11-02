@@ -9,7 +9,8 @@ import {IFile} from "../models/file.interface";
 })
 export class FileSrvService {
 
-	private baseURL: string = 'http://localhost:3000/file';
+	// private baseURL: string = 'http://localhost:3000/file';
+	private baseURL: string = 'http://10.0.0.74:3000/file';
 
 	constructor(private http: HttpClient) {}
 
