@@ -1,24 +1,55 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {UrlBase} from "./services/url/UrlBase";
 import {environment} from "../environments/environment";
 import {UrlOmdb} from "./services/url/UrlOmdb";
-import {AsyncPipe} from "@angular/common";
+import {AsyncPipe, CommonModule, NgIf} from "@angular/common";
 import {AppService} from "./app.service";
 import {select, Store} from "@ngrx/store";
 import {PlexApiSelectors} from "./state/selectors";
+import {Observable} from "rxjs";
+import {UiFiltersComponent} from "./ui/ui-filters/ui-filters.component";
+import {
+	trigger,
+	state,
+	style,
+	animate,
+	transition,
+} from "@angular/animations";
 
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [RouterOutlet, RouterLink, RouterLinkActive, AsyncPipe,],
+	imports: [RouterOutlet, RouterLink, RouterLinkActive, AsyncPipe, NgIf, UiFiltersComponent, CommonModule],
 	templateUrl: './app.component.html',
-	styleUrl: './app.component.scss'
+	styleUrl: './app.component.scss',
+	animations: [
+		trigger('myInsertRemoveTrigger', [
+			transition(':enter', [
+				style({
+					opacity: 0,
+					width: '0px'
+				}),
+				animate('200ms',
+					style({
+						opacity: 1,
+						width: '600px'
+					}))]),
+			transition(':leave', [
+				animate('200ms',
+					style({
+						opacity: 0,
+						width: '0px'
+					}))]),
+		]),
+	]
 })
 export class AppComponent implements OnInit{
 
-	public isFilterPanel: boolean = false;
+	@HostBinding('style')
+	styles: 	{ [key: string]: string } = {};
+	filter$: Observable<boolean>  = this.appService.filters$;
 
 	constructor(private appService: AppService,
 				private store: Store) {
@@ -28,11 +59,21 @@ export class AppComponent implements OnInit{
 		UrlBase.url = environment.baseUrl;
 		UrlOmdb.url = environment.omdbUrl;
 		UrlOmdb.key = environment.omdbKey;
+
+		this.filter$.subscribe((isFilterPanel) => {
+			if (isFilterPanel) {
+				this.styles = {
+					'grid-template-columns': 'auto min-content',
+					'column-gap': '88px'
+				};
+			} else {
+				this.styles = {};
+			}
+		});
 	}
 
 	onFilter() {
-		this.isFilterPanel = !this.isFilterPanel;
-		this.appService.filter.next(this.isFilterPanel);
+		this.appService.toggleFilterPanel();
 	}
 }
 

@@ -1,34 +1,41 @@
 :host {
+	height: 100%;
+	overflow: auto;
+
 	display: grid;
 	grid-template-columns: 600px;
-	grid-template-rows: auto;
-	border: 1px solid #4b4b4b;
-	overflow: auto;
-	padding: 20px;
+	grid-template-rows: min-content auto;
 
-	.genre{
-		.buttons {
-			display: flex;
-			justify-content: flex-end;
-			.button {
-				user-select: none;
-				cursor: pointer;
-				&:hover{
-					color: #e03472;
-				}
-				&:active{
-					color: #e0115b;
-				}
-			}
-		}
-		.content{
-			display: grid;
-			grid-template-rows: auto;
-			grid-template-columns: repeat(4, 140px);
-			gap: 24px;
-		}
+
+	filter: drop-shadow(0 0 16px #1a1b1c);
+	background-color: #2e2f33;
+
+	header{
+
+		display: grid;
+		grid-template-columns: auto min-content;
+		grid-template-rows: 68px;
+		background-color: #242528;
+
+	}
+
+	.genres{
+		padding: 24px;
+
+
+
+
 	}
 }
+
+
+
+
+
+
+
+
+
 
 
 

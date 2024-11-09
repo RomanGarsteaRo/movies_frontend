@@ -4,6 +4,7 @@ import {provideRouter, withComponentInputBinding} from '@angular/router';
 import {routes} from './app.routes';
 import {provideHttpClient, withInterceptorsFromDi} from "@angular/common/http";
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
+import {provideAnimations} from "@angular/platform-browser/animations";
 import {provideStore} from "@ngrx/store";
 import {provideEffects} from '@ngrx/effects';
 import {provideStoreDevtools} from '@ngrx/store-devtools';
@@ -17,6 +18,7 @@ export const appConfig: ApplicationConfig = {
 		provideZoneChangeDetection({eventCoalescing: true}),
 		provideHttpClient(withInterceptorsFromDi()),
 		provideAnimationsAsync(),
+		provideAnimations(),
 
 		provideStore(reducers),
 		provideEffects(effects),

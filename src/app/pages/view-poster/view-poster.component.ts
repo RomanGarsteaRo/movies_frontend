@@ -37,29 +37,12 @@ import {AppService} from "../../app.service";
 	templateUrl: './view-poster.component.html',
 	styleUrl: './view-poster.component.scss'
 })
-export class ViewPosterComponent implements OnInit{
+export class ViewPosterComponent {
 
-	@HostBinding('style')
-	styles: 	{ [key: string]: string } = {};
 	movies$: 	Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
-	filter$: 	Observable<boolean>  = this.appService.filter;
 
 	constructor( private store: Store,
-				 private appService: AppService,
 	) {}
-
-	ngOnInit(): void {
-		this.filter$.subscribe((isFilterPanel) => {
-			if (isFilterPanel) {
-				this.styles = {
-					'grid-template-columns': 'auto min-content',
-					'column-gap': '88px'
-				};
-			} else {
-				this.styles = {};
-			}
-		});
-	}
 
 }
 

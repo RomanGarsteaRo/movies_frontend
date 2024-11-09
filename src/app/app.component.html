@@ -1,15 +1,31 @@
-<div class="header">
-	<div class="menu-bar">
-		<div class="menu-button" routerLink="/list"   routerLinkActive="active" ariaCurrentWhenActive="page">LIST</div>
-		<div class="menu-button" routerLink="/poster" routerLinkActive="active" ariaCurrentWhenActive="page">POSTER</div>
-		<div class="menu-button" (click)="onFilter()">FILTER</div>
 
-	</div>
-</div>
+
+
 
 <div class="content">
-	<router-outlet />
+
+	<div class="header">
+		<div class="menu-bar">
+			<div class="menu-button" routerLink="/list"   routerLinkActive="active" ariaCurrentWhenActive="page">LIST</div>
+			<div class="menu-button" routerLink="/poster" routerLinkActive="active" ariaCurrentWhenActive="page">POSTER</div>
+			<div class="menu-button" (click)="onFilter()">FILTER</div>
+
+		</div>
+	</div>
+
+	<div class="page-content">
+		<router-outlet />
+	</div>
+
 </div>
+
+
+
+<div class="utils">
+		<ui-filters @myInsertRemoveTrigger *ngIf="filter$ | async"></ui-filters>
+</div>
+
+
 
 
 

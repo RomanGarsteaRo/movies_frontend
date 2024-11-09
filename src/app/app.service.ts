@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {IOmdb} from "./services/omdb/omdb.interface";
 import {IPlex} from "./data/data_from_plex";
-import {combineLatest, filter, Subject} from "rxjs";
+import {BehaviorSubject, combineLatest, filter} from "rxjs";
 import {FileUtils, IFile, IFileExtended} from "./state/models/file.interface";
 import {select, Store} from "@ngrx/store";
 import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "./state/selectors";
@@ -21,7 +21,7 @@ export class AppService {
 	public movies!: IMovie[]        | null;
 
 	// Panels
-	public filter: Subject<boolean> = new Subject<boolean>();
+	public filters$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
 
 
 	constructor(
@@ -65,5 +65,9 @@ export class AppService {
 		if (this.movies) {
 			this.store.dispatch(MoviesActions.updateMovies({ movies: this.movies }));
 		}
+	}
+
+	toggleFilterPanel() {
+		this.filters$.next(!this.filters$.value);
 	}
 }
