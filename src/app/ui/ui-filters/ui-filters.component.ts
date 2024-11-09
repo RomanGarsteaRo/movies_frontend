@@ -5,50 +5,12 @@ import {
 	CdkDrag,
 	CdkDragDrop,
 	CdkDropList, CdkDropListGroup,
-	DragDropModule,
 	moveItemInArray,
 	transferArrayItem
 } from "@angular/cdk/drag-drop";
 import {AppService} from "../../app.service";
-import {Observable} from "rxjs";
-import {Store} from "@ngrx/store";
+import {FilterService} from "../../services/filter.service";
 
-
-/*   GENRES   *************************************************
-
-	--------					|	-----------
-	| IMDB |					|	| MyGenre |
-	--------					|	-----------
-								|
-	01. "Action",				|	01. "Post-apocalyptic",
-	02. "Adventure",			|
-	03. "Animation",			|
-	04. "Biography"				|
-	05. "Comedy",				|
-	06. "Crime"					|
-	07. "Documentary"			|
-	08. "Drama",				|
-	09. "Family",				|
-	10. "Fantasy",				|
-	11. "Film-Noir"				|
-	12. "Game-Show"				|
-	13. "History",				|
-	14. "Horror",				|
-	15. "Music",				|
-	16. "Musical"				|
-	17. "Mystery"				|
-	18. "New"					|
-	19. "Reality-TV"			|
-	21. "Romance",				|
-	22. "Sci-Fi",				|
-	23. "Short"					|
-	24. "Sport"					|
-	25. "Talk-Show"				|
-	26. "Thriller",				|
-	27. "War"					|
-	28. "Western",				|
-
-******************************************************/
 
 @Component({
 	selector: 'ui-filters',
@@ -64,10 +26,10 @@ import {Store} from "@ngrx/store";
 })
 export class UiFiltersComponent {
 
-	public genres$= this.appService.genres$;
+	public genres$= this.filterService.genres$;
 
 	constructor(private appService: AppService,
-				private store: Store,
+				private filterService: FilterService,
 	) {
 	}
 
@@ -84,7 +46,7 @@ export class UiFiltersComponent {
 		}
 	}
 
-	genreChanged(ev: {value: string, state: boolean}) {
-		console.log(ev);
+	genreChanged(genre: {value: string, state: boolean}) {
+		this.filterService.updateMoviesByGenre(genre);
 	}
 }

@@ -22,8 +22,6 @@ export class AppService {
 
 	// Panels
 	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
-	public genres$: BehaviorSubject<string[] | null> = new BehaviorSubject<string[] | null>([]);
-
 
 
 	constructor(
@@ -63,8 +61,6 @@ export class AppService {
 		this.movies = MovieUtils.transformIFileExtendedToIMovie(this.files);
 		this.movies = OmdbUtils.addOmdbToMovies(this.movies, omdb);
 		this.movies = PlexUtils.addPlexToMovies(this.movies, plex);
-		this.collectMovieGenres(this.movies);
-
 
 		if (this.movies) {
 			this.store.dispatch(MoviesActions.updateMovies({ movies: this.movies }));
@@ -75,27 +71,4 @@ export class AppService {
 		this.showFilterPanel$.next(!this.showFilterPanel$.value);
 	}
 
-	private collectMovieGenres(movies: IMovie[] | null): void{
-		if (!movies) {
-			this.genres$.next(null) ;
-		}
-		let genreSet: Set<string> = new Set();
-		let genreArray: string[] = [];
-
-		// Unique value
-		movies?.forEach(movie => {
-			// OMDB
-			if (movie.omdb?.Genre) {
-				const omdbGenres = movie.omdb.Genre.split(", ").map(genre => genre.trim());
-				omdbGenres.forEach(genre => genreSet.add(genre));
-			}
-			// PLEX
-			if (movie.plex?.Genre) {
-				movie.plex.Genre.forEach(genreObj => genreSet.add(genreObj.tag));
-			}
-		});
-		genreArray = Array.from(genreSet).sort((a, b) => a.localeCompare(b));
-
-		this.genres$.next( genreArray || null) ;
-	}
 }

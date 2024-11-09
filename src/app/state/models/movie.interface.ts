@@ -7,6 +7,7 @@ import {SortService} from "../../services/sort.service";
 export interface IMovie {
 	title: string,
 	year: number | string,
+	show: boolean,
 
 	nas: IFileExtended[],
 	omdb: IOmdb | null,
@@ -42,6 +43,8 @@ export class MovieUtils {
 			movies.push({
 				title,
 				year,
+				show: true,
+
 				nas: assets,
 				plex: null,
 				omdb: null,
