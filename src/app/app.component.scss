@@ -5,17 +5,19 @@
 	display: grid;
 	grid-template-columns: auto min-content;
 	grid-template-rows: auto;
-	grid-row-gap: 18px;
-	flex-direction: column;
+
 	background-color: #1f2023;
 	color: #5d5d5d;
 	padding-left: 48px;
 
 	.content{
+		width: 100%;
 		height: 100%;
+		overflow: hidden;
+
 		display: grid;
 		grid-template-columns: auto;
-		grid-template-rows: min-content auto;
+		grid-template-rows:  auto;
 
 		.header{
 			padding-top: 24px;
@@ -42,7 +44,10 @@
 		}
 
 		.page-content{
-			overflow: hidden;
+			overflow: auto;
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: auto;
 			width: 100%;
 			height: 100%;
 		}

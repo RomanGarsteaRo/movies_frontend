@@ -49,7 +49,7 @@ export class AppComponent implements OnInit{
 
 	@HostBinding('style')
 	styles: 	{ [key: string]: string } = {};
-	filter$: Observable<boolean>  = this.appService.filters$;
+	showFilterPanel$: Observable<boolean>  = this.appService.showFilterPanel$;
 
 	constructor(private appService: AppService,
 				private store: Store) {
@@ -60,12 +60,10 @@ export class AppComponent implements OnInit{
 		UrlOmdb.url = environment.omdbUrl;
 		UrlOmdb.key = environment.omdbKey;
 
-		this.filter$.subscribe((isFilterPanel) => {
+
+		this.showFilterPanel$.subscribe((isFilterPanel) => {
 			if (isFilterPanel) {
-				this.styles = {
-					'grid-template-columns': 'auto min-content',
-					'column-gap': '88px'
-				};
+				this.styles = {'grid-template-columns': 'auto min-content',};
 			} else {
 				this.styles = {};
 			}

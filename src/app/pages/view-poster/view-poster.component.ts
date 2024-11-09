@@ -39,7 +39,7 @@ import {AppService} from "../../app.service";
 })
 export class ViewPosterComponent {
 
-	movies$: 	Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
+	movies$: Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
 
 	constructor( private store: Store,
 	) {}

@@ -1,4 +1,4 @@
-import {Component, HostBinding, HostListener, Input} from '@angular/core';
+import {Component, EventEmitter, HostBinding, HostListener, Input, output, Output} from '@angular/core';
 
 @Component({
   selector: 'ui-button-toggle',
@@ -10,7 +10,9 @@ import {Component, HostBinding, HostListener, Input} from '@angular/core';
 export class UiButtonToggleComponent {
 
 	public state: boolean = false;
-	@Input() text: string = "";
+
+	@Input()  text: string = "";
+	@Output() onToggle = new EventEmitter<{value: string, state: boolean}>(); // Output<{value: string, state: boolean}>({alias: 'ngxNameChange'})
 
 	@HostBinding('class.active') get active() {
 		return this.state;
@@ -18,6 +20,7 @@ export class UiButtonToggleComponent {
 
 	@HostListener('click') onClick() {
 		this.state = !this.state;
+		this.onToggle.emit({value: this.text, state: this.state})
 	}
 
 }

@@ -9,27 +9,46 @@ import {
 	moveItemInArray,
 	transferArrayItem
 } from "@angular/cdk/drag-drop";
+import {AppService} from "../../app.service";
+import {Observable} from "rxjs";
+import {Store} from "@ngrx/store";
 
 
-/*
-"Action",
-"Adventure",
-"Animated",
-"Comedy",
-"Drama",
-"Fantasy",
-"Historical",
-"Horror",
-"Musical",
-"Noir",
-"Romance",
-"Science fiction",
-"Thriller",
-"Western",
-"Post-apocalyptic",
-"Family",
-"Mystery"
-**/
+/*   GENRES   *************************************************
+
+	--------					|	-----------
+	| IMDB |					|	| MyGenre |
+	--------					|	-----------
+								|
+	01. "Action",				|	01. "Post-apocalyptic",
+	02. "Adventure",			|
+	03. "Animation",			|
+	04. "Biography"				|
+	05. "Comedy",				|
+	06. "Crime"					|
+	07. "Documentary"			|
+	08. "Drama",				|
+	09. "Family",				|
+	10. "Fantasy",				|
+	11. "Film-Noir"				|
+	12. "Game-Show"				|
+	13. "History",				|
+	14. "Horror",				|
+	15. "Music",				|
+	16. "Musical"				|
+	17. "Mystery"				|
+	18. "New"					|
+	19. "Reality-TV"			|
+	21. "Romance",				|
+	22. "Sci-Fi",				|
+	23. "Short"					|
+	24. "Sport"					|
+	25. "Talk-Show"				|
+	26. "Thriller",				|
+	27. "War"					|
+	28. "Western",				|
+
+******************************************************/
 
 @Component({
 	selector: 'ui-filters',
@@ -45,25 +64,12 @@ import {
 })
 export class UiFiltersComponent {
 
-	public genres: string[] = [
-		"Action",
-		"Adventure",
-		"Animated",
-		"Comedy",
-		"Drama",
-		"Fantasy",
-		"Family",
-		"Historical",
-		"Horror",
-		"Musical",
-		"Mystery",
-		"Noir",
-		"Post-apocalyptic",
-		"Romance",
-		"Science fiction",
-		"Thriller",
-		"Western"
-	];
+	public genres$= this.appService.genres$;
+
+	constructor(private appService: AppService,
+				private store: Store,
+	) {
+	}
 
 	drop(event: CdkDragDrop<string[]>) {
 		if (event.previousContainer === event.container) {
@@ -78,4 +84,7 @@ export class UiFiltersComponent {
 		}
 	}
 
+	genreChanged(ev: {value: string, state: boolean}) {
+		console.log(ev);
+	}
 }

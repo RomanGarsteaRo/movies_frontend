@@ -7,11 +7,15 @@
 
 <header>
 
+
 </header>
 
 
 <div class="genres">
-	<ui-button-toggle *ngFor="let item of genres">{{item}}</ui-button-toggle>
+	<ui-button-toggle *ngFor="let item of genres$ | async"
+					  (onToggle)="genreChanged($event)"
+					  [text]="item"
+	></ui-button-toggle>
 </div>
 
 
