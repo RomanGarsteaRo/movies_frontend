@@ -12,6 +12,7 @@ export class OmdbAdapter {
 	}
 
 	private static validKeys: Set<string> = new Set([
+		"imdbID",
 		"Title",
 		"Year",
 		"Rated",
@@ -30,7 +31,6 @@ export class OmdbAdapter {
 		"Metascore",
 		"imdbRating",
 		"imdbVotes",
-		"imdbID",
 		"Type",
 		"DVD",
 		"BoxOffice",
@@ -39,6 +39,7 @@ export class OmdbAdapter {
 		"Response",
 	]);
 	private static defaultValues: Partial<IOmdb> = {
+		imdbID: "N/A",
 		Title: "N/A",
 		Year: "N/A",
 		Rated: "N/A",
@@ -57,7 +58,6 @@ export class OmdbAdapter {
 		Metascore: "N/A",
 		imdbRating: "N/A",
 		imdbVotes: "N/A",
-		imdbID: "N/A",
 		Type: "N/A",
 		DVD: "N/A",
 		BoxOffice: "N/A",

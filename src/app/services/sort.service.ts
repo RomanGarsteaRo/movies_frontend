@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
-import {IFileExtended} from "../state/models/file.interface";
-import {IMovie} from "../state/models/movie.interface";
+import {IMovie} from "./movie/movie.interface";
+import {IFileExtended} from "./file/file.interface";
+
+
 
 @Injectable({
 	providedIn: 'root'

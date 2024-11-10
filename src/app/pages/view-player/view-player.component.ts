@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {IMovie} from "../../state/models/movie.interface";
 import {HttpClient} from "@angular/common/http";
 import {NgIf} from "@angular/common";
 import {catchError, of, tap} from "rxjs";
+import {IMovie} from "../../services/movie/movie.interface";
 
 @Component({
   selector: 'app-view-player',

@@ -1,18 +1,7 @@
-import {IFileExtended} from "./file.interface";
-import {IOmdb} from "./omdb.interface";
-import {IPlex} from "./plex.interface";
-import {SortService} from "../../services/sort.service";
+import {IMovie} from "./movie.interface";
 
-
-export interface IMovie {
-	title: string,
-	year: number | string,
-	show: boolean,
-
-	nas: IFileExtended[],
-	omdb: IOmdb | null,
-	plex: IPlex | null,
-}
+import {Movie} from "./movie.class";
+import {IFileExtended} from "../file/file.interface";
 
 export class MovieUtils {
 
@@ -31,6 +20,7 @@ export class MovieUtils {
 			let title: string = '';
 			let year: number | string = 'N/A';
 			let assets: IFileExtended[] = [];
+			const newMovie = new Movie();
 
 			files.forEach(item => {
 				if (titleUnique === item.title + item.year) {
@@ -40,15 +30,8 @@ export class MovieUtils {
 				}
 			})
 
-			movies.push({
-				title,
-				year,
-				show: true,
-
-				nas: assets,
-				plex: null,
-				omdb: null,
-			})
+			newMovie.nas = assets;
+			movies.push(newMovie);
 		});
 
 		return this.sortByTitleAndTags(movies);
@@ -73,5 +56,20 @@ export class MovieUtils {
 			return a.tags.length - b.tags.length;
 		}))
 		return arr;
+	}
+
+
+	// Movie duration transformation      6156768 -> "1h 42m"
+	public static getFormattedDuration(duration: number, format?: "h" | "m"): string {
+		const totalMinutes = Math.floor(duration / 60000);
+		const hours = Math.floor(totalMinutes / 60);
+		const minutes = totalMinutes % 60;
+		if (format === "h") {
+			return hours.toString();
+		}
+		if (format === "m") {
+			return minutes.toString();
+		}
+		return `${hours}h ${minutes}m`;
 	}
 }

@@ -2,13 +2,14 @@ import {Component} from '@angular/core';
 import {AsyncPipe, CommonModule, DecimalPipe, NgForOf, NgIf} from "@angular/common";
 import {FileSizeComponent} from "../../ui/file-size/file-size.component";
 import {NoCommaPipe} from "../../ui/no-comma.pipe";
-import {IPlex} from "../../data/data_from_plex";
 import {IOmdb} from "../../services/omdb/omdb.interface";
-import {FileUtils, IFile, IFileExtended, IFileSize} from "../../state/models/file.interface";
-import {IMovie} from "../../state/models/movie.interface";
 import {SortService} from "../../services/sort.service";
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
+import {IFile, IFileExtended, IFileSize} from "../../services/file/file.interface";
+import {IPlex} from "../../services/plex/plex.interface";
+import {IMovie} from "../../services/movie/movie.interface";
+import {FileUtils} from "../../services/file/file.utils";
 
 
 

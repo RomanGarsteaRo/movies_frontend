@@ -1,7 +1,8 @@
-import {IMovie} from "../../state/models/movie.interface";
+
+import {IOmdb} from "./omdb.interface";
 import {OmdbAdapter} from "./ombd.adapter.class";
-import {IOmdb} from "../../state/models/omdb.interface";
-import {TitleUtils} from "../title.utils.";
+import {IMovie} from "../movie/movie.interface";
+import {TitleUtils} from "../utils/title.utils.";
 
 
 

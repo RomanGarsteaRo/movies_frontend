@@ -1,5 +1,5 @@
 import {createActionGroup, props} from "@ngrx/store";
-import {IOmdb} from "../models/omdb.interface";
+import {IOmdb} from "../../services/omdb/omdb.interface";
 
 
 export const OmdbApiActions = createActionGroup({

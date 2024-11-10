@@ -1,6 +1,7 @@
-import {IOmdb} from "../models/omdb.interface";
+
 import {createReducer, on} from "@ngrx/store";
 import {OmdbApiActions} from "../actions";
+import {IOmdb} from "../../services/omdb/omdb.interface";
 
 
 export interface OmdbApiState {

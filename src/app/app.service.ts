@@ -1,15 +1,18 @@
-import {Injectable} from '@angular/core';
-import {IOmdb} from "./services/omdb/omdb.interface";
-import {IPlex} from "./data/data_from_plex";
 import {BehaviorSubject, combineLatest, filter} from "rxjs";
-import {FileUtils, IFile, IFileExtended} from "./state/models/file.interface";
+import {Injectable} from '@angular/core';
+
 import {select, Store} from "@ngrx/store";
 import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "./state/selectors";
 import {FileSrvActions, MoviesActions, OmdbDbActions, PlexApiActions} from "./state/actions";
-import {IMovie, MovieUtils} from "./state/models/movie.interface";
-import {SortService} from "./services/sort.service";
-import {OmdbUtils} from "./services/omdb/omdb.utils";
+
+import {FileUtils} from "./services/file/file.utils";
+import {IFile, IFileExtended} from "./services/file/file.interface";
+import {IPlex} from "./services/plex/plex.interface";
 import {PlexUtils} from "./services/plex/plex.utils";
+import {IOmdb} from "./services/omdb/omdb.interface";
+import {OmdbUtils} from "./services/omdb/omdb.utils";
+import {IMovie} from "./services/movie/movie.interface";
+import {MovieUtils} from "./services/movie/movie.utils";
 
 
 @Injectable({
@@ -26,7 +29,6 @@ export class AppService {
 
 	constructor(
 		private store: Store,
-		private sort: SortService,
 	) {
 		this.store.dispatch(FileSrvActions.getAll());
 		this.store.dispatch(OmdbDbActions.getAll());

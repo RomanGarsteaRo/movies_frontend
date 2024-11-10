@@ -1,9 +1,9 @@
 import {Injectable, OnInit} from '@angular/core';
 import {BehaviorSubject, Observable} from "rxjs";
-import {IMovie} from "../state/models/movie.interface";
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../state/selectors/movies.selectors";
 import {MoviesActions} from "../state/actions";
+import {IMovie} from "./movie/movie.interface";
 
 /*   GENRES   *************************************************
 

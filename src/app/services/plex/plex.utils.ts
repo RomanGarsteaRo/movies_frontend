@@ -1,6 +1,8 @@
-import {IMovie} from "../../state/models/movie.interface";
-import {IPlex} from "../../state/models/plex.interface";
-import {TitleUtils} from "../title.utils.";
+
+
+import {IMovie} from "../movie/movie.interface";
+import {IPlex} from "./plex.interface";
+import {TitleUtils} from "../utils/title.utils.";
 
 
 export class PlexUtils {
@@ -89,7 +91,7 @@ export class PlexUtils {
 	private static thereAreSimilaritiesInYears(nas: IMovie, plex: IPlex): boolean {
 		let plexYear = plex.year;
 		let nasYear = nas.year;
-		if (plexYear && nasYear !== 'N/A' && typeof nasYear === "number") {
+		if (plexYear && nasYear) {
 			return plexYear === nasYear || plexYear === nasYear - 1 || plexYear === nasYear + 1;
 		} else {
 			return false;

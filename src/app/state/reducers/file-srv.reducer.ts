@@ -1,6 +1,7 @@
 import {createReducer, on} from "@ngrx/store";
 import {FileSrvActions} from "../actions";
-import {IFile} from "../models/file.interface";
+import {IFile} from "../../services/file/file.interface";
+
 
 export interface FileSrvState {
 	file: IFile[];

@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
-import {IOmdb} from "../models/omdb.interface";
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, tap, throwError} from "rxjs";
+import {IOmdb} from "../../services/omdb/omdb.interface";
 
 @Injectable({
 	providedIn: 'root'

@@ -1,6 +1,6 @@
 import {createReducer, on} from "@ngrx/store";
-import {OmdbApiActions, OmdbDbActions} from "../actions";
-import {IOmdb} from "../models/omdb.interface";
+import {OmdbDbActions} from "../actions";
+import {IOmdb} from "../../services/omdb/omdb.interface";
 
 export interface OmdbDbState {
 	movies: IOmdb[];

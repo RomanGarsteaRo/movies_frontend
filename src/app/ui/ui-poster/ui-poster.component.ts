@@ -1,8 +1,8 @@
 import {Component, Input} from '@angular/core';
-import {IMovie} from "../../state/models/movie.interface";
 import {EllipsisDirective} from "../ellipsis.directive";
 import {NgForOf, NgIf, SlicePipe} from "@angular/common";
 import {Router} from "@angular/router";
+import {IMovie} from "../../services/movie/movie.interface";
 
 @Component({
   selector: 'ui-poster',

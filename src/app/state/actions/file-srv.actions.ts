@@ -1,6 +1,5 @@
 import {createActionGroup, emptyProps, props} from '@ngrx/store';
-import {IFile} from "../models/file.interface";
-
+import {IFile} from "../../services/file/file.interface";
 
 export const FileSrvActions = createActionGroup({
 	source: 'FILE SRV',

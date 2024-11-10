@@ -1,6 +1,7 @@
 import {MoviesState} from "../reducers/movies.reducer";
 import {createFeatureSelector, createSelector} from "@ngrx/store";
-import {IMovie} from "../models/movie.interface";
+import {IMovie} from "../../services/movie/movie.interface";
+
 
 
 const selectMoviesState = createFeatureSelector<MoviesState>('movies');

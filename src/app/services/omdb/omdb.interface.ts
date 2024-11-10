@@ -17,8 +17,9 @@ export interface IOmdb {
 	"Country"?: string,
 	"Awards"?: string,
 	"Poster"?: string,
-	"Ratings"?: {"Source": string, "Value": string }[],
+	"Ratings"?: { "Source": string, "Value": string }[],
 	"Metascore"?: string,
+	"RotRating"?: string,
 	"imdbRating"?: string,
 	"imdbVotes"?: string,
 	"imdbID"?: string,
@@ -31,3 +32,6 @@ export interface IOmdb {
 	"Response"?: string,
 	"Error"?: string
 }
+
+
+

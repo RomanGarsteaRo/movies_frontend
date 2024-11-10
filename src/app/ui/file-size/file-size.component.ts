@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {DecimalPipe} from "@angular/common";
-import {IFileSize} from "../../state/models/file.interface";
+import {IFileSize} from "../../services/file/file.interface";
 
 
 @Component({

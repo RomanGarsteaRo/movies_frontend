@@ -1,7 +1,6 @@
 import {Injectable} from "@angular/core";
 import {HttpClient,} from "@angular/common/http";
 import {catchError, map, Observable, throwError} from "rxjs";
-import {IPlex} from "../models/plex.interface";
 
 @Injectable({
 	providedIn: 'root'

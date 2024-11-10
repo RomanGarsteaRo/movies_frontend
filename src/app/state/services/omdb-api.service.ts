@@ -1,8 +1,8 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpParams} from "@angular/common/http";
-import {catchError, concatMap, filter, from, map, Observable, of, tap, throwError, toArray} from "rxjs";
-import {IOmdb} from "../models/omdb.interface";
+import {catchError, concatMap, filter, from, map, Observable, of, throwError, toArray} from "rxjs";
 import {OmdbAdapter} from "../../services/omdb/ombd.adapter.class";
+import {IOmdb} from "../../services/omdb/omdb.interface";
 
 // 'http://www.omdbapi.com/?t=oblivion&plot=full&apikey=8adee8c7';
 // 'http://www.omdbapi.com/?t=Warrior&plot=full&apikey=8adee8c7&y=2011';
