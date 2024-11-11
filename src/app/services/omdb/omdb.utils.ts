@@ -12,7 +12,7 @@ export class OmdbUtils {
 	// Add OMDB to Movies[]
 	public static addOmdbToMovies(movies: IMovie[] | null, omdb: IOmdb[]): IMovie[] | null {
 		if (!movies || !omdb || movies.length === 0 || omdb.length === 0) {
-			return null; // Возвращаем null, если один из параметров отсутствует или пустой
+			return null;
 		}
 
 		movies.forEach(movieItem => {

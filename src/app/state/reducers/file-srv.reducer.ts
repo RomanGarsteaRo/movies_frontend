@@ -65,8 +65,8 @@ export const fileSrvReducer = createReducer(
 	})),
 	on(FileSrvActions.renameSuccess, (state, { oldName, newName }) => {
 		const updatedFiles = state.file.map(file => {
-			if (file.fileName === oldName) {
-				const newPath = file.path.replace(file.fileName, newName);
+			if (file.title === oldName) {
+				const newPath = file.path.replace(file.title, newName);
 				return { ...file, fileName: newName, path: newPath };
 			}
 			return file;

@@ -3,26 +3,26 @@ import {IFile, IFileExtended, IFileSize, SizeUnits} from "./file.interface";
 export class FileUtils {
 
 	// Transform IFile[] to IFileExtended[]
-	static transformIFileToIFileExtended(files: IFile[]): IFileExtended[] | null {
+	static transformIFileToIFileExtended(filesEx: IFileExtended[], files: IFile[]): IFileExtended[] | null {
 		if (!files?.length) {return null}
 		return files.map((movie: IFile) => {
-			const match = movie.fileName.match(/^(.+?)\s\((\d{4})\)/);
+			const match = movie.title.match(/^(.+?)\s\((\d{4})\)/);
 			const title = match?.[1] || '';
 			const year: number | string = parseInt(match?.[2] || '', 10) || 'N/A';
-			const format = movie.fileName.match(/(?:\.([^.]+))?$/)?.[1] || '';
-			const tags: string[] = FileUtils.getTagsFromTitle(movie.fileName);
+			const format = movie.title.match(/(?:\.([^.]+))?$/)?.[1] || '';
+			const tags: string[] = FileUtils.getTagsFromTitle(movie.title);
 
 			return {
-				fileName: movie.fileName,
+				title:    title,
 				path:     movie.path,
 				size:     FileUtils.convertBytesToIFileSize(+movie.size),
-				title:    title,
 				year,
 				format,
 				tags
 			};
 		});
 	}
+
 
 	// Bytes to IFileSize
 	static convertBytesToIFileSize(bytes: number | IFileSize): IFileSize {

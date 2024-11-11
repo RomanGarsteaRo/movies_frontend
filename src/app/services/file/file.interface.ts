@@ -1,16 +1,15 @@
 
 export interface IFile {
-	fileName: string,
+	title: string,
 	path: string,
 	size: string,
 }
 
 export interface IFileExtended {
-	fileName: string,
+	title: string,
 	path: string,
 	size: IFileSize,
 
-	title: string,
 	year: number | string,
 	format: string,
 	tags: string[],

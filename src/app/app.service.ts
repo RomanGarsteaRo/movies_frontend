@@ -20,8 +20,9 @@ import {MovieUtils} from "./services/movie/movie.utils";
 })
 export class AppService {
 
-	public files!:  IFileExtended[] | null;
-	public movies!: IMovie[]        | null;
+	public filesEx:  	   IFileExtended[] = [];
+	public filesExGroup: IFileExtended[][] = [];
+	public movies: 		     	  IMovie[] = [];
 
 	// Panels
 	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
@@ -59,10 +60,11 @@ export class AppService {
 
 	private init(files: IFile[], omdb: IOmdb[], plex: IPlex[]): void {
 
-		this.files  = FileUtils.transformIFileToIFileExtended(files);
-		this.movies = MovieUtils.transformIFileExtendedToIMovie(this.files);
-		this.movies = OmdbUtils.addOmdbToMovies(this.movies, omdb);
-		this.movies = PlexUtils.addPlexToMovies(this.movies, plex);
+		FileUtils.transformIFileToIFileExtended(this.filesEx, files);
+		MovieUtils.groupFileExtended(this.filesEx)
+		MovieUtils.addNasToMovies(this.movies, this.filesEx);
+		OmdbUtils.addOmdbToMovies(this.movies, omdb);
+		PlexUtils.addPlexToMovies(this.movies, plex);
 
 		if (this.movies) {
 			this.store.dispatch(MoviesActions.updateMovies({ movies: this.movies }));

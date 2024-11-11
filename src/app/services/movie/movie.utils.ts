@@ -6,14 +6,22 @@ import {IFileExtended} from "../file/file.interface";
 export class MovieUtils {
 
 
-	// Transform IFileExtended[] to IMovie[]
-	static transformIFileExtendedToIMovie(files: IFileExtended[] | null): IMovie[] | null {
 
-		if (!files) {return null}
-		let movies: IMovie[] = [];
+	static groupFileExtended(fileEx: IFileExtended[]):IFileExtended[][] {
 
 		// 1. Get List of Title (no duplicate)
-		let titlesUnique: Set<string> = this.getTitleUnique(files);
+		let titlesUnique: Set<string> = this.getTitleUnique(fileEx);
+
+		return [];
+	}
+
+
+	// Transform IFileExtended[] to IMovie[]
+	static addNasToMovies(movies: IMovie[], filesEx: IFileExtended[] | null): IMovie[] | null {
+		if (!filesEx) {return null}
+
+		// 1. Get List of Title (no duplicate)
+		let titlesUnique: Set<string> = this.getTitleUnique(filesEx);
 
 		// 2. Transform data: IFileExtended[] to IMovie[]
 		titlesUnique.forEach(titleUnique => {
@@ -22,7 +30,7 @@ export class MovieUtils {
 			let assets: IFileExtended[] = [];
 			const newMovie = new Movie();
 
-			files.forEach(item => {
+			filesEx.forEach(item => {
 				if (titleUnique === item.title + item.year) {
 					title = item.title;
 					year = item.year;
