@@ -1,26 +1,33 @@
-import {IFile, IFileExtended, IFileSize, SizeUnits} from "./file.interface";
+import {IFile, IFileSize, SizeUnits} from "./file.interface";
+import {TitleUtils} from "../utils/title.utils.";
 
 export class FileUtils {
 
-	// Transform IFile[] to IFileExtended[]
-	static transformIFileToIFileExtended(filesEx: IFileExtended[], files: IFile[]): IFileExtended[] | null {
-		if (!files?.length) {return null}
-		return files.map((movie: IFile) => {
-			const match = movie.title.match(/^(.+?)\s\((\d{4})\)/);
-			const title = match?.[1] || '';
-			const year: number | string = parseInt(match?.[2] || '', 10) || 'N/A';
-			const format = movie.title.match(/(?:\.([^.]+))?$/)?.[1] || '';
-			const tags: string[] = FileUtils.getTagsFromTitle(movie.title);
 
-			return {
-				title:    title,
-				path:     movie.path,
-				size:     FileUtils.convertBytesToIFileSize(+movie.size),
-				year,
-				format,
-				tags
-			};
+	// Group Files with same Title
+	static group(filesEx: IFile[]):IFile[][]  {
+		if(!filesEx){return [];}
+		let allGroup: IFile[][] = [];
+
+		// 1. Get List of Title (no duplicate)
+		let titlesUnique: string[] = TitleUtils.getTitleUnique(filesEx);
+
+		// 2. Group IFileExtended[] to IFileExtended[][]
+		titlesUnique.forEach(titleUnique => {
+			let title: string = '';
+			let year: number | string = 'N/A';
+			let group: IFile[] = [];
+
+			filesEx.forEach(item => {
+				if (titleUnique === item.title + item.year) {
+					title = item.title;
+					year = item.year;
+					group.push(item);
+				}
+			})
+			allGroup.push(group);
 		});
+		return allGroup;
 	}
 
 
@@ -53,13 +60,6 @@ export class FileUtils {
 				unit: unit
 			};
 		}
-	}
-
-	// "Blade (1998) 3D ISO.mp4"  ->  ['3D', 'ISO']
-	static getTagsFromTitle(id: string): string[] {
-		id = id.replace(/.*?\(\d{4}\)/, '').trim();
-		id = id.replace(/\.[^.]+$/, '');
-		return id.split(' ').filter(item => item !== '');
 	}
 
 }

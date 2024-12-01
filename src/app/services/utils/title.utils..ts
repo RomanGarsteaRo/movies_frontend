@@ -1,3 +1,5 @@
+import {IFile} from "../file/file.interface";
+
 export class TitleUtils {
 
 	public static normalizeTitle(fileName: string | undefined): string | undefined {
@@ -17,5 +19,19 @@ export class TitleUtils {
 		fileName = fileName?.toLowerCase();
 
 		return fileName || undefined;
+	}
+
+	// No duplicate  ->  title unique  ->  "name + year"
+	public static getTitleUnique(arr: IFile[]): string[] {
+		let unique: Set<string> = new Set<string>();
+		// let repeat: string[] = [];
+		arr.forEach(item => {
+			if (unique.has(item.title + item.year)) {
+				// repeat.push(item.title);
+			} else {
+				unique.add(item.title + item.year);
+			}
+		});
+		return [...unique];
 	}
 }

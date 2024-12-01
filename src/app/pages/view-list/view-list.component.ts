@@ -6,7 +6,7 @@ import {IOmdb} from "../../services/omdb/omdb.interface";
 import {SortService} from "../../services/sort.service";
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {IFile, IFileExtended, IFileSize} from "../../services/file/file.interface";
+import {IFile, IFileSize} from "../../services/file/file.interface";
 import {IPlex} from "../../services/plex/plex.interface";
 import {IMovie} from "../../services/movie/movie.interface";
 import {FileUtils} from "../../services/file/file.utils";
@@ -95,7 +95,7 @@ export class ViewListComponent {
 	private getMovies3d(arr: IMovie[]): number {
 		return arr.reduce((acc: number, item: IMovie) => {
 			let count = 0;
-			item.nas.forEach(file => {
+			item.files.forEach(file => {
 				if (file.tags.find(tag => tag === '3D')) {
 					count++;
 				}
@@ -108,7 +108,7 @@ export class ViewListComponent {
 		if(!this.movies) {return undefined}
 		let size: number = 0;
 		this.movies.forEach(item => {
-			item.nas.forEach((movie: IFileExtended) => size += movie.size.sizeInByte)
+			item.files.forEach((movie: IFile) => size += movie.size.sizeInByte)
 		});
 		return FileUtils.convertBytesToIFileSize(size / this.movies.length);
 	}

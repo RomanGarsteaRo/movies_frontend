@@ -72,7 +72,7 @@
 </div>
 <div class="tab">
 	<ng-container *ngFor="let group of movies; let i = index">
-		<div class="row" *ngFor="let item of group.nas; let j = index">
+		<div class="row" *ngFor="let item of group.files; let j = index">
 			<div class="number">{{ j === 0 ? i + 1 + '.' : '' }}</div>
 			<div class="year">{{ j === 0 ? item.year : '' }}</div>
 			<ui-file-size [size]="item.size"></ui-file-size>

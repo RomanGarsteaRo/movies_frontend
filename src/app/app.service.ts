@@ -6,11 +6,10 @@ import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "./state/selec
 import {FileSrvActions, MoviesActions, OmdbDbActions, PlexApiActions} from "./state/actions";
 
 import {FileUtils} from "./services/file/file.utils";
-import {IFile, IFileExtended} from "./services/file/file.interface";
+import {IFile} from "./services/file/file.interface";
 import {IPlex} from "./services/plex/plex.interface";
 import {PlexUtils} from "./services/plex/plex.utils";
 import {IOmdb} from "./services/omdb/omdb.interface";
-import {OmdbUtils} from "./services/omdb/omdb.utils";
 import {IMovie} from "./services/movie/movie.interface";
 import {MovieUtils} from "./services/movie/movie.utils";
 
@@ -19,10 +18,6 @@ import {MovieUtils} from "./services/movie/movie.utils";
 	providedIn: 'root'
 })
 export class AppService {
-
-	public filesEx:  	   IFileExtended[] = [];
-	public filesExGroup: IFileExtended[][] = [];
-	public movies: 		     	  IMovie[] = [];
 
 	// Panels
 	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
@@ -60,15 +55,14 @@ export class AppService {
 
 	private init(files: IFile[], omdb: IOmdb[], plex: IPlex[]): void {
 
-		FileUtils.transformIFileToIFileExtended(this.filesEx, files);
-		MovieUtils.groupFileExtended(this.filesEx)
-		MovieUtils.addNasToMovies(this.movies, this.filesEx);
-		OmdbUtils.addOmdbToMovies(this.movies, omdb);
-		PlexUtils.addPlexToMovies(this.movies, plex);
+		let groups: IFile[][] = [];
+		let movies: IMovie[]  = [];
 
-		if (this.movies) {
-			this.store.dispatch(MoviesActions.updateMovies({ movies: this.movies }));
-		}
+		groups = FileUtils.group(files);
+		movies = MovieUtils.createIMovies(groups);
+		movies = MovieUtils.connectOmdb(movies, omdb);
+		movies = PlexUtils.connectPlex(movies, plex);
+		this.store.dispatch(MoviesActions.updateMovies({ movies: movies }));
 	}
 
 	public toggleFilterPanel() {

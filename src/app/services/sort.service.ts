@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {IMovie} from "./movie/movie.interface";
-import {IFileExtended} from "./file/file.interface";
+import {IFile} from "./file/file.interface";
 
 
 
@@ -15,7 +15,7 @@ export class SortService {
 
 	public sortByTitleAndTags(arr: IMovie[]): IMovie[] {
 		arr = arr.sort((a: IMovie, b: IMovie) => a.title.localeCompare(b.title));
-		arr.forEach((movie: IMovie) => movie.nas.sort((a: IFileExtended, b: IFileExtended) => {
+		arr.forEach((movie: IMovie) => movie.files.sort((a: IFile, b: IFile) => {
 			return a.tags.length - b.tags.length;
 		}))
 		return arr;
@@ -33,10 +33,10 @@ export class SortService {
 
 	public onSortBySize(movies: IMovie[]) {
 		setTimeout(() => {
-			if (+movies[0].nas[0].size.sizeInByte < +movies[1].nas[0].size.sizeInByte) {
-				movies = movies.sort((a, b) => +b?.nas[0].size.sizeInByte - +a?.nas[0].size.sizeInByte);
+			if (+movies[0].files[0].size.sizeInByte < +movies[1].files[0].size.sizeInByte) {
+				movies = movies.sort((a, b) => +b?.files[0].size.sizeInByte - +a?.files[0].size.sizeInByte);
 			} else {
-				movies = movies.sort((a, b) => +a?.nas[0].size.sizeInByte - +b?.nas[0].size.sizeInByte);
+				movies = movies.sort((a, b) => +a?.files[0].size.sizeInByte - +b?.files[0].size.sizeInByte);
 			}
 		}, 0)
 	}

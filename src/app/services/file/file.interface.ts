@@ -1,18 +1,13 @@
 
-export interface IFile {
-	title: string,
-	path: string,
-	size: string,
-}
 
-export interface IFileExtended {
-	title: string,
+export interface IFile {
 	path: string,
 	size: IFileSize,
 
-	year: number | string,
-	format: string,
+	title: string,
+	year: number,
 	tags: string[],
+	format: string,
 }
 
 export interface IFileSize {

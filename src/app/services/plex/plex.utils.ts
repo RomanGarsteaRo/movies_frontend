@@ -9,10 +9,10 @@ export class PlexUtils {
 
 
 	// Add Plex[] to Movies[]
-	public static addPlexToMovies(movies: IMovie[] | null, plex: IPlex[]): IMovie[] | null {
+	public static connectPlex(movies: IMovie[], plex: IPlex[]): IMovie[] {
 
 		if (!movies || !plex || movies.length === 0 || plex.length === 0) {
-			return null; // Возвращаем null, если один из параметров отсутствует или пустой
+			return [];
 		}
 
 		movies.forEach(movieItem => {
