@@ -5,10 +5,8 @@ import {environment} from "../environments/environment";
 import {UrlOmdb} from "./services/url/UrlOmdb";
 import {AsyncPipe, CommonModule, NgIf} from "@angular/common";
 import {AppService} from "./app.service";
-import {select, Store} from "@ngrx/store";
-import {PlexApiSelectors} from "./state/selectors";
 import {Observable} from "rxjs";
-import {UiFiltersComponent} from "./ui/ui-filters/ui-filters.component";
+import {UiFilterComponent} from "./ui/ui-filter/ui-filter.component";
 import {
 	trigger,
 	state,
@@ -21,7 +19,7 @@ import {
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [RouterOutlet, RouterLink, RouterLinkActive, AsyncPipe, NgIf, UiFiltersComponent, CommonModule],
+	imports: [RouterOutlet, RouterLink, RouterLinkActive, AsyncPipe, NgIf, CommonModule, UiFilterComponent],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 	animations: [
@@ -51,9 +49,7 @@ export class AppComponent implements OnInit{
 	styles: 	{ [key: string]: string } = {};
 	showFilterPanel$: Observable<boolean>  = this.appService.showFilterPanel$;
 
-	constructor(private appService: AppService,
-				private store: Store) {
-	}
+	constructor(private appService: AppService) {}
 
 	ngOnInit() {
 		UrlBase.url = environment.baseUrl;

@@ -15,22 +15,36 @@ export const moviesReducer = createReducer(
 	on(MoviesActions.updateMovies, (state, { movies }) => ({ ...state, movies })),
 	on(MoviesActions.filterMovies, (state, { genre }) => {
 
+		console.log("..........");
+		//console.log(genre);
 		const filteredMovies = state.movies.map(movie => {
 			// omdb
-			const omdbGenres: string[] = movie.omdb?.Genre ? movie.omdb.Genre.split(", ").map(g => g.trim()) : [];
+			// const omdbGenres: string[] = movie.omdb?.Genre ? movie.omdb.Genre.split(", ").map(g => g.trim()) : [];
 
 			// plex
-			const plexGenres: string[] = movie.plex?.Genre ? movie.plex.Genre.map(g => g.tag) : [];
+			// const plexGenres: string[] = movie.plex?.Genre ? movie.plex.Genre.map(g => g.tag) : [];
 
 			// omdb or plex
-			const hasGenre: boolean = omdbGenres.includes(genre.value) || plexGenres.includes(genre.value);
+			// const hasGenre: boolean = omdbGenres.includes(genre.value) || plexGenres.includes(genre.value);
 
-			// Set "show" property
-			return {
-				...movie,
-				show: genre.state ? hasGenre : false
-			};
+			// filter genres
+			// const filterGenres =
+			// const hasGenre: boolean = omdbGenres.includes(genre.value);
+			//
+			//
+			// if (hasGenre){
+			// 	return {...movie, show: true};
+			// } else {
+			// 	if(genre.state){
+			// 		return {...movie, show: false};
+			// 	}else{
+			// 		return {...movie, show: true};
+			// 	}
+			// }
+
+
+
 		});
-		return { ...state, movies: filteredMovies };
+		return { ...state };
 	})
 );

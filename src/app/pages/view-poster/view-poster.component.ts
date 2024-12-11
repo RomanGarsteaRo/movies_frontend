@@ -1,4 +1,4 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
 import {Observable} from "rxjs";
@@ -6,7 +6,7 @@ import {AsyncPipe, NgForOf, NgIf, SlicePipe} from "@angular/common";
 import {EllipsisDirective} from "../../ui/ellipsis.directive";
 import {UiPosterComponent} from "../../ui/ui-poster/ui-poster.component";
 import {OverlayModule} from "@angular/cdk/overlay";
-import {UiFiltersComponent} from "../../ui/ui-filters/ui-filters.component";
+import {UiFilterComponent} from "../../ui/ui-filter/ui-filter.component";
 import {IMovie} from "../../services/movie/movie.interface";
 
 
@@ -29,7 +29,7 @@ cover art "Avatar cover art", film cover "Gladiator film cover"
 		SlicePipe,
 		EllipsisDirective,
 		UiPosterComponent,
-		UiFiltersComponent,
+		UiFilterComponent,
 		OverlayModule,
 	],
 	templateUrl: './view-poster.component.html',

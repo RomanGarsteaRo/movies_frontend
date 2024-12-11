@@ -9,7 +9,9 @@ import {
 	transferArrayItem
 } from "@angular/cdk/drag-drop";
 import {AppService} from "../../app.service";
-import {FilterService} from "../../services/filter.service";
+import {BehaviorSubject} from "rxjs";
+import {UiFilterService} from "./ui-filter.service";
+import {Genre} from "./ui-filter.class";
 
 
 @Component({
@@ -21,15 +23,15 @@ import {FilterService} from "../../services/filter.service";
 		CdkDropList, CdkDrag, CdkDropListGroup,
 		CommonModule,
 	],
-	templateUrl: './ui-filters.component.html',
-	styleUrl: './ui-filters.component.scss',
+	templateUrl: './ui-filter.component.html',
+	styleUrl: './ui-filter.component.scss',
 })
-export class UiFiltersComponent {
+export class UiFilterComponent {
 
-	public genres$= this.filterService.genres$;
+	public genres_list$: BehaviorSubject<Genre[]> = this.filterService.genres_list$;
 
 	constructor(private appService: AppService,
-				private filterService: FilterService,
+				private filterService: UiFilterService,
 	) {
 	}
 
@@ -46,7 +48,7 @@ export class UiFiltersComponent {
 		}
 	}
 
-	genreChanged(genre: {value: string, state: boolean}) {
+	genreChanged(genre: {title: string, state: boolean}) {
 		this.filterService.updateMoviesByGenre(genre);
 	}
 }

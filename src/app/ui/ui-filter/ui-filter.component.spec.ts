@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UiFiltersComponent } from './ui-filters.component';
+import { UiFilterComponent } from './ui-filter.component';
 
 describe('UiFiltersComponent', () => {
-  let component: UiFiltersComponent;
-  let fixture: ComponentFixture<UiFiltersComponent>;
+  let component: UiFilterComponent;
+  let fixture: ComponentFixture<UiFilterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiFiltersComponent]
+      imports: [UiFilterComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(UiFiltersComponent);
+    fixture = TestBed.createComponent(UiFilterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

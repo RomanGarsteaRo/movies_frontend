@@ -62,6 +62,7 @@ export class AppService {
 		movies = MovieUtils.createIMovies(groups);
 		movies = MovieUtils.connectOmdb(movies, omdb);
 		movies = PlexUtils.connectPlex(movies, plex);
+		// this.store.dispatch(MoviesActions.updateMovies({ movies: movies.slice(0, 100) }));
 		this.store.dispatch(MoviesActions.updateMovies({ movies: movies }));
 	}
 

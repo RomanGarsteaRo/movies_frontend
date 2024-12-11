@@ -12,7 +12,7 @@ export class UiButtonToggleComponent {
 	public state: boolean = false;
 
 	@Input()  text: string = "";
-	@Output() onToggle = new EventEmitter<{value: string, state: boolean}>(); // Output<{value: string, state: boolean}>({alias: 'ngxNameChange'})
+	@Output() onToggle = new EventEmitter<{title: string, state: boolean}>();
 
 	@HostBinding('class.active') get active() {
 		return this.state;
@@ -20,7 +20,7 @@ export class UiButtonToggleComponent {
 
 	@HostListener('click') onClick() {
 		this.state = !this.state;
-		this.onToggle.emit({value: this.text, state: this.state})
+		this.onToggle.emit({title: this.text, state: this.state})
 	}
 
 }
