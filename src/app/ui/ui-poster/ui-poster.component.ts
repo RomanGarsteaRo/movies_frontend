@@ -27,7 +27,7 @@ export class UiPosterComponent {
 	constructor( private route: Router,
 				 private filter: UiFilterService
 	) {
-		this.filter.genres_change$.subscribe(genres => this.setVisibility(genres));
+		// this.filter.genres_change$.subscribe(genres => this.setVisibility(genres));
 	}
 
 	private setVisibility(genres: Genre[]) {

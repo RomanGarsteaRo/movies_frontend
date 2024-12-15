@@ -7,7 +7,6 @@ export class OmdbAdapter {
 	public static adapter(obj: Partial<IOmdb>): Partial<IOmdb> {
 		obj = this.addMissingProperties(obj);
 		obj = this.removeUnnecessaryProperties(obj);
-		obj = this.addRotRating(obj);
 		return obj;
 	}
 
@@ -27,7 +26,7 @@ export class OmdbAdapter {
 		"Country",
 		"Awards",
 		"Poster",
-		"Ratings",
+		"RotRating",
 		"Metascore",
 		"imdbRating",
 		"imdbVotes",
@@ -54,7 +53,7 @@ export class OmdbAdapter {
 		Country: "N/A",
 		Awards: "N/A",
 		Poster: "N/A",
-		Ratings: [],
+		RotRating: "N/A",
 		Metascore: "N/A",
 		imdbRating: "N/A",
 		imdbVotes: "N/A",
@@ -90,20 +89,5 @@ export class OmdbAdapter {
 		}
 
 		return obj;
-	}
-
-	// Transform "Ratings" to "RotRating"
-	private static addRotRating(obj: Partial<IOmdb>) {
-		const { Ratings, ...remainingObject} = obj;
-		const newObj: any = {};
-		if (Ratings) {
-			let findRotRating = Ratings.find(item => item.Source === "Rotten Tomatoes");
-			if (findRotRating) {
-				newObj['RotRating'] = findRotRating.Value || "N/A";
-			} else {
-				newObj['RotRating'] = "N/A";
-			}
-		}
-		return {...remainingObject, ...newObj};
 	}
 }

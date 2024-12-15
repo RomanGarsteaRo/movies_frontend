@@ -28,7 +28,7 @@ import {Genre} from "./ui-filter.class";
 })
 export class UiFilterComponent {
 
-	public genres_list$: BehaviorSubject<Genre[]> = this.filterService.genres_list$;
+	// public genres_list$: BehaviorSubject<Genre[]> = this.filterService.genres_list$;
 
 	constructor(private appService: AppService,
 				private filterService: UiFilterService,

@@ -1,9 +1,10 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject, Observable} from "rxjs";
+import {BehaviorSubject, filter, Observable} from "rxjs";
 import {Store} from "@ngrx/store";
 import {IMovie} from "../../services/movie/movie.interface";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {Genre} from "./ui-filter.class";
+import {Filter, FilterClass, FRange, Genre} from "./ui-filter.class";
+import {calculateNestedRanges, valueParser} from "./ui-filter.util";
 
 
 @Injectable({
@@ -11,21 +12,64 @@ import {Genre} from "./ui-filter.class";
 })
 export class UiFilterService {
 
-	private movies$: Observable<IMovie[]> 	   = this.store.select(MoviesSelectors.movies);
-
-	public  genres_list$:   BehaviorSubject<Genre[]>  = new BehaviorSubject<Genre[]>([]);
-	public  genres_change$: BehaviorSubject<Genre[]>  = new BehaviorSubject<Genre[]>([]);
-	// public  year_range:
+	private movies$: 		  Observable<IMovie[]>  	 = this.store.select(MoviesSelectors.movies);
+	private filter_init$:     BehaviorSubject<Filter>    = new BehaviorSubject<Filter>(new FilterClass());
+	private filter_change$:   BehaviorSubject<Filter>    = new BehaviorSubject<Filter>(new FilterClass());
 
 	constructor(private store: Store) {
-		this.movies$.subscribe((movies: IMovie[]) => {
-			this.initGenres(movies);
-		})
+		this.movies$
+			.pipe(filter((movies: IMovie[]) => Array.isArray(movies) && movies.length > 0))
+			.subscribe((movies: IMovie[]) => this.initFilter(movies))
 	}
 
 
+
+	/*
+
+
+	1.	Crearea Obiectului ce contine valorile initiale a filtrului "filter_init$"
+		Trebuie de primit valorile initiale a filtrului,
+		"Year" | "Metascore" | "imdbRating" | "imdbVotes" | "RotRating" | "BoxOffice"
+		+ Genurile (this.initGenres)
+		poate de creat o functie nu generica dar predefinita pt proprietatile cunoscute
+
+	2.  Creat obiectului ce contine valorile modificate a filtrului "filter_change$"
+
+	3.  In RotRating nu poate fi min = 0, trebuie de debogat
+
+
+	*/
+	private initFilter(movies: IMovie[]){
+
+		let year: 		FRange;
+		let imdb: 		FRange;
+		let meta: 		FRange;
+		let rott: 		FRange;
+
+		let genres:    Genre[];
+		let actor:    string[];
+		let writer:   string[];
+		let director: string[];
+
+
+		let recordw = calculateNestedRanges<IMovie, "omdb", "Year" | "Metascore" | "imdbRating" | "imdbVotes" | "RotRating" | "BoxOffice">(
+			movies,
+			"omdb",
+			["Year", "Metascore", "imdbRating", "imdbVotes", "RotRating", "BoxOffice"],
+			(value) => valueParser(value)
+		)
+
+		console.log(recordw);
+	}
+
+
+
+
+
+
+
 	private initGenres(movies: IMovie[] | null): void{
-		if (!movies) {this.genres_list$.next([]);}
+		// if (!movies) {this.genres_list$.next([]);}
 
 		let genresSet: 	  Set<string> = new Set();
 		let genresArray:  string[]    = [];
@@ -45,19 +89,18 @@ export class UiFilterService {
 		genresArray = Array.from(genresSet).sort((a, b) => a.localeCompare(b));
 		genres = genresArray.map(title => ({title, state: false}));
 
-		this.genres_list$.next( genres || []) ;
-		this.genres_change$.next( genres || []) ;
+		// this.genres_list$.next( genres || []) ;
+		// this.genres_change$.next( genres || []) ;
 	}
-
 	public updateMoviesByGenre(genre_changed: {title: string, state: boolean}): void {
 
-		let newGenre: Genre[] = this.genres_change$.value.map(genre => {
-			if(genre.title === genre_changed.title){
-				return {title: genre.title, state: genre_changed.state};
-			} else {
-				return genre;
-			}
-		})
-		this.genres_change$.next(newGenre);
+		// let newGenre: Genre[] = this.genres_change$.value.map(genre => {
+		// 	if(genre.title === genre_changed.title){
+		// 		return {title: genre.title, state: genre_changed.state};
+		// 	} else {
+		// 		return genre;
+		// 	}
+		// })
+		// this.genres_change$.next(newGenre);
 	}
 }

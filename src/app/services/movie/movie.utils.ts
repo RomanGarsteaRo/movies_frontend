@@ -21,7 +21,7 @@ export class MovieUtils {
 			movies.push(movie);
 		});
 
-		return this.sortByTitleAndTags(movies);
+		return movies; // this.sortByTitleAndTags(movies);
 	}
 
 	// Add OMDB data to Movies[]
@@ -37,7 +37,7 @@ export class MovieUtils {
 
 				let nasTitleNorm: string | undefined = TitleUtils.normalizeTitle(movieItem.title);
 				let omdbTitleNorm: string | undefined = TitleUtils.normalizeTitle(omdbItem.Title);
-				return (nasTitleNorm === omdbTitleNorm) && (movieItem.year.toString() === omdbItem.Year);
+				return (nasTitleNorm === omdbTitleNorm) && (movieItem.year === omdbItem.Year);
 			});
 
 			if (foundedOmdbItem) {
