@@ -1,0 +1,28 @@
+:host{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: min-content min-content;
+
+	.input-box{
+		display: flex;
+		flex-direction: row;
+		column-gap: 12px;
+		justify-content: space-between;
+
+		input{
+			width: 120px;
+			outline: none;
+			background-color: transparent;
+			padding: 2px 12px;
+			border: none;
+			color: #465886;
+			text-align: center;
+			font-size: 18px;
+
+			&::selection {
+				// color: red;
+				background: #2f3033;
+			}
+		}
+	}
+}

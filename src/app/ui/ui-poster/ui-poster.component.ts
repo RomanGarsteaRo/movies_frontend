@@ -4,7 +4,8 @@ import {NgForOf, NgIf, SlicePipe} from "@angular/common";
 import {Router} from "@angular/router";
 import {IMovie} from "../../services/movie/movie.interface";
 import {UiFilterService} from "../ui-filter/ui-filter.service";
-import {Genre} from "../ui-filter/ui-filter.class";
+import {IFilterCng} from "../ui-filter/ui-filter.class";
+
 
 
 @Component({
@@ -27,34 +28,20 @@ export class UiPosterComponent {
 	constructor( private route: Router,
 				 private filter: UiFilterService
 	) {
-		// this.filter.genres_change$.subscribe(genres => this.setVisibility(genres));
+		this.filter.filter_chng$.subscribe((param: IFilterCng) => this.setVisibility(param));
 	}
 
-	private setVisibility(genres: Genre[]) {
-		if (!genres || !this.movie) {return;}
+	private setVisibility(param: IFilterCng) {
 
-
-		// OMDB genres
-		const omdb: string[] = this.movie.omdb?.Genre || [];
-
-
-		// Filter selected genres
-		// TODO trebuie de activat acest calcul o singura data in serviciu dar nu pentru fiecare poster aparte
-		// in:   [ {title: 'Action', state: false}, {title: 'Adventure', state: true } ]
-		// out:  [ "Adventure" ]
-		const filter: string[] = genres.filter(genre => genre.state).map(genre => genre.title);
-
-
-		// Check if it has the genre
-		const hasSome:  boolean = filter.some(genre => omdb.includes(genre)); // or
-		const hasEvery: boolean = filter.every(item => omdb.includes(item));  // and
-
-
-		if(hasEvery){
-			this.visibility = {};
-		}else{
-			this.visibility = { display: "none" };
+		if (param.year?.min && param.year?.max) {
+			let show: boolean = this.movie.year >= param.year?.min && this.movie.year <= param.year?.max;
+			if(show){
+				this.visibility = {};
+			}else{
+				this.visibility = { display: "none" };
+			}
 		}
+
 	}
 
 

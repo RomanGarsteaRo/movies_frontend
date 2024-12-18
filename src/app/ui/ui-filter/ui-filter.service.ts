@@ -3,8 +3,8 @@ import {BehaviorSubject, filter, Observable} from "rxjs";
 import {Store} from "@ngrx/store";
 import {IMovie} from "../../services/movie/movie.interface";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {Filter, FilterClass, FRange, Genre} from "./ui-filter.class";
-import {calculateNestedRanges, valueParser} from "./ui-filter.util";
+import {FilterClass, FilterCngClass, IFilter, IFilterCng, IFilterRange} from "./ui-filter.class";
+import {IOmdb} from "../../services/omdb/omdb.interface";
 
 
 @Injectable({
@@ -12,95 +12,58 @@ import {calculateNestedRanges, valueParser} from "./ui-filter.util";
 })
 export class UiFilterService {
 
-	private movies$: 		  Observable<IMovie[]>  	 = this.store.select(MoviesSelectors.movies);
-	private filter_init$:     BehaviorSubject<Filter>    = new BehaviorSubject<Filter>(new FilterClass());
-	private filter_change$:   BehaviorSubject<Filter>    = new BehaviorSubject<Filter>(new FilterClass());
+	private movies$: 		    Observable<IMovie[]>     = this.store.select(MoviesSelectors.movies);
+	public filter_init$:   BehaviorSubject<IFilter>     = new BehaviorSubject<IFilter>(new FilterClass());
+	public filter_chng$:   BehaviorSubject<IFilterCng>  = new BehaviorSubject<IFilterCng>(new FilterCngClass());
 
 	constructor(private store: Store) {
 		this.movies$
 			.pipe(filter((movies: IMovie[]) => Array.isArray(movies) && movies.length > 0))
-			.subscribe((movies: IMovie[]) => this.initFilter(movies))
-	}
-
-
-
-	/*
-
-
-	1.	Crearea Obiectului ce contine valorile initiale a filtrului "filter_init$"
-		Trebuie de primit valorile initiale a filtrului,
-		"Year" | "Metascore" | "imdbRating" | "imdbVotes" | "RotRating" | "BoxOffice"
-		+ Genurile (this.initGenres)
-		poate de creat o functie nu generica dar predefinita pt proprietatile cunoscute
-
-	2.  Creat obiectului ce contine valorile modificate a filtrului "filter_change$"
-
-	3.  In RotRating nu poate fi min = 0, trebuie de debogat
-
-
-	*/
-	private initFilter(movies: IMovie[]){
-
-		let year: 		FRange;
-		let imdb: 		FRange;
-		let meta: 		FRange;
-		let rott: 		FRange;
-
-		let genres:    Genre[];
-		let actor:    string[];
-		let writer:   string[];
-		let director: string[];
-
-
-		let recordw = calculateNestedRanges<IMovie, "omdb", "Year" | "Metascore" | "imdbRating" | "imdbVotes" | "RotRating" | "BoxOffice">(
-			movies,
-			"omdb",
-			["Year", "Metascore", "imdbRating", "imdbVotes", "RotRating", "BoxOffice"],
-			(value) => valueParser(value)
-		)
-
-		console.log(recordw);
+			.subscribe((movies: IMovie[]) => {
+				this.initStartParam(movies);
+			})
 	}
 
 
 
 
 
+/*  ........................................
+	Init Filter Params
+	........................................  */
 
-
-	private initGenres(movies: IMovie[] | null): void{
-		// if (!movies) {this.genres_list$.next([]);}
-
-		let genresSet: 	  Set<string> = new Set();
-		let genresArray:  string[]    = [];
-		let genres: 	  Genre[]     = []
-
-		// Unique value
-		movies?.forEach(movie => {
-			// collect from OMDB
-			if (movie.omdb?.Genre ) {
-				movie.omdb?.Genre?.forEach(genre => genresSet.add(genre));
+	private initStartParam(movies: IMovie[]): void{
+		let param: FilterClass = new FilterClass();
+		movies.forEach(movie => {
+			let omdb = movie.omdb;
+			if (omdb) {
+				this.initArrayParam(param, omdb);
+				this.initRangeParam(param, omdb);
 			}
-			// collect from PLEX
-			// if (movie.plex?.Genre) {
-			// 	movie.plex.Genre.forEach(genreObj => genresSet.add(genreObj.tag));
-			// }
-		});
-		genresArray = Array.from(genresSet).sort((a, b) => a.localeCompare(b));
-		genres = genresArray.map(title => ({title, state: false}));
-
-		// this.genres_list$.next( genres || []) ;
-		// this.genres_change$.next( genres || []) ;
+		})
+		this.filter_init$.next(param);
 	}
-	public updateMoviesByGenre(genre_changed: {title: string, state: boolean}): void {
 
-		// let newGenre: Genre[] = this.genres_change$.value.map(genre => {
-		// 	if(genre.title === genre_changed.title){
-		// 		return {title: genre.title, state: genre_changed.state};
-		// 	} else {
-		// 		return genre;
-		// 	}
-		// })
-		// this.genres_change$.next(newGenre);
+	private initArrayParam(param: IFilter, omdb: IOmdb): void{
+		if(omdb.Genre) omdb.Genre.forEach(item => param.genre.add(item));
+		if(omdb.Actors) omdb.Actors.forEach(item => param.actor.add(item));
+		if(omdb.Writer) omdb.Writer.forEach(item => param.writr.add(item));
+		if(omdb.Director) omdb.Director.forEach(item => param.drctr.add(item));
 	}
+
+	private initRangeParam(param: IFilter, omdb: IOmdb): void{
+		if(omdb.Year && typeof omdb.Year === "number") this.setRangeParam(param.year, omdb.Year);
+		if(omdb.imdbRating && typeof omdb.imdbRating === "number") this.setRangeParam(param.imdb, omdb.imdbRating);
+		if(omdb.Metascore  && typeof omdb.Metascore  === "number") this.setRangeParam(param.meta, omdb.Metascore);
+		if(omdb.RotRating  && typeof omdb.RotRating  === "number") this.setRangeParam(param.rott, omdb.RotRating);
+		if(omdb.imdbVotes  && typeof omdb.imdbVotes  === "number") this.setRangeParam(param.vots, omdb.imdbVotes);
+	}
+
+	private setRangeParam(range: IFilterRange, data: number): void{
+		if(range.min > data) range.min = data;
+		if(range.max < data) range.max = data;
+	}
+
+
+
 }

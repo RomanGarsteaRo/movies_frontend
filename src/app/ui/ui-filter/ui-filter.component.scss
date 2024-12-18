@@ -24,42 +24,10 @@
 		display: grid;
 		grid-template-columns: min-content auto;
 		grid-template-rows: auto;
-		column-gap: 48px;
+		column-gap: 92px;
 		padding: 24px;
 
-		.genres{
 
-		}
-
-		.range-year{
-			display: flex;
-			flex-direction: row;
-			column-gap: 12px;
-			height: min-content;
-
-			.input_wrapper{
-				border: 2px solid #26282b;
-				border-radius: 3px;
-				padding: 2px;
-				background-color: #3e3f43;
-
-				input{
-					width: 120px;
-					outline: none;
-					background-color: transparent;
-					padding: 2px 12px;
-					border: none;
-					color: #979797;
-					text-align: center;
-					font-size: 18px;
-
-					&::selection {
-						// color: red;
-						background: #2f3033;
-					}
-				}
-			}
-		}
 	}
 
 

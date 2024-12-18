@@ -11,23 +11,43 @@
 </header>
 
 
-<div class="content">
+<div class="content" [formGroup]="form">
 
-	<div class="genres">
-<!--		<ui-button-toggle *ngFor="let genre of genres_list$ | async"-->
-<!--						  (onToggle)="genreChanged($event)"-->
-<!--						  [text]="genre.title"-->
-<!--		></ui-button-toggle>-->
+
+<!--	<ui-button-toggle *ngFor="let genres of (param_init$ | async)?.genre | setToArray"-->
+<!--					  (onToggle)="genreChanged($event)"-->
+<!--					  [text]="genres"-->
+<!--	></ui-button-toggle>-->
+
+<!--	<div formArrayName="genre">-->
+<!--		<div *ngFor="let item of genreControls; let i = index">-->
+<!--			<mat-checkbox [formControl]="item">{{ (param_init$ | async)?.genre[i] }}</mat-checkbox>-->
+<!--		</div>-->
+<!--	</div>-->
+
+	<div></div>
+
+
+	<div class="range-box">
+		<ui-range *ngIf="(param_init$ | async)?.year" formControlName="year" [rangeSlider]="(param_init$ | async)?.year"></ui-range>
 	</div>
 
-	<div class="range-year">
-		<div class="input_wrapper">
-			<input type="text" value="1945">
-		</div>
-		<div class="input_wrapper">
-			<input type="text" value="2024">
-		</div>
-	</div>
+<!--	<label class="example-value-label">{{slidermin.value}}</label>-->
+<!--	<label class="example-value-label">{{slidermax.value}}</label>-->
+
+<!--	<mat-slider-->
+<!--		class="example-margin"-->
+<!--		[disabled]="disabled"-->
+<!--		[max]="max"-->
+<!--		[min]="min"-->
+<!--		[step]="step"-->
+<!--		[discrete]="thumbLabel"-->
+<!--		[showTickMarks]="showTicks">-->
+<!--		<input matSliderThumb [(ngModel)]="value.min" #slidermin>-->
+<!--		<input matSliderThumb [(ngModel)]="value.max" #slidermax>-->
+<!--	</mat-slider>-->
+
+
 
 </div>
 

@@ -1,0 +1,21 @@
+
+
+
+<ng-container *ngIf="rangeThumb && rangeSlider">
+	<div class="input-box">
+		<input type="text" [value]="thumbmin?.value">
+		<input type="text" [value]="thumbmax?.value">
+	</div>
+
+	<mat-slider
+		[min]="rangeSlider.min"
+		[max]="rangeSlider.max"
+		[step]="1"
+		[discrete]="false"
+		[showTickMarks]="false"
+	>
+		<input [value]="rangeThumb.min" matSliderStartThumb (valueChange)="updateValue($event, 'min')" #thumbmin>
+		<input [value]="rangeThumb.max" matSliderEndThumb   (valueChange)="updateValue($event, 'max')" #thumbmax>
+	</mat-slider>
+</ng-container>
+

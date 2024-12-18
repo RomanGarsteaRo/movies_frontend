@@ -1,9 +1,11 @@
-import {FRange} from "./ui-filter.class";
+import {IFilterRange} from "./ui-filter.class";
 
 
-export function calculateRanges<T>(data: T[], properties: (keyof T)[]): Record<keyof T, FRange> {
 
-	const ranges: Record<string, FRange> = {};
+
+export function calculateRanges<T>(data: T[], properties: (keyof T)[]): Record<keyof T, IFilterRange> {
+
+	const ranges: Record<string, IFilterRange> = {};
 
 	// Initialize ranges for each property
 	for (const property of properties) {
@@ -83,3 +85,28 @@ export function valueParser(value: unknown): number | null {
 
 	return null; // Returnăm null pentru valori care nu pot fi convertite
 }
+
+/*
+private initFilter(movies: IMovie[]){
+
+		let year: 		IFilterRange;
+		let imdb: 		IFilterRange;
+		let meta: 		IFilterRange;
+		let rott: 		IFilterRange;
+
+		let genres:     string[];
+		let actor:      string[];
+		let writer:     string[];
+		let director:   string[];
+
+
+		let recordw = calculateNestedRanges<IMovie, "omdb", "Year" | "Metascore" | "imdbRating" | "imdbVotes" | "RotRating" | "BoxOffice">(
+			movies,
+			"omdb",
+			["Year", "Metascore", "imdbRating", "imdbVotes", "RotRating", "BoxOffice"],
+			(value) => valueParser(value)
+		)
+
+		console.log(recordw);
+	}
+* */
