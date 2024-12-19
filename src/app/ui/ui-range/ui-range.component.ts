@@ -1,8 +1,9 @@
 import {Component, forwardRef, Input} from '@angular/core';
-import {MatSlider, MatSliderRangeThumb} from "@angular/material/slider";
+import {MatSlider, MatSliderDragEvent, MatSliderRangeThumb} from "@angular/material/slider";
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
-import {IFilterRange} from "../ui-filter/ui-filter.class";
+import {FilterRangeClass, IFilterRange} from "../ui-filter/ui-filter.class";
 import {NgIf} from "@angular/common";
+import {MatCheckbox, MatCheckboxChange} from "@angular/material/checkbox";
 
 @Component({
 	selector: 'ui-range',
@@ -10,7 +11,8 @@ import {NgIf} from "@angular/common";
 	imports: [
 		MatSlider,
 		MatSliderRangeThumb,
-		NgIf
+		NgIf,
+		MatCheckbox
 	],
 	templateUrl: './ui-range.component.html',
 	styleUrl: './ui-range.component.scss',
@@ -26,10 +28,20 @@ export class UiRangeComponent implements ControlValueAccessor {
 
 	@Input() rangeSlider: IFilterRange | undefined;
 	@Input() rangeThumb:  IFilterRange | undefined;
+	@Input() step: number = 1;
+
+	private sliderMode: "single" | "range" = "range";
 
 	constructor() {
 	}
 
+	onCheckbox($event: MatCheckboxChange) {
+		if ($event.checked) {
+			this.sliderMode = "single";
+		} else {
+			this.sliderMode = "range";
+		}
+	}
 
 /*  ........................................
 	IMPLIMENT INTERFACE ControlValueAccessor
@@ -41,9 +53,9 @@ export class UiRangeComponent implements ControlValueAccessor {
 	// EXTERN (Form model) -> INTERN (TS)
 	public writeValue(obj: IFilterRange): void {
 		// console.log('Form Model -> TS', obj);
-		if (obj) {
-			this.rangeThumb = {...obj};
-		}
+		// if (obj) {
+		// 	this.rangeThumb = {...obj};
+		// }
 	}
 
 	// INTERN (HTML or TS) -> EXTERN (Form Model)
@@ -55,13 +67,19 @@ export class UiRangeComponent implements ControlValueAccessor {
 		this.onTouched = fn;
 	}
 
-	updateValue(newValue: number, type: 'min' | 'max'): void {
+	updateValue(event: MatSliderDragEvent, type: 'min' | 'max'): void {
 		if (this.rangeThumb) {
-			this.rangeThumb = { ...this.rangeThumb, [type]: +newValue };
+			this.rangeThumb = { ...this.rangeThumb, [type]: +event.value };
+		}
+
+		if (this.sliderMode === "range") {
 			this.onChange(this.rangeThumb);
+		} else {
+			let range: IFilterRange = new FilterRangeClass();
+			range.min = +event.value;
+			range.max = +event.value;
+			this.onChange(range);
 		}
 	}
-
-
 
 }

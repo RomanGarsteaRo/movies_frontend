@@ -2,6 +2,9 @@
 
 
 <ng-container *ngIf="rangeThumb && rangeSlider">
+
+	<mat-checkbox (change)="onCheckbox($event)"  #checkbox></mat-checkbox> <!--checkbox.checked-->
+
 	<div class="input-box">
 		<input type="text" [value]="thumbmin?.value">
 		<input type="text" [value]="thumbmax?.value">
@@ -10,12 +13,14 @@
 	<mat-slider
 		[min]="rangeSlider.min"
 		[max]="rangeSlider.max"
-		[step]="1"
+		[step]="step"
 		[discrete]="false"
 		[showTickMarks]="false"
 	>
-		<input [value]="rangeThumb.min" matSliderStartThumb (valueChange)="updateValue($event, 'min')" #thumbmin>
-		<input [value]="rangeThumb.max" matSliderEndThumb   (valueChange)="updateValue($event, 'max')" #thumbmax>
+		<input [value]="rangeThumb.min" matSliderStartThumb (dragEnd)="updateValue($event, 'min')" #thumbmin>
+		<input [value]="rangeThumb.max" matSliderEndThumb   (dragEnd)="updateValue($event, 'max')" #thumbmax>
 	</mat-slider>
+
+
 </ng-container>
 

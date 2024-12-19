@@ -12,9 +12,9 @@ import {IOmdb} from "../../services/omdb/omdb.interface";
 })
 export class UiFilterService {
 
-	private movies$: 		    Observable<IMovie[]>     = this.store.select(MoviesSelectors.movies);
-	public filter_init$:   BehaviorSubject<IFilter>     = new BehaviorSubject<IFilter>(new FilterClass());
-	public filter_chng$:   BehaviorSubject<IFilterCng>  = new BehaviorSubject<IFilterCng>(new FilterCngClass());
+	private movies$: 		    Observable<IMovie[]>    	= this.store.select(MoviesSelectors.movies);
+	public filter_init$:   BehaviorSubject<IFilter | null>  = new BehaviorSubject<IFilter | null>(null);
+	public filter_chng$:   BehaviorSubject<IFilterCng>  	= new BehaviorSubject<IFilterCng>(new FilterCngClass());
 
 	constructor(private store: Store) {
 		this.movies$
@@ -41,7 +41,9 @@ export class UiFilterService {
 				this.initRangeParam(param, omdb);
 			}
 		})
+
 		this.filter_init$.next(param);
+		// console.log(param);
 	}
 
 	private initArrayParam(param: IFilter, omdb: IOmdb): void{

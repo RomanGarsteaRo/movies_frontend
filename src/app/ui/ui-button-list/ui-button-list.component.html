@@ -1,0 +1,8 @@
+
+
+
+<ui-button-toggle
+	*ngFor="let item of items; let i = index"
+	[text]="item"
+	(onToggle)="updateValue($event)"
+></ui-button-toggle>

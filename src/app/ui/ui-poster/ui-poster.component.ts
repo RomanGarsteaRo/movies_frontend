@@ -1,10 +1,11 @@
-import {Component, HostBinding, Input} from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 import {EllipsisDirective} from "../ellipsis.directive";
 import {NgForOf, NgIf, SlicePipe} from "@angular/common";
 import {Router} from "@angular/router";
 import {IMovie} from "../../services/movie/movie.interface";
 import {UiFilterService} from "../ui-filter/ui-filter.service";
 import {IFilterCng} from "../ui-filter/ui-filter.class";
+import {FilterEvaluatorService} from "../../services/filter-evaluator.service";
 
 
 
@@ -20,29 +21,31 @@ import {IFilterCng} from "../ui-filter/ui-filter.class";
   templateUrl: './ui-poster.component.html',
   styleUrl: './ui-poster.component.scss'
 })
-export class UiPosterComponent {
+export class UiPosterComponent implements OnInit {
 
 	@Input() movie!: IMovie;
-	@HostBinding('style') visibility: { [key: string]: string } = {};
+	@HostBinding('style') visibility: {} | { display: string } = {};
 
 	constructor( private route: Router,
-				 private filter: UiFilterService
-	) {
-		this.filter.filter_chng$.subscribe((param: IFilterCng) => this.setVisibility(param));
+				 private filter: UiFilterService,
+				 private filterEvaluator: FilterEvaluatorService,
+	) {}
+
+	ngOnInit(){
+		this.filter.filter_chng$.subscribe((param: IFilterCng) => {
+			if (this.movie.title === "1917") {
+				console.log('ui-poster.component | title: "1917" | filter_chng$.subscribe | param:', param);
+			}
+			this.setVisibility(param);
+		});
 	}
 
 	private setVisibility(param: IFilterCng) {
-
-		if (param.year?.min && param.year?.max) {
-			let show: boolean = this.movie.year >= param.year?.min && this.movie.year <= param.year?.max;
-			if(show){
-				this.visibility = {};
-			}else{
-				this.visibility = { display: "none" };
-			}
-		}
-
+		const isVisible = this.filterEvaluator.evaluate(param, this.movie);
+		this.visibility = isVisible ? {} : { display: "none" };
 	}
+
+
 
 
 

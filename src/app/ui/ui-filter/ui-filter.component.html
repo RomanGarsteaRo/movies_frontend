@@ -5,49 +5,26 @@
 
 
 
-<header>
 
+
+
+
+<header>
 
 </header>
 
 
-<div class="content" [formGroup]="form">
+<div *ngIf="param_init" class="content" [formGroup]="form">
 
-
-<!--	<ui-button-toggle *ngFor="let genres of (param_init$ | async)?.genre | setToArray"-->
-<!--					  (onToggle)="genreChanged($event)"-->
-<!--					  [text]="genres"-->
-<!--	></ui-button-toggle>-->
-
-<!--	<div formArrayName="genre">-->
-<!--		<div *ngFor="let item of genreControls; let i = index">-->
-<!--			<mat-checkbox [formControl]="item">{{ (param_init$ | async)?.genre[i] }}</mat-checkbox>-->
-<!--		</div>-->
-<!--	</div>-->
-
-	<div></div>
-
+		<ui-button-list formControlName="genre" [items]="param_init.genre | setToArray"></ui-button-list>
 
 	<div class="range-box">
-		<ui-range *ngIf="(param_init$ | async)?.year" formControlName="year" [rangeSlider]="(param_init$ | async)?.year"></ui-range>
-	</div>
-
-<!--	<label class="example-value-label">{{slidermin.value}}</label>-->
-<!--	<label class="example-value-label">{{slidermax.value}}</label>-->
-
-<!--	<mat-slider-->
-<!--		class="example-margin"-->
-<!--		[disabled]="disabled"-->
-<!--		[max]="max"-->
-<!--		[min]="min"-->
-<!--		[step]="step"-->
-<!--		[discrete]="thumbLabel"-->
-<!--		[showTickMarks]="showTicks">-->
-<!--		<input matSliderThumb [(ngModel)]="value.min" #slidermin>-->
-<!--		<input matSliderThumb [(ngModel)]="value.max" #slidermax>-->
-<!--	</mat-slider>-->
-
-
+			<ui-range formControlName="year" [rangeSlider]="param_init.year" [rangeThumb]="param_init.year"				></ui-range>
+			<ui-range formControlName="rott" [rangeSlider]="param_init.rott" [rangeThumb]="param_init.rott"				></ui-range>
+			<ui-range formControlName="meta" [rangeSlider]="param_init.meta" [rangeThumb]="param_init.meta"				></ui-range>
+			<ui-range formControlName="imdb" [rangeSlider]="param_init.imdb" [rangeThumb]="param_init.imdb" [step]="0.1"></ui-range>
+			<ui-range formControlName="vots" [rangeSlider]="param_init.vots" [rangeThumb]="param_init.vots"				></ui-range>
+		</div>
 
 </div>
 

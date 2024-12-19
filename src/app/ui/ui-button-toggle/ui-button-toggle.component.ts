@@ -1,4 +1,9 @@
-import {Component, EventEmitter, HostBinding, HostListener, Input, output, Output} from '@angular/core';
+import {Component, EventEmitter, HostBinding, HostListener, Input, Output} from '@angular/core';
+
+export interface IButtonToggle {
+	title: string,
+	state: boolean
+}
 
 @Component({
   selector: 'ui-button-toggle',
@@ -12,7 +17,7 @@ export class UiButtonToggleComponent {
 	public state: boolean = false;
 
 	@Input()  text: string = "";
-	@Output() onToggle = new EventEmitter<{title: string, state: boolean}>();
+	@Output() onToggle = new EventEmitter<IButtonToggle>();
 
 	@HostBinding('class.active') get active() {
 		return this.state;

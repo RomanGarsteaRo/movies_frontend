@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SetToArrayPipe implements PipeTransform {
 
-	transform<T>(set: Set<T> | undefined, fallback: T[] = []): T[] {
+	transform<T>(set: Set<T> | undefined | null, fallback: T[] = []): T[] {
 		return set ? Array.from(set) : fallback;
 	}
 

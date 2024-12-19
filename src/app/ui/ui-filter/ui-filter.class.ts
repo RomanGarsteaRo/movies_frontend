@@ -1,3 +1,16 @@
+export interface IFilterRange {
+	min: number,
+	max: number
+}
+
+export class FilterRangeClass implements  IFilterRange {
+	min: number;
+	max: number;
+	constructor(data: IFilterRange = { min: +Infinity, max: -Infinity }) {
+		this.min = data.min || +Infinity;
+		this.max = data.max || -Infinity;
+	}
+}
 
 
 export interface IFilter {
@@ -11,33 +24,6 @@ export interface IFilter {
 	actor: Set<string>,
 	writr: Set<string>,
 	drctr: Set<string>,
-}
-
-export interface IFilterCng {
-	year: IFilterRange | null,
-	rott: IFilterRange | null,
-	meta: IFilterRange | null,
-	imdb: IFilterRange | null,
-	vots: IFilterRange | null,
-
-	genre: string[] | null,
-	actor: string[] | null,
-	writr: string[] | null,
-	drctr: string[] | null,
-}
-
-export interface IFilterRange {
-	min: number,
-	max: number
-}
-
-export class FilterRangeClass implements  IFilterRange {
-	min: number;
-	max: number;
-	constructor(data: IFilterRange = { min: +Infinity, max: -Infinity }) {
-		this.min = data.min || +Infinity;
-		this.max = data.max || -Infinity;
-	}
 }
 
 export class FilterClass implements IFilter {
@@ -59,6 +45,20 @@ export class FilterClass implements IFilter {
 		this.imdb = init.imdb || new FilterRangeClass();
 		this.vots = init.vots || new FilterRangeClass();
 	}
+}
+
+
+export interface IFilterCng {
+	year: IFilterRange | null,
+	rott: IFilterRange | null,
+	meta: IFilterRange | null,
+	imdb: IFilterRange | null,
+	vots: IFilterRange | null,
+
+	genre: string[] | null,
+	actor: string[] | null,
+	writr: string[] | null,
+	drctr: string[] | null,
 }
 
 export class FilterCngClass implements IFilterCng {

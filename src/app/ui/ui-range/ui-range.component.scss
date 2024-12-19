@@ -1,13 +1,23 @@
 :host{
+	height: min-content;
 	display: grid;
-	grid-template-columns: 100%;
+	grid-template-columns: min-content	auto;
 	grid-template-rows: min-content min-content;
+	column-gap: 12px;
+
+	mat-checkbox{
+		grid-column: 1/2;
+		grid-row: 1/3;
+		padding-top: 30px;
+	}
 
 	.input-box{
 		display: flex;
 		flex-direction: row;
 		column-gap: 12px;
 		justify-content: space-between;
+		grid-column: 2/3;
+		grid-row: 1/2;
 
 		input{
 			width: 120px;
@@ -24,5 +34,10 @@
 				background: #2f3033;
 			}
 		}
+	}
+
+	mat-slider{
+		grid-column: 2/3;
+		grid-row: 2/3;
 	}
 }

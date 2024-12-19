@@ -28,6 +28,11 @@
 		padding: 24px;
 
 
+		.range-box{
+			display: flex;
+			flex-direction: column;
+			row-gap: 24px;
+		}
 	}
 
 
