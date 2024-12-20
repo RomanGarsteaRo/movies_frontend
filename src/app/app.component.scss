@@ -10,6 +10,13 @@
 	color: #5d5d5d;
 	padding-left: 48px;
 
+	/* Animation */
+	transition: width 1000ms ease;
+	&.reduced {
+		grid-template-columns: calc(100% - 600px) min-content;
+	}
+
+
 	.content{
 		width: 100%;
 		height: 100%;
@@ -18,6 +25,8 @@
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows:  auto;
+
+
 
 		.header{
 			padding-top: 24px;

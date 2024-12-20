@@ -2,7 +2,7 @@
 
 
 
-<div class="content">
+<div class="content" [class.reduced]="isFilterAnimating">
 
 	<div class="header">
 		<div class="menu-bar">
@@ -20,8 +20,11 @@
 
 
 
-<div class="utils">
-		<ui-filters @myInsertRemoveTrigger *ngIf="showFilterPanel$ | async"></ui-filters>
+<div class="utils" [class.reduced]="isFilterAnimating">
+		<ui-filters @myInsertRemoveTrigger
+					*ngIf="showFilterPanel$ | async"
+					(@myInsertRemoveTrigger.done)="onAnimationDone($event)"
+		></ui-filters>
 </div>
 
 

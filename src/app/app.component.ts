@@ -29,13 +29,13 @@ import {
 					opacity: 0,
 					width: '0px'
 				}),
-				animate('200ms',
+				animate('400ms',
 					style({
 						opacity: 1,
 						width: '600px'
 					}))]),
 			transition(':leave', [
-				animate('200ms',
+				animate('400ms',
 					style({
 						opacity: 0,
 						width: '0px'
@@ -45,9 +45,10 @@ import {
 })
 export class AppComponent implements OnInit{
 
-	@HostBinding('style')
-	styles: 	{ [key: string]: string } = {};
 	showFilterPanel$: Observable<boolean>  = this.appService.showFilterPanel$;
+
+	@HostBinding('class.reduced')
+	isFilterAnimating: boolean = false; // Controlează vizibilitatea contentului
 
 	constructor(private appService: AppService) {}
 
@@ -55,19 +56,19 @@ export class AppComponent implements OnInit{
 		UrlBase.url = environment.baseUrl;
 		UrlOmdb.url = environment.omdbUrl;
 		UrlOmdb.key = environment.omdbKey;
-
-
-		this.showFilterPanel$.subscribe((isFilterPanel) => {
-			if (isFilterPanel) {
-				this.styles = {'grid-template-columns': 'auto min-content',};
-			} else {
-				this.styles = {};
-			}
-		});
 	}
 
+
 	onFilter() {
+		this.isFilterAnimating = true; // Blochează modificările până la finalizarea animației
 		this.appService.toggleFilterPanel();
+	}
+
+	onAnimationDone(event: any) {
+		console.log(event);
+		if (event.phaseName === 'done' && event.toState === 'void') {
+			this.isFilterAnimating = false; // Deblochează modificările
+		}
 	}
 }
 

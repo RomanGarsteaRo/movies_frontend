@@ -29,6 +29,7 @@ export class UiRangeComponent implements ControlValueAccessor {
 	@Input() rangeSlider: IFilterRange | undefined;
 	@Input() rangeThumb:  IFilterRange | undefined;
 	@Input() step: number = 1;
+	@Input() showCheckbox: boolean = true;
 
 	private sliderMode: "single" | "range" = "range";
 

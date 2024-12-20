@@ -3,7 +3,10 @@
 
 <ng-container *ngIf="rangeThumb && rangeSlider">
 
-	<mat-checkbox (change)="onCheckbox($event)"  #checkbox></mat-checkbox> <!--checkbox.checked-->
+	<div class="checkbox">
+		<mat-checkbox *ngIf="showCheckbox" (change)="onCheckbox($event)"  #checkbox></mat-checkbox>
+	</div>
+
 
 	<div class="input-box">
 		<input type="text" [value]="thumbmin?.value">

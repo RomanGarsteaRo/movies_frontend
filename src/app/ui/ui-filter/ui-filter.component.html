@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 <header>
 
 </header>
@@ -16,15 +5,15 @@
 
 <div *ngIf="param_init" class="content" [formGroup]="form">
 
-		<ui-button-list formControlName="genre" [items]="param_init.genre | setToArray"></ui-button-list>
+	<ui-button-list formControlName="genre" [items]="param_init.genre | setToArray"></ui-button-list>
 
 	<div class="range-box">
-			<ui-range formControlName="year" [rangeSlider]="param_init.year" [rangeThumb]="param_init.year"				></ui-range>
-			<ui-range formControlName="rott" [rangeSlider]="param_init.rott" [rangeThumb]="param_init.rott"				></ui-range>
-			<ui-range formControlName="meta" [rangeSlider]="param_init.meta" [rangeThumb]="param_init.meta"				></ui-range>
-			<ui-range formControlName="imdb" [rangeSlider]="param_init.imdb" [rangeThumb]="param_init.imdb" [step]="0.1"></ui-range>
-			<ui-range formControlName="vots" [rangeSlider]="param_init.vots" [rangeThumb]="param_init.vots"				></ui-range>
-		</div>
+		<ui-range formControlName="year" [rangeSlider]="param_init.year" [rangeThumb]="param_init.year"							></ui-range>
+		<ui-range formControlName="rott" [rangeSlider]="param_init.rott" [rangeThumb]="param_init.rott"							></ui-range>
+		<ui-range formControlName="meta" [rangeSlider]="param_init.meta" [rangeThumb]="param_init.meta"							></ui-range>
+		<ui-range formControlName="imdb" [rangeSlider]="param_init.imdb" [rangeThumb]="param_init.imdb" [step]="0.1"			></ui-range>
+		<ui-range formControlName="vots" [rangeSlider]="param_init.vots" [rangeThumb]="param_init.vots" [showCheckbox]="false"  ></ui-range>
+	</div>
 
 </div>
 

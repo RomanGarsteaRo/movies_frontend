@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {IFilterCng, IFilterRange} from "../ui/ui-filter/ui-filter.class";
 import {IMovie} from "./movie/movie.interface";
 
@@ -29,8 +29,10 @@ export class FilterEvaluatorService {
 			ele nici nu ajung sa fie procesate in isInRange / hasCommonElements
 			pentruca operatorul de conditie "IF/ELSE" le face return false
 
-			1. "movie?.omdb?.imdbRating"
-			2. "movie?.omdb?.Genre"
+			1. !movie?.omdb?.imdbRating
+			2. !movie?.omdb?.RotRating
+			3. !movie?.omdb?.Metascore
+			4. !movie?.omdb?.imdbVotes
 
 		*/
 
@@ -51,7 +53,7 @@ export class FilterEvaluatorService {
 
 	// Verificăm dacă cel puțin una dintre proprietăți are o valoare diferită de null sau este populată.
 	private  isFilterActive(filter: IFilterCng): boolean {
-		let isActive: boolean = (
+		return (
 			(filter.year !== null) ||
 			(filter.rott !== null) ||
 			(filter.meta !== null) ||
@@ -62,10 +64,9 @@ export class FilterEvaluatorService {
 			(filter.writr !== null && filter.writr.length > 0) ||
 			(filter.drctr !== null && filter.drctr.length > 0)
 		);
-		return isActive;
 	}
 
-	// Verifică dacă o valoare se află într-un interval
+	// Verifică dacă o valoare se află într-un intervalul din filtru
 	private isInRange(range: IFilterRange | null, value: string | number | undefined): boolean {
 		if (!range || !value) return true;
 		return +value >= range.min && +value <= range.max;
