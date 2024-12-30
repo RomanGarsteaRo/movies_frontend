@@ -6,7 +6,11 @@
 	column-gap: 4px;
 	color: #484848;
 
-	.size{}
+	.size{
+		width: 42px;
+		display: flex;
+		justify-content: end;
+	}
 	.unit{
 		color: #343434;
 		font-size: 12px;

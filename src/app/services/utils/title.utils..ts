@@ -21,15 +21,12 @@ export class TitleUtils {
 		return fileName || undefined;
 	}
 
-	// No duplicate  ->  title unique  ->  "name + year"
+	// SET of "name + year" => string[]
 	public static getTitleUnique(arr: IFile[]): string[] {
 		let unique: Set<string> = new Set<string>();
-		// let repeat: string[] = [];
 		arr.forEach(item => {
-			if (unique.has(item.title + item.year)) {
-				// repeat.push(item.title);
-			} else {
-				unique.add(item.title + item.year);
+			if (!unique.has((item.titl_p?.title || '') + (item.titl_p?.year || ''))) {
+				unique.add((item.titl_p?.title || '') + (item.titl_p?.year || ''));
 			}
 		});
 		return [...unique];

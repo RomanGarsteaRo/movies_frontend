@@ -65,7 +65,6 @@ export class AppComponent implements OnInit{
 	}
 
 	onAnimationDone(event: any) {
-		console.log(event);
 		if (event.phaseName === 'done' && event.toState === 'void') {
 			this.isFilterAnimating = false; // Deblochează modificările
 		}

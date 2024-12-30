@@ -1,13 +1,24 @@
-
+import {PathObject} from "path-browserify";
 
 export interface IFile {
-	path: string,
-	size: IFileSize,
+	type: string, // 'file' | 'directory'
+	children: IFile[] | null,
 
-	title: string,
-	year: number,
-	tags: string[],
-	format: string,
+	path: string,
+	path_p: PathObject,
+	titl_p: ITitleParse,
+
+	size: IFileSize,
+	created: string,
+	modified: string,
+	access: string,
+}
+
+export interface ITitleParse {
+	title: string,          // "A Family Affair"
+	year: number,           //  2024
+	tags: string[],         // ["FullHD"]
+	format: string,         //  "mkv"
 }
 
 export interface IFileSize {

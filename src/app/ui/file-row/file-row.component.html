@@ -1,0 +1,9 @@
+<div class="item">
+	<span *ngIf="folder.type === 'directory'" class="directory icon material-symbols-outlined">folder</span>
+	<span *ngIf="folder.type === 'file'" class="file		 icon material-symbols-outlined">movie</span>
+	<span class="index">{{index}}</span>
+	<ui-file-size [size]="folder.size"></ui-file-size>
+
+	<input *ngIf="isRename" type="text" [value]="folder.path_p.base" >
+	<span  *ngIf="!isRename" class="basename">{{folder.path_p.base}}</span>
+</div>

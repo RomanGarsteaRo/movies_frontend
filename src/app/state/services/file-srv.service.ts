@@ -20,6 +20,8 @@ export class FileSrvService {
 		);
 	}
 
+
+	// Get all files in folder
 	folder(path: string): Observable<IFile[]> {
 		const url = `${this.baseURL}/folder`;
 		return this.http.post<IFile[]>(url, {path}).pipe(

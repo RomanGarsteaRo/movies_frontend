@@ -1,0 +1,14 @@
+<input type="text" [value]="folder[folder.length - 1][0].path_p.dir">
+
+
+
+<div class="tab">
+
+	<!-- row -->
+	<file-row *ngFor="let item of folder[folder.length - 1]; let i = index"
+			  class="item"
+			  [folder]="item"
+			  [index]="i + 1"
+	></file-row>
+
+</div>

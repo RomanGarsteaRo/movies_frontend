@@ -19,9 +19,7 @@ import {MovieUtils} from "./services/movie/movie.utils";
 })
 export class AppService {
 
-	// Panels
-	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
-
+	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
 	constructor(
 		private store: Store,
@@ -53,16 +51,17 @@ export class AppService {
 	}
 
 
-	private init(files: IFile[], omdb: IOmdb[], plex: IPlex[]): void {
+	private init(file: IFile[], omdb: IOmdb[], plex: IPlex[]): void {
 
 		let groups: IFile[][] = [];
 		let movies: IMovie[]  = [];
 
-		groups = FileUtils.group(files);
+		groups = FileUtils.group(file);
 		movies = MovieUtils.createIMovies(groups);
 		movies = MovieUtils.connectOmdb(movies, omdb);
 		movies = PlexUtils.connectPlex(movies, plex);
-		// this.store.dispatch(MoviesActions.updateMovies({ movies: movies.slice(0, 100) }));
+
+	 // this.store.dispatch(MoviesActions.updateMovies({ movies: movies.slice(0, 100) }));
 		this.store.dispatch(MoviesActions.updateMovies({ movies: movies }));
 	}
 

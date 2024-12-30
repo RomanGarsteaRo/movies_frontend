@@ -16,7 +16,11 @@ export class SortService {
 	public sortByTitleAndTags(arr: IMovie[]): IMovie[] {
 		arr = arr.sort((a: IMovie, b: IMovie) => a.title.localeCompare(b.title));
 		arr.forEach((movie: IMovie) => movie.files.sort((a: IFile, b: IFile) => {
-			return a.tags.length - b.tags.length;
+			if (a.titl_p && b.titl_p) {
+				return a.titl_p?.tags.length - b.titl_p?.tags.length;
+			} else {
+				return 0;
+			}
 		}))
 		return arr;
 	}

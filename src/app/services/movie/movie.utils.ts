@@ -13,15 +13,16 @@ export class MovieUtils {
 	static createIMovies(groups: IFile[][]): IMovie[] {
 		if (!groups) {return []}
 		let movies: IMovie[] = [];
-
+		// console.log(groups);
 		groups.forEach(files => {
-			let title: string = files[0].title;
-			let year:  number = files[0].year;
+			let title: string = files[0]?.titl_p.title || '';
+			let year:  number = files[0]?.titl_p.year  || 0;
 			let movie: IMovie = new Movie({title, year, files});
+			// console.log(movie);
 			movies.push(movie);
 		});
 
-		return movies; // this.sortByTitleAndTags(movies);
+		return this.sortByTitleAndTags(movies);
 	}
 
 	// Add OMDB data to Movies[]
@@ -57,7 +58,12 @@ export class MovieUtils {
 	private static sortByTitleAndTags(arr: IMovie[]): IMovie[] {
 		arr = arr.sort((a: IMovie, b: IMovie) => a.title.localeCompare(b.title));
 		arr.forEach((movie: IMovie) => movie.files.sort((a: IFile, b: IFile) => {
-			return a.tags.length - b.tags.length;
+			if (a.titl_p && b.titl_p) {
+				return a.titl_p.tags.length - b.titl_p.tags.length;
+			} else {
+				return 0;
+			}
+
 		}))
 		return arr;
 	}

@@ -1,0 +1,73 @@
+
+:host{
+
+	&.selected{
+		background-color: #2b2b2b;
+	}
+
+	.item{
+		height: 28px;
+		display: flex;
+		flex-direction: row;
+		white-space: nowrap;
+		align-items: center;
+		align-content: center;
+		cursor: pointer;
+
+		&:hover{
+			background-color: #2b2b2b;
+		}
+
+		.icon{
+			display: flex;
+			justify-content: end;
+			width: 26px;
+		}
+		.directory{
+			height: 26px;
+			margin-top: 1px;
+		}
+		.file{
+			display: flex;
+			flex-direction: row;
+			font-size: 18px;
+			//color: #e0115b;
+		}
+		.index{
+			width: 32px;
+			color: #797979;
+			font-size: 10px;
+			display: flex;
+			align-self: flex-start;
+		}
+		ui-file-size{
+			width: 92px;
+		}
+
+
+		.basename{
+			display: flex;
+		}
+
+		input{
+			width: 500px;
+			outline: none;
+			background-color: #cdcdcd;
+			padding: 4px 12px;
+			border: none;
+			color: #373737;
+			font-size: 14px;
+			text-align: left;
+			border-radius: 4px;
+			box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6);
+
+			&::selection {
+				background: #959698;
+			}
+		}
+
+	}
+}
+
+
+

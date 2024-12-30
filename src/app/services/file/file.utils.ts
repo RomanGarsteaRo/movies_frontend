@@ -5,23 +5,23 @@ export class FileUtils {
 
 
 	// Group Files with same Title
-	static group(filesEx: IFile[]):IFile[][]  {
-		if(!filesEx){return [];}
+	static group(files: IFile[]):IFile[][]  {
+		if(!files){return [];}
 		let allGroup: IFile[][] = [];
 
 		// 1. Get List of Title (no duplicate)
-		let titlesUnique: string[] = TitleUtils.getTitleUnique(filesEx);
+		let titlesUnique: string[] = TitleUtils.getTitleUnique(files);
 
-		// 2. Group IFileExtended[] to IFileExtended[][]
+		// 2. Group IFile[] to IFile[][]
 		titlesUnique.forEach(titleUnique => {
-			let title: string = '';
-			let year: number | string = 'N/A';
+			let title: string;
+			let year:  number;
 			let group: IFile[] = [];
 
-			filesEx.forEach(item => {
-				if (titleUnique === item.title + item.year) {
-					title = item.title;
-					year = item.year;
+			files.forEach(item => {
+				if (titleUnique === item.titl_p?.title + item.titl_p?.year) {
+					title = item.titl_p?.title || '';
+					year  = item.titl_p?.year  || 1900;
 					group.push(item);
 				}
 			})

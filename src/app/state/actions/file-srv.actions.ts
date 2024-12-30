@@ -4,6 +4,7 @@ import {IFile} from "../../services/file/file.interface";
 export const FileSrvActions = createActionGroup({
 	source: 'FILE SRV',
 	events: {
+
 		'Get All': 		    	   emptyProps(),
 		'Get All Success':  	   props<{ files:      IFile[] }>(),
 		'Get All Failure':  	   props<{ error:      any     }>(),

@@ -5,12 +5,14 @@ import {IFile} from "../../services/file/file.interface";
 
 export interface FileSrvState {
 	file: IFile[];
+	folder: IFile[];
 	loading: boolean;
 	error: any;
 }
 
 export const initialState: FileSrvState = {
 	file: [],
+	folder: [],
 	loading: false,
 	error: null,
 };
@@ -46,7 +48,7 @@ export const fileSrvReducer = createReducer(
 	})),
 	on(FileSrvActions.getFromFolderSuccess, (state, { files }) => ({
 		...state,
-		file: [...files],
+		folder: [...files],
 		loading: false,
 		error: null
 	})),
@@ -65,10 +67,10 @@ export const fileSrvReducer = createReducer(
 	})),
 	on(FileSrvActions.renameSuccess, (state, { oldName, newName }) => {
 		const updatedFiles = state.file.map(file => {
-			if (file.title === oldName) {
-				const newPath = file.path.replace(file.title, newName);
-				return { ...file, fileName: newName, path: newPath };
-			}
+			// if (file.title === oldName) {
+			// 	const newPath = file.path.replace(file.title, newName);
+			// 	return { ...file, fileName: newName, path: newPath };
+			// }
 			return file;
 		});
 		return {

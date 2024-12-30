@@ -1,9 +1,9 @@
 <div class="stat">
 	<!--Total-->
 	<div class="horizontal-label">
-		<span class="value">{{ files ? files.length : 'N/A' }}</span>
+		<span class="value">{{ file ? file.length : 'N/A' }}</span>
 		<span class="label">files</span>
-		<span class="value">{{ movies ? movies.length : 'N/A' }}</span>
+		<span class="value">{{ movie ? movie.length : 'N/A' }}</span>
 		<span class="label">movies</span>
 	</div>
 
@@ -43,7 +43,7 @@
 		<div class="label">associated</div>
 		<div class="value">{{ plexNotAssociated ? plexNotAssociated.length : 0 }}</div>
 		<div class="label">not associated</div>
-		<div class="value">{{ movies.length - plex.length }}</div>
+		<div class="value">{{ movie.length - plex.length }}</div>
 		<div class="label">not founded</div>
 	</div>
 
@@ -55,31 +55,34 @@
 		<div class="label">associated</div>
 		<div class="value">{{ omdbNotAssociated ? omdbNotAssociated.length : 0 }}</div>
 		<div class="label">not associated</div>
-		<div class="value">{{ movies.length - omdb.length }}</div>
+		<div class="value">{{ movie.length - omdb.length }}</div>
 		<div class="label">not founded</div>
 	</div>
-
-
 </div>
+
+
 <div class="sort">
 	<div class="material-icons total"></div>
-<!--	<div class="material-icons year" (click)="onSortByYear()">swap_vert</div>-->
-<!--	<div class="material-icons size" (click)="onSortBySize()">swap_vert</div>-->
-<!--	<div class="material-icons imdb" (click)="onSortByImdb()">swap_vert</div>-->
-<!--	<div class="material-icons title" (click)="onSortByTitle()">swap_vert</div>-->
-<!--	<div class="material-icons plex" (click)="onSortPlex()">swap_vert</div>-->
-<!--	<div class="material-icons omdb" (click)="onSortOmdb()">swap_vert</div>-->
+	<div class="material-icons year"  (click)="onSortByYear()">swap_vert</div>
+	<div class="material-icons size"  (click)="onSortBySize()">swap_vert</div>
+	<div class="material-icons imdb"  (click)="onSortByImdb()">swap_vert</div>
+	<div class="material-icons title" (click)="onSortByTitle()">swap_vert</div>
+	<div class="material-icons plex"  (click)="onSortPlex()">swap_vert</div>
+	<div class="material-icons omdb"  (click)="onSortOmdb()">swap_vert</div>
 </div>
+
+
 <div class="tab">
-	<ng-container *ngFor="let group of movies; let i = index">
+	<ng-container *ngFor="let group of movie; let i = index">
 		<div class="row" *ngFor="let item of group.files; let j = index">
 			<div class="number">{{ j === 0 ? i + 1 + '.' : '' }}</div>
-			<div class="year">{{ j === 0 ? item.year : '' }}</div>
+			<div class="year">{{ j === 0 ? item.titl_p.year : '' }}</div>
 			<ui-file-size [size]="item.size"></ui-file-size>
 			<div class="imdb">{{ j === 0 && group?.omdb ? group.omdb?.imdbRating : '' }}</div>
 			<div class="title-box">
-				<span>{{ group.plex?.title || item.title }}</span>
-				<span class="tag" *ngFor="let tag of item.tags">{{ tag }}</span>
+				<span>{{ group.plex?.title || item.titl_p.title }}</span>
+				<!--<span>{{ item.title }}</span>-->
+				<span class="tag" *ngFor="let tag of item.titl_p.tags">{{ tag }}</span>
 			</div>
 
 			<div class="json_plex" *ngIf="j === 0"
