@@ -14,6 +14,9 @@ import {
 	animate,
 	transition,
 } from "@angular/animations";
+import {select, Store} from "@ngrx/store";
+import {IMovie} from "./services/movie/movie.interface";
+import {MoviesSelectors} from "./state/selectors/movies.selectors";
 
 
 @Component({
@@ -46,11 +49,12 @@ import {
 export class AppComponent implements OnInit{
 
 	showFilterPanel$: Observable<boolean>  = this.appService.showFilterPanel$;
+	movies$: Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
 
 	@HostBinding('class.reduced')
 	isFilterAnimating: boolean = false; // Controlează vizibilitatea contentului
 
-	constructor(private appService: AppService) {}
+	constructor(private appService: AppService, private store: Store) {}
 
 	ngOnInit() {
 		UrlBase.url = environment.baseUrl;

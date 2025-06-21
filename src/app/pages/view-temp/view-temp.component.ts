@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {ChangeDetectorRef, Component, HostListener, OnInit, QueryList, ViewChildren} from '@angular/core';
 import {select, Store} from "@ngrx/store";
 import {FileSrvActions} from "../../state/actions";
 import {FileSrvSelectors} from "../../state/selectors";
@@ -44,14 +44,25 @@ export class ViewTempComponent implements OnInit {
 	@ViewChildren(FileRowComponent) public rowChildren!: QueryList<FileRowComponent>;
 
 	constructor(private store: Store,
+				private cd: ChangeDetectorRef,
 	) {
 	}
 
 	ngOnInit(){
 		this.store.dispatch(FileSrvActions.getFromFolder({path: this.path}));
-		this.store.pipe(select(FileSrvSelectors.folder), filter(folder=> folder.length > 0)).subscribe(folder => {
-			this.folder.push([...folder]);
+
+		this.store.pipe(select(FileSrvSelectors.folder)).subscribe(folder => {
+
+			console.log('updated out', folder);
+			if(folder?.length){
+				this.folder.push([...folder]);
+				this.folder = [...this.folder];
+				console.log('updated in', folder);
+				this.cd.detectChanges();
+			}
+
 		});
+
 	}
 
 
@@ -138,6 +149,12 @@ export class ViewTempComponent implements OnInit {
 		return this.rowChildren.find(child =>
 			child.elementRef.nativeElement.contains(target)
 		);
+	}
+
+	public getSafeFolderPath(): string {
+		const lastFolder = this.folder?.[this.folder.length - 1];
+		const firstElement = lastFolder?.[0];
+		return firstElement?.path_p?.dir || '';
 	}
 }
 

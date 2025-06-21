@@ -2,12 +2,15 @@
 
 
 	<!--TODO ngSrc-->
-	<img [src]="getImageUrl(movie)" alt="Movie Title 1" (click)="openMovieDetails(movie)">
+	<div class="imageError" *ngIf="plexImageError && omdbImageError">NO Image</div>
+	<img *ngIf="!omdbImageError" 				   [src]="getOmdbImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'omdb')">
+	<img *ngIf="!plexImageError && omdbImageError" [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">
+
 
 	<div class="info">
 		<div class="first-row">
 			<span class="year">{{movie.year}}</span>
-			<span class="title" ellipsis>{{movie.plex?.title}}</span>
+			<span class="title" ellipsis>{{movie.plex?.title || movie.title}}</span>
 		</div>
 
 		<div class="second-row">

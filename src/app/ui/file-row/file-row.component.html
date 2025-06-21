@@ -4,6 +4,6 @@
 	<span class="index">{{index}}</span>
 	<ui-file-size [size]="folder.size"></ui-file-size>
 
-	<input *ngIf="isRename" type="text" [value]="folder.path_p.base" >
+	<input *ngIf="isRename" type="text" [value]="folder.path_p.base" (change)="onTitleChange($event)">
 	<span  *ngIf="!isRename" class="basename">{{folder.path_p.base}}</span>
 </div>

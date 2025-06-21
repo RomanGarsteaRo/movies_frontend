@@ -1,7 +1,5 @@
 
 
-
-<!--<ng-container *ngFor="let movie of movies$ | async | slice : 0 : 10 ">-->
 <ng-container *ngFor="let movie of movies$ | async">
 	<ui-poster *ngIf="movie.show" [movie]="movie"></ui-poster>
 </ng-container>

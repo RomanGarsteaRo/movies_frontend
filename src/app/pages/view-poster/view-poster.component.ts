@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {Observable} from "rxjs";
+import {Observable, tap} from "rxjs";
 import {AsyncPipe, NgForOf, NgIf, SlicePipe} from "@angular/common";
 import {EllipsisDirective} from "../../ui/ellipsis.directive";
 import {UiPosterComponent} from "../../ui/ui-poster/ui-poster.component";
@@ -39,7 +39,7 @@ export class ViewPosterComponent {
 
 	movies$: Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
 
-	constructor( private store: Store,
+	constructor( private store: Store
 	) {}
 
 }

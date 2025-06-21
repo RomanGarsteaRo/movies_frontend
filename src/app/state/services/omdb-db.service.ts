@@ -8,8 +8,8 @@ import {IOmdb} from "../../services/omdb/omdb.interface";
 })
 export class OmdbDbService {
 
-	// private omdbBaseURL: string = 'http://localhost:3000/omdb';
-	private omdbBaseURL: string = 'http://10.0.0.74:3000/omdb';
+	private omdbBaseURL: string = 'http://localhost:3000/omdb';
+	// private omdbBaseURL: string = 'http://10.0.0.56:3000/omdb';
 	constructor(private http: HttpClient) {}
 
 	getAll(): Observable<IOmdb[]> {

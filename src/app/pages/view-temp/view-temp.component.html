@@ -1,13 +1,12 @@
-<input type="text" [value]="folder[folder.length - 1][0].path_p.dir">
-
+<input type="text" [value]="getSafeFolderPath()">
 
 
 <div class="tab">
 
 	<!-- row -->
-	<file-row *ngFor="let item of folder[folder.length - 1]; let i = index"
+	<file-row *ngFor="let folder of folder[folder.length - 1]; let i = index"
 			  class="item"
-			  [folder]="item"
+			  [folder]="folder"
 			  [index]="i + 1"
 	></file-row>
 
