@@ -7,9 +7,9 @@ roman.garstea.dev@gmail.com
 A web application built with Angular 19 for managing and browsing movie collections.
 
 ## Screenshots
-![Home View](assets/screenshots/list.png)
-![Movie Details](assets/screenshots/poster.png)
-![Movie Details](assets/screenshots/filter.png)
+![List View](src/assets/screenshots/list.png)
+![Posters View](src/assets/screenshots/poster.png)
+![Filter View](src/assets/screenshots/filter.png)
 
 ## Features
 Search movies using the OMDb API. https://www.omdbapi.com/
