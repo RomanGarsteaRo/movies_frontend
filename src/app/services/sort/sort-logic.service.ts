@@ -1,17 +1,13 @@
 import {Injectable} from '@angular/core';
-import {IMovie} from "./movie/movie.interface";
-import {IFile} from "./file/file.interface";
-
-
+import {IMovie} from "../movie/movie.interface";
+import {IFile} from "../file/file.interface";
+import {ColumnHeaderComponent} from "../../ui/column-header/column-header.component";
+import {BehaviorSubject} from "rxjs";
 
 @Injectable({
 	providedIn: 'root'
 })
-export class SortService {
-
-	// TODO sort in cash for fast responding
-
-	constructor() {}
+export class SortLogicService {
 
 	public sortByTitleAndTags(arr: IMovie[]): IMovie[] {
 		arr = arr.sort((a: IMovie, b: IMovie) => a.title.localeCompare(b.title));
@@ -24,17 +20,15 @@ export class SortService {
 		}))
 		return arr;
 	}
-
 	public onSortByYear(movies: IMovie[]) {
 		setTimeout(() => {
-			if (+movies[0].year < +movies[1].year) {
+			if (+movies[0].year < +movies[movies.length - 1].year) {
 				movies = movies.sort((a, b) => +b?.year - +a?.year);
 			} else {
 				movies = movies.sort((a, b) => +a?.year - +b?.year);
 			}
 		}, 0)
 	}
-
 	public onSortBySize(movies: IMovie[]) {
 		setTimeout(() => {
 			if (+movies[0].files[0].size.sizeInByte < +movies[1].files[0].size.sizeInByte) {
@@ -44,7 +38,6 @@ export class SortService {
 			}
 		}, 0)
 	}
-
 	public onSortByImdb(movies: IMovie[]) {
 		setTimeout(() => {
 
@@ -107,7 +100,6 @@ export class SortService {
 
 		}, 0)
 	}
-
 	public onSortByTitle(movies: IMovie[]) {
 		setTimeout(() => {
 			if (movies[0].title > movies[1].title) {
@@ -117,9 +109,8 @@ export class SortService {
 			}
 		}, 0)
 	}
-
-	// Have or not have data
 	public onSortPlex(movies: IMovie[]) {
+		// Have or not have data
 		setTimeout(() => {
 			if (movies[0].plex !== null && movies[movies.length - 1].plex === null) {
 				movies = movies.sort((a, b) => {
@@ -144,9 +135,8 @@ export class SortService {
 			}
 		}, 0)
 	}
-
-	// Have or not have data
 	public onSortOmdb(movies: IMovie[]) {
+		// Have or not have data
 		setTimeout(() => {
 			if (movies[0].omdb !== null && movies[movies.length - 1].omdb === null) {
 				movies = movies.sort((a, b) => {

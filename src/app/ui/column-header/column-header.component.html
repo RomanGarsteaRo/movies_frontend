@@ -1,0 +1,46 @@
+<!--
+
+-------------------------------------------------------------------------------------------
+Button Status		|   Icon description	|  Icon name					|
+-------------------------------------------------------------------------------------------
+default sort   		|   up&down   			|  swap_vert					|
+
+default asc    		|   x1 up	    		|  keyboard_arrow_up   	     	|	1,2,3...
+clicked asc   	  	|   x2 up	    		|  keyboard_double_arrow_up     |	A,B,C...
+
+default desc   		|   x1 down				|  keyboard_arrow_down	  		| ...3,2,1
+clicked desc  	  	|   x2 down				|  keyboard_double_arrow_down   | ...C,B,A
+
+-->
+
+
+<div class="sort-button" (click)="onSort($event, 'asc')">
+	<div class="material-icons"
+		 [class.active]="direction === 'asc'">
+		{{ direction === 'asc' ? 'keyboard_double_arrow_up' : 'keyboard_arrow_up' }}
+	</div>
+	<div *ngIf="direction === 'asc'" class="index">{{ indexOfSortRule }}</div>
+<!--	<div *ngIf="direction === 'asc'" class="index-background">{{ indexOfSortRule }}</div>-->
+</div>
+
+
+<div class="label-box" (click)="toggleSort()">
+	<ng-container *ngIf="label; else content">
+		<div class="label">{{ label }}</div>
+	</ng-container>
+	<ng-template #content>
+		<ng-content></ng-content>
+	</ng-template>
+</div>
+
+
+<div class="sort-button" (click)="onSort($event, 'desc')">
+	<div class="material-icons"
+		 [class.active]="direction === 'desc'">
+		{{ direction === 'desc' ? 'keyboard_double_arrow_down' : 'keyboard_arrow_down' }}
+	</div>
+	<div *ngIf="direction === 'desc' " class="index">{{ indexOfSortRule }}</div>
+</div>
+
+
+

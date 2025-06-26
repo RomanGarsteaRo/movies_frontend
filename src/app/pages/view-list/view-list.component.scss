@@ -7,23 +7,24 @@
 
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: min-content min-content auto;
+	grid-template-rows: min-content auto;
 	row-gap: 24px;
 
 	padding-top: 32px;
-	padding-left: 84px;
+	padding-left: 0;
 	padding-bottom: 24px;
 	color: #5d5d5d;
 	background-color: #1f2023;
 
-	$total: 40px;
+	$index: 40px;
+	$title: 400px;
 	$year:  80px;
 	$size:  80px;
 	$imdb:  80px;
-	$title: 400px;
-	$plex:  120px;
-	$omdb:  120px;
-	$grid-template-columns: $total $year $size $imdb $title $plex $omdb;
+
+	$plex:  80px;
+	$omdb:  80px;
+	$grid-template-columns: $index $title $year $size $imdb $plex $omdb;
 
 	.stat {
 		width: 100%;
@@ -109,58 +110,31 @@
 		grid-template-columns: $grid-template-columns;
 		grid-template-rows: auto;
 		column-gap: 24px;
+		justify-content: left;
 
-		.material-icons {
-			cursor: pointer;
-			user-select: none;
 
-			&:hover {
-				color: #757575;
-			}
-
-			&:active {
-				color: #b4b4b4;
-			}
-		}
-
-		.total {
-			display: flex;
-			justify-content: flex-end;
-
-		}
-
+		.index {}
+		.title {}
 		.year {
 			display: flex;
-			justify-content: flex-end;
-			padding-right: 8px;
+			justify-self: center;
 		}
-
 		.size {
 			display: flex;
-			justify-content: flex-end;
-			padding-right: 30px;
+			justify-self: center;
 		}
-
 		.imdb {
 			display: flex;
-			justify-content: flex-start;
-			padding-left: 4px;
-		}
-
-		.title {
-			display: flex;
-			justify-content: flex-start;
-			padding-left: 4px;
+			justify-self: center;
 		}
 
 		.plex {
 			display: flex;
-			justify-content: center;
+			justify-self: center;
 		}
-
 		.omdb {
 			display: flex;
-			justify-content: center;
+			justify-self: center;
 		}
 	}
 
@@ -181,34 +155,36 @@
 			column-gap: 24px;
 			align-items: center;
 
-			.number {
+			&:hover {
+				background-color: #2e2f33;
+				cursor: pointer;
+			}
+
+			.index {
 				display: flex;
 				justify-content: end;
 			}
-
-			.year {
-				display: flex;
-				justify-content: end;
-				color: #3b3b3b;
-			}
-
-			.size {
-			}
-
 			.title-box {
 				display: flex;
 				flex-direction: row;
 				column-gap: 6px;
 
-				.title {
-				}
-
+				.title {}
 				.tag {
 					font-size: 12px;
 					border: 1px solid #851010;
 				}
 			}
-
+			.year {
+				display: flex;
+				justify-content: center;
+				color: #3b3b3b;
+			}
+			.size {}
+			.imdb{
+				display: flex;
+				justify-content: center;
+			}
 			.tags {
 				display: flex;
 				column-gap: 12px;

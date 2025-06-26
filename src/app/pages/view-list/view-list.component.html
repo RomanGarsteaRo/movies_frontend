@@ -1,5 +1,5 @@
-<div class="stat">
-	<!--Total-->
+<!--<div class="stat">
+	&lt;!&ndash;Total&ndash;&gt;
 	<div class="horizontal-label">
 		<span class="value">{{ file ? file.length : 'N/A' }}</span>
 		<span class="label">files</span>
@@ -7,23 +7,23 @@
 		<span class="label">movies</span>
 	</div>
 
-	<!--Year-->
+	&lt;!&ndash;Year&ndash;&gt;
 	<div class="average-year">
 		<div>{{ (averageYear | number: '0.0-0' | noComma) || "N/A" }}</div>
 	</div>
 
-	<!--Size-->
+	&lt;!&ndash;Size&ndash;&gt;
 	<div class="average-size">
 		<ui-file-size *ngIf="averageSize" [size]="averageSize"></ui-file-size>
 		<div *ngIf="!averageSize">"N/A"</div>
 	</div>
 
-	<!--Imdb-->
+	&lt;!&ndash;Imdb&ndash;&gt;
 	<div class="average-imdb">
-		<div>{{ averageImdb | number: '0.0-1' | noComma }}</div>
+		<div>{{ averageImdb | number: '0.0-1' }}</div>
 	</div>
 
-	<!--Title-->
+	&lt;!&ndash;Title&ndash;&gt;
 	<div class="horizontal-label">
 		<span class="value">{{ moviesEn ? moviesEn.length : 'N/A' }}</span>
 		<span class="label">en</span>
@@ -35,7 +35,7 @@
 		<span class="label">duplicate</span>
 	</div>
 
-	<!--Plex-->
+	&lt;!&ndash;Plex&ndash;&gt;
 	<div class="horizontal-label" *ngIf="plex">
 		<div class="value">{{ plex.length }}</div>
 		<div class="label">total plex</div>
@@ -47,7 +47,7 @@
 		<div class="label">not founded</div>
 	</div>
 
-	<!--OMDB-->
+	&lt;!&ndash;OMDB&ndash;&gt;
 	<div class="horizontal-label" *ngIf="omdb">
 		<div class="value">{{ omdb.length }}</div>
 		<div class="label">total omdb</div>
@@ -58,38 +58,39 @@
 		<div class="value">{{ movie.length - omdb.length }}</div>
 		<div class="label">not founded</div>
 	</div>
-</div>
+</div>-->
 
 
 <div class="sort">
-	<div class="material-icons total"></div>
-	<div class="material-icons year"  (click)="onSortByYear()">swap_vert</div>
-	<div class="material-icons size"  (click)="onSortBySize()">swap_vert</div>
-	<div class="material-icons imdb"  (click)="onSortByImdb()">swap_vert</div>
-	<div class="material-icons title" (click)="onSortByTitle()">swap_vert</div>
-	<div class="material-icons plex"  (click)="onSortPlex()">swap_vert</div>
-	<div class="material-icons omdb"  (click)="onSortOmdb()">swap_vert</div>
+	<div></div>
+	<ui-column-header class="title" [label]="'Title'" [key]="'title'"	 [direction]="'asc'"></ui-column-header>
+	<ui-column-header class="year"  [label]="'Yearrrrr'"  [key]="'year'"  				        ></ui-column-header>
+	<ui-column-header class="size"  [label]="'Size'"  [key]="'size'"					    ></ui-column-header>
+	<ui-column-header class="imdb"  [label]="'IMDB'"  [key]="'imdb'"					    ></ui-column-header>
+	<ui-column-header class="plex"  [label]="'Plex'"  [key]="'plex'"					    ></ui-column-header>
+	<ui-column-header class="omdb"  [label]="'OMDB'"  [key]="'omdb'"					    ></ui-column-header>
 </div>
 
 
 <div class="tab">
-	<ng-container *ngFor="let group of movie; let i = index">
-		<div class="row" *ngFor="let item of group.files; let j = index">
-			<div class="number">{{ j === 0 ? i + 1 + '.' : '' }}</div>
-			<div class="year">{{ j === 0 ? item.titl_p.year : '' }}</div>
-			<ui-file-size [size]="item.size"></ui-file-size>
-			<div class="imdb">{{ j === 0 && group?.omdb ? group.omdb?.imdbRating : '' }}</div>
+	<ng-container *ngFor="let movie of movies; let i = index">
+		<div class="row" *ngFor="let file of movie.files; let j = index">
+			<div class="index">{{ j === 0 ? i + 1 + '.' : '' }}</div>
+
 			<div class="title-box">
-				<span>{{ group.plex?.title || item.titl_p.title }}</span>
-				<!--<span>{{ item.title }}</span>-->
-				<span class="tag" *ngFor="let tag of item.titl_p.tags">{{ tag }}</span>
+				<span>{{ movie.plex?.title || file.titl_p.title }}</span>
+				<span class="tag" *ngFor="let tag of file.titl_p.tags">{{ tag }}</span>
 			</div>
+			<div class="year">{{ j === 0 ? file.titl_p.year : '' }}</div>
+			<ui-file-size [size]="file.size"></ui-file-size>
+			<div class="imdb">{{ j === 0 && movie?.omdb ? movie.omdb?.imdbRating : '' }}</div>
+
 
 			<div class="json_plex" *ngIf="j === 0"
-				 [ngClass]="{'no_json': group?.plex === null}">{{ group.plex === null ? 'N/A' : '+' }}
+				 [ngClass]="{'no_json': movie?.plex === null}">{{ movie.plex === null ? 'N/A' : '+' }}
 			</div>
 			<div class="json_omdb" *ngIf="j === 0"
-				 [ngClass]="{'no_json': group?.omdb === null}">{{ group.omdb === null ? 'N/A' : '+' }}
+				 [ngClass]="{'no_json': movie?.omdb === null}">{{ movie.omdb === null ? 'N/A' : '+' }}
 			</div>
 		</div>
 	</ng-container>

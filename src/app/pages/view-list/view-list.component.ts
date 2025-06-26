@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {AsyncPipe, CommonModule, DecimalPipe, NgForOf, NgIf} from "@angular/common";
+import {CommonModule, DecimalPipe, NgForOf, NgIf} from "@angular/common";
 import {FileSizeComponent} from "../../ui/file-size/file-size.component";
 import {NoCommaPipe} from "../../ui/no-comma.pipe";
 import {IOmdb} from "../../services/omdb/omdb.interface";
-import {SortService} from "../../services/sort.service";
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
 import {IFile, IFileSize} from "../../services/file/file.interface";
@@ -12,20 +11,24 @@ import {IMovie} from "../../services/movie/movie.interface";
 import {FileUtils} from "../../services/file/file.utils";
 import {combineLatest, filter} from "rxjs";
 import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "../../state/selectors";
+import {ColumnHeaderComponent} from "../../ui/column-header/column-header.component";
+import {SortLogicService} from "../../services/sort/sort-logic.service";
+import {SortStateService} from "../../services/sort/sort-state.service";
 
 
 @Component({
 	selector: 'app-view-list',
 	standalone: true,
 	imports: [
-		AsyncPipe,
 		DecimalPipe,
 		FileSizeComponent,
 		NgForOf,
 		NgIf,
 		NoCommaPipe,
-		CommonModule
+		CommonModule,
+		ColumnHeaderComponent
 	],
+	providers: [SortStateService],
 	templateUrl: './view-list.component.html',
 	styleUrl: './view-list.component.scss'
 })
@@ -34,7 +37,7 @@ export class ViewListComponent implements OnInit {
 	public file:   IFile[] = [];
 	public plex:   IPlex[] = [];
 	public omdb:   IOmdb[] = [];
-	public movie: IMovie[] = [];
+	public movies: IMovie[] = [];
 
 	public averageYear!:    number | undefined;
 	public averageSize!: IFileSize | undefined;
@@ -53,7 +56,7 @@ export class ViewListComponent implements OnInit {
 
 	constructor(
 		private store: Store,
-		private sort: SortService
+		private sort: SortLogicService
 	) {}
 
 	ngOnInit() {
@@ -70,34 +73,33 @@ export class ViewListComponent implements OnInit {
 	}
 
 	private init(file: IFile[], omdb: IOmdb[], plex: IPlex[], movie: IMovie[]): void {
+		// console.log(movie)
 
 		this.file 			= [...file];
 		this.plex 			= [...plex];
 		this.omdb 			= [...omdb];
-		this.movie          = [...movie];
+		this.movies          = [...movie];
 
 		this.averageYear    = this.getAverageYear();
 		this.averageSize    = this.getAverageSize();
 		this.averageImdb    = this.getAverageImdb();
 
-		this.moviesRus      = this.getRusName(this.movie);
-		this.moviesEn       = this.getEnName(this.movie);
-		this.movies3d       = this.getMovies3d(this.movie);
-		this.duplicate      = this.getDuplicate(this.movie);
+		this.moviesRus      = this.getRusName(this.movies);
+		this.moviesEn       = this.getEnName(this.movies);
+		this.movies3d       = this.getMovies3d(this.movies);
+		this.duplicate      = this.getDuplicate(this.movies);
 
 		this.plexAssociated = this.getPlexAssociated();
 		this.omdbAssociated = this.getOmdbAssociated();
 	}
 
 	private getPlexAssociated(): number {
-		return this.movie.reduce((acc: number, cur: IMovie) => cur.plex !== null ? ++acc : acc, 0);
+		return this.movies.reduce((acc: number, cur: IMovie) => cur.plex !== null ? ++acc : acc, 0);
 	}
 
 	private getOmdbAssociated(): number {
-		return this.movie.reduce((acc: number, cur: IMovie) => cur.omdb !== null ? ++acc : acc, 0);
+		return this.movies.reduce((acc: number, cur: IMovie) => cur.omdb !== null ? ++acc : acc, 0);
 	}
-
-
 
 	private getDuplicate(arr: IMovie[]): IMovie[] {
 		// https://flexiple.com/javascript/find-duplicates-javascript-array
@@ -122,12 +124,12 @@ export class ViewListComponent implements OnInit {
 	}
 
 	private getAverageSize(): IFileSize | undefined{
-		if(!this.movie) {return undefined}
+		if(!this.movies) {return undefined}
 		let size: number = 0;
-		this.movie.forEach(item => {
+		this.movies.forEach(item => {
 			item.files.forEach((movie: IFile) => size += movie.size.sizeInByte)
 		});
-		return FileUtils.convertBytesToIFileSize(size / this.movie.length);
+		return FileUtils.convertBytesToIFileSize(size / this.movies.length);
 	}
 
 	private getEnName(arr: IMovie[]): IMovie[] {
@@ -136,10 +138,10 @@ export class ViewListComponent implements OnInit {
 	}
 
 	private getAverageYear(): number | undefined{
-		if(!this.movie) {return undefined}
+		if(!this.movies) {return undefined}
 		let size: number = 0;
-		this.movie.forEach(item => size += +item.year);
-		return size / this.movie.length;
+		this.movies.forEach(item => size += +item.year);
+		return size / this.movies.length;
 	}
 
 	private getAverageImdb(): number | undefined {
@@ -155,28 +157,27 @@ export class ViewListComponent implements OnInit {
 	// Sort ............................................................................................................
 
 	public onSortByYear() {
-		this.sort.onSortByYear(this.movie);
+		this.sort.onSortByYear(this.movies);
 	}
 
 	public onSortBySize() {
-		this.sort.onSortBySize(this.movie);
+		this.sort.onSortBySize(this.movies);
 	}
 
 	public onSortByImdb() {
-		this.sort.onSortByImdb(this.movie);
+		this.sort.onSortByImdb(this.movies);
 	}
 
 	public onSortByTitle() {
-		this.sort.onSortByTitle(this.movie);
+		this.sort.onSortByTitle(this.movies);
 	}
 
 	public onSortPlex() {
-		this.sort.onSortPlex(this.movie);
+		this.sort.onSortPlex(this.movies);
 	}
 
 	// Have or not have data
 	public onSortOmdb() {
-		this.sort.onSortOmdb(this.movie);
+		this.sort.onSortOmdb(this.movies);
 	}
-
 }
