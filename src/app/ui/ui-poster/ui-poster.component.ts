@@ -1,11 +1,11 @@
-import {Component, HostBinding, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {EllipsisDirective} from "../ellipsis.directive";
-import {NgForOf, NgIf, NgOptimizedImage, SlicePipe} from "@angular/common";
+import {NgIf} from "@angular/common";
 import {Router} from "@angular/router";
 import {IMovie} from "../../services/movie/movie.interface";
-import {UiFilterService} from "../ui-filter/ui-filter.service";
-import {IFilterCng} from "../ui-filter/ui-filter.class";
-import {FilterEvaluatorService} from "../../services/filter-evaluator.service";
+import {FilterStateService} from "../../services/filter/filter-state.service";
+import {IFilterCng} from "../../services/filter/filter.class";
+import {FilterEvaluatorService} from "../../services/filter/filter-evaluator.service";
 
 
 
@@ -14,10 +14,7 @@ import {FilterEvaluatorService} from "../../services/filter-evaluator.service";
   standalone: true,
 	imports: [
 		EllipsisDirective,
-		NgForOf,
 		NgIf,
-		SlicePipe,
-		NgOptimizedImage
 	],
   templateUrl: './ui-poster.component.html',
   styleUrl: './ui-poster.component.scss'
@@ -28,25 +25,22 @@ export class UiPosterComponent implements OnInit {
 	public omdbImageError: boolean = false;
 
 	@Input() movie!: IMovie;
-	@HostBinding('style') visibility: {} | { display: string } = {};
+	// @HostBinding('style') visibility: {} | { display: string } = {};
 
 	constructor( private route: Router,
-				 private filter: UiFilterService,
+				 private filter: FilterStateService,
 				 private filterEvaluator: FilterEvaluatorService,
 	) {}
 
 	ngOnInit(){
-		this.filter.filter_chng$.subscribe((param: IFilterCng) => {
-			// if (this.movie.title === "1917") {
-			// 	console.log('ui-poster.component | title: "1917" | filter_chng$.subscribe | param:', param);
-			// }
-			this.setVisibility(param);
-		});
+		// this.filter.filter_chng$.subscribe((param: IFilterCng) => {
+		// 	this.setVisibility(param);
+		// });
 	}
 
 	private setVisibility(param: IFilterCng) {
-		const isVisible = this.filterEvaluator.evaluate(param, this.movie);
-		this.visibility = isVisible ? {} : { display: "none" };
+		// const isVisible = this.filterEvaluator.evaluate(param, this.movie);
+		// this.visibility = isVisible ? {} : { display: "none" };
 	}
 
 	// TODO need hardcoded url for fas loading

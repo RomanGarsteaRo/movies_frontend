@@ -3,9 +3,9 @@ import {CommonModule, NgForOf} from "@angular/common";
 import {UiButtonToggleComponent} from "../ui-button-toggle/ui-button-toggle.component";
 import {CdkDrag, CdkDropList, CdkDropListGroup} from "@angular/cdk/drag-drop";
 import {AppService} from "../../app.service";
-import {UiFilterService} from "./ui-filter.service";
+import {FilterStateService} from "../../services/filter/filter-state.service";
 import {BehaviorSubject, filter} from "rxjs";
-import {FilterCngClass, IFilter, IFilterCng} from "./ui-filter.class";
+import {FilterCngClass, IFilter, IFilterCng} from "../../services/filter/filter.class";
 import {SetToArrayPipe} from "../pipe/set-to-array.pipe";
 import {MatSliderModule} from "@angular/material/slider";
 import {FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -39,7 +39,7 @@ export class UiFilterComponent implements OnInit {
 
 
 	constructor(private appService: AppService,
-				private filterService: UiFilterService,
+				private filterService: FilterStateService,
 				private fb: FormBuilder
 	) {
 		this.form = this.fb.group({

@@ -1,4 +1,4 @@
-import {IFilterRange} from "./ui-filter.class";
+import {IFilterRange} from "./filter.class";
 
 
 

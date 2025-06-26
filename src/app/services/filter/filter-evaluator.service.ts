@@ -1,18 +1,16 @@
 import {Injectable} from '@angular/core';
-import {IFilterCng, IFilterRange} from "../ui/ui-filter/ui-filter.class";
-import {IMovie} from "./movie/movie.interface";
+import {IFilterCng, IFilterRange} from "./filter.class";
+import {IMovie} from "../movie/movie.interface";
 
 @Injectable({
   providedIn: 'root'
 })
 export class FilterEvaluatorService {
 
+
 	// Verifică dacă un film îndeplinește toate criteriile de filtrare
 	public evaluate(filter: IFilterCng, movie: IMovie): boolean {
 
-		if (movie.title === "1917") {
-			console.log('.');
-		}
 
 		// Daca filtru nu este activ atunci 											return => true  / SHOW
 		if (!this.isFilterActive(filter)) return true;

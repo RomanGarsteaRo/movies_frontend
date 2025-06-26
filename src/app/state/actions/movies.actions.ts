@@ -1,6 +1,6 @@
 import {createActionGroup, props} from "@ngrx/store";
 import {IMovie} from "../../services/movie/movie.interface";
-import {IFilter} from "../../ui/ui-filter/ui-filter.class";
+import {IFilter} from "../../services/filter/filter.class";
 
 
 export const MoviesActions = createActionGroup({

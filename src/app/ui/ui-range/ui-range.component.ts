@@ -1,7 +1,7 @@
 import {Component, forwardRef, Input} from '@angular/core';
 import {MatSlider, MatSliderDragEvent, MatSliderRangeThumb} from "@angular/material/slider";
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
-import {FilterRangeClass, IFilterRange} from "../ui-filter/ui-filter.class";
+import {FilterRangeClass, IFilterRange} from "../../services/filter/filter.class";
 import {NgIf} from "@angular/common";
 import {MatCheckbox, MatCheckboxChange} from "@angular/material/checkbox";
 

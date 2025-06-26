@@ -1,27 +1,44 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, filter, Observable} from "rxjs";
 import {Store} from "@ngrx/store";
-import {IMovie} from "../../services/movie/movie.interface";
+import {IMovie} from "../movie/movie.interface";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {FilterClass, FilterCngClass, IFilter, IFilterCng, IFilterRange} from "./ui-filter.class";
-import {IOmdb} from "../../services/omdb/omdb.interface";
+import {FilterClass, FilterCngClass, IFilter, IFilterCng, IFilterRange} from "./filter.class";
+import {IOmdb} from "../omdb/omdb.interface";
+import {FilterEvaluatorService} from "./filter-evaluator.service";
+import {MoviesActions} from "../../state/actions";
 
 
 @Injectable({
 	providedIn: 'root'
 })
-export class UiFilterService {
+export class FilterStateService {
 
-	private movies$: 		    Observable<IMovie[]>    	= this.store.select(MoviesSelectors.movies);
 	public filter_init$:   BehaviorSubject<IFilter | null>  = new BehaviorSubject<IFilter | null>(null);
 	public filter_chng$:   BehaviorSubject<IFilterCng>  	= new BehaviorSubject<IFilterCng>(new FilterCngClass());
 
-	constructor(private store: Store) {
-		this.movies$
+	private movies: IMovie[] = [];
+
+	constructor(private store: Store,
+				private filterEvaluator: FilterEvaluatorService,
+	) {
+
+		this.store.select(MoviesSelectors.movies)
 			.pipe(filter((movies: IMovie[]) => Array.isArray(movies) && movies.length > 0))
 			.subscribe((movies: IMovie[]) => {
+				this.movies = [...movies];
 				this.initStartParam(movies);
 			})
+
+		this.filter_chng$.subscribe((filter: IFilterCng) => {
+			if(this.movies && this.movies.length > 0){
+				const updatedMovies = this.movies.map(movie => ({
+					...movie,
+					show: this.filterEvaluator.evaluate(filter, movie)
+				}));
+				this.store.dispatch(MoviesActions.updateMovies({ movies: updatedMovies }));
+			}
+		})
 	}
 
 
