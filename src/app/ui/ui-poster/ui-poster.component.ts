@@ -37,9 +37,9 @@ export class UiPosterComponent implements OnInit {
 
 	ngOnInit(){
 		this.filter.filter_chng$.subscribe((param: IFilterCng) => {
-			if (this.movie.title === "1917") {
-				console.log('ui-poster.component | title: "1917" | filter_chng$.subscribe | param:', param);
-			}
+			// if (this.movie.title === "1917") {
+			// 	console.log('ui-poster.component | title: "1917" | filter_chng$.subscribe | param:', param);
+			// }
 			this.setVisibility(param);
 		});
 	}

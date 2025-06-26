@@ -68,17 +68,18 @@ export class ViewListComponent implements OnInit {
 		]).pipe(
 			filter(([file, omdb, plex, movie]) => !!file.length && !!omdb.length && !!plex.length && !!movie.length)
 		).subscribe(([file, omdb, plex, movie]) => {
-			this.init(file, omdb, plex, movie)
+			console.log('..................')
+			this.init(file, omdb, plex, movie);
 		});
 	}
 
 	private init(file: IFile[], omdb: IOmdb[], plex: IPlex[], movie: IMovie[]): void {
-		// console.log(movie)
+		console.log(movie);
 
 		this.file 			= [...file];
 		this.plex 			= [...plex];
 		this.omdb 			= [...omdb];
-		this.movies          = [...movie];
+		this.movies         = [...movie].filter(movie => movie.show);
 
 		this.averageYear    = this.getAverageYear();
 		this.averageSize    = this.getAverageSize();

@@ -62,6 +62,7 @@ export class SortStateService {
 		this.activeSortRules.next(this.sortRules);
 	}
 
+	// Multi-key sort (Lexicographic sorting)
 	private multiSort(data: IMovie[], rules: SortRule<IMovie>[]) {
 		this.movies = [...data].sort((a, b) => {
 			for (const rule of rules) {
@@ -69,6 +70,8 @@ export class SortStateService {
 
 				const aValue = accessor(a);
 				const bValue = accessor(b);
+
+				console.log(rule.key, aValue, bValue)
 
 				if (aValue == null && bValue != null) return 1;
 				if (bValue == null && aValue != null) return -1;

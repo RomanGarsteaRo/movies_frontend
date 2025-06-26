@@ -43,7 +43,7 @@ export class UiFilterService {
 		})
 
 		this.filter_init$.next(param);
-		// console.log(param);
+		console.log(param);
 	}
 
 	private initArrayParam(param: IFilter, omdb: IOmdb): void{

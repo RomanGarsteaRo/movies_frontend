@@ -31,9 +31,12 @@ import {UiButtonListComponent} from "../ui-button-list/ui-button-list.component"
 })
 export class UiFilterComponent implements OnInit {
 
-	public form: FormGroup;
-	public param_init: IFilter | null = null;
+
+	public        form: FormGroup;
+	public  param_init: IFilter | null 			    = null;
 	public param_chng$: BehaviorSubject<IFilterCng> = this.filterService.filter_chng$;
+
+
 
 	constructor(private appService: AppService,
 				private filterService: UiFilterService,
@@ -53,8 +56,9 @@ export class UiFilterComponent implements OnInit {
 		});
 	}
 
-	ngOnInit(): void {
 
+
+	ngOnInit(): void {
 	/*  .......................
 		Get init params.
 		Not changed.
@@ -68,6 +72,7 @@ export class UiFilterComponent implements OnInit {
 
 		this.initForm();
 	}
+
 
 
 	private initForm(): void{
@@ -84,15 +89,15 @@ export class UiFilterComponent implements OnInit {
 			drctr: null,
 		});
 
-
 	/*  ..............................
 		Form change  ->  Param change
 		..............................  */
 		this.form.valueChanges.subscribe(value => this.updateFilterCng(value));
 	}
 
-	private updateFilterCng(value: any): void{
 
+
+	private updateFilterCng(value: any): void{
 		console.log("ui-filter.component  |  param_chng$.next(value)  |  value: ", value);
 		this.param_chng$.next(new FilterCngClass(value));
 	}
