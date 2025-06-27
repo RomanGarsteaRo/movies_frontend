@@ -25,7 +25,7 @@ export class FilterStateService {
 		this.initStartParam();
 
 		this.filter_chng$
-			.pipe(distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)))
+			// .pipe(distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)))
 			.subscribe(filter => {
 				this.store.select(MoviesSelectors.movies).pipe(take(1)).subscribe(movies => {
 					const updatedMovies = movies.map(m => {
@@ -61,7 +61,7 @@ export class FilterStateService {
 						this.initRangeParam(param, omdb);
 					}
 				})
-				console.log("STATE init START Param -> UI       |  initStartParam(movies)    -> filter_init$.next(param)  |  param: ", param);
+				console.log("SER..    init START Param -> UI    |  initStartParam(movies)    -> filter_init$.next(param)  |  param: ", param);
 				this.filter_init$.next(param);
 			})
 	}

@@ -61,7 +61,7 @@ export class UiFilterComponent implements OnInit {
 			.pipe(filter(param => param !== null))
 			.subscribe((param: IFilter) => {
 				this.param_init = {...param};
-				console.log("FILTR ngOnInit(sub(filter_init$))  |  ngOnInit( subscribe(filter_init$) )                    |  param: ", param);
+				console.log("CMP..  ngOnInit(sub(filter_init$))  |  ngOnInit( subscribe(filter_init$) )                    |  param: ", param);
 		});
 
 		this.initForm();
@@ -89,14 +89,14 @@ export class UiFilterComponent implements OnInit {
 		..............................  */
 		this.form.valueChanges.pipe(debounceTime(200)).subscribe(value => this.updateFilterCng(value));
 
-		console.log("FILTR initForm( FormChange to ParamChng$))");
+		console.log("CMP..  initForm( FormChange to ParamChng$))");
 		console.log("........................................................................");
 	}
 
 
 
 	private updateFilterCng(value: any): void{
-		console.log("FILTR ParamChng$.next()  																	  |  value: ", value);
+		console.log("CMP..  ParamChng$.next()  																	  |  value: ", value);
 		this.param_chng$.next(new FilterCngClass(value));
 	}
 

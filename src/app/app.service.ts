@@ -62,7 +62,7 @@ export class AppService {
 		movies =  PlexUtils.connectPlex(movies, plex);
 		movies = MovieUtils.addId(movies);
 
-		console.log(movies);
+		// console.log(movies);
 
 		this.store.dispatch(MoviesActions.initMovies({ movies: movies }));
 	}

@@ -79,7 +79,7 @@ export class FilterCngClass implements IFilterCng {
 		this.meta  = cng.meta  || null;
 		this.imdb  = cng.imdb  || null;
 		this.vots  = cng.vots  || null;
-		this.genre = cng.genre || null;
+		this.genre = cng.genre?.length ? cng.genre :  null;
 		this.actor = cng.actor || null;
 		this.writr = cng.writr || null;
 		this.drctr = cng.drctr || null;
