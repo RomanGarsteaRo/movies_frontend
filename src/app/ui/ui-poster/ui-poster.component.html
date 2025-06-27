@@ -1,35 +1,35 @@
 
 
-<ng-container *ngIf="movie$ | async as movie">
-
-	<!--TODO ngSrc-->
-	<div class="imageError" *ngIf="plexImageError && omdbImageError">NO Image</div>
-	<!--<img *ngIf="!omdbImageError" [src]="getOmdbImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'omdb')">-->
-	<!--<img *ngIf="!plexImageError && omdbImageError" [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">-->
-	<img [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">
 
 
-	<div class="info">
-		<div class="first-row">
-			<span class="year">{{movie.year}}</span>
-			<span class="title" ellipsis>{{movie.plex?.title || movie.title}}</span>
-		</div>
+<!--TODO ngSrc-->
+<div class="imageError" *ngIf="plexImageError && omdbImageError">NO Image</div>
+<!--<img *ngIf="!omdbImageError" [src]="getOmdbImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'omdb')">-->
+<!--<img *ngIf="!plexImageError && omdbImageError" [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">-->
+<img [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">
 
-		<div class="second-row">
-			<span class="data" *ngIf="movie.omdb?.imdbRating !== 'N/A'">{{movie.omdb?.imdbRating}}</span>
-			<span class="NA" *ngIf="!movie.omdb?.imdbRating || movie.omdb?.imdbRating === 'N/A'">N/A</span>
-			<span class="separator">|</span>
-			<span class="data" >{{((movie.plex?.rating || 0) * 10) + '%'}}</span>
-			<span class="NA"   *ngIf="!movie.plex?.rating || movie.omdb?.Metascore === 'N/A'">N/A</span>
-			<span class="separator">|</span>
-			<span class="data" *ngIf="movie.omdb?.Metascore !== 'N/A'">{{movie.omdb?.Metascore}}</span>
-			<span class="NA"   *ngIf="!movie.omdb?.imdbRating || movie.omdb?.Metascore === 'N/A'">N/A</span>
-		</div>
 
-		<div class="test">
-			<span>{{movie.omdb?.Genre}}</span>
-		</div>
+<div class="info">
+	<div class="first-row">
+		<span class="year">{{movie.year}}</span>
+		<span class="title" ellipsis>{{movie.plex?.title || movie.title}}</span>
 	</div>
 
-</ng-container>
+	<div class="second-row">
+		<span class="data" *ngIf="movie.omdb?.imdbRating !== 'N/A'">{{movie.omdb?.imdbRating}}</span>
+		<span class="NA" *ngIf="!movie.omdb?.imdbRating || movie.omdb?.imdbRating === 'N/A'">N/A</span>
+		<span class="separator">|</span>
+		<span class="data" >{{((movie.plex?.rating || 0) * 10) + '%'}}</span>
+		<span class="NA"   *ngIf="!movie.plex?.rating || movie.omdb?.Metascore === 'N/A'">N/A</span>
+		<span class="separator">|</span>
+		<span class="data" *ngIf="movie.omdb?.Metascore !== 'N/A'">{{movie.omdb?.Metascore}}</span>
+		<span class="NA"   *ngIf="!movie.omdb?.imdbRating || movie.omdb?.Metascore === 'N/A'">N/A</span>
+	</div>
+
+	<div class="test">
+		<span>{{movie.omdb?.Genre}}</span>
+	</div>
+</div>
+
+
 

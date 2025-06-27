@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FilterStateService} from "../../services/filter/filter-state.service";
-import {BehaviorSubject, filter} from "rxjs";
+import {BehaviorSubject, debounceTime, filter} from "rxjs";
 import {FilterCngClass, IFilter, IFilterCng} from "../../services/filter/filter.class";
 import {SetToArrayPipe} from "../pipe/set-to-array.pipe";
 import {MatSliderModule} from "@angular/material/slider";
@@ -87,7 +87,7 @@ export class UiFilterComponent implements OnInit {
 	/*  ..............................
 		Form change  ->  Param change
 		..............................  */
-		this.form.valueChanges.subscribe(value => this.updateFilterCng(value));
+		this.form.valueChanges.pipe(debounceTime(200)).subscribe(value => this.updateFilterCng(value));
 
 		console.log("FILTR initForm( FormChange to ParamChng$))");
 		console.log("........................................................................");

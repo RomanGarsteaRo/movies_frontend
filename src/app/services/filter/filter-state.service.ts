@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject, filter, Observable, take} from "rxjs";
+import {BehaviorSubject, distinctUntilChanged, filter, Observable, take} from "rxjs";
 import {Store} from "@ngrx/store";
 import {IMovie} from "../movie/movie.interface";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
@@ -17,12 +17,35 @@ export class FilterStateService {
 	public filter_init$: BehaviorSubject<IFilter | null> = new BehaviorSubject<IFilter | null>(null);
 	public filter_chng$: BehaviorSubject<IFilterCng>     = new BehaviorSubject<IFilterCng>(new FilterCngClass());
 
-	// TODO Filter in Store
-	private movies: IMovie[] = [];
 
 	constructor(private store: Store,
 				private filterEvaluator: FilterEvaluatorService,
 	) {
+
+		this.initStartParam();
+
+		this.filter_chng$
+			.pipe(distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)))
+			.subscribe(filter => {
+				this.store.select(MoviesSelectors.movies).pipe(take(1)).subscribe(movies => {
+					const updatedMovies = movies.map(m => {
+						const shouldShow = this.filterEvaluator.evaluate(filter, m);
+						return m.show !== shouldShow ? { ...m, show: shouldShow } : null;
+					}).filter((m): m is IMovie => m !== null);
+
+					if (updatedMovies.length > 0) {
+						this.store.dispatch(MoviesActions.updateMovies({ movies: updatedMovies }));
+					}
+				});
+			});
+	}
+
+
+	/*  ........................................
+		Init Filter Params for UI default
+		........................................  */
+
+	private initStartParam(): void {
 
 		this.store.select(MoviesSelectors.movies)
 			.pipe(
@@ -30,45 +53,17 @@ export class FilterStateService {
 				take(1)
 			)
 			.subscribe((movies: IMovie[]) => {
-				// TODO Filter in Store
-				this.movies = movies;
-				console.log("STATE Constructor(sub(movies))     |  constructor(sub(movies))  -> initStartParam(movies)    |  movies: ", movies.length)
-				this.initStartParam(movies);
-			})
-
-
-		this.filter_chng$.subscribe((filter: IFilterCng) => {
-
-			// Feltering only changed movies
-			const updatedMovies = this.movies.filter(m => m.show !== this.filterEvaluator.evaluate(filter, m)).map(m => ({...m}))
-
-			if (updatedMovies && updatedMovies.length > 0) {
-				updatedMovies.forEach(movie => {
-					movie.show = !movie.show;
-					console.log("STATE UpdateMovie");
-					this.store.dispatch(MoviesActions.updateMovie({movie: movie}));
+				let param: FilterClass = new FilterClass();
+				movies.forEach(movie => {
+					let omdb = movie.omdb;
+					if (omdb) {
+						this.initArrayParam(param, omdb);
+						this.initRangeParam(param, omdb);
+					}
 				})
-			}
-		})
-	}
-
-
-	/*  ........................................
-		Init Filter Params
-		........................................  */
-
-	private initStartParam(movies: IMovie[]): void {
-		let param: FilterClass = new FilterClass();
-		movies.forEach(movie => {
-			let omdb = movie.omdb;
-			if (omdb) {
-				this.initArrayParam(param, omdb);
-				this.initRangeParam(param, omdb);
-			}
-		})
-
-		console.log("STATE init START Param -> UI       |  initStartParam(movies)    -> filter_init$.next(param)  |  param: ", param);
-		this.filter_init$.next(param);
+				console.log("STATE init START Param -> UI       |  initStartParam(movies)    -> filter_init$.next(param)  |  param: ", param);
+				this.filter_init$.next(param);
+			})
 	}
 
 	private initArrayParam(param: IFilter, omdb: IOmdb): void {

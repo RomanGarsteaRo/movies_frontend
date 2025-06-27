@@ -1,11 +1,10 @@
-import {inject, Injectable, DestroyRef } from '@angular/core';
-import {BehaviorSubject} from "rxjs";
+import {Injectable } from '@angular/core';
+import {BehaviorSubject, filter, take} from "rxjs";
 import {IMovie} from "../movie/movie.interface";
 import {select, Store} from "@ngrx/store";
 import {MoviesActions} from "../../state/actions";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
 import {SortRule} from "./sort-rule.interface";
-import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {getAccessor} from "./sort-accessor";
 
 
@@ -14,24 +13,15 @@ import {getAccessor} from "./sort-accessor";
 })
 export class SortStateService {
 
-	public movies: IMovie[] = [];
 	public sortRules: SortRule<any>[] = [];
 	public activeSortRules: BehaviorSubject<SortRule<any>[]> = new BehaviorSubject<SortRule<any>[]>([]);
-	private readonly destroyRef = inject(DestroyRef);
 
-	constructor(private store: Store) {
-		this.store.pipe(
-			select(MoviesSelectors.movies),
-			takeUntilDestroyed(this.destroyRef)
-		).subscribe(movies => {
-			this.movies = [...movies];
-		});
-	}
+
+	constructor(private store: Store) {}
 
 	sort(rule: SortRule<any>) {
 		this.updateRules(rule);
 		this.updateMovies();
-		this.updateStore();
 		this.emitNewRules();
 	}
 
@@ -51,11 +41,15 @@ export class SortStateService {
 	}
 
 	private updateMovies() {
-		this.multiSort(this.movies, this.sortRules);
-	}
 
-	private updateStore() {
-		this.store.dispatch(MoviesActions.updateMovies({ movies: this.movies }));
+		this.store.pipe(
+			select(MoviesSelectors.movies),
+			filter((movies: IMovie[]) => Array.isArray(movies) && movies.length > 0),
+			take(1)
+		).subscribe(movies => {
+			const sorted: IMovie[] = this.multiSort(movies, this.sortRules);
+			this.store.dispatch(MoviesActions.initMovies({ movies: sorted }));
+		});
 	}
 
 	private emitNewRules() {
@@ -63,15 +57,13 @@ export class SortStateService {
 	}
 
 	// Multi-key sort (Lexicographic sorting)
-	private multiSort(data: IMovie[], rules: SortRule<IMovie>[]) {
-		this.movies = [...data].sort((a, b) => {
+	private multiSort(movies: IMovie[], rules: SortRule<IMovie>[]): IMovie[] {
+		const sortResult: IMovie[] = [...movies].sort((a, b) => {
 			for (const rule of rules) {
 				const accessor = getAccessor(rule.key);
 
 				const aValue = accessor(a);
 				const bValue = accessor(b);
-
-				console.log(rule.key, aValue, bValue)
 
 				if (aValue == null && bValue != null) return 1;
 				if (bValue == null && aValue != null) return -1;
@@ -82,6 +74,9 @@ export class SortStateService {
 			}
 			return 0;
 		});
+
+		// console.log( "S SORT multiSort() -> movies: ", sortResult[0].title);
+		return sortResult || [];
 	}
 }
 

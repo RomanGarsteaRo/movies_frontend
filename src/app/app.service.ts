@@ -64,7 +64,7 @@ export class AppService {
 
 		console.log(movies);
 
-		this.store.dispatch(MoviesActions.updateMovies({ movies: movies }));
+		this.store.dispatch(MoviesActions.initMovies({ movies: movies }));
 	}
 
 	public toggleFilterPanel() {

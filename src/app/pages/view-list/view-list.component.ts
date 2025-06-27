@@ -73,11 +73,11 @@ export class ViewListComponent implements OnInit {
 	}
 
 	private init(file: IFile[], omdb: IOmdb[], plex: IPlex[], movie: IMovie[]): void {
-		console.log(movie);
 
 		this.file 			= [...file];
 		this.plex 			= [...plex];
 		this.omdb 			= [...omdb];
+		console.log("VIEW-LIST   init()   |   movies: ", movie[0].title);
 		this.movies         = [...movie].filter(movie => movie.show);
 
 		this.averageYear    = this.getAverageYear();

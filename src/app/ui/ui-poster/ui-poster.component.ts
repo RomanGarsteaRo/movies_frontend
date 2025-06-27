@@ -2,10 +2,6 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {EllipsisDirective} from "../ellipsis.directive";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {IMovie} from "../../services/movie/movie.interface";
-import {Store} from "@ngrx/store";
-import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {filter, Observable} from "rxjs";
-
 
 @Component({
 	selector: 'ui-poster',
@@ -14,26 +10,19 @@ import {filter, Observable} from "rxjs";
 	imports: [
 		EllipsisDirective,
 		NgIf,
-		AsyncPipe,
 	],
 	templateUrl: './ui-poster.component.html',
 	styleUrl: './ui-poster.component.scss'
 })
-export class UiPosterComponent implements OnInit {
+export class UiPosterComponent {
 
-	@Input() movieId!: string;
+	@Input() movie!: IMovie;
 
 	public plexImageError: boolean = false;
 	public omdbImageError: boolean = false;
-	public movie$!: Observable<IMovie>;
 
 
-	constructor(private store: Store) {
-	}
-
-	ngOnInit() {
-		this.movie$ = this.store.select(MoviesSelectors.selectMovieById(this.movieId)).pipe(filter((m): m is IMovie => m !== undefined));
-	}
+	constructor() {}
 
 
 	// TODO need hardcoded url for fast loading
