@@ -1,8 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {CommonModule, NgForOf} from "@angular/common";
-import {UiButtonToggleComponent} from "../ui-button-toggle/ui-button-toggle.component";
-import {CdkDrag, CdkDropList, CdkDropListGroup} from "@angular/cdk/drag-drop";
-import {AppService} from "../../app.service";
+import {CommonModule} from "@angular/common";
 import {FilterStateService} from "../../services/filter/filter-state.service";
 import {BehaviorSubject, filter} from "rxjs";
 import {FilterCngClass, IFilter, IFilterCng} from "../../services/filter/filter.class";
@@ -19,9 +16,6 @@ import {UiButtonListComponent} from "../ui-button-list/ui-button-list.component"
 	selector: 'ui-filters',
 	standalone: true,
 	imports: [
-		NgForOf,
-		UiButtonToggleComponent,
-		CdkDropList, CdkDrag, CdkDropListGroup,
 		CommonModule,
 		SetToArrayPipe,
 		MatSliderModule, FormsModule, ReactiveFormsModule, MatCheckboxModule, UiRangeComponent, UiButtonListComponent,
@@ -38,8 +32,7 @@ export class UiFilterComponent implements OnInit {
 
 
 
-	constructor(private appService: AppService,
-				private filterService: FilterStateService,
+	constructor(private filterService: FilterStateService,
 				private fb: FormBuilder
 	) {
 		this.form = this.fb.group({
@@ -68,6 +61,7 @@ export class UiFilterComponent implements OnInit {
 			.pipe(filter(param => param !== null))
 			.subscribe((param: IFilter) => {
 				this.param_init = {...param};
+				console.log("FILTR ngOnInit(sub(filter_init$))  |  ngOnInit( subscribe(filter_init$) )                    |  param: ", param);
 		});
 
 		this.initForm();
@@ -76,6 +70,7 @@ export class UiFilterComponent implements OnInit {
 
 
 	private initForm(): void{
+
 		this.form.setValue({
 			year: null,
 			rott: null,
@@ -93,50 +88,16 @@ export class UiFilterComponent implements OnInit {
 		Form change  ->  Param change
 		..............................  */
 		this.form.valueChanges.subscribe(value => this.updateFilterCng(value));
+
+		console.log("FILTR initForm( FormChange to ParamChng$))");
+		console.log("........................................................................");
 	}
 
 
 
 	private updateFilterCng(value: any): void{
-		console.log("ui-filter.component  |  param_chng$.next(value)  |  value: ", value);
+		console.log("FILTR ParamChng$.next()  																	  |  value: ", value);
 		this.param_chng$.next(new FilterCngClass(value));
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// drop(event: CdkDragDrop<string[]>) {
-	// 	if (event.previousContainer === event.container) {
-	// 		moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-	// 	} else {
-	// 		transferArrayItem(
-	// 			event.previousContainer.data,
-	// 			event.container.data,
-	// 			event.previousIndex,
-	// 			event.currentIndex,
-	// 		);
-	// 	}
-	// }
-	//
-	// genreChanged(genre: {title: string, state: boolean}) {
-	// 	// this.filterService.updateMoviesByGenre(genre);
-	// }
 }

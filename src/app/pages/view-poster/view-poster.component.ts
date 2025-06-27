@@ -1,13 +1,12 @@
-import {Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {select, Store} from "@ngrx/store";
 import {MoviesSelectors} from "../../state/selectors/movies.selectors";
-import {Observable, tap} from "rxjs";
-import {AsyncPipe, NgForOf, NgIf, SlicePipe} from "@angular/common";
-import {EllipsisDirective} from "../../ui/ellipsis.directive";
+import {Observable} from "rxjs";
+import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
 import {UiPosterComponent} from "../../ui/ui-poster/ui-poster.component";
 import {OverlayModule} from "@angular/cdk/overlay";
-import {UiFilterComponent} from "../../ui/ui-filter/ui-filter.component";
 import {IMovie} from "../../services/movie/movie.interface";
+import {trackById} from "../../utils/trackby.utils";
 
 
 /*
@@ -22,14 +21,12 @@ cover art "Avatar cover art", film cover "Gladiator film cover"
 @Component({
 	selector: 'app-view-poster',
 	standalone: true,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	imports: [
 		AsyncPipe,
 		NgIf,
 		NgForOf,
-		SlicePipe,
-		EllipsisDirective,
 		UiPosterComponent,
-		UiFilterComponent,
 		OverlayModule,
 	],
 	templateUrl: './view-poster.component.html',
@@ -38,9 +35,9 @@ cover art "Avatar cover art", film cover "Gladiator film cover"
 export class ViewPosterComponent {
 
 	movies$: Observable<IMovie[]> = this.store.pipe(select(MoviesSelectors.movies));
+	protected readonly trackById = trackById;
 
-	constructor( private store: Store
-	) {}
+	constructor( private store: Store) {}
 
 }
 

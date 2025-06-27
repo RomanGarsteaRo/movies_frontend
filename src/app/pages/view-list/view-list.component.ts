@@ -68,7 +68,6 @@ export class ViewListComponent implements OnInit {
 		]).pipe(
 			filter(([file, omdb, plex, movie]) => !!file.length && !!omdb.length && !!plex.length && !!movie.length)
 		).subscribe(([file, omdb, plex, movie]) => {
-			console.log('..................')
 			this.init(file, omdb, plex, movie);
 		});
 	}

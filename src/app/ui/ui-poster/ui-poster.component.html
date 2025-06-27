@@ -1,10 +1,12 @@
 
 
+<ng-container *ngIf="movie$ | async as movie">
 
 	<!--TODO ngSrc-->
 	<div class="imageError" *ngIf="plexImageError && omdbImageError">NO Image</div>
-	<img *ngIf="!omdbImageError" 				   [src]="getOmdbImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'omdb')">
-	<img *ngIf="!plexImageError && omdbImageError" [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">
+	<!--<img *ngIf="!omdbImageError" [src]="getOmdbImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'omdb')">-->
+	<!--<img *ngIf="!plexImageError && omdbImageError" [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">-->
+	<img [src]="getPlexImageUrl(movie)" (click)="openMovieDetails(movie)" (error)="onImageError($event, 'plex')">
 
 
 	<div class="info">
@@ -28,4 +30,6 @@
 			<span>{{movie.omdb?.Genre}}</span>
 		</div>
 	</div>
+
+</ng-container>
 

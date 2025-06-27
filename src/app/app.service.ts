@@ -56,10 +56,13 @@ export class AppService {
 		let groups: IFile[][] = [];
 		let movies: IMovie[]  = [];
 
-		groups = FileUtils.group(file);
+		groups =  FileUtils.group(file);
 		movies = MovieUtils.createIMovies(groups);
 		movies = MovieUtils.connectOmdb(movies, omdb);
-		movies = PlexUtils.connectPlex(movies, plex);
+		movies =  PlexUtils.connectPlex(movies, plex);
+		movies = MovieUtils.addId(movies);
+
+		console.log(movies);
 
 		this.store.dispatch(MoviesActions.updateMovies({ movies: movies }));
 	}

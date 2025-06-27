@@ -5,6 +5,7 @@ import {IPlex} from "../plex/plex.interface";
 
 
 export interface IMovie {
+	id:    string,
 	title: string,
 	year: number,
 	show: boolean,

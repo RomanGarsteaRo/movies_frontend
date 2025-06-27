@@ -1,49 +1,43 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {EllipsisDirective} from "../ellipsis.directive";
-import {NgIf} from "@angular/common";
-import {Router} from "@angular/router";
+import {AsyncPipe, NgIf} from "@angular/common";
 import {IMovie} from "../../services/movie/movie.interface";
-import {FilterStateService} from "../../services/filter/filter-state.service";
-import {IFilterCng} from "../../services/filter/filter.class";
-import {FilterEvaluatorService} from "../../services/filter/filter-evaluator.service";
-
+import {Store} from "@ngrx/store";
+import {MoviesSelectors} from "../../state/selectors/movies.selectors";
+import {filter, Observable} from "rxjs";
 
 
 @Component({
-  selector: 'ui-poster',
-  standalone: true,
+	selector: 'ui-poster',
+	standalone: true,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	imports: [
 		EllipsisDirective,
 		NgIf,
+		AsyncPipe,
 	],
-  templateUrl: './ui-poster.component.html',
-  styleUrl: './ui-poster.component.scss'
+	templateUrl: './ui-poster.component.html',
+	styleUrl: './ui-poster.component.scss'
 })
 export class UiPosterComponent implements OnInit {
 
+	@Input() movieId!: string;
+
 	public plexImageError: boolean = false;
 	public omdbImageError: boolean = false;
+	public movie$!: Observable<IMovie>;
 
-	@Input() movie!: IMovie;
-	// @HostBinding('style') visibility: {} | { display: string } = {};
 
-	constructor( private route: Router,
-				 private filter: FilterStateService,
-				 private filterEvaluator: FilterEvaluatorService,
-	) {}
-
-	ngOnInit(){
-		// this.filter.filter_chng$.subscribe((param: IFilterCng) => {
-		// 	this.setVisibility(param);
-		// });
+	constructor(private store: Store) {
 	}
 
-	private setVisibility(param: IFilterCng) {
-		// const isVisible = this.filterEvaluator.evaluate(param, this.movie);
-		// this.visibility = isVisible ? {} : { display: "none" };
+	ngOnInit() {
+		this.movie$ = this.store.select(MoviesSelectors.selectMovieById(this.movieId)).pipe(filter((m): m is IMovie => m !== undefined));
 	}
 
-	// TODO need hardcoded url for fas loading
+
+	// TODO need hardcoded url for fast loading
+	// optimizezi imaginile (e.g., loading="lazy", ngSrc în loc de src când Angular 19+)
 	public getPlexImageUrl(movie: IMovie) {
 
 		// Cum obtin acest linc? Copii un get de imagine din plex.
@@ -51,19 +45,19 @@ export class UiPosterComponent implements OnInit {
 		// b  encodeURIComponent('/library/metadata/7659/thumb/1727681568')   ----->    %2Flibrary%2Fmetadata%2F7659%2Fthumb%2F1727681568
 		// c  %3FX-Plex-Token%3Deksa9m1AycUfJoXR2zGk&X-Plex-Token=eksa9m1AycUfJoXR2zGk
 
-		let a: string = 'https://10-0-0-145.b235164b334f4933bace62d0694b3418.plex.direct:32400/photo/:/transcode?width=240&height=360&minSize=1&upscale=1&url=';
-		let b: string;
-		let c: string = '%3FX-Plex-Token%3D7JUGfzsLZmGo1xeNN32s&X-Plex-Token=7JUGfzsLZmGo1xeNN32s';
-		if (typeof(movie?.plex?.thumb) === "string") {
-			b = encodeURIComponent(movie.plex.thumb);
-			return a + b + c || '';
+		let prefix: string = 'https://10-0-0-145.b235164b334f4933bace62d0694b3418.plex.direct:32400/photo/:/transcode?width=240&height=360&minSize=1&upscale=1&url=';
+		let thumb:  string = encodeURIComponent(movie?.plex?.thumb || '');
+		let tocken: string = '%3FX-Plex-Token%3D7JUGfzsLZmGo1xeNN32s&X-Plex-Token=7JUGfzsLZmGo1xeNN32s';
+
+		if (thumb !== '') {
+			return prefix + thumb + tocken;
 		} else {
-			return movie.omdb?.Poster || "";
+			return movie.omdb?.Poster || '';
 		}
 	}
 
 	public getOmdbImageUrl(movie: IMovie) {
-		if ( typeof(movie.omdb?.Poster) === "string") {
+		if (typeof (movie.omdb?.Poster) === "string") {
 			return movie.omdb?.Poster || "";
 		} else {
 			return "";
@@ -72,11 +66,11 @@ export class UiPosterComponent implements OnInit {
 
 	onImageError($event: ErrorEvent, where: "omdb" | "plex") {
 		const target = $event.target as HTMLImageElement;
-		if(where === "omdb") {
+		if (where === "omdb") {
 			this.omdbImageError = true;
 		}
 
-		if(where === "plex") {
+		if (where === "plex") {
 			this.plexImageError = true;
 		}
 

@@ -1,7 +1,7 @@
 
 
-<ng-container *ngFor="let movie of movies$ | async">
-	<ui-poster *ngIf="movie.show" [movie]="movie"></ui-poster>
+<ng-container *ngFor="let movie of movies$ | async; trackBy: trackById">
+	<ui-poster *ngIf="movie.show" [movieId]="movie.id"></ui-poster>
 </ng-container>
 
 

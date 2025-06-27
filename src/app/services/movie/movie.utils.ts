@@ -15,9 +15,10 @@ export class MovieUtils {
 		let movies: IMovie[] = [];
 		// console.log(groups);
 		groups.forEach(files => {
+			let id:    string = '';
 			let title: string = files[0]?.titl_p.title || '';
 			let year:  number = files[0]?.titl_p.year  || 0;
-			let movie: IMovie = new Movie({title, year, files});
+			let movie: IMovie = new Movie({id, title, year, files});
 			// console.log(movie);
 			movies.push(movie);
 		});
@@ -82,4 +83,37 @@ export class MovieUtils {
 		}
 		return `${hours}h ${minutes}m`;
 	}
+
+	public static addId(movies: IMovie[]): IMovie[] {
+		movies.forEach(movie => movie.id = this.getMovieId(movie));
+		return movies;
+	}
+
+	public static getMovieId(movie: IMovie): string {
+		const omdbId = movie.omdb?.imdbID;
+		const filePath = movie.files?.[0]?.path ?? '';
+		return omdbId ?? filePath;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
