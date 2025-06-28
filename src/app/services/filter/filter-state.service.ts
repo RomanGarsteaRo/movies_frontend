@@ -25,7 +25,6 @@ export class FilterStateService {
 		this.initStartParam();
 
 		this.filter_chng$
-			// .pipe(distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)))
 			.subscribe(filter => {
 				this.store.select(MoviesSelectors.movies).pipe(take(1)).subscribe(movies => {
 					const updatedMovies = movies.map(m => {

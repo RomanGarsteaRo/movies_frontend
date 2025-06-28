@@ -14,6 +14,7 @@ import {FileSrvSelectors, OmdbDbSelectors, PlexApiSelectors} from "../../state/s
 import {ColumnHeaderComponent} from "../../ui/column-header/column-header.component";
 import {SortLogicService} from "../../services/sort/sort-logic.service";
 import {SortStateService} from "../../services/sort/sort-state.service";
+import {trackById} from "../../utils/trackby.utils";
 
 
 @Component({
@@ -53,6 +54,7 @@ export class ViewListComponent implements OnInit {
 	public omdbAssociated!: number;
 	public omdbNotAssociated!: IOmdb[];
 
+	protected readonly trackById = trackById;
 
 	constructor(
 		private store: Store,
@@ -77,7 +79,6 @@ export class ViewListComponent implements OnInit {
 		this.file 			= [...file];
 		this.plex 			= [...plex];
 		this.omdb 			= [...omdb];
-		console.log("VIEW-LIST   init()   |   movies: ", movie[0].title);
 		this.movies         = [...movie].filter(movie => movie.show);
 
 		this.averageYear    = this.getAverageYear();

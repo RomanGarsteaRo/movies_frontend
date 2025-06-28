@@ -63,17 +63,17 @@
 
 <div class="sort">
 	<div></div>
-	<ui-column-header class="title" [label]="'Title'" [key]="'title'"	 [direction]="'asc'"></ui-column-header>
-	<ui-column-header class="year"  [label]="'Year'"  [key]="'year'"  				        ></ui-column-header>
-	<ui-column-header class="size"  [label]="'Size'"  [key]="'size'"					    ></ui-column-header>
-	<ui-column-header class="imdb"  [label]="'IMDB'"  [key]="'imdb'"					    ></ui-column-header>
-	<ui-column-header class="plex"  [label]="'Plex'"  [key]="'plex'"					    ></ui-column-header>
-	<ui-column-header class="omdb"  [label]="'OMDB'"  [key]="'omdb'"					    ></ui-column-header>
+	<ui-column-header class="title" [label]="'Title'" [key]="'title'" ></ui-column-header>
+	<ui-column-header class="year"  [label]="'Year'"  [key]="'year'"  ></ui-column-header>
+	<ui-column-header class="size"  [label]="'Size'"  [key]="'size'"  ></ui-column-header>
+	<ui-column-header class="imdb"  [label]="'IMDB'"  [key]="'imdb'"  ></ui-column-header>
+	<ui-column-header class="plex"  [label]="'Plex'"  [key]="'plex'"  ></ui-column-header>
+	<ui-column-header class="omdb"  [label]="'OMDB'"  [key]="'omdb'"  ></ui-column-header>
 </div>
 
 
 <div class="tab">
-	<ng-container *ngFor="let movie of movies; let i = index">
+	<ng-container *ngFor="let movie of movies; let i = index; trackBy: trackById">
 		<div class="row" *ngFor="let file of movie.files; let j = index">
 			<div class="index">{{ j === 0 ? i + 1 + '.' : '' }}</div>
 

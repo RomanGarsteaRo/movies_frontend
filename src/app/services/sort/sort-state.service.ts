@@ -19,24 +19,34 @@ export class SortStateService {
 
 	constructor(private store: Store) {}
 
-	sort(rule: SortRule<any>) {
+	sort(rule: SortRule<IMovie>) {
+		console.log(rule);
 		this.updateRules(rule);
 		this.updateMovies();
 		this.emitNewRules();
 	}
 
 	private updateRules(newRule: SortRule<any>) {
+
+		// Single-sort. One rule.
 		if (!newRule.shift) {
-			// Single-sort
-			this.sortRules = [{ ...newRule }];
+			this.sortRules = [{...newRule}];
+			return;
+		}
+
+		// Multi-sort. More rules.
+		const exists = this.sortRules.find(rule => rule.key === newRule.key);
+		if (exists?.direction === newRule.direction) {
+			// Remove rule if same direction
+			this.sortRules = this.sortRules.filter(rule => rule.key !== newRule.key);
+		} else if(exists) {
+			// Update direction
+			this.sortRules = this.sortRules.map(rule =>
+				rule.key === newRule.key ? { ...rule, direction: newRule.direction } : rule
+			);
 		} else {
-			// Multi-sort
-			const existing = this.sortRules.find(rule => rule.key === newRule.key);
-			if (existing) {
-				existing.direction = newRule.direction;
-			} else {
-				this.sortRules.push(newRule);
-			}
+			// Add new rule
+			this.sortRules = [...this.sortRules, { ...newRule }];
 		}
 	}
 

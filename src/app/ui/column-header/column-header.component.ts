@@ -18,12 +18,11 @@ export class ColumnHeaderComponent implements OnInit {
 
 	@Input() label!: string;
 	@Input() key!: string;
-	@Input() sortable!: boolean;
 	@Input() direction: 'asc' | 'desc' | undefined;
+	@Input() sortable!: boolean; // TODO
 	public indexOfSortRule: number | undefined;
 
-	constructor(private SortState: SortStateService) {
-	}
+	constructor(private SortState: SortStateService) {}
 
 	ngOnInit() {
 		this.SortState.activeSortRules
