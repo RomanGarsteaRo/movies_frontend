@@ -9,6 +9,7 @@ import {FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule} f
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {UiRangeComponent} from "../ui-range/ui-range.component";
 import {UiButtonListComponent} from "../ui-button-list/ui-button-list.component";
+import {ColumnHeaderComponent} from "../column-header/column-header.component";
 
 
 
@@ -18,7 +19,7 @@ import {UiButtonListComponent} from "../ui-button-list/ui-button-list.component"
 	imports: [
 		CommonModule,
 		SetToArrayPipe,
-		MatSliderModule, FormsModule, ReactiveFormsModule, MatCheckboxModule, UiRangeComponent, UiButtonListComponent,
+		MatSliderModule, FormsModule, ReactiveFormsModule, MatCheckboxModule, UiRangeComponent, UiButtonListComponent, ColumnHeaderComponent,
 	],
 	templateUrl: './ui-filter.component.html',
 	styleUrl: './ui-filter.component.scss',

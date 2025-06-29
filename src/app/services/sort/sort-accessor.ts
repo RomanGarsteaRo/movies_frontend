@@ -9,6 +9,8 @@ export const movieSortAccessors: Record<string, (m: IMovie) => any> = {
 	'imdb': (m) => m.omdb?.imdbRating ?? null,
 	'plex': (m) => m.plex ? 1: 0,
 	'omdb': (m) => m.omdb ? 1: 0,
+	'rott': (m) => m.omdb?.RotRating ? m.omdb?.RotRating : 0,
+	'meta': (m) => m.omdb?.Metascore ? m.omdb?.Metascore : 0,
 };
 
 // fallback (optional)

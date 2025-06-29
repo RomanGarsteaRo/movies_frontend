@@ -19,7 +19,7 @@ import {MovieUtils} from "./services/movie/movie.utils";
 })
 export class AppService {
 
-	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+	public showFilterPanel$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
 
 	constructor(
 		private store: Store,
@@ -62,7 +62,7 @@ export class AppService {
 		movies =  PlexUtils.connectPlex(movies, plex);
 		movies = MovieUtils.addId(movies);
 
-		// console.log(movies);
+		console.log(movies[0]);
 
 		this.store.dispatch(MoviesActions.initMovies({ movies: movies }));
 	}
