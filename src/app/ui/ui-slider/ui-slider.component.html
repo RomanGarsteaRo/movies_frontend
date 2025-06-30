@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="label-title">
+	<span class="text-strong">Y</span>
+	<span class="text-soft">ear</span>
+</div>
+
+<div class="label-slider">
+	<span class="min">
+		<span class="text-soft">19</span>
+		<span class="text-strong">59</span>
+	</span>
+	<span class="max">
+		<span class="text-soft">20</span>
+		<span class="text-strong">25</span>
+	</span>
+</div>
+
+<div class="input-box" [formGroup]="form">
+	<input class="min" [value]="1980" formControlName="min">
+	<span class="line">-</span>
+	<input class="max" [value]="2025" formControlName="max">
+</div>
+
+<div class="slider-box" #sliderBox>
+	<div class="thumb" #thumb cdkDragBoundary=".slider-box" cdkDragLockAxis="x" cdkDrag (cdkDragMoved)="onMoved($event)"></div>
+	<div class="selected-line"></div>
+	<div class="line"></div>
+</div>
+

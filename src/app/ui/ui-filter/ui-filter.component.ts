@@ -10,6 +10,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {UiRangeComponent} from "../ui-range/ui-range.component";
 import {UiButtonListComponent} from "../ui-button-list/ui-button-list.component";
 import {ColumnHeaderComponent} from "../column-header/column-header.component";
+import {UiSliderComponent} from "../ui-slider/ui-slider.component";
 
 
 
@@ -19,7 +20,7 @@ import {ColumnHeaderComponent} from "../column-header/column-header.component";
 	imports: [
 		CommonModule,
 		SetToArrayPipe,
-		MatSliderModule, FormsModule, ReactiveFormsModule, MatCheckboxModule, UiRangeComponent, UiButtonListComponent, ColumnHeaderComponent,
+		MatSliderModule, FormsModule, ReactiveFormsModule, MatCheckboxModule, UiRangeComponent, UiButtonListComponent, ColumnHeaderComponent, UiSliderComponent,
 	],
 	templateUrl: './ui-filter.component.html',
 	styleUrl: './ui-filter.component.scss',
@@ -58,14 +59,14 @@ export class UiFilterComponent implements OnInit {
 		Not changed.
 		For Init and Reset.
 		.......................   */
-		this.filterService.filter_init$
-			.pipe(filter(param => param !== null))
-			.subscribe((param: IFilter) => {
-				this.param_init = {...param};
-				console.log("CMP..  ngOnInit(sub(filter_init$))  |  ngOnInit( subscribe(filter_init$) )                    |  param: ", param);
-		});
-
-		this.initForm();
+		// this.filterService.filter_init$
+		// 	.pipe(filter(param => param !== null))
+		// 	.subscribe((param: IFilter) => {
+		// 		this.param_init = {...param};
+		// 		console.log("CMP..  ngOnInit(sub(filter_init$))  |  ngOnInit( subscribe(filter_init$) )                    |  param: ", param);
+		// });
+		//
+		// this.initForm();
 	}
 
 

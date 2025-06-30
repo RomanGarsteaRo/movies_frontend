@@ -22,10 +22,11 @@
 	.content{
 
 		display: grid;
-		grid-template-columns: min-content auto;
+		grid-template-columns: auto;
 		grid-template-rows: auto;
 		column-gap: 28px;
 		padding: 24px;
+		padding-top: 48px;
 
 
 		.range-box{
