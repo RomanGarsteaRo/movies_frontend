@@ -14,6 +14,9 @@
 <div class="label-title">
 	<span class="text-strong">Y</span>
 	<span class="text-soft">ear</span>
+	<span class="test">{{getLineLeft() | number: '0.0-0'}}</span>
+	<span class="test">-</span>
+	<span class="test">{{getThumbLeft('max') | number: '0.0-0'}}</span>
 </div>
 
 <div class="label-slider">
@@ -28,14 +31,89 @@
 </div>
 
 <div class="input-box" [formGroup]="form">
-	<input class="min" [value]="1980" formControlName="min">
+	<input class="min" [value]="1959" formControlName="min">
 	<span class="line">-</span>
 	<input class="max" [value]="2025" formControlName="max">
 </div>
 
 <div class="slider-box" #sliderBox>
-	<div class="thumb" #thumb cdkDragBoundary=".slider-box" cdkDragLockAxis="x" cdkDrag (cdkDragMoved)="onMoved($event)"></div>
-	<div class="selected-line"></div>
+
+	<div class="thumb"
+		 #thumbMin
+		 cdkDrag
+		 cdkDragBoundary=".slider-box"
+		 cdkDragLockAxis="x"
+		 (cdkDragMoved)="onMoved($event, 'min')"
+	></div>
+
+	<div
+		class="thumb"
+		#thumbMax
+		cdkDrag
+		cdkDragBoundary=".slider-box"
+		cdkDragLockAxis="x"
+		(cdkDragMoved)="onMoved($event, 'max')"
+	></div>
+
+	<div class="selected-line"
+		 cdkDrag
+		 cdkDragLockAxis="x"
+		 cdkDragBoundary=".slider-box"
+		 [ngStyle]="{left: getLineLeft() + 'px',width: getLineWidth() + 'px'}"
+		 (cdkDragStarted)="onLineDragStart($event)"
+		 (cdkDragMoved)="onLineMoved($event)"
+	></div>
 	<div class="line"></div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
