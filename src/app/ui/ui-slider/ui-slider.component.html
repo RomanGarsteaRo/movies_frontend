@@ -1,22 +1,8 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
 <div class="label-title">
 	<span class="text-strong">Y</span>
 	<span class="text-soft">ear</span>
-	<span class="test">{{getLineLeft() | number: '0.0-0'}}</span>
-	<span class="test">-</span>
-	<span class="test">{{getThumbLeft('max') | number: '0.0-0'}}</span>
 </div>
 
 <div class="label-slider">
@@ -40,19 +26,21 @@
 
 	<div class="thumb"
 		 #thumbMin
-		 cdkDrag
-		 cdkDragBoundary=".slider-box"
-		 cdkDragLockAxis="x"
-		 (cdkDragMoved)="onMoved($event, 'min')"
+		 dir-draggable
+		 [value]="100"
+		 [minX]="0"
+		 [maxX]="336"
+		 (drag)="onThumbDrag($event, 'min')"
 	></div>
 
 	<div
 		class="thumb"
 		#thumbMax
-		cdkDrag
-		cdkDragBoundary=".slider-box"
-		cdkDragLockAxis="x"
-		(cdkDragMoved)="onMoved($event, 'max')"
+		dir-draggable
+		[value]="200"
+		[minX]="0"
+		[maxX]="336"
+		(drag)="onThumbDrag($event, 'min')"
 	></div>
 
 	<div class="selected-line"
@@ -65,23 +53,6 @@
 	></div>
 	<div class="line"></div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
