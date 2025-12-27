@@ -71,7 +71,7 @@ export class UiSliderComponent implements AfterViewInit, OnInit{
 
 	private initConstants() {
 		this.distanceYear = (this.maxYear - this.minYear);
-		this.distancePx	= this.sliderBox.nativeElement.getBoundingClientRect().width;
+		this.distancePx	= this.sliderBox.nativeElement.getBoundingClientRect().width - (this.thumbMin.nativeElement.getBoundingClientRect().width * 2);
 	}
 
 
@@ -142,10 +142,10 @@ export class UiSliderComponent implements AfterViewInit, OnInit{
 		const thumbEl = (type === 'min' ? this.thumbMin : this.thumbMax).nativeElement as HTMLElement;
 		const thumbRect: DOMRect = thumbEl.getBoundingClientRect();
 
-		const initialThumbCenterX: number = boxRect.left + thumbRect.width / 2;
-		const currentThumbCenterX: number = thumbRect.left + thumbRect.width / 2;
-		const offset			 : number = currentThumbCenterX - $event.pointerPosition.x;
-		const draggedDistance_px : number = $event.pointerPosition.x - initialThumbCenterX + offset;
+		const initialThumbX: number = type === "min" ? boxRect.left : boxRect.left + thumbRect.width;
+		const currentThumbX: number = thumbRect.left;
+		const offset			 : number = currentThumbX - $event.pointerPosition.x;
+		const draggedDistance_px : number = $event.pointerPosition.x - initialThumbX + offset - thumbRect.width;
 		return draggedDistance_px  / this.distancePx;
 	}
 
